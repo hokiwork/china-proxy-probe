@@ -19,6 +19,7 @@ HTTP_LINK_RE = re.compile(r"https?://[^\s<>\"'\\]+", re.I)
 
 
 def fetch_text(url, timeout=30):
+    url = urllib.parse.quote(url, safe=":/?&=%#[]@!$'()*+,;~-")
     req = urllib.request.Request(
         url,
         headers={
@@ -265,7 +266,10 @@ def telegram_url(source):
 
 
 def should_follow_url(url):
-    parsed = urllib.parse.urlsplit(url)
+    try:
+        parsed = urllib.parse.urlsplit(url)
+    except ValueError:
+        return False
     host = parsed.netloc.lower()
     path = parsed.path.lower()
     if host in ("t.me", "telegram.me", "telegram.org"):
