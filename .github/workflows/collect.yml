@@ -28,7 +28,7 @@ jobs:
           SOURCES_JSON: ${{ vars.SOURCES_JSON || secrets.SOURCES_JSON }}
         run: |
           mkdir -p data
-          python scripts/collect_sources.py --config config/sources.json --output-yaml data/candidates.yaml --output-json data/candidates.json
+          python scripts/collect_sources.py --config config/sources.public.json --output-yaml data/candidates.yaml --output-json data/candidates.json
 
       - name: Commit data
         uses: stefanzweifel/git-auto-commit-action@v5

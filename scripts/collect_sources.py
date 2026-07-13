@@ -299,7 +299,23 @@ def collect_source(source):
     text = fetch_text(source["url"], timeout=int(source.get("timeout", 30)))
     if kind == "clash":
         return proxies_from_clash(text)
-    return proxies_from_text(text)
+    proxies = proxies_from_text(text)
+    if source.get("follow_subscription_links", False):
+        followed = 0
+        for url in extract_http_links(text):
+            if followed >= int(source.get("max_follow", 12)):
+                break
+            if not should_follow_url(url):
+                continue
+            try:
+                found = proxies_from_text(fetch_text(url, timeout=20))
+            except Exception as exc:
+                print(f"skip followed url {url}: {exc}")
+                continue
+            if found:
+                proxies.extend(found)
+                followed += 1
+    return proxies
 
 
 def normalize_proxy(proxy, index):

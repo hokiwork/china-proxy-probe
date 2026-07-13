@@ -78,6 +78,14 @@ Supported source types:
 
 Do not commit private subscription URLs to a public repository. Put private or semi-private sources in GitHub repository variables or secrets.
 
+This repository includes a public starter list at:
+
+```text
+config/sources.public.json
+```
+
+The GitHub workflow uses this file by default. `SOURCES_JSON` still overrides it when you need private or custom sources.
+
 Enable Actions. Run `Collect candidates` once. It will create:
 
 ```text
