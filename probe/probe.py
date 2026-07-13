@@ -115,6 +115,15 @@ def wait_controller(controller, timeout_seconds):
     return False
 
 
+def tail_file(path, max_lines=80):
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            lines = f.readlines()
+    except OSError as exc:
+        return f"(cannot read {path}: {exc})"
+    return "".join(lines[-max_lines:]).rstrip() or "(empty log)"
+
+
 def test_proxy(controller, proxy, timeout_ms, test_url):
     name = proxy.get("name", "")
     encoded = urllib.parse.quote(name, safe="")
@@ -175,17 +184,28 @@ def main():
         controller=controller,
     )
     runtime_config_path = os.path.join(workdir, "mihomo-probe.yaml")
+    runtime_log_path = os.path.join(workdir, "mihomo.log")
     write_json(runtime_config_path, runtime_config)
 
     mihomo_bin = find_bin(mihomo_cfg.get("bin", ""))
+    log_file = open(runtime_log_path, "w", encoding="utf-8")
     proc = subprocess.Popen(
         [mihomo_bin, "-d", workdir, "-f", runtime_config_path],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        stdout=log_file,
+        stderr=subprocess.STDOUT,
     )
 
     try:
         if not wait_controller(controller, mihomo_cfg.get("startup_wait_seconds", 3) + 5):
+            if proc.poll() is not None:
+                print(f"mihomo exited early with code {proc.returncode}.")
+            else:
+                print("mihomo process is still running, but controller is not responding.")
+            print(f"runtime config: {runtime_config_path}")
+            print(f"mihomo log: {runtime_log_path}")
+            print("----- mihomo log tail -----")
+            print(tail_file(runtime_log_path))
+            print("----- end mihomo log -----")
             raise SystemExit("mihomo controller did not become ready.")
 
         timeout_ms = int(probe_cfg.get("timeout_ms", 5000))
@@ -219,6 +239,7 @@ def main():
             proc.wait(timeout=5)
         except subprocess.TimeoutExpired:
             proc.kill()
+        log_file.close()
 
 
 if __name__ == "__main__":
