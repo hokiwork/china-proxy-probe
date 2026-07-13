@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import base64
 import concurrent.futures
 import datetime as dt
 import json
@@ -41,10 +42,45 @@ def github_raw_url(gh):
     return f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
 
 
+def github_contents_url(gh):
+    owner = gh["owner"]
+    repo = gh["repo"]
+    path = gh.get("candidates_path", "data/candidates.json")
+    return f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
+
+
+def github_headers(gh):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "china-proxy-probe",
+    }
+    token = gh.get("token") or os.environ.get("GITHUB_TOKEN", "")
+    if token and token != "ghp_replace_me":
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
+
+
 def http_json(url, headers=None, timeout=30):
     req = urllib.request.Request(url, headers=headers or {})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+def fetch_candidates(gh, timeout=30):
+    branch = gh.get("branch", "main")
+    api_url = github_contents_url(gh) + "?" + urllib.parse.urlencode({"ref": branch})
+    try:
+        payload = http_json(api_url, headers=github_headers(gh), timeout=timeout)
+        encoded = payload.get("content", "")
+        if payload.get("encoding") == "base64" and encoded:
+            content = base64.b64decode(encoded).decode("utf-8")
+            return json.loads(content)
+    except Exception as e:
+        print(f"warning: failed to fetch candidates through GitHub API: {e}")
+
+    print("warning: falling back to raw.githubusercontent.com")
+    return http_json(github_raw_url(gh), timeout=timeout)
 
 
 def build_mihomo_config(proxies, mixed_port, controller):
@@ -127,7 +163,7 @@ def main():
     workdir = probe_cfg.get("workdir", "/tmp/china-proxy-probe")
     os.makedirs(workdir, exist_ok=True)
 
-    candidates = http_json(github_raw_url(gh_cfg), timeout=60)
+    candidates = fetch_candidates(gh_cfg, timeout=60)
     proxies = candidates.get("proxies", [])
     if not proxies:
         raise SystemExit("No proxies found in candidates JSON.")
@@ -187,4 +223,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
