@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 中国香港 Hytron Network Services Limited↓13mb/s
-  type: vmess
-  server: as.dcsaw.rfgh.dsfdsgrrey.boutique
-  port: 21949
-  uuid: a4040c61-d8a8-4ded-8c07-98aabafcdcac
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - name: 新加坡-独享带宽(157
   type: trojan
   server: perfect-emu.rooster465.autos
@@ -3024,7 +3011,6 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 中国香港 Hytron Network Services Limited↓13mb/s
   - 新加坡-独享带宽(157
   - 日本-独享带宽(157
   - 233boy-tcp-207.57.135.122
