@@ -48,6 +48,36 @@ CANDIDATES_URL=https://example.com/candidates.yaml
 
 `CANDIDATES_URL` should point to a Clash YAML containing a top-level `proxies` array. It can come from aggregator, Gist, or any other generator.
 
+For multiple public sources, add repository variable `SOURCES_JSON` instead:
+
+```json
+{
+  "sources": [
+    {
+      "type": "clash",
+      "url": "https://example.com/subscription.yaml"
+    },
+    {
+      "type": "text",
+      "url": "https://example.com/free-nodes.txt"
+    },
+    {
+      "type": "telegram",
+      "channel": "public_channel_name",
+      "follow_subscription_links": true
+    }
+  ]
+}
+```
+
+Supported source types:
+
+- `clash`: Clash YAML with top-level `proxies`.
+- `text`: plain text, base64 subscription text, or a page containing proxy links.
+- `telegram`: public Telegram channel page, using `https://t.me/s/<channel>`.
+
+Do not commit private subscription URLs to a public repository. Put private or semi-private sources in GitHub repository variables or secrets.
+
 Enable Actions. Run `Collect candidates` once. It will create:
 
 ```text
@@ -122,4 +152,3 @@ Router probe
 Filter workflow
   -> data/final.yaml
 ```
-
