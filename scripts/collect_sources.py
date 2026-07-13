@@ -332,6 +332,24 @@ def normalize_proxy(proxy, index):
     return proxy
 
 
+def unique_proxy_names(proxies):
+    used = set()
+    counts = {}
+    renamed = []
+    for proxy in proxies:
+        proxy = dict(proxy)
+        base = safe_name(proxy.get("name"), "proxy")
+        counts[base] = counts.get(base, 0) + 1
+        name = base if counts[base] == 1 else f"{base} #{counts[base]}"
+        while name in used:
+            counts[base] += 1
+            name = f"{base} #{counts[base]}"
+        proxy["name"] = name
+        used.add(name)
+        renamed.append(proxy)
+    return renamed
+
+
 def proxy_key(proxy):
     return json.dumps(
         {
@@ -417,6 +435,7 @@ def main():
         seen.add(key)
         cleaned.append(proxy)
 
+    cleaned = unique_proxy_names(cleaned)
     write_outputs(cleaned, args.output_yaml, args.output_json)
     print(f"collected {len(cleaned)} unique proxies")
 

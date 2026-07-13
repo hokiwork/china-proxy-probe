@@ -84,6 +84,7 @@ def fetch_candidates(gh, timeout=30):
 
 
 def build_mihomo_config(proxies, mixed_port, controller):
+    proxies = unique_proxy_names(proxies)
     names = [p.get("name") for p in proxies if p.get("name")]
     return {
         "mixed-port": int(mixed_port),
@@ -101,6 +102,24 @@ def build_mihomo_config(proxies, mixed_port, controller):
         ],
         "rules": ["MATCH,probe"],
     }
+
+
+def unique_proxy_names(proxies):
+    used = set()
+    counts = {}
+    renamed = []
+    for proxy in proxies:
+        proxy = dict(proxy)
+        base = str(proxy.get("name") or "proxy").strip() or "proxy"
+        counts[base] = counts.get(base, 0) + 1
+        name = base if counts[base] == 1 else f"{base} #{counts[base]}"
+        while name in used:
+            counts[base] += 1
+            name = f"{base} #{counts[base]}"
+        proxy["name"] = name
+        used.add(name)
+        renamed.append(proxy)
+    return renamed
 
 
 def wait_controller(controller, timeout_seconds):
@@ -173,7 +192,7 @@ def main():
     os.makedirs(workdir, exist_ok=True)
 
     candidates = fetch_candidates(gh_cfg, timeout=60)
-    proxies = candidates.get("proxies", [])
+    proxies = unique_proxy_names(candidates.get("proxies", []))
     if not proxies:
         raise SystemExit("No proxies found in candidates JSON.")
 
