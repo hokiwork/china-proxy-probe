@@ -278,20 +278,21 @@ def should_follow_url(url):
 def collect_source(source):
     kind = source.get("type", "text")
     print(f"collect {kind}: {source.get('url') or source.get('channel')}")
+    follow_timeout = int(source.get("follow_timeout", 10))
 
     if kind == "telegram":
         text = fetch_text(telegram_url(source), timeout=int(source.get("timeout", 30)))
         proxies = proxies_from_text(text)
         if source.get("follow_subscription_links", True):
-            followed = 0
+            attempted = 0
             for url in extract_http_links(text):
-                if followed >= int(source.get("max_follow", 8)):
+                if attempted >= int(source.get("max_follow", 8)):
                     break
                 if not should_follow_url(url):
                     continue
+                attempted += 1
                 try:
-                    proxies.extend(proxies_from_text(fetch_text(url, timeout=20)))
-                    followed += 1
+                    proxies.extend(proxies_from_text(fetch_text(url, timeout=follow_timeout)))
                 except Exception as exc:
                     print(f"skip followed url {url}: {exc}")
         return proxies
@@ -301,20 +302,20 @@ def collect_source(source):
         return proxies_from_clash(text)
     proxies = proxies_from_text(text)
     if source.get("follow_subscription_links", False):
-        followed = 0
+        attempted = 0
         for url in extract_http_links(text):
-            if followed >= int(source.get("max_follow", 12)):
+            if attempted >= int(source.get("max_follow", 6)):
                 break
             if not should_follow_url(url):
                 continue
+            attempted += 1
             try:
-                found = proxies_from_text(fetch_text(url, timeout=20))
+                found = proxies_from_text(fetch_text(url, timeout=follow_timeout))
             except Exception as exc:
                 print(f"skip followed url {url}: {exc}")
                 continue
             if found:
                 proxies.extend(found)
-                followed += 1
     return proxies
 
 
