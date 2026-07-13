@@ -25,7 +25,7 @@ jobs:
       - name: Collect candidate proxies
         env:
           CANDIDATES_URL: ${{ vars.CANDIDATES_URL }}
-          SOURCES_JSON: ${{ vars.SOURCES_JSON }}
+          SOURCES_JSON: ${{ vars.SOURCES_JSON || secrets.SOURCES_JSON }}
         run: |
           mkdir -p data
           python scripts/collect_sources.py --config config/sources.json --output-yaml data/candidates.yaml --output-json data/candidates.json
