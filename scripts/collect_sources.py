@@ -265,10 +265,14 @@ def telegram_url(source):
 
 
 def should_follow_url(url):
-    lowered = url.lower()
-    if any(part in lowered for part in ("t.me/", "telegram.me/", "github.com/")):
+    parsed = urllib.parse.urlsplit(url)
+    host = parsed.netloc.lower()
+    path = parsed.path.lower()
+    if host in ("t.me", "telegram.me", "telegram.org"):
         return False
-    return any(token in lowered for token in ("clash", "sub", "subscribe", "proxy", "node", "yaml", "yml", "txt"))
+    if path.endswith((".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4", ".mov", ".zip", ".apk", ".exe")):
+        return False
+    return parsed.scheme in ("http", "https")
 
 
 def collect_source(source):

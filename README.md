@@ -74,7 +74,7 @@ Supported source types:
 
 - `clash`: Clash YAML with top-level `proxies`.
 - `text`: plain text, base64 subscription text, or a page containing proxy links.
-- `telegram`: public Telegram channel page, using `https://t.me/s/<channel>`.
+- `telegram`: public Telegram channel page, using `https://t.me/s/<channel>`. When `follow_subscription_links` is true, the collector also tries ordinary HTTP links in recent public messages and keeps only links that parse into proxies.
 
 Do not commit private subscription URLs to a public repository. Put private or semi-private sources in GitHub repository variables or secrets.
 
