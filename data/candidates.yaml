@@ -2,10 +2,3500 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 233boy-tcp-207.57.135.122
+  type: vless
+  server: 207.57.135.122
+  port: 50635
+  uuid: f73acaea-1bda-41e2-8614-8d9ce865557a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: CF节点
+  type: vless
+  server: ldgb.pages.dev
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ldgb.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: ldgb.pages.dev
+- name: 中国香港 Hytron Network Services Limited↓13mb/s
+  type: vmess
+  server: as.dcsaw.rfgh.dsfdsgrrey.boutique
+  port: 21949
+  uuid: a4040c61-d8a8-4ded-8c07-98aabafcdcac
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- name: bucharest-blade7-rack483
+  type: http
+  server: 84.239.49.59
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack489
+  type: http
+  server: 84.239.49.209
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade17-rack488
+  type: http
+  server: 84.239.49.191
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack489
+  type: http
+  server: 84.239.49.204
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack487
+  type: http
+  server: 84.239.49.168
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack491
+  type: http
+  server: 84.239.49.242
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack485
+  type: http
+  server: 84.239.14.165
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack490
+  type: http
+  server: 84.239.49.220
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack488
+  type: http
+  server: 84.239.49.176
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack483
+  type: http
+  server: 84.239.49.62
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack453
+  type: http
+  server: 193.176.84.34
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack482
+  type: http
+  server: 84.239.49.39
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade16-rack491
+  type: http
+  server: 84.239.49.253
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade19-rack490
+  type: http
+  server: 84.239.49.235
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack490
+  type: http
+  server: 84.239.49.226
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack490
+  type: http
+  server: 84.239.49.219
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack483
+  type: http
+  server: 84.239.49.55
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack482
+  type: http
+  server: 84.239.49.50
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack452
+  type: http
+  server: 193.176.84.22
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack451
+  type: http
+  server: 193.176.84.7
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack483
+  type: http
+  server: 84.239.49.54
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack485
+  type: http
+  server: 84.239.14.172
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade20-rack490
+  type: http
+  server: 84.239.49.236
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade18-rack489
+  type: http
+  server: 84.239.49.213
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack483
+  type: http
+  server: 84.239.49.60
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack484
+  type: http
+  server: 84.239.14.160
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack482
+  type: http
+  server: 84.239.49.48
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack483
+  type: http
+  server: 84.239.49.53
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade18-rack488
+  type: http
+  server: 84.239.49.192
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack485
+  type: http
+  server: 84.239.14.164
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack482
+  type: http
+  server: 84.239.49.47
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack488
+  type: http
+  server: 84.239.49.180
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack451
+  type: http
+  server: 193.176.84.9
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack489
+  type: http
+  server: 84.239.49.199
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack489
+  type: http
+  server: 84.239.49.203
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack484
+  type: http
+  server: 84.239.14.149
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack490
+  type: http
+  server: 84.239.49.223
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack490
+  type: http
+  server: 84.239.49.217
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack487
+  type: http
+  server: 84.239.49.156
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack488
+  type: http
+  server: 84.239.49.183
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack490
+  type: http
+  server: 84.239.49.218
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack452
+  type: http
+  server: 193.176.84.26
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack484
+  type: http
+  server: 84.239.14.155
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack483
+  type: http
+  server: 84.239.49.58
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack488
+  type: http
+  server: 84.239.49.179
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack485
+  type: http
+  server: 84.239.14.176
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade17-rack487
+  type: http
+  server: 84.239.49.170
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade17-rack490
+  type: http
+  server: 84.239.49.233
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade20-rack488
+  type: http
+  server: 84.239.49.194
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack488
+  type: http
+  server: 84.239.49.181
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack484
+  type: http
+  server: 84.239.14.156
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack453
+  type: http
+  server: 193.176.84.40
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack488
+  type: http
+  server: 84.239.49.178
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack491
+  type: http
+  server: 84.239.49.238
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack487
+  type: http
+  server: 84.239.49.162
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade20-rack487
+  type: http
+  server: 84.239.49.173
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade17-rack491
+  type: http
+  server: 84.239.49.254
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack487
+  type: http
+  server: 84.239.49.163
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack453
+  type: http
+  server: 193.176.84.36
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade18-rack490
+  type: http
+  server: 84.239.49.234
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack490
+  type: http
+  server: 84.239.49.224
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack485
+  type: http
+  server: 84.239.14.170
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack451
+  type: http
+  server: 193.176.84.5
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack482
+  type: http
+  server: 84.239.49.38
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack451
+  type: http
+  server: 193.176.84.14
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack487
+  type: http
+  server: 84.239.49.154
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack451
+  type: http
+  server: 193.176.84.8
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack452
+  type: http
+  server: 193.176.84.16
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack452
+  type: http
+  server: 193.176.84.21
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack484
+  type: http
+  server: 84.239.14.146
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack484
+  type: http
+  server: 84.239.14.153
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack482
+  type: http
+  server: 84.239.49.49
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack489
+  type: http
+  server: 84.239.49.197
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack484
+  type: http
+  server: 84.239.14.159
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack487
+  type: http
+  server: 84.239.49.166
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack489
+  type: http
+  server: 84.239.49.207
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack453
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack490
+  type: http
+  server: 84.239.49.230
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack491
+  type: http
+  server: 84.239.49.240
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack452
+  type: http
+  server: 193.176.84.27
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack484
+  type: http
+  server: 84.239.14.147
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack488
+  type: http
+  server: 84.239.49.187
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade19-rack489
+  type: http
+  server: 84.239.49.214
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack482
+  type: http
+  server: 84.239.49.42
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack452
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade16-rack489
+  type: http
+  server: 84.239.49.211
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack485
+  type: http
+  server: 84.239.14.166
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack491
+  type: http
+  server: 84.239.49.245
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack490
+  type: http
+  server: 84.239.49.222
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack491
+  type: http
+  server: 84.239.49.248
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack451
+  type: http
+  server: 193.176.84.11
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack487
+  type: http
+  server: 84.239.49.155
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack491
+  type: http
+  server: 84.239.49.249
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack485
+  type: http
+  server: 84.239.14.162
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack490
+  type: http
+  server: 84.239.49.231
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack491
+  type: http
+  server: 84.239.49.247
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack453
+  type: http
+  server: 193.176.84.39
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack452
+  type: http
+  server: 193.176.84.19
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack484
+  type: http
+  server: 84.239.14.157
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack489
+  type: http
+  server: 84.239.49.206
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack484
+  type: http
+  server: 84.239.14.158
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack490
+  type: http
+  server: 84.239.49.225
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack482
+  type: http
+  server: 84.239.49.43
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack485
+  type: http
+  server: 84.239.14.175
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack453
+  type: http
+  server: 193.176.84.33
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack490
+  type: http
+  server: 84.239.49.228
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade18-rack487
+  type: http
+  server: 84.239.49.171
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack453
+  type: http
+  server: 193.176.84.38
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack490
+  type: http
+  server: 84.239.49.227
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack487
+  type: http
+  server: 84.239.49.165
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack485
+  type: http
+  server: 84.239.14.167
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack483
+  type: http
+  server: 84.239.49.56
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack489
+  type: http
+  server: 84.239.49.196
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack452
+  type: http
+  server: 193.176.84.23
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack451
+  type: http
+  server: 193.176.84.4
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack452
+  type: http
+  server: 193.176.84.17
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack482
+  type: http
+  server: 84.239.49.37
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade20-rack489
+  type: http
+  server: 84.239.49.215
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack491
+  type: http
+  server: 84.239.49.244
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack488
+  type: http
+  server: 84.239.49.182
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack490
+  type: http
+  server: 84.239.49.229
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack489
+  type: http
+  server: 84.239.49.201
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack488
+  type: http
+  server: 84.239.49.175
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack484
+  type: http
+  server: 84.239.14.154
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack491
+  type: http
+  server: 84.239.49.252
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack482
+  type: http
+  server: 84.239.49.41
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack452
+  type: http
+  server: 193.176.84.20
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack489
+  type: http
+  server: 84.239.49.208
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack491
+  type: http
+  server: 84.239.49.241
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack487
+  type: http
+  server: 84.239.49.164
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack483
+  type: http
+  server: 84.239.49.57
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack487
+  type: http
+  server: 84.239.49.167
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade5-rack489
+  type: http
+  server: 84.239.49.200
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack487
+  type: http
+  server: 84.239.49.159
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack489
+  type: http
+  server: 84.239.49.202
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack451
+  type: http
+  server: 193.176.84.6
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack453
+  type: http
+  server: 193.176.84.30
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade14-rack491
+  type: http
+  server: 84.239.49.251
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack485
+  type: http
+  server: 84.239.14.163
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack453
+  type: http
+  server: 193.176.84.31
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade8-rack487
+  type: http
+  server: 84.239.49.161
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade9-rack453
+  type: http
+  server: 193.176.84.37
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade15-rack488
+  type: http
+  server: 84.239.49.189
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack482
+  type: http
+  server: 84.239.49.40
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack451
+  type: http
+  server: 193.176.84.3
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack453
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade12-rack488
+  type: http
+  server: 84.239.49.186
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack487
+  type: http
+  server: 84.239.49.160
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack451
+  type: http
+  server: 193.176.84.12
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack452
+  type: http
+  server: 193.176.84.25
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade10-rack488
+  type: http
+  server: 84.239.49.184
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade1-rack453
+  type: http
+  server: 193.176.84.29
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade4-rack487
+  type: http
+  server: 84.239.49.157
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade7-rack484
+  type: http
+  server: 84.239.14.152
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade6-rack484
+  type: http
+  server: 84.239.14.151
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack484
+  type: http
+  server: 84.239.14.148
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade13-rack485
+  type: http
+  server: 84.239.14.174
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade3-rack489
+  type: http
+  server: 84.239.49.198
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade17-rack489
+  type: http
+  server: 84.239.49.212
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade2-rack491
+  type: http
+  server: 84.239.49.239
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: bucharest-blade11-rack488
+  type: http
+  server: 84.239.49.185
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+  sni: www.bing.com
+- name: 🇺🇸_US_美国
+  type: ss
+  server: 3.17.162.229
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: hysteria2
+  server: vpn-us-003.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-003.fastervpn.world
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
+  type: hysteria2
+  server: ff2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: ff2.yuntong.click
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  type: vless
+  server: 162.159.36.42
+  port: 443
+  uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
+  network: ws
+  servername: bbc.zjxc.de5.net
+  tls: true
+  ws-opts:
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+    headers:
+      Host: bbc.zjxc.de5.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯
+  type: hysteria2
+  server: 46.17.40.117
+  port: 51385
+  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
+  sni: music.apple.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: ss
+  server: 3.15.193.107
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  type: vless
+  server: cf.cloudflare.182682.xyz
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: vp685zjn.backend-node.danfeng3.xyz
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /danfeng-2j7q21-obe7zv-3gz2-982it7pj
+    headers:
+      Host: vp685zjn.backend-node.danfeng3.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  type: hysteria2
+  server: 45.196.182.129
+  port: 8449
+  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
+  type: hysteria2
+  server: 45.196.182.243
+  port: 8449
+  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_3
+  type: hysteria2
+  server: 172.96.141.4
+  port: 52738
+  password: cb887032-0447-4216-be3c-7333ecdcda9a
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 47.254.156.143
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.company-target.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_4
+  type: hysteria2
+  server: 147.90.235.195
+  port: 52625
+  password: 13d29042-ab82-4195-9cd4-2bafc518e201
+  sni: apps.apple.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: vmess
+  server: planb.mojcn.com
+  port: 16644
+  uuid: 0db8b699-548d-4ed8-b720-6194783ecc9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 445eb7ce2d66c34309d2e1dacbeaf3b9.mobgslb.tbcache.com
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: ss
+  server: 82.38.31.35
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬_SG_新加坡
+  type: hysteria2
+  server: 104.234.233.100
+  port: 55000
+  password: 140dfd67-61be-45e8-b234-0a5529d47ebc
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: hysteria2
+  server: 156.226.172.6
+  port: 55000
+  password: 3213f4a7-4817-45b8-bfff-59e5836a78bc
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_NL_荷兰_1
+  type: vless
+  server: assets.hihidress.com
+  port: 443
+  uuid: 27f914c5-bdcc-441a-9459-368daf552606
+  servername: m.media-amazon.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0
+    short-id: 6ba85179e30d4fc2
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_5
+  type: vmess
+  server: 107.173.7.186
+  port: 2095
+  uuid: 383737a2-a196-44b6-a9ac-4f8cc23c9637
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: 107.173.7.186
+  network: ws
+  ws-opts:
+    path: 383737a2-a196-44b6-a9ac-4f8cc23c9637-vm
+  udp: true
+- name: 🇺🇸_US_美国_6
+  type: hysteria2
+  server: 156.229.164.1
+  port: 55000
+  password: 3a73ed62-94e5-4c36-856e-a87e2d2487f2
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+  type: hysteria2
+  server: 45.196.182.179
+  port: 8449
+  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
+  type: vless
+  server: 162.159.152.48
+  port: 443
+  uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
+  network: ws
+  servername: bbc.zjxc.de5.net
+  tls: true
+  ws-opts:
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      Host: bbc.zjxc.de5.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬_SG_新加坡_1
+  type: vless
+  server: earthpro.wasmer.app
+  port: 443
+  uuid: 9b0b4404-f1eb-4551-9b88-e0aac7843c86
+  network: ws
+  servername: earthpro.wasmer.app
+  tls: true
+  ws-opts:
+    path: /9b0b4404
+    headers:
+      Host: earthpro.wasmer.app
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国_2
+  type: vless
+  server: www.visa.com.br
+  port: 2087
+  uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
+  network: ws
+  servername: bbc.zjxc.de5.net
+  tls: true
+  ws-opts:
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+    headers:
+      Host: bbc.zjxc.de5.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国
+  type: tuic
+  server: 62.210.24.143
+  port: 33888
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  udp-relay-mode: native
+  skip-cert-verify: true
+  disable-sni: false
+  udp: true
+- name: 如节点故障请更新订阅
+  type: vmess
+  server: cdn.node001.top
+  port: 2082
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  alterId: 0
+  cipher: auto
+  udp: true
+  servername: cdn-hk01.cnlinkms001.top.
+  network: ws
+  ws-path: /api/v1
+  ws-headers:
+    Host: cdn-hk01.cnlinkms001.top.
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-hk01.cnlinkms001.top.
+- name: 飞行模式开关有助快速恢复
+  type: vless
+  server: cdn.node001.top
+  port: 2052
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  tls: true
+  servername: cdn-kh01.node006.top
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: CF|HK 香港01|推荐-MITM
+  type: vmess
+  server: cdn.10086.cn.linkms001.store
+  port: 2082
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  alterId: 0
+  cipher: auto
+  udp: true
+  servername: cdn-hk01.node007.top.
+  network: ws
+  ws-path: /api/v1
+  ws-headers:
+    Host: cdn-hk01.node007.top.
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-hk01.node007.top.
+- name: CF|HK 香港07|推荐
+  type: vless
+  server: cdn.node001.top
+  port: 443
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  tls: true
+  servername: cdn-hk07.node002.top.
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-hk07.node002.top.
+- name: CF|HK 香港X|推荐
+  type: vmess
+  server: cdn-auto.linkms001.top
+  port: 2082
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  alterId: 0
+  cipher: auto
+  udp: true
+  servername: cdn-hk10.node007.top.
+  network: ws
+  ws-path: /api/v1
+  ws-headers:
+    Host: cdn-hk10.node007.top.
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-hk10.node007.top.
+- name: CF|JP 日本02|推荐
+  type: vless
+  server: cdn-auto.linkms001.top
+  port: 2083
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  tls: true
+  servername: cdn-jp02.node002.top.
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-jp02.node002.top.
+- name: CF|MYS 马来西亚01|推荐
+  type: vless
+  server: cdn.node001.top
+  port: 2082
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  servername: cdn-mys01.node007.top.
+  network: ws
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-mys01.node007.top.
+- name: CF|TR 土耳其01|推荐
+  type: vmess
+  server: cdn.node001.top
+  port: 2052
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  alterId: 0
+  cipher: auto
+  udp: true
+  servername: cdn-tr01.node007.top.
+  network: ws
+  ws-path: /api/v1
+  ws-headers:
+    Host: cdn-tr01.node007.top.
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: cdn-tr01.node007.top.
+- name: 直连|UK 英国01-联通
+  type: vless
+  server: uk01.linkms001.com
+  port: 443
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  tls: true
+  servername: uk01.linkms001.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: IEPL|HK 香港01 MITM|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 43438
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港02|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 26578
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港03|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 33878
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港04|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 26899
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港05|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 14920
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港06|D
+  type: ss
+  server: cn3.hk.nodelinkms001.nl
+  port: 31039
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港07|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 49514
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港08|D
+  type: ss
+  server: cn3.hk.nodelinkms001.nl
+  port: 27452
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港09|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 29346
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|HK 香港X|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 20691
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|ID 印度尼西亚01|D
+  type: ss
+  server: cn1.sg.nodelinkms001.nl
+  port: 27887
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|IN 印度01|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 27889
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|JP 日本01|D
+  type: ss
+  server: cn3.jp.nodelinkms001.nl
+  port: 24346
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|JP 日本02|D
+  type: ss
+  server: cn3.jp.nodelinkms001.nl
+  port: 42599
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|JP 日本03|D
+  type: ss
+  server: cn2.jp.nodelinkms001.nl
+  port: 49748
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|JP 日本04 MITM|D
+  type: ss
+  server: cn2.jp.nodelinkms001.nl
+  port: 38200
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|JP 日本05|D
+  type: ss
+  server: cn1.jp.nodelinkms001.nl
+  port: 36881
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|KH 柬埔寨 01|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 32550
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|KR 韩国01|D
+  type: ss
+  server: cn3.jp.nodelinkms001.nl
+  port: 17942
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|KR 韩国02|D
+  type: ss
+  server: cn3.jp.nodelinkms001.nl
+  port: 35334
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|MO 澳门|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 40875
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|MYS 马来西亚01|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 20885
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡01|D
+  type: ss
+  server: cn1.sg.nodelinkms001.nl
+  port: 34790
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡02|D
+  type: ss
+  server: cn1.sg.nodelinkms001.nl
+  port: 49899
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡03|D
+  type: ss
+  server: cn2.sg.nodelinkms001.nl
+  port: 20900
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡04|D
+  type: ss
+  server: cn2.sg.nodelinkms001.nl
+  port: 20938
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡05 MITM|D
+  type: ss
+  server: cn2.sg.nodelinkms001.nl
+  port: 26003
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡06|D
+  type: ss
+  server: cn2.sg.nodelinkms001.nl
+  port: 10030
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|SG 新加坡07|D
+  type: ss
+  server: cn2.sg.nodelinkms001.nl
+  port: 34916
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|TR 土耳其01|D
+  type: ss
+  server: cn3.hk.nodelinkms001.nl
+  port: 26007
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|TW 台湾01 MITM|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 26078
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|TW 台湾02|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 49309
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|TW 台湾03|D
+  type: ss
+  server: cn2.hk.nodelinkms001.nl
+  port: 27438
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|US 美国01|D
+  type: ss
+  server: cn1.jp.nodelinkms001.nl
+  port: 24820
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|US 美国02|D
+  type: ss
+  server: cn2.jp.nodelinkms001.nl
+  port: 39200
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|US 美国03 MITM|D
+  type: ss
+  server: cn2.jp.nodelinkms001.nl
+  port: 24822
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|US 美国04|D
+  type: ss
+  server: cn1.jp.nodelinkms001.nl
+  port: 28172
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|US 美国05|D
+  type: ss
+  server: cn2.jp.nodelinkms001.nl
+  port: 10202
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|VN 越南01|D
+  type: ss
+  server: cn1.hk.nodelinkms001.nl
+  port: 42824
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: IEPL|PH 菲律宾01
+  type: ss
+  server: cn2.hk.linkms001.store
+  port: 20692
+  cipher: chacha20-ietf-poly1305
+  password: WgTM12xdhsE84wPm
+  udp: true
+- name: 直连|防断网专用
+  type: vless
+  server: hkt1.linkms001.com
+  port: 20520
+  uuid: 9464fa37-28e9-3661-bd9c-26fdcd170435
+  udp: true
+  tls: true
+  servername: hkt1.linkms001.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: SCP|US
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: partition-shepherd-vic-behalf.trycloudflare.com
+    path: /b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69-vm
+  servername: partition-shepherd-vic-behalf.trycloudflare.com
+- name: 'SCP|US #2'
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: 6a4e7e55-9f07-4c54-abdd-72b9820f4cb3
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: explicit-freeware-animation-greg.trycloudflare.com
+    path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
+  servername: explicit-freeware-animation-greg.trycloudflare.com
+- name: SCP|HK
+  type: vmess
+  server: cdn.31514926.xyz
+  port: 443
+  uuid: 48d5eb0f-fd55-4357-baec-a68fa39a4b1b
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: admit-statute-live-undertaken.trycloudflare.com
+    path: /48d5eb0f-fd55-4357-baec-a68fa39a4b1b-vm
+  servername: admit-statute-live-undertaken.trycloudflare.com
+- name: 'SCP|HK #2'
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: 6d28e73a-a184-4b6a-ab5a-efc2980d38fc
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: playstation-schema-collections-equilibrium.trycloudflare.com
+    path: /6d28e73a-a184-4b6a-ab5a-efc2980d38fc-vm
+  servername: playstation-schema-collections-equilibrium.trycloudflare.com
+- name: 'SCP|HK #3'
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: 7fd8d1db-96ec-4e46-80a8-74ad9472384e
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: graph-keep-beds-catalog.trycloudflare.com
+    path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
+  servername: graph-keep-beds-catalog.trycloudflare.com
+- name: 'SCP|US #3'
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vienna-bread-threats-amendment.trycloudflare.com
+    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
+  servername: vienna-bread-threats-amendment.trycloudflare.com
+- name: 'SCP|HK #4'
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: a2243c24-a82c-4098-bc4d-e85331a1e1d1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: associations-bryan-manchester-latino.trycloudflare.com
+    path: /a2243c24-a82c-4098-bc4d-e85331a1e1d1-vm
+  servername: associations-bryan-manchester-latino.trycloudflare.com
+- name: 'SCP|HK #5'
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: 6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: attitude-interracial-country-gen.trycloudflare.com
+    path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
+  servername: attitude-interracial-country-gen.trycloudflare.com
+- name: SCP|JP
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: blogging-responsibility-recruiting-most.trycloudflare.com
+    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
+  servername: blogging-responsibility-recruiting-most.trycloudflare.com
+- name: AUS
+  type: vless
+  server: 207.148.84.152
+  port: 443
+  uuid: 2ea4840c-8f4c-4103-a79f-e97202afd4be
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.sony.com
+  flow: xtls-rprx-vision
+- name: 'SCP|JP #2'
+  type: vmess
+  server: jp01.scpnb.top
+  port: 443
+  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: jp01.scpnb.top
+    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
+  servername: jp01.scpnb.top
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 149.28.241.235
+  port: 443
+  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
+  sni: 149.28.241.235
+- name: 美国+华盛顿Cogent通信公司
+  type: trojan
+  server: 38.60.168.129
+  port: 443
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
+  sni: 38.60.168.129
+- name: '美国+华盛顿Cogent通信公司 #2'
+  type: ss
+  server: 38.54.80.160
+  port: 16292
+  cipher: chacha20-ietf-poly1305
+  password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy
+- name: 澳大利亚+Fastly节点
+  type: vless
+  server: 151.101.168.11
+  port: 80
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cfd4.466688.xyz
+  port: 443
+  uuid: 7ebbd929-720a-4782-8c6d-4d77a0a75ee4
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: edge-e47d0df3.pages.dev
+  ws-opts:
+    path: /?ed=2048@https://t.me/QiangLieTuiJianfp=chromefp=chrome
+    headers:
+      Host: edge-e47d0df3.pages.dev
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 172.64.52.134
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 罗马尼亚+V2CROSS.COM
+  type: trojan
+  server: 185.137.157.156
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  sni: 185.137.157.156
+  network: tcp
+- name: '美国+V2CROSS.COM #2'
+  type: vless
+  server: 199.232.92.11
+  port: 80
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: '美国+V2CROSS.COM #3'
+  type: trojan
+  server: 45.130.125.32
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 印度+V2CROSS.COM
+  type: ss
+  server: 103.111.114.82
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+- name: '罗马尼亚+V2CROSS.COM #2'
+  type: trojan
+  server: 185.137.157.149
+  port: 443
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  sni: 185.137.157.149
+- name: '美国+V2CROSS.COM #4'
+  type: vless
+  server: 199.232.56.11
+  port: 80
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: '美国+华盛顿Cogent通信公司 #3'
+  type: trojan
+  server: 38.54.64.247
+  port: 443
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  sni: 38.54.64.247
+- name: 美国+加州
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+V2CROSS.COM #5'
+  type: vless
+  server: 199.232.180.11
+  port: 80
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: '美国+V2CROSS.COM #6'
+  type: vless
+  server: 199.232.132.11
+  port: 80
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: Fastapi.Org
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 81.19.137.144
+  port: 40443
+  uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: deepl.com
+  flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-5.21更新
+  type: vless
+  server: 192.200.160.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime43.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.21更新 #2'
+  type: vless
+  server: 45.153.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.21更新 #3'
+  type: vless
+  server: 109.176.239.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime03.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.21更新 #4'
+  type: vless
+  server: 45.153.7.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.21更新 #5'
+  type: vless
+  server: 45.153.7.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.21更新 #6'
+  type: vless
+  server: 91.206.71.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+- name: US美国(v2clash.blog 2026-5.23更新
+  type: vless
+  server: 104.17.150.224
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: pagescm.freen15.cc.cd
+  ws-opts:
+    path: /album/bt
+    headers:
+      Host: pagescm.freen15.cc.cd
+- name: 'US美国(v2clash.blog 2026-5.23更新 #2'
+  type: vless
+  server: www.visa.com.sg
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: pagescm.freen9.cc.cd
+  ws-opts:
+    path: /htm/docs/archive
+    headers:
+      Host: pagescm.freen9.cc.cd
+- name: 'US美国(v2clash.blog 2026-5.23更新 #3'
+  type: vless
+  server: 63.141.128.3
+  port: 443
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: qyi.fqjd663.ggff.net
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+- name: 'US美国(v2clash.blog 2026-5.23更新 #4'
+  type: vless
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: US美国(v2clash.blog 2026-5.25更新
+  type: vless
+  server: 162.159.254.137
+  port: 2053
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nai3.api-gateway-01.chinat.indevs.in
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: nai3.api-gateway-01.chinat.indevs.in
+- name: 'US美国(v2clash.blog 2026-5.25更新 #2'
+  type: vless
+  server: pages.cloudflare.com
+  port: 2053
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nai3.api-gateway-01.chinat.indevs.in
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: nai3.api-gateway-01.chinat.indevs.in
+- name: 'US美国(v2clash.blog 2026-5.25更新 #3'
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: JP日本(v2clash.blog 2026-5.25更新
+  type: vless
+  server: 162.141.130.233
+  port: 24443
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: guslef2w8oz12wv.ymj.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: guslef2w8oz12wv.ymj.xx.kg
+- name: 'US美国(v2clash.blog 2026-5.25更新 #4'
+  type: vless
+  server: static.shopify.com
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: mz0tgmxz.user-api.chinav.eu.org
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: mz0tgmxz.user-api.chinav.eu.org
+- name: 'US美国(v2clash.blog 2026-5.25更新 #5'
+  type: vless
+  server: www.investec.com
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: mz0tgmxz.user-api.chinav.eu.org
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: mz0tgmxz.user-api.chinav.eu.org
+- name: US美国(v2clash.blog 2026-5.26更新
+  type: vless
+  server: 104.16.58.115
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: sni.latonyamadeline.ndjp.net
+  ws-opts:
+    path: /?https://t.me/wangcai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: 'US美国(v2clash.blog 2026-5.26更新 #2'
+  type: vless
+  server: 94.140.0.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.26更新 #3'
+  type: vless
+  server: 104.129.164.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+- name: US美国(v2clash.blog 2026-5.28更新
+  type: vless
+  server: www.visa.com
+  port: 80
+  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.28更新 #2'
+  type: vless
+  server: 213.219.247.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+- name: US美国(v2clash.blog 2026-5.30更新
+  type: vless
+  server: 2606:4700:8de7::2762:4286
+  port: 80
+  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: sfsl.ardomains1.dpdns.org
+- name: 'US美国(v2clash.blog 2026-5.30更新 #2'
+  type: vless
+  server: 2606:4700:8de7::2762:4286
+  port: 443
+  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: sfsl.ardomains1.dpdns.org
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: sfsl.ardomains1.dpdns.org
+- name: JP日本(v2clash.blog 2026-5.30更新
+  type: vless
+  server: 104.25.242.55
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: HK香港(v2clash.blog 2026-5.30更新
+  type: vless
+  server: 104.26.5.134
+  port: 2096
+  uuid: 7f50ec42-4673-41e2-94be-ae6253909def
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: joey.freen1.de5.net
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: joey.freen1.de5.net
+- name: 'US美国(v2clash.blog 2026-5.30更新 #3'
+  type: vless
+  server: cdn.tzpro.xyz
+  port: 80
+  uuid: f2083aa4-f27d-43da-81cf-8bab31730400
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: germany.vipserver14.workers.dev
+- name: RU俄罗斯(v2clash.blog 2026-6.3更新
+  type: vless
+  server: r1.mizulina.top
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: r1.mizulina.top
+  flow: xtls-rprx-vision
+- name: GB英国(v2clash.blog 2026-6.3更新
+  type: vless
+  server: 85.234.114.53
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: r1.mizulina.top
+  flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-6.3更新
+  type: vless
+  server: 85.234.114.53
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: r1.mizulina.top
+  flow: xtls-rprx-vision
+- name: DE德国(v2clash.blog 2026-6.3更新
+  type: vless
+  server: 178.215.238.148
+  port: 8443
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: eh.vk.com
+- name: GB英国(v2clash.blog 2026-6.4更新)
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: US美国(v2clash.blog 2026-6.5更新
+  type: vless
+  server: 166.88.167.206
+  port: 30715
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: 'US美国(v2clash.blog 2026-6.5更新 #2'
+  type: vless
+  server: 8.219.2.255
+  port: 33284
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: 'US美国(v2clash.blog 2026-6.5更新 #3'
+  type: vless
+  server: 104.21.31.4
+  port: 8880
+  uuid: 0a5ab719-2407-4398-b507-8437ef365023
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
+    headers:
+      Host: underthegun.cfd.
+- name: 'US美国(v2clash.blog 2026-6.5更新 #4'
+  type: vless
+  server: 150.251.158.76
+  port: 443
+  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: s646.okgg.top
+  flow: xtls-rprx-vision-udp443
+- name: 'US美国(v2clash.blog 2026-6.5更新 #5'
+  type: vless
+  server: 93.179.99.130
+  port: 777
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: 'US美国(v2clash.blog 2026-6.5更新 #6'
+  type: vless
+  server: 31.76.91.12
+  port: 443
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: jp.s3-cloud.org
+  flow: xtls-rprx-vision
+- name: 塞舌尔(v2clash.blog 2026-6.6更新
+  type: vless
+  server: 45.130.125.2
+  port: 443
+  uuid: bdd885ff-1b3b-40fd-93d5-ac2b29b90f8b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.middle.cc.cd
+- name: US美国(v2clash.blog 2026-6.6更新
+  type: vless
+  server: 31.185.108.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime23.workers.dev
+- name: US美国(v2clash.blog 2026-6.7更新
+  type: vless
+  server: 146.70.20.110
+  port: 20205
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: 'US美国(v2clash.blog 2026-6.7更新 #2'
+  type: vless
+  server: 172.67.185.178
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: GB英国(v2clash.blog 2026-6.7更新
+  type: vless
+  server: 31.76.91.9
+  port: 443
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: jp.s3-cloud.org
+  flow: xtls-rprx-vision
+- name: 'GB英国(v2clash.blog 2026-6.7更新 #2'
+  type: vless
+  server: 31.76.91.14
+  port: 443
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: jp.s3-cloud.org
+  flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-6.8更新
+  type: vless
+  server: srv-06a2a6.21freedom.net
+  port: 443
+  uuid: fa86a0cf-fc25-4fdd-8479-f18229446428
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.microsoft.com
+- name: 'US美国(v2clash.blog 2026-6.8更新 #2'
+  type: vless
+  server: japan.com
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: misaka.cndyw.ggff.net
+  ws-opts:
+    path: /
+    headers:
+      Host: misaka.cndyw.ggff.net
+- name: DE德国(v2clash.blog 2026-6.8更新
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 0dbad6ba-be87-46e1-ab90-30c53ef1878d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: drive.speegy.club
+- name: JP日本(v2clash.blog 2026-6.9更新
+  type: vless
+  server: 151.101.108.223
+  port: 443
+  uuid: 98c9f668-1f2f-4a6d-bd7a-606fab0ac035
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: jookeji.global.ssl.fastly.net
+- name: 'JP日本(v2clash.blog 2026-6.9更新 #2'
+  type: vless
+  server: 151.101.108.223
+  port: 443
+  uuid: b4a00211-ae46-49bc-8f36-0c4425eb7e86
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: nesfsheshab.global.ssl.fastly.net
+- name: HK香港(v2clash.blog 2026-6.9更新
+  type: vless
+  server: 172.67.76.108
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf.hulume.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+- name: DE德国(v2clash.blog 2026-6.25更新
+  type: vless
+  server: 151.101.109.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: US美国(v2clash.blog 2026-6.25更新
+  type: trojan
+  server: 72.249.204.157
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjaaa.hhllfly.kdns.fr
+- name: 'US美国(v2clash.blog 2026-6.25更新 #2'
+  type: vless
+  server: 151.101.48.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 'US美国(v2clash.blog 2026-6.25更新 #3'
+  type: vless
+  server: 151.101.169.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 'US美国(v2clash.blog 2026-6.25更新 #4'
+  type: vless
+  server: 151.101.69.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 'DE德国(v2clash.blog 2026-6.25更新 #2'
+  type: vless
+  server: 151.101.213.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 'DE德国(v2clash.blog 2026-6.25更新 #3'
+  type: vless
+  server: 151.101.108.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 罗马尼亚(v2clash.blog 2026-6.27更新
+  type: trojan
+  server: 103.177.136.42
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  network: tcp
+- name: AU澳大利亚(v2clash.blog 2026-6.27更新
+  type: vless
+  server: tw3.miyazono-kaori.com
+  port: 443
+  uuid: 580d81f8-4f30-49d6-ad90-59fb4a850313
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: dlcdnets.asus.com
+  flow: xtls-rprx-vision
+- name: HK香港(v2clash.blog 2026-6.27更新
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: FR法国(v2clash.blog 2026-6.27更新
+  type: vless
+  server: 104.24.9.6
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ld.223350.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+- name: 'HK香港(v2clash.blog 2026-6.27更新 #2'
+  type: vless
+  server: 104.26.9.216
+  port: 443
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: g1.nzjlerhb.icu
+  ws-opts:
+    path: /app/hk7
+    headers:
+      Host: g1.nzjlerhb.icu
+- name: DE德国(v2clash.blog 2026-6.27更新
+  type: vless
+  server: skk.moe
+  port: 8880
+  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: purple-disk-f68d.14-360.workers.dev
+- name: US美国(v2clash.blog 2026-6.27更新
+  type: trojan
+  server: 165.215.250.14
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: US美国(v2clash.blog 2026-7.2更新
+  type: vless
+  server: 144.202.108.119
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'US美国(v2clash.blog 2026-7.2更新 #2'
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: 75323b6f-184f-4d00-839d-323b8fc70221
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dry-sunset-f3c4.282.workers.dev
+- name: 'US美国(v2clash.blog 2026-7.2更新 #3'
+  type: vless
+  server: 104.17.21.32
+  port: 8880
+  uuid: 4070e7c9-a412-4ed0-a5fa-fdb455451d2c
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: icy-sky-53f2.9-e8e.workers.dev
+- name: 'US美国(v2clash.blog 2026-7.2更新 #4'
+  type: vless
+  server: 64.186.252.166
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: CA加拿大(v2clash.blog 2026-7.2更新
+  type: vless
+  server: 104.16.148.8
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 芬兰(v2clash.blog 2026-7.7更新
+  type: vless
+  server: 45.196.182.87
+  port: 443
+  uuid: 701ea834-7c31-4544-95d6-f0a4dfe40b36
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: storage.yandex.net
+  flow: xtls-rprx-vision
+- name: SG新加坡(v2clash.blog 2026-7.7更新
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 0f110e5f-fb42-4bc4-84ec-7108e62133eb
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+- name: 'SG新加坡(v2clash.blog 2026-7.7更新 #2'
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: US美国(v2clash.blog 2026-7.7更新
+  type: vless
+  server: 154.17.15.228
+  port: 2101
+  uuid: ccc1f3c2-98a6-4a4b-9bfe-1adb460ba356
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 'US美国(v2clash.blog 2026-7.7更新 #2'
+  type: vless
+  server: 154.17.15.228
+  port: 2101
+  uuid: fa307324-37a3-4259-b6b3-6a2ad295bcdc
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+- name: US美国(v2clash.blog 2026-7.9更新
+  type: vless
+  server: 47.237.186.116
+  port: 57150
+  uuid: f70dc924-b213-4db0-94ec-071c853dadaa
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /f70dc924
+    headers:
+      Host: ''
+- name: CA加拿大(v2clash.blog 2026-7.9更新
+  type: vless
+  server: 104.17.58.113
+  port: 8880
+  uuid: 248b7825-58e7-41cc-899f-95e573e0127b
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: dry-violet-d6e0.38-431.workers.dev
+- name: AU澳大利亚(v2clash.blog 2026-7.9更新
+  type: vless
+  server: 104.17.184.155
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 'US美国(v2clash.blog 2026-7.9更新 #2'
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime50.workers.dev
+- name: 'US美国(v2clash.blog 2026-7.9更新 #3'
+  type: vless
+  server: 104.17.181.19
+  port: 8880
+  uuid: 3bc49320-3dcd-4f30-9215-a4fa964e54c7
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: tight-moon-2d50.457.workers.dev
+- name: 'AU澳大利亚(v2clash.blog 2026-7.9更新 #2'
+  type: vless
+  server: 104.21.63.40
+  port: 80
+  uuid: 93c6c00b-be26-45a3-a23e-c970fb60f2ff
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-67qb7f.zeus-moi2iw.workers.dev
+- name: FR法国(v2clash.blog 2026-7.9更新
+  type: vless
+  server: 104.19.87.194
+  port: 443
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ld.223350.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+- name: CA加拿大(v2clash.blog 2026-7.13更新
+  type: vless
+  server: anydesk.com
+  port: 8880
+  uuid: 2e3431ac-0b98-4471-9822-6b7ae94a9a11
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: polished-hall-7427.463-5d2.workers.dev
+- name: US美国(v2clash.blog 2026-7.13更新
+  type: vless
+  server: 104.16.253.227
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
 proxy-groups:
 - name: PROBE
   type: select
-  proxies: []
+  proxies:
+  - 233boy-tcp-207.57.135.122
+  - CF节点
+  - 中国香港 Hytron Network Services Limited↓13mb/s
+  - bucharest-blade7-rack483
+  - bucharest-blade14-rack489
+  - bucharest-blade17-rack488
+  - bucharest-blade9-rack489
+  - bucharest-blade15-rack487
+  - bucharest-blade5-rack491
+  - bucharest-blade4-rack485
+  - bucharest-blade4-rack490
+  - bucharest-blade2-rack488
+  - bucharest-blade10-rack483
+  - bucharest-blade6-rack453
+  - bucharest-blade3-rack482
+  - bucharest-blade16-rack491
+  - bucharest-blade19-rack490
+  - bucharest-blade10-rack490
+  - bucharest-blade3-rack490
+  - bucharest-blade3-rack483
+  - bucharest-blade14-rack482
+  - bucharest-blade7-rack452
+  - bucharest-blade5-rack451
+  - bucharest-blade2-rack483
+  - bucharest-blade11-rack485
+  - bucharest-blade20-rack490
+  - bucharest-blade18-rack489
+  - bucharest-blade8-rack483
+  - bucharest-blade15-rack484
+  - bucharest-blade12-rack482
+  - bucharest-blade1-rack483
+  - bucharest-blade18-rack488
+  - bucharest-blade3-rack485
+  - bucharest-blade11-rack482
+  - bucharest-blade6-rack488
+  - bucharest-blade7-rack451
+  - bucharest-blade4-rack489
+  - bucharest-blade8-rack489
+  - bucharest-blade4-rack484
+  - bucharest-blade7-rack490
+  - bucharest-blade1-rack490
+  - bucharest-blade3-rack487
+  - bucharest-blade9-rack488
+  - bucharest-blade2-rack490
+  - bucharest-blade11-rack452
+  - bucharest-blade10-rack484
+  - bucharest-blade6-rack483
+  - bucharest-blade5-rack488
+  - bucharest-blade15-rack485
+  - bucharest-blade17-rack487
+  - bucharest-blade17-rack490
+  - bucharest-blade20-rack488
+  - bucharest-blade7-rack488
+  - bucharest-blade11-rack484
+  - bucharest-blade12-rack453
+  - bucharest-blade4-rack488
+  - bucharest-blade1-rack491
+  - bucharest-blade9-rack487
+  - bucharest-blade20-rack487
+  - bucharest-blade17-rack491
+  - bucharest-blade10-rack487
+  - bucharest-blade8-rack453
+  - bucharest-blade18-rack490
+  - bucharest-blade8-rack490
+  - bucharest-blade9-rack485
+  - bucharest-blade3-rack451
+  - bucharest-blade2-rack482
+  - bucharest-blade12-rack451
+  - bucharest-blade1-rack487
+  - bucharest-blade6-rack451
+  - bucharest-blade1-rack452
+  - bucharest-blade6-rack452
+  - bucharest-blade1-rack484
+  - bucharest-blade8-rack484
+  - bucharest-blade13-rack482
+  - bucharest-blade2-rack489
+  - bucharest-blade14-rack484
+  - bucharest-blade13-rack487
+  - bucharest-blade12-rack489
+  - bucharest-blade4-rack453
+  - bucharest-blade14-rack490
+  - bucharest-blade3-rack491
+  - bucharest-blade12-rack452
+  - bucharest-blade2-rack484
+  - bucharest-blade13-rack488
+  - bucharest-blade19-rack489
+  - bucharest-blade6-rack482
+  - bucharest-blade9-rack452
+  - bucharest-blade16-rack489
+  - bucharest-blade5-rack485
+  - bucharest-blade8-rack491
+  - bucharest-blade6-rack490
+  - bucharest-blade11-rack491
+  - bucharest-blade9-rack451
+  - bucharest-blade2-rack487
+  - bucharest-blade12-rack491
+  - bucharest-blade1-rack485
+  - bucharest-blade15-rack490
+  - bucharest-blade10-rack491
+  - bucharest-blade11-rack453
+  - bucharest-blade4-rack452
+  - bucharest-blade12-rack484
+  - bucharest-blade11-rack489
+  - bucharest-blade13-rack484
+  - bucharest-blade9-rack490
+  - bucharest-blade7-rack482
+  - bucharest-blade14-rack485
+  - bucharest-blade5-rack453
+  - bucharest-blade12-rack490
+  - bucharest-blade18-rack487
+  - bucharest-blade10-rack453
+  - bucharest-blade11-rack490
+  - bucharest-blade12-rack487
+  - bucharest-blade6-rack485
+  - bucharest-blade4-rack483
+  - bucharest-blade1-rack489
+  - bucharest-blade8-rack452
+  - bucharest-blade2-rack451
+  - bucharest-blade2-rack452
+  - bucharest-blade1-rack482
+  - bucharest-blade20-rack489
+  - bucharest-blade7-rack491
+  - bucharest-blade8-rack488
+  - bucharest-blade13-rack490
+  - bucharest-blade6-rack489
+  - bucharest-blade1-rack488
+  - bucharest-blade9-rack484
+  - bucharest-blade15-rack491
+  - bucharest-blade5-rack482
+  - bucharest-blade5-rack452
+  - bucharest-blade13-rack489
+  - bucharest-blade4-rack491
+  - bucharest-blade11-rack487
+  - bucharest-blade5-rack483
+  - bucharest-blade14-rack487
+  - bucharest-blade5-rack489
+  - bucharest-blade6-rack487
+  - bucharest-blade7-rack489
+  - bucharest-blade4-rack451
+  - bucharest-blade2-rack453
+  - bucharest-blade14-rack491
+  - bucharest-blade2-rack485
+  - bucharest-blade3-rack453
+  - bucharest-blade8-rack487
+  - bucharest-blade9-rack453
+  - bucharest-blade15-rack488
+  - bucharest-blade4-rack482
+  - bucharest-blade1-rack451
+  - bucharest-blade7-rack453
+  - bucharest-blade12-rack488
+  - bucharest-blade7-rack487
+  - bucharest-blade10-rack451
+  - bucharest-blade10-rack452
+  - bucharest-blade10-rack488
+  - bucharest-blade1-rack453
+  - bucharest-blade4-rack487
+  - bucharest-blade7-rack484
+  - bucharest-blade6-rack484
+  - bucharest-blade3-rack484
+  - bucharest-blade13-rack485
+  - bucharest-blade3-rack489
+  - bucharest-blade17-rack489
+  - bucharest-blade2-rack491
+  - bucharest-blade11-rack488
+  - 🇺🇸_US_美国
+  - 🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_2
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
+  - 🇺🇸_US_美国_3
+  - 🇩🇪_DE_德国_1
+  - 🇺🇸_US_美国_4
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇳🇱_NL_荷兰
+  - 🇸🇬_SG_新加坡
+  - 🇭🇰_HK_中国香港
+  - 🇳🇱_NL_荷兰_1
+  - 🇺🇸_US_美国_5
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国->🇫🇮_FI_芬兰_2
+  - 🇺🇸_US_美国->🇩🇪_DE_德国_1
+  - 🇸🇬_SG_新加坡_1
+  - 🇺🇸_US_美国->🇩🇪_DE_德国_2
+  - 🇫🇷_FR_法国
+  - 如节点故障请更新订阅
+  - 飞行模式开关有助快速恢复
+  - CF|HK 香港01|推荐-MITM
+  - CF|HK 香港07|推荐
+  - CF|HK 香港X|推荐
+  - CF|JP 日本02|推荐
+  - CF|MYS 马来西亚01|推荐
+  - CF|TR 土耳其01|推荐
+  - 直连|UK 英国01-联通
+  - IEPL|HK 香港01 MITM|D
+  - IEPL|HK 香港02|D
+  - IEPL|HK 香港03|D
+  - IEPL|HK 香港04|D
+  - IEPL|HK 香港05|D
+  - IEPL|HK 香港06|D
+  - IEPL|HK 香港07|D
+  - IEPL|HK 香港08|D
+  - IEPL|HK 香港09|D
+  - IEPL|HK 香港X|D
+  - IEPL|ID 印度尼西亚01|D
+  - IEPL|IN 印度01|D
+  - IEPL|JP 日本01|D
+  - IEPL|JP 日本02|D
+  - IEPL|JP 日本03|D
+  - IEPL|JP 日本04 MITM|D
+  - IEPL|JP 日本05|D
+  - IEPL|KH 柬埔寨 01|D
+  - IEPL|KR 韩国01|D
+  - IEPL|KR 韩国02|D
+  - IEPL|MO 澳门|D
+  - IEPL|MYS 马来西亚01|D
+  - IEPL|SG 新加坡01|D
+  - IEPL|SG 新加坡02|D
+  - IEPL|SG 新加坡03|D
+  - IEPL|SG 新加坡04|D
+  - IEPL|SG 新加坡05 MITM|D
+  - IEPL|SG 新加坡06|D
+  - IEPL|SG 新加坡07|D
+  - IEPL|TR 土耳其01|D
+  - IEPL|TW 台湾01 MITM|D
+  - IEPL|TW 台湾02|D
+  - IEPL|TW 台湾03|D
+  - IEPL|US 美国01|D
+  - IEPL|US 美国02|D
+  - IEPL|US 美国03 MITM|D
+  - IEPL|US 美国04|D
+  - IEPL|US 美国05|D
+  - IEPL|VN 越南01|D
+  - IEPL|PH 菲律宾01
+  - 直连|防断网专用
+  - SCP|US
+  - 'SCP|US #2'
+  - SCP|HK
+  - 'SCP|HK #2'
+  - 'SCP|HK #3'
+  - 'SCP|US #3'
+  - 'SCP|HK #4'
+  - 'SCP|HK #5'
+  - SCP|JP
+  - AUS
+  - 'SCP|JP #2'
+  - 美国+V2CROSS.COM
+  - 美国+华盛顿Cogent通信公司
+  - '美国+华盛顿Cogent通信公司 #2'
+  - 澳大利亚+Fastly节点
+  - 美国+CloudFlare节点
+  - '美国+CloudFlare节点 #2'
+  - 罗马尼亚+V2CROSS.COM
+  - '美国+V2CROSS.COM #2'
+  - '美国+V2CROSS.COM #3'
+  - 印度+V2CROSS.COM
+  - '罗马尼亚+V2CROSS.COM #2'
+  - '美国+V2CROSS.COM #4'
+  - '美国+华盛顿Cogent通信公司 #3'
+  - 美国+加州
+  - '美国+V2CROSS.COM #5'
+  - '美国+V2CROSS.COM #6'
+  - 俄罗斯+V2CROSS.COM
+  - US美国(v2clash.blog 2026-5.21更新
+  - 'US美国(v2clash.blog 2026-5.21更新 #2'
+  - 'US美国(v2clash.blog 2026-5.21更新 #3'
+  - 'US美国(v2clash.blog 2026-5.21更新 #4'
+  - 'US美国(v2clash.blog 2026-5.21更新 #5'
+  - 'US美国(v2clash.blog 2026-5.21更新 #6'
+  - US美国(v2clash.blog 2026-5.23更新
+  - 'US美国(v2clash.blog 2026-5.23更新 #2'
+  - 'US美国(v2clash.blog 2026-5.23更新 #3'
+  - 'US美国(v2clash.blog 2026-5.23更新 #4'
+  - US美国(v2clash.blog 2026-5.25更新
+  - 'US美国(v2clash.blog 2026-5.25更新 #2'
+  - 'US美国(v2clash.blog 2026-5.25更新 #3'
+  - JP日本(v2clash.blog 2026-5.25更新
+  - 'US美国(v2clash.blog 2026-5.25更新 #4'
+  - 'US美国(v2clash.blog 2026-5.25更新 #5'
+  - US美国(v2clash.blog 2026-5.26更新
+  - 'US美国(v2clash.blog 2026-5.26更新 #2'
+  - 'US美国(v2clash.blog 2026-5.26更新 #3'
+  - US美国(v2clash.blog 2026-5.28更新
+  - 'US美国(v2clash.blog 2026-5.28更新 #2'
+  - US美国(v2clash.blog 2026-5.30更新
+  - 'US美国(v2clash.blog 2026-5.30更新 #2'
+  - JP日本(v2clash.blog 2026-5.30更新
+  - HK香港(v2clash.blog 2026-5.30更新
+  - 'US美国(v2clash.blog 2026-5.30更新 #3'
+  - RU俄罗斯(v2clash.blog 2026-6.3更新
+  - GB英国(v2clash.blog 2026-6.3更新
+  - US美国(v2clash.blog 2026-6.3更新
+  - DE德国(v2clash.blog 2026-6.3更新
+  - GB英国(v2clash.blog 2026-6.4更新)
+  - US美国(v2clash.blog 2026-6.5更新
+  - 'US美国(v2clash.blog 2026-6.5更新 #2'
+  - 'US美国(v2clash.blog 2026-6.5更新 #3'
+  - 'US美国(v2clash.blog 2026-6.5更新 #4'
+  - 'US美国(v2clash.blog 2026-6.5更新 #5'
+  - 'US美国(v2clash.blog 2026-6.5更新 #6'
+  - 塞舌尔(v2clash.blog 2026-6.6更新
+  - US美国(v2clash.blog 2026-6.6更新
+  - US美国(v2clash.blog 2026-6.7更新
+  - 'US美国(v2clash.blog 2026-6.7更新 #2'
+  - GB英国(v2clash.blog 2026-6.7更新
+  - 'GB英国(v2clash.blog 2026-6.7更新 #2'
+  - US美国(v2clash.blog 2026-6.8更新
+  - 'US美国(v2clash.blog 2026-6.8更新 #2'
+  - DE德国(v2clash.blog 2026-6.8更新
+  - JP日本(v2clash.blog 2026-6.9更新
+  - 'JP日本(v2clash.blog 2026-6.9更新 #2'
+  - HK香港(v2clash.blog 2026-6.9更新
+  - DE德国(v2clash.blog 2026-6.25更新
+  - US美国(v2clash.blog 2026-6.25更新
+  - 'US美国(v2clash.blog 2026-6.25更新 #2'
+  - 'US美国(v2clash.blog 2026-6.25更新 #3'
+  - 'US美国(v2clash.blog 2026-6.25更新 #4'
+  - 'DE德国(v2clash.blog 2026-6.25更新 #2'
+  - 'DE德国(v2clash.blog 2026-6.25更新 #3'
+  - 罗马尼亚(v2clash.blog 2026-6.27更新
+  - AU澳大利亚(v2clash.blog 2026-6.27更新
+  - HK香港(v2clash.blog 2026-6.27更新
+  - FR法国(v2clash.blog 2026-6.27更新
+  - 'HK香港(v2clash.blog 2026-6.27更新 #2'
+  - DE德国(v2clash.blog 2026-6.27更新
+  - US美国(v2clash.blog 2026-6.27更新
+  - US美国(v2clash.blog 2026-7.2更新
+  - 'US美国(v2clash.blog 2026-7.2更新 #2'
+  - 'US美国(v2clash.blog 2026-7.2更新 #3'
+  - 'US美国(v2clash.blog 2026-7.2更新 #4'
+  - CA加拿大(v2clash.blog 2026-7.2更新
+  - 芬兰(v2clash.blog 2026-7.7更新
+  - SG新加坡(v2clash.blog 2026-7.7更新
+  - 'SG新加坡(v2clash.blog 2026-7.7更新 #2'
+  - US美国(v2clash.blog 2026-7.7更新
+  - 'US美国(v2clash.blog 2026-7.7更新 #2'
+  - US美国(v2clash.blog 2026-7.9更新
+  - CA加拿大(v2clash.blog 2026-7.9更新
+  - AU澳大利亚(v2clash.blog 2026-7.9更新
+  - 'US美国(v2clash.blog 2026-7.9更新 #2'
+  - 'US美国(v2clash.blog 2026-7.9更新 #3'
+  - 'AU澳大利亚(v2clash.blog 2026-7.9更新 #2'
+  - FR法国(v2clash.blog 2026-7.9更新
+  - CA加拿大(v2clash.blog 2026-7.13更新
+  - US美国(v2clash.blog 2026-7.13更新
 rules:
 - MATCH,PROBE
