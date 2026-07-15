@@ -1203,28 +1203,22 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国
+- name: 🇩🇪_DE_德国
   type: hysteria2
-  server: 147.90.235.195
-  port: 52625
-  password: 13d29042-ab82-4195-9cd4-2bafc518e201
-  sni: apps.apple.com
+  server: ff2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: ff2.yuntong.click
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   udp: true
-- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  type: hysteria2
-  server: 45.196.182.222
-  port: 8449
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  sni: https://t.me/WangCai2🇨🇳
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱_NL_荷兰
+- name: 🇭🇰_HK_中国香港
   type: vmess
-  server: c87s5.portablesubmarines.com
-  port: 18339
-  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
-  alterId: 0
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
@@ -1237,57 +1231,49 @@ proxies:
   sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria2
-  server: ff2.yuntong.click
-  port: 443
-  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-  sni: ff2.yuntong.click
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: hysteria2
-  server: 172.96.141.4
-  port: 51717
-  password: 73ffcd12-0155-432f-9fd4-c1d2bf9190d7
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: hysteria2
-  server: 202.146.222.29
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷_KR_韩国
-  type: hysteria2
-  server: vpn-kr-003.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-kr-003.fastervpn.world
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: hysteria2
-  server: 46.17.40.117
-  port: 50045
-  password: cb887032-0447-4216-be3c-7333ecdcda9a
-  sni: music.apple.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: hysteria2
-  server: 172.96.141.4
-  port: 50581
-  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国
+  type: ss
+  server: 15.236.37.125
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_2
+  type: hysteria2
+  server: 82.47.32.31
+  port: 52856
+  password: de659099-a3f5-4759-944b-fcef9893d3f3
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_3
+  type: hysteria2
+  server: 82.47.32.31
+  port: 50961
+  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇮_FI_芬兰_1
+  type: ss
+  server: mail2.thirdpaull.monster
+  port: 57327
+  cipher: chacha20-ietf-poly1305
+  password: 2KAu9eMmGwShWTWcuyynmLE81PVkoKDvQ3fb29dPScc1bMUW5y6hpprXqVWqSqjTi234hFGdDf3ArCuWtBw5FA6zV5wBgWTP
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_4
   type: vmess
   server: n1747624274.4u9ma.icu
   port: 443
@@ -1303,60 +1289,81 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
   udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: hysteria2
-  server: 46.17.40.117
-  port: 51857
-  password: 73ffcd12-0155-432f-9fd4-c1d2bf9190d7
-  sni: music.apple.com
+- name: 🇺🇸_US_美国
+  type: ss
+  server: 3.142.135.161
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬_SG_新加坡
-  type: hysteria2
-  server: 104.234.233.100
-  port: 55000
-  password: 140dfd67-61be-45e8-b234-0a5529d47ebc
-  sni: www.bing.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯_2
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vless
-  server: vlessru.duckdns.org
-  port: 8443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  server: 39.107.252.182
+  port: 443
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
   network: ws
-  servername: vlessru.duckdns.org
+  servername: nbhhh.mrcool.kdns.fr
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /wsru
+    path: /proxyip=Telegram-WangCai2🇨🇳
     headers:
-      Host: vlessru.duckdns.org
+      Host: nbhhh.mrcool.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺_RU_俄罗斯_3
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
   type: hysteria2
-  server: 46.17.40.117
-  port: 51385
-  password: a8a5b34d-fe46-487d-bd6a-d9f3101525fd
-  sni: music.apple.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-  type: hysteria2
-  server: 45.196.182.243
+  server: 45.196.182.245
   port: 8449
   password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
   sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国_3
-  type: hysteria2
-  server: 172.96.141.4
-  port: 52738
-  password: cb887032-0447-4216-be3c-7333ecdcda9a
-  sni: api.push.apple.com
+- name: 🇺🇸_US_美国_1
+  type: ss
+  server: 13.59.27.93
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷_KR_韩国
+  type: vmess
+  server: 217.142.138.61
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: http
+  http-opts:
+    path:
+    - /
+  udp: true
+- name: 🇫🇷_FR_法国_1
+  type: tuic
+  server: 62.210.24.143
+  port: 33888
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  udp-relay-mode: native
+  skip-cert-verify: true
+  disable-sni: false
   udp: true
 - name: 🇩🇪_DE_德国_1
   type: vless
@@ -1370,29 +1377,25 @@ proxies:
     public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
   skip-cert-verify: true
   udp: true
-- name: 🇮🇩_ID_印度尼西亚
-  type: trojan
-  server: qfdfsg.wsone.icu
-  port: 443
-  password: M7v%w11Se*
-  sni: qfdfsg.wsone.icu
-  skip-cert-verify: true
+- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
   tls: false
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: tuic
-  server: 62.210.24.143
-  port: 33888
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-  password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  udp-relay-mode: native
   skip-cert-verify: true
-  disable-sni: false
   udp: true
-- name: 🇺🇸_US_美国_4
+- name: 🇭🇰_HK_中国香港_5
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
   type: hysteria2
   server: 128.241.227.213
   port: 40000
@@ -1400,19 +1403,54 @@ proxies:
   sni: bing.com
   skip-cert-verify: true
   udp: true
-- name: 🇰🇷_KR_韩国_1
-  type: vmess
-  server: 217.142.138.61
-  port: 80
-  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇸🇬_SG_新加坡
+  type: hysteria2
+  server: 45.88.42.29
+  port: 50117
+  password: 13d29042-ab82-4195-9cd4-2bafc518e201
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
-  network: http
-  http-opts:
-    path:
-    - /
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: hysteria2
+  server: 5.255.102.165
+  port: 443
+  password: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_3
+  type: hysteria2
+  server: vpn-us-004.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬_SG_新加坡_1
+  type: ss
+  server: ss.049.node-for-bigairport.win
+  port: 19000
+  cipher: chacha20-ietf-poly1305
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_4
+  type: hysteria2
+  server: vpn-us-003.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-003.fastervpn.world
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 如节点故障请更新订阅
   type: vmess
@@ -2141,67 +2179,7 @@ proxies:
   client-fingerprint: chrome
   servername: deepl.com
   flow: xtls-rprx-vision
-- name: US美国(v2clash.blog 2026-5.21更新
-  type: vless
-  server: 192.200.160.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime43.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.21更新 #2'
-  type: vless
-  server: 45.153.7.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.21更新 #3'
-  type: vless
-  server: 109.176.239.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime03.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.21更新 #4'
-  type: vless
-  server: 45.153.7.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.21更新 #5'
-  type: vless
-  server: 45.153.7.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.21更新 #6'
+- name: US美国(v2clash.blog 2026-5.23更新
   type: vless
   server: 91.206.71.50
   port: 8880
@@ -2213,7 +2191,7 @@ proxies:
     path: /?https://t.me/YouTube@小青科学网🇨🇳
     headers:
       Host: vms.lifetime15.workers.dev
-- name: US美国(v2clash.blog 2026-5.23更新
+- name: 'US美国(v2clash.blog 2026-5.23更新 #2'
   type: vless
   server: 104.17.150.224
   port: 443
@@ -2226,7 +2204,7 @@ proxies:
     path: /album/bt
     headers:
       Host: pagescm.freen15.cc.cd
-- name: 'US美国(v2clash.blog 2026-5.23更新 #2'
+- name: 'US美国(v2clash.blog 2026-5.23更新 #3'
   type: vless
   server: www.visa.com.sg
   port: 443
@@ -2239,7 +2217,7 @@ proxies:
     path: /htm/docs/archive
     headers:
       Host: pagescm.freen9.cc.cd
-- name: 'US美国(v2clash.blog 2026-5.23更新 #3'
+- name: 'US美国(v2clash.blog 2026-5.23更新 #4'
   type: vless
   server: 63.141.128.3
   port: 443
@@ -2252,7 +2230,7 @@ proxies:
     path: /
     headers:
       Host: qyi.fqjd663.ggff.net
-- name: 'US美国(v2clash.blog 2026-5.23更新 #4'
+- name: 'US美国(v2clash.blog 2026-5.23更新 #5'
   type: vless
   server: 89.117.112.40
   port: 8880
@@ -2264,6 +2242,18 @@ proxies:
     path: /?ed=2560
     headers:
       Host: vms.lifetime11.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.23更新 #6'
+  type: vless
+  server: 192.200.160.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime43.workers.dev
 - name: US美国(v2clash.blog 2026-5.25更新
   type: vless
   server: 162.159.254.137
@@ -2367,6 +2357,18 @@ proxies:
     headers:
       Host: vms.lifetime26.workers.dev
 - name: 'US美国(v2clash.blog 2026-5.26更新 #3'
+  type: vless
+  server: 109.176.239.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime03.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.26更新 #4'
   type: vless
   server: 104.129.164.30
   port: 8880
@@ -2575,6 +2577,18 @@ proxies:
     headers:
       Host: nn9jdg-k7yewrrk.acg.xx.kg
 - name: 'US美国(v2clash.blog 2026-6.5更新 #6'
+  type: vless
+  server: 45.153.7.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 'US美国(v2clash.blog 2026-6.5更新 #7'
   type: vless
   server: 31.76.91.12
   port: 443
@@ -3119,6 +3133,66 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
+- name: DE德国(v2clash.blog 2026-7.16更新
+  type: vless
+  server: 1.tls.fastly.veraspeed.ir
+  port: 443
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    headers:
+      Host: pan21.global.ssl.fastly.net
+- name: US美国(v2clash.blog 2026-7.16更新
+  type: vless
+  server: 102.177.176.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
+- name: GB英国(v2clash.blog 2026-7.16更新
+  type: vless
+  server: 77.110.113.188
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.samsung.com
+- name: 意大利(v2clash.blog 2026-7.16更新
+  type: vless
+  server: 116.204.164.27
+  port: 7443
+  uuid: 4e243073-f25c-4aab-b3ff-63b6e8ef7f4b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 'DE德国(v2clash.blog 2026-7.16更新 #2'
+  type: vless
+  server: 95.181.160.240
+  port: 8433
+  uuid: 09e6bf0d-02d9-46e9-bf33-bdd533cc494b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
 proxy-groups:
 - name: PROBE
   type: select
@@ -3290,28 +3364,32 @@ proxy-groups:
   - bucharest-blade11-rack488
   - 🇺🇸美国02+|不加速|1倍
   - 🇱🇹_LT_立陶宛
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  - 🇳🇱_NL_荷兰
-  - 🇫🇮_FI_芬兰
   - 🇩🇪_DE_德国
-  - 🇺🇸_US_美国_1
   - 🇭🇰_HK_中国香港
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_2
+  - 🇫🇮_FI_芬兰
   - 🇭🇰_HK_中国香港_1
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇸🇬_SG_新加坡
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
-  - 🇺🇸_US_美国->🇫🇮_FI_芬兰_1
-  - 🇺🇸_US_美国_3
-  - 🇩🇪_DE_德国_1
-  - 🇮🇩_ID_印度尼西亚
   - 🇫🇷_FR_法国
+  - 🇭🇰_HK_中国香港_2
+  - 🇭🇰_HK_中国香港_3
+  - 🇫🇮_FI_芬兰_1
+  - 🇭🇰_HK_中国香港_4
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  - 🇺🇸_US_美国_1
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国
+  - 🇫🇷_FR_法国_1
+  - 🇩🇪_DE_德国_1
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港_5
+  - 🇺🇸_US_美国_2
+  - 🇸🇬_SG_新加坡
+  - 🇳🇱_NL_荷兰
+  - 🇺🇸_US_美国_3
+  - 🇸🇬_SG_新加坡_1
   - 🇺🇸_US_美国_4
-  - 🇰🇷_KR_韩国_1
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
   - 如节点故障请更新订阅
   - 飞行模式开关有助快速恢复
   - CF|HK 香港01|推荐-MITM
@@ -3390,16 +3468,12 @@ proxy-groups:
   - '美国+V2CROSS.COM #5'
   - '美国+V2CROSS.COM #6'
   - 俄罗斯+V2CROSS.COM
-  - US美国(v2clash.blog 2026-5.21更新
-  - 'US美国(v2clash.blog 2026-5.21更新 #2'
-  - 'US美国(v2clash.blog 2026-5.21更新 #3'
-  - 'US美国(v2clash.blog 2026-5.21更新 #4'
-  - 'US美国(v2clash.blog 2026-5.21更新 #5'
-  - 'US美国(v2clash.blog 2026-5.21更新 #6'
   - US美国(v2clash.blog 2026-5.23更新
   - 'US美国(v2clash.blog 2026-5.23更新 #2'
   - 'US美国(v2clash.blog 2026-5.23更新 #3'
   - 'US美国(v2clash.blog 2026-5.23更新 #4'
+  - 'US美国(v2clash.blog 2026-5.23更新 #5'
+  - 'US美国(v2clash.blog 2026-5.23更新 #6'
   - US美国(v2clash.blog 2026-5.25更新
   - 'US美国(v2clash.blog 2026-5.25更新 #2'
   - 'US美国(v2clash.blog 2026-5.25更新 #3'
@@ -3409,6 +3483,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-5.26更新
   - 'US美国(v2clash.blog 2026-5.26更新 #2'
   - 'US美国(v2clash.blog 2026-5.26更新 #3'
+  - 'US美国(v2clash.blog 2026-5.26更新 #4'
   - US美国(v2clash.blog 2026-5.28更新
   - 'US美国(v2clash.blog 2026-5.28更新 #2'
   - US美国(v2clash.blog 2026-5.30更新
@@ -3427,6 +3502,7 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-6.5更新 #4'
   - 'US美国(v2clash.blog 2026-6.5更新 #5'
   - 'US美国(v2clash.blog 2026-6.5更新 #6'
+  - 'US美国(v2clash.blog 2026-6.5更新 #7'
   - 塞舌尔(v2clash.blog 2026-6.6更新
   - US美国(v2clash.blog 2026-6.6更新
   - US美国(v2clash.blog 2026-6.7更新
@@ -3472,5 +3548,10 @@ proxy-groups:
   - FR法国(v2clash.blog 2026-7.9更新
   - CA加拿大(v2clash.blog 2026-7.13更新
   - US美国(v2clash.blog 2026-7.13更新
+  - DE德国(v2clash.blog 2026-7.16更新
+  - US美国(v2clash.blog 2026-7.16更新
+  - GB英国(v2clash.blog 2026-7.16更新
+  - 意大利(v2clash.blog 2026-7.16更新
+  - 'DE德国(v2clash.blog 2026-7.16更新 #2'
 rules:
 - MATCH,PROBE
