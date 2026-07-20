@@ -119242,91 +119242,61 @@ proxies:
   servername: www.wikihow.com
   flow: xtls-rprx-vision
 - name: '美国+V2CROSS.COM #7'
-  type: vless
-  server: x4g-production-6a63.up.railway.app
+  type: trojan
+  server: 149.104.104.58
   port: 443
-  uuid: d624e4a9-39c9-e35b-23d4-f254d9b5b6b9
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: x4g-production-6a63.up.railway.app
-  ws-opts:
-    path: /ws/d624e4a9-39c9-e35b-23d4-f254d9b5b6b9
-    headers:
-      Host: x4g-production-6a63.up.railway.app
-- name: '印度+V2CROSS.COM #3'
-  type: ss
-  server: 103.111.114.71
-  port: 28061
-  cipher: chacha20-ietf-poly1305
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  sni: 149.104.104.58
+- name: '荷兰+V2CROSS.COM #2'
+  type: hysteria2
+  server: 5.255.102.165
+  port: 443
+  password: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
+  sni: 5.255.102.165
+  skip-cert-verify: true
 - name: '美国+CloudFlare节点 #8'
   type: vless
-  server: 172.64.146.102
+  server: 172.67.77.213
   port: 443
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: tianshu13.pages.dev
+  servername: vp17.cc.cd
   ws-opts:
-    path: /pyip=proxyip.sg.cmliussss.net
+    path: /
     headers:
-      Host: tianshu13.pages.dev
+      Host: vp17.cc.cd
 - name: '美国+CloudFlare节点 #9'
-  type: vless
-  server: 104.26.15.137
+  type: trojan
+  server: 162.159.38.183
   port: 443
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: shegeftihaaa.net
-  ws-opts:
-    path: /rsedgws
-    headers:
-      Host: shegeftihaaa.net
-- name: '伊朗+V2CROSS.COM #2'
+  password: VPNCUSTOMIZE
+  sni: ww.offers.de5.net
+  network: xhttp
+- name: 英国+V2CROSS.COM
   type: vless
-  server: 31.58.76.95
-  port: 8443
-  uuid: 7dc3461c-630f-4547-82a9-08042b0daba5
-  network: tcp
+  server: 31.77.201.85
+  port: 443
+  uuid: 16ad976d-b5df-4b4e-87b6-87cc64ac0a8b
+  network: raw
   tls: true
   client-fingerprint: chrome
-  servername: tradingview.com
+  servername: ag-03.rita-cloud.com
   flow: xtls-rprx-vision
 - name: '美国+CloudFlare节点 #10'
-  type: trojan
-  server: 104.26.6.159
-  port: 443
-  password: humanity
-  sni: www.creationlong.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 加拿大+V2CROSS.COM
-  type: hysteria2
-  server: 47.128.145.209
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: '美国+V2CROSS.COM #8'
   type: vless
-  server: 167.82.77.173
+  server: cloudflare.182682.xyz
   port: 443
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: ssl.fastly.com
+  servername: edt2.yfqh08811.ccwu.cc
   ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    path: /
     headers:
-      Host: pan21.global.ssl.fastly.net
+      Host: edt2.yfqh08811.ccwu.cc
 - name: '🇫🇷_FR_法国 #2'
   type: vless
   server: fr.noooo.win
@@ -132135,13 +132105,11 @@ proxy-groups:
   - 荷兰+V2CROSS.COM
   - 捷克+V2CROSS.COM
   - '美国+V2CROSS.COM #7'
-  - '印度+V2CROSS.COM #3'
+  - '荷兰+V2CROSS.COM #2'
   - '美国+CloudFlare节点 #8'
   - '美国+CloudFlare节点 #9'
-  - '伊朗+V2CROSS.COM #2'
+  - 英国+V2CROSS.COM
   - '美国+CloudFlare节点 #10'
-  - 加拿大+V2CROSS.COM
-  - '美国+V2CROSS.COM #8'
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
   - '🇺🇸_US_美国 #2'
