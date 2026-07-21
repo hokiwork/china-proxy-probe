@@ -3,25 +3,23 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  type: vless
-  server: 199.232.86.11
-  port: 80
-  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: Fastapi.Org
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: ss
-  server: 18.191.147.2
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: n1747624260.4u9ma.icu
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: ss
+  server: 82.38.31.57
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
@@ -39,56 +37,7 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 🇫🇷_FR_法国
-  type: ss
-  server: 13.38.46.189
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: ss
-  server: 3.16.130.237
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
-  type: vless
-  server: 172.64.147.236
-  port: 443
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-  network: ws
-  servername: octopusss5.info
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /udfyfws
-    headers:
-      Host: octopusss5.info
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国_1
-  type: ss
-  server: 15.188.74.101
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
+- name: 🇺🇸_US_美国
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -99,40 +48,15 @@ proxies:
   skip-cert-verify: true
   servername: gw.alicdn.com
   udp: true
-- name: 🇳🇱_NL_荷兰
-  type: vless
-  server: argg4.auragg.org
-  port: 443
-  uuid: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
-  network: grpc
-  servername: argg4.auragg.org
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: media.session.poll
+- name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '500'
-  down: '1000'
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: 🇻🇳_VN_越南
-  type: hysteria2
-  server: vn2.yuntong.click
-  port: 443
-  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-  sni: vn2.yuntong.click
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   udp: true
 - name: 🇵🇱_PL_波兰
   type: vless
@@ -148,29 +72,133 @@ proxies:
     short-id: 305570274c0c72cc
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国_1
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   type: vmess
-  server: v33.hdacd.com
-  port: 30833
+  server: v9.hdacd.com
+  port: 30809
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '500'
+  down: '1000'
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇰🇷_KR_韩国
+  type: ss
+  server: 27.255.82.134
+  port: 2078
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬_SG_新加坡
+  type: vless
+  server: 69.48.229.50
+  port: 40443
+  uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: trojan
+  server: 114.80.8.128
+  port: 39001
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  sni: www.yrtok.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇻🇳_VN_越南
+  type: hysteria2
+  server: vn2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: vn2.yuntong.click
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
   type: vmess
-  server: 47.76.127.88
-  port: 5566
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-  alterId: 0
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国_3
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  type: vless
+  server: 172.64.147.236
+  port: 443
+  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  network: ws
+  servername: octopusss5.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /udfyfws
+    headers:
+      Host: octopusss5.info
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇫🇷_FR_法国
   type: ss
-  server: 18.191.132.3
+  server: 35.180.122.124
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国_1
+  type: ss
+  server: 13.36.168.114
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: ss
+  server: 3.16.130.237
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -186,16 +214,25 @@ proxies:
   obfs: salamander
   obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   udp: true
-- name: 🇭🇰_HK_中国香港_1
+- name: 🇭🇰_HK_中国香港_2
   type: vmess
-  server: n1747624260.4u9ma.icu
-  port: 443
-  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_3
+  type: vmess
+  server: 47.76.127.88
+  port: 5566
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  network: ws
   udp: true
 - name: vless
   type: vless
@@ -118792,104 +118829,31 @@ proxies:
   client-fingerprint: firefox
   servername: www.wikihow.com
   flow: xtls-rprx-vision
-- name: '俄罗斯+V2CROSS.COM #2'
-  type: trojan
-  server: still-mastodon.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: still-mastodon.rooster465.autos
-- name: '美国+CloudFlare节点 #8'
-  type: trojan
-  server: 104.26.6.159
-  port: 443
-  password: humanity
-  sni: www.creationlong.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: '印度+V2CROSS.COM #3'
-  type: ss
-  server: 103.111.114.71
-  port: 28061
-  cipher: chacha20-ietf-poly1305
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: trojan
-  server: glowing-deer.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: glowing-deer.rooster465.autos
-- name: 新西兰+V2CROSS.COM
-  type: trojan
-  server: 202.37.33.80
-  port: 443
-  password: humanity
-  sni: www.creationlong.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: '荷兰+V2CROSS.COM #2'
-  type: trojan
-  server: 188.164.248.122
-  port: 443
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  sni: space.byu.id.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /in-pdr
-    headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: '伊朗+V2CROSS.COM #2'
+- name: 德国+黑森州法兰克福DigitalOcean数据中心
   type: vless
-  server: 31.58.76.95
-  port: 8443
-  uuid: 7dc3461c-630f-4547-82a9-08042b0daba5
+  server: 167.172.173.163
+  port: 58324
+  uuid: 3d675570-43d2-443e-93bb-29b9d1fdc563
   network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: tradingview.com
-  flow: xtls-rprx-vision
-- name: '俄罗斯+V2CROSS.COM #4'
-  type: trojan
-  server: full-mackerel.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: full-mackerel.rooster465.autos
-- name: '俄罗斯+V2CROSS.COM #5'
-  type: vless
-  server: sub.mydailystory.xyz
-  port: 49148
-  uuid: 1b3dffb1-1bf6-4e39-8785-58d73a06af0f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.yahoo.com
-- name: 爱尔兰+V2CROSS.COM
-  type: vless
-  server: fl15.myxasecure.space
-  port: 443
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-  network: raw
-  tls: true
-  client-fingerprint: qq
-  servername: fl15.myxasecure.space
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #9'
-  type: vless
-  server: cf8.466688.xyz
-  port: 8880
-  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
-  network: ws
   tls: false
   client-fingerprint: chrome
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
+- name: '美国+V2CROSS.COM #7'
+  type: trojan
+  server: 149.104.104.58
+  port: 443
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  sni: 149.104.104.58
+  network: tcp
+- name: 南非+V2CROSS.COM
+  type: vless
+  server: 45.196.201.46
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: storage.yandex.net
+  flow: xtls-rprx-vision
 - name: '🇫🇷_FR_法国 #2'
   type: vless
   server: fr.noooo.win
@@ -118944,24 +118908,6 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   flow: xtls-rprx-vision
-- name: 🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '🇭🇰_HK_中国香港 #4'
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
 - name: '🇺🇸_US_美国 #3'
   type: vmess
   server: 82.198.246.250
@@ -118987,15 +118933,6 @@ proxies:
   port: 41943
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   sni: az.01.naiun.bilibili.com
-- name: 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
 - name: '🇺🇸_US_美国 #4'
   type: trojan
   server: 90081bb25c.node.tro.cac.cab
@@ -119882,24 +119819,28 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  - 🇫🇷_FR_法国
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国
-  - 🇫🇷_FR_法国_1
-  - 🇺🇸_US_美国_2
-  - 🇳🇱_NL_荷兰
-  - 🇩🇪_DE_德国
-  - 🇻🇳_VN_越南
-  - 🇵🇱_PL_波兰
-  - 🇨🇳_CN_中国_1
   - 🇭🇰_HK_中国香港
-  - 🇺🇸_US_美国_3
-  - 🇩🇪_DE_德国_1
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇬🇧_GB_英国
+  - 🇵🇱_PL_波兰
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇰🇷_KR_韩国
+  - 🇸🇬_SG_新加坡
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇻🇳_VN_越南
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国_1
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 🇭🇰_HK_中国香港_1
+  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 🇫🇷_FR_法国_1
+  - 🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国_1
+  - 🇭🇰_HK_中国香港_2
+  - 🇭🇰_HK_中国香港_3
   - vless
   - 'vless #2'
   - 'vless #3'
@@ -131652,29 +131593,18 @@ proxy-groups:
   - '美国+CloudFlare节点 #7'
   - 荷兰+V2CROSS.COM
   - 捷克+V2CROSS.COM
-  - '俄罗斯+V2CROSS.COM #2'
-  - '美国+CloudFlare节点 #8'
-  - '印度+V2CROSS.COM #3'
-  - '俄罗斯+V2CROSS.COM #3'
-  - 新西兰+V2CROSS.COM
-  - '荷兰+V2CROSS.COM #2'
-  - '伊朗+V2CROSS.COM #2'
-  - '俄罗斯+V2CROSS.COM #4'
-  - '俄罗斯+V2CROSS.COM #5'
-  - 爱尔兰+V2CROSS.COM
-  - '美国+CloudFlare节点 #9'
+  - 德国+黑森州法兰克福DigitalOcean数据中心
+  - '美国+V2CROSS.COM #7'
+  - 南非+V2CROSS.COM
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
   - '🇺🇸_US_美国 #2'
   - '🇭🇰_HK_中国香港 #3'
   - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
   - '🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #2'
-  - 🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
-  - '🇭🇰_HK_中国香港 #4'
   - '🇺🇸_US_美国 #3'
   - '🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #3'
   - 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
-  - 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
   - '🇺🇸_US_美国 #4'
   - US美国(v2clash.blog 2026-5.23更新
   - 'US美国(v2clash.blog 2026-5.23更新 #2'
