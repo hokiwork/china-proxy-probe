@@ -118829,6 +118829,26 @@ proxies:
   client-fingerprint: firefox
   servername: www.wikihow.com
   flow: xtls-rprx-vision
+- name: '印度+V2CROSS.COM #3'
+  type: ss
+  server: 103.111.114.71
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+- name: 山西省太原市 联通
+  type: vmess
+  server: 221.204.41.88
+  port: 443
+  uuid: 1c503beb-4589-409b-bddf-5190925f72f0
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: speeches-obligations-view-epinions.trycloudflare.com
+    path: 1c503beb-4589-409b-bddf-5190925f72f0-vm
+  servername: speeches-obligations-view-epinions.trycloudflare.com
 - name: 德国+黑森州法兰克福DigitalOcean数据中心
   type: vless
   server: 167.172.173.163
@@ -118837,23 +118857,42 @@ proxies:
   network: tcp
   tls: false
   client-fingerprint: chrome
-- name: '美国+V2CROSS.COM #7'
-  type: trojan
-  server: 149.104.104.58
-  port: 443
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  sni: 149.104.104.58
-  network: tcp
-- name: 南非+V2CROSS.COM
+- name: 巴西+V2CROSS.COM
   type: vless
-  server: 45.196.201.46
+  server: 201.51.12.73
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: storage.yandex.net
+  servername: corelink.su
   flow: xtls-rprx-vision
+- name: 美国+科罗拉多州布隆菲尔德市Level+3通信股份有限公司
+  type: vless
+  server: 8.35.211.169
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vp11.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vp11.cc.cd
+- name: '美国+CloudFlare节点 #8'
+  type: vless
+  server: 104.17.191.115
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vp26.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vp26.cc.cd
 - name: '🇫🇷_FR_法国 #2'
   type: vless
   server: fr.noooo.win
@@ -131593,9 +131632,12 @@ proxy-groups:
   - '美国+CloudFlare节点 #7'
   - 荷兰+V2CROSS.COM
   - 捷克+V2CROSS.COM
+  - '印度+V2CROSS.COM #3'
+  - 山西省太原市 联通
   - 德国+黑森州法兰克福DigitalOcean数据中心
-  - '美国+V2CROSS.COM #7'
-  - 南非+V2CROSS.COM
+  - 巴西+V2CROSS.COM
+  - 美国+科罗拉多州布隆菲尔德市Level+3通信股份有限公司
+  - '美国+CloudFlare节点 #8'
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
   - '🇺🇸_US_美国 #2'
