@@ -119390,30 +119390,6 @@ proxies:
   client-fingerprint: firefox
   servername: www.wikihow.com
   flow: xtls-rprx-vision
-- name: '俄罗斯+V2CROSS.COM #2'
-  type: vless
-  server: 5.129.194.34
-  port: 4100
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: live.ok.ru
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: '美国+CloudFlare节点 #8'
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: 乌克兰+V2CROSS.COM
   type: hysteria2
   server: 194.247.182.201
@@ -119432,25 +119408,22 @@ proxies:
   servername: ru2.skydrgn-online.online
 - name: 南非+V2CROSS.COM
   type: vless
-  server: 45.196.201.57
+  server: 154.193.55.183
   port: 443
   uuid: f75814f6-8f81-4847-b792-168c41f2dc85
   network: tcp
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   servername: storage.yandex.net
   flow: xtls-rprx-vision
-- name: 美国+麻省理工学院
+- name: '伊朗+V2CROSS.COM #2'
   type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  network: ws
+  server: d.socialxxmedia.com
+  port: 200
+  uuid: 6bc19aa1-d94b-488c-9b25-47214d371851
+  network: tcp
   tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  client-fingerprint: chrome
 - name: '乌克兰+V2CROSS.COM #2'
   type: hysteria2
   server: 194.247.182.201
@@ -132259,12 +132232,10 @@ proxy-groups:
   - '美国+CloudFlare节点 #7'
   - 荷兰+V2CROSS.COM
   - 捷克+V2CROSS.COM
-  - '俄罗斯+V2CROSS.COM #2'
-  - '美国+CloudFlare节点 #8'
   - 乌克兰+V2CROSS.COM
   - '美国+V2CROSS.COM #7'
   - 南非+V2CROSS.COM
-  - 美国+麻省理工学院
+  - '伊朗+V2CROSS.COM #2'
   - '乌克兰+V2CROSS.COM #2'
   - 🇫🇷_FR_法国
   - '🇭🇰_HK_中国香港 #2'
