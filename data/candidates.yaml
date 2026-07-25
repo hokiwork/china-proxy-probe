@@ -118954,75 +118954,36 @@ proxies:
   client-fingerprint: firefox
   servername: www.wikihow.com
   flow: xtls-rprx-vision
-- name: '俄罗斯+V2CROSS.COM #2'
+- name: 韩国+KT电信
   type: vless
-  server: 77.222.35.10
-  port: 2200
-  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
+  server: 59.12.232.18
+  port: 11481
+  uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783
   network: ws
-  tls: false
+  tls: true
+  client-fingerprint: chrome
+  servername: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
   ws-opts:
-    path: /v1
+    path: /glasspanel/0038ba35_0_1bdabe931208/fp=chrome
     headers:
-      Host: ''
-- name: '美国+V2CROSS.COM #7'
-  type: vless
-  server: jdwadgw.cvewfjg.shop
-  port: 443
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #8'
-  type: vless
-  server: 152.53.127.214
-  port: 443
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #9'
-  type: hysteria2
-  server: 161.33.231.22
-  port: 30000
-  password: b42d90fa667942aebc734d60
-  sni: vpn7.rnmcnm.com
-  skip-cert-verify: false
-- name: 芬兰+V2CROSS.COM
-  type: vless
-  server: s128.okgfw.top
-  port: 443
-  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695099u775a58bcs124.ccgfw.top
-  flow: xtls-rprx-vision
-- name: 南非+V2CROSS.COM
-  type: vless
-  server: 45.196.201.98
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #8'
+      Host: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr
+- name: 北美地区+V2CROSS.COM
   type: trojan
-  server: 104.18.32.47
+  server: 198.62.62.23
   port: 443
   password: humanity
-  sni: www.gossipglove.com
+  sni: www.calmlunch.com
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.gossipglove.com
+      Host: www.calmlunch.com
+- name: '印度+V2CROSS.COM #3'
+  type: ss
+  server: 103.111.114.71
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
 - name: '荷兰+V2CROSS.COM #2'
   type: trojan
   server: 188.164.248.122
@@ -119034,30 +118995,23 @@ proxies:
     path: /in-pdr
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 德国+V2CROSS.COM
+- name: 乌克兰+V2CROSS.COM
   type: hysteria2
-  server: prodfr.h2corp.org
+  server: germany1.noesissite.ru
   port: 443
-  password: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq
-  sni: prodfr.h2corp.org
+  password: 042a1881-44e4-4781-bd40-bf75164faf4f
+  sni: germany1.noesissite.ru
   skip-cert-verify: false
-- name: '南非+V2CROSS.COM #2'
+- name: '美国+V2CROSS.COM #7'
   type: vless
-  server: 45.196.201.185
+  server: 152.53.127.214
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
   network: tcp
   tls: true
-  client-fingerprint: firefox
-  servername: storage.yandex.net
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
   flow: xtls-rprx-vision
-- name: 挪威+V2CROSS.COM
-  type: hysteria2
-  server: usa1.spectrumproxy.shop
-  port: 443
-  password: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-  sni: usa1.spectrumproxy.shop
-  skip-cert-verify: false
 - name: 🇫🇷_FR_法国
   type: vless
   server: fr.noooo.win
@@ -131837,17 +131791,12 @@ proxy-groups:
   - '美国+CloudFlare节点 #7'
   - 荷兰+V2CROSS.COM
   - 捷克+V2CROSS.COM
-  - '俄罗斯+V2CROSS.COM #2'
-  - '美国+V2CROSS.COM #7'
-  - '美国+V2CROSS.COM #8'
-  - '美国+V2CROSS.COM #9'
-  - 芬兰+V2CROSS.COM
-  - 南非+V2CROSS.COM
-  - '美国+CloudFlare节点 #8'
+  - 韩国+KT电信
+  - 北美地区+V2CROSS.COM
+  - '印度+V2CROSS.COM #3'
   - '荷兰+V2CROSS.COM #2'
-  - 德国+V2CROSS.COM
-  - '南非+V2CROSS.COM #2'
-  - 挪威+V2CROSS.COM
+  - 乌克兰+V2CROSS.COM
+  - '美国+V2CROSS.COM #7'
   - 🇫🇷_FR_法国
   - '🇭🇰_HK_中国香港 #2'
   - '🇺🇸_US_美国 #2'
