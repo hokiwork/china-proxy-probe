@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T17:14:28.807509+00:00",
+  "generated_at": "2026-07-28T21:49:06.781172+00:00",
   "proxies": [
     {
       "cipher": "2022-blake3-aes-256-gcm",
@@ -137,13 +137,13 @@
       "network": "ws",
       "port": 2053,
       "server": "91.193.58.217",
-      "servername": "vlso5.1d.mom",
+      "servername": "vlso4.1d.mom",
       "tls": true,
       "type": "vless",
       "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
       "ws-opts": {
         "headers": {
-          "Host": "vlso5.1d.mom"
+          "Host": "vlso4.1d.mom"
         },
         "path": "/socks5=888:888@hkip.1d.mom:1080"
       }
@@ -171,23 +171,6 @@
       "network": "ws",
       "port": 2053,
       "server": "91.193.59.133",
-      "servername": "vlso6.1d.mom",
-      "tls": true,
-      "type": "vless",
-      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
-      "ws-opts": {
-        "headers": {
-          "Host": "vlso6.1d.mom"
-        },
-        "path": "/socks5=888:888@hkip.1d.mom:1080"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "HK 高速03",
-      "network": "ws",
-      "port": 2096,
-      "server": "91.193.58.158",
       "servername": "vlso2.1d.mom",
       "tls": true,
       "type": "vless",
@@ -201,27 +184,27 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "HK 专线01",
+      "name": "HK 高速03",
       "network": "ws",
-      "port": 2053,
-      "server": "91.193.58.219",
-      "servername": "vlso4.1d.mom",
+      "port": 2096,
+      "server": "91.193.58.158",
+      "servername": "vlso6.1d.mom",
       "tls": true,
       "type": "vless",
       "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
       "ws-opts": {
         "headers": {
-          "Host": "vlso4.1d.mom"
+          "Host": "vlso6.1d.mom"
         },
         "path": "/socks5=888:888@hkip.1d.mom:1080"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "name": "HK 专线02",
+      "name": "HK 专线01",
       "network": "ws",
-      "port": 2087,
-      "server": "91.193.58.155",
+      "port": 2053,
+      "server": "91.193.58.219",
       "servername": "vlso5.1d.mom",
       "tls": true,
       "type": "vless",
@@ -235,16 +218,33 @@
     },
     {
       "client-fingerprint": "chrome",
+      "name": "HK 专线02",
+      "network": "ws",
+      "port": 2087,
+      "server": "91.193.58.155",
+      "servername": "vlso4.1d.mom",
+      "tls": true,
+      "type": "vless",
+      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
+      "ws-opts": {
+        "headers": {
+          "Host": "vlso4.1d.mom"
+        },
+        "path": "/socks5=888:888@hkip.1d.mom:1080"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.55TB",
+      "name": "🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.64TB",
       "network": "tcp",
       "port": 443,
       "reality-opts": {
         "public-key": "c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI",
         "short-id": "491b"
       },
-      "server": "104.23.209.155",
-      "servername": "www.radeon.com",
+      "server": "172.70.134.211",
+      "servername": "gpuopen.com",
       "skip-cert-verify": false,
       "tfo": false,
       "tls": true,
@@ -261,7 +261,7 @@
       "obfs-password": "wrtxcn8bodj3n9fm",
       "password": "9hiscch8cd0kbdlw",
       "port": 20530,
-      "server": "104.23.209.155",
+      "server": "172.70.134.211",
       "skip-cert-verify": false,
       "sni": "free.u-8.cc",
       "type": "hysteria2"
@@ -151856,6 +151856,31 @@
       }
     },
     {
+      "name": "英国+Technicolor+SA",
+      "password": "ba07a8af-5544-48ac-ab62-3b6c00a44fa6",
+      "port": 20023,
+      "server": "oplosgru-c.catcat321.com",
+      "sni": "hk.catxstar.com",
+      "type": "trojan"
+    },
+    {
+      "name": "阿塞拜疆+V2CROSS.COM",
+      "password": "ew9_M93_6a31Qd45_hUX3984F_jNZ83x_Nz1l_f",
+      "port": 8443,
+      "server": "94.20.88.13",
+      "skip-cert-verify": false,
+      "sni": "azer-tea-grape.bumbleshrimp.com",
+      "type": "hysteria2"
+    },
+    {
+      "cipher": "chacha20-ietf-poly1305",
+      "name": "香港+Amazon数据中心",
+      "password": "792e0bdb-01db-450c-94c4-925151eb396e",
+      "port": 19001,
+      "server": "ss.047.node-for-bigairport.win",
+      "type": "ss"
+    },
+    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
       "name": "加拿大+V2CROSS.COM",
@@ -151869,182 +151894,27 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #9",
+      "name": "印度+V2CROSS.COM #3",
       "network": "ws",
-      "port": 8443,
-      "server": "ad-007.cloud25075.info",
+      "port": 2053,
+      "server": "103.54.16.230",
+      "servername": "forfreeuse.sub-flow.online",
       "tls": true,
       "type": "vless",
-      "uuid": "2e8beadd-99bf-4fda-8692-8493886504bc",
+      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
       "ws-opts": {
         "headers": {
-          "Host": ""
+          "Host": "forfreeuse.sub-flow.online"
         },
         "path": "/"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #10",
-      "network": "ws",
-      "port": 443,
-      "server": "104.17.147.118",
-      "servername": "support.zoom.us.yxls.eu.cc",
-      "tls": true,
-      "type": "vless",
-      "uuid": "4d10c997-4781-4cd9-82c3-15453523e12c",
-      "ws-opts": {
-        "headers": {
-          "Host": "support.zoom.us.yxls.eu.cc"
-        },
-        "path": "/sg-melbi"
-      }
-    },
-    {
-      "client-fingerprint": "random",
-      "name": "美国+CloudFlare节点 #11",
-      "network": "ws",
-      "port": 2087,
-      "server": "172.64.146.59",
-      "servername": "learn00.evany.de5.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "29ca503d-e6b8-4509-b666-48133f450857",
-      "ws-opts": {
-        "headers": {
-          "Host": "learn00.evany.de5.net"
-        },
-        "path": "/fdip=tw.william.us.ci!txt?ed=2560"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #12",
-      "network": "ws",
-      "port": 443,
-      "server": "172.64.52.73",
-      "servername": "learn00.evany.de5.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "29ca503d-e6b8-4509-b666-48133f450857",
-      "ws-opts": {
-        "headers": {
-          "Host": "learn00.evany.de5.net"
-        },
-        "path": "/fdip=tw.william.us.ci!txtfp=chrome"
-      }
-    },
-    {
-      "name": "美国+CloudFlare节点 #13",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "172.66.47.45",
-      "sni": "www.multiplydose.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.multiplydose.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "南非+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "154.193.55.183",
-      "servername": "storage.yandex.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "11e57eeb-ffdf-4983-a9fa-ad352dea7253"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "name": "美国+CloudFlare节点 #14",
-      "network": "ws",
-      "port": 443,
-      "server": "104.16.75.95",
-      "servername": "fn.ariyuz.org",
-      "tls": true,
-      "type": "vless",
-      "uuid": "03707fb7-0990-440f-88f6-b0e0f7242a38",
-      "ws-opts": {
-        "headers": {
-          "Host": "fn.ariyuz.org"
-        },
-        "path": "/api"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #15",
-      "network": "ws",
-      "port": 443,
-      "server": "104.25.245.126",
-      "servername": "support.zoom.us.yxls.eu.cc",
-      "tls": true,
-      "type": "vless",
-      "uuid": "4d10c997-4781-4cd9-82c3-15453523e12c",
-      "ws-opts": {
-        "headers": {
-          "Host": "support.zoom.us.yxls.eu.cc"
-        },
-        "path": "/sg-melbi"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+麻省理工学院",
+      "name": "美国+V2CROSS.COM #11",
       "network": "ws",
       "port": 80,
-      "server": "18.239.134.69",
-      "tls": false,
-      "type": "vless",
-      "uuid": "f55ce6cc-3f6b-40fc-9e3b-abe26db17009",
-      "ws-opts": {
-        "headers": {
-          "Host": "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #16",
-      "network": "ws",
-      "port": 443,
-      "server": "104.17.147.22",
-      "servername": "octopusss.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "073d1d50-8478-47bf-a828-7a1b381931d5",
-      "ws-opts": {
-        "headers": {
-          "Host": "octopusss.net"
-        },
-        "path": "/odiyfws"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "加拿大+V2CROSS.COM #2",
-      "network": "tcp",
-      "port": 443,
-      "server": "jyvlryz.cvewfjg.shop",
-      "servername": "www.cloudflare.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "4e0f4e59-3613-4f0c-b824-7348413d20e6"
-    },
-    {
-      "name": "美国+Fastly全球Anycast节点",
-      "network": "ws",
-      "port": 80,
-      "server": "151.101.193.54",
+      "server": "167.82.0.17",
       "tls": false,
       "type": "vless",
       "uuid": "c9380ef8-23f8-422e-81fe-ebbb032202cf",
@@ -152056,19 +151926,97 @@
       }
     },
     {
-      "name": "美国+得克萨斯州达拉斯Cloudflare+Warp节点",
+      "client-fingerprint": "safari",
+      "name": "俄罗斯+V2CROSS.COM #2",
       "network": "ws",
-      "password": "humanity",
       "port": 443,
-      "server": "8.6.112.0",
-      "sni": "www.multiplydose.com",
-      "type": "trojan",
+      "server": "46.8.229.48",
+      "servername": "furrycdn.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",
       "ws-opts": {
         "headers": {
-          "Host": "www.multiplydose.com"
+          "Host": "furrycdn.net"
         },
-        "path": "/assignment"
+        "path": "/api/v1/video-stream"
       }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+V2CROSS.COM #12",
+      "network": "raw",
+      "port": 443,
+      "server": "jdwadgw.cvewfjg.shop",
+      "servername": "www.cloudflare.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "711c018e-2692-4aa8-93f3-544d83fcd16c"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #9",
+      "network": "ws",
+      "port": 443,
+      "server": "104.17.149.233",
+      "servername": "support.zoom.us.yxls.eu.cc",
+      "tls": true,
+      "type": "vless",
+      "uuid": "4d10c997-4781-4cd9-82c3-15453523e12c",
+      "ws-opts": {
+        "headers": {
+          "Host": "support.zoom.us.yxls.eu.cc"
+        },
+        "path": "/sg-melbi"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+V2CROSS.COM #13",
+      "network": "tcp",
+      "port": 443,
+      "server": "jdvymxi.cvewfjg.shop",
+      "servername": "www.cloudflare.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "711c018e-2692-4aa8-93f3-544d83fcd16c"
+    },
+    {
+      "name": "保加利亚+V2CROSS.COM #2",
+      "password": "71cada65-d23e-418c-88e4-a06188d14689",
+      "port": 443,
+      "server": "swe-one.quiet-rogue.site",
+      "skip-cert-verify": false,
+      "sni": "swe-one.quiet-rogue.site",
+      "type": "hysteria2"
+    },
+    {
+      "name": "美国+麻省理工学院",
+      "network": "ws",
+      "port": 80,
+      "server": "18.244.214.108",
+      "tls": false,
+      "type": "vless",
+      "uuid": "f27894bf-349c-44e6-a0ce-4c787e18476f",
+      "ws-opts": {
+        "headers": {
+          "Host": "duatoup3wk8q2.cloudfront.net"
+        },
+        "path": "/GDkX4xpB/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+V2CROSS.COM #14",
+      "network": "tcp",
+      "port": 443,
+      "server": "45.155.52.231",
+      "servername": "ru2.skydrgn-online.online",
+      "tls": true,
+      "type": "vless",
+      "uuid": "219f9fec-8983-4f6f-af8c-31bd0c6dbf19"
     },
     {
       "client-fingerprint": "chrome",
@@ -153320,6 +153268,18 @@
         },
         "path": "/@Marisa_kristi"
       }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "US美国(v2clash.blog 2026-7.29更新",
+      "network": "tcp",
+      "port": 443,
+      "server": "154.193.55.183",
+      "servername": "storage.yandex.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "11e57eeb-ffdf-4983-a9fa-ad352dea7253"
     },
     {
       "client-fingerprint": "chrome",

@@ -111,11 +111,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: vlso5.1d.mom
+  servername: vlso4.1d.mom
   ws-opts:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: vlso5.1d.mom
+      Host: vlso4.1d.mom
 - name: HK 高速01
   type: vless
   server: 91.193.59.207
@@ -137,11 +137,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: vlso6.1d.mom
+  servername: vlso2.1d.mom
   ws-opts:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: vlso6.1d.mom
+      Host: vlso2.1d.mom
 - name: HK 高速03
   type: vless
   server: 91.193.58.158
@@ -150,28 +150,15 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: vlso2.1d.mom
+  servername: vlso6.1d.mom
   ws-opts:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: vlso2.1d.mom
+      Host: vlso6.1d.mom
 - name: HK 专线01
   type: vless
   server: 91.193.58.219
   port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vlso4.1d.mom
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso4.1d.mom
-- name: HK 专线02
-  type: vless
-  server: 91.193.58.155
-  port: 2087
   uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   network: ws
   tls: true
@@ -181,8 +168,21 @@ proxies:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
       Host: vlso5.1d.mom
-- name: 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.55TB
-  server: 104.23.209.155
+- name: HK 专线02
+  type: vless
+  server: 91.193.58.155
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso4.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso4.1d.mom
+- name: 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.64TB
+  server: 172.70.134.211
   port: 443
   type: vless
   uuid: ffd483b0-5d19-4500-99fa-f76ad489b8f8
@@ -193,11 +193,11 @@ proxies:
   reality-opts:
     public-key: c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI
     short-id: 491b
-  servername: www.radeon.com
+  servername: gpuopen.com
   client-fingerprint: chrome
   network: tcp
 - name: 🇺🇸 U2-HY-美国
-  server: 104.23.209.155
+  server: 172.70.134.211
   port: 20530
   type: hysteria2
   password: 9hiscch8cd0kbdlw
@@ -119100,6 +119100,25 @@ proxies:
     path: /in-pdr
     headers:
       Host: space.byu.id.yxls.eu.cc
+- name: 英国+Technicolor+SA
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20023
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+- name: 阿塞拜疆+V2CROSS.COM
+  type: hysteria2
+  server: 94.20.88.13
+  port: 8443
+  password: ew9_M93_6a31Qd45_hUX3984F_jNZ83x_Nz1l_f
+  sni: azer-tea-grape.bumbleshrimp.com
+  skip-cert-verify: false
+- name: 香港+Amazon数据中心
+  type: ss
+  server: ss.047.node-for-bigairport.win
+  port: 19001
+  cipher: chacha20-ietf-poly1305
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
 - name: 加拿大+V2CROSS.COM
   type: vless
   server: 167.17.68.205
@@ -119110,161 +119129,104 @@ proxies:
   client-fingerprint: chrome
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #9'
+- name: '印度+V2CROSS.COM #3'
   type: vless
-  server: ad-007.cloud25075.info
-  port: 8443
-  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  server: 103.54.16.230
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
   network: ws
   tls: true
   client-fingerprint: chrome
+  servername: forfreeuse.sub-flow.online
   ws-opts:
     path: /
     headers:
-      Host: ''
-- name: '美国+CloudFlare节点 #10'
+      Host: forfreeuse.sub-flow.online
+- name: '美国+V2CROSS.COM #11'
   type: vless
-  server: 104.17.147.118
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: '美国+CloudFlare节点 #11'
-  type: vless
-  server: 172.64.146.59
-  port: 2087
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: learn00.evany.de5.net
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt?ed=2560
-    headers:
-      Host: learn00.evany.de5.net
-- name: '美国+CloudFlare节点 #12'
-  type: vless
-  server: 172.64.52.73
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: learn00.evany.de5.net
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txtfp=chrome
-    headers:
-      Host: learn00.evany.de5.net
-- name: '美国+CloudFlare节点 #13'
-  type: trojan
-  server: 172.66.47.45
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 南非+V2CROSS.COM
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #14'
-  type: vless
-  server: 104.16.75.95
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: fn.ariyuz.org
-  ws-opts:
-    path: /api
-    headers:
-      Host: fn.ariyuz.org
-- name: '美国+CloudFlare节点 #15'
-  type: vless
-  server: 104.25.245.126
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 美国+麻省理工学院
-  type: vless
-  server: 18.239.134.69
+  server: 167.82.0.17
   port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   network: ws
   tls: false
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: '美国+CloudFlare节点 #16'
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: '俄罗斯+V2CROSS.COM #2'
   type: vless
-  server: 104.17.147.22
+  server: 46.8.229.48
   port: 443
-  uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: ws
+  tls: true
+  client-fingerprint: safari
+  servername: furrycdn.net
+  ws-opts:
+    path: /api/v1/video-stream
+    headers:
+      Host: furrycdn.net
+- name: '美国+V2CROSS.COM #12'
+  type: vless
+  server: jdwadgw.cvewfjg.shop
+  port: 443
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+  network: raw
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #9'
+  type: vless
+  server: 104.17.149.233
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: octopusss.net
+  servername: support.zoom.us.yxls.eu.cc
   ws-opts:
-    path: /odiyfws
+    path: /sg-melbi
     headers:
-      Host: octopusss.net
-- name: '加拿大+V2CROSS.COM #2'
+      Host: support.zoom.us.yxls.eu.cc
+- name: '美国+V2CROSS.COM #13'
   type: vless
-  server: jyvlryz.cvewfjg.shop
+  server: jdvymxi.cvewfjg.shop
   port: 443
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
   network: tcp
   tls: true
   client-fingerprint: chrome
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
-- name: 美国+Fastly全球Anycast节点
+- name: '保加利亚+V2CROSS.COM #2'
+  type: hysteria2
+  server: swe-one.quiet-rogue.site
+  port: 443
+  password: 71cada65-d23e-418c-88e4-a06188d14689
+  sni: swe-one.quiet-rogue.site
+  skip-cert-verify: false
+- name: 美国+麻省理工学院
   type: vless
-  server: 151.101.193.54
+  server: 18.244.214.108
   port: 80
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
   network: ws
   tls: false
   ws-opts:
-    path: /
+    path: /GDkX4xpB/
     headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  type: trojan
-  server: 8.6.112.0
+      Host: duatoup3wk8q2.cloudfront.net
+- name: '美国+V2CROSS.COM #14'
+  type: vless
+  server: 45.155.52.231
   port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: ru2.skydrgn-online.online
 - name: '🇫🇷_FR_法国 #2'
   type: vless
   server: fr.noooo.win
@@ -120228,6 +120190,16 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: US美国(v2clash.blog 2026-7.29更新
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: storage.yandex.net
+  flow: xtls-rprx-vision
 - name: PL波兰(v2clash.blog 2026-7.29更新
   type: vless
   server: 151.245.192.193
@@ -120297,7 +120269,7 @@ proxy-groups:
   - HK 高速03
   - HK 专线01
   - HK 专线02
-  - 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.55TB
+  - 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.64TB
   - 🇺🇸 U2-HY-美国
   - 🇭🇰_HK_中国香港
   - 🇭🇰_HK_中国香港_1
@@ -132082,20 +132054,19 @@ proxy-groups:
   - 法国+法国计算机科学大学
   - 美国+宾利大学
   - '荷兰+V2CROSS.COM #2'
+  - 英国+Technicolor+SA
+  - 阿塞拜疆+V2CROSS.COM
+  - 香港+Amazon数据中心
   - 加拿大+V2CROSS.COM
+  - '印度+V2CROSS.COM #3'
+  - '美国+V2CROSS.COM #11'
+  - '俄罗斯+V2CROSS.COM #2'
+  - '美国+V2CROSS.COM #12'
   - '美国+CloudFlare节点 #9'
-  - '美国+CloudFlare节点 #10'
-  - '美国+CloudFlare节点 #11'
-  - '美国+CloudFlare节点 #12'
-  - '美国+CloudFlare节点 #13'
-  - 南非+V2CROSS.COM
-  - '美国+CloudFlare节点 #14'
-  - '美国+CloudFlare节点 #15'
+  - '美国+V2CROSS.COM #13'
+  - '保加利亚+V2CROSS.COM #2'
   - 美国+麻省理工学院
-  - '美国+CloudFlare节点 #16'
-  - '加拿大+V2CROSS.COM #2'
-  - 美国+Fastly全球Anycast节点
-  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  - '美国+V2CROSS.COM #14'
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
   - '🇺🇸_US_美国 #2'
@@ -132180,6 +132151,7 @@ proxy-groups:
   - GB英国(v2clash.blog 2026-7.16更新
   - 意大利(v2clash.blog 2026-7.16更新
   - 'DE德国(v2clash.blog 2026-7.16更新 #2'
+  - US美国(v2clash.blog 2026-7.29更新
   - PL波兰(v2clash.blog 2026-7.29更新
   - FR法国(v2clash.blog 2026-7.29更新)
   - CA加拿大(v2clash.blog 2026-7.29更新
