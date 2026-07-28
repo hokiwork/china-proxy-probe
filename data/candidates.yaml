@@ -3,29 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 新加坡 亚马逊云12mbps
-  type: vless
-  server: 54.255.130.218
-  port: 25822
-  uuid: d79206ce-7685-4bd2-9e84-7f4505f2c1bc
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: videos.apple.com
-  ws-opts:
-    path: /vless
-    headers:
-      Host: videos.apple.com
-- name: 印度孟买Maharashtra-G-Core Labs S.A.-12mbps
-  type: vless
-  server: 185.163.2.58
-  port: 25567
-  uuid: 65fe3945-59b1-4b87-9f21-aaa9e41b0cac
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
 - name: 美国1|Shadowsocks[1x
   type: ss
   server: r.358.onl
@@ -99,14 +76,174 @@ proxies:
   password: b42d90fa667942aebc734d60
   sni: vpn7.rnmcnm.com
   skip-cert-verify: false
-- name: 🇯🇵_JP_日本
+- name: 🇯🇵|日本星链家宽-IEPL 02
   type: trojan
-  server: harmless-pegasus.rooster465.autos
+  server: hkdcrtc-e.catcat321.com
+  port: 20129
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  network: tcp
+- name: 🇯🇵|日本星链家宽-IEPL 01
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  network: tcp
+- name: 美国(US) 新泽西州 北伯根，端口可以选择:443,8443,2087,2096,2083
+  type: vless
+  server: bn2-7dd.pages.dev
+  port: 2087
+  uuid: 12638655-b7b3-4752-8a3b-6d890dc3dfbb
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: bn2-7dd.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: bn2-7dd.pages.dev
+- name: 节点分享频道@hutaocfyx
+  type: vless
+  server: 91.193.58.217
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso5.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: HK 高速01
+  type: vless
+  server: 91.193.59.207
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso3.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso3.1d.mom
+- name: HK 高速02
+  type: vless
+  server: 91.193.59.133
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso4.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso4.1d.mom
+- name: HK 高速03
+  type: vless
+  server: 91.193.58.158
+  port: 2096
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso2.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso2.1d.mom
+- name: HK 专线01
+  type: vless
+  server: 91.193.58.219
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso6.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso6.1d.mom
+- name: HK 专线02
+  type: vless
+  server: 91.193.58.155
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso5.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.44TB
+  server: 172.68.23.68
   port: 443
-  password: NQ26071394
-  sni: harmless-pegasus.rooster465.autos
-  skip-cert-verify: true
+  type: vless
+  uuid: ffd483b0-5d19-4500-99fa-f76ad489b8f8
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI
+    short-id: f29e8f4f38
+  servername: shop-us-en.amd.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇺🇸 U2-HY-美国
+  server: 172.68.23.68
+  port: 20530
+  type: hysteria2
+  password: 9hiscch8cd0kbdlw
+  auth: 9hiscch8cd0kbdlw
+  sni: free.u-8.cc
+  skip-cert-verify: false
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: wrtxcn8bodj3n9fm
+- name: '🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.44TB #2'
+  server: 172.71.254.211
+  port: 443
+  type: vless
+  uuid: ffd483b0-5d19-4500-99fa-f76ad489b8f8
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI
+    short-id: f29e8f4f38
+  servername: amd.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '🇺🇸 U2-HY-美国 #2'
+  server: 172.71.254.211
+  port: 20530
+  type: hysteria2
+  password: 9hiscch8cd0kbdlw
+  auth: 9hiscch8cd0kbdlw
+  sni: free.u-8.cc
+  skip-cert-verify: false
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: wrtxcn8bodj3n9fm
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
   tls: false
+  skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港
   type: vmess
@@ -118,14 +255,46 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬_SG_新加坡
-  type: trojan
-  server: square-gnat.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: square-gnat.rooster465.autos
-  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
   tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: vless
+  server: 95.85.228.34
+  port: 443
+  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
+  network: grpc
+  servername: 1vga81kaw013f-topology-gslb-yccdn.ru
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: nexusGrpc
+  reality-opts:
+    public-key: ibignrnL_bVupAb4hFM939eT22FtlzPvc1FZY_FDwnw
+    short-id: 5e3ab3ab228625
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  type: vless
+  server: 199.232.22.39
+  port: 443
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+  network: ws
+  servername: ssl.fastly.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    headers:
+      Host: pan1.global.ssl.fastly.net
+  skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港_1
   type: vless
@@ -147,36 +316,6 @@ proxies:
     short-id: 31fb576726
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱_NL_荷兰
-  type: vless
-  server: upload.onetimeok.com
-  port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  network: grpc
-  servername: upload.onetimeok.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: app.v1.StreamService
-  reality-opts:
-    public-key: nhw3l7ERW8NoAh5lBv3dxkF-mkNYifxsSxX_HNiOhAU
-    short-id: 82674cbe556a1209
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇪_SE_瑞典
-  type: vless
-  server: 185.231.101.89
-  port: 443
-  uuid: ecad47b0-249e-4f6f-adff-e3c8f02b1897
-  servername: se.quattro-tech.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸_US_美国->🇫🇷_FR_法国
   type: vmess
   server: 4cdn.njkrpl.com
@@ -188,86 +327,46 @@ proxies:
   skip-cert-verify: true
   network: ws
   udp: true
-- name: 🇳🇱_NL_荷兰_1
-  type: trojan
-  server: renewed-phoenix.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: renewed-phoenix.rooster465.autos
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '11'
+  down: '55'
+  sni: bing.com
   skip-cert-verify: true
-  tls: false
+  alpn:
+  - h3
   udp: true
 - name: 🇭🇰_HK_中国香港_2
+  type: vmess
+  server: n1747624260.4u9ma.icu
+  port: 443
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇺🇸_US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇰_SK_斯洛伐克
   type: ss
-  server: c722s1.portablesubmarines.com
-  port: 16025
-  cipher: aes-256-gcm
-  password: gXtfJmxrZ8Qkkd2k
+  server: 156.146.40.84
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: Vr06rU_v1vFPYeXq9zbsAA
   skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡_1
-  type: trojan
-  server: emerging-baboon.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: emerging-baboon.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇰🇷_KR_韩国
-  type: trojan
-  server: flexible-titmouse.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: flexible-titmouse.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇯🇵_JP_日本_1
-  type: trojan
-  server: fit-marten.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: fit-marten.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇸🇬_SG_新加坡_2
-  type: trojan
-  server: evident-ant.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: evident-ant.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇯🇵_JP_日本_2
-  type: trojan
-  server: grateful-crawdad.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: grateful-crawdad.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇸🇬_SG_新加坡_3
-  type: trojan
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria2
-  server: ff2.yuntong.click
-  port: 443
-  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-  sni: ff2.yuntong.click
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   udp: true
 - name: 🇭🇰_HK_中国香港_3
   type: vmess
@@ -280,78 +379,70 @@ proxies:
   skip-cert-verify: true
   network: ws
   udp: true
-- name: 🇰🇷_KR_韩国_1
-  type: trojan
-  server: modest-amoeba.rooster465.autos
+- name: 🇩🇪_DE_德国_1
+  type: hysteria2
+  server: ff2.yuntong.click
   port: 443
-  password: NQ26071394
-  sni: modest-amoeba.rooster465.autos
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: ff2.yuntong.click
   skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_4
-  type: vmess
-  server: v10.zgtfqs.click
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵_JP_日本_3
-  type: trojan
-  server: warm-bass.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: warm-bass.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇯🇵_JP_日本_4
-  type: trojan
-  server: elegant-marten.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: elegant-marten.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇰🇷_KR_韩国_2
-  type: trojan
-  server: polished-shrew.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: polished-shrew.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇰🇷_KR_韩国_3
-  type: trojan
-  server: massive-ocelot.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: massive-ocelot.rooster465.autos
-  skip-cert-verify: true
-  tls: false
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   udp: true
 - name: 🇫🇷_FR_法国
+  type: tuic
+  server: 62.210.24.143
+  port: 33888
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  congestion-controller: cubic
+  udp-relay-mode: native
+  skip-cert-verify: true
+  disable-sni: false
+  udp: true
+- name: 🇩🇪_DE_德国_2
   type: trojan
-  server: ready-kangaroo.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: ready-kangaroo.rooster465.autos
+  server: mahsa246qub5.mahsaaminivpn.com
+  port: 27068
+  password: 5X8o4K1Ybu
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇪🇸_ES_西班牙
-  type: trojan
-  server: 193.148.19.213
-  port: 52794
-  password: 2eutknankxtbgkwcajzt
-  sni: 193.148.19.213
-  skip-cert-verify: true
+- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  type: vless
+  server: 5.129.194.34
+  port: 4100
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  network: ws
   tls: false
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_3
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  auth_str: dongtaiwang.com
+  up: '500'
+  down: '1000'
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇩🇪_DE_德国_4
+  type: ss
+  server: 3.75.172.120
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国
   type: vless
@@ -119031,35 +119122,58 @@ proxies:
     path: /in-pdr
     headers:
       Host: space.byu.id.yxls.eu.cc
+- name: '伊朗+V2CROSS.COM #2'
+  type: vless
+  server: 31.56.146.50
+  port: 443
+  uuid: 2d7c8eef-49c0-4d89-a74f-591ea805274d
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: yahoo.com
 - name: '美国+V2CROSS.COM #11'
   type: vless
-  server: 45.155.52.231
+  server: jdvymxi.cvewfjg.shop
   port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: ru2.skydrgn-online.online
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: 阿塞拜疆+V2CROSS.COM
+  type: hysteria2
+  server: 94.20.88.13
+  port: 8443
+  password: ew9_M93_6a31Qd45_hUX3984F_jNZ83x_Nz1l_f
+  sni: azer-tea-grape.bumbleshrimp.com
+  skip-cert-verify: false
+- name: '美国+CloudFlare节点 #9'
+  type: vless
+  server: 108.162.194.119
+  port: 443
+  uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: fosae.starriverway-milo.sbs
+  ws-opts:
+    path: /sea
+    headers:
+      Host: fosae.starriverway-milo.sbs
 - name: '美国+V2CROSS.COM #12'
   type: vless
-  server: 167.82.0.17
-  port: 80
-  uuid: a69d5300-8101-47b5-9448-6730f228af37
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-- name: '印度+V2CROSS.COM #3'
-  type: ss
-  server: 103.111.114.71
-  port: 28061
-  cipher: chacha20-ietf-poly1305
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-- name: '美国+CloudFlare节点 #9'
+  server: 152.53.239.182
+  port: 443
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: 巴西圣保罗+CloudFlare节点
   type: trojan
-  server: 104.26.14.137
+  server: 188.114.97.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -119068,17 +119182,58 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 美国+麻省理工学院
+- name: '美国+V2CROSS.COM #13'
   type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: ru2.skydrgn-online.online
+- name: '美国+CloudFlare节点 #10'
+  type: vless
+  server: 104.16.72.20
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
-  tls: false
+  tls: true
+  client-fingerprint: chrome
+  servername: t1s1.rittbo.kdns.fr
   ws-opts:
-    path: /
+    path: /fp
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: t1s1.rittbo.kdns.fr
+- name: '美国+CloudFlare节点 #11'
+  type: vless
+  server: ip.sb
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: learn00.evany.de5.net
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
+- name: 英国+Technicolor+SA
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20006
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+- name: '美国+CloudFlare节点 #12'
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: '🇫🇷_FR_法国 #2'
   type: vless
   server: fr.noooo.win
@@ -119095,7 +119250,7 @@ proxies:
   uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
   network: tcp
   tls: false
-- name: 🇺🇸_US_美国
+- name: '🇺🇸_US_美国 #2'
   type: vmess
   server: 82.198.246.214
   port: 180
@@ -119151,7 +119306,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: '🇺🇸_US_美国 #2'
+- name: '🇺🇸_US_美国 #3'
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -119185,7 +119340,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: '🇺🇸_US_美国 #3'
+- name: '🇺🇸_US_美国 #4'
   type: trojan
   server: 90081bb25c.node.tro.cac.cab
   port: 48697
@@ -120071,8 +120226,6 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 新加坡 亚马逊云12mbps
-  - 印度孟买Maharashtra-G-Core Labs S.A.-12mbps
   - 美国1|Shadowsocks[1x
   - 美国2|Shadowsocks[1x
   - 美国
@@ -120082,31 +120235,37 @@ proxy-groups:
   - 香港
   - 澳大利亚
   - 澳大利亚2
-  - 🇯🇵_JP_日本
+  - 🇯🇵|日本星链家宽-IEPL 02
+  - 🇯🇵|日本星链家宽-IEPL 01
+  - 美国(US) 新泽西州 北伯根，端口可以选择:443,8443,2087,2096,2083
+  - 节点分享频道@hutaocfyx
+  - HK 高速01
+  - HK 高速02
+  - HK 高速03
+  - HK 专线01
+  - HK 专线02
+  - 🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.44TB
+  - 🇺🇸 U2-HY-美国
+  - '🇺🇸 U1-美国-linuxDo|⏳∞D-已用2.44TB #2'
+  - '🇺🇸 U2-HY-美国 #2'
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   - 🇭🇰_HK_中国香港
-  - 🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇳🇱_NL_荷兰
-  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港_1
   - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - 🇳🇱_NL_荷兰_1
-  - 🇭🇰_HK_中国香港_2
-  - 🇸🇬_SG_新加坡_1
-  - 🇰🇷_KR_韩国
-  - 🇯🇵_JP_日本_1
-  - 🇸🇬_SG_新加坡_2
-  - 🇯🇵_JP_日本_2
-  - 🇸🇬_SG_新加坡_3
   - 🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港_2
+  - 🇺🇸_US_美国
+  - 🇸🇰_SK_斯洛伐克
   - 🇭🇰_HK_中国香港_3
-  - 🇰🇷_KR_韩国_1
-  - 🇭🇰_HK_中国香港_4
-  - 🇯🇵_JP_日本_3
-  - 🇯🇵_JP_日本_4
-  - 🇰🇷_KR_韩国_2
-  - 🇰🇷_KR_韩国_3
+  - 🇩🇪_DE_德国_1
   - 🇫🇷_FR_法国
-  - 🇪🇸_ES_西班牙
+  - 🇩🇪_DE_德国_2
+  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 🇩🇪_DE_德国_3
+  - 🇩🇪_DE_德国_4
   - 🇺🇸 美国
   - vless
   - 'vless #2'
@@ -131868,24 +132027,30 @@ proxy-groups:
   - 法国+法国计算机科学大学
   - 美国+宾利大学
   - '荷兰+V2CROSS.COM #2'
+  - '伊朗+V2CROSS.COM #2'
   - '美国+V2CROSS.COM #11'
-  - '美国+V2CROSS.COM #12'
-  - '印度+V2CROSS.COM #3'
+  - 阿塞拜疆+V2CROSS.COM
   - '美国+CloudFlare节点 #9'
-  - 美国+麻省理工学院
+  - '美国+V2CROSS.COM #12'
+  - 巴西圣保罗+CloudFlare节点
+  - '美国+V2CROSS.COM #13'
+  - '美国+CloudFlare节点 #10'
+  - '美国+CloudFlare节点 #11'
+  - 英国+Technicolor+SA
+  - '美国+CloudFlare节点 #12'
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
-  - 🇺🇸_US_美国
+  - '🇺🇸_US_美国 #2'
   - '🇭🇰_HK_中国香港 #3'
   - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
   - '🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #2'
   - 🇮🇩_ID_印度尼西亚->🇫🇷_FR_法国
   - '🇭🇰_HK_中国香港 #4'
-  - '🇺🇸_US_美国 #2'
+  - '🇺🇸_US_美国 #3'
   - '🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚 #3'
   - 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
   - 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
-  - '🇺🇸_US_美国 #3'
+  - '🇺🇸_US_美国 #4'
   - US美国(v2clash.blog 2026-5.23更新
   - 'US美国(v2clash.blog 2026-5.23更新 #2'
   - 'US美国(v2clash.blog 2026-5.23更新 #3'
