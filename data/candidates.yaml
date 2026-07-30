@@ -193,8 +193,8 @@ proxies:
     path: /
     headers:
       Host: vlso4.1d.mom
-- name: 🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.42TB
-  server: 172.71.159.155
+- name: 🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.47TB
+  server: 104.22.93.79
   port: 443
   type: vless
   uuid: ffd483b0-5d19-4500-99fa-f76ad489b8f8
@@ -204,39 +204,12 @@ proxies:
   skip-cert-verify: false
   reality-opts:
     public-key: c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI
-    short-id: b5a017
-  servername: www.amd.com
+    short-id: 491b
+  servername: connect.amd.com
   client-fingerprint: chrome
   network: tcp
 - name: 🇺🇸 U2-HY-美国
-  server: 172.71.159.155
-  port: 20530
-  type: hysteria2
-  password: 9hiscch8cd0kbdlw
-  auth: 9hiscch8cd0kbdlw
-  sni: free.u-8.cc
-  skip-cert-verify: false
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: wrtxcn8bodj3n9fm
-- name: '🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.42TB #2'
-  server: 162.158.166.209
-  port: 443
-  type: vless
-  uuid: ffd483b0-5d19-4500-99fa-f76ad489b8f8
-  tls: true
-  tfo: false
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  reality-opts:
-    public-key: c8eDzlFvE3KDKL73L2wwbQkokKOJH75oMyFLG_1X7SI
-    short-id: f29e8f4f38
-  servername: shop-eu-fr.amd.com
-  client-fingerprint: chrome
-  network: tcp
-- name: '🇺🇸 U2-HY-美国 #2'
-  server: 162.158.166.209
+  server: 104.22.93.79
   port: 20530
   type: hysteria2
   password: 9hiscch8cd0kbdlw
@@ -47135,118 +47108,73 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
 - name: '美国+CloudFlare节点 #15'
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #16'
-  type: trojan
-  server: 104.19.230.21
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: '美国+V2CROSS.COM #12'
   type: vless
-  server: jdwadgw.cvewfjg.shop
+  server: 104.16.72.251
   port: 443
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-  network: raw
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
   tls: true
   client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #13'
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: '美国+V2CROSS.COM #12'
   type: vless
   server: 152.53.236.22
   port: 443
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-  network: raw
+  network: tcp
   tls: true
   client-fingerprint: chrome
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
+- name: 英国+Technicolor+SA
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20035
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+- name: '美国+CloudFlare节点 #16'
+  type: vless
+  server: 104.17.144.235
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 韩国+首尔Amazon数据中心
+  type: hysteria2
+  server: vpn-kr-003.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-kr-003.fastervpn.world
+  skip-cert-verify: true
 - name: '美国+CloudFlare节点 #17'
   type: trojan
-  server: www.multiplydose.com
+  server: 104.17.121.43
   port: 443
   password: humanity
-  sni: www.multiplydose.com
+  sni: www.calmlunch.com
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.multiplydose.com
-- name: '美国+CloudFlare节点 #18'
+      Host: www.calmlunch.com
+- name: 香港+Simcentric网络公司
   type: vless
-  server: 172.67.147.94
-  port: 8443
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ad-010.vector9nmb3.info
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.vector9nmb3.info
-- name: '美国+CloudFlare节点 #19'
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #20'
-  type: vless
-  server: 104.17.223.103
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: '美国+CloudFlare节点 #21'
-  type: vless
-  server: ad-005.novayjr9g.info
-  port: 8443
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ad-005.novayjr9g.info
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-005.novayjr9g.info
-- name: 巴西+圣保罗
-  type: vless
-  server: uwu.spectrumproxy.shop
-  port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  server: 180.178.60.252
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   network: tcp
-  tls: true
+  tls: false
   client-fingerprint: chrome
-  servername: uwu.spectrumproxy.shop
-  flow: xtls-rprx-vision
 - name: 🇫🇷_FR_法国
   type: vless
   server: fr.noooo.win
@@ -48338,10 +48266,8 @@ proxy-groups:
   - cfn-0vn.pages.dev
   - SG
   - 美国  port:2087,2083,2053,2096
-  - 🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.42TB
+  - 🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.47TB
   - 🇺🇸 U2-HY-美国
-  - '🇺🇸 U1-美国-linuxDo|⏳∞D-已用3.42TB #2'
-  - '🇺🇸 U2-HY-美国 #2'
   - 全站业务维护中
   - 本次免费套餐会持续至业务灰度测试完毕，其间会出现业务中断等情况，属于正常现象
   - 有Bug欢迎提工单反馈
@@ -52427,15 +52353,12 @@ proxy-groups:
   - 美国+宾利大学
   - '荷兰+V2CROSS.COM #2'
   - '美国+CloudFlare节点 #15'
-  - '美国+CloudFlare节点 #16'
   - '美国+V2CROSS.COM #12'
-  - '美国+V2CROSS.COM #13'
+  - 英国+Technicolor+SA
+  - '美国+CloudFlare节点 #16'
+  - 韩国+首尔Amazon数据中心
   - '美国+CloudFlare节点 #17'
-  - '美国+CloudFlare节点 #18'
-  - '美国+CloudFlare节点 #19'
-  - '美国+CloudFlare节点 #20'
-  - '美国+CloudFlare节点 #21'
-  - 巴西+圣保罗
+  - 香港+Simcentric网络公司
   - 🇫🇷_FR_法国
   - '🇭🇰_HK_中国香港 #2'
   - '🇭🇰_HK_中国香港 #3'
