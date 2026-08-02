@@ -46982,57 +46982,52 @@ proxies:
     path: /in-pdr
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: '美国+V2CROSS.COM #12'
+- name: 立陶宛+V2CROSS.COM
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 巴西圣保罗+CloudFlare节点
   type: vless
-  server: 152.53.236.22
+  server: 188.114.98.66
   port: 443
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: '俄罗斯+V2CROSS.COM #2'
-  type: hysteria2
-  server: 78.159.240.215
-  port: 443
-  password: c2948c84-748f-47f6-bc7a-b949ef279f85
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: true
-- name: '美国+V2CROSS.COM #13'
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ru2.skydrgn-online.online
-- name: '伊朗 V2CROSS.COM #2'
-  type: vmess
-  server: 94.182.88.61
-  port: 2078
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '美国+CloudFlare节点 #15'
-  type: vless
-  server: 172.67.169.143
-  port: 443
-  uuid: e35a5ad5-0175-4cd6-b654-1eb220ff28f0
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: infra-services-c8-2.21491204-f13b-4977-9cc9-5275edd68fd8.kdns.fr
+  servername: support.zoom.us.yxls.eu.cc
   ws-opts:
-    path: /Wvf67jc5MgASmsb9Qsr0
+    path: /sg-melbi
     headers:
-      Host: infra-services-c8-2.21491204-f13b-4977-9cc9-5275edd68fd8.kdns.fr
+      Host: support.zoom.us.yxls.eu.cc
+- name: '美国+V2CROSS.COM #12'
+  type: hysteria2
+  server: 205.237.109.212
+  port: 8443
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-turbo-fr.roxa.org
+  skip-cert-verify: false
+- name: 美国+Amazon数据中心
+  type: vless
+  server: dtac.exp.dog
+  port: 80
+  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /fnet50
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
 - name: '香港 阿里云 #2'
   type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -47041,62 +47036,28 @@ proxies:
   network: ws
   ws-opts:
     headers:
-      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
     path: /ws-vmess
-- name: 英国+Technicolor+SA
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-- name: '美国+CloudFlare节点 #16'
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: '美国+V2CROSS.COM #13'
   type: vless
-  server: 104.16.72.41
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
-- name: 日本+V2CROSS.COM
-  type: ss
-  server: ss.045.node-for-bigairport.win
-  port: 19000
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-- name: '荷兰+V2CROSS.COM #3'
-  type: vless
-  server: 62.238.51.180
-  port: 1234
-  uuid: 8b0c48db-c228-47d9-b634-6ea6edf81e22
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
-- name: '美国+CloudFlare节点 #17'
-  type: vless
-  server: 104.16.75.78
+  server: jdwadgw.cvewfjg.shop
   port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  network: ws
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+  network: raw
   tls: true
   client-fingerprint: chrome
-  servername: germany-1.ariyuz.org
-  ws-opts:
-    path: /
-    headers:
-      Host: germany-1.ariyuz.org
-- name: '俄罗斯+V2CROSS.COM #3'
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: 希腊+V2CROSS.COM
   type: vless
-  server: ruded2.onlinestreamself.com
-  port: 443
-  uuid: 64b6f905-94d5-4745-8f92-cafa107b7c16
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
   network: tcp
   tls: true
-  client-fingerprint: qq
-  servername: apple.com
+  client-fingerprint: chrome
+  servername: dl.google.com
   flow: xtls-rprx-vision
 - name: '🇫🇷_FR_法国 #2'
   type: vless
@@ -47181,78 +47142,6 @@ proxies:
   port: 48697
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   sni: gh.01.naiun.bilibili.com
-- name: US美国(v2clash.blog 2026-5.28更新
-  type: vless
-  server: 91.206.71.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime15.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.28更新 #2'
-  type: vless
-  server: 94.140.0.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/YouTube@小青科学网🇨🇳
-    headers:
-      Host: vms.lifetime26.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.28更新 #3'
-  type: vless
-  server: www.visa.com
-  port: 80
-  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.28更新 #4'
-  type: vless
-  server: 104.129.164.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/YouTube@小青科学网🇨🇳
-    headers:
-      Host: vms.lifetime40.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.28更新 #5'
-  type: vless
-  server: 213.219.247.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?https://t.me/YouTube@小青科学网🇨🇳
-    headers:
-      Host: vms.lifetime26.workers.dev
-- name: 'US美国(v2clash.blog 2026-5.28更新 #6'
-  type: vless
-  server: 109.176.239.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime03.workers.dev
 - name: US美国(v2clash.blog 2026-5.30更新
   type: vless
   server: 2606:4700:8de7::2762:4286
@@ -47316,6 +47205,18 @@ proxies:
     path: /?ed=2048
     headers:
       Host: germany.vipserver14.workers.dev
+- name: 'US美国(v2clash.blog 2026-5.30更新 #4'
+  type: vless
+  server: 109.176.239.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime03.workers.dev
 - name: DE德国(v2clash.blog 2026-6.3更新
   type: vless
   server: 178.215.238.148
@@ -48176,6 +48077,65 @@ proxies:
     path: /
     headers:
       Host: towndtime.global.ssl.fastly.neT.
+- name: NL荷兰(v2clash.blog 2026-8.3更新
+  type: vless
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime08.workers.dev
+- name: CA加拿大(v2clash.blog 2026-8.3更新
+  type: vless
+  server: 208.66.228.194
+  port: 443
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: sni.ehb.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
+    headers:
+      Host: sni.ehb.cc.cd
+- name: US美国(v2clash.blog 2026-8.3更新
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 6e2e03e2-4f66-479a-a186-a34d66ca8c91
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    headers:
+      Host: pan11.global.ssl.fastly.net
+- name: 'US美国(v2clash.blog 2026-8.3更新 #2'
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 0c0b895d-b954-4bec-94e6-5770677e7925
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.neT
+- name: DE德国(v2clash.blog 2026-8.3更新
+  type: vless
+  server: 217.163.76.118
+  port: 2086
+  uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
+  network: tcp
+  tls: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROBE
   type: select
@@ -52271,18 +52231,13 @@ proxy-groups:
   - 法国+法国计算机科学大学
   - 美国+宾利大学
   - '荷兰+V2CROSS.COM #2'
+  - 立陶宛+V2CROSS.COM
+  - 巴西圣保罗+CloudFlare节点
   - '美国+V2CROSS.COM #12'
-  - '俄罗斯+V2CROSS.COM #2'
-  - '美国+V2CROSS.COM #13'
-  - '伊朗 V2CROSS.COM #2'
-  - '美国+CloudFlare节点 #15'
+  - 美国+Amazon数据中心
   - '香港 阿里云 #2'
-  - 英国+Technicolor+SA
-  - '美国+CloudFlare节点 #16'
-  - 日本+V2CROSS.COM
-  - '荷兰+V2CROSS.COM #3'
-  - '美国+CloudFlare节点 #17'
-  - '俄罗斯+V2CROSS.COM #3'
+  - '美国+V2CROSS.COM #13'
+  - 希腊+V2CROSS.COM
   - '🇫🇷_FR_法国 #2'
   - '🇭🇰_HK_中国香港 #2'
   - '🇭🇰_HK_中国香港 #3'
@@ -52293,17 +52248,12 @@ proxy-groups:
   - 🇮🇩_ID_印度尼西亚->🇬🇧_GB_英国
   - '🇺🇸_US_美国 #3'
   - '🇺🇸_US_美国 #4'
-  - US美国(v2clash.blog 2026-5.28更新
-  - 'US美国(v2clash.blog 2026-5.28更新 #2'
-  - 'US美国(v2clash.blog 2026-5.28更新 #3'
-  - 'US美国(v2clash.blog 2026-5.28更新 #4'
-  - 'US美国(v2clash.blog 2026-5.28更新 #5'
-  - 'US美国(v2clash.blog 2026-5.28更新 #6'
   - US美国(v2clash.blog 2026-5.30更新
   - 'US美国(v2clash.blog 2026-5.30更新 #2'
   - JP日本(v2clash.blog 2026-5.30更新
   - HK香港(v2clash.blog 2026-5.30更新
   - 'US美国(v2clash.blog 2026-5.30更新 #3'
+  - 'US美国(v2clash.blog 2026-5.30更新 #4'
   - DE德国(v2clash.blog 2026-6.3更新
   - US美国(v2clash.blog 2026-6.5更新
   - 'US美国(v2clash.blog 2026-6.5更新 #2'
@@ -52377,5 +52327,10 @@ proxy-groups:
   - DE德国(v2clash.blog 2026-7.31更新
   - 芬兰(v2clash.blog 2026-7.31更新
   - US美国(v2clash.blog 2026-7.31更新
+  - NL荷兰(v2clash.blog 2026-8.3更新
+  - CA加拿大(v2clash.blog 2026-8.3更新
+  - US美国(v2clash.blog 2026-8.3更新
+  - 'US美国(v2clash.blog 2026-8.3更新 #2'
+  - DE德国(v2clash.blog 2026-8.3更新
 rules:
 - MATCH,PROBE
