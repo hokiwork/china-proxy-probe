@@ -36,64 +36,162 @@ proxies:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
       Host: vlso200.1d.mom
-- name: 🇭🇰 HK 专线01
-  server: 91.193.59.251
-  port: 2053
-  type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  tls: true
-  tfo: false
-  skip-cert-verify: false
-  servername: vlso4.1d.mom
-  client-fingerprint: chrome
+- name: 剩余流量：0
+  type: vmess
+  server: 2605:e440:11::388
+  port: 16003
+  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
+  alterId: 0
+  cipher: auto
+  tls: false
   network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso4.1d.mom
-- name: 🇭🇰 HK 专线02
-  server: 91.193.59.191
-  port: 2087
-  type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  tls: true
-  tfo: false
-  skip-cert-verify: false
-  servername: vlso300.1d.mom
-  client-fingerprint: chrome
+- name: louwangzhiyu.org@gmail.com
+  type: vmess
+  server: 2605:e440:11::392
+  port: 17003
+  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
+  alterId: 0
+  cipher: auto
+  tls: false
   network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso300.1d.mom
-- name: 🇷🇺_RU_俄罗斯
+- name: 请在系统设置及翻墙软件的设置中同时启用 IPv6
+  type: vmess
+  server: 2605:e440:47::25a
+  port: 17211
+  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+- name: 请使用支持Hy2协议的最新版客户端，老版本识别不了节点
+  type: vmess
+  server: 107.189.16.68
+  port: 13010
+  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+- name: 🇺🇸_US_美国->🇦🇪_AE_阿拉伯联合酋长国
   type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
+  server: naseza.tarfiq.ir
+  port: 80
+  uuid: 1fe455ab-ef5a-4e51-9015-709f8f019aaf
+  network: ws
+  servername: teranko.global.ssl.fastly.net
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: teranko.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
   type: vless
-  server: www.true.th
+  server: 151.101.56.7
   port: 80
-  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   network: ws
+  servername: BankMelat.glObal.ssl.faStly.nEt.
   tls: false
-  client-fingerprint: chrome
   ws-opts:
-    path: /GDkX4xpB/
+    path: /
     headers:
-      Host: duatoup3wk8q2.cloudfront.net
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20068
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
   udp: true
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v8.hdacd.com
+  port: 30808
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇿_CZ_捷克
+  type: vless
+  server: 141.133.172.222
+  port: 20342
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇮🇩_ID_印度尼西亚
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20120
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  type: vless
+  server: fast.cd-tur4.ir
+  port: 443
+  uuid: f5576b8c-57b3-40cd-9c09-dba9f3106435
+  network: ws
+  servername: ssl.fastly.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: n1747624274.4u9ma.icu
+  port: 443
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇺🇸_US_美国->🇨🇦_CA_加拿大
+  type: vless
+  server: ad-013.pixel9xdmq.info
+  port: 8443
+  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: vmess
   server: v24.hdacd.com
   port: 30824
@@ -103,14 +201,82 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+- name: 🇵🇱_PL_波兰
+  type: vless
+  server: 144.31.0.34
+  port: 7443
+  uuid: 1fef5248-fdd2-40d6-b3b9-6c33d4e74724
+  servername: _custom_
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc
+    short-id: e8ca5079a5e91481
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
   type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: n1747624260.4u9ma.icu
+  port: 443
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  alterId: 0
   cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
+  type: vless
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  network: grpc
+  servername: download.nvidia.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20035
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
   tls: false
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: vless
+  server: getsavesafe.net
+  port: 443
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  servername: getsavesafe.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
+  type: vless
+  server: 151.101.193.54
+  port: 80
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+  network: ws
+  servername: BankMelat.glObal.ssl.faStly.nEt.
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国->🇫🇮_FI_芬兰
@@ -128,200 +294,12 @@ proxies:
       Host: forfreeuse.sub-flow.online
   skip-cert-verify: true
   udp: true
-- name: 🇫🇷_FR_法国->🇫🇮_FI_芬兰
-  type: vless
-  server: 199.232.170.177
-  port: 80
-  uuid: cfde0aba-0985-4034-ab92-50b1534b126c
-  network: ws
-  servername: BankMelat.glObal.ssl.faStly.nEt
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国->🇫🇮_FI_芬兰_1
-  type: vless
-  server: 147.45.196.240
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  servername: forfreeuse.sub-flow.online
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: guanwang.awsno.com
+- name: 🇳🇱_NL_荷兰_1
+  type: ss
+  server: 82.38.31.36
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: n1747624274.4u9ma.icu
-  port: 443
-  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  type: vless
-  server: 43.255.156.59
-  port: 40118
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  servername: www.lamer.com.sg
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: x1nqrSzJzU5Hq7fr36PEmtBfOf98A2XiFuRzIsdcz20
-    short-id: 5895914d
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: vmess
-  server: 192.204.57.30
-  port: 443
-  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /speed
-  udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: vless
-  server: 188.225.46.217
-  port: 443
-  uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-  servername: api-maps.yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KgKu2yHqldNUFnYCY7suz-YTQKi6ZX2mLBduS2yy1xs
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国->🇫🇮_FI_芬兰_2
-  type: vless
-  server: 188.241.241.29
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  servername: forfreeuse.sub-flow.online
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国
-  type: vless
-  server: 18.238.109.26
-  port: 80
-  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /GDkX4xpB/
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20068
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: vmess
-  server: v8.hdacd.com
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  type: vless
-  server: 151.101.56.7
-  port: 80
-  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-  network: ws
-  servername: BankMelat.glObal.ssl.faStly.nEt.
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: 64.188.83.94
-  port: 8443
-  uuid: 1f29762d-3f23-4207-9e39-f774de5d49ba
-  network: grpc
-  tls: false
-  grpc-opts:
-    grpc-service-name: grpc
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国
@@ -6578,19 +6556,6 @@ proxies:
     headers:
       Host: n1737850919.ryjml.cn
     path: /
-- name: 'By EbraSha 💻 #8'
-  type: vmess
-  server: n1747624260.4u9ma.icu
-  port: 443
-  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: n1747624260.4u9ma.icu
-    path: /
 - name: 'By EbraSha 🦂 #2'
   type: vmess
   server: namer-us-sea-01-edgecast.qdns.live
@@ -6956,7 +6921,7 @@ proxies:
     headers:
       Host: pulau.org
     path: linkvws
-- name: 'By EbraSha 💻 #9'
+- name: 'By EbraSha 💻 #8'
   type: vmess
   server: qxcstxwbcvb_cdn.hfhfb.homes
   port: 2095
@@ -6995,7 +6960,7 @@ proxies:
     headers:
       Host: rlhrwtqusd.site
     path: /kwhmvws
-- name: 'By EbraSha 💻 #10'
+- name: 'By EbraSha 💻 #9'
   type: vmess
   server: rntwo.laoban666.xyz
   port: 443
@@ -8864,6 +8829,15 @@ proxies:
     headers:
       Host: speeches-obligations-view-epinions.trycloudflare.com
     path: 1c503beb-4589-409b-bddf-5190925f72f0-vm
+- name: 'By EbraSha 💎 #9'
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: 'By EbraSha 📛 #14'
   type: vmess
   server: v6.hdacd.com
@@ -8918,7 +8892,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 💻 #11'
+- name: 'By EbraSha 💻 #10'
   type: vmess
   server: 103.179.142.212
   port: 22047
@@ -9050,7 +9024,7 @@ proxies:
     headers:
       Host: tr1-smart.adelping.com.
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- name: 'By EbraSha 💻 #12'
+- name: 'By EbraSha 💻 #11'
   type: vmess
   server: 104.26.15.148
   port: 80
@@ -9233,7 +9207,7 @@ proxies:
       Host: lammaland.org
     path: linkvws
   servername: lammaland.org
-- name: 'By EbraSha 💎 #9'
+- name: 'By EbraSha 💎 #10'
   type: vmess
   server: 152.67.218.38
   port: 443
@@ -9623,7 +9597,7 @@ proxies:
     headers:
       Host: pelang.org
     path: /vmess/
-- name: 'By EbraSha 💻 #13'
+- name: 'By EbraSha 💻 #12'
   type: vmess
   server: 45.199.138.152
   port: 45886
@@ -10233,7 +10207,7 @@ proxies:
       Host: u8.huvicloud.com
     path: /6796611b-260e-4d63-9016-20c27b12e420
   servername: u8.huvicloud.com
-- name: 'By EbraSha 💻 #14'
+- name: 'By EbraSha 💻 #13'
   type: vmess
   server: vip1314.vip
   port: 443
@@ -10413,7 +10387,7 @@ proxies:
       Host: xcmg19.dtkj0328.com
     path: /xcmg1234
   servername: xcmg19.dtkj0328.com
-- name: 'By EbraSha 💎 #10'
+- name: 'By EbraSha 💎 #11'
   type: vmess
   server: yichueng.org
   port: 443
@@ -10436,7 +10410,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 💎 #11'
+- name: 'By EbraSha 💎 #12'
   type: vmess
   server: 103.166.184.134
   port: 27467
@@ -11004,7 +10978,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 💎 #12'
+- name: 'By EbraSha 💎 #13'
   type: vmess
   server: 2.26.7.59
   port: 110
@@ -11215,7 +11189,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 💎 #13'
+- name: 'By EbraSha 💎 #14'
   type: vmess
   server: 45.15.185.17
   port: 80
@@ -11402,7 +11376,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 💻 #15'
+- name: 'By EbraSha 💻 #14'
   type: vmess
   server: 62.60.151.41
   port: 57865
@@ -11609,7 +11583,7 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
   servername: renderer-stream-1-411.mirra.now
-- name: 'By EbraSha 💻 #16'
+- name: 'By EbraSha 💻 #15'
   type: vmess
   server: 94.103.167.116
   port: 80
@@ -11827,7 +11801,7 @@ proxies:
       Host: imafake.locker
     path: /speedtest
   servername: imafake.locker
-- name: 'By EbraSha 💻 #17'
+- name: 'By EbraSha 💻 #16'
   type: vmess
   server: 96.47.230.5
   port: 35348
@@ -12115,6 +12089,16 @@ proxies:
     headers:
       Host: baidu.com
     path: /
+- name: 'By EbraSha 🃏 #19'
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: tcp
+  servername: guanwang.awsno.com
 - name: 'By EbraSha 🌌 #12'
   type: vmess
   server: hk-vp1.xuanmiao.tech
@@ -12289,7 +12273,7 @@ proxies:
     headers:
       Host: ''
     path: /vpnjantit
-- name: 'By EbraSha 💎 #14'
+- name: 'By EbraSha 💎 #15'
   type: vmess
   server: vip1.holderbridge.site
   port: 8880
@@ -12655,7 +12639,7 @@ proxies:
       Host: jahfkjha.cfd
     path: /linkws
   servername: jahfkjha.cfd
-- name: 'By EbraSha 💎 #15'
+- name: 'By EbraSha 💎 #16'
   type: vmess
   server: 172.67.220.83
   port: 443
@@ -12678,7 +12662,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🃏 #19'
+- name: 'By EbraSha 🃏 #20'
   type: vmess
   server: gt021.bestforxray.buzz
   port: 443
@@ -12981,7 +12965,7 @@ proxies:
     headers:
       Host: n1761214906.wpg27.xyz
     path: /
-- name: 'By EbraSha 💎 #16'
+- name: 'By EbraSha 💎 #17'
   type: vmess
   server: 47.243.205.58
   port: 443
@@ -28036,7 +28020,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: '🇺🇸_US_美国 #2'
+- name: 🇺🇸_US_美国
   type: vmess
   server: 156.225.67.71
   port: 53208
@@ -46512,6 +46496,19 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
+- name: 🇬🇧_英国_16
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
 - name: 🇷🇺_俄罗斯_18
   type: vless
   server: 46.243.232.12
@@ -46580,6 +46577,20 @@ proxies:
     short-id: c76ba2c2fb172e8b
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸_美国_28
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  servername: storage.yandex.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸_美国_30
   type: vless
   server: fl4.raketa-balance.com
@@ -46620,14 +46631,6 @@ proxies:
   reality-opts:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: c6ef72e4635d15a5
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇿_捷克_33
-  type: vless
-  server: 141.133.172.222
-  port: 20342
-  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱_荷兰_34
@@ -48581,7 +48584,7 @@ proxies:
     headers:
       Host: ''
     path: /ws-vmess
-- name: '🇩🇪_DE_德国 #2'
+- name: 🇩🇪_DE_德国
   type: vless
   server: 94.156.122.215
   port: 8443
@@ -48610,7 +48613,7 @@ proxies:
   client-fingerprint: firefox
   servername: yahoo.com
   flow: xtls-rprx-vision
-- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+- name: '🇺🇸_US_美国->🇫🇮_FI_芬兰 #2'
   type: vless
   server: 199.232.78.159
   port: 443
@@ -48623,7 +48626,7 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan11.global.ssl.fastly.net
-- name: '🇩🇪_DE_德国 #3'
+- name: '🇩🇪_DE_德国 #2'
   type: vless
   server: 45.80.111.7
   port: 443
@@ -48656,7 +48659,7 @@ proxies:
   client-fingerprint: firefox
   servername: ch.tunnelx.space
   flow: xtls-rprx-vision
-- name: '🇩🇪_DE_德国 #4'
+- name: '🇩🇪_DE_德国 #3'
   type: vless
   server: 159.195.139.217
   port: 8443
@@ -48675,7 +48678,7 @@ proxies:
   tls: true
   client-fingerprint: firefox
   servername: web.abubibabu.ru
-- name: '🇺🇸_US_美国 #3'
+- name: '🇺🇸_US_美国 #2'
   type: vless
   server: 217.177.75.7
   port: 443
@@ -48685,7 +48688,7 @@ proxies:
   client-fingerprint: firefox
   servername: usa.tunnelx.space
   flow: xtls-rprx-vision
-- name: '🇩🇪_DE_德国 #5'
+- name: '🇩🇪_DE_德国 #4'
   type: vless
   server: 185.126.67.76
   port: 443
@@ -48695,7 +48698,7 @@ proxies:
   client-fingerprint: firefox
   servername: cdn-de-4.ai-apiroute.cc
   flow: xtls-rprx-vision
-- name: 🇳🇱_NL_荷兰
+- name: '🇳🇱_NL_荷兰 #2'
   type: vless
   server: 31.76.79.118
   port: 2444
@@ -48705,7 +48708,7 @@ proxies:
   client-fingerprint: firefox
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
-- name: 🇵🇱_PL_波兰
+- name: '🇵🇱_PL_波兰 #2'
   type: vless
   server: pl01.auragg.org
   port: 25224
@@ -48714,7 +48717,7 @@ proxies:
   tls: true
   client-fingerprint: qq
   servername: cloudflare.com
-- name: '🇩🇪_DE_德国 #6'
+- name: '🇩🇪_DE_德国 #5'
   type: vless
   server: 159.195.201.235
   port: 25310
@@ -48731,7 +48734,7 @@ proxies:
   network: tcp
   tls: true
   client-fingerprint: chrome
-- name: '🇩🇪_DE_德国->🇹🇭_TH_泰国 #2'
+- name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
   type: vless
   server: www.true.th
   port: 80
@@ -48753,7 +48756,7 @@ proxies:
   client-fingerprint: firefox
   servername: cdn-mk.ai-apiroute.cc
   flow: xtls-rprx-vision
-- name: '🇺🇸_US_美国 #4'
+- name: '🇺🇸_US_美国 #3'
   type: vless
   server: 104.17.21.32
   port: 8880
@@ -49718,29 +49721,30 @@ proxy-groups:
   - CN-深圳游戏节点
   - 英国GB
   - 🇭🇰香港频道@hutaocfyx
-  - 🇭🇰 HK 专线01
-  - 🇭🇰 HK 专线02
-  - 🇷🇺_RU_俄罗斯
-  - 🇩🇪_DE_德国->🇹🇭_TH_泰国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🇫🇮_FI_芬兰
-  - 🇫🇷_FR_法国->🇫🇮_FI_芬兰
-  - 🇩🇪_DE_德国->🇫🇮_FI_芬兰_1
-  - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - 🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇩🇪_DE_德国->🇫🇮_FI_芬兰_2
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国
-  - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 剩余流量：0
+  - louwangzhiyu.org@gmail.com
+  - 请在系统设置及翻墙软件的设置中同时启用 IPv6
+  - 请使用支持Hy2协议的最新版客户端，老版本识别不了节点
+  - 🇺🇸_US_美国->🇦🇪_AE_阿拉伯联合酋长国
   - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇿_CZ_捷克
+  - 🇭🇰_HK_中国香港->🇮🇩_ID_印度尼西亚
+  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+  - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇵🇱_PL_波兰
+  - 🇭🇰_HK_中国香港_1
+  - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
+  - 🇭🇰_HK_中国香港->🇮🇳_IN_印度
+  - 🇳🇱_NL_荷兰
+  - 🇺🇸_US_美国->🇩🇪_DE_德国_1
+  - 🇩🇪_DE_德国->🇫🇮_FI_芬兰
+  - 🇳🇱_NL_荷兰_1
   - 🇺🇸 美国
   - By EbraSha 💣
   - 'By EbraSha 💣 #2'
@@ -50238,7 +50242,6 @@ proxy-groups:
   - 'By EbraSha 🧲 #8'
   - 'By EbraSha 🕷️ #7'
   - 'By EbraSha 🔥 #6'
-  - 'By EbraSha 💻 #8'
   - 'By EbraSha 🦂 #2'
   - 'By EbraSha 🦂 #3'
   - 'By EbraSha 🕹️ #13'
@@ -50267,10 +50270,10 @@ proxy-groups:
   - 'By EbraSha 🖥️ #11'
   - 'By EbraSha 🌐 #9'
   - 'By EbraSha 🎯 #8'
-  - 'By EbraSha 💻 #9'
+  - 'By EbraSha 💻 #8'
   - 'By EbraSha 🔋 #12'
   - 'By EbraSha 🔐 #10'
-  - 'By EbraSha 💻 #10'
+  - 'By EbraSha 💻 #9'
   - 'By EbraSha 🌀 #12'
   - 'By EbraSha 💣 #8'
   - 'By EbraSha 🚨 #6'
@@ -50417,12 +50420,13 @@ proxy-groups:
   - 'By EbraSha 👑 #12'
   - 'By EbraSha 🧠 #14'
   - 'By EbraSha 🌪️ #11'
+  - 'By EbraSha 💎 #9'
   - 'By EbraSha 📛 #14'
   - 'By EbraSha 🌍 #10'
   - 'By EbraSha 🕹️ #14'
   - 'By EbraSha 🚬 #14'
   - 'By EbraSha 🌃 #7'
-  - 'By EbraSha 💻 #11'
+  - 'By EbraSha 💻 #10'
   - 'By EbraSha 🔌 #10'
   - 'By EbraSha ⚔️ #12'
   - 'By EbraSha 🧬 #3'
@@ -50432,7 +50436,7 @@ proxy-groups:
   - 'By EbraSha 🧿 #14'
   - 'By EbraSha 📛 #15'
   - 'By EbraSha 🪐 #6'
-  - 'By EbraSha 💻 #12'
+  - 'By EbraSha 💻 #11'
   - 'By EbraSha 🌃 #8'
   - 'By EbraSha 📶 #8'
   - 'By EbraSha 🎯 #14'
@@ -50447,7 +50451,7 @@ proxy-groups:
   - 'By EbraSha 🌪️ #12'
   - 'By EbraSha 🌀 #15'
   - 'By EbraSha 🪬 #9'
-  - 'By EbraSha 💎 #9'
+  - 'By EbraSha 💎 #10'
   - 'By EbraSha 📼 #9'
   - 'By EbraSha 🌀 #16'
   - 'By EbraSha 🌀 #17'
@@ -50480,7 +50484,7 @@ proxy-groups:
   - 'By EbraSha 🔥 #9'
   - 'By EbraSha 🚨 #10'
   - 'By EbraSha 🌍 #11'
-  - 'By EbraSha 💻 #13'
+  - 'By EbraSha 💻 #12'
   - 'By EbraSha ♠️ #14'
   - 'By EbraSha 🚨 #11'
   - 'By EbraSha 🕹️ #15'
@@ -50533,7 +50537,7 @@ proxy-groups:
   - 'By EbraSha 🧊 #14'
   - 'By EbraSha ⚙️ #10'
   - 'By EbraSha 👾 #9'
-  - 'By EbraSha 💻 #14'
+  - 'By EbraSha 💻 #13'
   - 'By EbraSha 🚧 #14'
   - 'By EbraSha 🌐 #13'
   - 'By EbraSha 🛸 #4'
@@ -50548,9 +50552,9 @@ proxy-groups:
   - 'By EbraSha 🥷 #17'
   - 'By EbraSha 🧠 #16'
   - 'By EbraSha 📛 #17'
-  - 'By EbraSha 💎 #10'
-  - 'By EbraSha 🔥 #10'
   - 'By EbraSha 💎 #11'
+  - 'By EbraSha 🔥 #10'
+  - 'By EbraSha 💎 #12'
   - 'By EbraSha 🛰️ #13'
   - 'By EbraSha 🐺 #7'
   - 'By EbraSha 🌐 #14'
@@ -50601,7 +50605,7 @@ proxy-groups:
   - 'By EbraSha 🪬 #11'
   - 'By EbraSha 🧠 #18'
   - 'By EbraSha 🌪️ #14'
-  - 'By EbraSha 💎 #12'
+  - 'By EbraSha 💎 #13'
   - 'By EbraSha 🗿 #18'
   - 'By EbraSha ♣️ #11'
   - 'By EbraSha 🔮 #11'
@@ -50622,7 +50626,7 @@ proxy-groups:
   - 'By EbraSha 🚀 #9'
   - 'By EbraSha 🧩 #10'
   - 'By EbraSha 🧊 #15'
-  - 'By EbraSha 💎 #13'
+  - 'By EbraSha 💎 #14'
   - 'By EbraSha 🗿 #19'
   - 'By EbraSha ⌨️ #10'
   - 'By EbraSha 🌑 #19'
@@ -50639,7 +50643,7 @@ proxy-groups:
   - 'By EbraSha 🌪️ #15'
   - 'By EbraSha 🐺 #9'
   - 'By EbraSha 👾 #13'
-  - 'By EbraSha 💻 #15'
+  - 'By EbraSha 💻 #14'
   - 'By EbraSha 🌃 #9'
   - 'By EbraSha 📶 #10'
   - 'By EbraSha 🛸 #6'
@@ -50660,7 +50664,7 @@ proxy-groups:
   - 'By EbraSha 🧠 #20'
   - 'By EbraSha 🚨 #12'
   - 'By EbraSha ⛓️ #15'
-  - 'By EbraSha 💻 #16'
+  - 'By EbraSha 💻 #15'
   - 'By EbraSha 🪖 #8'
   - 'By EbraSha 📟 #14'
   - 'By EbraSha 📛 #18'
@@ -50676,7 +50680,7 @@ proxy-groups:
   - 'By EbraSha 🃏 #17'
   - 'By EbraSha 🌃 #11'
   - 'By EbraSha ♣️ #12'
-  - 'By EbraSha 💻 #17'
+  - 'By EbraSha 💻 #16'
   - 'By EbraSha 🎯 #15'
   - 'By EbraSha 🔋 #19'
   - 'By EbraSha 🃏 #18'
@@ -50701,6 +50705,7 @@ proxy-groups:
   - 'By EbraSha 🧠 #21'
   - 'By EbraSha 🚀 #12'
   - 'By EbraSha ⚔️ #13'
+  - 'By EbraSha 🃏 #19'
   - 'By EbraSha 🌌 #12'
   - 'By EbraSha 🕹️ #20'
   - 'By EbraSha 🛜 #15'
@@ -50717,7 +50722,7 @@ proxy-groups:
   - 'By EbraSha 🐺 #11'
   - 'By EbraSha ⚡ #11'
   - 'By EbraSha 🧊 #19'
-  - 'By EbraSha 💎 #14'
+  - 'By EbraSha 💎 #15'
   - 'By EbraSha 🛸 #7'
   - 'By EbraSha 🧪 #17'
   - 'By EbraSha 🧩 #11'
@@ -50751,9 +50756,9 @@ proxy-groups:
   - 'By EbraSha 🧩 #12'
   - 'By EbraSha 👾 #14'
   - 'By EbraSha 🦂 #7'
-  - 'By EbraSha 💎 #15'
+  - 'By EbraSha 💎 #16'
   - 'By EbraSha 🪖 #9'
-  - 'By EbraSha 🃏 #19'
+  - 'By EbraSha 🃏 #20'
   - 'By EbraSha 🦇 #18'
   - 'By EbraSha 🛸 #8'
   - 'By EbraSha 🧨 #19'
@@ -50780,7 +50785,7 @@ proxy-groups:
   - 'By EbraSha 🧪 #20'
   - 'By EbraSha ♠️ #19'
   - 'By EbraSha 🐉 #20'
-  - 'By EbraSha 💎 #16'
+  - 'By EbraSha 💎 #17'
   - 'By EbraSha 🦾 #13'
   - :美国-vmess-arm.ptuu.gq:443-可用-中转:141.148.149.105-仅支持美国地区NF自制剧
   - :美国-vmess-vus2.0bad.com:443-可用-中转:192.81.133.191-仅支持美国地区NF自制剧
@@ -52099,7 +52104,7 @@ proxy-groups:
   - 'Vip1丨美国12丨TIKTOK丨ChatGPT #2'
   - 悸沫君_🇺🇸_US_美国_kjwl______________________
   - Vip1丨英国10丨
-  - '🇺🇸_US_美国 #2'
+  - 🇺🇸_US_美国
   - 0407免费节点|TG频道@kxswa 4
   - 04/10免费节点|TG频道@kxswa 5
   - US_@youtube资源分享师_323
@@ -53754,16 +53759,17 @@ proxy-groups:
   - 免费VPN：https://tt.vg/FJOE2Mm
   - 🇺🇸_美国_5
   - 🇺🇸_美国_7
+  - 🇬🇧_英国_16
   - 🇷🇺_俄罗斯_18
   - 🇩🇪_德国_20
   - 🇱🇻_拉脱维亚_21
   - 🏳️_未知_23
   - 🇳🇱_荷兰_24
   - 🇺🇸_美国_27
+  - 🇺🇸_美国_28
   - 🇺🇸_美国_30
   - 🇵🇱_波兰_31
   - 🇸🇨_塞舌尔_32
-  - 🇨🇿_捷克_33
   - 🇳🇱_荷兰_34
   - 🇺🇸_美国_37
   - 🇩🇪_德国_38
@@ -53949,24 +53955,24 @@ proxy-groups:
   - 🇲🇩_MD_摩尔多瓦
   - '🇭🇰_HK_中国香港 #2'
   - '🇭🇰_HK_中国香港 #3'
-  - '🇩🇪_DE_德国 #2'
+  - 🇩🇪_DE_德国
   - 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国
   - 🇫🇷_FR_法国
-  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  - '🇩🇪_DE_德国 #3'
+  - '🇺🇸_US_美国->🇫🇮_FI_芬兰 #2'
+  - '🇩🇪_DE_德国 #2'
   - 🇨🇭_CH_瑞士
   - '🇨🇭_CH_瑞士 #2'
-  - '🇩🇪_DE_德国 #4'
+  - '🇩🇪_DE_德国 #3'
   - 🇪🇸_ES_西班牙
-  - '🇺🇸_US_美国 #3'
+  - '🇺🇸_US_美国 #2'
+  - '🇩🇪_DE_德国 #4'
+  - '🇳🇱_NL_荷兰 #2'
+  - '🇵🇱_PL_波兰 #2'
   - '🇩🇪_DE_德国 #5'
-  - 🇳🇱_NL_荷兰
-  - 🇵🇱_PL_波兰
-  - '🇩🇪_DE_德国 #6'
   - '🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国 #2'
-  - '🇩🇪_DE_德国->🇹🇭_TH_泰国 #2'
+  - 🇩🇪_DE_德国->🇹🇭_TH_泰国
   - 🇲🇰_MK_MK
-  - '🇺🇸_US_美国 #4'
+  - '🇺🇸_US_美国 #3'
   - '🇲🇩_MD_摩尔多瓦 #2'
   - RU俄罗斯(v2clash.blog 2026-6.3更新
   - GB英国(v2clash.blog 2026-6.3更新
