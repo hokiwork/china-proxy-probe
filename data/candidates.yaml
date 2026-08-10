@@ -3,6 +3,19 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇭🇰香港频道@hutaocfyx
+  type: vless
+  server: 91.193.58.217
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso200.1d.mom
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso200.1d.mom
 - name: 剩余流量：0
   type: vmess
   server: 2605:e440:11::388
@@ -51977,6 +51990,7 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - 🇭🇰香港频道@hutaocfyx
   - 剩余流量：0
   - louwangzhiyu.org@gmail.com
   - 请在系统设置及翻墙软件的设置中同时启用 IPv6
