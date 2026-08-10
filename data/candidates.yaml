@@ -1022,126 +1022,36 @@ proxies:
   client-fingerprint: chrome
   servername: www.cctv.com
   flow: xtls-rprx-vision
-- name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+- name: 🇨🇿_CZ_捷克
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 0c0b895d-b954-4bec-94e6-5770677e7925
-  network: ws
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pan1.global.ssl.fastly.neT
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇷_TR_土耳其
-  type: vless
-  server: 45.196.201.158
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇷_TR_土耳其_1
-  type: vless
-  server: 45.196.201.215
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇵🇱_PL_波兰
-  type: vless
-  server: 77.105.163.46
-  port: 443
-  uuid: 0e192bd1-8f19-4184-9fff-6d67e4f738bd
-  network: ws
-  servername: ov186.ochmaybrooooo.online
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ov186.ochmaybrooooo.online
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪_EE_爱沙尼亚
-  type: vless
-  server: eston3.o4ka-internet.com
-  port: 443
-  uuid: a03df445-0666-4d61-acde-9705009e409c
-  servername: eston3.o4ka-internet.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇷_TR_土耳其_2
-  type: vless
-  server: 45.196.201.80
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '11'
-  down: '55'
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: 🇹🇷_TR_土耳其_3
-  type: vless
-  server: 45.196.201.179
-  port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: trojan
-  server: Hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
+  server: 141.133.172.222
+  port: 20342
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
   tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  type: vmess
+  server: tun1.wizardx1.com
+  port: 2078
+  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇮_FI_芬兰
+  type: vless
+  server: 45.88.13.3
+  port: 993
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  servername: download.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
+  skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港
   type: vmess
@@ -1155,151 +1065,6 @@ proxies:
   network: ws
   ws-opts:
     path: /ws-vmess
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: vless
-  server: status.netraidly.ru
-  port: 40443
-  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
-  servername: deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
-    short-id: 69d4
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇲🇽_MX_墨西哥
-  type: hysteria2
-  server: 23.95.75.151
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  type: vmess
-  server: tun1.wizardx1.com
-  port: 2078
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20035
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇹🇭_TH_泰国
-  type: vless
-  server: dtac.exp.dog
-  port: 80
-  uuid: 19668b6f-e215-41e6-8102-b8d29fb5b8ae
-  network: ws
-  tls: false
-  ws-opts:
-    path: /fnet50
-    headers:
-      Host: duatoup3wk8q2.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_1
-  type: vmess
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: vless
-  server: 88.218.44.4
-  port: 8443
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TunService
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
   type: vless
@@ -1315,16 +1080,195 @@ proxies:
       Host: d2pwbkmfr5lxa4.cloudfront.net
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港->🇮🇩_ID_印度尼西亚
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: trojan
+  server: Hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇺🇸_US_美国
+  type: vless
+  server: 88.218.44.4
+  port: 8443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
   type: trojan
   server: oplosgru-c.catcat321.com
-  port: 20120
+  port: 20035
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: hk.catxstar.com
   skip-cert-verify: true
   tls: false
   udp: true
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: vless
+  server: 47.240.80.220
+  port: 5100
+  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯
+  type: vless
+  server: status.netraidly.ru
+  port: 40443
+  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
+    short-id: 69d4
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '11'
+  down: '55'
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇹🇭_TH_泰国
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯_1
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇭🇰_HK_中国香港_2
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_3
+  type: vmess
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  servername: dl.google.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇭🇰_HK_中国香港_4
   type: vmess
   server: 47.86.167.194
   port: 800
@@ -1341,6 +1285,58 @@ proxies:
       Host:
       - sjskendn.dingtalk.com
   udp: true
+- name: 🇬🇧_GB_英国->🇩🇪_DE_德国
+  type: vless
+  server: 194.242.129.183
+  port: 2550
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇲🇽_MX_墨西哥
+  type: hysteria2
+  server: 23.95.75.151
+  port: 8080
+  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  sni: hopp-us.yyuyy.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_5
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  servername: storage.yandex.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  skip-cert-verify: true
+  udp: true
+- name: '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: 🇺🇸 美国
   type: vless
   server: 172.64.52.152
@@ -9903,15 +9899,6 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #13'
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
 - name: 'By EbraSha 📛 #14'
   type: vmess
   server: v6.hdacd.com
@@ -10586,7 +10573,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #14'
+- name: 'By EbraSha 🗿 #13'
   type: vmess
   server: 2.26.231.123
   port: 110
@@ -10839,7 +10826,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #15'
+- name: 'By EbraSha 🗿 #14'
   type: vmess
   server: 67.220.95.3
   port: 18000
@@ -11035,7 +11022,7 @@ proxies:
   cipher: auto
   tls: true
   network: tcp
-- name: 'By EbraSha 🗿 #16'
+- name: 'By EbraSha 🗿 #15'
   type: vmess
   server: ef4e4860-008c-3e01-d1f8-bd56dc5b419b.oneplus.pub
   port: 80
@@ -11085,7 +11072,7 @@ proxies:
       Host: gs03-1.guoshi1520.com
     path: /82ff6d30
   servername: gs03-1.guoshi1520.com
-- name: 'By EbraSha 🗿 #17'
+- name: 'By EbraSha 🗿 #16'
   type: vmess
   server: hk2.lrzdx.uk
   port: 443
@@ -11281,15 +11268,6 @@ proxies:
       Host: u8.huvicloud.com
     path: /6796611b-260e-4d63-9016-20c27b12e420
   servername: u8.huvicloud.com
-- name: 'By EbraSha 🧨 #14'
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
 - name: 'By EbraSha 💻 #14'
   type: vmess
   server: vip1314.vip
@@ -11679,7 +11657,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13.m3u8
-- name: 'By EbraSha 🗿 #18'
+- name: 'By EbraSha 🗿 #17'
   type: vmess
   server: 13.214.178.3
   port: 443
@@ -11843,7 +11821,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🧨 #15'
+- name: 'By EbraSha 🧨 #14'
   type: vmess
   server: 157.85.230.247
   port: 2052
@@ -11902,7 +11880,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🧨 #16'
+- name: 'By EbraSha 🧨 #15'
   type: vmess
   server: 169.197.142.22
   port: 18000
@@ -12070,7 +12048,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #19'
+- name: 'By EbraSha 🗿 #18'
   type: vmess
   server: 209.126.84.189
   port: 443
@@ -12285,7 +12263,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- name: 'By EbraSha 🗿 #20'
+- name: 'By EbraSha 🗿 #19'
   type: vmess
   server: 45.205.31.175
   port: 10086
@@ -12387,7 +12365,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🧨 #17'
+- name: 'By EbraSha 🧨 #16'
   type: vmess
   server: 47.76.127.88
   port: 5566
@@ -12499,7 +12477,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🧨 #18'
+- name: 'By EbraSha 🧨 #17'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -12625,7 +12603,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #21'
+- name: 'By EbraSha 🗿 #20'
   type: vmess
   server: 91.107.135.249
   port: 15503
@@ -13100,7 +13078,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🧨 #19'
+- name: 'By EbraSha 🧨 #18'
   type: vmess
   server: family.bucket.x9.kfc-520.com
   port: 10050
@@ -13172,6 +13150,16 @@ proxies:
     headers:
       Host: baidu.com
     path: /
+- name: 'By EbraSha 🃏 #19'
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: tcp
+  servername: guanwang.awsno.com
 - name: 'By EbraSha 🌌 #12'
   type: vmess
   server: hk-vp1.xuanmiao.tech
@@ -13735,7 +13723,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🃏 #19'
+- name: 'By EbraSha 🃏 #20'
   type: vmess
   server: gt021.bestforxray.buzz
   port: 443
@@ -13763,16 +13751,7 @@ proxies:
       Host: time.ir
     path: /
   servername: time.ir
-- name: 'By EbraSha 🛸 #8'
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 'By EbraSha 🧨 #20'
+- name: 'By EbraSha 🧨 #19'
   type: vmess
   server: 103.127.243.59
   port: 56738
@@ -13971,7 +13950,7 @@ proxies:
     headers:
       Host: www.bing.com
     path: /a89feda9-ec30-48c1-ae6b-1a6f5b573f6b-vm
-- name: 'By EbraSha 🗿 #22'
+- name: 'By EbraSha 🗿 #21'
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -48055,16 +48034,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: throbbing-haze-fbde.388-6c4.workers.dev
-- name: 🇬🇷 希腊丨yoyapai.com
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: dl.google.com
-  flow: xtls-rprx-vision
 - name: NL荷蘭丨yoyapai.com
   type: vless
   server: 45.143.201.8
@@ -49758,14 +49727,6 @@ proxies:
     path: /au-do
     headers:
       Host: somersby.pt.r3xxe.eu.cc
-- name: 美國賓利大學丨yoyapai.com
-  type: vless
-  server: 141.133.172.222
-  port: 20342
-  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
 - name: 美國麻省理工學院丨yoyapai.com
   type: vless
   server: 18.244.214.36
@@ -49813,18 +49774,6 @@ proxies:
     path: Telegram-WangCai2🇨🇳
     headers:
       Host: notls.lukongtou.eu.org
-- name: '🇺🇸US美國丨yoyapai.com #8'
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
 - name: '🇯🇵JP日本丨yoyapai.com #2'
   type: vless
   server: 155.248.168.35
@@ -50115,6 +50064,19 @@ proxies:
     path: /195.123.218.174-443
     headers:
       Host: blackshadow.dpdns.org
+- name: '俄羅斯丨yoyapai.com #3'
+  type: vless
+  server: 77.105.163.46
+  port: 443
+  uuid: 0e192bd1-8f19-4184-9fff-6d67e4f738bd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ov186.ochmaybrooooo.online
+  ws-opts:
+    path: /
+    headers:
+      Host: ov186.ochmaybrooooo.online
 - name: '美國丨yoyapai.com #19'
   type: vless
   server: www.true.th
@@ -51887,6 +51849,19 @@ proxies:
     path: /proxyip=ProxyIP.CMLiussss.net?uuid=ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
     headers:
       Host: sni.ehb.cc.cd
+- name: US美国(v2clash.blog 2026-8.3更新
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 0c0b895d-b954-4bec-94e6-5770677e7925
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.neT
 - name: FR法国(v2clash.blog 2026-8.4更新
   type: vless
   server: 172.67.201.133
@@ -52092,32 +52067,34 @@ proxy-groups:
   - '[United States] 中转14芝加哥'
   - '[United States] 中转15达拉斯'
   - '[United States] 中转16亚特兰大'
-  - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  - 🇹🇷_TR_土耳其
-  - 🇹🇷_TR_土耳其_1
-  - 🇨🇳_CN_中国->🇵🇱_PL_波兰
-  - 🇪🇪_EE_爱沙尼亚
-  - 🇹🇷_TR_土耳其_2
-  - 🇩🇪_DE_德国
-  - 🇹🇷_TR_土耳其_3
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  - 🇭🇰_HK_中国香港
-  - 🇷🇺_RU_俄罗斯
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇺🇸_US_美国->🇲🇽_MX_墨西哥
+  - 🇨🇿_CZ_捷克
   - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇭🇰_HK_中国香港->🇮🇳_IN_印度
-  - 🇹🇭_TH_泰国
-  - 🇨🇳_CN_中国
-  - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港_1
-  - 🇺🇸_US_美国_1
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国_2
+  - 🇫🇮_FI_芬兰
+  - 🇭🇰_HK_中国香港
   - 🇩🇪_DE_德国->🇹🇭_TH_泰国
-  - 🇭🇰_HK_中国香港->🇮🇩_ID_印度尼西亚
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
+  - 🇭🇰_HK_中国香港_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国
+  - 🇹🇭_TH_泰国
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇭🇰_HK_中国香港_2
+  - 🇭🇰_HK_中国香港_3
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港_4
+  - 🇬🇧_GB_英国->🇩🇪_DE_德国
+  - 🇺🇸_US_美国->🇲🇽_MX_墨西哥
+  - 🇭🇰_HK_中国香港_5
+  - 🇺🇸_US_美国_2
+  - '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
   - 🇺🇸 美国
   - By EbraSha 💣
   - 'By EbraSha 💣 #2'
@@ -52796,7 +52773,6 @@ proxy-groups:
   - 'By EbraSha 🧠 #14'
   - 'By EbraSha 🌪️ #11'
   - 'By EbraSha 💎 #9'
-  - 'By EbraSha 🗿 #13'
   - 'By EbraSha 📛 #14'
   - 'By EbraSha 🌍 #10'
   - 'By EbraSha 🕹️ #14'
@@ -52852,7 +52828,7 @@ proxy-groups:
   - 'By EbraSha 🃏 #16'
   - 'By EbraSha ⌨️ #8'
   - 'By EbraSha 🦈 #13'
-  - 'By EbraSha 🗿 #14'
+  - 'By EbraSha 🗿 #13'
   - 'By EbraSha 🧊 #12'
   - 'By EbraSha 👑 #15'
   - 'By EbraSha 🧨 #12'
@@ -52876,7 +52852,7 @@ proxy-groups:
   - 'By EbraSha 🔋 #15'
   - 'By EbraSha 🌑 #17'
   - 'By EbraSha ⌨️ #9'
-  - 'By EbraSha 🗿 #15'
+  - 'By EbraSha 🗿 #14'
   - 'By EbraSha 🧪 #15'
   - 'By EbraSha 🪬 #10'
   - 'By EbraSha 🧪 #16'
@@ -52893,11 +52869,11 @@ proxy-groups:
   - 'By EbraSha 🚬 #16'
   - 'By EbraSha 🔮 #8'
   - 'By EbraSha 🐉 #16'
-  - 'By EbraSha 🗿 #16'
+  - 'By EbraSha 🗿 #15'
   - 'By EbraSha 🌐 #12'
   - 'By EbraSha 🧩 #9'
   - 'By EbraSha 🛜 #13'
-  - 'By EbraSha 🗿 #17'
+  - 'By EbraSha 🗿 #16'
   - 'By EbraSha 🦈 #14'
   - 'By EbraSha 🧠 #15'
   - 'By EbraSha 📱 #15'
@@ -52913,7 +52889,6 @@ proxy-groups:
   - 'By EbraSha 🧊 #14'
   - 'By EbraSha ⚙️ #10'
   - 'By EbraSha 👾 #9'
-  - 'By EbraSha 🧨 #14'
   - 'By EbraSha 💻 #14'
   - 'By EbraSha 🚧 #14'
   - 'By EbraSha 🌐 #13'
@@ -52948,7 +52923,7 @@ proxy-groups:
   - 'By EbraSha 🌍 #15'
   - 'By EbraSha 🛰️ #14'
   - 'By EbraSha 🛰️ #15'
-  - 'By EbraSha 🗿 #18'
+  - 'By EbraSha 🗿 #17'
   - 'By EbraSha 🔋 #17'
   - 'By EbraSha 🔥 #11'
   - 'By EbraSha 🧠 #17'
@@ -52963,12 +52938,12 @@ proxy-groups:
   - 'By EbraSha 🚬 #17'
   - 'By EbraSha 🩸 #12'
   - 'By EbraSha 🕶️ #14'
-  - 'By EbraSha 🧨 #15'
+  - 'By EbraSha 🧨 #14'
   - 'By EbraSha 🦅 #14'
   - 'By EbraSha ♠️ #17'
   - 'By EbraSha 🕷️ #14'
   - 'By EbraSha 🌪️ #13'
-  - 'By EbraSha 🧨 #16'
+  - 'By EbraSha 🧨 #15'
   - 'By EbraSha 🌌 #11'
   - 'By EbraSha 🔮 #10'
   - 'By EbraSha 🦇 #14'
@@ -52983,7 +52958,7 @@ proxy-groups:
   - 'By EbraSha 🧠 #18'
   - 'By EbraSha 🌪️ #14'
   - 'By EbraSha 💎 #13'
-  - 'By EbraSha 🗿 #19'
+  - 'By EbraSha 🗿 #18'
   - 'By EbraSha ♣️ #11'
   - 'By EbraSha 🔮 #11'
   - 'By EbraSha 🔌 #15'
@@ -53004,7 +52979,7 @@ proxy-groups:
   - 'By EbraSha 🧩 #10'
   - 'By EbraSha 🧊 #15'
   - 'By EbraSha 💎 #14'
-  - 'By EbraSha 🗿 #20'
+  - 'By EbraSha 🗿 #19'
   - 'By EbraSha ⌨️ #10'
   - 'By EbraSha 🌑 #19'
   - 'By EbraSha 📱 #19'
@@ -53013,7 +52988,7 @@ proxy-groups:
   - 'By EbraSha 🔥 #12'
   - 'By EbraSha 👾 #12'
   - 'By EbraSha 🧊 #16'
-  - 'By EbraSha 🧨 #17'
+  - 'By EbraSha 🧨 #16'
   - 'By EbraSha 🦾 #9'
   - 'By EbraSha 🚀 #10'
   - 'By EbraSha ⛓️ #14'
@@ -53024,7 +52999,7 @@ proxy-groups:
   - 'By EbraSha 🌃 #9'
   - 'By EbraSha 📶 #10'
   - 'By EbraSha 🛸 #6'
-  - 'By EbraSha 🧨 #18'
+  - 'By EbraSha 🧨 #17'
   - 'By EbraSha 🕶️ #15'
   - 'By EbraSha ♠️ #18'
   - 'By EbraSha 🥷 #18'
@@ -53037,7 +53012,7 @@ proxy-groups:
   - 'By EbraSha 🐉 #17'
   - 'By EbraSha 🐉 #18'
   - 'By EbraSha 🌑 #20'
-  - 'By EbraSha 🗿 #21'
+  - 'By EbraSha 🗿 #20'
   - 'By EbraSha 🧠 #20'
   - 'By EbraSha 🚨 #12'
   - 'By EbraSha ⛓️ #15'
@@ -53076,12 +53051,13 @@ proxy-groups:
   - 'By EbraSha 📛 #20'
   - 'By EbraSha 🕶️ #17'
   - 'By EbraSha 🕹️ #19'
-  - 'By EbraSha 🧨 #19'
+  - 'By EbraSha 🧨 #18'
   - 'By EbraSha 🐺 #10'
   - 'By EbraSha 🪐 #9'
   - 'By EbraSha 🧠 #21'
   - 'By EbraSha 🚀 #12'
   - 'By EbraSha ⚔️ #13'
+  - 'By EbraSha 🃏 #19'
   - 'By EbraSha 🌌 #12'
   - 'By EbraSha 🕹️ #20'
   - 'By EbraSha 🛜 #15'
@@ -53134,10 +53110,9 @@ proxy-groups:
   - 'By EbraSha 🦂 #7'
   - 'By EbraSha 💎 #16'
   - 'By EbraSha 🪖 #9'
-  - 'By EbraSha 🃏 #19'
+  - 'By EbraSha 🃏 #20'
   - 'By EbraSha 🦇 #18'
-  - 'By EbraSha 🛸 #8'
-  - 'By EbraSha 🧨 #20'
+  - 'By EbraSha 🧨 #19'
   - 'By EbraSha 🧪 #18'
   - 'By EbraSha 🔮 #14'
   - 'By EbraSha 🌑 #21'
@@ -53155,7 +53130,7 @@ proxy-groups:
   - 'By EbraSha 📛 #23'
   - 'By EbraSha 🌌 #14'
   - 'By EbraSha 🩸 #14'
-  - 'By EbraSha 🗿 #22'
+  - 'By EbraSha 🗿 #21'
   - 'By EbraSha 🦾 #12'
   - 'By EbraSha 📀 #18'
   - 'By EbraSha 🧪 #20'
@@ -56182,7 +56157,6 @@ proxy-groups:
   - US美國丨yoyapai.com
   - 法國丨yoyapai.com
   - 'US美國丨yoyapai.com #2'
-  - 🇬🇷 希腊丨yoyapai.com
   - NL荷蘭丨yoyapai.com
   - 🇯🇵JP日本丨yoyapai.com
   - 未知节点丨yoyapai.com
@@ -56343,12 +56317,10 @@ proxy-groups:
   - '美國丨yoyapai.com #14'
   - '南非丨yoyapai.com #2'
   - '巴西聖保羅丨yoyapai.com #4'
-  - 美國賓利大學丨yoyapai.com
   - 美國麻省理工學院丨yoyapai.com
   - 美國明德大學丨yoyapai.com
   - '美國丨yoyapai.com #15'
   - '🇺🇸US美國丨yoyapai.com #7'
-  - '🇺🇸US美國丨yoyapai.com #8'
   - '🇯🇵JP日本丨yoyapai.com #2'
   - '🇯🇵JP日本丨yoyapai.com #3'
   - 🇭🇰HK香港丨yoyapai.com
@@ -56374,6 +56346,7 @@ proxy-groups:
   - '🇭🇰HK香港節點丨yoyapai.com #4'
   - 🇲🇽 墨西哥
   - '美國丨yoyapai.com #18'
+  - '俄羅斯丨yoyapai.com #3'
   - '美國丨yoyapai.com #19'
   - '🇭🇰HK香港節點丨yoyapai.com #5'
   - '🇭🇰HK香港節點丨yoyapai.com #6'
@@ -56531,6 +56504,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-7.31更新
   - NL荷兰(v2clash.blog 2026-8.3更新
   - CA加拿大(v2clash.blog 2026-8.3更新
+  - US美国(v2clash.blog 2026-8.3更新
   - FR法国(v2clash.blog 2026-8.4更新
   - US美国(v2clash.blog 2026-8.4更新
   - 'US美国(v2clash.blog 2026-8.4更新 #2'
