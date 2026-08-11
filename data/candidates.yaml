@@ -128,6 +128,20 @@ proxies:
     path: /
     headers:
       Host: www-sg.liebao.shop
+- name: 🇯🇵 日本 - UDP [D1
+  type: hysteria2
+  server: 198.13.60.132
+  port: 51025
+  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
+  sni: staticintl.cloudcachetci.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 - UDP [D1
+  type: hysteria2
+  server: 43.165.167.29
+  port: 51026
+  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
+  sni: staticintl.cloudcachetci.com
+  skip-cert-verify: true
 - name: 🇺🇸_US_美国
   type: vmess
   server: guanwang.awsno.com
@@ -51034,6 +51048,8 @@ proxy-groups:
   - SG-新加坡-优选03
   - SG-新加坡01-优选
   - SG-新加坡02-优选
+  - 🇯🇵 日本 - UDP [D1
+  - 🇸🇬 新加坡 - UDP [D1
   - 🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   - 🇳🇱_NL_荷兰
