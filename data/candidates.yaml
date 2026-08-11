@@ -3,21 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇫🇷 法国 法兰西岛 Paris Department 巴黎 GLOBAL COMMUNICATION NETWORK LIMITED
-  server: 194.60.95.104
-  port: 27284
-  type: vless
-  uuid: d4628a11-4118-464e-afe2-b7ec96612558
-  tls: true
-  tfo: false
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  reality-opts:
-    public-key: S2UgKLSRVwKCQgGJTUazkZHuC-B83hV--Y0Xbp32gh8
-    short-id: a1db1b5b
-  servername: www.java.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 剩余流量：0
   type: vless
   server: 43.164.138.156
@@ -51079,7 +51064,6 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇫🇷 法国 法兰西岛 Paris Department 巴黎 GLOBAL COMMUNICATION NETWORK LIMITED
   - 剩余流量：0
   - KR-韩国-优化02
   - KR-韩国-优化03
