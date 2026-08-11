@@ -3,1025 +3,204 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇭🇰香港频道@hutaocfyx
+- name: 🇫🇷 法国 法兰西岛 Paris Department 巴黎 GLOBAL COMMUNICATION NETWORK LIMITED
+  server: 194.60.95.104
+  port: 27284
   type: vless
-  server: 91.193.58.217
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
+  uuid: d4628a11-4118-464e-afe2-b7ec96612558
   tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: S2UgKLSRVwKCQgGJTUazkZHuC-B83hV--Y0Xbp32gh8
+    short-id: a1db1b5b
+  servername: www.java.com
   client-fingerprint: chrome
-  servername: vlso200.1d.mom
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso200.1d.mom
+  network: tcp
 - name: 剩余流量：0
-  type: vmess
-  server: 2605:e440:11::388
-  port: 16003
-  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
-  alterId: 0
-  cipher: auto
-  tls: false
+  type: vless
+  server: 43.164.138.156
+  port: 20001
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: KR-韩国-优化02
+  type: vless
+  server: 43.164.138.156
+  port: 20002
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: KR-韩国-优化03
+  type: vless
+  server: 43.164.138.156
+  port: 20003
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: US-美国-优化01
+  type: vless
+  server: 43.162.111.126
+  port: 20007
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: US-美国-优化02
+  type: vless
+  server: 43.162.111.126
+  port: 20008
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: US-美国-优化03
+  type: vless
+  server: 43.162.111.126
+  port: 20009
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com.cn
+  flow: xtls-rprx-vision
+- name: SG-新加坡-优选01
+  type: vless
+  server: www.shopify.com
+  port: 8443
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
   network: ws
-- name: louwangzhiyu.org@gmail.com
-  type: vmess
-  server: 2605:e440:11::392
-  port: 17003
-  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
-  alterId: 0
-  cipher: auto
-  tls: false
+  tls: true
+  client-fingerprint: chrome
+  servername: www-sg.liebao.shop
+  ws-opts:
+    path: /
+    headers:
+      Host: www-sg.liebao.shop
+- name: SG-新加坡-优选02
+  type: vless
+  server: www.shopify.com
+  port: 2096
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
   network: ws
-- name: 请在系统设置及翻墙软件的设置中同时启用 IPv6
-  type: vmess
-  server: 2605:e440:47::25a
-  port: 17211
-  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
-  alterId: 0
-  cipher: auto
-  tls: false
+  tls: true
+  client-fingerprint: chrome
+  servername: www-sg.liebao.shop
+  ws-opts:
+    path: /
+    headers:
+      Host: www-sg.liebao.shop
+- name: SG-新加坡-优选03
+  type: vless
+  server: www.shopify.com
+  port: 2053
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
   network: ws
-- name: 请使用支持Hy2协议的最新版客户端，老版本识别不了节点
-  type: vmess
-  server: 107.189.16.68
-  port: 13010
-  uuid: 81a9c236-bfdb-4446-9ce5-6abcce975053
-  alterId: 0
-  cipher: auto
-  tls: false
+  tls: true
+  client-fingerprint: chrome
+  servername: www-sg.liebao.shop
+  ws-opts:
+    path: /
+    headers:
+      Host: www-sg.liebao.shop
+- name: SG-新加坡01-优选
+  type: vless
+  server: www.shopify.com
+  port: 2083
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
   network: ws
-- name: '[Japan] 日本中转1'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23002
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Japan] 日本中转2'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23103
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Japan] 日本中转3'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23104
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Japan] 日本中转4'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23003
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Japan] 日本中转5'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23105
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 美国中转1'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23004
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 美国中转2'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23005
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 美国中转3'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23106
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[TW] 台湾中转1'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23000
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[TW] 台湾中转2'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23100
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[TW] 台湾中转3'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23101
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[TW] 台湾中转4'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23001
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[TW] 台湾中转5'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23102
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hong Kong] 香港中转1'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23006
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hong Kong] 香港中转2'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23107
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hong Kong] 香港中转3'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23108
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hong Kong] 香港中转4'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23007
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hong Kong] 香港中转5'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23109
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Korea] 韩国中转1'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23010
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Korea] 韩国中转2'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23111
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Korea] 韩国中转3'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23011
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Korea] 韩国中转4'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23112
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转1'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23012
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转2'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23113
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转3'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23021
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转4'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23122
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转5'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23022
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转6'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23123
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转7'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23023
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转8'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23124
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转9'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23024
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Singapore] 新加坡中转10'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23125
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[China] 中国澳门中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23030
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Malaysia] 马来西亚中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23129
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Malaysia] 马来西亚中转2'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23118
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Thailand] 泰国中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23031
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Myanmar] 缅甸中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23115
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Indonesia] 印尼中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23130
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Cambodia] 柬埔寨中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23119
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Philippines] 菲律宾中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23019
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Vietnam] 越南中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23145
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[India] 印度中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23047
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Nepal] 尼泊尔中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23015
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Bangladesh] 孟加拉国中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23016
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Pakistan] 巴基斯坦中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23134
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Australia] 澳大利亚中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23032
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Canada] 加拿大中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23131
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[UAE] 迪拜中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23035
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Saudi Arabia] 沙特阿拉伯中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23046
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Israel] 以色列中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23146
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Iraq] 伊拉克中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23116
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Bahrain] 巴林中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23117
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Oman] 阿曼中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23017
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Qatar] 卡塔尔中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23018
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Russia] 俄罗斯中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23014
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[France] 法国中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23033
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United Kingdom] 英国中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23132
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Germany] 德国中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23034
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Spain] 西班牙中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23036
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Italy] 意大利中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23135
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Netherlands] 荷兰中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23037
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Norway] 挪威中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23136
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Switzerland] 瑞士中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23038
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Poland] 波兰中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23137
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Finland] 芬兰中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23039
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Ukraine] 乌克兰中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23138
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Kazakhstan] 哈萨克斯坦中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23040
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Romania] 罗马尼亚中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23139
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Serbia] 塞尔维亚中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23041
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Sweden] 瑞典中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23140
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Belgium] 比利时中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23042
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Czech Republic] 捷克共和国中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23141
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Denmark] 丹麦中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23043
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Estonia] 爱沙尼亚中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23142
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Hungary] 匈牙利中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23044
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Iceland] 冰岛中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23143
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Turkey] 土耳其中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23049
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Bulgaria] 保加利亚中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23013
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Greece] 希腊中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23114
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Austria] 奥地利中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23029
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[South Africa] 南非中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23147
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Egypt] 埃及中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23149
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Brazil] 巴西中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23133
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Mexico] 墨西哥中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23045
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Argentina] 阿根廷中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23144
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Chile] 智利中转'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23048
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Peru] 秘鲁中转'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23120
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Colombia] 哥伦比亚中转'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23020
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[Ecuador] 厄瓜多尔中转'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23121
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转9洛杉矶1'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23050
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转10洛杉矶2'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23128
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转11西雅图'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23025
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转12圣荷西'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23026
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转13纽约'
-  type: vless
-  server: 0726hkzz.debiancdn.net
-  port: 23027
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转14芝加哥'
-  type: vless
-  server: 0726jpjp8.debiancdn.net
-  port: 23126
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转15达拉斯'
-  type: vless
-  server: 0726jpjp7.debiancdn.net
-  port: 23127
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
-- name: '[United States] 中转16亚特兰大'
-  type: vless
-  server: 0726jpzz.debiancdn.net
-  port: 23028
-  uuid: 88d1ba44-0af4-45a1-b05f-1424a102b6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cctv.com
-  flow: xtls-rprx-vision
+  servername: www-sg.liebao.shop
+  ws-opts:
+    path: /
+    headers:
+      Host: www-sg.liebao.shop
+- name: SG-新加坡02-优选
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: www-sg.liebao.shop
+  ws-opts:
+    path: /
+    headers:
+      Host: www-sg.liebao.shop
+- name: 🇬🇧_GB_英国
+  type: vless
+  server: rt.tunnelpoint.space
+  port: 443
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  servername: rt.tunnelpoint.space
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: fdda9806fe5d8584
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇪_SE_瑞典
+  type: vless
+  server: 82.29.43.42
+  port: 443
+  uuid: 635a1c4e-122b-45f5-8339-03bce6039739
+  servername: auto.malina24.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: abcd
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  type: vless
+  server: 194.93.0.28
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  network: grpc
+  servername: media2.tcpdoor.net
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: 3303c7a5
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  servername: storage.yandex.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇿_CZ_捷克
   type: vless
   server: 141.133.172.222
@@ -1029,142 +208,6 @@ proxies:
   uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  type: vmess
-  server: tun1.wizardx1.com
-  port: 2078
-  uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇮_FI_芬兰
-  type: vless
-  server: 45.88.13.3
-  port: 993
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-  servername: download.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: 7timuei1uufoixbf.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  network: ws
-  servername: d2pwbkmfr5lxa4.cloudfront.net
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: trojan
-  server: Hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: 88.218.44.4
-  port: 8443
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TunService
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20035
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_1
-  type: vless
-  server: 47.240.80.220
-  port: 5100
-  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: vless
-  server: status.netraidly.ru
-  port: 40443
-  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
-  servername: deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
-    short-id: 69d4
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '11'
-  down: '55'
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
   udp: true
 - name: 🇹🇭_TH_泰国
   type: vless
@@ -1180,28 +223,112 @@ proxies:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: vless
-  server: 45.155.52.231
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: 7timuei1uufoixbf.v.3dns.vip
   port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: vless
+  server: ad-007.cloud25075.info
+  port: 8443
+  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  network: ws
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '11'
+  down: '55'
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇭🇺_HU_匈牙利
+  type: vless
+  server: 2.26.139.184
+  port: 443
+  uuid: f055899d-026b-49b5-88ed-0227795082da
+  servername: kukuruza.mycdn-me.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -qRasoN1QIcSdRL937b6s-Y2qOb-9OFmlaHBi7UcOSM
+    short-id: e17b4d9a8c1f3526
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧_GB_英国->🇫🇮_FI_芬兰
+  type: vless
+  server: 2.26.128.73
+  port: 443
+  uuid: f055899d-026b-49b5-88ed-0227795082da
+  servername: wombat.mycdn-me.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: w88Ys8dVF9DuslGwUD05J9-FHNoAT9qmPysCvHiEmmg
+    short-id: 1b40e7c2a1d8f635
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  servername: download.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vmess
-  server: v33.hdacd.com
-  port: 30833
+  server: v24.hdacd.com
+  port: 30824
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
-  cipher: none
+  cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇭🇰_HK_中国香港_2
   type: vmess
@@ -1215,7 +342,7 @@ proxies:
   udp: true
 - name: 🇭🇰_HK_中国香港_3
   type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  server: drbkg16egf3fzlm3.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -1226,84 +353,74 @@ proxies:
   ws-opts:
     path: /ws-vmess
   udp: true
-- name: 🇺🇸_US_美国_1
+- name: 🇮🇹_IT_意大利
   type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  servername: dl.google.com
+  server: taoccqyacf7e.dop66.com
+  port: 5039
+  uuid: a5bea439-6176-4b5d-a891-bd31fc3530c9
+  servername: www.yahoo.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+    public-key: fv-InxuZSzLlHc83OANs4U2windIUSwPilOpJkMgtW0
+    short-id: 2e8424a2696cb606
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+- name: 🇸🇪_SE_瑞典_1
+  type: ss
+  server: 13.61.5.244
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vless
+  server: 120.227.1.43
+  port: 12528
+  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+- name: 🇺🇸_US_美国_3
+  type: ss
+  server: 3.91.76.154
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
+- name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  network: ws
+  servername: d2pwbkmfr5lxa4.cloudfront.net
   tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_4
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港_4
   type: vmess
-  server: 47.86.167.194
-  port: 800
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    path:
-    - /x
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
-  udp: true
-- name: 🇬🇧_GB_英国->🇩🇪_DE_德国
-  type: vless
-  server: 194.242.129.183
-  port: 2550
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇲🇽_MX_墨西哥
-  type: hysteria2
-  server: 23.95.75.151
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_5
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
+  server: ejomsxptp19apygl.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -1314,29 +431,6 @@ proxies:
   ws-opts:
     path: /ws-vmess
   udp: true
-- name: 🇺🇸_US_美国_2
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  skip-cert-verify: true
-  udp: true
-- name: '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  network: tcp
 - name: 🇺🇸 美国
   type: vless
   server: 172.64.52.152
@@ -9899,6 +8993,15 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
+- name: 'By EbraSha 🗿 #13'
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: 'By EbraSha 📛 #14'
   type: vmess
   server: v6.hdacd.com
@@ -10573,7 +9676,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #13'
+- name: 'By EbraSha 🗿 #14'
   type: vmess
   server: 2.26.231.123
   port: 110
@@ -10826,7 +9929,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #14'
+- name: 'By EbraSha 🗿 #15'
   type: vmess
   server: 67.220.95.3
   port: 18000
@@ -11022,7 +10125,7 @@ proxies:
   cipher: auto
   tls: true
   network: tcp
-- name: 'By EbraSha 🗿 #15'
+- name: 'By EbraSha 🗿 #16'
   type: vmess
   server: ef4e4860-008c-3e01-d1f8-bd56dc5b419b.oneplus.pub
   port: 80
@@ -11072,7 +10175,7 @@ proxies:
       Host: gs03-1.guoshi1520.com
     path: /82ff6d30
   servername: gs03-1.guoshi1520.com
-- name: 'By EbraSha 🗿 #16'
+- name: 'By EbraSha 🗿 #17'
   type: vmess
   server: hk2.lrzdx.uk
   port: 443
@@ -11657,7 +10760,7 @@ proxies:
     headers:
       Host: ''
     path: /cctv13.m3u8
-- name: 'By EbraSha 🗿 #17'
+- name: 'By EbraSha 🗿 #18'
   type: vmess
   server: 13.214.178.3
   port: 443
@@ -12048,7 +11151,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #18'
+- name: 'By EbraSha 🗿 #19'
   type: vmess
   server: 209.126.84.189
   port: 443
@@ -12263,7 +11366,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- name: 'By EbraSha 🗿 #19'
+- name: 'By EbraSha 🗿 #20'
   type: vmess
   server: 45.205.31.175
   port: 10086
@@ -12603,7 +11706,7 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 'By EbraSha 🗿 #20'
+- name: 'By EbraSha 🗿 #21'
   type: vmess
   server: 91.107.135.249
   port: 15503
@@ -13950,7 +13053,7 @@ proxies:
     headers:
       Host: www.bing.com
     path: /a89feda9-ec30-48c1-ae6b-1a6f5b573f6b-vm
-- name: 'By EbraSha 🗿 #21'
+- name: 'By EbraSha 🗿 #22'
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -47734,6 +46837,21 @@ proxies:
   client-fingerprint: chrome
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
+- name: '英国+Technicolor+SA #3'
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+- name: '美国+V2CROSS.COM #5'
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: ru2.skydrgn-online.online
 - name: 荷兰+V2CROSS.COM
   type: vless
   server: 94.102.51.218
@@ -47751,7 +46869,7 @@ proxies:
   password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
   sni: hdlb1.mangshe.xyz
   skip-cert-verify: true
-- name: '美国+V2CROSS.COM #5'
+- name: '美国+V2CROSS.COM #6'
   type: hysteria2
   server: 144.31.107.101
   port: 25447
@@ -47810,7 +46928,7 @@ proxies:
   password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
   sni: ln4.xiaoliyu.cyou
   skip-cert-verify: true
-- name: '美国+V2CROSS.COM #6'
+- name: '美国+V2CROSS.COM #7'
   type: hysteria2
   server: jpa.nnpy.org
   port: 11000
@@ -47889,7 +47007,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: '美国+V2CROSS.COM #7'
+- name: '美国+V2CROSS.COM #8'
   type: vless
   server: 140.248.186.45
   port: 443
@@ -47915,7 +47033,7 @@ proxies:
     path: /api/v1/irc
     headers:
       Host: vod.ensf.top
-- name: '美国+V2CROSS.COM #8'
+- name: '美国+V2CROSS.COM #9'
   type: hysteria2
   server: brb.nnpy.org
   port: 11100
@@ -48044,6 +47162,15 @@ proxies:
   client-fingerprint: random
   servername: hasty-dolphin.cdn.cachefleet.com
   flow: xtls-rprx-vision
+- name: 免費節點丨yoyapai.com
+  type: vless
+  server: 88.218.44.4
+  port: 8443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: download.nvidia.com
 - name: 🇯🇵JP日本丨yoyapai.com
   type: vless
   server: 2.27.27.64
@@ -48072,7 +47199,7 @@ proxies:
   tls: true
   client-fingerprint: firefox
   servername: ddc-akn.astralweb.tech
-- name: 免費節點丨yoyapai.com
+- name: '免費節點丨yoyapai.com #2'
   type: vless
   server: 170.168.97.3
   port: 443
@@ -48103,7 +47230,7 @@ proxies:
     path: /
     headers:
       Host: ad-013.pixel9xdmq.info
-- name: '免費節點丨yoyapai.com #2'
+- name: '免費節點丨yoyapai.com #3'
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -48137,7 +47264,7 @@ proxies:
     path: /
     headers:
       Host: d2pwbkmfr5lxa4.cloudfront.net
-- name: '免費節點丨yoyapai.com #3'
+- name: '免費節點丨yoyapai.com #4'
   type: vless
   server: 157.22.19.5
   port: 443
@@ -49247,7 +48374,7 @@ proxies:
   client-fingerprint: chrome
   servername: storage.yandex.net
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #4'
+- name: '免費節點丨yoyapai.com #5'
   type: hysteria2
   server: 103.251.167.168
   port: 443
@@ -50134,7 +49261,7 @@ proxies:
   client-fingerprint: chrome
   servername: yandex.net
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #5'
+- name: '免費節點丨yoyapai.com #6'
   type: vless
   server: 172.67.175.34
   port: 8443
@@ -50147,7 +49274,7 @@ proxies:
     path: /
     headers:
       Host: ad-007.cloud25075.info
-- name: '免費節點丨yoyapai.com #6'
+- name: '免費節點丨yoyapai.com #7'
   type: vless
   server: 198.41.209.43
   port: 443
@@ -50160,7 +49287,7 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: '免費節點丨yoyapai.com #7'
+- name: '免費節點丨yoyapai.com #8'
   type: vless
   server: 178.17.53.177
   port: 34150
@@ -50169,7 +49296,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #8'
+- name: '免費節點丨yoyapai.com #9'
   type: vless
   server: 178.17.53.177
   port: 34151
@@ -50178,7 +49305,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #9'
+- name: '免費節點丨yoyapai.com #10'
   type: vless
   server: 45.192.2.51
   port: 443
@@ -50188,7 +49315,7 @@ proxies:
   client-fingerprint: chrome
   servername: yandex.net
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #10'
+- name: '免費節點丨yoyapai.com #11'
   type: vless
   server: ad-018.cloud25075.info
   port: 8443
@@ -50201,7 +49328,7 @@ proxies:
     path: /
     headers:
       Host: ad-018.cloud25075.info
-- name: '免費節點丨yoyapai.com #11'
+- name: '免費節點丨yoyapai.com #12'
   type: vless
   server: 104.16.8.66
   port: 8880
@@ -50213,7 +49340,7 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: rapid-base-6c9e.45-d79.workers.dev
-- name: '免費節點丨yoyapai.com #12'
+- name: '免費節點丨yoyapai.com #13'
   type: vless
   server: getsavesafe.net
   port: 443
@@ -50223,7 +49350,7 @@ proxies:
   client-fingerprint: chrome
   servername: getsavesafe.net
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #13'
+- name: '免費節點丨yoyapai.com #14'
   type: vless
   server: 70.39.197.13
   port: 46197
@@ -50232,7 +49359,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: updates.cdn-apple.com
-- name: '免費節點丨yoyapai.com #14'
+- name: '免費節點丨yoyapai.com #15'
   type: vless
   server: chatgpt.com
   port: 443
@@ -50254,7 +49381,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: cdn.steamstatic.com
-- name: '免費節點丨yoyapai.com #15'
+- name: '免費節點丨yoyapai.com #16'
   type: vless
   server: 170.168.99.3
   port: 443
@@ -50263,7 +49390,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: cdn.steamstatic.com
-- name: '免費節點丨yoyapai.com #16'
+- name: '免費節點丨yoyapai.com #17'
   type: vless
   server: 188.43.105.233
   port: 7098
@@ -50273,7 +49400,7 @@ proxies:
   client-fingerprint: chrome
   servername: static.vk.com
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #17'
+- name: '免費節點丨yoyapai.com #18'
   type: vless
   server: 70.39.198.93
   port: 46197
@@ -50282,7 +49409,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: updates.cdn-apple.com
-- name: '免費節點丨yoyapai.com #18'
+- name: '免費節點丨yoyapai.com #19'
   type: vless
   server: 94.139.251.9
   port: 443
@@ -50292,7 +49419,7 @@ proxies:
   client-fingerprint: chrome
   servername: apple.com
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #19'
+- name: '免費節點丨yoyapai.com #20'
   type: vless
   server: blog.cloudflare.com
   port: 2095
@@ -50305,7 +49432,7 @@ proxies:
     path: /
     headers:
       Host: cnmfangbinxing.cnmfangbinxing-s.workers.dev
-- name: '免費節點丨yoyapai.com #20'
+- name: '免費節點丨yoyapai.com #21'
   type: vless
   server: cdn-cloudflare91.korvexe.ir
   port: 2086
@@ -50317,7 +49444,7 @@ proxies:
     path: /
     headers:
       Host: cdn-cloudflare91.korvexe.ir
-- name: '免費節點丨yoyapai.com #21'
+- name: '免費節點丨yoyapai.com #22'
   type: vless
   server: cdn-cloudflare91.korvexe.ir
   port: 8880
@@ -50329,7 +49456,7 @@ proxies:
     path: /
     headers:
       Host: cdn-cloudflare91.korvexe.ir
-- name: '免費節點丨yoyapai.com #22'
+- name: '免費節點丨yoyapai.com #23'
   type: vless
   server: www.speedtest.net
   port: 8443
@@ -50342,7 +49469,7 @@ proxies:
     path: /
     headers:
       Host: oknoloy.dearhossein-taktaz.ir
-- name: '免費節點丨yoyapai.com #23'
+- name: '免費節點丨yoyapai.com #24'
   type: trojan
   server: 2----------------------------------------------------3.poki-pakipon.ir
   port: 38331
@@ -50371,7 +49498,7 @@ proxies:
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
     headers:
       Host: pan11.global.ssl.fastly.net
-- name: '免費節點丨yoyapai.com #24'
+- name: '免費節點丨yoyapai.com #25'
   type: vless
   server: 94.139.251.191
   port: 443
@@ -50381,7 +49508,7 @@ proxies:
   client-fingerprint: chrome
   servername: apple.com
   flow: xtls-rprx-vision
-- name: '免費節點丨yoyapai.com #25'
+- name: '免費節點丨yoyapai.com #26'
   type: vless
   server: 104.26.2.173
   port: 443
@@ -50394,7 +49521,7 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: '免費節點丨yoyapai.com #26'
+- name: '免費節點丨yoyapai.com #27'
   type: vless
   server: 104.26.9.48
   port: 443
@@ -50816,15 +49943,6 @@ proxies:
       Host: 31.76.11.46.cdn-one.org
 - name: 'DE德国(mibei77.com 米贝节点分享 #3'
   type: vless
-  server: 194.93.0.28
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  network: grpc
-  tls: true
-  client-fingerprint: safari
-  servername: media2.tcpdoor.net
-- name: 'DE德国(mibei77.com 米贝节点分享 #4'
-  type: vless
   server: 217.163.76.118
   port: 2086
   uuid: b7977b65-cfd8-4db9-a029-6ef014a4ae4a
@@ -50853,7 +49971,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: ddc-akn.astralweb.tech
-- name: 'DE德国(mibei77.com 米贝节点分享 #5'
+- name: 'DE德国(mibei77.com 米贝节点分享 #4'
   type: vless
   server: 31.76.11.46.cdn-one.org
   port: 443
@@ -50878,17 +49996,13 @@ proxies:
   flow: xtls-rprx-vision
 - name: '🇭🇰_HK_中国香港 #2'
   type: vmess
-  server: drbkg16egf3fzlm3.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  server: 47.86.167.194
+  port: 800
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
   alterId: 0
   cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ws-vmess
+  tls: false
+  network: http
 - name: '🇩🇪_DE_德国 #2'
   type: vless
   server: 94.156.122.215
@@ -51965,136 +51079,42 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇭🇰香港频道@hutaocfyx
+  - 🇫🇷 法国 法兰西岛 Paris Department 巴黎 GLOBAL COMMUNICATION NETWORK LIMITED
   - 剩余流量：0
-  - louwangzhiyu.org@gmail.com
-  - 请在系统设置及翻墙软件的设置中同时启用 IPv6
-  - 请使用支持Hy2协议的最新版客户端，老版本识别不了节点
-  - '[Japan] 日本中转1'
-  - '[Japan] 日本中转2'
-  - '[Japan] 日本中转3'
-  - '[Japan] 日本中转4'
-  - '[Japan] 日本中转5'
-  - '[United States] 美国中转1'
-  - '[United States] 美国中转2'
-  - '[United States] 美国中转3'
-  - '[TW] 台湾中转1'
-  - '[TW] 台湾中转2'
-  - '[TW] 台湾中转3'
-  - '[TW] 台湾中转4'
-  - '[TW] 台湾中转5'
-  - '[Hong Kong] 香港中转1'
-  - '[Hong Kong] 香港中转2'
-  - '[Hong Kong] 香港中转3'
-  - '[Hong Kong] 香港中转4'
-  - '[Hong Kong] 香港中转5'
-  - '[Korea] 韩国中转1'
-  - '[Korea] 韩国中转2'
-  - '[Korea] 韩国中转3'
-  - '[Korea] 韩国中转4'
-  - '[Singapore] 新加坡中转1'
-  - '[Singapore] 新加坡中转2'
-  - '[Singapore] 新加坡中转3'
-  - '[Singapore] 新加坡中转4'
-  - '[Singapore] 新加坡中转5'
-  - '[Singapore] 新加坡中转6'
-  - '[Singapore] 新加坡中转7'
-  - '[Singapore] 新加坡中转8'
-  - '[Singapore] 新加坡中转9'
-  - '[Singapore] 新加坡中转10'
-  - '[China] 中国澳门中转'
-  - '[Malaysia] 马来西亚中转'
-  - '[Malaysia] 马来西亚中转2'
-  - '[Thailand] 泰国中转'
-  - '[Myanmar] 缅甸中转'
-  - '[Indonesia] 印尼中转'
-  - '[Cambodia] 柬埔寨中转'
-  - '[Philippines] 菲律宾中转'
-  - '[Vietnam] 越南中转'
-  - '[India] 印度中转'
-  - '[Nepal] 尼泊尔中转'
-  - '[Bangladesh] 孟加拉国中转'
-  - '[Pakistan] 巴基斯坦中转'
-  - '[Australia] 澳大利亚中转'
-  - '[Canada] 加拿大中转'
-  - '[UAE] 迪拜中转'
-  - '[Saudi Arabia] 沙特阿拉伯中转'
-  - '[Israel] 以色列中转'
-  - '[Iraq] 伊拉克中转'
-  - '[Bahrain] 巴林中转'
-  - '[Oman] 阿曼中转'
-  - '[Qatar] 卡塔尔中转'
-  - '[Russia] 俄罗斯中转'
-  - '[France] 法国中转'
-  - '[United Kingdom] 英国中转'
-  - '[Germany] 德国中转'
-  - '[Spain] 西班牙中转'
-  - '[Italy] 意大利中转'
-  - '[Netherlands] 荷兰中转'
-  - '[Norway] 挪威中转'
-  - '[Switzerland] 瑞士中转'
-  - '[Poland] 波兰中转'
-  - '[Finland] 芬兰中转'
-  - '[Ukraine] 乌克兰中转'
-  - '[Kazakhstan] 哈萨克斯坦中转'
-  - '[Romania] 罗马尼亚中转'
-  - '[Serbia] 塞尔维亚中转'
-  - '[Sweden] 瑞典中转'
-  - '[Belgium] 比利时中转'
-  - '[Czech Republic] 捷克共和国中转'
-  - '[Denmark] 丹麦中转'
-  - '[Estonia] 爱沙尼亚中转'
-  - '[Hungary] 匈牙利中转'
-  - '[Iceland] 冰岛中转'
-  - '[Turkey] 土耳其中转'
-  - '[Bulgaria] 保加利亚中转'
-  - '[Greece] 希腊中转'
-  - '[Austria] 奥地利中转'
-  - '[South Africa] 南非中转'
-  - '[Egypt] 埃及中转'
-  - '[Brazil] 巴西中转'
-  - '[Mexico] 墨西哥中转'
-  - '[Argentina] 阿根廷中转'
-  - '[Chile] 智利中转'
-  - '[Peru] 秘鲁中转'
-  - '[Colombia] 哥伦比亚中转'
-  - '[Ecuador] 厄瓜多尔中转'
-  - '[United States] 中转9洛杉矶1'
-  - '[United States] 中转10洛杉矶2'
-  - '[United States] 中转11西雅图'
-  - '[United States] 中转12圣荷西'
-  - '[United States] 中转13纽约'
-  - '[United States] 中转14芝加哥'
-  - '[United States] 中转15达拉斯'
-  - '[United States] 中转16亚特兰大'
-  - 🇨🇿_CZ_捷克
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇫🇮_FI_芬兰
-  - 🇭🇰_HK_中国香港
-  - 🇩🇪_DE_德国->🇹🇭_TH_泰国
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - KR-韩国-优化02
+  - KR-韩国-优化03
+  - US-美国-优化01
+  - US-美国-优化02
+  - US-美国-优化03
+  - SG-新加坡-优选01
+  - SG-新加坡-优选02
+  - SG-新加坡-优选03
+  - SG-新加坡01-优选
+  - SG-新加坡02-优选
+  - 🇬🇧_GB_英国
+  - 🇸🇪_SE_瑞典
+  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
   - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国_1
-  - 🇭🇰_HK_中国香港_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇩🇪_DE_德国
+  - 🇨🇿_CZ_捷克
   - 🇹🇭_TH_泰国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国
+  - 🇭🇺_HU_匈牙利
+  - 🇬🇧_GB_英国->🇫🇮_FI_芬兰
+  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港_1
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
   - 🇭🇰_HK_中国香港_2
   - 🇭🇰_HK_中国香港_3
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇮🇹_IT_意大利
+  - 🇸🇪_SE_瑞典_1
+  - 🇨🇳_CN_中国
+  - 🇺🇸_US_美国_3
+  - 🇩🇪_DE_德国->🇹🇭_TH_泰国
+  - 🇺🇸_US_美国_4
   - 🇭🇰_HK_中国香港_4
-  - 🇬🇧_GB_英国->🇩🇪_DE_德国
-  - 🇺🇸_US_美国->🇲🇽_MX_墨西哥
-  - 🇭🇰_HK_中国香港_5
-  - 🇺🇸_US_美国_2
-  - '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
   - 🇺🇸 美国
   - By EbraSha 💣
   - 'By EbraSha 💣 #2'
@@ -52773,6 +51793,7 @@ proxy-groups:
   - 'By EbraSha 🧠 #14'
   - 'By EbraSha 🌪️ #11'
   - 'By EbraSha 💎 #9'
+  - 'By EbraSha 🗿 #13'
   - 'By EbraSha 📛 #14'
   - 'By EbraSha 🌍 #10'
   - 'By EbraSha 🕹️ #14'
@@ -52828,7 +51849,7 @@ proxy-groups:
   - 'By EbraSha 🃏 #16'
   - 'By EbraSha ⌨️ #8'
   - 'By EbraSha 🦈 #13'
-  - 'By EbraSha 🗿 #13'
+  - 'By EbraSha 🗿 #14'
   - 'By EbraSha 🧊 #12'
   - 'By EbraSha 👑 #15'
   - 'By EbraSha 🧨 #12'
@@ -52852,7 +51873,7 @@ proxy-groups:
   - 'By EbraSha 🔋 #15'
   - 'By EbraSha 🌑 #17'
   - 'By EbraSha ⌨️ #9'
-  - 'By EbraSha 🗿 #14'
+  - 'By EbraSha 🗿 #15'
   - 'By EbraSha 🧪 #15'
   - 'By EbraSha 🪬 #10'
   - 'By EbraSha 🧪 #16'
@@ -52869,11 +51890,11 @@ proxy-groups:
   - 'By EbraSha 🚬 #16'
   - 'By EbraSha 🔮 #8'
   - 'By EbraSha 🐉 #16'
-  - 'By EbraSha 🗿 #15'
+  - 'By EbraSha 🗿 #16'
   - 'By EbraSha 🌐 #12'
   - 'By EbraSha 🧩 #9'
   - 'By EbraSha 🛜 #13'
-  - 'By EbraSha 🗿 #16'
+  - 'By EbraSha 🗿 #17'
   - 'By EbraSha 🦈 #14'
   - 'By EbraSha 🧠 #15'
   - 'By EbraSha 📱 #15'
@@ -52923,7 +51944,7 @@ proxy-groups:
   - 'By EbraSha 🌍 #15'
   - 'By EbraSha 🛰️ #14'
   - 'By EbraSha 🛰️ #15'
-  - 'By EbraSha 🗿 #17'
+  - 'By EbraSha 🗿 #18'
   - 'By EbraSha 🔋 #17'
   - 'By EbraSha 🔥 #11'
   - 'By EbraSha 🧠 #17'
@@ -52958,7 +51979,7 @@ proxy-groups:
   - 'By EbraSha 🧠 #18'
   - 'By EbraSha 🌪️ #14'
   - 'By EbraSha 💎 #13'
-  - 'By EbraSha 🗿 #18'
+  - 'By EbraSha 🗿 #19'
   - 'By EbraSha ♣️ #11'
   - 'By EbraSha 🔮 #11'
   - 'By EbraSha 🔌 #15'
@@ -52979,7 +52000,7 @@ proxy-groups:
   - 'By EbraSha 🧩 #10'
   - 'By EbraSha 🧊 #15'
   - 'By EbraSha 💎 #14'
-  - 'By EbraSha 🗿 #19'
+  - 'By EbraSha 🗿 #20'
   - 'By EbraSha ⌨️ #10'
   - 'By EbraSha 🌑 #19'
   - 'By EbraSha 📱 #19'
@@ -53012,7 +52033,7 @@ proxy-groups:
   - 'By EbraSha 🐉 #17'
   - 'By EbraSha 🐉 #18'
   - 'By EbraSha 🌑 #20'
-  - 'By EbraSha 🗿 #20'
+  - 'By EbraSha 🗿 #21'
   - 'By EbraSha 🧠 #20'
   - 'By EbraSha 🚨 #12'
   - 'By EbraSha ⛓️ #15'
@@ -53130,7 +52151,7 @@ proxy-groups:
   - 'By EbraSha 📛 #23'
   - 'By EbraSha 🌌 #14'
   - 'By EbraSha 🩸 #14'
-  - 'By EbraSha 🗿 #21'
+  - 'By EbraSha 🗿 #22'
   - 'By EbraSha 🦾 #12'
   - 'By EbraSha 📀 #18'
   - 'By EbraSha 🧪 #20'
@@ -56129,24 +55150,26 @@ proxy-groups:
   - 美国+纽约市DigitalOcean云公司
   - 美国+Amazon+EC2服务器
   - '美国+V2CROSS.COM #4'
+  - '英国+Technicolor+SA #3'
+  - '美国+V2CROSS.COM #5'
   - 荷兰+V2CROSS.COM
   - 南非+V2CROSS.COM
-  - '美国+V2CROSS.COM #5'
+  - '美国+V2CROSS.COM #6'
   - 瑞典 V2CROSS.COM
   - '瑞典 V2CROSS.COM #2'
   - '美国 CloudFlare节点 #14'
   - 沙特阿拉伯+V2CROSS.COM
   - 美国+宾夕法尼亚州Coudersport
-  - '美国+V2CROSS.COM #6'
+  - '美国+V2CROSS.COM #7'
   - '美国+CloudFlare节点 #8'
   - '美国+CloudFlare节点 #9'
   - '美国+CloudFlare节点 #10'
   - '美国+CloudFlare节点 #11'
   - 英国+V2CROSS.COM
   - 美国+乔治亚洲亚特兰大Fastly节点
-  - '美国+V2CROSS.COM #7'
-  - 亚太地区+V2CROSS.COM
   - '美国+V2CROSS.COM #8'
+  - 亚太地区+V2CROSS.COM
+  - '美国+V2CROSS.COM #9'
   - '美国+CloudFlare节点 #12'
   - '乌克兰+V2CROSS.COM #2'
   - 丹麦+V2CROSS.COM
@@ -56158,16 +55181,17 @@ proxy-groups:
   - 法國丨yoyapai.com
   - 'US美國丨yoyapai.com #2'
   - NL荷蘭丨yoyapai.com
+  - 免費節點丨yoyapai.com
   - 🇯🇵JP日本丨yoyapai.com
   - 未知节点丨yoyapai.com
   - AE阿聯酋丨yoyapai.com
-  - 免費節點丨yoyapai.com
+  - '免費節點丨yoyapai.com #2'
   - 🇮🇷_IR伊朗丨yoyapai.com
   - CA加拿大丨yoyapai.com
-  - '免費節點丨yoyapai.com #2'
+  - '免費節點丨yoyapai.com #3'
   - GB英國丨yoyapai.com
   - 🇺🇸_US美國丨yoyapai.com
-  - '免費節點丨yoyapai.com #3'
+  - '免費節點丨yoyapai.com #4'
   - 🇺🇸 美國
   - 新加坡丨yoyapai.com
   - 英國丨yoyapai.com
@@ -56271,7 +55295,7 @@ proxy-groups:
   - 'CA加拿大丨yoyapai.com #6'
   - '🇺🇸US美國丨yoyapai.com #2'
   - 🇭🇺HU匈牙利丨yoyapai.com
-  - '免費節點丨yoyapai.com #4'
+  - '免費節點丨yoyapai.com #5'
   - 🇱🇹LT立陶宛丨yoyapai.com
   - 🇺🇸 US美國丨yoyapai.com
   - '羅馬尼亞丨yoyapai.com #7'
@@ -56352,7 +55376,6 @@ proxy-groups:
   - '🇭🇰HK香港節點丨yoyapai.com #6'
   - 巴西丨yoyapai.com
   - 🇧🇷巴西丨yoyapai.com
-  - '免費節點丨yoyapai.com #5'
   - '免費節點丨yoyapai.com #6'
   - '免費節點丨yoyapai.com #7'
   - '免費節點丨yoyapai.com #8'
@@ -56362,8 +55385,8 @@ proxy-groups:
   - '免費節點丨yoyapai.com #12'
   - '免費節點丨yoyapai.com #13'
   - '免費節點丨yoyapai.com #14'
-  - 🇺🇦烏克蘭丨yoyapai.com
   - '免費節點丨yoyapai.com #15'
+  - 🇺🇦烏克蘭丨yoyapai.com
   - '免費節點丨yoyapai.com #16'
   - '免費節點丨yoyapai.com #17'
   - '免費節點丨yoyapai.com #18'
@@ -56372,11 +55395,12 @@ proxy-groups:
   - '免費節點丨yoyapai.com #21'
   - '免費節點丨yoyapai.com #22'
   - '免費節點丨yoyapai.com #23'
+  - '免費節點丨yoyapai.com #24'
   - 🇮🇷_IR_伊朗
   - '🇺🇸_US美國丨yoyapai.com #2'
-  - '免費節點丨yoyapai.com #24'
   - '免費節點丨yoyapai.com #25'
   - '免費節點丨yoyapai.com #26'
+  - '免費節點丨yoyapai.com #27'
   - '美國丨yoyapai.com #20'
   - 伊朗丨yoyapai.com
   - US美国(mibei77.com 米贝节点分享
@@ -56414,10 +55438,9 @@ proxy-groups:
   - 'RU俄罗斯(mibei77.com 米贝节点分享 #2'
   - 'DE德国(mibei77.com 米贝节点分享 #2'
   - 'DE德国(mibei77.com 米贝节点分享 #3'
-  - 'DE德国(mibei77.com 米贝节点分享 #4'
   - PL波兰(mibei77.com 米贝节点分享
   - 'PL波兰(mibei77.com 米贝节点分享 #2'
-  - 'DE德国(mibei77.com 米贝节点分享 #5'
+  - 'DE德国(mibei77.com 米贝节点分享 #4'
   - 🇲🇩_MD_摩尔多瓦
   - '🇭🇰_HK_中国香港 #2'
   - '🇩🇪_DE_德国 #2'
