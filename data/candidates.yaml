@@ -128,20 +128,6 @@ proxies:
     path: /
     headers:
       Host: www-sg.liebao.shop
-- name: 🇯🇵 日本 - UDP [D1
-  type: hysteria2
-  server: 198.13.60.132
-  port: 51025
-  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
-  sni: staticintl.cloudcachetci.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 - UDP [D1
-  type: hysteria2
-  server: 43.165.167.29
-  port: 51025
-  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
-  sni: staticintl.cloudcachetci.com
-  skip-cert-verify: true
 - name: 德国 - Frankfurt am Main - 1
   server: 130.61.147.181
   port: 59924
@@ -47197,9 +47183,9 @@ proxies:
   password: f0b9ae63-91a7-4673-924e-498e0e0828c0
 - name: US-LN
   type: vless
-  server: www.visa.com.hk
+  server: ct.877774.xyz
   port: 443
-  uuid: 16aa0099-8723-4a6b-8c11-d7caa01cd754
+  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
   network: ws
   tls: true
   client-fingerprint: random
@@ -47212,7 +47198,7 @@ proxies:
   type: vless
   server: freev2.cloudflare.182682.xyz
   port: 443
-  uuid: 16aa0099-8723-4a6b-8c11-d7caa01cd754
+  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
   network: ws
   tls: true
   client-fingerprint: random
@@ -47221,19 +47207,19 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: jp-osa.862400.xyz
-- name: DE-LN
+- name: SG-LN
   type: vless
-  server: ct.877774.xyz
+  server: www.visa.com.hk
   port: 443
-  uuid: 16aa0099-8723-4a6b-8c11-d7caa01cd754
+  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
   network: ws
   tls: true
   client-fingerprint: random
-  servername: eu-central.862400.xyz
+  servername: ap-south.862400.xyz
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: eu-central.862400.xyz
+      Host: ap-south.862400.xyz
 - name: 每天更新免费节点：v2rayclashfree.com
   type: vless
   server: 80.93.202.40
@@ -74454,6 +74440,29 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime55.workers.dev
+- name: US美国(v2clash.blog 2026-8.13更新
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: FR法国(v2clash.blog 2026-8.13更新
+  type: trojan
+  server: 104.18.152.159
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 proxy-groups:
 - name: PROBE
   type: select
@@ -74469,8 +74478,6 @@ proxy-groups:
   - SG-新加坡-优选03
   - SG-新加坡01-优选
   - SG-新加坡02-优选
-  - 🇯🇵 日本 - UDP [D1
-  - 🇸🇬 新加坡 - UDP [D1
   - 德国 - Frankfurt am Main - 1
   - 芬兰 - Helsinki - 1
   - 韩国 - Incheon - 1
@@ -78568,7 +78575,7 @@ proxy-groups:
   - 'end-gfw.com@sg3 #2'
   - US-LN
   - JP-LN
-  - DE-LN
+  - SG-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
   - 香港 02
@@ -81107,5 +81114,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-8.10更新
   - 'US美国(v2clash.blog 2026-8.10更新 #2'
   - FR法国(v2clash.blog 2026-8.10更新
+  - US美国(v2clash.blog 2026-8.13更新
+  - FR法国(v2clash.blog 2026-8.13更新
 rules:
 - MATCH,PROBE
