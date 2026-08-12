@@ -128,20 +128,6 @@ proxies:
     path: /
     headers:
       Host: www-sg.liebao.shop
-- name: 🇯🇵 日本 - UDP [D1
-  type: hysteria2
-  server: 198.13.60.132
-  port: 51024
-  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
-  sni: staticintl.cloudcachetci.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 - UDP [D1
-  type: hysteria2
-  server: 43.165.167.29
-  port: 51025
-  password: d4436c04-d0fc-4761-8120-ad5d399ba6b0
-  sni: staticintl.cloudcachetci.com
-  skip-cert-verify: true
 - name: 德国 - Frankfurt am Main - 1
   server: 130.61.147.181
   port: 59924
@@ -47325,22 +47311,22 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: us-lax.862400.xyz
-- name: 'US-LN #2'
+- name: JP-LN
   type: vless
-  server: freev2.cloudflare.182682.xyz
+  server: www.visa.com.hk
   port: 443
   uuid: 16aa0099-8723-4a6b-8c11-d7caa01cd754
   network: ws
   tls: true
   client-fingerprint: random
-  servername: us-lax.862400.xyz
+  servername: jp-osa.862400.xyz
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: us-lax.862400.xyz
+      Host: jp-osa.862400.xyz
 - name: NL-LN
   type: vless
-  server: www.visa.com.hk
+  server: freev2.cloudflare.182682.xyz
   port: 443
   uuid: 16aa0099-8723-4a6b-8c11-d7caa01cd754
   network: ws
@@ -74580,8 +74566,6 @@ proxy-groups:
   - SG-新加坡-优选03
   - SG-新加坡01-优选
   - SG-新加坡02-优选
-  - 🇯🇵 日本 - UDP [D1
-  - 🇸🇬 新加坡 - UDP [D1
   - 德国 - Frankfurt am Main - 1
   - 芬兰 - Helsinki - 1
   - 韩国 - Incheon - 1
@@ -78685,7 +78669,7 @@ proxy-groups:
   - 'end-gfw.com@kr3 #2'
   - 'end-gfw.com@sg3 #2'
   - US-LN
-  - 'US-LN #2'
+  - JP-LN
   - NL-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
