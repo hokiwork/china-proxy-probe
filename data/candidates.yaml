@@ -3,131 +3,71 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 剩余流量：0
+- name: 🇺🇸美国 01
   type: vless
-  server: 43.164.138.156
-  port: 20001
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
+  server: 64.186.235.57
+  port: 443
+  uuid: 6bd7c5f5-23a0-492b-a098-b17682030790
+  network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: KR-韩国-优化02
+  client-fingerprint: random
+  servername: huston.trevely.de5.net
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: huston.trevely.de5.net
+- name: 🇺🇸美国 02
   type: vless
-  server: 43.164.138.156
-  port: 20002
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
+  server: 154.21.94.42
+  port: 443
+  uuid: 6bd7c5f5-23a0-492b-a098-b17682030790
+  network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: KR-韩国-优化03
+  client-fingerprint: random
+  servername: huston.trevely.de5.net
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: huston.trevely.de5.net
+- name: 🇺🇸美国 03
   type: vless
-  server: 43.164.138.156
-  port: 20003
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
+  server: 179.253.245.31
+  port: 443
+  uuid: 6bd7c5f5-23a0-492b-a098-b17682030790
+  network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: US-美国-优化01
+  client-fingerprint: random
+  servername: huston.trevely.de5.net
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: huston.trevely.de5.net
+- name: 🇺🇸美国 04
   type: vless
-  server: 43.162.111.126
-  port: 20007
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: US-美国-优化02
-  type: vless
-  server: 43.162.111.126
-  port: 20008
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: US-美国-优化03
-  type: vless
-  server: 43.162.111.126
-  port: 20009
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: SG-新加坡-优选01
-  type: vless
-  server: www.shopify.com
+  server: 179.255.113.20
   port: 8443
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  uuid: 6bd7c5f5-23a0-492b-a098-b17682030790
   network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: www-sg.liebao.shop
+  client-fingerprint: random
+  servername: huston.trevely.de5.net
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: www-sg.liebao.shop
-- name: SG-新加坡-优选02
+      Host: huston.trevely.de5.net
+- name: 🇺🇸美国 05
   type: vless
-  server: www.shopify.com
-  port: 2096
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
+  server: 179.255.116.193
+  port: 443
+  uuid: 6bd7c5f5-23a0-492b-a098-b17682030790
   network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: www-sg.liebao.shop
+  client-fingerprint: random
+  servername: huston.trevely.de5.net
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: www-sg.liebao.shop
-- name: SG-新加坡-优选03
-  type: vless
-  server: www.shopify.com
-  port: 2053
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: www-sg.liebao.shop
-  ws-opts:
-    path: /
-    headers:
-      Host: www-sg.liebao.shop
-- name: SG-新加坡01-优选
-  type: vless
-  server: www.shopify.com
-  port: 2083
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: www-sg.liebao.shop
-  ws-opts:
-    path: /
-    headers:
-      Host: www-sg.liebao.shop
-- name: SG-新加坡02-优选
-  type: vless
-  server: www.shopify.com
-  port: 2087
-  uuid: 2cb977bf-1466-4c6a-b994-7bd77147ac6e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: www-sg.liebao.shop
-  ws-opts:
-    path: /
-    headers:
-      Host: www-sg.liebao.shop
+      Host: huston.trevely.de5.net
 - name: 德国 - Frankfurt am Main - 1
   server: 130.61.147.181
   port: 59924
@@ -47164,7 +47104,7 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: jp-osa.862400.xyz
-- name: SG-LN
+- name: NL-LN
   type: vless
   server: freev2.cloudflare.182682.xyz
   port: 443
@@ -47172,11 +47112,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: random
-  servername: ap-south.862400.xyz
+  servername: nl-ams.862400.xyz
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: ap-south.862400.xyz
+      Host: nl-ams.862400.xyz
 - name: 每天更新免费节点：v2rayclashfree.com
   type: vless
   server: 80.93.202.40
@@ -74459,17 +74399,11 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 剩余流量：0
-  - KR-韩国-优化02
-  - KR-韩国-优化03
-  - US-美国-优化01
-  - US-美国-优化02
-  - US-美国-优化03
-  - SG-新加坡-优选01
-  - SG-新加坡-优选02
-  - SG-新加坡-优选03
-  - SG-新加坡01-优选
-  - SG-新加坡02-优选
+  - 🇺🇸美国 01
+  - 🇺🇸美国 02
+  - 🇺🇸美国 03
+  - 🇺🇸美国 04
+  - 🇺🇸美国 05
   - 德国 - Frankfurt am Main - 1
   - 芬兰 - Helsinki - 1
   - 韩国 - Incheon - 1
@@ -78565,7 +78499,7 @@ proxy-groups:
   - 'end-gfw.com@sg3 #2'
   - US-LN
   - JP-LN
-  - SG-LN
+  - NL-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
   - 香港 02
