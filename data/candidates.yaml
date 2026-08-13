@@ -68,98 +68,133 @@ proxies:
     path: /?ed=2560
     headers:
       Host: huston.trevely.de5.net
+- name: 波兰 - Ursynów - 1
+  server: relative-locust.rooster465.autos
+  type: trojan
+  country: 🇮🇳IN
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 2037
+- name: 波兰 - Ursynów - 2
+  server: enough-basilisk.rooster465.autos
+  type: trojan
+  country: 🇮🇳IN
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 978
 - name: 德国 - Frankfurt am Main - 1
-  server: 130.61.147.181
-  port: 59924
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  udp: true
-  delay: 434
-- name: 芬兰 - Helsinki - 1
-  server: autodiscover.fuzzyaytor.cyou
-  type: ss
-  country: 🇬🇧GB
-  port: 42982
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  cipher: chacha20-ietf-poly1305
-  delay: 2620
-- name: 韩国 - Incheon - 1
-  server: 52.78.13.238
-  port: 443
+  server: dashing-bedbug.rooster465.autos
   type: trojan
-  password: ND91608427
-  sni: upward-puma.rooster465.autos
+  country: 🇩🇪DE
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
   udp: true
-  delay: 775
-- name: 韩国 - Incheon - 2
-  server: upward-puma.rooster465.autos
+  delay: 1106
+- name: 德国 - Frankfurt am Main - 2
+  server: 3.79.7.150
   type: trojan
-  country: 🇰🇷KR
+  country: 🇩🇪DE
   port: 443
-  password: ND91608427
-  sni: upward-puma.rooster465.autos
+  password: AE62539071
+  sni: moved-bluegill.rooster465.autos
   skip-cert-verify: true
   udp: true
-  delay: 1696
+  delay: 1359
+- name: 俄罗斯 - Saint Petersburg - 1
+  server: 195.133.23.200
+  type: ss
+  country: 🇨🇿CZ
+  port: 30331
+  password: 81a20429165df87e
+  cipher: aes-256-gcm
+  delay: 675
+- name: 法国 - Paris - 1
+  server: chief-cricket.rooster465.autos
+  type: trojan
+  country: 🇫🇷FR
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 2972
+- name: 法国 - Paris - 2
+  server: one-quail.rooster465.autos
+  type: trojan
+  country: 🇫🇷FR
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 1004
+- name: 法国 - Paris - 3
+  server: tough-hermit.rooster465.autos
+  type: trojan
+  country: 🇫🇷FR
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 1134
+- name: 法国 - Paris - 4
+  server: distinct-quail.rooster465.autos
+  type: trojan
+  country: 🇺🇸US
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  udp: true
+  delay: 1783
 - name: 荷兰 - Amsterdam - 1
-  server: 84.17.47.125
-  port: 9002
-  type: http
-  tls: true
+  server: whole-woodcock.rooster465.autos
+  type: trojan
+  country: 🇷🇴RO
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
   udp: true
-  delay: 1107
-- name: 荷兰 - Amsterdam - 2
-  server: 84.17.47.146
-  port: 9002
-  type: http
-  tls: true
+  delay: 1463
+- name: 加拿大 - Toronto - 1
+  server: 212.193.6.107
+  type: ss
+  country: 🇺🇸US
+  port: 30331
+  password: fbcec76953a2d173
+  cipher: aes-256-gcm
+  delay: 2349
+- name: 日本 - Tokyo - 1
+  server: improved-anteater.rooster465.autos
+  type: trojan
+  country: 🇯🇵JP
+  port: 443
+  udp: true
+  password: AE62539071
+  sni: improved-anteater.rooster465.autos
+  skip-cert-verify: true
+  delay: 1610
+- name: 中国 - Hong Kong - 1
+  server: magical-kodiak.rooster465.autos
+  type: trojan
+  country: 🇭🇰HK
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
   udp: true
-  delay: 2441
-- name: 荷兰 - Amsterdam - 3
-  server: 84.17.47.150
-  port: 9002
-  type: http
-  tls: true
+  delay: 1887
+- name: 中国 - Hong Kong - 2
+  server: upright-bedbug.rooster465.autos
+  type: trojan
+  country: 🇷🇴RO
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
   udp: true
-  delay: 2924
-- name: 罗马尼亚 - Bucharest - 1
-  server: 84.239.49.49
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1840
-- name: 罗马尼亚 - Bucharest - 2
-  server: 84.239.49.180
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1300
-- name: 美国 - Los Angeles - 1
-  server: 138.199.35.214
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1455
-- name: 美国 - Los Angeles - 2
-  server: 138.199.35.207
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-  delay: 1860
-- name: 中国 - Kwai Chung - 1
+  delay: 884
+- name: 中国 - Kwai Chung - 3
   server: v9.hdacd.com
   type: vmess
   country: 🇸🇬SG
@@ -170,7 +205,7 @@ proxies:
   http-opts: {}
   h2-opts: {}
   skip-cert-verify: true
-  delay: 1199
+  delay: 854
 - name: 🇭🇰_HK_中国香港
   type: vmess
   server: ejomsxptp19apygl.v.3dns.vip
@@ -47109,7 +47144,7 @@ proxies:
   type: vless
   server: www.visa.com.hk
   port: 443
-  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
   network: ws
   tls: true
   client-fingerprint: random
@@ -47120,9 +47155,9 @@ proxies:
       Host: us-lax.862400.xyz
 - name: JP-LN
   type: vless
-  server: ct.877774.xyz
+  server: freev2.cloudflare.182682.xyz
   port: 443
-  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
   network: ws
   tls: true
   client-fingerprint: random
@@ -47131,19 +47166,19 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: jp-osa.862400.xyz
-- name: IT-LN
+- name: NL-LN
   type: vless
-  server: freev2.cloudflare.182682.xyz
+  server: ct.877774.xyz
   port: 443
-  uuid: 951574ed-a096-4e3b-b97f-7bfda41dcb4f
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
   network: ws
   tls: true
   client-fingerprint: random
-  servername: it-mil.862400.xyz
+  servername: nl-ams.862400.xyz
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: it-mil.862400.xyz
+      Host: nl-ams.862400.xyz
 - name: 每天更新免费节点：v2rayclashfree.com
   type: vless
   server: 80.93.202.40
@@ -67958,6 +67993,13 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇰🇷KR_49|84KB/s|A004-260618 01
+  type: trojan
+  server: upward-puma.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: upward-puma.rooster465.autos
+  network: tcp
 - name: 🇳🇱NL_198|308KB/s|A004-260618 01
   type: vless
   server: 19.07.yunus.guru
@@ -68701,6 +68743,13 @@ proxies:
     path: /?ed=2560
     headers:
       Host: testcf.motherfuck.dpdns.org
+- name: 🇰🇷KR_64|92KB/s|M002-260618 01
+  type: trojan
+  server: 52.78.13.238
+  port: 443
+  password: ND91608427
+  sni: upward-puma.rooster465.autos
+  network: tcp
 - name: 🇸🇪SE_7|393KB/s|R002-260618 01
   type: ss
   server: 13.61.13.49
@@ -74432,18 +74481,21 @@ proxy-groups:
   - 🇺🇸美国 03
   - 🇺🇸美国 04
   - 🇺🇸美国 05
+  - 波兰 - Ursynów - 1
+  - 波兰 - Ursynów - 2
   - 德国 - Frankfurt am Main - 1
-  - 芬兰 - Helsinki - 1
-  - 韩国 - Incheon - 1
-  - 韩国 - Incheon - 2
+  - 德国 - Frankfurt am Main - 2
+  - 俄罗斯 - Saint Petersburg - 1
+  - 法国 - Paris - 1
+  - 法国 - Paris - 2
+  - 法国 - Paris - 3
+  - 法国 - Paris - 4
   - 荷兰 - Amsterdam - 1
-  - 荷兰 - Amsterdam - 2
-  - 荷兰 - Amsterdam - 3
-  - 罗马尼亚 - Bucharest - 1
-  - 罗马尼亚 - Bucharest - 2
-  - 美国 - Los Angeles - 1
-  - 美国 - Los Angeles - 2
-  - 中国 - Kwai Chung - 1
+  - 加拿大 - Toronto - 1
+  - 日本 - Tokyo - 1
+  - 中国 - Hong Kong - 1
+  - 中国 - Hong Kong - 2
+  - 中国 - Kwai Chung - 3
   - 🇭🇰_HK_中国香港
   - 🇷🇺_RU_俄罗斯
   - 🇺🇸_US_美国
@@ -78528,7 +78580,7 @@ proxy-groups:
   - 'end-gfw.com@sg3 #2'
   - US-LN
   - JP-LN
-  - IT-LN
+  - NL-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
   - 香港 02
@@ -80426,6 +80478,7 @@ proxy-groups:
   - 🇫🇷FR_1209|368KB/s|C002-260622 01
   - 🇺🇸US_436|256KB/s|A003-260618 01
   - 🇺🇸US_437|337KB/s|A004-260618 01
+  - 🇰🇷KR_49|84KB/s|A004-260618 01
   - 🇳🇱NL_198|308KB/s|A004-260618 01
   - 🇬🇧GB_74|210KB/s|A004-260618 01
   - 🇳🇱NL_199|124KB/s|B007-260618 01
@@ -80508,6 +80561,7 @@ proxy-groups:
   - 🇫🇷FR_1223|76KB/s|F003-260618 01
   - 🇫🇷FR_1224|208KB/s|F003-260618 01
   - 🇫🇷FR_1225|131KB/s|F003-260618 01
+  - 🇰🇷KR_64|92KB/s|M002-260618 01
   - 🇸🇪SE_7|393KB/s|R002-260618 01
   - 🇯🇵JP_97|327KB/s|R002-260618 01
   - 🇸🇬SG_45|309KB/s|R002-260618 01
