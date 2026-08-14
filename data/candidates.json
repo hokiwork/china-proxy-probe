@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T02:38:01.207950+00:00",
+  "generated_at": "2026-08-14T07:46:04.623912+00:00",
   "proxies": [
     {
       "client-fingerprint": "random",
@@ -60187,7 +60187,7 @@
       "name": "US-LN",
       "network": "ws",
       "port": 443,
-      "server": "ct.877774.xyz",
+      "server": "freev2.cloudflare.182682.xyz",
       "servername": "us-lax.862400.xyz",
       "tls": true,
       "type": "vless",
@@ -60201,10 +60201,27 @@
     },
     {
       "client-fingerprint": "random",
+      "name": "JP-LN",
+      "network": "ws",
+      "port": 443,
+      "server": "ct.877774.xyz",
+      "servername": "jp-osa.862400.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b13e89c1-cc4d-425a-8ec6-5665e1abc71f",
+      "ws-opts": {
+        "headers": {
+          "Host": "jp-osa.862400.xyz"
+        },
+        "path": "/announcement?ed=2048"
+      }
+    },
+    {
+      "client-fingerprint": "random",
       "name": "SG-LN",
       "network": "ws",
       "port": 443,
-      "server": "freev2.cloudflare.182682.xyz",
+      "server": "www.visa.com.hk",
       "servername": "ap-south.862400.xyz",
       "tls": true,
       "type": "vless",
@@ -60212,23 +60229,6 @@
       "ws-opts": {
         "headers": {
           "Host": "ap-south.862400.xyz"
-        },
-        "path": "/announcement?ed=2048"
-      }
-    },
-    {
-      "client-fingerprint": "random",
-      "name": "IT-LN",
-      "network": "ws",
-      "port": 443,
-      "server": "www.visa.com.hk",
-      "servername": "it-mil.862400.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "b13e89c1-cc4d-425a-8ec6-5665e1abc71f",
-      "ws-opts": {
-        "headers": {
-          "Host": "it-mil.862400.xyz"
         },
         "path": "/announcement?ed=2048"
       }

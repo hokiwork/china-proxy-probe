@@ -47163,7 +47163,7 @@ proxies:
   password: f0b9ae63-91a7-4673-924e-498e0e0828c0
 - name: US-LN
   type: vless
-  server: ct.877774.xyz
+  server: freev2.cloudflare.182682.xyz
   port: 443
   uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
   network: ws
@@ -47174,9 +47174,22 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: us-lax.862400.xyz
+- name: JP-LN
+  type: vless
+  server: ct.877774.xyz
+  port: 443
+  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: jp-osa.862400.xyz
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: jp-osa.862400.xyz
 - name: SG-LN
   type: vless
-  server: freev2.cloudflare.182682.xyz
+  server: www.visa.com.hk
   port: 443
   uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
   network: ws
@@ -47187,19 +47200,6 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: ap-south.862400.xyz
-- name: IT-LN
-  type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: b13e89c1-cc4d-425a-8ec6-5665e1abc71f
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: it-mil.862400.xyz
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
 - name: 每天更新免费节点：v2rayclashfree.com
   type: vless
   server: 80.93.202.40
@@ -78569,8 +78569,8 @@ proxy-groups:
   - 'end-gfw.com@kr3 #2'
   - 'end-gfw.com@sg3 #2'
   - US-LN
+  - JP-LN
   - SG-LN
-  - IT-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
   - 香港 02
