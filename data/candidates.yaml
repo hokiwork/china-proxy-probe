@@ -98,119 +98,59 @@ proxies:
       Host: sg.11160321.de5.net
     path: /
   servername: sg.11160321.de5.net
-- name: 剩余流量：799.35 GB
+- name: cm1.jean01.dpdns.org
   type: vless
-  server: cfyes.ziyoufly.xyz
+  server: cm1.jean01.dpdns.org
   port: 443
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
+  uuid: 191ab0f2-8b19-4b78-a11b-c6107a866978
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: cf-aws-jp01.23523463.xyz
+  servername: cm1.jean01.dpdns.org
   ws-opts:
-    path: /ziyou
+    path: /?ed=2560
     headers:
-      Host: cf-aws-jp01.23523463.xyz
-- name: 日本高速 04| BGP
+      Host: cm1.jean01.dpdns.org
+- name: ASN 8796毛里求斯(MU)FD-298-8796
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+- name: 'ASN 8796毛里求斯(MU)FD-298-8796 #2'
+  type: hysteria2
+  server: 45.207.207.25
+  port: 8443
+  password: gVYmzcZ1loF1rdnXpZzscUv12gi0yMr9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: vless
   type: vless
-  server: aws-jp01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
+  server: 2602:f92a:100:c900::b
+  port: 34599
+  uuid: 519291ac-4496-4c5d-9ac2-7a4bdf2bd925
   network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: iosapps.itunes.apple.com
+  tls: false
   flow: xtls-rprx-vision
-- name: 日本高速 06| BGP
-  type: vless
-  server: aws-jp02.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: 日本高速 02| BGP|流媒体
-  type: vless
-  server: ak-jp01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.lamer.com.sg
-  flow: xtls-rprx-vision
-- name: 日本高速 12| BGP
-  type: vless
-  server: uh-jp01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 新加坡高速 06| BGP
-  type: vless
-  server: uh-sg01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.lamer.com.hk
-  flow: xtls-rprx-vision
-- name: 台湾高速 02| BGP|流媒体
-  type: vless
-  server: ak-tw01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: 香港高速 02| BGP|流媒体
-  type: vless
-  server: ak-hk01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com.cn
-  flow: xtls-rprx-vision
-- name: 美国高速 02| BGP|流媒体
-  type: vless
-  server: ak-us01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.lamer.com.sg
-  flow: xtls-rprx-vision
-- name: 美国高速 04| BGP
-  type: vless
-  server: uh-us01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 土耳其高速 02| BGP
-  type: vless
-  server: uh-tr01.ziyoufly.xyz
-  port: 55555
-  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.lamer.com.hk
-  flow: xtls-rprx-vision
+- name: hysteria2
+  type: hysteria2
+  server: 2602:f92a:100:c900::b
+  port: 34602
+  password: 519291ac-4496-4c5d-9ac2-7a4bdf2bd925
+  sni: 2602:f92a:100:c900::b
+  skip-cert-verify: true
+- name: 请使用支持Clash.Meta内核的软件订阅或Shadowrocket，相关软件可在知识库获取
+  type: ss
+  server: 127.0.0.1
+  port: 1
+  cipher: aes-128-gcm
+  password: unsupported-client
+- name: 账号已被封禁
+  type: ss
+  server: 127.0.0.1
+  port: 520
+  cipher: aes-128-gcm
+  password: 46333b03-6e66-4962-8316-d88a57bbb0f8
 - name: 🇮🇷_IR_伊朗->🇩🇪_DE_德国
   type: vless
   server: 217.60.193.1
@@ -47232,7 +47172,7 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: jp-osa.862400.xyz
-- name: IT-LN
+- name: SE-LN
   type: vless
   server: ct.877774.xyz
   port: 443
@@ -47240,11 +47180,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: random
-  servername: it-mil.862400.xyz
+  servername: se-sto.862400.xyz
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: it-mil.862400.xyz
+      Host: se-sto.862400.xyz
 - name: 每天更新免费节点：v2rayclashfree.com
   type: vless
   server: 80.93.202.40
@@ -50508,7 +50448,7 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: dark-leaf-93a1.440-02e.workers.dev
-- name: vless
+- name: 'vless #2'
   type: vless
   server: wangcai.yunzhongzhuan.com
   port: 8880
@@ -50567,7 +50507,7 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: falling-darkness-95ea.289.workers.dev
-- name: 'vless #2'
+- name: 'vless #3'
   type: vless
   server: WangCai.yunzhongzhuan.com
   port: 8880
@@ -51306,7 +51246,7 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: lively-pine-093d.144-868.workers.dev
-- name: 'vless #3'
+- name: 'vless #4'
   type: vless
   server: 192.0.63.4
   port: 80
@@ -56303,7 +56243,7 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: autumn-snow-735a.175-9d9.workers.dev
-- name: 'vless #4'
+- name: 'vless #5'
   type: vless
   server: 72.167.241.4
   port: 80
@@ -56684,7 +56624,7 @@ proxies:
   password: kkzh2prsyr2ik47as615
   sni: static.rutube.ru
   network: tcp
-- name: 'vless #5'
+- name: 'vless #6'
   type: vless
   server: 104.18.12.149
   port: 80
@@ -58984,7 +58924,7 @@ proxies:
   password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   sni: 91.196.32.163
   skip-cert-verify: true
-- name: 'vless #6'
+- name: 'vless #7'
   type: vless
   server: 104.16.100.215
   port: 8880
@@ -60257,7 +60197,7 @@ proxies:
     path: /socks5=888:888@hkip.1d.mom:1080
     headers:
       Host: vlsovip.1d.mom
-- name: 'vless #7'
+- name: 'vless #8'
   type: vless
   server: 91.193.58.25
   port: 8880
@@ -61410,7 +61350,7 @@ proxies:
     path: /ec4l307nur5g
     headers:
       Host: index.arcane509.workers.dev
-- name: 'vless #8'
+- name: 'vless #9'
   type: vless
   server: 91.193.58.244
   port: 80
@@ -61554,7 +61494,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime36.workers.dev
-- name: 'vless #9'
+- name: 'vless #10'
   type: vless
   server: 194.76.18.2
   port: 8880
@@ -61766,7 +61706,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 'vless #10'
+- name: 'vless #11'
   type: vless
   server: 91.193.58.10
   port: 8880
@@ -63186,7 +63126,7 @@ proxies:
     path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
       Host: maSterserVeR1-VSH.KaLlEH.WORkERs.DEV
-- name: 'vless #11'
+- name: 'vless #12'
   type: vless
   server: 91.193.58.166
   port: 80
@@ -63763,7 +63703,7 @@ proxies:
     path: /
     headers:
       Host: bold-term-2b48.stary3989.workers.dev
-- name: 'vless #12'
+- name: 'vless #13'
   type: vless
   server: 209.94.90.4
   port: 80
@@ -65710,7 +65650,7 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 'vless #13'
+- name: 'vless #14'
   type: vless
   server: pla.tunnelguard.ru
   port: 443
@@ -65737,7 +65677,7 @@ proxies:
   network: tcp
   tls: false
   client-fingerprint: chrome
-- name: 'vless #14'
+- name: 'vless #15'
   type: vless
   server: 89.117.112.4
   port: 80
@@ -67258,7 +67198,7 @@ proxies:
   client-fingerprint: firefox
   servername: isp04.skorostnet.space
   flow: xtls-rprx-vision
-- name: 'vless #15'
+- name: 'vless #16'
   type: vless
   server: 185.136.12.179
   port: 443
@@ -73228,7 +73168,7 @@ proxies:
     path: /
     headers:
       Host: gga.nyanners.ir
-- name: 'vless #16'
+- name: 'vless #17'
   type: vless
   server: hayabusa.proxy.rlwy.net
   port: 25243
@@ -74493,17 +74433,13 @@ proxy-groups:
   - 🇰🇷KR
   - 🇭🇰HK
   - 🇸🇬 新加坡
-  - 剩余流量：799.35 GB
-  - 日本高速 04| BGP
-  - 日本高速 06| BGP
-  - 日本高速 02| BGP|流媒体
-  - 日本高速 12| BGP
-  - 新加坡高速 06| BGP
-  - 台湾高速 02| BGP|流媒体
-  - 香港高速 02| BGP|流媒体
-  - 美国高速 02| BGP|流媒体
-  - 美国高速 04| BGP
-  - 土耳其高速 02| BGP
+  - cm1.jean01.dpdns.org
+  - ASN 8796毛里求斯(MU)FD-298-8796
+  - 'ASN 8796毛里求斯(MU)FD-298-8796 #2'
+  - vless
+  - hysteria2
+  - 请使用支持Clash.Meta内核的软件订阅或Shadowrocket，相关软件可在知识库获取
+  - 账号已被封禁
   - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
   - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
   - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
@@ -78593,7 +78529,7 @@ proxy-groups:
   - 'end-gfw.com@sg3 #2'
   - US-LN
   - JP-LN
-  - IT-LN
+  - SE-LN
   - 每天更新免费节点：v2rayclashfree.com
   - 香港 01
   - 香港 02
@@ -78917,12 +78853,12 @@ proxy-groups:
   - 🇫🇷FR_190|305KB/s|B007-260618 01
   - 🇫🇷FR_191|162KB/s|B007-260618 01
   - 🇫🇷FR_192|162KB/s|B007-260618 01
-  - vless
+  - 'vless #2'
   - 🇫🇷FR_194|152KB/s|B007-260618 01
   - 🇫🇷FR_195|165KB/s|B007-260618 01
   - 🇳🇱NL_54|339KB/s|B007-260618 01
   - 🇫🇷FR_196|394KB/s|C002-260622 01
-  - 'vless #2'
+  - 'vless #3'
   - 🇫🇷FR_198|443KB/s|C002-260622 01
   - 🇫🇷FR_199|171KB/s|C002-260622 01
   - 🇫🇷FR_200|190KB/s|C002-260622 01
@@ -78984,7 +78920,7 @@ proxy-groups:
   - 🇫🇷FR_244|401KB/s|C002-260622 01
   - 🇫🇷FR_245|271KB/s|C002-260622 01
   - 🇫🇷FR_246|159KB/s|C002-260622 01
-  - 'vless #3'
+  - 'vless #4'
   - 🇫🇷FR_248|169KB/s|C002-260622 01
   - 🇫🇷FR_249|318KB/s|C002-260622 01
   - 🇫🇷FR_250|416KB/s|C002-260622 01
@@ -79417,7 +79353,7 @@ proxy-groups:
   - 🇬🇧GB_13|247KB/s|T001-260618 01
   - 🇳🇱NL_90|214KB/s 01
   - 🇫🇷FR_598|188KB/s 01
-  - 'vless #4'
+  - 'vless #5'
   - 🇫🇷FR_600|377KB/s 01
   - 🇫🇷FR_601|193KB/s 01
   - 🇫🇷FR_602|233KB/s|A003-260618 01
@@ -79451,7 +79387,7 @@ proxy-groups:
   - 🇫🇷FR_622|280KB/s|C002-260622 01
   - 🇫🇷FR_623|307KB/s|X001-260618 01
   - 🇺🇸US_299|348KB/s|B007-260618 01
-  - 'vless #5'
+  - 'vless #6'
   - 🇫🇷FR_625|228KB/s|C002-260622 01
   - 🇫🇷FR_626|145KB/s|C002-260622 01
   - 🇫🇷FR_627|188KB/s|X001-260618 01
@@ -79660,7 +79596,7 @@ proxy-groups:
   - 🇺🇸US_250|254KB/s|A004-260618 01
   - 🇷🇴RO_201|146KB/s|A004-260618 01
   - 🇺🇸US_267|166KB/s|C002-260622 01
-  - 'vless #6'
+  - 'vless #7'
   - 🇫🇷FR_740|183KB/s|P002-260618 01
   - 🇳🇱NL_104|444KB/s|A004-260618 01
   - 🇺🇸US_258|267KB/s|A004-260618 01
@@ -79784,7 +79720,7 @@ proxy-groups:
   - 🇫🇷FR_791|205KB/s|S004-260618 01
   - 🇬🇧GB_35|237KB/s|M002-260618 01
   - 🇫🇷FR_792|338KB/s|A004-260618 01
-  - 'vless #7'
+  - 'vless #8'
   - 🇩🇪DE_39|100KB/s|B007-260618 01
   - 🇫🇷FR_794|102KB/s 01
   - 🇺🇸US_307|130KB/s 01
@@ -79895,7 +79831,7 @@ proxy-groups:
   - 🇫🇷FR_840|405KB/s 01
   - 🇫🇷FR_841|302KB/s 01
   - 🇫🇷FR_842|307KB/s 01
-  - 'vless #8'
+  - 'vless #9'
   - 🇫🇷FR_844|139KB/s 01
   - 🇫🇷FR_845|292KB/s 01
   - 🇫🇷FR_846|202KB/s 01
@@ -79908,7 +79844,7 @@ proxy-groups:
   - 🇫🇷FR_848|212KB/s|B007-260618 01
   - 🇧🇷BR_4|313KB/s|B007-260618 01
   - 🇫🇷FR_849|219KB/s|B007-260618 01
-  - 'vless #9'
+  - 'vless #10'
   - 🇫🇷FR_851|304KB/s|B007-260618 01
   - 🇫🇷FR_852|310KB/s|B007-260618 01
   - 🇫🇷FR_854|401KB/s|B007-260618 01
@@ -79925,7 +79861,7 @@ proxy-groups:
   - 🇫🇷FR_863|273KB/s|B007-260618 01
   - 🇫🇷FR_864|210KB/s|B007-260618 01
   - 🇺🇸US_352|289KB/s|C002-260622 01
-  - 'vless #10'
+  - 'vless #11'
   - 🇩🇪DE_56|155KB/s|C002-260622 01
   - 🇫🇷FR_866|210KB/s|C002-260622 01
   - 🇫🇷FR_867|260KB/s|C002-260622 01
@@ -80043,7 +79979,7 @@ proxy-groups:
   - 🇹🇷TR_46|224KB/s|S004-260618 01
   - 🇫🇷FR_965|250KB/s 01
   - 🇫🇷FR_966|212KB/s 01
-  - 'vless #11'
+  - 'vless #12'
   - 🇫🇷FR_968|355KB/s 01
   - 🇫🇷FR_969|224KB/s 01
   - 🇫🇷FR_970|357KB/s 01
@@ -80089,7 +80025,7 @@ proxy-groups:
   - 🇫🇷FR_1000|181KB/s 01
   - 🇫🇷FR_1001|327KB/s|C002-260622 01
   - 🇫🇷FR_1002|395KB/s 01
-  - 'vless #12'
+  - 'vless #13'
   - 🇳🇱NL_160|295KB/s|A004-260618 01
   - 🇫🇷FR_1004|602KB/s|C002-260622 01
   - 🇫🇷FR_1005|318KB/s|C002-260622 01
@@ -80257,10 +80193,10 @@ proxy-groups:
   - 🇫🇷FR_1104|257KB/s|M002-260618 01
   - 🇫🇷FR_1105|231KB/s|M002-260618 01
   - 🇫🇷FR_1106|438KB/s|M002-260618 01
-  - 'vless #13'
+  - 'vless #14'
   - 🇬🇧GB_56|156KB/s|M002-260618 01
   - 🇺🇸US_379|314KB/s|S004-260618 01
-  - 'vless #14'
+  - 'vless #15'
   - 🇫🇮FI_2|202KB/s|M002-260618 01
   - 🇫🇷FR_1108|236KB/s|S004-260618 01
   - 🇺🇸US_380|289KB/s|A004-260618 01
@@ -80403,7 +80339,7 @@ proxy-groups:
   - 🇹🇷TR_66|385KB/s|B007-260618 01
   - 🇹🇷TR_67|159KB/s|B007-260618 01
   - 🇦🇪AE_7|408KB/s|S001-260618 01
-  - 'vless #15'
+  - 'vless #16'
   - 🇫🇷FR_1167|166KB/s|T001-260618 01
   - 🇫🇷FR_1168|222KB/s|T001-260618 01
   - 🇫🇷FR_1169|314KB/s 01
@@ -81018,7 +80954,7 @@ proxy-groups:
   - 🇫🇷FR_1424|197KB/s|B007-260618 01
   - 🇫🇮FI_33|293KB/s|B007-260618 01
   - 🇩🇪DE_155|245KB/s|B007-260618 01
-  - 'vless #16'
+  - 'vless #17'
   - 🇬🇧GB_127|620KB/s|B007-260618 01
   - 🇫🇷FR_1425|139KB/s|B007-260618 01
   - 🇵🇱PL_10|216KB/s|B007-260618 01
