@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-08-16T12:56:39.362402+00:00",
+  "generated_at": "2026-08-16T18:41:20.256505+00:00",
   "proxies": [
+    {
+      "name": "🇰🇷KR",
+      "network": "tcp",
+      "password": "0010996f-3eab-4804-9b3a-3a889d6767fc",
+      "port": 20088,
+      "server": "a8zbx9xj.catcat321.com",
+      "sni": "iepl.krz3.cat.bilibili.com",
+      "type": "trojan"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇭🇰HK",
+      "network": "grpc",
+      "port": 10128,
+      "server": "hk3-r.link-t7.com",
+      "servername": "s0.awsstatic.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "98525CD3-88F8-45AE-851A-B64327E39D2A"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇸🇬 新加坡",
+      "network": "ws",
+      "port": 13118,
+      "server": "140.83.57.20",
+      "servername": "sg.11160321.de5.net",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "1f01e389-fbcb-494c-e46a-210ec36329c2",
+      "ws-opts": {
+        "headers": {
+          "Host": "sg.11160321.de5.net"
+        },
+        "path": "/"
+      }
+    },
     {
       "client-fingerprint": "chrome",
       "name": "cm1.jean01.dpdns.org",
@@ -183433,5 +183471,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 12753
+  "total": 12756
 }

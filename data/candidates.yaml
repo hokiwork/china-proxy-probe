@@ -3,6 +3,36 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 🇰🇷KR
+  type: trojan
+  server: a8zbx9xj.catcat321.com
+  port: 20088
+  password: 0010996f-3eab-4804-9b3a-3a889d6767fc
+  sni: iepl.krz3.cat.bilibili.com
+  network: tcp
+- name: 🇭🇰HK
+  type: vless
+  server: hk3-r.link-t7.com
+  port: 10128
+  uuid: 98525CD3-88F8-45AE-851A-B64327E39D2A
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: 🇸🇬 新加坡
+  type: vmess
+  server: 140.83.57.20
+  port: 13118
+  uuid: 1f01e389-fbcb-494c-e46a-210ec36329c2
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: sg.11160321.de5.net
+    path: /
+  servername: sg.11160321.de5.net
 - name: cm1.jean01.dpdns.org
   type: vless
   server: cm1.jean01.dpdns.org
@@ -143118,6 +143148,9 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - 🇰🇷KR
+  - 🇭🇰HK
+  - 🇸🇬 新加坡
   - cm1.jean01.dpdns.org
   - ASN 8796毛里求斯(MU)FD-298-8796
   - 'ASN 8796毛里求斯(MU)FD-298-8796 #2'
