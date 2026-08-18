@@ -70,12 +70,76 @@ proxies:
   port: 62780
   cipher: 2022-blake3-aes-128-gcm
   password: gyKRDZaU7H9DXBVjEKDdAw==
-- name: 账号已被封禁
+- name: '官网: https://星链机场.com'
+  type: vless
+  server: 110.110.110.110
+  port: 443
+  uuid: b0332488-02a5-4cb3-8a64-d1e9d9f4b798
+  network: tcp
+  tls: true
+  client-fingerprint: ios
+  servername: www.sme.com.au
+  flow: xtls-rprx-vision
+- name: Node-01
+  type: vless
+  server: 35.160.210.191
+  port: 110
+  uuid: b0332488-02a5-4cb3-8a64-d1e9d9f4b798
+  network: tcp
+  tls: true
+  client-fingerprint: ios
+  servername: www.sme.com.au
+  flow: xtls-rprx-vision
+- name: Node-02
+  type: vless
+  server: 35.160.210.150
+  port: 110
+  uuid: b0332488-02a5-4cb3-8a64-d1e9d9f4b798
+  network: tcp
+  tls: true
+  client-fingerprint: ios
+  servername: www.sme.com.au
+  flow: xtls-rprx-vision
+- name: Node-03
+  type: vless
+  server: 35.160.210.136
+  port: 110
+  uuid: b0332488-02a5-4cb3-8a64-d1e9d9f4b798
+  network: tcp
+  tls: true
+  client-fingerprint: ios
+  servername: www.sme.com.au
+  flow: xtls-rprx-vision
+- name: 🇭🇰 香港IEPL
   type: ss
-  server: 127.0.0.1
-  port: 65535
-  cipher: aes-128-gcm
-  password: 70cf8a3d-4764-49ff-8437-c20a4fe1728e
+  server: 110.242.74.102
+  port: 10001
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇨🇳 台湾IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10002
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇯🇵 日本IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10003
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇸🇬 新加坡IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10004
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇺🇸 美国IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10005
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
 - name: 🇺🇸_US_美国
   type: vmess
   server: guanwang.awsno.com
@@ -114395,7 +114459,15 @@ proxy-groups:
   - cfn-aq7.pages.dev
   - 香港-HK1-1  2026.8.17 15:44:56到期
   - 🌍 SD-JP-IEPL                                    国际专线，全天候稳定
-  - 账号已被封禁
+  - '官网: https://星链机场.com'
+  - Node-01
+  - Node-02
+  - Node-03
+  - 🇭🇰 香港IEPL
+  - 🇨🇳 台湾IEPL
+  - 🇯🇵 日本IEPL
+  - 🇸🇬 新加坡IEPL
+  - 🇺🇸 美国IEPL
   - 🇺🇸_US_美国
   - 🇨🇳_CN_中国
   - 🇭🇰_HK_中国香港
