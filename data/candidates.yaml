@@ -3,13 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 香港-HK1-1  2026.8.17 15:44:56到期
-  type: hysteria2
-  server: nj.bilibili.bar
-  port: 886
-  password: 0d0991d9-612b-4863-bf14-59f5dd880081
-  sni: mcbyj.bilibili.gdn
-  skip-cert-verify: false
 - name: 🌍 SD-JP-IEPL                                    国际专线，全天候稳定
   type: ss
   server: idc-tunnel.xssx.win
@@ -29,6 +22,36 @@ proxies:
     path: /proxyip=167.253.153.215
     headers:
       Host: wzknb.pages.dev
+- name: 🇭🇰 香港IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10001
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇨🇳 台湾IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10002
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇯🇵 日本IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10003
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇸🇬 新加坡IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10004
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
+- name: 🇺🇸 美国IEPL
+  type: ss
+  server: 110.242.74.102
+  port: 10005
+  cipher: aes-256-gcm
+  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
 - name: '官网: https://星链机场.com'
   type: vless
   server: 110.110.110.110
@@ -69,41 +92,21 @@ proxies:
   client-fingerprint: ios
   servername: www.sme.com.au
   flow: xtls-rprx-vision
-- name: 🇭🇰 香港IEPL
-  type: ss
-  server: 110.242.74.102
-  port: 10001
-  cipher: aes-256-gcm
-  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
-- name: 🇨🇳 台湾IEPL
-  type: ss
-  server: 110.242.74.102
-  port: 10002
-  cipher: aes-256-gcm
-  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
-- name: 🇯🇵 日本IEPL
-  type: ss
-  server: 110.242.74.102
-  port: 10003
-  cipher: aes-256-gcm
-  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
-- name: 🇸🇬 新加坡IEPL
-  type: ss
-  server: 110.242.74.102
-  port: 10004
-  cipher: aes-256-gcm
-  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
-- name: 🇺🇸 美国IEPL
-  type: ss
-  server: 110.242.74.102
-  port: 10005
-  cipher: aes-256-gcm
-  password: 909ca374-501a-4a34-8c1e-a5be3cadbeb2
 - name: Free-HK-IN-TH
   type: vless
   server: f-hk-th.mtnode.top
   port: 443
   uuid: 5463d44b-e540-4e7a-8f39-62a7a68f05d0
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: 'Free-HK-IN-TH #2'
+  type: vless
+  server: f-hk-th.mtnode.top
+  port: 443
+  uuid: b48d6741-2ca7-4933-addf-2bf8b76fd8f4
   network: tcp
   tls: true
   client-fingerprint: chrome
@@ -114416,19 +114419,19 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 香港-HK1-1  2026.8.17 15:44:56到期
   - 🌍 SD-JP-IEPL                                    国际专线，全天候稳定
   - wzknb.pages.dev
-  - '官网: https://星链机场.com'
-  - Node-01
-  - Node-02
-  - Node-03
   - 🇭🇰 香港IEPL
   - 🇨🇳 台湾IEPL
   - 🇯🇵 日本IEPL
   - 🇸🇬 新加坡IEPL
   - 🇺🇸 美国IEPL
+  - '官网: https://星链机场.com'
+  - Node-01
+  - Node-02
+  - Node-03
   - Free-HK-IN-TH
+  - 'Free-HK-IN-TH #2'
   - 🇷🇺_RU_俄罗斯
   - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
   - 🇸🇪_SE_瑞典
