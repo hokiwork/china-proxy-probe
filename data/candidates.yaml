@@ -138,41 +138,392 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: navi.bankrate.com
-- name: 🇨🇳_CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: hysteria2
-  server: 3x.aweijll.cf
-  port: 40001
-  password: 7wzl2lj2fy956inb
-  sni: 3x.aweijll.cf
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利
-  type: ss
-  server: 62.76.234.188
-  port: 10901
-  cipher: aes-256-gcm
-  password: d1fa2f4b98a38bc8
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国
-  type: vless
-  server: 18.244.214.27
+- name: SG
+  type: vmess
+  server: 170.187.229.90
   port: 80
-  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
+  uuid: 9bda13eb-66bb-4ff5-b01c-aa7c2d291412
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: shoutingtoutiao3.10010.com
+    path: /images
+- name: 美国  port:2087,2083,2053,2096
+  type: vless
+  server: vlso4.1d.mom
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso4.1d.mom
+  ws-opts:
+    path: /
+    headers:
+      Host: vlso4.1d.mom
+- name: xray-VLESS直连
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 443
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-TLS2053
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2053
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-TLS2083
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2083
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-TLS2087
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2087
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-TLS2096
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2096
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-TLS8443
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 8443
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: xray-直连01
+  type: vless
+  server: 69.165.75.160
+  port: 10086
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
   network: ws
   tls: false
   ws-opts:
-    path: /than
+    path: /vless
     headers:
-      Host: d16l6nb4do0zu4.cloudfront.net
+      Host: ''
+- name: xray-直连02
+  type: vless
+  server: 69.165.75.160
+  port: 10087
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: xray-直连03
+  type: vless
+  server: 69.165.75.160
+  port: 10088
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: xray-直连04
+  type: vless
+  server: 69.165.75.160
+  port: 10089
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: xray-直连05
+  type: vless
+  server: 69.165.75.160
+  port: 10090
+  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 'xray-VLESS直连 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 443
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-TLS2053 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2053
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-TLS2083 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2083
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-TLS2087 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2087
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-TLS2096 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 2096
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-TLS8443 #2'
+  type: vless
+  server: v2panel.ccwu.cc
+  port: 8443
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: v2panel.ccwu.cc
+  ws-opts:
+    path: /xray/vless
+    headers:
+      Host: v2panel.ccwu.cc
+- name: 'xray-直连01 #2'
+  type: vless
+  server: 69.165.75.160
+  port: 10086
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 'xray-直连02 #2'
+  type: vless
+  server: 69.165.75.160
+  port: 10087
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 'xray-直连03 #2'
+  type: vless
+  server: 69.165.75.160
+  port: 10088
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 'xray-直连04 #2'
+  type: vless
+  server: 69.165.75.160
+  port: 10089
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 'xray-直连05 #2'
+  type: vless
+  server: 69.165.75.160
+  port: 10090
+  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /vless
+    headers:
+      Host: ''
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: vless
+  server: nl.north-1winter.cv
+  port: 443
+  uuid: acc50200-7f21-4f90-9cca-0057efcbf042
+  servername: www.ya.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rNBFVzV18kAj_ei4AqsgZywzmvD36WK9hcRdVnpHPAM
+    short-id: c0573c8280a0c019
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  type: vless
+  server: 172.66.44.97
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  network: ws
+  servername: josni.hoyes.cloudns.ch
+  tls: true
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  type: vless
+  server: 155.117.199.12
+  port: 39395
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+  servername: cdnjs.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: trojan
+  server: 16.162.3.11
+  port: 27161
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇫🇮_FI_芬兰
+  type: vless
+  server: 163.5.153.153
+  port: 443
+  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
+  network: raw
+  servername: www.samsung.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
+    short-id: a91045bc
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
@@ -184,22 +535,26 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇫🇷_FR_法国
-  type: trojan
-  server: great-krill.rooster465.autos
-  port: 443
-  password: QV31589740
+- name: 🇨🇳_CN_中国
+  type: vless
+  server: 120.227.1.43
+  port: 12528
+  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+  tls: false
   skip-cert-verify: true
-  tls: false
   udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+- name: 🇺🇸_US_美国->🇲🇾_MY_马来西亚
+  type: vless
+  server: 155.117.199.12
+  port: 29709
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+  servername: cdnjs.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国
@@ -214,25 +569,7 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇮_FI_芬兰
-  type: ss
-  server: autodiscover.fuzzyaytor.cyou
-  port: 42982
-  cipher: chacha20-ietf-poly1305
-  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
+- name: 🇭🇰_HK_中国香港_1
   type: vmess
   server: v10.hdacd.com
   port: 30807
@@ -242,14 +579,14 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+- name: 🇺🇸_US_美国
   type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
@@ -262,14 +599,27 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  type: trojan
+  server: 18.166.226.204
+  port: 39024
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
   tls: false
+  udp: true
+- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+  type: vless
+  server: 155.117.199.12
+  port: 31877
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+  servername: cdnjs.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国_1
@@ -280,22 +630,94 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+- name: 🇺🇸_US_美国->🇭🇰_HK_中国香港
+  type: vless
+  server: 155.117.199.12
+  port: 9713
+  uuid: 53b59cb5-c741-3399-9065-93dc34685f5b
+  servername: cdnjs.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧_GB_英国
+  type: vless
+  server: 164.37.105.38
+  port: 443
+  uuid: f4dbc770-016d-4a0f-82f0-d83ee6f45da3
+  servername: gb.cdn.cachefleet.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sBSNX3DhJSWOkqTmRHisayVLisCBQLb4JcpKzwCrvC0
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_2
   type: vmess
-  server: v4.hdacd.com
-  port: 30804
+  server: n1761296892.4u9ma.icu
+  port: 443
+  uuid: d6db128f-42b9-40b1-b979-5e0095fa593c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇹🇷_TR_土耳其
+- name: 🇫🇮_FI_芬兰_1
+  type: ss
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯
   type: vless
-  server: tur2.ilia.iranstoresf.ir
-  port: 37992
-  uuid: d14b7d3c-bdda-40ab-8e5e-ee1b67ef0357
-  tls: false
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 150.241.70.0
+  port: 443
+  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
+  servername: stats.vk-portal.net
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: YW6wlOE6DhEzY4nQobPKj-hoc2bpNgJineecGIgOgWM
+    short-id: 9d3734f3ff471b68
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: hysteria2
+  server: 3x.aweijll.cf
+  port: 40001
+  password: 7wzl2lj2fy956inb
+  sni: 3x.aweijll.cf
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
@@ -304,28 +726,19 @@ proxies:
   port: 30833
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
-  cipher: auto
+  cipher: none
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国_2
-  type: ss
-  server: 98.89.48.191
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_3
+- name: '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
+  tls: false
+  network: tcp
 - name: 🇺🇸 美国
   type: vless
   server: 172.64.52.152
@@ -28062,6 +28475,15 @@ proxies:
     headers:
       Host: Phoenix.v2ray.online
     path: /speedtest
+- name: 4Mohsen-15990
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: 4Mohsen-15992
   type: vmess
   server: v8.hdacd.com
@@ -65713,7 +66135,7 @@ proxies:
     headers:
       Host: ''
     path: /chat
-- name: SG
+- name: 'SG #2'
   type: vmess
   server: 43.156.98.74
   port: 40516
@@ -78732,15 +79154,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+V2CROSS.COM #5'
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ru2.skydrgn-online.online
 - name: '美国+CloudFlare节点 #18'
   type: trojan
   server: 104.18.152.77
@@ -87907,16 +88320,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: summer-hill-7bbd.149-40f.workers.dev
-- name: 🇫🇷FR_602|233KB/s|A003-260618 01
-  type: vless
-  server: 163.5.153.153
-  port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.samsung.com
-  flow: xtls-rprx-vision
 - name: 🇳🇱NL_91|238KB/s|A004-260618 01
   type: ss
   server: 82.38.31.7
@@ -97575,19 +97978,6 @@ proxies:
   client-fingerprint: chrome
   servername: storage.yandex.net
   flow: xtls-rprx-vision
-- name: 🇫🇷FR_1112|255KB/s|B007-260618 01
-  type: vless
-  server: 172.66.44.97
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
 - name: 🇲🇩MD_1|324KB/s|B007-260618 01
   type: vless
   server: 144.31.131.241
@@ -99648,6 +100038,13 @@ proxies:
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇫🇷FR_1209|368KB/s|C002-260622 01
+  type: trojan
+  server: great-krill.rooster465.autos
+  port: 443
+  password: QV31589740
+  sni: great-krill.rooster465.autos
+  network: tcp
 - name: 🇺🇸US_436|256KB/s|A003-260618 01
   type: vless
   server: 38.246.226.240
@@ -104064,6 +104461,12 @@ proxies:
 - name: 🇸🇪SE_11|169KB/s 01
   type: ss
   server: 13.50.4.72
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸US_548|453KB/s 01
+  type: ss
+  server: 98.89.48.191
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -114417,26 +114820,58 @@ proxy-groups:
   - JP-日本-直连
   - JP-日本-直连2
   - HK-香港-直连
-  - 🇨🇳_CN_中国
-  - 🇺🇸_US_美国
-  - 🇮🇹_IT_意大利
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  - 🇫🇷_FR_法国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇩🇪_DE_德国
+  - SG
+  - 美国  port:2087,2083,2053,2096
+  - xray-VLESS直连
+  - xray-TLS2053
+  - xray-TLS2083
+  - xray-TLS2087
+  - xray-TLS2096
+  - xray-TLS8443
+  - xray-直连01
+  - xray-直连02
+  - xray-直连03
+  - xray-直连04
+  - xray-直连05
+  - 'xray-VLESS直连 #2'
+  - 'xray-TLS2053 #2'
+  - 'xray-TLS2083 #2'
+  - 'xray-TLS2087 #2'
+  - 'xray-TLS2096 #2'
+  - 'xray-TLS8443 #2'
+  - 'xray-直连01 #2'
+  - 'xray-直连02 #2'
+  - 'xray-直连03 #2'
+  - 'xray-直连04 #2'
+  - 'xray-直连05 #2'
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇫🇮_FI_芬兰
-  - 🇭🇰_HK_中国香港
+  - 🇳🇱_NL_荷兰
+  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
   - 🇨🇳_CN_中国->🇫🇷_FR_法国
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
+  - 🇭🇰_HK_中国香港
+  - 🇫🇮_FI_芬兰
   - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  - 🇹🇷_TR_土耳其
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国
+  - 🇺🇸_US_美国->🇲🇾_MY_马来西亚
+  - 🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇸🇬_SG_新加坡_1
+  - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国->🇭🇰_HK_中国香港
+  - 🇬🇧_GB_英国
+  - 🇭🇰_HK_中国香港_2
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇫🇮_FI_芬兰_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   - 🇺🇸_US_美国_2
-  - 🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - '🇨🇳_CN_中国->🇩🇪_DE_德国 #2'
   - 🇺🇸 美国
   - 4Mohsen-13209
   - 4Mohsen-13210
@@ -116640,6 +117075,7 @@ proxy-groups:
   - 4Mohsen-15981
   - 4Mohsen-15982
   - 4Mohsen-15983
+  - 4Mohsen-15990
   - 4Mohsen-15992
   - 4Mohsen-15999
   - 4Mohsen-16001
@@ -119863,7 +120299,7 @@ proxy-groups:
   - 美国 072
   - 🇭🇺HU_648
   - Relay_🇺🇸US-🇺🇸US_173
-  - SG
+  - 'SG #2'
   - 🇦🇶NOWHERE-0.0.0.0-11958
   - افرانت
   - 🇦🇶-本机地址-v3.ssrsub.com
@@ -121003,7 +121439,6 @@ proxy-groups:
   - '美国+CloudFlare节点 #15'
   - '美国+CloudFlare节点 #16'
   - '美国+CloudFlare节点 #17'
-  - '美国+V2CROSS.COM #5'
   - '美国+CloudFlare节点 #18'
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
@@ -121840,7 +122275,6 @@ proxy-groups:
   - 'vless #4'
   - 🇫🇷FR_600|377KB/s 01
   - 🇫🇷FR_601|193KB/s 01
-  - 🇫🇷FR_602|233KB/s|A003-260618 01
   - 🇳🇱NL_91|238KB/s|A004-260618 01
   - 🇺🇸US_172|429KB/s|B007-260618 01
   - 🇫🇷FR_603|168KB/s|C002-260622 01
@@ -122706,7 +123140,6 @@ proxy-groups:
   - 🇺🇸US_388|186KB/s|A004-260618 01
   - 🇫🇷FR_1111|201KB/s|A004-260618 01
   - 🇭🇺HU_1|162KB/s|B007-260618 01
-  - 🇫🇷FR_1112|255KB/s|B007-260618 01
   - 🇲🇩MD_1|324KB/s|B007-260618 01
   - 🇬🇧GB_58|332KB/s|K001-260618 01
   - 🇸🇬SG_40|218KB/s|M002-260618 01
@@ -122913,6 +123346,7 @@ proxy-groups:
   - 🇰🇷KR_50|132KB/s|P002-260618 01
   - 🇰🇷KR_75|110KB/s|A004-260618 01
   - 🇺🇸US_435|399KB/s|A001-260618 01
+  - 🇫🇷FR_1209|368KB/s|C002-260622 01
   - 🇺🇸US_436|256KB/s|A003-260618 01
   - 🇺🇸US_437|337KB/s|A004-260618 01
   - 🇰🇷KR_49|84KB/s|A004-260618 01
@@ -123361,6 +123795,7 @@ proxy-groups:
   - 🇸🇬SG_64|78KB/s|B007-260618 01
   - 🇷🇺RU_22|185KB/s 01
   - 🇸🇪SE_11|169KB/s 01
+  - 🇺🇸US_548|453KB/s 01
   - 🇸🇪SE_12|338KB/s 01
   - 🇸🇪SE_13|339KB/s 01
   - 🇹🇷TR_78|491KB/s|F003-260618 01
