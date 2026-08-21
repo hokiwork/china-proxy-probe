@@ -3,12 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: JP.日本.C | 高速.2x倍率
-  type: ss
-  server: cokecloudjp.cokecloud.top
-  port: 19439
-  cipher: chacha20-ietf-poly1305
-  password: 927b2ea6-c331-4287-89ba-4e41e87657ec
 - name: KO-韩国-直连
   type: vless
   server: 130.94.29.60
@@ -164,272 +158,22 @@ proxies:
     path: /
     headers:
       Host: vlso4.1d.mom
-- name: xray-VLESS直连
+- name: 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
   type: vless
-  server: v2panel.ccwu.cc
+  server: 38.64.62.238
   port: 443
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
+  uuid: 89323a6b-edf6-402b-a72f-e1a7863794ad
+  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-TLS2053
+  servername: speed.cloudflare.com
+- name: 8.28-04:12-2mbpsASN 4694日本(JP)IDC Frontier Inc
   type: vless
-  server: v2panel.ccwu.cc
-  port: 2053
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-TLS2083
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2083
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-TLS2087
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2087
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-TLS2096
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2096
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-TLS8443
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 8443
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: xray-直连01
-  type: vless
-  server: 69.165.75.160
-  port: 10086
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
+  server: 14.137.244.44
+  port: 18233
+  uuid: 93cc16ff-60bd-4a48-8b4b-0ca1ce5f22ba
+  network: tcp
   tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: xray-直连02
-  type: vless
-  server: 69.165.75.160
-  port: 10087
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: xray-直连03
-  type: vless
-  server: 69.165.75.160
-  port: 10088
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: xray-直连04
-  type: vless
-  server: 69.165.75.160
-  port: 10089
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: xray-直连05
-  type: vless
-  server: 69.165.75.160
-  port: 10090
-  uuid: ac16ec6f-e8be-40c2-9be6-df7810705412
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: 'xray-VLESS直连 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 443
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-TLS2053 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2053
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-TLS2083 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2083
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-TLS2087 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2087
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-TLS2096 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 2096
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-TLS8443 #2'
-  type: vless
-  server: v2panel.ccwu.cc
-  port: 8443
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2panel.ccwu.cc
-  ws-opts:
-    path: /xray/vless
-    headers:
-      Host: v2panel.ccwu.cc
-- name: 'xray-直连01 #2'
-  type: vless
-  server: 69.165.75.160
-  port: 10086
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: 'xray-直连02 #2'
-  type: vless
-  server: 69.165.75.160
-  port: 10087
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: 'xray-直连03 #2'
-  type: vless
-  server: 69.165.75.160
-  port: 10088
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: 'xray-直连04 #2'
-  type: vless
-  server: 69.165.75.160
-  port: 10089
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
-- name: 'xray-直连05 #2'
-  type: vless
-  server: 69.165.75.160
-  port: 10090
-  uuid: a4ec89e1-3d0d-43cb-b632-8e1b13fee45b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: ''
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vmess
   server: v24.hdacd.com
@@ -114804,7 +114548,6 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - JP.日本.C | 高速.2x倍率
   - KO-韩国-直连
   - MAC-澳门-直连
   - 遇到线路卡顿请多切换线路使
@@ -114822,28 +114565,8 @@ proxy-groups:
   - HK-香港-直连
   - SG
   - 美国  port:2087,2083,2053,2096
-  - xray-VLESS直连
-  - xray-TLS2053
-  - xray-TLS2083
-  - xray-TLS2087
-  - xray-TLS2096
-  - xray-TLS8443
-  - xray-直连01
-  - xray-直连02
-  - xray-直连03
-  - xray-直连04
-  - xray-直连05
-  - 'xray-VLESS直连 #2'
-  - 'xray-TLS2053 #2'
-  - 'xray-TLS2083 #2'
-  - 'xray-TLS2087 #2'
-  - 'xray-TLS2096 #2'
-  - 'xray-TLS8443 #2'
-  - 'xray-直连01 #2'
-  - 'xray-直连02 #2'
-  - 'xray-直连03 #2'
-  - 'xray-直连04 #2'
-  - 'xray-直连05 #2'
+  - 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
+  - 8.28-04:12-2mbpsASN 4694日本(JP)IDC Frontier Inc
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国->🇸🇬_SG_新加坡
