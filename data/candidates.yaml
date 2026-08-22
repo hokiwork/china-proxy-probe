@@ -3,161 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: KO-韩国-直连
-  type: vless
-  server: 130.94.29.60
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: MAC-澳门-直连
-  type: vless
-  server: 45.207.35.175
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: 遇到线路卡顿请多切换线路使
-  type: ss
-  server: dada0880.xdfyyy.xyz
-  port: 35805
-  cipher: aes-128-gcm
-  password: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-- name: GER-德国-快速专线IEPL
-  type: ss
-  server: relay.popnode.host
-  port: 35805
-  cipher: aes-128-gcm
-  password: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-- name: TH-泰国-直连
-  type: vless
-  server: 38.60.233.73
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: TUR-土耳其-直连
-  type: vless
-  server: 130.94.1.58
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: VN-越南-直连
-  type: vless
-  server: 130.94.4.235
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: IT-意大利-直连
-  type: vless
-  server: 45.196.215.42
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: HK-香港-直连2
-  type: vless
-  server: 64.90.28.237
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: TW-台湾-直连
-  type: vless
-  server: 166.0.198.65
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: SGP-新加坡-直连
-  type: vless
-  server: 104.234.233.249
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: DE-德国-直连
-  type: vless
-  server: 189.24.106.163
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: JP-日本-直连
-  type: vless
-  server: 45.202.245.218
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: JP-日本-直连2
-  type: vless
-  server: 156.231.113.56
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: HK-香港-直连
-  type: vless
-  server: 156.224.79.35
-  port: 443
-  uuid: 3dfd4ca4-dd85-4ee0-96d7-fa2900d76f65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: navi.bankrate.com
-- name: SG
-  type: vmess
-  server: 170.187.229.90
-  port: 80
-  uuid: 9bda13eb-66bb-4ff5-b01c-aa7c2d291412
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: shoutingtoutiao3.10010.com
-    path: /images
-- name: 美国  port:2087,2083,2053,2096
-  type: vless
-  server: vlso4.1d.mom
-  port: 2053
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vlso4.1d.mom
-  ws-opts:
-    path: /
-    headers:
-      Host: vlso4.1d.mom
 - name: 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
   type: vless
   server: 38.64.62.238
@@ -174,6 +19,19 @@ proxies:
   uuid: 93cc16ff-60bd-4a48-8b4b-0ca1ce5f22ba
   network: tcp
   tls: false
+- name: cloudflare 优选节点
+  type: vless
+  server: yx.zhourf2006.dpdns.org
+  port: 443
+  uuid: 7e81824b-35e0-4eb1-89e9-592f0c92aa6b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: yx.zhourf2006.dpdns.org
+  ws-opts:
+    path: /blog/ranking/task/proxyip=156.246.92.195,172.238.6.57,43.207.197.79,156.246.91.114,161.248.254.27,153.121.45.101,101.36.105.226?ed=2560
+    headers:
+      Host: yx.zhourf2006.dpdns.org
 - name: 🇭🇰香港｜07｜AWS
   type: hysteria2
   server: jpaws.ccwink.photos
@@ -38320,25 +38178,9 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - KO-韩国-直连
-  - MAC-澳门-直连
-  - 遇到线路卡顿请多切换线路使
-  - GER-德国-快速专线IEPL
-  - TH-泰国-直连
-  - TUR-土耳其-直连
-  - VN-越南-直连
-  - IT-意大利-直连
-  - HK-香港-直连2
-  - TW-台湾-直连
-  - SGP-新加坡-直连
-  - DE-德国-直连
-  - JP-日本-直连
-  - JP-日本-直连2
-  - HK-香港-直连
-  - SG
-  - 美国  port:2087,2083,2053,2096
   - 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
   - 8.28-04:12-2mbpsASN 4694日本(JP)IDC Frontier Inc
+  - cloudflare 优选节点
   - 🇭🇰香港｜07｜AWS
   - 🇲🇴澳门｜02｜AWS
   - 🇲🇴澳门｜05｜BGP
