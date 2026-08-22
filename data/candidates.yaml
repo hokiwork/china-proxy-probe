@@ -32,123 +32,19 @@ proxies:
     path: /blog/ranking/task/proxyip=156.246.92.195,172.238.6.57,43.207.197.79,156.246.91.114,161.248.254.27,153.121.45.101,101.36.105.226?ed=2560
     headers:
       Host: yx.zhourf2006.dpdns.org
-- name: 🇭🇰香港｜07｜AWS
-  type: hysteria2
-  server: jpaws.ccwink.photos
-  port: 88
-  password: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  sni: hkak.ccwink.cc
-  skip-cert-verify: true
-- name: 🇲🇴澳门｜02｜AWS
+- name: 🇷🇺_RU_俄罗斯
   type: vless
-  server: jpaws.ccwink.photos
-  port: 6897
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: docs.aws.amazon.com
-  flow: xtls-rprx-vision
-- name: 🇲🇴澳门｜05｜BGP
-  type: vless
-  server: cf01.564895.xyz
-  port: 2053
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
+  server: 201.51.5.253
+  port: 2200
+  uuid: ed1cd50f-ead9-4e01-b5ae-b7d2dfb532fc
   network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: mo01.564895.xyz
+  tls: false
   ws-opts:
-    path: /sadasd
+    path: /v1
     headers:
-      Host: mo01.564895.xyz
-- name: 🇲🇴澳门｜06｜BGP
-  type: vless
-  server: cf02.564895.xyz
-  port: 2087
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: mo01.564895.xyz
-  ws-opts:
-    path: /sadasd
-    headers:
-      Host: mo01.564895.xyz
-- name: 🇹🇼台湾｜01｜HiNet
-  type: hysteria2
-  server: tw.ccwink.cc
-  port: 30102
-  password: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  sni: tw.ccwink.cc
+      Host: rzd.ru
   skip-cert-verify: true
-- name: 🇹🇼台湾｜04｜家宽
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 39777
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: docs.aws.amazon.com
-  flow: xtls-rprx-vision
-- name: 🇹🇼台湾｜06｜BGP
-  type: vless
-  server: cf02.564895.xyz
-  port: 2096
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: tw01.564895.xyz
-  ws-opts:
-    path: /asdasd
-    headers:
-      Host: tw01.564895.xyz
-- name: 🇹🇼台湾｜07｜HiNet
-  type: hysteria2
-  server: tw2-vds20.anyhk.co
-  port: 30102
-  password: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  sni: tw2-vds20.anyhk.co
-  skip-cert-verify: true
-- name: 🇯🇵日本｜02｜AWS
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 53113
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: docs.aws.amazon.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵日本｜04｜AWS
-  type: hysteria2
-  server: jpaws.ccwink.photos
-  port: 50018
-  password: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  sni: jpdigital.ccwink.cc
-  skip-cert-verify: true
-- name: 🇸🇬新加坡｜02｜AWS
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 64294
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: docs.aws.amazon.com
-  flow: xtls-rprx-vision
-- name: 🇩🇪德国｜02｜AWS
-  type: vmess
-  server: jpaws.ccwink.photos
-  port: 53225
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: tcp
-  servername: gw.alicdn.com
+  udp: true
 - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   type: vmess
   server: v9.hdacd.com
@@ -159,6 +55,54 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸_US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: vless
+  server: 104.26.1.195
+  port: 8080
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  network: ws
+  tls: false
+  ws-opts:
+    path: /ws-hTopcF3L
+    headers:
+      Host: premium-us-az-01-hostinger.efgwf.online
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇹🇭_TH_泰国
+  type: vless
+  server: 18.238.109.17
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
 - name: 🇫🇷_FR_法国
   type: vless
   server: fr199.mechvpn.online
@@ -166,6 +110,36 @@ proxies:
   uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   tls: true
   flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国->🇧🇷_BR_巴西
@@ -183,50 +157,27 @@ proxies:
       Host: titandarkness.mooo.com
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国
+- name: 🇩🇪_DE_德国
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 178.83.45.29
+  port: 38998
+  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+- name: 🇷🇺_RU_俄罗斯_1
   type: vless
-  server: 104.25.194.196
-  port: 2086
-  uuid: e3c7c198-2b02-42c2-b78f-22dfc078219c
+  server: 104.171.137.141
+  port: 2200
+  uuid: d5d72f0a-42b0-4f43-b568-9cf7fbff073d
   network: ws
   tls: false
   ws-opts:
-    path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
+    path: /v1
     headers:
-      Host: uj-kn9gcgkzl0wmmy5wrkmalvhzdw62z.soltannatlos.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: winter-leaf-b4da.122-6c9.workers.dev
+      Host: rzd.ru
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国
@@ -235,6 +186,43 @@ proxies:
   port: 12528
   uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
   tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: ss
+  server: 193.124.203.144
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: mkKfxndCZ9c3YIkAAmANrtfI/mlGJwwV9/GdVTYgW3M=:JazxiYc3Mc5tLn/Te3T59W6Zw4Z/BPuepQ0VlVD/cZ8=
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  type: vless
+  server: 46.8.220.182
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  network: grpc
+  servername: media2.tcpdoor.net
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: 3303c7a5
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯_2
+  type: vless
+  server: 201.51.5.253
+  port: 4100
+  uuid: ed1cd50f-ead9-4e01-b5ae-b7d2dfb532fc
+  network: ws
+  tls: false
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国
@@ -19906,6 +19894,18 @@ proxies:
     path: /21381/0kO2id8FMQ
     headers:
       Host: titandarkness.mooo.com
+- name: 🇫🇷FR_1128|138KB/s|A004-260618 01
+  type: vless
+  server: 172.67.209.127
+  port: 8880
+  uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: winter-leaf-b4da.122-6c9.workers.dev
 - name: 🇫🇷FR_1129|320KB/s|B007-260618 01
   type: vless
   server: 104.21.74.24
@@ -28329,6 +28329,12 @@ proxies:
   port: 443
   password: ND91608427
   sni: becoming-hare.rooster465.autos
+- name: 未知 TROJAN-313 | free-nodes
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
 - name: 未知 TROJAN-314 | free-nodes
   type: trojan
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
@@ -38181,26 +38187,23 @@ proxy-groups:
   - 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
   - 8.28-04:12-2mbpsASN 4694日本(JP)IDC Frontier Inc
   - cloudflare 优选节点
-  - 🇭🇰香港｜07｜AWS
-  - 🇲🇴澳门｜02｜AWS
-  - 🇲🇴澳门｜05｜BGP
-  - 🇲🇴澳门｜06｜BGP
-  - 🇹🇼台湾｜01｜HiNet
-  - 🇹🇼台湾｜04｜家宽
-  - 🇹🇼台湾｜06｜BGP
-  - 🇹🇼台湾｜07｜HiNet
-  - 🇯🇵日本｜02｜AWS
-  - 🇯🇵日本｜04｜AWS
-  - 🇸🇬新加坡｜02｜AWS
-  - 🇩🇪德国｜02｜AWS
+  - 🇷🇺_RU_俄罗斯
   - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇫🇷_FR_法国
-  - 🇩🇪_DE_德国->🇧🇷_BR_巴西
   - 🇺🇸_US_美国
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港
   - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国->🇹🇭_TH_泰国
+  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇩🇪_DE_德国->🇧🇷_BR_巴西
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_1
   - 🇨🇳_CN_中国
+  - 🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_2
   - 🇺🇸 美国
   - 沙特阿拉伯+V2CROSS.COM
   - 美国+V2CROSS.COM
@@ -39980,6 +39983,7 @@ proxy-groups:
   - 🇮🇹IT_8|236KB/s|X001-260618 01
   - 🇹🇷TR_60|163KB/s|F003-260618 01
   - 🇧🇷BR_8|320KB/s|A004-260618 01
+  - 🇫🇷FR_1128|138KB/s|A004-260618 01
   - 🇫🇷FR_1129|320KB/s|B007-260618 01
   - 🇫🇷FR_1130|240KB/s|B007-260618 01
   - 🇩🇪DE_79|123KB/s|M002-260618 01
@@ -40918,6 +40922,7 @@ proxy-groups:
   - 未知 TROJAN-262 | free-nodes
   - 未知 TROJAN-266 | free-nodes
   - 未知 TROJAN-271 | free-nodes
+  - 未知 TROJAN-313 | free-nodes
   - 未知 TROJAN-314 | free-nodes
   - 未知 TROJAN-316 | free-nodes
   - 未知 TROJAN-320 | free-nodes
