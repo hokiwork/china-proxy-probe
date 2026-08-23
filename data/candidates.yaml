@@ -32,104 +32,2325 @@ proxies:
     path: /blog/ranking/task/proxyip=156.246.92.195,172.238.6.57,43.207.197.79,156.246.91.114,161.248.254.27,153.121.45.101,101.36.105.226?ed=2560
     headers:
       Host: yx.zhourf2006.dpdns.org
-- name: 🇷🇺_RU_俄罗斯
+- name: Резервный
   type: vless
-  server: 201.51.5.253
-  port: 2200
-  uuid: ed1cd50f-ead9-4e01-b5ae-b7d2dfb532fc
-  network: ws
-  tls: false
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  server: 217.19.122.142
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
   tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: 'Резервный #2'
   type: vless
-  server: 104.26.1.195
-  port: 8080
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-  network: ws
-  tls: false
-  ws-opts:
-    path: /ws-hTopcF3L
-    headers:
-      Host: premium-us-az-01-hostinger.efgwf.online
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国
-  type: vless
-  server: 18.238.109.17
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
+  server: 212.115.55.170
+  port: 1505
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
   tls: true
   client-fingerprint: chrome
+  servername: gp.x5.ru
+- name: Киргизия
+  type: vless
+  server: 193.36.95.214
+  port: 443
+  uuid: 280157e2-725e-44c6-89b5-f12674829a83
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: hosting.kg
+  flow: xtls-rprx-vision
+- name: Основной
+  type: vless
+  server: hopeguild.ru
+  port: 443
+  uuid: 6d866fdc-c794-4197-bdb7-34483c0f24e3
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: vk.com
+- name: 💫
+  type: vless
+  server: 84.252.101.81
+  port: 43000
+  uuid: fbd0db30-1d27-486b-bf3f-32e416375a43
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇳🇱
+  type: vless
+  server: 5.231.119.204
+  port: 43000
+  uuid: 03e097a2-c7c1-4f7f-95fc-f0e82ffe2e13
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: '💫 #2'
+  type: vless
+  server: 84.252.101.69
+  port: 43000
+  uuid: 646c3aa9-7792-4191-bc18-6e319a58d0c8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇰🇿
+  type: vless
+  server: 193.39.68.221
+  port: 43000
+  uuid: b60f48d2-ea94-4fe7-9232-894e9a17b0d8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇩🇪
+  type: vless
+  server: 77.90.63.250
+  port: 43000
+  uuid: 28afbacd-9ac7-4007-b08b-2c601fbc2384
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇨🇭
+  type: vless
+  server: 77.90.61.210
+  port: 43000
+  uuid: 25c7c6dd-5352-4b67-b6e3-d169174d0e45
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 🇷🇺
+  type: vless
+  server: 176.108.245.184
+  port: 25565
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: gp.x5.ru
+  flow: xtls-rprx-vision
+- name: '🇷🇺 #2'
+  type: vless
+  server: 78.159.245.22
+  port: 1111
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+- name: '🇷🇺 #3'
+  type: vless
+  server: 82.202.137.160
+  port: 1505
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: gp.x5.ru
+- name: '🇷🇺 #4'
+  type: vless
+  server: 176.108.253.222
+  port: 1505
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: gp.x5.ru
+- name: '🇷🇺 #5'
+  type: vless
+  server: 78.159.245.182
+  port: 15565
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #6'
+  type: vless
+  server: 78.159.245.25
+  port: 15565
+  uuid: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #7'
+  type: hysteria2
+  server: 91.240.87.46
+  port: 25443
+  password: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  sni: serv1.white-dns.cloud
+  skip-cert-verify: false
+- name: '🇷🇺 #8'
+  type: hysteria2
+  server: 78.159.245.80
+  port: 27015
+  password: 6b55bd2b-e79f-49b6-916f-1fa79488c135
+  sni: mine.white-dns.cloud
+  skip-cert-verify: false
+- name: '🇷🇺 #9'
+  type: vless
+  server: 176.108.253.116
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #10'
+  type: vless
+  server: 78.159.245.249
+  port: 1111
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+- name: '🇷🇺 #11'
+  type: vless
+  server: 80.66.65.45
+  port: 1505
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: gp.x5.ru
+- name: '🇷🇺 #12'
+  type: vless
+  server: 78.159.245.182
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #13'
+  type: vless
+  server: 78.159.245.25
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #14'
+  type: hysteria2
+  server: 91.240.87.46
+  port: 25443
+  password: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  sni: serv1.white-dns.cloud
+  skip-cert-verify: false
+- name: '🇷🇺 #15'
+  type: hysteria2
+  server: 78.159.245.80
+  port: 27015
+  password: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  sni: mine.white-dns.cloud
+  skip-cert-verify: false
+- name: '🇷🇺 #16'
+  type: vless
+  server: 78.159.245.230
+  port: 1111
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+- name: '🇷🇺 #17'
+  type: vless
+  server: 78.159.245.201
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #18'
+  type: vless
+  server: 78.159.245.44
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #19'
+  type: vless
+  server: 213.171.24.160
+  port: 1505
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: gp.x5.ru
+- name: '🇷🇺 #20'
+  type: vless
+  server: 217.19.122.20
+  port: 15565
+  uuid: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: iv.kommersant.ru
+- name: '🇷🇺 #21'
+  type: hysteria2
+  server: 91.240.87.46
+  port: 25444
+  password: 0f3d6e96-3a07-4a9d-afc5-5f23ccf6069a
+  sni: serv2.white-dns.cloud
+  skip-cert-verify: false
+- name: 🚀 Лучший сервер (ro-buh-01
+  type: vless
+  server: 13.140.49.7
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (it-mil-01
+  type: vless
+  server: 217.217.108.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fr-par-01
+  type: vless
+  server: 217.217.106.2
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (at-vie-01
+  type: vless
+  server: 217.217.110.8
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (cz-prg-01
+  type: vless
+  server: 217.217.111.11
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (es-bcn-01
+  type: vless
+  server: 217.217.107.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (no-osl-01
+  type: vless
+  server: 217.217.104.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (bg-sof-01
+  type: vless
+  server: 217.217.109.1
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (sk-bra-01
+  type: vless
+  server: 13.140.48.2
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-01
+  type: vless
+  server: 104.249.44.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-01
+  type: vless
+  server: 217.217.247.86
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-01
+  type: vless
+  server: 194.190.69.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (lv-rig-01
+  type: vless
+  server: 217.217.244.82
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (pl-war-01
+  type: vless
+  server: 104.238.0.19
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (ch-zur-01
+  type: vless
+  server: 169.40.14.22
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-01
+  type: vless
+  server: 64.137.54.1
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (dk-cph-01
+  type: vless
+  server: 193.182.128.3
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-02
+  type: vless
+  server: 104.249.44.78
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-02
+  type: vless
+  server: 64.137.54.67
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (ch-zur-02
+  type: vless
+  server: 169.40.14.92
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-02
+  type: vless
+  server: 194.190.69.31
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-02
+  type: vless
+  server: 217.217.247.111
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (pl-war-02
+  type: vless
+  server: 104.238.0.87
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (lv-rig-02
+  type: vless
+  server: 217.217.244.110
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (dk-cph-02
+  type: vless
+  server: 193.182.128.22
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-03
+  type: vless
+  server: 64.137.54.140
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (pl-war-03
+  type: vless
+  server: 104.238.0.152
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-03
+  type: vless
+  server: 217.217.247.125
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-03
+  type: vless
+  server: 104.249.44.132
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (lv-rig-03
+  type: vless
+  server: 217.217.244.126
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-03
+  type: vless
+  server: 194.190.69.50
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (lv-rig-04
+  type: vless
+  server: 217.217.244.153
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-04
+  type: vless
+  server: 194.190.69.68
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (pl-war-04
+  type: vless
+  server: 104.238.0.221
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-04
+  type: vless
+  server: 64.137.54.200
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-04
+  type: vless
+  server: 217.217.247.145
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-04
+  type: vless
+  server: 104.249.44.201
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-05
+  type: vless
+  server: 194.190.69.82
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-05
+  type: vless
+  server: 104.249.45.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-05
+  type: vless
+  server: 13.140.30.14
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-05
+  type: vless
+  server: 104.238.31.14
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-06
+  type: vless
+  server: 194.190.69.108
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-06
+  type: vless
+  server: 104.249.45.73
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-06
+  type: vless
+  server: 13.140.30.66
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-06
+  type: vless
+  server: 104.238.31.75
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-07
+  type: vless
+  server: 104.249.45.130
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-07
+  type: vless
+  server: 104.238.31.137
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-07
+  type: vless
+  server: 13.140.30.129
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-07
+  type: vless
+  server: 194.190.69.124
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (nl-ams-08
+  type: vless
+  server: 104.238.31.200
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (de-fra-08
+  type: vless
+  server: 104.249.45.193
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (fi-hel-08
+  type: vless
+  server: 13.140.30.196
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-08
+  type: vless
+  server: 194.190.69.148
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-09
+  type: vless
+  server: 194.190.69.159
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-10
+  type: vless
+  server: 194.190.69.180
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-11
+  type: vless
+  server: 194.190.69.196
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-12
+  type: vless
+  server: 194.190.69.208
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-13
+  type: vless
+  server: 194.190.69.223
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-14
+  type: vless
+  server: 194.190.69.237
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-15
+  type: vless
+  server: 194.190.69.245
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-16
+  type: vless
+  server: 185.98.61.7
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-17
+  type: vless
+  server: 185.98.61.32
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-18
+  type: vless
+  server: 185.98.61.45
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-19
+  type: vless
+  server: 185.98.61.67
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-20
+  type: vless
+  server: 185.98.61.94
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-21
+  type: vless
+  server: 185.98.61.116
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-22
+  type: vless
+  server: 185.98.61.125
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🚀 Лучший сервер (se-sto-23
+  type: vless
+  server: 185.98.61.152
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-02
+  type: vless
+  server: 64.137.54.77
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-03
+  type: vless
+  server: 64.137.54.138
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-04
+  type: vless
+  server: 64.137.54.206
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-05
+  type: vless
+  server: 104.238.31.3
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-06
+  type: vless
+  server: 104.238.31.76
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-07
+  type: vless
+  server: 104.238.31.143
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-08
+  type: vless
+  server: 104.238.31.193
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-09
+  type: vless
+  server: 164.5.248.218
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-10
+  type: vless
+  server: 164.5.248.150
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-11
+  type: vless
+  server: 164.5.248.100
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱 Нидерланды (nl-ams-12
+  type: vless
+  server: 164.5.248.25
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-01
+  type: vless
+  server: 217.217.247.91
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-03
+  type: vless
+  server: 217.217.247.124
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-04
+  type: vless
+  server: 217.217.247.149
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-05
+  type: vless
+  server: 13.140.30.4
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-06
+  type: vless
+  server: 13.140.30.75
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-07
+  type: vless
+  server: 13.140.30.131
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇫🇮 Финляндия (fi-hel-08
+  type: vless
+  server: 13.140.30.194
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-01
+  type: vless
+  server: 194.190.69.6
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-02
+  type: vless
+  server: 194.190.69.29
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-05
+  type: vless
+  server: 194.190.69.90
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-06
+  type: vless
+  server: 194.190.69.105
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-08
+  type: vless
+  server: 194.190.69.143
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-11
+  type: vless
+  server: 194.190.69.197
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-12
+  type: vless
+  server: 194.190.69.199
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-13
+  type: vless
+  server: 194.190.69.217
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-14
+  type: vless
+  server: 194.190.69.236
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-15
+  type: vless
+  server: 194.190.69.241
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-16
+  type: vless
+  server: 185.98.61.2
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-17
+  type: vless
+  server: 185.98.61.33
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-18
+  type: vless
+  server: 185.98.61.48
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-19
+  type: vless
+  server: 185.98.61.64
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-20
+  type: vless
+  server: 185.98.61.87
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-21
+  type: vless
+  server: 185.98.61.104
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-22
+  type: vless
+  server: 185.98.61.134
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Швеция (se-sto-23
+  type: vless
+  server: 185.98.61.146
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: metacleanse.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-01
+  type: vless
+  server: 104.249.44.15
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-02
+  type: vless
+  server: 104.249.44.76
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-03
+  type: vless
+  server: 104.249.44.140
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-04
+  type: vless
+  server: 104.249.44.199
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-05
+  type: vless
+  server: 104.249.45.14
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-06
+  type: vless
+  server: 104.249.45.66
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-07
+  type: vless
+  server: 104.249.45.131
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-08
+  type: vless
+  server: 104.249.45.206
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-09
+  type: vless
+  server: 185.176.158.34
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-10
+  type: vless
+  server: 185.176.158.90
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-11
+  type: vless
+  server: 185.176.158.155
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Германия (de-fra-12
+  type: vless
+  server: 185.176.158.223
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Польша (pl-war-01
+  type: vless
+  server: 104.238.0.22
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Польша (pl-war-02
+  type: vless
+  server: 104.238.0.94
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Польша (pl-war-03
+  type: vless
+  server: 104.238.0.148
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Польша (pl-war-04
+  type: vless
+  server: 104.238.0.214
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇱🇻 Латвия (lv-rig-01
+  type: vless
+  server: 217.217.244.89
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇱🇻 Латвия (lv-rig-02
+  type: vless
+  server: 217.217.244.115
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇱🇻 Латвия (lv-rig-03
+  type: vless
+  server: 217.217.244.141
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇱🇻 Латвия (lv-rig-04
+  type: vless
+  server: 217.217.244.143
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇷🇺 Россия (ru-spb-01
+  type: vless
+  server: 95.181.152.129
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇷🇺 Россия (ru-spb-02
+  type: vless
+  server: 95.181.152.157
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇦🇷 Аргентина (ar-bue-01
+  type: vless
+  server: 13.140.54.2
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: bytepad.dev
+  flow: xtls-rprx-vision
+- name: 🇦🇹 Австрия (at-vie-01
+  type: vless
+  server: 217.217.110.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: sheetpeek.com
+  flow: xtls-rprx-vision
+- name: 🇦🇺 Австралия (au-syd-01
+  type: vless
+  server: 13.140.50.1
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: bytepad.dev
+  flow: xtls-rprx-vision
+- name: 🇧🇬 Болгария (bg-sof-01
+  type: vless
+  server: 217.217.109.8
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: gridsnap.org
+  flow: xtls-rprx-vision
+- name: 🇨🇦 Канада (ca-tor-01
+  type: vless
+  server: 217.217.105.9
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: gridsnap.org
+  flow: xtls-rprx-vision
+- name: 🇨🇭 Швейцария (ch-zur-02
+  type: vless
+  server: 169.40.14.87
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇨🇿 Чехия (cz-prg-01
+  type: vless
+  server: 217.217.111.10
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: bytepad.dev
+  flow: xtls-rprx-vision
+- name: 🇩🇰 Дания (dk-cph-01
+  type: vless
+  server: 193.182.128.2
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: mycatcollection.com
+  flow: xtls-rprx-vision
+- name: 🇪🇸 Испания (es-bcn-01
+  type: vless
+  server: 217.217.107.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: sheetpeek.com
+  flow: xtls-rprx-vision
+- name: 🇫🇷 Франция (fr-par-01
+  type: vless
+  server: 217.217.106.6
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: bytepad.dev
+  flow: xtls-rprx-vision
+- name: 🇭🇰 Гонконг (hk-hkg-01
+  type: vless
+  server: 217.217.246.27
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇮🇱 Израиль (il-tlv-01
+  type: vless
+  server: 13.140.53.7
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: diffbundle.com
+  flow: xtls-rprx-vision
+- name: 🇮🇹 Италия (it-mil-01
+  type: vless
+  server: 217.217.108.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: qrforge.cc
+  flow: xtls-rprx-vision
+- name: 🇯🇵 Япония (jp-tyo-01
+  type: vless
+  server: 217.216.106.28
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: differencescope.com
+  flow: xtls-rprx-vision
+- name: 🇰🇿 Казахстан (kz-ast-01
+  type: vless
+  server: 194.238.40.102
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: mycatcollection.com
+  flow: xtls-rprx-vision
+- name: 🇱🇹 Литва (lt-vil-01
+  type: vless
+  server: 84.32.209.255
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: mycatcollection.com
+  flow: xtls-rprx-vision
+- name: 🇳🇬 Нигерия (ng-los-01
+  type: vless
+  server: 13.140.51.14
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: sheetpeek.com
+  flow: xtls-rprx-vision
+- name: 🇳🇴 Норвегия (no-osl-01
+  type: vless
+  server: 217.217.104.11
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: unitbook.net
+  flow: xtls-rprx-vision
+- name: 🇷🇴 Румыния (ro-buh-01
+  type: vless
+  server: 13.140.49.14
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: gridsnap.org
+  flow: xtls-rprx-vision
+- name: 🇸🇰 Словакия (sk-bra-01
+  type: vless
+  server: 13.140.48.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: dataforges.org
+  flow: xtls-rprx-vision
+- name: 🇹🇷 Турция (tr-ist-01
+  type: vless
+  server: 104.233.56.33
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇦🇪 ОАЭ (ae-fuj-01
+  type: vless
+  server: 13.140.52.9
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: sheetpeek.com
+  flow: xtls-rprx-vision
+- name: 🇬🇧 Великобритания (uk-lon-01
+  type: vless
+  server: 104.222.189.5
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: unitbook.net
+  flow: xtls-rprx-vision
+- name: 🇺🇸 США (us-nyc-01
+  type: vless
+  server: 104.253.23.3
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🇺🇸 США (us-chi-01
+  type: vless
+  server: 45.38.31.21
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: regexlab.sh
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Финляндия) (bridge-ru-fi-01
+  type: vless
+  server: 95.181.152.173
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: unitbook.net
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Финляндия) (bridge-ru-fi-02
+  type: vless
+  server: 95.181.152.189
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: unitbook.net
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Латвия) (bridge-ru-lv-01
+  type: vless
+  server: 95.181.152.168
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Латвия) (bridge-ru-lv-02
+  type: vless
+  server: 95.181.152.186
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Швеция) (bridge-ru-se-01
+  type: vless
+  server: 95.181.152.178
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇪🇺 Мост (Россия → Швеция) (bridge-ru-se-02
+  type: vless
+  server: 95.181.152.193
+  port: 443
+  uuid: dac1276c-b9e1-4eb4-825b-2ce2203d75cf
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: jsoncraft.org
+  flow: xtls-rprx-vision
+- name: 🇦🇱
+  type: vless
+  server: ap2.directly.chat
+  port: 443
+  uuid: fc54ece6-8a86-41e0-bd0c-3b248567e208
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: ap2.directly.chat
   ws-opts:
-    path: /
+    path: /al/1
     headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
+      Host: ap2.directly.chat
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR
+  type: vless
+  server: 31.77.169.70
+  port: 9830
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: dl.google.com
+- name: '.𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR #2'
+  type: vless
+  server: 176.108.252.240
+  port: 9443
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.io.ozone.ru
+  flow: xtls-rprx-vision
+- name: '.𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR #3'
+  type: vless
+  server: 192.144.58.232
+  port: 443
+  uuid: deb9c015-1ffe-4e41-9d21-310eb0422a4c
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: metrika.yandex.ru
+  flow: xtls-rprx-vision
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
+  type: vless
+  server: 51.250.104.176
+  port: 29443
+  uuid: 0d7d959f-5498-457e-aee7-fd16b1f3e77d
+  network: raw
+  tls: true
+  client-fingerprint: android
+  servername: ign.com
+  flow: xtls-rprx-vision
+- name: 🇨🇿 Czechia [*CIDR
+  type: vless
+  server: 5.189.223.90
+  port: 9891
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: dl.google.com
+- name: 🇨🇿 Czechia | [*CIDR
+  type: vless
+  server: 5.189.223.90
+  port: 9891
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: 🇪🇪 Estonia | [*CIDR] YA
+  type: vless
+  server: 51.250.104.176
+  port: 29447
+  uuid: 0d7d959f-5498-457e-aee7-fd16b1f3e77d
+  network: raw
+  tls: true
+  client-fingerprint: chrome
+  servername: www.twitch.tv
+  flow: xtls-rprx-vision
+- name: 🇩🇪 Germany | [*CIDR
+  type: vless
+  server: 45.151.102.99
+  port: 6443
+  uuid: 423caebf-ce56-4e26-a792-7a6becb17e9b
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: maps.apple.com
+- name: '🇩🇪 Germany | [*CIDR #2'
+  type: vless
+  server: 185.91.52.199
+  port: 6443
+  uuid: b1a6e9ca-de32-4adb-b473-061b32501714
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: play.overcloud.cloud
+- name: '🇩🇪 Germany | [*CIDR #3'
+  type: vless
+  server: 91.185.83.91
+  port: 10443
+  uuid: b1a6e9ca-de32-4adb-b473-061b32501714
+  network: grpc
+  tls: true
+  client-fingerprint: qq
+  servername: 5post-gate.x5.ru
+- name: 🇩🇪 Germany | 🌐 [*CIDR
+  type: vless
+  server: 194.87.226.71
+  port: 9877
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: dl.google.com
+- name: 🇩🇪 Germany | 🌐 | [*CIDR
+  type: vless
+  server: 46.8.220.182
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: media2.tcpdoor.net
+- name: '🇩🇪 Germany | 🌐 | [*CIDR #2'
+  type: vless
+  server: 5.188.115.69
+  port: 443
+  uuid: b6f4db0e-cc0e-4256-9c70-0dd253121ffd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: amogus.razkur.dev
+  ws-opts:
+    path: /ws
+    headers:
+      Host: amogus.razkur.dev
+- name: 🇮🇹 Italy [*CIDR
+  type: vless
+  server: 85.208.85.227
+  port: 9879
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: 🇮🇹 Italy | [*CIDR
+  type: vless
+  server: 85.208.85.227
+  port: 9879
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: '🇮🇹 Italy | [*CIDR #2'
+  type: vless
+  server: 92.63.99.228
+  port: 7899
+  uuid: e27dce75-b33b-49b6-afb7-17e29ce67bb1
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: tradingview.com
+  flow: xtls-rprx-vision
+- name: 🇱🇹 Lithuania | 🌐 [*CIDR] YA
+  type: vless
+  server: red-fhmq5ehr3ievlnabv8l2.concept7.ru
+  port: 443
+  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+- name: 🇱🇹 Lithuania | 🌐 | [*CIDR] YA
+  type: vless
+  server: 51.250.82.165
+  port: 443
+  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
+  network: raw
+  tls: true
+  client-fingerprint: edge
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+- name: 🇵🇱 Poland | [*CIDR
+  type: vless
+  server: 72.56.38.194
+  port: 9892
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: '🇵🇱 Poland | [*CIDR #2'
+  type: vless
+  server: 72.56.38.194
+  port: 9892
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: android
+  servername: dl.google.com
+- name: 🇵🇱 Poland | [*CIDR] YA
+  type: vless
+  server: 51.250.104.176
+  port: 29446
+  uuid: 0d7d959f-5498-457e-aee7-fd16b1f3e77d
+  network: raw
+  tls: true
+  client-fingerprint: chrome
+  servername: www.twitch.tv
+  flow: xtls-rprx-vision
+- name: 🇸🇪 Sweden | [*CIDR
+  type: vless
+  server: 5.42.106.202
+  port: 9878
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: '🇸🇪 Sweden | [*CIDR #2'
+  type: vless
+  server: 5.42.106.202
+  port: 9878
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: edge
+  servername: dl.google.com
+- name: 🇨🇭 Switzerland [*CIDR
+  type: vless
+  server: 82.202.159.157
+  port: 9882
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: tcp
+  tls: true
+  client-fingerprint: random
+  servername: amd.com
+  flow: xtls-rprx-vision
+- name: 🇺🇸 United States | [*CIDR
+  type: vless
+  server: 45.130.43.15
+  port: 443
+  uuid: 423caebf-ce56-4e26-a792-7a6becb17e9b
+  network: grpc
+  tls: true
+  client-fingerprint: android
+  servername: maps.apple.com
+- name: '🇺🇸 United States | [*CIDR #2'
+  type: vless
+  server: 92.63.99.228
+  port: 4353
+  uuid: b222ebc7-569c-45ca-a0e4-756f171b247b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: tradingview.com
+  flow: xtls-rprx-vision
+- name: '🇺🇸 United States | [*CIDR #3'
+  type: vless
+  server: 92.63.99.228
+  port: 4353
+  uuid: e27dce75-b33b-49b6-afb7-17e29ce67bb1
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: tradingview.com
+  flow: xtls-rprx-vision
+- name: 🇺🇸 United States | [*CIDR] YA
+  type: vless
+  server: 51.250.104.176
+  port: 29445
+  uuid: 0d7d959f-5498-457e-aee7-fd16b1f3e77d
+  network: raw
+  tls: true
+  client-fingerprint: chrome
+  servername: www.twitch.tv
+  flow: xtls-rprx-vision
+- name: 🇺🇸 United States | 🌐 [*CIDR
+  type: vless
+  server: 80.78.246.111
+  port: 9878
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: dl.google.com
+- name: '🇺🇸 United States | 🌐 [*CIDR #2'
+  type: vless
+  server: 80.78.246.111
+  port: 9878
+  uuid: 9c444a99-da61-4d82-939f-c3dd8fb41e9b
+  network: grpc
+  tls: true
+  client-fingerprint: safari
+  servername: dl.google.com
+- name: 🇺🇸 United States | 🌐 | [*CIDR
+  type: vless
+  server: 45.151.102.99
+  port: 443
+  uuid: 423caebf-ce56-4e26-a792-7a6becb17e9b
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: maps.apple.com
+- name: 🇷🇺 Russia [*CIDR
+  type: vless
+  server: 89.125.55.113
+  port: 443
+  uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: cdn-spb.buildsnow.top
+- name: '🇷🇺 Russia [*CIDR #2'
+  type: vless
+  server: 89.125.55.12
+  port: 443
+  uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
+  network: grpc
+  tls: true
+  client-fingerprint: ios
+  servername: cdn-spb.buildsnow.top
+- name: '🇷🇺 Russia [*CIDR #3'
+  type: vless
+  server: cdn-spb.buildsnow.top
+  port: 443
+  uuid: f9922bed-4524-4a6a-8709-9c2e26dedee9
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: cdn-spb.buildsnow.top
+- name: 🇷🇺 Russia | 🌐 [*CIDR
+  type: vless
+  server: 83.217.223.103
+  port: 49055
+  uuid: c37e6820-1abf-44b0-a096-bb243f1ff497
+  network: tcp
+  tls: false
+- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR
+  type: trojan
+  server: 185.148.105.27
+  port: 443
+  password: '521314'
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #2'
+  type: trojan
+  server: 185.148.106.27
+  port: 443
+  password: '521314'
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #3'
+  type: trojan
+  server: 31.12.75.27
+  port: 443
+  password: '521314'
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #4'
+  type: trojan
+  server: 45.67.215.9
+  port: 443
+  password: '521314'
+  sni: tjplay.lxdxo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /Telegram @WangCai2
+    headers:
+      Host: tjplay.lxdxo.kdns.fr
+- name: 🇨🇦_CA_加拿大
+  type: ss
+  server: 212.193.6.107
+  port: 30331
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
   skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇯🇵_JP_日本
+  type: trojan
+  server: supreme-lobster.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: supreme-lobster.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇮🇪_IE_爱尔兰
+  type: trojan
+  server: kind-stork.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇮🇪_IE_爱尔兰_1
+  type: trojan
+  server: unbiased-garfish.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇸🇬_SG_新加坡
+  type: trojan
+  server: integral-quetzal.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇯🇵_JP_日本_1
+  type: trojan
+  server: premium-weevil.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇦🇺_AU_澳大利亚
+  type: trojan
+  server: together-dingo.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇫🇷_FR_法国
-  type: vless
-  server: fr199.mechvpn.online
+  type: trojan
+  server: distinct-quail.rooster465.autos
   port: 443
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  password: AE62539071
+  skip-cert-verify: true
   tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+- name: 🇯🇵_JP_日本_2
+  type: trojan
+  server: polished-imp.rooster465.autos
+  port: 443
+  password: AE62539071
+  sni: polished-imp.rooster465.autos
   skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
   tls: false
+  udp: true
+- name: 🇷🇺_RU_俄罗斯
+  type: ss
+  server: 195.133.23.200
+  port: 30331
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
@@ -142,88 +2363,112 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪_DE_德国->🇧🇷_BR_巴西
-  type: vless
-  server: 18.198.227.161
+- name: 🇦🇺_AU_澳大利亚_1
+  type: trojan
+  server: darling-mutt.rooster465.autos
   port: 443
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  network: ws
-  servername: titandarkness.mooo.com
+  password: AE62539071
+  skip-cert-verify: true
   tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /21381/0kO2id8FMQ
-    headers:
-      Host: titandarkness.mooo.com
+  udp: true
+- name: 🇯🇵_JP_日本_3
+  type: trojan
+  server: literate-cow.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇰🇷_KR_韩国
+  type: trojan
+  server: sacred-hound.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇵🇱_PL_波兰
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国
-  type: vmess
-  server: 178.83.45.29
-  port: 38998
-  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
-  alterId: 0
-  cipher: auto
-  tls: false
+  type: trojan
+  server: sterling-macaw.rooster465.autos
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: vless
-  server: 104.171.137.141
-  port: 2200
-  uuid: d5d72f0a-42b0-4f43-b568-9cf7fbff073d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇳🇱_NL_荷兰
-  type: ss
-  server: 193.124.203.144
+  type: trojan
+  server: thorough-falcon.rooster465.autos
   port: 443
-  cipher: 2022-blake3-aes-256-gcm
-  password: mkKfxndCZ9c3YIkAAmANrtfI/mlGJwwV9/GdVTYgW3M=:JazxiYc3Mc5tLn/Te3T59W6Zw4Z/BPuepQ0VlVD/cZ8=
+  password: AE62539071
   skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-  type: vless
-  server: 46.8.220.182
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  network: grpc
-  servername: media2.tcpdoor.net
   tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
-    short-id: 3303c7a5
+  udp: true
+- name: 🇵🇱_PL_波兰_1
+  type: trojan
+  server: tolerant-mosquito.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  type: trojan
+  server: moved-bluegill.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+  type: vless
+  server: ru211.mechvpn.online
+  port: 443
+  uuid: 1c6824de-312c-4876-aa3f-5a30e3df2de7
+  tls: true
+  flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺_RU_俄罗斯_2
-  type: vless
-  server: 201.51.5.253
-  port: 4100
-  uuid: ed1cd50f-ead9-4e01-b5ae-b7d2dfb532fc
-  network: ws
-  tls: false
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
+- name: 🇯🇵_JP_日本_4
+  type: trojan
+  server: main-impala.rooster465.autos
+  port: 443
+  password: AE62539071
   skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: trojan
+  server: upright-bedbug.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇵🇱_PL_波兰_2
+  type: trojan
+  server: relative-locust.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇺🇸 美国
   type: vless
@@ -28329,12 +30574,6 @@ proxies:
   port: 443
   password: ND91608427
   sni: becoming-hare.rooster465.autos
-- name: 未知 TROJAN-313 | free-nodes
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
 - name: 未知 TROJAN-314 | free-nodes
   type: trojan
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
@@ -28444,16 +30683,6 @@ proxies:
     path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
     headers:
       Host: x4g-production-06e2.up.railway.app
-- name: RU VLESS-333 | free-nodes
-  type: vless
-  server: red-fhmq5ehr3ievlnabv8l2.concept7.ru
-  port: 443
-  uuid: 15e0833c-08ad-47f3-bf80-60c2a47a6774
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api-maps.yandex.ru
-  flow: xtls-rprx-vision
 - name: 未知 VLESS-334 | free-nodes
   type: vless
   server: x4g-production-0a61.up.railway.app
@@ -38187,23 +40416,259 @@ proxy-groups:
   - 9.5-900GB  ASN 174美国(US) 哥伦比亚特区 华盛顿特区COGENT-174
   - 8.28-04:12-2mbpsASN 4694日本(JP)IDC Frontier Inc
   - cloudflare 优选节点
-  - 🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国
+  - Резервный
+  - 'Резервный #2'
+  - Киргизия
+  - Основной
+  - 💫
+  - 🇳🇱
+  - '💫 #2'
+  - 🇰🇿
+  - 🇩🇪
+  - 🇨🇭
+  - 🇷🇺
+  - '🇷🇺 #2'
+  - '🇷🇺 #3'
+  - '🇷🇺 #4'
+  - '🇷🇺 #5'
+  - '🇷🇺 #6'
+  - '🇷🇺 #7'
+  - '🇷🇺 #8'
+  - '🇷🇺 #9'
+  - '🇷🇺 #10'
+  - '🇷🇺 #11'
+  - '🇷🇺 #12'
+  - '🇷🇺 #13'
+  - '🇷🇺 #14'
+  - '🇷🇺 #15'
+  - '🇷🇺 #16'
+  - '🇷🇺 #17'
+  - '🇷🇺 #18'
+  - '🇷🇺 #19'
+  - '🇷🇺 #20'
+  - '🇷🇺 #21'
+  - 🚀 Лучший сервер (ro-buh-01
+  - 🚀 Лучший сервер (it-mil-01
+  - 🚀 Лучший сервер (fr-par-01
+  - 🚀 Лучший сервер (at-vie-01
+  - 🚀 Лучший сервер (cz-prg-01
+  - 🚀 Лучший сервер (es-bcn-01
+  - 🚀 Лучший сервер (no-osl-01
+  - 🚀 Лучший сервер (bg-sof-01
+  - 🚀 Лучший сервер (sk-bra-01
+  - 🚀 Лучший сервер (de-fra-01
+  - 🚀 Лучший сервер (fi-hel-01
+  - 🚀 Лучший сервер (se-sto-01
+  - 🚀 Лучший сервер (lv-rig-01
+  - 🚀 Лучший сервер (pl-war-01
+  - 🚀 Лучший сервер (ch-zur-01
+  - 🚀 Лучший сервер (nl-ams-01
+  - 🚀 Лучший сервер (dk-cph-01
+  - 🚀 Лучший сервер (de-fra-02
+  - 🚀 Лучший сервер (nl-ams-02
+  - 🚀 Лучший сервер (ch-zur-02
+  - 🚀 Лучший сервер (se-sto-02
+  - 🚀 Лучший сервер (fi-hel-02
+  - 🚀 Лучший сервер (pl-war-02
+  - 🚀 Лучший сервер (lv-rig-02
+  - 🚀 Лучший сервер (dk-cph-02
+  - 🚀 Лучший сервер (nl-ams-03
+  - 🚀 Лучший сервер (pl-war-03
+  - 🚀 Лучший сервер (fi-hel-03
+  - 🚀 Лучший сервер (de-fra-03
+  - 🚀 Лучший сервер (lv-rig-03
+  - 🚀 Лучший сервер (se-sto-03
+  - 🚀 Лучший сервер (lv-rig-04
+  - 🚀 Лучший сервер (se-sto-04
+  - 🚀 Лучший сервер (pl-war-04
+  - 🚀 Лучший сервер (nl-ams-04
+  - 🚀 Лучший сервер (fi-hel-04
+  - 🚀 Лучший сервер (de-fra-04
+  - 🚀 Лучший сервер (se-sto-05
+  - 🚀 Лучший сервер (de-fra-05
+  - 🚀 Лучший сервер (fi-hel-05
+  - 🚀 Лучший сервер (nl-ams-05
+  - 🚀 Лучший сервер (se-sto-06
+  - 🚀 Лучший сервер (de-fra-06
+  - 🚀 Лучший сервер (fi-hel-06
+  - 🚀 Лучший сервер (nl-ams-06
+  - 🚀 Лучший сервер (de-fra-07
+  - 🚀 Лучший сервер (nl-ams-07
+  - 🚀 Лучший сервер (fi-hel-07
+  - 🚀 Лучший сервер (se-sto-07
+  - 🚀 Лучший сервер (nl-ams-08
+  - 🚀 Лучший сервер (de-fra-08
+  - 🚀 Лучший сервер (fi-hel-08
+  - 🚀 Лучший сервер (se-sto-08
+  - 🚀 Лучший сервер (se-sto-09
+  - 🚀 Лучший сервер (se-sto-10
+  - 🚀 Лучший сервер (se-sto-11
+  - 🚀 Лучший сервер (se-sto-12
+  - 🚀 Лучший сервер (se-sto-13
+  - 🚀 Лучший сервер (se-sto-14
+  - 🚀 Лучший сервер (se-sto-15
+  - 🚀 Лучший сервер (se-sto-16
+  - 🚀 Лучший сервер (se-sto-17
+  - 🚀 Лучший сервер (se-sto-18
+  - 🚀 Лучший сервер (se-sto-19
+  - 🚀 Лучший сервер (se-sto-20
+  - 🚀 Лучший сервер (se-sto-21
+  - 🚀 Лучший сервер (se-sto-22
+  - 🚀 Лучший сервер (se-sto-23
+  - 🇳🇱 Нидерланды (nl-ams-02
+  - 🇳🇱 Нидерланды (nl-ams-03
+  - 🇳🇱 Нидерланды (nl-ams-04
+  - 🇳🇱 Нидерланды (nl-ams-05
+  - 🇳🇱 Нидерланды (nl-ams-06
+  - 🇳🇱 Нидерланды (nl-ams-07
+  - 🇳🇱 Нидерланды (nl-ams-08
+  - 🇳🇱 Нидерланды (nl-ams-09
+  - 🇳🇱 Нидерланды (nl-ams-10
+  - 🇳🇱 Нидерланды (nl-ams-11
+  - 🇳🇱 Нидерланды (nl-ams-12
+  - 🇫🇮 Финляндия (fi-hel-01
+  - 🇫🇮 Финляндия (fi-hel-03
+  - 🇫🇮 Финляндия (fi-hel-04
+  - 🇫🇮 Финляндия (fi-hel-05
+  - 🇫🇮 Финляндия (fi-hel-06
+  - 🇫🇮 Финляндия (fi-hel-07
+  - 🇫🇮 Финляндия (fi-hel-08
+  - 🇸🇪 Швеция (se-sto-01
+  - 🇸🇪 Швеция (se-sto-02
+  - 🇸🇪 Швеция (se-sto-05
+  - 🇸🇪 Швеция (se-sto-06
+  - 🇸🇪 Швеция (se-sto-08
+  - 🇸🇪 Швеция (se-sto-11
+  - 🇸🇪 Швеция (se-sto-12
+  - 🇸🇪 Швеция (se-sto-13
+  - 🇸🇪 Швеция (se-sto-14
+  - 🇸🇪 Швеция (se-sto-15
+  - 🇸🇪 Швеция (se-sto-16
+  - 🇸🇪 Швеция (se-sto-17
+  - 🇸🇪 Швеция (se-sto-18
+  - 🇸🇪 Швеция (se-sto-19
+  - 🇸🇪 Швеция (se-sto-20
+  - 🇸🇪 Швеция (se-sto-21
+  - 🇸🇪 Швеция (se-sto-22
+  - 🇸🇪 Швеция (se-sto-23
+  - 🇩🇪 Германия (de-fra-01
+  - 🇩🇪 Германия (de-fra-02
+  - 🇩🇪 Германия (de-fra-03
+  - 🇩🇪 Германия (de-fra-04
+  - 🇩🇪 Германия (de-fra-05
+  - 🇩🇪 Германия (de-fra-06
+  - 🇩🇪 Германия (de-fra-07
+  - 🇩🇪 Германия (de-fra-08
+  - 🇩🇪 Германия (de-fra-09
+  - 🇩🇪 Германия (de-fra-10
+  - 🇩🇪 Германия (de-fra-11
+  - 🇩🇪 Германия (de-fra-12
+  - 🇵🇱 Польша (pl-war-01
+  - 🇵🇱 Польша (pl-war-02
+  - 🇵🇱 Польша (pl-war-03
+  - 🇵🇱 Польша (pl-war-04
+  - 🇱🇻 Латвия (lv-rig-01
+  - 🇱🇻 Латвия (lv-rig-02
+  - 🇱🇻 Латвия (lv-rig-03
+  - 🇱🇻 Латвия (lv-rig-04
+  - 🇷🇺 Россия (ru-spb-01
+  - 🇷🇺 Россия (ru-spb-02
+  - 🇦🇷 Аргентина (ar-bue-01
+  - 🇦🇹 Австрия (at-vie-01
+  - 🇦🇺 Австралия (au-syd-01
+  - 🇧🇬 Болгария (bg-sof-01
+  - 🇨🇦 Канада (ca-tor-01
+  - 🇨🇭 Швейцария (ch-zur-02
+  - 🇨🇿 Чехия (cz-prg-01
+  - 🇩🇰 Дания (dk-cph-01
+  - 🇪🇸 Испания (es-bcn-01
+  - 🇫🇷 Франция (fr-par-01
+  - 🇭🇰 Гонконг (hk-hkg-01
+  - 🇮🇱 Израиль (il-tlv-01
+  - 🇮🇹 Италия (it-mil-01
+  - 🇯🇵 Япония (jp-tyo-01
+  - 🇰🇿 Казахстан (kz-ast-01
+  - 🇱🇹 Литва (lt-vil-01
+  - 🇳🇬 Нигерия (ng-los-01
+  - 🇳🇴 Норвегия (no-osl-01
+  - 🇷🇴 Румыния (ro-buh-01
+  - 🇸🇰 Словакия (sk-bra-01
+  - 🇹🇷 Турция (tr-ist-01
+  - 🇦🇪 ОАЭ (ae-fuj-01
+  - 🇬🇧 Великобритания (uk-lon-01
+  - 🇺🇸 США (us-nyc-01
+  - 🇺🇸 США (us-chi-01
+  - 🇪🇺 Мост (Россия → Финляндия) (bridge-ru-fi-01
+  - 🇪🇺 Мост (Россия → Финляндия) (bridge-ru-fi-02
+  - 🇪🇺 Мост (Россия → Латвия) (bridge-ru-lv-01
+  - 🇪🇺 Мост (Россия → Латвия) (bridge-ru-lv-02
+  - 🇪🇺 Мост (Россия → Швеция) (bridge-ru-se-01
+  - 🇪🇺 Мост (Россия → Швеция) (bridge-ru-se-02
+  - 🇦🇱
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR
+  - '.𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR #2'
+  - '.𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR #3'
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] YA
+  - 🇨🇿 Czechia [*CIDR
+  - 🇨🇿 Czechia | [*CIDR
+  - 🇪🇪 Estonia | [*CIDR] YA
+  - 🇩🇪 Germany | [*CIDR
+  - '🇩🇪 Germany | [*CIDR #2'
+  - '🇩🇪 Germany | [*CIDR #3'
+  - 🇩🇪 Germany | 🌐 [*CIDR
+  - 🇩🇪 Germany | 🌐 | [*CIDR
+  - '🇩🇪 Germany | 🌐 | [*CIDR #2'
+  - 🇮🇹 Italy [*CIDR
+  - 🇮🇹 Italy | [*CIDR
+  - '🇮🇹 Italy | [*CIDR #2'
+  - 🇱🇹 Lithuania | 🌐 [*CIDR] YA
+  - 🇱🇹 Lithuania | 🌐 | [*CIDR] YA
+  - 🇵🇱 Poland | [*CIDR
+  - '🇵🇱 Poland | [*CIDR #2'
+  - 🇵🇱 Poland | [*CIDR] YA
+  - 🇸🇪 Sweden | [*CIDR
+  - '🇸🇪 Sweden | [*CIDR #2'
+  - 🇨🇭 Switzerland [*CIDR
+  - 🇺🇸 United States | [*CIDR
+  - '🇺🇸 United States | [*CIDR #2'
+  - '🇺🇸 United States | [*CIDR #3'
+  - 🇺🇸 United States | [*CIDR] YA
+  - 🇺🇸 United States | 🌐 [*CIDR
+  - '🇺🇸 United States | 🌐 [*CIDR #2'
+  - 🇺🇸 United States | 🌐 | [*CIDR
+  - 🇷🇺 Russia [*CIDR
+  - '🇷🇺 Russia [*CIDR #2'
+  - '🇷🇺 Russia [*CIDR #3'
+  - 🇷🇺 Russia | 🌐 [*CIDR
+  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR
+  - '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #2'
+  - '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #3'
+  - '🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR #4'
+  - 🇨🇦_CA_加拿大
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇯🇵_JP_日本
+  - 🇮🇪_IE_爱尔兰
+  - 🇮🇪_IE_爱尔兰_1
+  - 🇸🇬_SG_新加坡
+  - 🇯🇵_JP_日本_1
+  - 🇦🇺_AU_澳大利亚
   - 🇫🇷_FR_法国
-  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇯🇵_JP_日本_2
+  - 🇷🇺_RU_俄罗斯
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇩🇪_DE_德国->🇧🇷_BR_巴西
+  - 🇦🇺_AU_澳大利亚_1
+  - 🇯🇵_JP_日本_3
+  - 🇰🇷_KR_韩国
+  - 🇵🇱_PL_波兰
+  - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇨🇳_CN_中国
   - 🇳🇱_NL_荷兰
-  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-  - 🇷🇺_RU_俄罗斯_2
+  - 🇵🇱_PL_波兰_1
+  - 🇩🇪_DE_德国_1
+  - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+  - 🇯🇵_JP_日本_4
+  - 🇭🇰_HK_中国香港
+  - 🇵🇱_PL_波兰_2
   - 🇺🇸 美国
   - 沙特阿拉伯+V2CROSS.COM
   - 美国+V2CROSS.COM
@@ -40922,7 +43387,6 @@ proxy-groups:
   - 未知 TROJAN-262 | free-nodes
   - 未知 TROJAN-266 | free-nodes
   - 未知 TROJAN-271 | free-nodes
-  - 未知 TROJAN-313 | free-nodes
   - 未知 TROJAN-314 | free-nodes
   - 未知 TROJAN-316 | free-nodes
   - 未知 TROJAN-320 | free-nodes
@@ -40933,7 +43397,6 @@ proxy-groups:
   - GB VLESS-329 | free-nodes
   - 未知 VLESS-330 | free-nodes
   - 未知 VLESS-331 | free-nodes
-  - RU VLESS-333 | free-nodes
   - 未知 VLESS-334 | free-nodes
   - 未知 VLESS-336 | free-nodes
   - 未知 VLESS-337 | free-nodes
