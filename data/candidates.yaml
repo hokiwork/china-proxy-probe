@@ -76,28 +76,28 @@ proxies:
 - name: HK2-HY2
   type: hysteria2
   server: hk2.dexlos.com
-  port: 20219
+  port: 20304
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk2.dexlos.com
   skip-cert-verify: false
 - name: HK3-HY2
   type: hysteria2
   server: hk3.dexlos.com
-  port: 20452
+  port: 20542
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk3.dexlos.com
   skip-cert-verify: false
 - name: HK4-HY2
   type: hysteria2
   server: hk4.dexlos.com
-  port: 20736
+  port: 20683
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk4.dexlos.com
   skip-cert-verify: false
 - name: HK5-HY2
   type: hysteria2
   server: hk5.dexlos.com
-  port: 20918
+  port: 20898
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk5.dexlos.com
   skip-cert-verify: false
@@ -158,35 +158,35 @@ proxies:
 - name: JP6-HY2
   type: hysteria2
   server: jp6.dexlos.com
-  port: 21013
+  port: 21056
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp6.dexlos.com
   skip-cert-verify: false
 - name: JP7-HY2
   type: hysteria2
   server: jp7.dexlos.com
-  port: 21385
+  port: 21204
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp7.dexlos.com
   skip-cert-verify: false
 - name: JP8-HY2
   type: hysteria2
   server: jp8.dexlos.com
-  port: 21512
+  port: 21560
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp8.dexlos.com
   skip-cert-verify: false
 - name: JP9-HY2
   type: hysteria2
   server: jp9.dexlos.com
-  port: 21720
+  port: 21766
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp9.dexlos.com
   skip-cert-verify: false
 - name: JP10-HY2
   type: hysteria2
   server: jp10.dexlos.com
-  port: 21931
+  port: 21896
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp10.dexlos.com
   skip-cert-verify: false
@@ -283,21 +283,21 @@ proxies:
 - name: SG1-HY2
   type: hysteria2
   server: sg1.dexlos.com
-  port: 20158
+  port: 20134
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg1.dexlos.com
   skip-cert-verify: false
 - name: SG2-HY2
   type: hysteria2
   server: sg2.dexlos.com
-  port: 20361
+  port: 20325
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg2.dexlos.com
   skip-cert-verify: false
 - name: SG3-HY2
   type: hysteria2
   server: sg3.dexlos.com
-  port: 20581
+  port: 20477
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg3.dexlos.com
   skip-cert-verify: false
@@ -349,42 +349,42 @@ proxies:
 - name: US1-HY2
   type: hysteria2
   server: us1.dexlos.com
-  port: 20182
+  port: 20175
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us1.dexlos.com
   skip-cert-verify: false
 - name: US2-HY2
   type: hysteria2
   server: us2.dexlos.com
-  port: 20393
+  port: 20253
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us2.dexlos.com
   skip-cert-verify: false
 - name: US3-HY2
   type: hysteria2
   server: us3.dexlos.com
-  port: 20423
+  port: 20544
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us3.dexlos.com
   skip-cert-verify: false
 - name: US4-HY2
   type: hysteria2
   server: us4.dexlos.com
-  port: 20653
+  port: 20661
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us4.dexlos.com
   skip-cert-verify: false
 - name: US5-HY2
   type: hysteria2
   server: us5.dexlos.com
-  port: 20948
+  port: 20988
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us5.dexlos.com
   skip-cert-verify: false
 - name: US6-HY2
   type: hysteria2
   server: us6.dexlos.com
-  port: 21178
+  port: 21195
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us6.dexlos.com
   skip-cert-verify: false
@@ -37923,72 +37923,6 @@ proxies:
       Host: pan11.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: US美国(v2clash.blog 2026-6.6更新
-  type: vless
-  server: 93.179.99.130
-  port: 777
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: nn9jdg-k7yewrrk.acg.xx.kg
-- name: 'US美国(v2clash.blog 2026-6.6更新 #2'
-  type: vless
-  server: 150.251.158.76
-  port: 443
-  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: s646.okgg.top
-  flow: xtls-rprx-vision-udp443
-- name: 'US美国(v2clash.blog 2026-6.6更新 #3'
-  type: vless
-  server: 31.76.91.12
-  port: 443
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: jp.s3-cloud.org
-  flow: xtls-rprx-vision
-- name: 塞舌尔(v2clash.blog 2026-6.6更新
-  type: vless
-  server: 45.130.125.2
-  port: 443
-  uuid: bdd885ff-1b3b-40fd-93d5-ac2b29b90f8b
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.middle.cc.cd
-- name: 'US美国(v2clash.blog 2026-6.6更新 #4'
-  type: vless
-  server: 89.117.112.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: 'US美国(v2clash.blog 2026-6.6更新 #5'
-  type: vless
-  server: 31.185.108.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime23.workers.dev
 - name: US美国(v2clash.blog 2026-6.7更新
   type: vless
   server: 146.70.20.110
@@ -38028,6 +37962,16 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: 'US美国(v2clash.blog 2026-6.7更新 #4'
+  type: vless
+  server: 150.251.158.76
+  port: 443
+  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: s646.okgg.top
+  flow: xtls-rprx-vision-udp443
 - name: GB英国(v2clash.blog 2026-6.7更新
   type: vless
   server: 31.76.91.9
@@ -38038,6 +37982,19 @@ proxies:
   client-fingerprint: chrome
   servername: jp.s3-cloud.org
   flow: xtls-rprx-vision
+- name: 'US美国(v2clash.blog 2026-6.7更新 #5'
+  type: vless
+  server: 93.179.99.130
+  port: 777
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
 - name: 'GB英国(v2clash.blog 2026-6.7更新 #2'
   type: vless
   server: 31.76.91.14
@@ -38173,6 +38130,18 @@ proxies:
       Host: tjaaa.hhllfly.kdns.fr
 - name: 'US美国(v2clash.blog 2026-6.25更新 #2'
   type: vless
+  server: 31.185.108.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime23.workers.dev
+- name: 'US美国(v2clash.blog 2026-6.25更新 #3'
+  type: vless
   server: 151.101.48.151
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -38183,7 +38152,7 @@ proxies:
     path: /?https://t.me/WangCai2🇨🇳
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: 'US美国(v2clash.blog 2026-6.25更新 #3'
+- name: 'US美国(v2clash.blog 2026-6.25更新 #4'
   type: vless
   server: 151.101.69.151
   port: 80
@@ -38628,6 +38597,39 @@ proxies:
 - name: FR法国(v2clash.blog 2026-8.13更新
   type: trojan
   server: 104.18.152.159
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: US美国(v2clash.blog 2026-8.25更新
+  type: vless
+  server: 2605:6400:10:322:8260:741c:48d7:1454
+  port: 443
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: u643766ue1b9d2e4s552.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: FR法国(v2clash.blog 2026-8.25更新
+  type: vless
+  server: 178.72.147.249
+  port: 4100
+  uuid: 7ee53e03-96ed-4121-9da2-62f3d3374506
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /v1
+    headers:
+      Host: ''
+- name: 'US美国(v2clash.blog 2026-8.25更新 #2'
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -42248,16 +42250,12 @@ proxy-groups:
   - PL波兰(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_42
   - US美国(mibei77.com 米贝节点分享)_45
-  - US美国(v2clash.blog 2026-6.6更新
-  - 'US美国(v2clash.blog 2026-6.6更新 #2'
-  - 'US美国(v2clash.blog 2026-6.6更新 #3'
-  - 塞舌尔(v2clash.blog 2026-6.6更新
-  - 'US美国(v2clash.blog 2026-6.6更新 #4'
-  - 'US美国(v2clash.blog 2026-6.6更新 #5'
   - US美国(v2clash.blog 2026-6.7更新
   - 'US美国(v2clash.blog 2026-6.7更新 #2'
   - 'US美国(v2clash.blog 2026-6.7更新 #3'
+  - 'US美国(v2clash.blog 2026-6.7更新 #4'
   - GB英国(v2clash.blog 2026-6.7更新
+  - 'US美国(v2clash.blog 2026-6.7更新 #5'
   - 'GB英国(v2clash.blog 2026-6.7更新 #2'
   - US美国(v2clash.blog 2026-6.8更新
   - 'US美国(v2clash.blog 2026-6.8更新 #2'
@@ -42272,6 +42270,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-6.25更新
   - 'US美国(v2clash.blog 2026-6.25更新 #2'
   - 'US美国(v2clash.blog 2026-6.25更新 #3'
+  - 'US美国(v2clash.blog 2026-6.25更新 #4'
   - 'DE德国(v2clash.blog 2026-6.25更新 #2'
   - 罗马尼亚(v2clash.blog 2026-6.27更新
   - AU澳大利亚(v2clash.blog 2026-6.27更新
@@ -42309,5 +42308,8 @@ proxy-groups:
   - US美国(v2clash.blog 2026-8.4更新
   - US美国(v2clash.blog 2026-8.10更新
   - FR法国(v2clash.blog 2026-8.13更新
+  - US美国(v2clash.blog 2026-8.25更新
+  - FR法国(v2clash.blog 2026-8.25更新
+  - 'US美国(v2clash.blog 2026-8.25更新 #2'
 rules:
 - MATCH,PROBE
