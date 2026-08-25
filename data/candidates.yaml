@@ -76,28 +76,28 @@ proxies:
 - name: HK2-HY2
   type: hysteria2
   server: hk2.dexlos.com
-  port: 20304
+  port: 20333
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk2.dexlos.com
   skip-cert-verify: false
 - name: HK3-HY2
   type: hysteria2
   server: hk3.dexlos.com
-  port: 20542
+  port: 20418
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk3.dexlos.com
   skip-cert-verify: false
 - name: HK4-HY2
   type: hysteria2
   server: hk4.dexlos.com
-  port: 20683
+  port: 20750
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk4.dexlos.com
   skip-cert-verify: false
 - name: HK5-HY2
   type: hysteria2
   server: hk5.dexlos.com
-  port: 20898
+  port: 20891
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: hk5.dexlos.com
   skip-cert-verify: false
@@ -158,35 +158,35 @@ proxies:
 - name: JP6-HY2
   type: hysteria2
   server: jp6.dexlos.com
-  port: 21056
+  port: 21075
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp6.dexlos.com
   skip-cert-verify: false
 - name: JP7-HY2
   type: hysteria2
   server: jp7.dexlos.com
-  port: 21204
+  port: 21288
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp7.dexlos.com
   skip-cert-verify: false
 - name: JP8-HY2
   type: hysteria2
   server: jp8.dexlos.com
-  port: 21560
+  port: 21542
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp8.dexlos.com
   skip-cert-verify: false
 - name: JP9-HY2
   type: hysteria2
   server: jp9.dexlos.com
-  port: 21766
+  port: 21648
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp9.dexlos.com
   skip-cert-verify: false
 - name: JP10-HY2
   type: hysteria2
   server: jp10.dexlos.com
-  port: 21896
+  port: 21810
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: jp10.dexlos.com
   skip-cert-verify: false
@@ -283,21 +283,21 @@ proxies:
 - name: SG1-HY2
   type: hysteria2
   server: sg1.dexlos.com
-  port: 20134
+  port: 20198
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg1.dexlos.com
   skip-cert-verify: false
 - name: SG2-HY2
   type: hysteria2
   server: sg2.dexlos.com
-  port: 20325
+  port: 20328
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg2.dexlos.com
   skip-cert-verify: false
 - name: SG3-HY2
   type: hysteria2
   server: sg3.dexlos.com
-  port: 20477
+  port: 20528
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: sg3.dexlos.com
   skip-cert-verify: false
@@ -349,48 +349,81 @@ proxies:
 - name: US1-HY2
   type: hysteria2
   server: us1.dexlos.com
-  port: 20175
+  port: 20150
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us1.dexlos.com
   skip-cert-verify: false
 - name: US2-HY2
   type: hysteria2
   server: us2.dexlos.com
-  port: 20253
+  port: 20320
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us2.dexlos.com
   skip-cert-verify: false
 - name: US3-HY2
   type: hysteria2
   server: us3.dexlos.com
-  port: 20544
+  port: 20416
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us3.dexlos.com
   skip-cert-verify: false
 - name: US4-HY2
   type: hysteria2
   server: us4.dexlos.com
-  port: 20661
+  port: 20637
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us4.dexlos.com
   skip-cert-verify: false
 - name: US5-HY2
   type: hysteria2
   server: us5.dexlos.com
-  port: 20988
+  port: 20925
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us5.dexlos.com
   skip-cert-verify: false
 - name: US6-HY2
   type: hysteria2
   server: us6.dexlos.com
-  port: 21195
+  port: 21124
   password: 01280BE5-E0A9-4AC1-A9BA-E0A0E9C653B5
   sni: us6.dexlos.com
   skip-cert-verify: false
+- name: 🇯🇵_JP_日本
+  type: trojan
+  server: champion-panther.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: trojan
+  server: natural-swan.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇯🇵_JP_日本_1
+  type: trojan
+  server: endless-kiwi.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: trojan
+  server: 2c.fast9988.com
+  port: 50887
+  password: 6ec301428255a78a1d826988d86cc87e
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
 - name: 🇺🇸_US_美国->🇹🇭_TH_泰国
   type: vless
-  server: 18.244.214.27
+  server: 18.238.109.26
   port: 443
   uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
   network: ws
@@ -402,6 +435,121 @@ proxies:
     headers:
       Host: d1yxsk0zprgivr.cloudfront.net
   skip-cert-verify: true
+  udp: true
+- name: 🇰🇷_KR_韩国
+  type: trojan
+  server: one-dove.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_2
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇸🇬_SG_新加坡
+  type: trojan
+  server: worthy-perch.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇰🇷_KR_韩国_1
+  type: trojan
+  server: complete-narwhal.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: complete-narwhal.rooster465.autos
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵_JP_日本_2
+  type: trojan
+  server: helping-shark.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇰🇷_KR_韩国_2
+  type: trojan
+  server: loyal-molly.rooster465.autos
+  port: 443
+  password: FH72359861
+  sni: loyal-molly.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵_JP_日本_3
+  type: trojan
+  server: many-pangolin.rooster465.autos
+  port: 443
+  password: FH72359861
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸_US_美国->🇹🇭_TH_泰国_1
+  type: vless
+  server: 52.84.199.28
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷_KR_韩国_3
+  type: trojan
+  server: 43.202.61.210
+  port: 443
+  password: FH72359861
+  sni: loyal-molly.rooster465.autos
+  skip-cert-verify: true
+  tls: false
   udp: true
 - name: 🇩🇪_DE_德国
   type: vless
@@ -417,278 +565,22 @@ proxies:
     short-id: 6547735997055a35
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡
-  type: trojan
-  server: master-possum.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: master-possum.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: www.wto.org
-  port: 2053
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  network: ws
-  servername: usa.105794.xyz
-  tls: true
-  client-fingerprint: edge
-  ws-opts:
-    path: /download/v3/installer-x64.bin
-    headers:
-      Host: usa.105794.xyz
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷_KR_韩国
-  type: trojan
-  server: massive-ocelot.rooster465.autos
-  port: 443
-  password: FH72359861
-  skip-cert-verify: true
-  tls: true
-  udp: true
 - name: 🇮🇪_IE_爱尔兰
   type: trojan
-  server: darling-mongrel.rooster465.autos
+  server: summary-firefly.rooster465.autos
   port: 443
   password: FH72359861
-  sni: darling-mongrel.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: trojan
-  server: 16.162.160.61
-  port: 50887
-  password: 6ec301428255a78a1d826988d86cc87e
-  sni: www.nintendogames.net
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇳🇱_NL_荷兰
-  type: vless
-  server: 85.155.226.27
-  port: 443
-  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
-  servername: getsavesafe.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
-    short-id: 82f5d3a1e9c0b661
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 63.180.184.26
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_1
-  type: trojan
-  server: modern-bedbug.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: modern-bedbug.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇩🇪_DE_德国_2
-  type: trojan
-  server: summary-lemming.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: summary-lemming.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国_1
-  type: vless
-  server: 18.238.109.26
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡_1
-  type: trojan
-  server: loved-shark.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: vless
-  server: 193.188.23.170
-  port: 4100
-  uuid: 1f9ac5fe-ce9c-40ff-b52f-6f96b1285ba6
-  network: ws
-  tls: false
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
+- name: 🇭🇰_HK_中国香港_3
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱_PL_波兰
-  type: vless
-  server: pl4.lckdwn.ru
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
-  network: ws
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡_2
-  type: trojan
-  server: calm-honeybee.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: calm-honeybee.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇮🇹_IT_意大利
-  type: vless
-  server: 46.28.68.63
-  port: 443
-  uuid: 44927d9f-1a75-4c03-ab8c-79898adaaece
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: LS-zg9fF_5TvNfMCIKngy5AMue1hF-hsk3hShsHGXT4
-    short-id: e5fa48b9363c6a88
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱_PL_波兰_1
-  type: trojan
-  server: magnetic-caiman.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: magnetic-caiman.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇩🇪_DE_德国_3
-  type: vless
-  server: 63.180.184.26
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡_3
-  type: trojan
-  server: fond-chipmunk.rooster465.autos
-  port: 443
-  password: FH72359861
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国_2
-  type: vless
-  server: 52.84.199.28
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱_PL_波兰_2
-  type: trojan
-  server: primary-leech.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: primary-leech.rooster465.autos
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇳🇱_NL_荷兰->🇦🇹_AT_奥地利
-  type: vless
-  server: 212.23.221.62
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
-  network: ws
-  servername: vod.ensf.top
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/irc
-    headers:
-      Host: vod.ensf.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯_1
-  type: vless
-  server: 87.228.122.100
-  port: 2200
-  uuid: 099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc
-  network: ws
-  tls: false
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国
@@ -14785,6 +14677,16 @@ proxies:
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   sni: de.catxstar.com
   network: tcp
+- name: 🇳🇱NL_151|247KB/s|A004-260618 01
+  type: vless
+  server: 85.155.226.27
+  port: 443
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: getsavesafe.net
+  flow: xtls-rprx-vision
 - name: 🇳🇱NL_152|286KB/s|A004-260618 01
   type: vless
   server: 194.76.154.31
@@ -38689,34 +38591,26 @@ proxy-groups:
   - US4-HY2
   - US5-HY2
   - US6-HY2
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
-  - 🇸🇬_SG_新加坡
-  - 🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇮🇪_IE_爱尔兰
+  - 🇯🇵_JP_日本
   - 🇭🇰_HK_中国香港
-  - 🇳🇱_NL_荷兰
-  - 🇩🇪_DE_德国_1
+  - 🇯🇵_JP_日本_1
   - 🇭🇰_HK_中国香港_1
-  - 🇩🇪_DE_德国_2
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国_1
-  - 🇸🇬_SG_新加坡_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_1
-  - 🇵🇱_PL_波兰
-  - 🇸🇬_SG_新加坡_2
-  - 🇮🇹_IT_意大利
-  - 🇵🇱_PL_波兰_1
-  - 🇩🇪_DE_德国_3
-  - 🇸🇬_SG_新加坡_3
-  - 🇨🇳_CN_中国
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国_2
+  - 🇺🇸_US_美国->🇹🇭_TH_泰国
+  - 🇰🇷_KR_韩国
+  - 🇭🇰_HK_中国香港_2
+  - 🇸🇬_SG_新加坡
+  - 🇰🇷_KR_韩国_1
   - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇵🇱_PL_波兰_2
-  - 🇳🇱_NL_荷兰->🇦🇹_AT_奥地利
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇯🇵_JP_日本_2
+  - 🇰🇷_KR_韩国_2
+  - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  - 🇯🇵_JP_日本_3
+  - 🇺🇸_US_美国->🇹🇭_TH_泰国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_3
+  - 🇩🇪_DE_德国
+  - 🇮🇪_IE_爱尔兰
+  - 🇭🇰_HK_中国香港_3
   - 🇺🇸 美国
   - 沙特阿拉伯+V2CROSS.COM
   - 美国+V2CROSS.COM
@@ -40019,6 +39913,7 @@ proxy-groups:
   - 🇷🇺RU_9|102KB/s|A004-260618 01
   - 🇨🇦CA_33|302KB/s|A004-260618 01
   - 🇩🇪DE_49|115KB/s|A004-260618 01
+  - 🇳🇱NL_151|247KB/s|A004-260618 01
   - 🇳🇱NL_152|286KB/s|A004-260618 01
   - 🇩🇪DE_50|159KB/s|A004-260618 01
   - 🇳🇱NL_153|457KB/s|A004-260618 01
