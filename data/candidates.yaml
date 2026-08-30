@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 中国香港 Hytron Network Services Limited↓13mb/s
-  type: vmess
-  server: as.dcsaw.rfgh.dsfdsgrrey.boutique
-  port: 21949
-  uuid: a4040c61-d8a8-4ded-8c07-98aabafcdcac
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - name: ASN 3257英国(GB)GTT Communications Inc
   type: vless
   server: node.qingyi668.biz
@@ -44,1358 +31,287 @@ proxies:
   client-fingerprint: safari
   servername: www.cloudflare.com
   flow: xtls-rprx-vision
-- name: 剩余流量：999998720.51 GB
-  type: vless
-  server: cdn.8211992.xyz
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🐾 [公益]🇺🇸美国随缘喵 2 [1X
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🐾 [公益]🇺🇸美国随缘喵 3 [1X
-  type: vless
-  server: nexusmods.com
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🐾 [公益]🇺🇸美国随缘喵 4 [1X
-  type: vless
-  server: www.cnae.top
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🐾 公益不保可用请购买更多节点喵
-  type: vless
-  server: mfa.gov.ua
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🐾 拆盲盒👉www.youzilite.help👈
-  type: vless
-  server: cdns.doon.eu.org
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfel.kdns.fr
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: mao.kipfel.kdns.fr
-- name: 🇭🇰 V301U-1X-BGP-HK-NF
-  type: ssr
-  server: qcg8fhp6y6v9wn.cache872671.com
-  port: 1301
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V302U-1X-BGP-HK-NF
-  type: ssr
-  server: qcg8fhp6y6v9wn.cache872671.com
-  port: 1302
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V303U-1X-BGP-HK-NF
-  type: ssr
-  server: 32s9mpp3zb5wg2.cache872671.com
-  port: 1303
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V304U-1X-BGP-HK-NF
-  type: ssr
-  server: neetb62ecrq2zg.cache872671.com
-  port: 1304
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V305U-1X-BGP-HK-NF
-  type: ssr
-  server: zxyczyb58dx6s3.cache872671.com
-  port: 1305
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V306U-1X-BGP-HK-NF
-  type: ssr
-  server: hqux7dvs9tftys.cache872671.com
-  port: 1306
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V307U-1X-BGP-HK-NF
-  type: ssr
-  server: kxftjn8bz7upwj.cache872671.com
-  port: 1307
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V308U-1X-BGP-HK-NF
-  type: ssr
-  server: qd8vhtgktk4hkg.cache872671.com
-  port: 1308
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V309U-1X-BGP-HK-NF
-  type: ssr
-  server: zquxqu4vxyxgue.cache872671.com
-  port: 1309
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V310U-1X-BGP-HK-NF
-  type: ssr
-  server: a83jb3sztjnqd4.cache872671.com
-  port: 1310
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V320U-2X-BGP-HK-NF
-  type: ssr
-  server: 4vnx5kqwk8mxsr.cache872671.com
-  port: 1320
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V321U-2X-BGP-HK-NF
-  type: ssr
-  server: 78v9m3qxh6eedn.cache872671.com
-  port: 1321
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V322U-2X-BGP-HK-NF
-  type: ssr
-  server: 5zkpq9sentjnah.cache872671.com
-  port: 1322
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V323U-2X-BGP-HK-NF
-  type: ssr
-  server: u76crzpegs5g2j.cache872671.com
-  port: 1323
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V326U-4X-BGP-HK-NF
-  type: ssr
-  server: k92vnke3356ns4.cache872671.com
-  port: 1326
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V327U-4X-BGP-HK-NF
-  type: ssr
-  server: xr9btkx2uwygfb.cache872671.com
-  port: 1327
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V328U-4X-BGP-HK-NF
-  type: ssr
-  server: zgvrnhrv7s6h3n.cache872671.com
-  port: 1328
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V329U-4X-BGP-HK-NF
-  type: ssr
-  server: b82gubf8e7m3ar.cache872671.com
-  port: 1329
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V332U-1X-BGP-JP-NF
-  type: ssr
-  server: 9q2z57eqtbgqvf.server927871.com
-  port: 1332
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V333U-1X-BGP-JP-NF
-  type: ssr
-  server: gtcpse4ptcm46h.server927871.com
-  port: 1333
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V334U-1X-BGP-JP-NF
-  type: ssr
-  server: nm5bpqbaen3bjt.server927871.com
-  port: 1334
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V335U-1X-BGP-JP-NF
-  type: ssr
-  server: gtjmbbnnre3qz4.server927871.com
-  port: 1335
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V336U-2X-BGP-JP-NF
-  type: ssr
-  server: pvpyhrpmm4wste.server927871.com
-  port: 1336
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V337U-2X-BGP-JP-NF
-  type: ssr
-  server: eg24u58d52pbyr.server927871.com
-  port: 1337
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V338U-2X-BGP-JP-NF
-  type: ssr
-  server: 2rrytzwkxrqxaj.server927871.com
-  port: 1338
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V339U-2X-BGP-JP-NF
-  type: ssr
-  server: mqyrg42tdc888n.server927871.com
-  port: 1339
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V350U-1X-BGP-SG-NF
-  type: ssr
-  server: zuyvqthn5jzjbh.node897828.com
-  port: 1350
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V351U-1X-BGP-SG-NF
-  type: ssr
-  server: zuyvqthn5jzjbh.node897828.com
-  port: 1351
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V352U-1X-BGP-SG-NF
-  type: ssr
-  server: fdemtyhemkjdc2.node897828.com
-  port: 1352
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V353U-1X-BGP-SG-NF
-  type: ssr
-  server: m5j48wskvttd4j.node897828.com
-  port: 1353
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V354U-2X-BGP-SG-NF
-  type: ssr
-  server: shx57c8k2zb9bj.node897828.com
-  port: 1354
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V355U-2X-BGP-SG-NF
-  type: ssr
-  server: 2b6vgr7mdysz68.node897828.com
-  port: 1355
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V356U-2X-BGP-SG-NF
-  type: ssr
-  server: waa3g8tqb78k85.node897828.com
-  port: 1356
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V357U-2X-BGP-SG-NF
-  type: ssr
-  server: 7yz6ba4ygjvcq6.node897828.com
-  port: 1357
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V358U-4X-BGP-SG-NF
-  type: ssr
-  server: 894azjvakdy9t7.node897828.com
-  port: 1358
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V359U-4X-BGP-SG-NF
-  type: ssr
-  server: 7cnsbeetbcdfs2.node897828.com
-  port: 1359
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V370U-2X-BGP-TW-NF
-  type: ssr
-  server: 35rvravr8fsdnb.node897828.com
-  port: 1370
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V371U-2X-BGP-TW-NF
-  type: ssr
-  server: kgx8zcbpyj2hd2.node897828.com
-  port: 1371
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V372U-2X-BGP-TW-NF
-  type: ssr
-  server: pw3sdme5v2kj2c.node897828.com
-  port: 1372
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V373U-2X-BGP-TW-NF
-  type: ssr
-  server: znny3hp25kzbdy.node897828.com
-  port: 1373
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V374U-2X-BGP-TW-NF
-  type: ssr
-  server: kdurwe39z4mme9.node897828.com
-  port: 1374
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V375U-2X-BGP-TW-NF
-  type: ssr
-  server: fx6swnje44tu6x.node897828.com
-  port: 1375
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V380U-1X-BGP-US-NF
-  type: ssr
-  server: c8yfxszk8c7vus.server927871.com
-  port: 1380
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V381U-1X-BGP-US-NF
-  type: ssr
-  server: ymbf4ec7zffrtv.server927871.com
-  port: 1381
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V382U-1X-BGP-US-NF
-  type: ssr
-  server: tb77hqsccm8cmv.server927871.com
-  port: 1382
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V383U-1X-BGP-US-NF
-  type: ssr
-  server: 2n2m2r8gkvr7kx.server927871.com
-  port: 1383
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V386U-2X-BGP-US-NF
-  type: ssr
-  server: cwmk2a76ydjwf7.server927871.com
-  port: 1386
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V387U-2X-BGP-US-NF
-  type: ssr
-  server: xseu4n4dpxmn5y.server927871.com
-  port: 1387
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V388U-2X-BGP-US-NF
-  type: ssr
-  server: 7newvdyqkyyhwm.server927871.com
-  port: 1388
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V389U-2X-BGP-US-NF
-  type: ssr
-  server: r4mcq7gm6u3eu3.server927871.com
-  port: 1389
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇬🇧 V393U-1X-BGP-UK
-  type: ssr
-  server: uhs2yt57cxjawv.server927871.com
-  port: 1393
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇩🇪 V394U-1X-BGP-DE
-  type: ssr
-  server: 57xtuerq5mcu7j.server927871.com
-  port: 1394
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V401U-1X-BGP-HK-NF
-  type: ssr
-  server: 3x77nhaab5jm2p.down657821.com
-  port: 1401
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V402U-1X-BGP-HK-NF
-  type: ssr
-  server: 7f8bhwgwkzekuq.down657821.com
-  port: 1402
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V403U-1X-BGP-HK-NF
-  type: ssr
-  server: nbgwx2mbku4235.down657821.com
-  port: 1403
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V404U-1X-BGP-HK-NF
-  type: ssr
-  server: 7fsbtxfecuw6mq.down657821.com
-  port: 1404
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V405U-1X-BGP-HK-NF
-  type: ssr
-  server: vd4hg2vyvmxecm.down657821.com
-  port: 1405
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V406U-1X-BGP-HK-NF
-  type: ssr
-  server: eckrj48p3s4cvy.down657821.com
-  port: 1406
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V407U-1X-BGP-HK-NF
-  type: ssr
-  server: 7x5d532x53j8xp.down657821.com
-  port: 1407
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V408U-1X-BGP-HK-NF
-  type: ssr
-  server: g6yeg6mw3365vz.down657821.com
-  port: 1408
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V409U-1X-BGP-HK-NF
-  type: ssr
-  server: 94n656udmss73h.down657821.com
-  port: 1409
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V410U-1X-BGP-HK-NF
-  type: ssr
-  server: 639jt4u9vwemev.down657821.com
-  port: 1410
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V420U-2X-BGP-HK-NF
-  type: ssr
-  server: xkswdzx6ea8deq.down657821.com
-  port: 1420
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V421U-2X-BGP-HK-NF
-  type: ssr
-  server: 2qmvd4emr226hp.down657821.com
-  port: 1421
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V422U-2X-BGP-HK-NF
-  type: ssr
-  server: der36yskbrz4mg.down657821.com
-  port: 1422
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V423U-2X-BGP-HK-NF
-  type: ssr
-  server: fwqjdsggns4qpv.down657821.com
-  port: 1423
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V426U-4X-BGP-HK-NF
-  type: ssr
-  server: 69v4s2yspegv4b.down657821.com
-  port: 1426
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V427U-4X-BGP-HK-NF
-  type: ssr
-  server: hvbcyuqmfydgkd.down657821.com
-  port: 1427
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V428U-4X-BGP-HK-NF
-  type: ssr
-  server: 8nuxzzmrbhkqje.down657821.com
-  port: 1428
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V429U-4X-BGP-HK-NF
-  type: ssr
-  server: e6rswdkhkg6ukq.down657821.com
-  port: 1429
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V432U-1X-BGP-JP-NF
-  type: ssr
-  server: 8pegc3h96bdw7j.server927871.com
-  port: 1432
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V433U-1X-BGP-JP-NF
-  type: ssr
-  server: pqgkxnwrsjrzu5.server927871.com
-  port: 1433
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V434U-1X-BGP-JP-NF
-  type: ssr
-  server: pqgkxnwrsjrzu5.server927871.com
-  port: 1440
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V435U-1X-BGP-JP-NF
-  type: ssr
-  server: t2seebfccjvu43.server927871.com
-  port: 1435
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V436U-2X-BGP-JP-NF
-  type: ssr
-  server: 2v9brttmyepnc9.server927871.com
-  port: 1436
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V437U-2X-BGP-JP-NF
-  type: ssr
-  server: qcgq4qzdsmpqpf.server927871.com
-  port: 1437
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V438U-2X-BGP-JP-NF
-  type: ssr
-  server: pdsgyp76bb4gfw.server927871.com
-  port: 1438
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇯🇵 V439U-2X-BGP-JP-NF
-  type: ssr
-  server: fwbmu8w8csmdem.server927871.com
-  port: 1439
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V450U-1X-BGP-SG-NF
-  type: ssr
-  server: xgwrux7pqjnj2g.node897828.com
-  port: 1450
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V451U-1X-BGP-SG-NF
-  type: ssr
-  server: p6mqkstrabch7p.node897828.com
-  port: 1451
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V452U-1X-BGP-SG-NF
-  type: ssr
-  server: mng2nkydey77uw.node897828.com
-  port: 1452
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V453U-1X-BGP-SG-NF
-  type: ssr
-  server: 2vptagj4jfhd3r.node897828.com
-  port: 1453
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V454U-2X-BGP-SG-NF
-  type: ssr
-  server: h5cxynz483pm3q.node897828.com
-  port: 1454
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V455U-2X-BGP-SG-NF
-  type: ssr
-  server: tcu4pb84r9efpc.node897828.com
-  port: 1455
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V456U-2X-BGP-SG-NF
-  type: ssr
-  server: 7mvtem9kzqg35m.node897828.com
-  port: 1456
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V457U-2X-BGP-SG-NF
-  type: ssr
-  server: mgwvabjezmmdpk.node897828.com
-  port: 1457
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V458U-4X-BGP-SG-NF
-  type: ssr
-  server: 5huuywvn5thw95.node897828.com
-  port: 1458
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇸🇬 V459U-4X-BGP-SG-NF
-  type: ssr
-  server: uf868yf8dj3kn9.node897828.com
-  port: 1459
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V470U-2X-BGP-TW-NF
-  type: ssr
-  server: bbhmmsrsuxu8vh.node897828.com
-  port: 1470
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V471U-2X-BGP-TW-NF
-  type: ssr
-  server: vgnqf9yyzka46u.node897828.com
-  port: 1471
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V472U-2X-BGP-TW-NF
-  type: ssr
-  server: nayaht8ffew8yh.node897828.com
-  port: 1472
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V473U-2X-BGP-TW-NF
-  type: ssr
-  server: haf8f9mzmncwhr.node897828.com
-  port: 1473
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V474U-2X-BGP-TW-NF
-  type: ssr
-  server: f6qkymwrekdnng.node897828.com
-  port: 1474
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇨🇳 V475U-2X-BGP-TW-NF
-  type: ssr
-  server: tkhdymy8d8mtbw.node897828.com
-  port: 1475
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V480U-1X-BGP-US-NF
-  type: ssr
-  server: td6fy4w7eywwvp.server927871.com
-  port: 1480
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V481U-1X-BGP-US-NF
-  type: ssr
-  server: bp33e8vw5ctw5q.server927871.com
-  port: 1481
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V482U-1X-BGP-US-NF
-  type: ssr
-  server: evjpcprc2jrnxt.server927871.com
-  port: 1482
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V483U-1X-BGP-US-NF
-  type: ssr
-  server: a833cvth8wsmdy.server927871.com
-  port: 1483
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V486U-2X-BGP-US-NF
-  type: ssr
-  server: gxbfegdtsc3sa6.server927871.com
-  port: 1486
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V487U-2X-BGP-US-NF
-  type: ssr
-  server: 4khkkqgurtzpgk.server927871.com
-  port: 1487
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V488U-2X-BGP-US-NF
-  type: ssr
-  server: uu86vbg7w936dz.server927871.com
-  port: 1488
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇺🇲 V489U-2X-BGP-US-NF
-  type: ssr
-  server: e6jq4fc35pxxef.server927871.com
-  port: 1489
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V501U-2X-BGP-HK-NF
-  type: ssr
-  server: vh6b2bx5k433fc.down657821.com
-  port: 1501
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V502U-2X-BGP-HK-NF
-  type: ssr
-  server: wf6f2rcu2ygbgb.down657821.com
-  port: 1502
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V503U-2X-BGP-HK-NF
-  type: ssr
-  server: x8sk6sqd23sjhs.down657821.com
-  port: 1503
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V504U-2X-BGP-HK-NF
-  type: ssr
-  server: gvw3vqhuxz8je4.down657821.com
-  port: 1504
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 🇭🇰 V505U-2X-BGP-HK-NF
-  type: ssr
-  server: vyy3dfbdwk54r4.down657821.com
-  port: 1505
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
-- name: 应急续费节点-10X
-  type: ssr
-  server: f5hbtjrm.server927871.com
-  port: 1399
-  cipher: chacha20-ietf
-  password: MAYING
-  protocol: auth_aes128_md5
-  protocol-param: 11267:6GdCwR
-  obfs: plain
-  obfs-param: ''
 - name: '[trojan]剩余流量：0'
   type: trojan
   server: jp200m.jiasu.asia
   port: 50000
-  password: 0e2e0e96-5beb-4f91-8f88-24f60451e745
+  password: c9618d0e-edc9-46f5-a948-96a3781fc3e9
   sni: jp200m.jiasu.asia
 - name: '[trojan]us-200m'
   type: trojan
   server: us200m.jiasu.asia
   port: 50000
-  password: 0e2e0e96-5beb-4f91-8f88-24f60451e745
+  password: c9618d0e-edc9-46f5-a948-96a3781fc3e9
   sni: us200m.jiasu.asia
 - name: '[trojan]hk-200m'
   type: trojan
   server: hk200m.jiasu.asia
   port: 50000
-  password: 0e2e0e96-5beb-4f91-8f88-24f60451e745
+  password: c9618d0e-edc9-46f5-a948-96a3781fc3e9
   sni: hk200m.jiasu.asia
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  type: ss
-  server: 211.91.158.27
-  port: 21107
-  cipher: chacha20-ietf-poly1305
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇴_CO_哥伦比亚
+- name: '[trojan]剩余流量：98.39 GB'
+  type: trojan
+  server: jp200m.jiasu.asia
+  port: 50000
+  password: 8539b07d-4a48-46ca-8ce7-f961f4e35b0c
+  sni: jp200m.jiasu.asia
+- name: '[trojan]us-200m #2'
+  type: trojan
+  server: us200m.jiasu.asia
+  port: 50000
+  password: 8539b07d-4a48-46ca-8ce7-f961f4e35b0c
+  sni: us200m.jiasu.asia
+- name: '[trojan]hk-200m #2'
+  type: trojan
+  server: hk200m.jiasu.asia
+  port: 50000
+  password: 8539b07d-4a48-46ca-8ce7-f961f4e35b0c
+  sni: hk200m.jiasu.asia
+- name: 🇿🇦_ZA_南非
   type: vless
-  server: 157.137.219.126
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇪_PE_秘鲁
-  type: vless
-  server: 107.151.250.68
-  port: 443
-  uuid: 055dce30-0ee3-44c3-b680-be1c95b8d6e7
-  servername: www.bing.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: g5UW6bf2soPSDNx7j0wanW_uLAtvTgQ8_lfztTJaP0k
-    short-id: 7025c954ff913b4c
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱_PL_波兰
-  type: vless
-  server: 168.222.49.215
-  port: 16089
-  uuid: 9a85fe34-213a-43ef-acbd-bb84552302f3
+  server: 199.30.90.148
+  port: 2044
+  uuid: d3e99826-5aeb-4d6f-a85a-3ef435255dee
   tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇯🇵_JP_日本
-  type: trojan
-  server: exact-sawfish.rooster465.autos
+  type: vless
+  server: 43.165.177.82
   port: 443
-  password: HC04361579
-  sni: exact-sawfish.rooster465.autos
-  skip-cert-verify: true
+  uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
+  servername: www.cloudflare.com
   tls: true
-  udp: true
-- name: 🇸🇬_SG_新加坡
-  type: trojan
-  server: 47.129.160.142
-  port: 443
-  password: EQ30679154
-  sni: well-goshawk.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: ss
-  server: hk1.network-cdn-gw-yd.net
-  port: 32060
-  cipher: chacha20-ietf-poly1305
-  password: aed6e687-58a9-4836-ba62-7d8184c94df4
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZuN9nc78h4Ccb19eb9NpTCs0jZkhJB8L0i1ZoAhu0XU
+    short-id: b2f4518cf979889d
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   type: ss
-  server: 120.232.251.128
+  server: 120.232.250.161
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱_NL_荷兰
+- name: 🇸🇬_SG_新加坡
+  type: trojan
+  server: modest-bat.rooster465.autos
+  port: 443
+  password: EQ30679154
+  sni: modest-bat.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇺🇸_US_美国
+  type: ss
+  server: 3.145.35.194
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
+  type: ss
+  server: 3.79.230.55
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_1
   type: vless
-  server: 176.120.17.6
-  port: 59167
-  uuid: 1d977a71-920e-4846-98b1-24f8e2fa0ea3
+  server: 185.140.12.160
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  type: ss
-  server: 211.91.158.27
-  port: 21109
-  cipher: chacha20-ietf-poly1305
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+- name: 🇯🇵_JP_日本_1
+  type: trojan
+  server: climbing-frog.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇸🇬_SG_新加坡_1
+  type: vless
+  server: 163.128.99.228
+  port: 443
+  uuid: 76876e43-13df-46e8-a431-48bb547002e7
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wwZ3zZidTQVJ-xEXstZ0eY7uN-0XPWZBgNx21hMuIl4
+    short-id: 2f61efb7233f32c7
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国->🇹🇭_TH_泰国
+- name: 🇨🇦_CA_加拿大
   type: vless
-  server: 18.238.217.65
+  server: lizca2.footballfantasyforum.com
   port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵_JP_日本_2
+  type: trojan
+  server: 18.183.109.172
+  port: 443
+  password: AE62539071
+  sni: well-jennet.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: trojan
+  server: dear-hermit.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇸🇬_SG_新加坡_2
+  type: trojan
+  server: moved-bass.rooster465.autos
+  port: 443
+  password: EQ30679154
+  sni: moved-bass.rooster465.autos
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  type: vmess
+  server: trf-nld.ip-static.com
+  port: 5001
+  uuid: 03bda96d-604a-4839-a087-fea6749f2918
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵_JP_日本_3
+  type: vless
+  server: 139.180.198.220
+  port: 52143
+  uuid: 2942bae7-9dcf-4a2e-f928-933c0ab3eab0
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_2
+  type: ss
+  server: 52.59.195.252
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
+  type: trojan
+  server: 128.14.181.220
+  port: 5555
+  password: fg20mtCFHy
+  sni: www.bing.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 🇯🇵_JP_日本_4
+  type: trojan
+  server: coherent-newt.rooster465.autos
+  port: 443
+  password: AE62539071
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇩🇪_DE_德国_3
+  type: vless
+  server: 3.127.126.3
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_3
+  type: vless
+  server: 172.64.53.89
+  port: 8443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
+  servername: hongkong.11459178.xyz
+  tls: true
+  client-fingerprint: edge
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hongkong.11459178.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱_NL_荷兰
+  type: vless
+  server: 141.98.6.213
+  port: 443
+  uuid: efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f
+  servername: edge-nl.mystatic-cdn.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: TC8D2edifNXaro0S31ZiC9izi8tAmXJyxdOHptwNUTw
+    short-id: 660c1badc77a422b
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国->🇫🇮_FI_芬兰
+  type: vless
+  server: 194.154.30.154
+  port: 443
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  network: ws
+  servername: forfreeuse.rtqa.ru
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
+      Host: forfreeuse.rtqa.ru
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国->🇯🇵_JP_日本
-  type: ss
-  server: 66.112.211.35
-  port: 443
-  cipher: aes-128-gcm
-  password: synlgmm
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇧_GB_英国
+- name: 🇬🇷_GR_希腊
   type: vless
-  server: gb1.wba-pn.ru
+  server: 85.90.197.131
   port: 443
-  uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
-  network: ws
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  servername: eu-central.cendora.ru
   tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
-  type: ss
-  server: 121.46.230.235
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱_PL_波兰_1
-  type: trojan
-  server: pretty-mollusk.rooster465.autos
-  port: 443
-  password: EQ30679154
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇩🇪_DE_德国
+- name: 🇩🇪_DE_德国_4
   type: vless
-  server: 3.79.218.80
-  port: 22224
+  server: 3.127.126.3
+  port: 22223
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国
+- name: 🇭🇰_HK_中国香港
   type: trojan
-  server: 128.1.248.162
-  port: 5692
-  password: fg20mtCFHy
-  sni: quicknet.southbyte.xyz
+  server: 95.40.89.31
+  port: 11231
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
   skip-cert-verify: true
   tls: false
-  udp: true
-- name: 🇳🇱_NL_荷兰_1
-  type: vless
-  server: 193.123.58.85
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 130.185.123.32
-  port: 443
-  uuid: 14f493a7-242a-4add-8413-cecc063b3ce3
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: ss
-  server: 121.46.230.234
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国
   type: vless
@@ -1471,214 +387,6 @@ proxies:
   password: 55b71f97202647049ce999646de57c50
   sni: f1b.wareznet.ru
   skip-cert-verify: false
-- name: 挪威+V2CROSS.COM
-  type: vless
-  server: fin2.helper-internet.com
-  port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: fin2.helper-internet.com
-  flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.64.158.146
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: 172.64.154.8
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: '美国+CloudFlare节点 #3'
-  type: trojan
-  server: 104.16.174.124
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #4'
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #5'
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 美国+麻省理工学院
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-- name: 加拿大+V2CROSS.COM
-  type: trojan
-  server: 130.250.137.171
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #6'
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #7'
-  type: trojan
-  server: 104.18.152.113
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 英国+V2CROSS.COM
-  type: hysteria2
-  server: 31.76.70.107
-  port: 8443
-  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: false
-- name: '美国+CloudFlare节点 #8'
-  type: trojan
-  server: 198.41.223.96
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #9'
-  type: trojan
-  server: 104.16.174.6
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #10'
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #11'
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 立陶宛+V2CROSS.COM
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #12'
-  type: trojan
-  server: 104.18.152.230
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '英国+V2CROSS.COM #2'
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: 未知 SS-05 | free-nodes
   type: ss
   server: 45.129.96.62
@@ -11126,6 +9834,17 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: US美国(v2clash.blog 2026-8.13更新
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: JP日本(v2clash.blog 2026-8.13更新
   type: trojan
   server: 104.16.174.44
@@ -11137,7 +9856,18 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: US美国(v2clash.blog 2026-8.13更新
+- name: 土耳其(v2clash.blog 2026-8.13更新
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'US美国(v2clash.blog 2026-8.13更新 #2'
   type: vless
   server: 91.206.71.8
   port: 80
@@ -11327,6 +10057,17 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'US美国(v2clash.blog 2026-8.27更新 #4'
   type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'US美国(v2clash.blog 2026-8.27更新 #5'
+  type: trojan
   server: render.com
   port: 443
   password: humanity
@@ -11350,6 +10091,17 @@ proxies:
 - name: 'US美国(v2clash.blog 2026-8.28更新 #2'
   type: trojan
   server: 104.18.152.229
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: FR法国(v2clash.blog 2026-8.28更新
+  type: trojan
+  server: 45.130.125.160
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -11395,147 +10147,40 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 中国香港 Hytron Network Services Limited↓13mb/s
   - ASN 3257英国(GB)GTT Communications Inc
   - 🇹🇼台湾台北市HiNet家宽
   - ASN 3257美国(US)GTT Communications Inc
-  - 剩余流量：999998720.51 GB
-  - 🐾 [公益]🇺🇸美国随缘喵 2 [1X
-  - 🐾 [公益]🇺🇸美国随缘喵 3 [1X
-  - 🐾 [公益]🇺🇸美国随缘喵 4 [1X
-  - 🐾 公益不保可用请购买更多节点喵
-  - 🐾 拆盲盒👉www.youzilite.help👈
-  - 🇭🇰 V301U-1X-BGP-HK-NF
-  - 🇭🇰 V302U-1X-BGP-HK-NF
-  - 🇭🇰 V303U-1X-BGP-HK-NF
-  - 🇭🇰 V304U-1X-BGP-HK-NF
-  - 🇭🇰 V305U-1X-BGP-HK-NF
-  - 🇭🇰 V306U-1X-BGP-HK-NF
-  - 🇭🇰 V307U-1X-BGP-HK-NF
-  - 🇭🇰 V308U-1X-BGP-HK-NF
-  - 🇭🇰 V309U-1X-BGP-HK-NF
-  - 🇭🇰 V310U-1X-BGP-HK-NF
-  - 🇭🇰 V320U-2X-BGP-HK-NF
-  - 🇭🇰 V321U-2X-BGP-HK-NF
-  - 🇭🇰 V322U-2X-BGP-HK-NF
-  - 🇭🇰 V323U-2X-BGP-HK-NF
-  - 🇭🇰 V326U-4X-BGP-HK-NF
-  - 🇭🇰 V327U-4X-BGP-HK-NF
-  - 🇭🇰 V328U-4X-BGP-HK-NF
-  - 🇭🇰 V329U-4X-BGP-HK-NF
-  - 🇯🇵 V332U-1X-BGP-JP-NF
-  - 🇯🇵 V333U-1X-BGP-JP-NF
-  - 🇯🇵 V334U-1X-BGP-JP-NF
-  - 🇯🇵 V335U-1X-BGP-JP-NF
-  - 🇯🇵 V336U-2X-BGP-JP-NF
-  - 🇯🇵 V337U-2X-BGP-JP-NF
-  - 🇯🇵 V338U-2X-BGP-JP-NF
-  - 🇯🇵 V339U-2X-BGP-JP-NF
-  - 🇸🇬 V350U-1X-BGP-SG-NF
-  - 🇸🇬 V351U-1X-BGP-SG-NF
-  - 🇸🇬 V352U-1X-BGP-SG-NF
-  - 🇸🇬 V353U-1X-BGP-SG-NF
-  - 🇸🇬 V354U-2X-BGP-SG-NF
-  - 🇸🇬 V355U-2X-BGP-SG-NF
-  - 🇸🇬 V356U-2X-BGP-SG-NF
-  - 🇸🇬 V357U-2X-BGP-SG-NF
-  - 🇸🇬 V358U-4X-BGP-SG-NF
-  - 🇸🇬 V359U-4X-BGP-SG-NF
-  - 🇨🇳 V370U-2X-BGP-TW-NF
-  - 🇨🇳 V371U-2X-BGP-TW-NF
-  - 🇨🇳 V372U-2X-BGP-TW-NF
-  - 🇨🇳 V373U-2X-BGP-TW-NF
-  - 🇨🇳 V374U-2X-BGP-TW-NF
-  - 🇨🇳 V375U-2X-BGP-TW-NF
-  - 🇺🇲 V380U-1X-BGP-US-NF
-  - 🇺🇲 V381U-1X-BGP-US-NF
-  - 🇺🇲 V382U-1X-BGP-US-NF
-  - 🇺🇲 V383U-1X-BGP-US-NF
-  - 🇺🇲 V386U-2X-BGP-US-NF
-  - 🇺🇲 V387U-2X-BGP-US-NF
-  - 🇺🇲 V388U-2X-BGP-US-NF
-  - 🇺🇲 V389U-2X-BGP-US-NF
-  - 🇬🇧 V393U-1X-BGP-UK
-  - 🇩🇪 V394U-1X-BGP-DE
-  - 🇭🇰 V401U-1X-BGP-HK-NF
-  - 🇭🇰 V402U-1X-BGP-HK-NF
-  - 🇭🇰 V403U-1X-BGP-HK-NF
-  - 🇭🇰 V404U-1X-BGP-HK-NF
-  - 🇭🇰 V405U-1X-BGP-HK-NF
-  - 🇭🇰 V406U-1X-BGP-HK-NF
-  - 🇭🇰 V407U-1X-BGP-HK-NF
-  - 🇭🇰 V408U-1X-BGP-HK-NF
-  - 🇭🇰 V409U-1X-BGP-HK-NF
-  - 🇭🇰 V410U-1X-BGP-HK-NF
-  - 🇭🇰 V420U-2X-BGP-HK-NF
-  - 🇭🇰 V421U-2X-BGP-HK-NF
-  - 🇭🇰 V422U-2X-BGP-HK-NF
-  - 🇭🇰 V423U-2X-BGP-HK-NF
-  - 🇭🇰 V426U-4X-BGP-HK-NF
-  - 🇭🇰 V427U-4X-BGP-HK-NF
-  - 🇭🇰 V428U-4X-BGP-HK-NF
-  - 🇭🇰 V429U-4X-BGP-HK-NF
-  - 🇯🇵 V432U-1X-BGP-JP-NF
-  - 🇯🇵 V433U-1X-BGP-JP-NF
-  - 🇯🇵 V434U-1X-BGP-JP-NF
-  - 🇯🇵 V435U-1X-BGP-JP-NF
-  - 🇯🇵 V436U-2X-BGP-JP-NF
-  - 🇯🇵 V437U-2X-BGP-JP-NF
-  - 🇯🇵 V438U-2X-BGP-JP-NF
-  - 🇯🇵 V439U-2X-BGP-JP-NF
-  - 🇸🇬 V450U-1X-BGP-SG-NF
-  - 🇸🇬 V451U-1X-BGP-SG-NF
-  - 🇸🇬 V452U-1X-BGP-SG-NF
-  - 🇸🇬 V453U-1X-BGP-SG-NF
-  - 🇸🇬 V454U-2X-BGP-SG-NF
-  - 🇸🇬 V455U-2X-BGP-SG-NF
-  - 🇸🇬 V456U-2X-BGP-SG-NF
-  - 🇸🇬 V457U-2X-BGP-SG-NF
-  - 🇸🇬 V458U-4X-BGP-SG-NF
-  - 🇸🇬 V459U-4X-BGP-SG-NF
-  - 🇨🇳 V470U-2X-BGP-TW-NF
-  - 🇨🇳 V471U-2X-BGP-TW-NF
-  - 🇨🇳 V472U-2X-BGP-TW-NF
-  - 🇨🇳 V473U-2X-BGP-TW-NF
-  - 🇨🇳 V474U-2X-BGP-TW-NF
-  - 🇨🇳 V475U-2X-BGP-TW-NF
-  - 🇺🇲 V480U-1X-BGP-US-NF
-  - 🇺🇲 V481U-1X-BGP-US-NF
-  - 🇺🇲 V482U-1X-BGP-US-NF
-  - 🇺🇲 V483U-1X-BGP-US-NF
-  - 🇺🇲 V486U-2X-BGP-US-NF
-  - 🇺🇲 V487U-2X-BGP-US-NF
-  - 🇺🇲 V488U-2X-BGP-US-NF
-  - 🇺🇲 V489U-2X-BGP-US-NF
-  - 🇭🇰 V501U-2X-BGP-HK-NF
-  - 🇭🇰 V502U-2X-BGP-HK-NF
-  - 🇭🇰 V503U-2X-BGP-HK-NF
-  - 🇭🇰 V504U-2X-BGP-HK-NF
-  - 🇭🇰 V505U-2X-BGP-HK-NF
-  - 应急续费节点-10X
   - '[trojan]剩余流量：0'
   - '[trojan]us-200m'
   - '[trojan]hk-200m'
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇨🇴_CO_哥伦比亚
-  - 🇵🇪_PE_秘鲁
-  - 🇵🇱_PL_波兰
+  - '[trojan]剩余流量：98.39 GB'
+  - '[trojan]us-200m #2'
+  - '[trojan]hk-200m #2'
+  - 🇿🇦_ZA_南非
   - 🇯🇵_JP_日本
-  - 🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港
   - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  - 🇳🇱_NL_荷兰
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇹🇭_TH_泰国
-  - 🇺🇸_US_美国->🇯🇵_JP_日本
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
-  - 🇵🇱_PL_波兰_1
-  - 🇩🇪_DE_德国
+  - 🇸🇬_SG_新加坡
   - 🇺🇸_US_美国
-  - 🇳🇱_NL_荷兰_1
+  - 🇩🇪_DE_德国
   - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇯🇵_JP_日本_1
+  - 🇸🇬_SG_新加坡_1
+  - 🇨🇦_CA_加拿大
+  - 🇯🇵_JP_日本_2
+  - 🇺🇸_US_美国_1
+  - 🇸🇬_SG_新加坡_2
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇯🇵_JP_日本_3
+  - 🇩🇪_DE_德国_2
+  - 🇺🇸_US_美国_2
+  - 🇯🇵_JP_日本_4
+  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国_3
+  - 🇳🇱_NL_荷兰
+  - 🇩🇪_DE_德国->🇫🇮_FI_芬兰
+  - 🇬🇷_GR_希腊
+  - 🇩🇪_DE_德国_4
+  - 🇭🇰_HK_中国香港
   - 🇺🇸 美国
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
@@ -11546,25 +10191,6 @@ proxy-groups:
   - 'end-gfw.com@kr3 #2'
   - 'end-gfw.com@sg3 #2'
   - 德国
-  - 挪威+V2CROSS.COM
-  - 美国+CloudFlare节点
-  - '美国+CloudFlare节点 #2'
-  - '美国+CloudFlare节点 #3'
-  - '美国+CloudFlare节点 #4'
-  - '美国+CloudFlare节点 #5'
-  - 美国+麻省理工学院
-  - 加拿大+V2CROSS.COM
-  - '美国+CloudFlare节点 #6'
-  - '美国+CloudFlare节点 #7'
-  - 英国+V2CROSS.COM
-  - '美国+CloudFlare节点 #8'
-  - '美国+CloudFlare节点 #9'
-  - '美国+CloudFlare节点 #10'
-  - '美国+CloudFlare节点 #11'
-  - 美国+V2CROSS.COM
-  - 立陶宛+V2CROSS.COM
-  - '美国+CloudFlare节点 #12'
-  - '英国+V2CROSS.COM #2'
   - 未知 SS-05 | free-nodes
   - 未知 SS-07 | free-nodes
   - 未知 SS-08 | free-nodes
@@ -12568,8 +11194,10 @@ proxy-groups:
   - 'FR法国(v2clash.blog 2026-8.10更新 #3'
   - 'FR法国(v2clash.blog 2026-8.10更新 #4'
   - FR法国(v2clash.blog 2026-8.13更新
-  - JP日本(v2clash.blog 2026-8.13更新
   - US美国(v2clash.blog 2026-8.13更新
+  - JP日本(v2clash.blog 2026-8.13更新
+  - 土耳其(v2clash.blog 2026-8.13更新
+  - 'US美国(v2clash.blog 2026-8.13更新 #2'
   - 'FR法国(v2clash.blog 2026-8.13更新 #2'
   - CA加拿大(v2clash.blog 2026-8.15更新
   - 'CA加拿大(v2clash.blog 2026-8.15更新 #2'
@@ -12587,8 +11215,10 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-8.27更新 #2'
   - 'US美国(v2clash.blog 2026-8.27更新 #3'
   - 'US美国(v2clash.blog 2026-8.27更新 #4'
+  - 'US美国(v2clash.blog 2026-8.27更新 #5'
   - US美国(v2clash.blog 2026-8.28更新
   - 'US美国(v2clash.blog 2026-8.28更新 #2'
+  - FR法国(v2clash.blog 2026-8.28更新
   - 'US美国(v2clash.blog 2026-8.28更新 #3'
   - 'US美国(v2clash.blog 2026-8.28更新 #4'
   - CA加拿大(v2clash.blog 2026-8.28更新
