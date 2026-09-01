@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: JP2-D1
-  type: vless
-  server: 172.64.229.100
-  port: 443
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: sony.1111788.xyz
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sony.1111788.xyz
 - name: CN-深圳游戏节点
   type: vmess
   server: 120.24.60.59
@@ -29,6 +16,17 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- name: '悦·🇯🇵日本📋 机场名称: 悦·🇯🇵日本2🔗 来源类型: 节点链接📊 流量详情: 未知🗓️ 过期时间: 长期有效- name: 悦·🇯🇵日本2  server:
+    dcvbdb3bh4s76yfh.89dc3f43.e.yuetong.onl'
+  type: vless
+  server: dcvbdb3bh4s76yfh.89dc3f43.e.yuetong.online
+  port: 443
+  uuid: a8be5b28-7b6b-4682-896e-bf8b7569db41
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.westerndigital.com
+  flow: xtls-rprx-vision
 - name: 🇱🇻_LV_拉脱维亚
   type: vless
   server: 195.123.210.168
@@ -1634,8 +1632,9 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - JP2-D1
   - CN-深圳游戏节点
+  - '悦·🇯🇵日本📋 机场名称: 悦·🇯🇵日本2🔗 来源类型: 节点链接📊 流量详情: 未知🗓️ 过期时间: 长期有效- name: 悦·🇯🇵日本2  server:
+    dcvbdb3bh4s76yfh.89dc3f43.e.yuetong.onl'
   - 🇱🇻_LV_拉脱维亚
   - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇮🇱_IL_以色列
