@@ -1,23 +1,6 @@
 {
-  "generated_at": "2026-09-02T20:58:08.040410+00:00",
+  "generated_at": "2026-09-03T04:12:36.740242+00:00",
   "proxies": [
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "CN-深圳游戏节点",
-      "network": "ws",
-      "port": 80,
-      "server": "120.24.60.59",
-      "tls": false,
-      "type": "vmess",
-      "uuid": "a4040c61-d8a8-4ded-8c07-98aabafcdcac",
-      "ws-opts": {
-        "headers": {
-          "Host": "tms.dingtalk.com"
-        },
-        "path": "/"
-      }
-    },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
@@ -39,690 +22,223 @@
       "type": "ss"
     },
     {
-      "name": "剩余流量：1370.24 GB",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-mg.xueshan168.cc",
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇺🇸_US_美国",
+      "port": 443,
+      "server": "23.95.248.105",
+      "servername": "23.95.248.105",
       "skip-cert-verify": true,
-      "sni": "x-mg.xueshan168.cc",
-      "type": "hysteria2"
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    },
+    {
+      "name": "🇨🇳_CN_中国",
+      "port": 12528,
+      "server": "120.227.1.43",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "f0169b08-43fd-4dc3-8195-18f6ad2fe39d"
+    },
+    {
+      "name": "🇩🇪_DE_德国",
+      "port": 52,
+      "server": "138.226.237.185",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "9972a440-39a6-4672-8883-5dd188863acf"
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.NZBih2jIVFR24bMMX7i-Q9XE3oESSooOHSeDvnjP3fc0EaqCVMWndYUo6mUakYN2ZaYHVZofOZsanhV2ZNoFVOcvfKo7RybJVza0Y6ZT1ogxe1G72XUauZxaUwQ3m3YrapuNA8VPQ-yHZSiDnpC04QQKnAA_5sNGprfLGbM56-QRiqC9FvMpqpCZe_YOg7ZcZkatqEU-Z_a4fWs_xtOmzAUlkJPGCbye7jCeWkjF6aML4he3dGxyn6esW2QHQuoU_HJizXSvvCyOwwKq0INO-UDCoXISlGZwrqtu0Dexw-yGZJgQb5pGrPpnMYYCgcO1w9I_DPw1q4pcCFBnOwiceuy8Wuum3vViqrUBrGU0lIxH7NXPiMKM0wyXMZpjRUc",
+      "name": "ge-20b81e.atlanta-api.com",
+      "port": 443,
+      "server": "ge-20b81e.atlanta-api.com",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "74099b9e-52fd-4540-b642-b8d60f3b5a2a"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇭🇰_HK_中国香港",
+      "password": "Butterfly123@qwe9527",
+      "port": 10006,
+      "server": "36.33.35.105",
+      "skip-cert-verify": true,
+      "type": "ss",
+      "udp": true
+    },
+    {
+      "name": "🇵🇱_PL_波兰->🇮🇩_ID_印度尼西亚",
+      "password": "a126f35c-e832-4115-8593-b723ade3f7be",
+      "port": 20056,
+      "server": "kkvlvvq-a.catcat321.com",
+      "skip-cert-verify": true,
+      "sni": "hk.catxstar.com",
+      "tls": false,
+      "type": "trojan",
+      "udp": true
+    },
+    {
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "port": 52683,
+      "server": "jp.sofast.live",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "399b6b23-cc40-4831-a494-61948e2df133"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_1",
+      "password": "Butterfly123@qwe9527",
+      "port": 50001,
+      "server": "103.236.66.4",
+      "skip-cert-verify": true,
+      "type": "ss",
+      "udp": true
+    },
+    {
+      "cipher": "aes-256-cfb",
+      "name": "🇨🇳_CN_中国->🇯🇵_JP_日本",
+      "password": "7eadc6dbe2ae",
+      "port": 65443,
+      "server": "121.46.230.136",
+      "skip-cert-verify": true,
+      "type": "ss",
+      "udp": true
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇺🇸_US_美国_1",
+      "network": "ws",
+      "port": 443,
+      "server": "www.361371.xyz",
+      "servername": "www.361371.xyz",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "da77c564-3815-468c-8867-0aea0b397027",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.361371.xyz"
+        },
+        "path": "/ws-6rm27y"
+      }
+    },
+    {
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_2",
+      "port": 58011,
+      "server": "us22.sofast.live",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🛠️有超时请重启网络",
-      "network": "tcp",
-      "port": 20200,
-      "server": "x-mg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
+      "grpc-opts": {
+        "grpc-service-name": "grpc"
+      },
+      "name": "🇩🇪_DE_德国_1",
+      "network": "grpc",
+      "port": 8443,
+      "reality-opts": {
+        "public-key": "dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA",
+        "short-id": "6ba85179e30d4fc2"
+      },
+      "server": "89.34.90.68",
+      "servername": "360.yandex.ru",
+      "skip-cert-verify": true,
       "tls": true,
       "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
+      "udp": true,
+      "uuid": "fe8e2ffb-8796-408c-af5b-0d4774215e00"
     },
     {
-      "name": "🇺🇸美·盐湖城|专线-DS1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "mg1.xueshan168.cc",
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇹🇼_TW_中国台湾",
+      "password": "Butterfly123@qwe9527",
+      "port": 30001,
+      "server": "36.33.35.105",
       "skip-cert-verify": true,
-      "sni": "mg1.xueshan168.cc",
-      "type": "hysteria2"
+      "type": "ss",
+      "udp": true
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美·盐湖城|专线-DS2",
-      "network": "tcp",
-      "port": 19000,
-      "server": "mg1.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美·凤凰城|0.5专线1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "mg00.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "mg00.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美·凤凰城|0.5专线2",
-      "network": "tcp",
-      "port": 18000,
-      "server": "mg00.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美·凤凰城|0.5专线3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "mg2.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "mg2.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美·凤凰城|0.5专线4",
-      "network": "tcp",
-      "port": 16000,
-      "server": "mg2.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美·凤凰城|0.5专线5",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "mg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "mg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美·凤凰城|0.5专线6",
-      "network": "tcp",
-      "port": 16000,
-      "server": "mg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇰🇷韩国SK·三网|家宽1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-hg3.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xg3.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇰🇷韩国SK·三网|家宽2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-hg3.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇰🇷韩国SK·三网|家宽3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-hg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-hg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇰🇷韩国SK·三网|家宽4",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-hg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇰🇷韩国SK·三网|家宽5",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-hg2.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-hg2.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇰🇷韩国SK·三网|家宽6",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-hg2.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇯🇵日本·三网|SAK-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "rb.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "rb.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵日本·三网|SAK-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "rb.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇯🇵日本·三网|SAK-3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb1.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb1.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵日本·三网|SAK-4",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-rb1.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇯🇵日本·三网|SAK-5",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb1.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵日本·三网|SAK-6",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-rb.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇭🇰香港HKT|动态家宽1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "xg1.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "xg1.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇭🇰香港HKT动态|家宽3",
-      "network": "tcp",
-      "port": 16000,
-      "server": "hkt.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇭🇰香港HKT三网|家宽1",
-      "network": "tcp",
-      "port": 16000,
-      "server": "xg2.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇭🇰香港HKT三网|商宽1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-xg1.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xg1.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇭🇰香港HKT三网|商宽2",
-      "network": "tcp",
-      "port": 21000,
-      "server": "x-xg1.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇭🇰香港HKT三网|商宽3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-xg2.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xg2.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇭🇰香港HKT三网|商宽4",
-      "network": "tcp",
-      "port": 21000,
-      "server": "x-xg2.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇭🇰香港HKT三网|商宽5",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-xg0.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xg0.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇭🇰香港HKT三网|商宽6",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-xg0.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇹🇼台湾静态三网|家宽3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "tw.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "tw.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇹🇼台湾静态三网|家宽4",
-      "network": "tcp",
-      "port": 16000,
-      "server": "tw.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇹🇼台湾动态三网|家宽1",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-tw01.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇸🇬 新加坡 | GCP-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "xjp.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xjp.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇸🇬+新加坡+|+GCP-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "xjp.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇸🇬 新加坡 | GCP-3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-xjp.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-xjp.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇸🇬+新加坡+|+GCP-4",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-xjp.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇯🇵樱花✿·三网|原生1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb2.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb2.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "name": "🇯🇵樱花✿·三网|原生2",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb5.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb5.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "name": "🇯🇵日本·京都|原生",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb3.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb3.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "name": "🇯🇵日本·大阪|原生",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb8.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb8.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "name": "🇯🇵日本·三网|软银1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb6.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb6.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵日本·三网|软银2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-rb6.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇯🇵日本·三网|软银3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-rb7.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-rb7.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵日本·三网|软银4",
-      "network": "tcp",
-      "port": 26000,
-      "server": "x-rb7.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美国·0.1倍率| -1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-mg0.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-mg0.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美国·0.1倍率|+-2",
-      "network": "tcp",
-      "port": 18000,
-      "server": "x-mg0.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美国·0.1倍率| -3",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "mg0.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "mg0.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美国·0.1倍率|+-4",
-      "network": "tcp",
-      "port": 18000,
-      "server": "mg0.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇺🇸美国·洛杉矶|原生-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-mg3.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-mg3.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美国·洛杉矶|原生-2",
-      "network": "tcp",
-      "port": 20200,
-      "server": "x-mg6.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇺🇸美国·洛杉矶|原生-3",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-mg4.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇲🇴澳门|特别行政区1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-am.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-am.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇲🇴澳门|特别行政区2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-am.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇹🇭泰国·曼谷|原生-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-tg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-tg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇹🇭泰国·曼谷|原生-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-tg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇬🇧英国·商宽|原生-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-yg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-yg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇬🇧英国·商宽|原生-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-yg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇻🇳越南·河内|原生-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-yn.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-yn.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇻🇳越南·河内|原生-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-yn.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇩🇪德国|法兰克福-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-dg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-dg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇩🇪德国|法兰克福-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-dg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "name": "🇫🇷法国|巴黎世家-1",
-      "password": "954f9a43-b779-46a7-8a3e-8f951ad51a2e",
-      "port": 20201,
-      "server": "x-fg.xueshan168.cc",
-      "skip-cert-verify": true,
-      "sni": "x-fg.xueshan168.cc",
-      "type": "hysteria2"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇫🇷法国|巴黎世家-2",
-      "network": "tcp",
-      "port": 16000,
-      "server": "x-fg.xueshan168.cc",
-      "servername": "s0.awsstatic.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "954f9a43-b779-46a7-8a3e-8f951ad51a2e"
-    },
-    {
-      "client-fingerprint": "chrome",
+      "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
       "name": "🇫🇮_FI_芬兰",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "XIBrs2_87DuLTAOD05LMSfwyPsmUZMJESQCjbRNhwh0",
+        "short-id": "91a9f9d61fb09d39"
+      },
+      "server": "2.26.7.227",
+      "servername": "fi-one.letsgodance.site",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "5d36ddf8-dde5-4b2d-8213-d3255f22a0f1"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇺🇸_US_美国_2",
+      "port": 443,
+      "server": "guanwang.awsno.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a"
+    },
+    {
+      "client-fingerprint": "qq",
+      "flow": "xtls-rprx-vision",
+      "name": "🇱🇻_LV_拉脱维亚",
+      "port": 13443,
+      "reality-opts": {
+        "public-key": "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM",
+        "short-id": "a7f3c91b2e6d84c0"
+      },
+      "server": "195.123.210.168",
+      "servername": "auto.cendora.ru",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇯🇵_JP_日本->🇩🇪_DE_德国",
+      "port": 53225,
+      "server": "jpaws.ccwink.photos",
+      "servername": "gw.alicdn.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "a157bb84-dd84-4ad8-86b0-0656bc76e4d1"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "🇫🇮_FI_芬兰_1",
       "network": "raw",
       "port": 443,
       "reality-opts": {
@@ -738,81 +254,34 @@
       "uuid": "0a76a766-d141-44b8-944e-dff757d7116f"
     },
     {
-      "name": "🇨🇳_CN_中国",
-      "port": 12528,
-      "server": "120.227.1.43",
+      "cipher": "aes-256-cfb",
+      "name": "🇹🇭_TH_泰国",
+      "password": "7eadc6dbe2ae",
+      "port": 65443,
+      "server": "103.169.67.34",
       "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "f0169b08-43fd-4dc3-8195-18f6ad2fe39d"
+      "type": "ss",
+      "udp": true
     },
     {
-      "name": "🇷🇺_RU_俄罗斯",
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇺🇸_US_美国_3",
       "network": "ws",
-      "port": 2200,
-      "server": "5.42.106.111",
+      "port": 443,
+      "server": "us-23.hihu.net",
+      "servername": "us-23.hihu.net",
       "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
+      "tls": true,
+      "type": "vmess",
       "udp": true,
-      "uuid": "099f0859-cb81-4a57-b6d8-2c8e18030627",
+      "uuid": "e9674560-9d1a-11f1-b333-205c6d5f5d78",
       "ws-opts": {
         "headers": {
-          "Host": "rzd.ru"
+          "Host": "chatbuzzteam.ir"
         },
-        "path": "/v1"
+        "path": "/ayve3q7z"
       }
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇹🇭_TH_泰国",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21123,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇬🇧_GB_英国",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21117,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇯🇵_JP_日本",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21119,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇬🇧_GB_英国_1",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21104,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21105,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
     },
     {
       "alterId": 64,
@@ -827,79 +296,44 @@
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
     },
     {
-      "cipher": "aes-256-cfb",
-      "name": "🇹🇭_TH_泰国",
-      "password": "7eadc6dbe2ae",
-      "port": 65443,
-      "server": "103.169.67.34",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇮🇱_IL_以色列",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21116,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇮🇳_IN_印度",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21103,
-      "server": "211.91.158.26",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇫🇷_FR_法国",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21122,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "aes-256-cfb",
-      "name": "🇨🇳_CN_中国->🇰🇷_KR_韩国",
-      "password": "7eadc6dbe2ae",
-      "port": 65443,
-      "server": "121.46.230.138",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "name": "🇲🇾_MY_马来西亚",
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
+      "name": "🇵🇱_PL_波兰",
       "port": 443,
-      "server": "47.250.84.25",
+      "reality-opts": {
+        "public-key": "d1NlaZfnsYjWfxRTqIBk1ldBUmdE-kRTEQ_sWd1JYwI"
+      },
+      "server": "2.27.27.202",
+      "servername": "www.ray-balance.space",
       "skip-cert-verify": true,
-      "sni": "moltbot.doctoroyy.net",
-      "tls": false,
-      "type": "trojan",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "710fc22f-06b2-4b6d-bb3e-f57c17b670a6"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇭🇰_HK_中国香港_1",
+      "password": "Butterfly123@qwe9527",
+      "port": 10001,
+      "server": "103.236.66.4",
+      "skip-cert-verify": true,
+      "type": "ss",
       "udp": true
     },
     {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇸🇬_SG_新加坡",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21121,
-      "server": "211.91.158.26",
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_3",
+      "password": "Butterfly123@qwe9527",
+      "port": 50003,
+      "server": "103.236.66.4",
       "skip-cert-verify": true,
       "type": "ss",
       "udp": true
     },
     {
       "alterId": 2,
-      "cipher": "auto",
+      "cipher": "none",
       "name": "🇭🇰_HK_中国香港",
       "port": 30807,
       "server": "v10.zgtfqs.click",
@@ -910,134 +344,42 @@
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
     },
     {
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
+      "name": "🇩🇰_DK_丹麦",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+        "short-id": "a1b2c3d4"
+      },
+      "server": "46.29.235.9",
+      "servername": "telegraf.lv",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "d67af820-f54c-48ab-862c-19086357f276"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "🇨🇳_CN_中国->🇯🇵_JP_日本_1",
+      "password": "Butterfly123@qwe9527",
+      "port": 40002,
+      "server": "103.236.66.4",
+      "skip-cert-verify": true,
+      "type": "ss",
+      "udp": true
+    },
+    {
       "alterId": 2,
       "cipher": "auto",
-      "name": "🇨🇳_CN_中国->🇩🇪_DE_德国",
-      "port": 30833,
-      "server": "v33.hdacd.com",
-      "skip-cert-verify": true,
+      "name": "🇭🇰_HK_中国香港 #2",
+      "network": "tcp",
+      "port": 30807,
+      "server": "v10.zgtfqs.click",
       "tls": false,
       "type": "vmess",
-      "udp": true,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "client-fingerprint": "qq",
-      "flow": "xtls-rprx-vision",
-      "name": "🇳🇴_NO_挪威",
-      "port": 13443,
-      "reality-opts": {
-        "public-key": "gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM",
-        "short-id": "a7f3c91b2e6d84c0"
-      },
-      "server": "31.76.5.26",
-      "servername": "auto.cendora.ru",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "vless",
-      "udp": true,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f"
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "🇺🇸_US_美国",
-      "port": 443,
-      "server": "23.95.248.105",
-      "servername": "23.95.248.105",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a"
-    },
-    {
-      "encryption": "mlkem768x25519plus.native.0rtt.NZBih2jIVFR24bMMX7i-Q9XE3oESSooOHSeDvnjP3fc0EaqCVMWndYUo6mUakYN2ZaYHVZofOZsanhV2ZNoFVOcvfKo7RybJVza0Y6ZT1ogxe1G72XUauZxaUwQ3m3YrapuNA8VPQ-yHZSiDnpC04QQKnAA_5sNGprfLGbM56-QRiqC9FvMpqpCZe_YOg7ZcZkatqEU-Z_a4fWs_xtOmzAUlkJPGCbye7jCeWkjF6aML4he3dGxyn6esW2QHQuoU_HJizXSvvCyOwwKq0INO-UDCoXISlGZwrqtu0Dexw-yGZJgQb5pGrPpnMYYCgcO1w9I_DPw1q4pcCFBnOwiceuy8Wuum3vViqrUBrGU0lIxH7NXPiMKM0wyXMZpjRUc",
-      "name": "ge-20b81e.atlanta-api.com",
-      "port": 443,
-      "server": "ge-20b81e.atlanta-api.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "74099b9e-52fd-4540-b642-b8d60f3b5a2a"
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇩🇪_DE_德国_1",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21118,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇫🇷_FR_法国_1",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21126,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "🇸🇬_SG_新加坡",
-      "port": 443,
-      "reality-opts": {
-        "public-key": "kxuW6rJkcKU88l_sgqezrcMFEy4yofrgouBoKufWASs",
-        "short-id": "2fadfe9a357ec21e"
-      },
-      "server": "66.42.62.84",
-      "servername": "www.apple.com",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "vless",
-      "udp": true,
-      "uuid": "389e0591-86d6-408f-bf24-18f611a0c94b"
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇱🇹_LT_立陶宛",
-      "password": "J1InuU6QRT5JOh1mQfkjU2",
-      "port": 16015,
-      "server": "144.31.243.2",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇰🇷_KR_韩国_1",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21107,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
-    },
-    {
-      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_1",
-      "port": 58011,
-      "server": "us22.sofast.live",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "🇨🇳_CN_中国->🇸🇬_SG_新加坡_1",
-      "password": "9325a345-c72f-4637-a8f4-34f9effb7ba6",
-      "port": 21121,
-      "server": "211.91.158.44",
-      "skip-cert-verify": true,
-      "type": "ss",
-      "udp": true
     },
     {
       "client-fingerprint": "chrome",
@@ -2732,5 +2074,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 208
+  "total": 142
 }
