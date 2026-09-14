@@ -3,832 +3,466 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: reality
+- name: HK-1
   type: vless
-  server: 45.149.92.200
-  port: 20329
-  uuid: 28c87fd2-f2d8-4872-ba5e-b0d407197969
-  network: tcp
+  server: hk1-r.link-t7.com
+  port: 10126
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-- name: GPT-TUNNEL
-  type: trojan
-  server: 192.236.151.43
-  port: 443
-  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
-  udp: true
-  sni: gpt-tunnel.local
-  skip-cert-verify: true
+  servername: s0.awsstatic.com
+- name: HK-2
+  type: vless
+  server: hk2-r.link-t7.com
+  port: 10127
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-- name: US
+  servername: s0.awsstatic.com
+- name: HK-3
+  type: vless
+  server: hk3-r.link-t7.com
+  port: 10128
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-4
+  type: vless
+  server: hk4-r.link-t7.com
+  port: 10129
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-5
+  type: vless
+  server: hk5-r.link-t7.com
+  port: 10130
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-6
+  type: vless
+  server: hk6-r.link-t7.com
+  port: 10136
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK2-HY2
   type: hysteria2
-  server: ss.marmount.space
-  port: 8443
-  password: cloud:Wz8cE3yFhL9dXoSp
-  sni: ss.marmount.space
+  server: hk2.dexlos.com
+  port: 20288
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: hk2.dexlos.com
   skip-cert-verify: false
-- name: usa-washington
+- name: HK3-HY2
   type: hysteria2
-  server: 38.54.6.46
-  port: 36712
-  password: CompanyHy2_2026!
-  sni: www.microsoft.com
+  server: hk3.dexlos.com
+  port: 20524
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: hk3.dexlos.com
+  skip-cert-verify: false
+- name: HK4-HY2
+  type: hysteria2
+  server: hk4.dexlos.com
+  port: 20746
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: hk4.dexlos.com
+  skip-cert-verify: false
+- name: HK5-HY2
+  type: hysteria2
+  server: hk5.dexlos.com
+  port: 20988
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: hk5.dexlos.com
+  skip-cert-verify: false
+- name: JP-1
+  type: vless
+  server: jp1-r.link-t7.com
+  port: 10031
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-2
+  type: vless
+  server: jp2-r.link-t7.com
+  port: 10032
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-3
+  type: vless
+  server: jp3-r.link-t7.com
+  port: 10033
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-4
+  type: vless
+  server: jp4-r.link-t7.com
+  port: 10034
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-5
+  type: vless
+  server: jp5-r.link-t7.com
+  port: 10035
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-6
+  type: vless
+  server: jp6-r.link-t7.com
+  port: 10036
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP1-HY2
+  type: hysteria2
+  server: jp1.dexlos.com
+  port: 20194
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp1.dexlos.com
+  skip-cert-verify: false
+- name: JP2-HY2
+  type: hysteria2
+  server: jp2.dexlos.com
+  port: 20311
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp2.dexlos.com
+  skip-cert-verify: false
+- name: JP3-HY2
+  type: hysteria2
+  server: jp3.dexlos.com
+  port: 20493
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp3.dexlos.com
+  skip-cert-verify: false
+- name: JP4-HY2
+  type: hysteria2
+  server: jp4.dexlos.com
+  port: 20742
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp4.dexlos.com
+  skip-cert-verify: false
+- name: JP5-HY2
+  type: hysteria2
+  server: jp5.dexlos.com
+  port: 20807
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp5.dexlos.com
+  skip-cert-verify: false
+- name: JP9-HY2
+  type: hysteria2
+  server: jp9.dexlos.com
+  port: 21738
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp9.dexlos.com
+  skip-cert-verify: false
+- name: JP10-HY2
+  type: hysteria2
+  server: jp10.dexlos.com
+  port: 21928
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: jp10.dexlos.com
+  skip-cert-verify: false
+- name: KR-1
+  type: vless
+  server: kr1-r.link-t7.com
+  port: 10046
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-2
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-3
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-4
+  type: vless
+  server: kr4-r.link-t7.com
+  port: 10049
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-5
+  type: vless
+  server: kr5-r.link-t7.com
+  port: 10050
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-1
+  type: vless
+  server: sg1-r.link-t7.com
+  port: 10036
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-2
+  type: vless
+  server: sg2-r.link-t7.com
+  port: 10037
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-3
+  type: vless
+  server: sg3-r.link-t7.com
+  port: 10038
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: d1.awsstatic.com
+- name: SG-4
+  type: vless
+  server: sg4-r.link-t7.com
+  port: 10039
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: d1.awsstatic.com
+- name: SG-5
+  type: vless
+  server: sg5-r.link-t7.com
+  port: 10040
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: d1.awsstatic.com
+- name: SG4-HY2
+  type: hysteria2
+  server: sg4.dexlos.com
+  port: 20662
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: sg4.dexlos.com
+  skip-cert-verify: false
+- name: SG5-HY2
+  type: hysteria2
+  server: sg5.dexlos.com
+  port: 20952
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: sg5.dexlos.com
+  skip-cert-verify: false
+- name: US-1TCP
+  type: vless
+  server: us1-r.link-t7.com
+  port: 10238
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-2TCP
+  type: vless
+  server: us2-r.link-t7.com
+  port: 10239
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-3TCP
+  type: vless
+  server: us3-r.link-t7.com
+  port: 10240
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-4TCP
+  type: vless
+  server: us4-r.link-t7.com
+  port: 10241
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-5TCP
+  type: vless
+  server: us5-r.link-t7.com
+  port: 10242
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-6TCP
+  type: vless
+  server: us6-r.link-t7.com
+  port: 10243
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-7TCP
+  type: vless
+  server: us7-r.link-t7.com
+  port: 10244
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-8TCP
+  type: vless
+  server: us8-r.link-t7.com
+  port: 10245
+  uuid: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US1-HY2
+  type: hysteria2
+  server: us1.dexlos.com
+  port: 20112
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us1.dexlos.com
+  skip-cert-verify: false
+- name: US2-HY2
+  type: hysteria2
+  server: us2.dexlos.com
+  port: 20276
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us2.dexlos.com
+  skip-cert-verify: false
+- name: US3-HY2
+  type: hysteria2
+  server: us3.dexlos.com
+  port: 20425
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us3.dexlos.com
+  skip-cert-verify: false
+- name: US4-HY2
+  type: hysteria2
+  server: us4.dexlos.com
+  port: 20670
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us4.dexlos.com
+  skip-cert-verify: false
+- name: US5-HY2
+  type: hysteria2
+  server: us5.dexlos.com
+  port: 20989
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us5.dexlos.com
+  skip-cert-verify: false
+- name: US6-HY2
+  type: hysteria2
+  server: us6.dexlos.com
+  port: 21121
+  password: B07CEA9B-C1C0-491C-BF4C-10ACA1BA1837
+  sni: us6.dexlos.com
+  skip-cert-verify: false
+- name: 🇲🇾_MY_马来西亚
+  type: ss
+  server: 118.107.222.231
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   skip-cert-verify: true
-- name: HK [优选高速 62.45ms 14.13Mbps
+  udp: true
+- name: 🇳🇱_NL_荷兰
   type: vless
-  server: 85.121.51.201
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
+  server: 51.158.236.122
+  port: 8080
+  uuid: 11af1c47-865a-47c6-92ff-118013655d78
   network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 63.52ms 19.63Mbps
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
   type: vless
-  server: 43.155.221.27
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
   network: ws
-  tls: true
+  tls: false
   client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
   ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: HK [优选高速 64.15ms 13.76Mbps
-  type: vless
-  server: 45.221.115.170
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 64.51ms 19.76Mbps
-  type: vless
-  server: 3.37.245.168
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: HK [优选高速 64.63ms 14.19Mbps
-  type: vless
-  server: 68.64.178.184
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: HK [优选高速 66.39ms 11.53Mbps
-  type: vless
-  server: 82.27.11.11
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 69.89ms 12.83Mbps
-  type: vless
-  server: 64.204.48.62
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 70.2ms 11.75Mbps
-  type: vless
-  server: 64.204.49.136
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 72.37ms 15.64Mbps
-  type: vless
-  server: 119.28.162.39
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 77.95ms 12.9Mbps
-  type: vless
-  server: 43.167.224.16
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 78.91ms 15.67Mbps
-  type: vless
-  server: 43.167.246.133
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 79.21ms 15.37Mbps
-  type: vless
-  server: 52.195.211.96
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 82.28ms 16.42Mbps
-  type: vless
-  server: 172.237.6.18
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 82.63ms 11.37Mbps
-  type: vless
-  server: 133.18.105.95
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 82.85ms 12.01Mbps
-  type: vless
-  server: 92.113.124.253
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: JP [优选高速 83.54ms 11.74Mbps
-  type: vless
-  server: 35.72.179.15
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: TW [优选高速 90.4ms 17.87Mbps
-  type: vless
-  server: 142.249.60.51
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 90.76ms 12.77Mbps
-  type: vless
-  server: 168.144.97.78
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 90.81ms 15.09Mbps
-  type: vless
-  server: 168.144.96.147
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 91.27ms 11.57Mbps
-  type: vless
-  server: 68.183.186.117
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 92.79ms 8.85Mbps
-  type: vless
-  server: 188.166.234.172
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 93.23ms 12.58Mbps
-  type: vless
-  server: 167.150.100.46
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 93.42ms 14.58Mbps
-  type: vless
-  server: 165.232.173.161
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: SG [优选高速 93.63ms 14.9Mbps
-  type: vless
-  server: 188.166.214.16
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: MY [优选高速 103.97ms 10.4Mbps
-  type: vless
-  server: 47.250.212.59
-  port: 2053
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: PH [优选高速 107.73ms 9.02Mbps
-  type: vless
-  server: 61.245.10.8
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: ID [优选高速 108.57ms 12.57Mbps
-  type: vless
-  server: 172.232.236.252
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 114.64ms 11.61Mbps
-  type: vless
-  server: 152.67.198.36
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 118.79ms 11.33Mbps
-  type: vless
-  server: 168.110.107.218
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: KR [优选高速 118.81ms 11.19Mbps
-  type: vless
-  server: 152.67.210.234
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: TH [优选高速 122.04ms 10.5Mbps
-  type: vless
-  server: 45.150.128.159
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: TW [优选高速 126.81ms 10.29Mbps
-  type: vless
-  server: 114.32.9.249
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: IN [优选高速 129.65ms 11.27Mbps
-  type: vless
-  server: 168.144.154.79
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: IN [优选高速 137.9ms 10.48Mbps
-  type: vless
-  server: 168.144.68.202
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: DE [优选高速 149.9ms 8.72Mbps
-  type: vless
-  server: 45.147.48.93
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: ID [优选高速 150.31ms 8.58Mbps
-  type: vless
-  server: 15.232.155.235
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: DE [优选高速 150.58ms 8.53Mbps
-  type: vless
-  server: 64.118.159.219
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: IN [优选高速 150.78ms 8.38Mbps
-  type: vless
-  server: 5.253.29.83
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: IN [优选高速 157.88ms 8.44Mbps
-  type: vless
-  server: 68.233.107.29
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: US [优选高速 160.83ms 8.63Mbps
-  type: vless
-  server: 157.119.103.52
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: IN [优选高速 161.47ms 8.94Mbps
-  type: vless
-  server: 94.136.185.7
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: US [优选高速 162.61ms 8.34Mbps
-  type: vless
-  server: 64.186.226.19
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: US [优选高速 163.32ms 8.75Mbps
-  type: vless
-  server: 207.57.140.85
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: NL [优选高速 163.63ms 9.68Mbps
-  type: vless
-  server: 89.106.207.216
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: NL [优选高速 172.4ms 9.41Mbps
-  type: vless
-  server: 192.109.228.202
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: TW [优选高速 182.76ms 14.64Mbps
-  type: vless
-  server: 151.242.189.162
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: AU [优选高速 190.52ms 8.66Mbps
-  type: vless
-  server: 206.168.133.137
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 271.44ms 16.91Mbps
-  type: vless
-  server: 157.66.26.194
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 284.89ms 13.71Mbps
-  type: vless
-  server: 160.22.74.117
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 289.84ms 9.47Mbps
-  type: vless
-  server: 160.191.50.99
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 294.28ms 12.1Mbps
-  type: vless
-  server: 160.187.1.101
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 345.09ms 11.09Mbps
-  type: vless
-  server: 160.25.75.40
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 346.76ms 11.23Mbps
-  type: vless
-  server: 160.25.74.227
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 352.08ms 10.37Mbps
-  type: vless
-  server: 160.25.74.124
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 353.18ms 9.23Mbps
-  type: vless
-  server: 160.30.50.48
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: TH [优选高速 872.91ms 11.57Mbps
-  type: vless
-  server: 103.224.84.70
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: VN [优选高速 899.95ms 8.64Mbps
-  type: vless
-  server: 103.186.64.182
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: ID [优选高速 1132.36ms 12.66Mbps
-  type: vless
-  server: 172.232.246.133
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: ID [优选高速 1137.18ms 12.65Mbps
-  type: vless
-  server: 172.232.240.6
-  port: 443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: AE [优选高速 1177.81ms 8.04Mbps
-  type: vless
-  server: 89.36.162.162
-  port: 8443
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
-- name: AE [优选高速 1196.12ms 8.66Mbps
-  type: vless
-  server: 95.174.68.155
-  port: 2083
-  uuid: 4ec2c66e-becd-4c51-9d6d-9ef74b27c95a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: decf.xzdq.eu.org
-  ws-opts:
-    path: /api/v1/539e86
-    headers:
-      Host: decf.xzdq.eu.org
+    path: /29c8fed7ca22
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: ss
+  server: 121.46.230.233
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
   type: vless
   server: rrr.windconnect.pro
@@ -843,117 +477,17 @@ proxies:
     short-id: 4da5d1853f04af6d
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: 188.220.67.245
-  port: 2087
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /8f2690e2d016
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
+- name: 🇭🇰_HK_中国香港_2
   type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: none
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱_NL_荷兰
-  type: vless
-  server: 78.17.190.94
-  port: 53289
-  uuid: 9a913f1c-28b3-4d0b-aa77-698302252ab7
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦_CA_加拿大
-  type: ss
-  server: 35.182.118.89
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国_1
-  type: vless
-  server: 31.76.71.140
-  port: 443
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  servername: rrr.windconnect.pro
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
-    short-id: 4da5d1853f04af6d
-  skip-cert-verify: true
-  udp: true
-- name: 🇲🇾_MY_马来西亚
-  type: ss
-  server: 118.107.222.231
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: ss
-  server: 95.170.13.47
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 176.96.138.122
-  port: 443
-  uuid: b229d38c-35ec-4a0b-9c86-8fceba243d6c
-  servername: plucky-xenon.cdn.cachefleet.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇪_SE_瑞典
-  type: vless
-  server: 141.227.160.23
-  port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
-  servername: se.sellflow.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦_CA_加拿大_1
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国_2
   type: hysteria
   server: 5.83.129.153
   port: 20088
@@ -964,79 +498,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-  udp: true
-- name: 🇩🇪_DE_德国_3
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /29c8fed7ca22
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇭_CH_瑞士->🇫🇮_FI_芬兰
-  type: vless
-  server: 31.76.4.128
-  port: 5001
-  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
-  servername: fi.aeternavpn.space
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
-    short-id: a1b2c3d4
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  type: ss
-  server: 121.46.230.137
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦_CA_加拿大_2
-  type: ss
-  server: 15.156.204.87
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: ss
-  server: 121.46.230.232
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: 172.67.140.11
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  network: ws
-  servername: 7-m19.suDan-pARK.CcwU.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 7-m19.sUDAN-pArk.CCwu.CC
-  skip-cert-verify: true
   udp: true
 - name: 🇵🇱_PL_波兰->🇳🇱_NL_荷兰
   type: vless
@@ -1050,12 +511,33 @@ proxies:
     path: /4bc027a44532
   skip-cert-verify: true
   udp: true
-- name: 🇹🇭_TH_泰国
+- name: 🇨🇦_CA_加拿大
   type: ss
-  server: 103.169.67.34
+  server: 35.182.118.89
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国
+  type: ss
+  server: 95.170.13.47
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_2
+  type: vless
+  server: 176.96.138.122
+  port: 443
+  uuid: b229d38c-35ec-4a0b-9c86-8fceba243d6c
+  servername: plucky-xenon.cdn.cachefleet.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: O_YZOJVON0LE1U01hAtNUOVRy7z6fkBUXbMtpCGoGEg
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
@@ -1068,14 +550,88 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇭_TH_泰国
   type: ss
-  server: 121.46.230.138
+  server: 103.169.67.34
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   skip-cert-verify: true
   udp: true
+- name: 🇭🇰_HK_中国香港_3
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国_3
+  type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /8f2690e2d016
+  skip-cert-verify: true
+  udp: true
+- name: '🇭🇰_HK_中国香港 #2'
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
+- name: '🇭🇰_HK_中国香港 #3'
+  type: vmess
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: 🇺🇸 美国
   type: vless
   server: 172.64.52.152
@@ -1129,6 +685,13 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: 广东省广州市+电信IDC机房(校场西
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  network: tcp
+  tls: false
 - name: 英国+V2CROSS.COM
   type: vless
   server: 31.77.183.88
@@ -1298,20 +861,9 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-- name: 美国+V2CROSS.COM
+- name: 德国+法尔肯施泰因Hetzner
   type: trojan
-  server: 167.82.76.7
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: '@bored_vpn'
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-- name: '美国+CloudFlare节点 #12'
-  type: trojan
-  server: 172.67.74.2
+  server: 88.198.82.150
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1320,78 +872,206 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '英国+V2CROSS.COM #2'
+- name: 美国+华盛顿Cogent通信公司
   type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
+  server: 38.54.6.46
+  port: 36712
+  password: CompanyHy2_2026!
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: '美国+CloudFlare节点 #13'
+- name: '美国+CloudFlare节点 #12'
   type: vless
-  server: 104.21.80.194
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  server: 104.18.42.163
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: 9-M19.sOUTH-AFRIcA-LINK.CCWu.cC
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
+    path: /
     headers:
-      Host: 9-m19.South-AfrIcA-liNK.CcWU.CC
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: '美国+CloudFlare节点 #13'
+  type: vless
+  server: 104.21.90.154
+  port: 443
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 3-m13.286BF07b-D934-42D2-918F-a749478cF4bf.KDnS.fR
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 3-m13.286bf07B-D934-42d2-918F-A749478CF4bf.kDnS.fr
+- name: '英国+V2CROSS.COM #2'
+  type: vless
+  server: 31.76.7.238
+  port: 443
+  uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: cz2.hat.onl
+  flow: xtls-rprx-vision
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
 - name: '美国+CloudFlare节点 #14'
   type: vless
-  server: 172.64.158.146
+  server: deepl.com
   port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
   network: ws
   tls: false
   client-fingerprint: chrome
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: mute-sunset-0849.40-aeb.workers.dev
+- name: 法国+巴黎Amazon数据中心
+  type: vless
+  server: 35.180.221.118
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  network: tcp
+  tls: false
+  client-fingerprint: chrome
+- name: '美国+V2CROSS.COM #2'
+  type: vless
+  server: 198.200.42.129
+  port: 52977
+  uuid: 2f6f1856-5466-4078-b1f0-d3f977211ada
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
 - name: '美国+CloudFlare节点 #15'
   type: vless
-  server: 172.67.176.60
+  server: skk.moe
+  port: 8880
+  uuid: 3a38b35b-7b31-452c-954f-99c2f45dda19
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: sweet-truth-0f0c.71-fca.workers.dev
+- name: '美国+CloudFlare节点 #16'
+  type: vless
+  server: 104.21.92.49
   port: 443
   uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: 3-M19.SoUtH-afRIcA.CCwu.Cc
+  servername: 7-m19.omAn-linK.KdNS.FR
   ws-opts:
     path: /CjBjB9sn5pCvaSwScc
     headers:
-      Host: 3-m19.south-afriCa.Ccwu.Cc
-- name: '美国+CloudFlare节点 #16'
+      Host: 7-m19.OmAn-link.kdnS.FR
+- name: '美国+CloudFlare节点 #17'
   type: vless
-  server: 172.67.185.131
+  server: 104.21.90.161
+  port: 443
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 4-m19.pErU-Line.cCwU.cc
+  ws-opts:
+    path: /CjBjB9sn5pCvaSwScc
+    headers:
+      Host: 4-m19.pERU-LIne.CCwu.CC
+- name: '美国+CloudFlare节点 #18'
+  type: trojan
+  server: 162.159.136.234
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 爱沙尼亚+V2CROSS.COM
+  type: vless
+  server: ee-node.usel.pro
+  port: 443
+  uuid: 6fb79584-30b8-4888-b358-98f7ef6b8697
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: mail.protech-plus.ee
+  flow: xtls-rprx-vision
+- name: '乌克兰+V2CROSS.COM #2'
+  type: vless
+  server: 85.90.197.120
+  port: 443
+  uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: gr1.hat.onl
+  flow: xtls-rprx-vision
+- name: 捷克+V2CROSS.COM
+  type: vless
+  server: 95.85.228.65
+  port: 443
+  uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: nl1.hat.onl
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #19'
+  type: vless
+  server: 172.67.205.153
   port: 443
   uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+  servername: 1-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
   ws-opts:
     path: /8qMLgNapWf6SBxo8fhQlVPYO
     headers:
-      Host: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
-- name: 巴西+圣保罗
+      Host: 1-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
+- name: '美国+CloudFlare节点 #20'
   type: vless
-  server: 200.165.235.78
-  port: 443
-  uuid: 238e492b-bc20-4380-92b6-135d39112ca4
-  network: raw
+  server: 172.67.148.41
+  port: 80
+  uuid: 8be64379-08a5-4362-b8cf-234a65409bda
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /eyJqdW5rIjoiOW56N0hTRm9IS252IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ
+    headers:
+      Host: telegram4.freepersianland8.workers.dev
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: aldebaran.yokkastars.com
+  port: 40443
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: api8.eaglors.com
-  flow: xtls-rprx-vision
+  servername: deepl.com
 - name: end-gfw.com@sg89
   type: vless
-  server: 3.1.27.69
+  server: 13.229.156.211
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1400,7 +1080,7 @@ proxies:
   servername: www.apple.com
 - name: end-gfw.com@kr64
   type: vless
-  server: 13.124.58.31
+  server: 3.37.87.12
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -2461,19 +2141,6 @@ proxies:
       Host: 4-m9.pattaya-4.kdns.fr
 - name: 'US美国v2clash.blog 2026-9.10 #3'
   type: vless
-  server: 104.21.92.49
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 7-m19.omAn-linK.KdNS.FR
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 7-m19.OmAn-link.kdnS.FR
-- name: 'US美国v2clash.blog 2026-9.10 #4'
-  type: vless
   server: 172.67.190.103
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
@@ -2489,100 +2156,84 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - reality
-  - GPT-TUNNEL
-  - US
-  - usa-washington
-  - HK [优选高速 62.45ms 14.13Mbps
-  - KR [优选高速 63.52ms 19.63Mbps
-  - HK [优选高速 64.15ms 13.76Mbps
-  - KR [优选高速 64.51ms 19.76Mbps
-  - HK [优选高速 64.63ms 14.19Mbps
-  - HK [优选高速 66.39ms 11.53Mbps
-  - JP [优选高速 69.89ms 12.83Mbps
-  - JP [优选高速 70.2ms 11.75Mbps
-  - KR [优选高速 72.37ms 15.64Mbps
-  - JP [优选高速 77.95ms 12.9Mbps
-  - JP [优选高速 78.91ms 15.67Mbps
-  - JP [优选高速 79.21ms 15.37Mbps
-  - JP [优选高速 82.28ms 16.42Mbps
-  - JP [优选高速 82.63ms 11.37Mbps
-  - JP [优选高速 82.85ms 12.01Mbps
-  - JP [优选高速 83.54ms 11.74Mbps
-  - TW [优选高速 90.4ms 17.87Mbps
-  - SG [优选高速 90.76ms 12.77Mbps
-  - SG [优选高速 90.81ms 15.09Mbps
-  - SG [优选高速 91.27ms 11.57Mbps
-  - SG [优选高速 92.79ms 8.85Mbps
-  - SG [优选高速 93.23ms 12.58Mbps
-  - SG [优选高速 93.42ms 14.58Mbps
-  - SG [优选高速 93.63ms 14.9Mbps
-  - MY [优选高速 103.97ms 10.4Mbps
-  - PH [优选高速 107.73ms 9.02Mbps
-  - ID [优选高速 108.57ms 12.57Mbps
-  - KR [优选高速 114.64ms 11.61Mbps
-  - KR [优选高速 118.79ms 11.33Mbps
-  - KR [优选高速 118.81ms 11.19Mbps
-  - TH [优选高速 122.04ms 10.5Mbps
-  - TW [优选高速 126.81ms 10.29Mbps
-  - IN [优选高速 129.65ms 11.27Mbps
-  - IN [优选高速 137.9ms 10.48Mbps
-  - DE [优选高速 149.9ms 8.72Mbps
-  - ID [优选高速 150.31ms 8.58Mbps
-  - DE [优选高速 150.58ms 8.53Mbps
-  - IN [优选高速 150.78ms 8.38Mbps
-  - IN [优选高速 157.88ms 8.44Mbps
-  - US [优选高速 160.83ms 8.63Mbps
-  - IN [优选高速 161.47ms 8.94Mbps
-  - US [优选高速 162.61ms 8.34Mbps
-  - US [优选高速 163.32ms 8.75Mbps
-  - NL [优选高速 163.63ms 9.68Mbps
-  - NL [优选高速 172.4ms 9.41Mbps
-  - TW [优选高速 182.76ms 14.64Mbps
-  - AU [优选高速 190.52ms 8.66Mbps
-  - VN [优选高速 271.44ms 16.91Mbps
-  - VN [优选高速 284.89ms 13.71Mbps
-  - VN [优选高速 289.84ms 9.47Mbps
-  - VN [优选高速 294.28ms 12.1Mbps
-  - VN [优选高速 345.09ms 11.09Mbps
-  - VN [优选高速 346.76ms 11.23Mbps
-  - VN [优选高速 352.08ms 10.37Mbps
-  - VN [优选高速 353.18ms 9.23Mbps
-  - TH [优选高速 872.91ms 11.57Mbps
-  - VN [优选高速 899.95ms 8.64Mbps
-  - ID [优选高速 1132.36ms 12.66Mbps
-  - ID [优选高速 1137.18ms 12.65Mbps
-  - AE [优选高速 1177.81ms 8.04Mbps
-  - AE [优选高速 1196.12ms 8.66Mbps
-  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国
-  - 🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国_1
+  - HK-1
+  - HK-2
+  - HK-3
+  - HK-4
+  - HK-5
+  - HK-6
+  - HK2-HY2
+  - HK3-HY2
+  - HK4-HY2
+  - HK5-HY2
+  - JP-1
+  - JP-2
+  - JP-3
+  - JP-4
+  - JP-5
+  - JP-6
+  - JP1-HY2
+  - JP2-HY2
+  - JP3-HY2
+  - JP4-HY2
+  - JP5-HY2
+  - JP9-HY2
+  - JP10-HY2
+  - KR-1
+  - KR-2
+  - KR-3
+  - KR-4
+  - KR-5
+  - SG-1
+  - SG-2
+  - SG-3
+  - SG-4
+  - SG-5
+  - SG4-HY2
+  - SG5-HY2
+  - US-1TCP
+  - US-2TCP
+  - US-3TCP
+  - US-4TCP
+  - US-5TCP
+  - US-6TCP
+  - US-7TCP
+  - US-8TCP
+  - US1-HY2
+  - US2-HY2
+  - US3-HY2
+  - US4-HY2
+  - US5-HY2
+  - US6-HY2
   - 🇲🇾_MY_马来西亚
-  - 🇫🇷_FR_法国
-  - 🇩🇪_DE_德国_1
+  - 🇳🇱_NL_荷兰
+  - 🇭🇰_HK_中国香港
+  - 🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇨🇦_CA_加拿大_1
-  - 🇩🇪_DE_德国_2
-  - 🇩🇪_DE_德国_3
-  - 🇨🇭_CH_瑞士->🇫🇮_FI_芬兰
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇦_CA_加拿大_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港_1
+  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港_2
+  - 🇩🇪_DE_德国_1
   - 🇵🇱_PL_波兰->🇳🇱_NL_荷兰
-  - 🇹🇭_TH_泰国
+  - 🇨🇦_CA_加拿大
+  - 🇫🇷_FR_法国
+  - 🇩🇪_DE_德国_2
   - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国
+  - 🇹🇭_TH_泰国
+  - 🇭🇰_HK_中国香港_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇩🇪_DE_德国_3
+  - '🇭🇰_HK_中国香港 #2'
+  - '🇭🇰_HK_中国香港 #3'
   - 🇺🇸 美国
   - 新加坡+甲骨文机房
   - 美国+CloudFlare节点
   - '美国+CloudFlare节点 #2'
   - 法国巴黎+CloudFlare节点
+  - 广东省广州市+电信IDC机房(校场西
   - 英国+V2CROSS.COM
   - '美国+CloudFlare节点 #3'
   - '美国+CloudFlare节点 #4'
@@ -2598,14 +2249,25 @@ proxy-groups:
   - '美国+CloudFlare节点 #10'
   - '美国+CloudFlare节点 #11'
   - 欧盟+V2CROSS.COM
-  - 美国+V2CROSS.COM
+  - 德国+法尔肯施泰因Hetzner
+  - 美国+华盛顿Cogent通信公司
   - '美国+CloudFlare节点 #12'
-  - '英国+V2CROSS.COM #2'
   - '美国+CloudFlare节点 #13'
+  - '英国+V2CROSS.COM #2'
+  - 美国+V2CROSS.COM
   - '美国+CloudFlare节点 #14'
+  - 法国+巴黎Amazon数据中心
+  - '美国+V2CROSS.COM #2'
   - '美国+CloudFlare节点 #15'
   - '美国+CloudFlare节点 #16'
-  - 巴西+圣保罗
+  - '美国+CloudFlare节点 #17'
+  - '美国+CloudFlare节点 #18'
+  - 爱沙尼亚+V2CROSS.COM
+  - '乌克兰+V2CROSS.COM #2'
+  - 捷克+V2CROSS.COM
+  - '美国+CloudFlare节点 #19'
+  - '美国+CloudFlare节点 #20'
+  - 俄罗斯+V2CROSS.COM
   - end-gfw.com@sg89
   - end-gfw.com@kr64
   - DE德国(v2clash.blog 2026-7.16更新
@@ -2700,6 +2362,5 @@ proxy-groups:
   - US美国v2clash.blog 2026-9.10
   - 'US美国v2clash.blog 2026-9.10 #2'
   - 'US美国v2clash.blog 2026-9.10 #3'
-  - 'US美国v2clash.blog 2026-9.10 #4'
 rules:
 - MATCH,PROBE
