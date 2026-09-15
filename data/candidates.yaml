@@ -82,28 +82,28 @@ proxies:
 - name: 🇯🇵 日本-Hy2
   type: hysteria2
   server: akjp.fe-9.top
-  port: 46875
+  port: 44946
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: akjp.fe-9.top
   skip-cert-verify: true
 - name: 🇯🇵 日本-hy2 02
   type: hysteria2
   server: pin-jp.9dai.xyz
-  port: 44540
+  port: 40639
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: pin-jp.9dai.xyz
   skip-cert-verify: true
 - name: 🇸🇬 新加坡Hy2
   type: hysteria2
   server: anysg2.wjwhi90.com
-  port: 38714
+  port: 39630
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: anysg2.wjwhi90.com
   skip-cert-verify: true
 - name: 🇲🇾 马来西亚Hy2
   type: hysteria2
   server: mlcyhy2.wjwhi90.com
-  port: 42387
+  port: 37246
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: mlcy.wjwhi90.com
   skip-cert-verify: true
@@ -127,20 +127,6 @@ proxies:
   port: 20042
   cipher: chacha20-ietf-poly1305
   password: d638fdd5-4038-42f8-acea-8d7747471661
-- name: '剩余流量：0 #2'
-  type: vmess
-  server: subscription-info.invalid
-  port: 1
-  uuid: b9edc699-275e-4017-810e-42186abbdbc6
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: sg-edge.xn--kivt58h.lol
-    path: /sg-edge-vm-859c3a8d7341c647
-  servername: sg-edge.xn--kivt58h.lol
 - name: 新加坡-隧道01
   type: vmess
   server: sg-edge.xn--kivt58h.lol
@@ -162,7 +148,7 @@ proxies:
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
   tls: true
-  client-fingerprint: edge
+  client-fingerprint: firefox
   servername: sg-edge.xn--kivt58h.lol
   ws-opts:
     path: /sg-edge-vless03-44d60c77afe4e17d
@@ -178,6 +164,48 @@ proxies:
   client-fingerprint: chrome
   servername: www.apple.com
   flow: xtls-rprx-vision
+- name: 新加坡-电信优选隧道
+  type: vmess
+  server: 172.64.148.163
+  port: 443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: sg-edge.xn--kivt58h.lol
+    path: /sg-edge-vm-859c3a8d7341c647
+  servername: sg-edge.xn--kivt58h.lol
+- name: 新加坡-移动优选隧道
+  type: vmess
+  server: 104.17.27.237
+  port: 443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: sg-edge.xn--kivt58h.lol
+    path: /sg-edge-vm-859c3a8d7341c647
+  servername: sg-edge.xn--kivt58h.lol
+- name: 新加坡-联通优选隧道
+  type: vmess
+  server: 104.17.166.250
+  port: 443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: sg-edge.xn--kivt58h.lol
+    path: /sg-edge-vm-859c3a8d7341c647
+  servername: sg-edge.xn--kivt58h.lol
 - name: 香港-隧道01
   type: vmess
   server: hk-edge.xn--kivt58h.lol
@@ -236,7 +264,7 @@ proxies:
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: qq
   servername: us-edge.xn--kivt58h.lol
   ws-opts:
     path: /us-edge-vless-1fe37c4b4946a844
@@ -711,18 +739,29 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-- name: 美国 V2CROSS.COM
+- name: 英国 V2CROSS.COM
   type: vmess
-  server: 165.140.217.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 31.77.8.97
+  port: 110
+  uuid: e8758bf0-c234-4809-89f7-25fd868316d0
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MITIVPN
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
 - name: '美国+CloudFlare节点 #12'
   type: trojan
-  server: 172.67.188.109
+  server: 104.21.8.107
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -731,15 +770,41 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国 V2CROSS.COM #2'
-  type: vmess
-  server: 165.140.217.14
+- name: '美国+CloudFlare节点 #13'
+  type: trojan
+  server: www.speedtest.org
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: none
-  tls: false
-  network: tcp
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  servername: pr-media.pepro.site
+  ws-opts:
+    path: /ws
+    headers:
+      Host: pr-media.pepro.site
+- name: '美国+CloudFlare节点 #14'
+  type: trojan
+  server: 104.21.46.3
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 立陶宛+V2CROSS.COM
   type: vless
   server: game.betust.net
@@ -750,162 +815,6 @@ proxies:
   client-fingerprint: chrome
   servername: api14.betust.net
   flow: xtls-rprx-vision
-- name: 瑞典+V2CROSS.COM
-  type: vless
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  uuid: e262a993-a3be-4f36-95ba-81dc1e32d78c
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: grimness-backlogs.cdn-content.com
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-- name: 俄罗斯+V2CROSS.COM
-  type: vless
-  server: prime.betust.net
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: prime.betust.net
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #13'
-  type: vless
-  server: 104.21.41.153
-  port: 443
-  uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 6-M13.aYUtthaYa-X.kDns.FR
-  ws-opts:
-    path: /ED3ZQPu7lqyeDGD58KabZ
-    headers:
-      Host: 6-M13.aYUTthAya-X.KDNS.Fr
-- name: 巴西+巴西电信公司
-  type: ss
-  server: 201.34.151.230
-  port: 23254
-  cipher: aes-256-gcm
-  password: d3N1ZE5GQUtJS0Rpdmh5RFhTS0ZOSVNkSlJ0dENqQjl4eVFLMVJoczZ6U2NuenVNaENDT29qeGp4M2xRenZQVQ==
-- name: '立陶宛+V2CROSS.COM #2'
-  type: vless
-  server: app.betust.net
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: app.betust.net
-  flow: xtls-rprx-vision
-- name: '巴西圣保罗+CloudFlare节点 #2'
-  type: vless
-  server: 188.114.96.1
-  port: 80
-  uuid: 0fbe0c5e-b479-4d91-8b42-f194f781b6bb
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vl/KRSVUQ0kgKQKo5nM7eJXKeHr4U?ed=2560
-    headers:
-      Host: z0ndd1onnp04unxjemim9lf8.abaravi51.workers.dev
-- name: '乌克兰+V2CROSS.COM #2'
-  type: vless
-  server: 46.28.69.53
-  port: 443
-  uuid: f2381f29-c724-4491-95a3-a17bd6eea47f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: de2.willo.help
-  flow: xtls-rprx-vision
-- name: '英国+V2CROSS.COM #2'
-  type: trojan
-  server: 176.97.66.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #14'
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国 V2CROSS.COM #3'
-  type: vmess
-  server: 165.140.217.56
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '英国+V2CROSS.COM #3'
-  type: hysteria2
-  server: gta.internet-card.sbs
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: false
-- name: '巴西圣保罗+CloudFlare节点 #3'
-  type: vless
-  server: 188.114.96.1
-  port: 2052
-  uuid: 0fbe0c5e-b479-4d91-8b42-f194f781b6bb
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vl/cFprDqqqyBOgsuPVMIZf6qBJV89?ed=2560
-    headers:
-      Host: z0ndd1onnp04unxjemim9lf8.abaravi51.workers.dev
-- name: '美国+CloudFlare节点 #15'
-  type: trojan
-  server: 104.17.111.3
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 捷克+V2CROSS.COM
-  type: vless
-  server: 95.85.245.163
-  port: 442
-  uuid: 2c070f10-57e8-442b-b6cb-ff39b35d929d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #16'
-  type: trojan
-  server: 104.18.152.155
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: end-gfw.com@sg89
   type: vless
   server: 13.212.164.4
@@ -917,7 +826,7 @@ proxies:
   servername: www.apple.com
 - name: end-gfw.com@kr64
   type: vless
-  server: 13.209.97.197
+  server: 13.209.50.222
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1763,17 +1672,6 @@ proxies:
   servername: www.ibm.com
 - name: US美国(v2clash.blog 2026-9.12新
   type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-9.12新 #2'
-  type: trojan
   server: join-telegram-channel.tirexnet.kdns.fr
   port: 443
   password: humanity
@@ -1915,19 +1813,6 @@ proxies:
     path: /ws
     headers:
       Host: pr-media.pepro.site
-- name: 'US美国v2clash.blog 2026-9.9 #2'
-  type: vless
-  server: pr-media.pepro.site
-  port: 14443
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: pr-media.pepro.site
-  ws-opts:
-    path: /ws
-    headers:
-      Host: pr-media.pepro.site
 - name: NL荷兰v2clash.blog 2026-9.9
   type: vless
   server: 2a14:3f87:f001:46::a
@@ -1947,7 +1832,7 @@ proxies:
   client-fingerprint: chrome
   servername: localhost
   flow: xtls-rprx-vision
-- name: 'US美国v2clash.blog 2026-9.9 #3'
+- name: 'US美国v2clash.blog 2026-9.9 #2'
   type: vless
   server: 213.111.149.58
   port: 8443
@@ -2030,10 +1915,12 @@ proxy-groups:
   - 🇺🇸 纽约Hy2-01
   - 🇺🇸 纽约Hy2-02
   - 无法使用请用最新版本客户端
-  - '剩余流量：0 #2'
   - 新加坡-隧道01
   - 新加坡-隧道03
   - 新加坡-01 IPv6
+  - 新加坡-电信优选隧道
+  - 新加坡-移动优选隧道
+  - 新加坡-联通优选隧道
   - 香港-隧道01
   - 香港-隧道03
   - 香港-01 IPv6
@@ -2085,25 +1972,13 @@ proxy-groups:
   - '美国+CloudFlare节点 #10'
   - '美国+CloudFlare节点 #11'
   - 欧盟+V2CROSS.COM
-  - 美国 V2CROSS.COM
+  - 英国 V2CROSS.COM
+  - 美国+V2CROSS.COM
   - '美国+CloudFlare节点 #12'
-  - '美国 V2CROSS.COM #2'
-  - 立陶宛+V2CROSS.COM
-  - 瑞典+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM
   - '美国+CloudFlare节点 #13'
-  - 巴西+巴西电信公司
-  - '立陶宛+V2CROSS.COM #2'
-  - '巴西圣保罗+CloudFlare节点 #2'
-  - '乌克兰+V2CROSS.COM #2'
-  - '英国+V2CROSS.COM #2'
+  - 俄罗斯+V2CROSS.COM
   - '美国+CloudFlare节点 #14'
-  - '美国 V2CROSS.COM #3'
-  - '英国+V2CROSS.COM #3'
-  - '巴西圣保罗+CloudFlare节点 #3'
-  - '美国+CloudFlare节点 #15'
-  - 捷克+V2CROSS.COM
-  - '美国+CloudFlare节点 #16'
+  - 立陶宛+V2CROSS.COM
   - end-gfw.com@sg89
   - end-gfw.com@kr64
   - DE德国(v2clash.blog 2026-7.16更新
@@ -2180,7 +2055,6 @@ proxy-groups:
   - DE德国(v2clash.blog 2026-9.12新
   - 'DE德国(v2clash.blog 2026-9.12新 #2'
   - US美国(v2clash.blog 2026-9.12新
-  - 'US美国(v2clash.blog 2026-9.12新 #2'
   - US美国(v2clash.blog 2026-9.5
   - FR法国(v2clash.blog 2026-9.5
   - 'FR法国(v2clash.blog 2026-9.5 #2'
@@ -2192,10 +2066,9 @@ proxy-groups:
   - DE德国v2clash.blog 2026-9.8
   - US美国v2clash.blog 2026-9.8
   - US美国v2clash.blog 2026-9.9
-  - 'US美国v2clash.blog 2026-9.9 #2'
   - NL荷兰v2clash.blog 2026-9.9
   - CA加拿大v2clash.blog 2026-9.9
-  - 'US美国v2clash.blog 2026-9.9 #3'
+  - 'US美国v2clash.blog 2026-9.9 #2'
   - US美国v2clash.blog 2026-9.10
   - 'US美国v2clash.blog 2026-9.10 #2'
   - 'US美国v2clash.blog 2026-9.10 #3'
