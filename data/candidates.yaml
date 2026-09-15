@@ -21,28 +21,28 @@ proxies:
 - name: 🇯🇵 日本-Hy2
   type: hysteria2
   server: akjp.fe-9.top
-  port: 32462
+  port: 37024
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: akjp.fe-9.top
   skip-cert-verify: true
 - name: 🇯🇵 日本-hy2 02
   type: hysteria2
   server: pin-jp.9dai.xyz
-  port: 49263
+  port: 48398
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: pin-jp.9dai.xyz
   skip-cert-verify: true
 - name: 🇸🇬 新加坡Hy2
   type: hysteria2
   server: anysg2.wjwhi90.com
-  port: 42203
+  port: 34343
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: anysg2.wjwhi90.com
   skip-cert-verify: true
 - name: 🇲🇾 马来西亚Hy2
   type: hysteria2
   server: mlcyhy2.wjwhi90.com
-  port: 42494
+  port: 43196
   password: d638fdd5-4038-42f8-acea-8d7747471661
   sni: mlcy.wjwhi90.com
   skip-cert-verify: true
@@ -67,19 +67,81 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: d638fdd5-4038-42f8-acea-8d7747471661
 - name: '剩余流量：0 #2'
-  type: vmess
+  type: vless
   server: subscription-info.invalid
   port: 1
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
-  alterId: 0
-  cipher: auto
+  network: tcp
   tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 日本-01
+  type: vless
+  server: 18.180.221.197
+  port: 9443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 日本-02
+  type: vless
+  server: 54.64.86.78
+  port: 9443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 日本-03 IPv6
+  type: vless
+  server: 2406:da14:674:a500:3e0b:8784:b441:955d
+  port: 9444
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 日本-04 IPv6
+  type: vless
+  server: 2406:da14:674:a500:6c37:dc50:4ef9:851a
+  port: 9444
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 日本-隧道01
+  type: vless
+  server: opinions-advocate-amenities-breeding.trycloudflare.com
+  port: 443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
+  tls: true
+  client-fingerprint: ios
+  servername: opinions-advocate-amenities-breeding.trycloudflare.com
   ws-opts:
+    path: /jp-edge-vless-112328f11b40c983
     headers:
-      Host: sg-edge.xn--kivt58h.lol
-    path: /sg-edge-vm-859c3a8d7341c647
-  servername: sg-edge.xn--kivt58h.lol
+      Host: opinions-advocate-amenities-breeding.trycloudflare.com
+- name: 日本-隧道02
+  type: vless
+  server: indoor-following-brokers-poor.trycloudflare.com
+  port: 443
+  uuid: b9edc699-275e-4017-810e-42186abbdbc6
+  network: ws
+  tls: true
+  client-fingerprint: ios
+  servername: indoor-following-brokers-poor.trycloudflare.com
+  ws-opts:
+    path: /jp-edge-vless-6d4137c914b139db
+    headers:
+      Host: indoor-following-brokers-poor.trycloudflare.com
 - name: 新加坡-隧道01
   type: vmess
   server: sg-edge.xn--kivt58h.lol
@@ -101,7 +163,7 @@ proxies:
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
   tls: true
-  client-fingerprint: safari
+  client-fingerprint: firefox
   servername: sg-edge.xn--kivt58h.lol
   ws-opts:
     path: /sg-edge-vless03-44d60c77afe4e17d
@@ -180,7 +242,7 @@ proxies:
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: hk-edge.xn--kivt58h.lol
   ws-opts:
     path: /hk-edge-vless03-e1d8a5bfc8b942b4
@@ -259,7 +321,7 @@ proxies:
   uuid: b9edc699-275e-4017-810e-42186abbdbc6
   network: ws
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: qq
   servername: us-edge.xn--kivt58h.lol
   ws-opts:
     path: /us-edge-vless-1fe37c4b4946a844
@@ -1353,71 +1415,6 @@ proxies:
   password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   sni: gta.internet-card.sbs
   skip-cert-verify: true
-- name: 立陶宛+V2CROSS.COM
-  type: vless
-  server: game.betust.net
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: api14.betust.net
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #12'
-  type: vless
-  server: 104.21.85.121
-  port: 443
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 5-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
-  ws-opts:
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-    headers:
-      Host: 5-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr
-- name: 捷克+V2CROSS.COM
-  type: vless
-  server: 95.85.245.163
-  port: 442
-  uuid: 2c070f10-57e8-442b-b6cb-ff39b35d929d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  flow: xtls-rprx-vision
-- name: 美国 V2CROSS.COM
-  type: vmess
-  server: 165.140.217.14
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: none
-  tls: false
-  network: tcp
-- name: '立陶宛+V2CROSS.COM #2'
-  type: vless
-  server: app.betust.net
-  port: 443
-  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: app.betust.net
-  flow: xtls-rprx-vision
-- name: 美国+V2CROSS.COM
-  type: vless
-  server: spider-gzsv-production.up.railway.app
-  port: 443
-  uuid: 823a4043-6734-410f-9bef-d52cf1b6b10b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: spider-gzsv-production.up.railway.app
-  ws-opts:
-    path: /ws/823a4043-6734-410f-9bef-d52cf1b6b10b
-    headers:
-      Host: spider-gzsv-production.up.railway.app
 - name: 俄罗斯+V2CROSS.COM
   type: vless
   server: api.betust.net
@@ -1428,6 +1425,35 @@ proxies:
   client-fingerprint: chrome
   servername: api.betust.net
   flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #12'
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 167.82.76.7
+  port: 443
+  password: MITIVPN
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
+- name: 日本+东京M247网络
+  type: hysteria2
+  server: mszz.mangshe.xyz
+  port: 20562
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: '美国+CloudFlare节点 #13'
   type: trojan
   server: 104.21.46.3
@@ -1450,7 +1476,7 @@ proxies:
   servername: www.apple.com
 - name: end-gfw.com@kr64
   type: vless
-  server: 54.180.88.24
+  server: 43.201.154.24
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -2549,6 +2575,12 @@ proxy-groups:
   - 🇺🇸 纽约Hy2-02
   - 无法使用请用最新版本客户端
   - '剩余流量：0 #2'
+  - 日本-01
+  - 日本-02
+  - 日本-03 IPv6
+  - 日本-04 IPv6
+  - 日本-隧道01
+  - 日本-隧道02
   - 新加坡-隧道01
   - 新加坡-隧道03
   - 新加坡-01 IPv6
@@ -2669,13 +2701,10 @@ proxy-groups:
   - '美国+CloudFlare节点 #11'
   - 欧盟+V2CROSS.COM
   - '英国+V2CROSS.COM #3'
-  - 立陶宛+V2CROSS.COM
-  - '美国+CloudFlare节点 #12'
-  - 捷克+V2CROSS.COM
-  - 美国 V2CROSS.COM
-  - '立陶宛+V2CROSS.COM #2'
-  - 美国+V2CROSS.COM
   - 俄罗斯+V2CROSS.COM
+  - '美国+CloudFlare节点 #12'
+  - 美国+V2CROSS.COM
+  - 日本+东京M247网络
   - '美国+CloudFlare节点 #13'
   - end-gfw.com@sg89
   - end-gfw.com@kr64

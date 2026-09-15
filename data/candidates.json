@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T16:52:00.526050+00:00",
+  "generated_at": "2026-09-15T21:15:37.544249+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -23,7 +23,7 @@
     {
       "name": "🇯🇵 日本-Hy2",
       "password": "d638fdd5-4038-42f8-acea-8d7747471661",
-      "port": 32462,
+      "port": 37024,
       "server": "akjp.fe-9.top",
       "skip-cert-verify": true,
       "sni": "akjp.fe-9.top",
@@ -32,7 +32,7 @@
     {
       "name": "🇯🇵 日本-hy2 02",
       "password": "d638fdd5-4038-42f8-acea-8d7747471661",
-      "port": 49263,
+      "port": 48398,
       "server": "pin-jp.9dai.xyz",
       "skip-cert-verify": true,
       "sni": "pin-jp.9dai.xyz",
@@ -41,7 +41,7 @@
     {
       "name": "🇸🇬 新加坡Hy2",
       "password": "d638fdd5-4038-42f8-acea-8d7747471661",
-      "port": 42203,
+      "port": 34343,
       "server": "anysg2.wjwhi90.com",
       "skip-cert-verify": true,
       "sni": "anysg2.wjwhi90.com",
@@ -50,7 +50,7 @@
     {
       "name": "🇲🇾 马来西亚Hy2",
       "password": "d638fdd5-4038-42f8-acea-8d7747471661",
-      "port": 42494,
+      "port": 43196,
       "server": "mlcyhy2.wjwhi90.com",
       "skip-cert-verify": true,
       "sni": "mlcy.wjwhi90.com",
@@ -83,21 +83,97 @@
       "type": "ss"
     },
     {
-      "alterId": 0,
-      "cipher": "auto",
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
       "name": "剩余流量：0 #2",
-      "network": "ws",
+      "network": "tcp",
       "port": 1,
       "server": "subscription-info.invalid",
-      "servername": "sg-edge.xn--kivt58h.lol",
+      "servername": "www.apple.com",
       "tls": true,
-      "type": "vmess",
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "日本-01",
+      "network": "tcp",
+      "port": 9443,
+      "server": "18.180.221.197",
+      "servername": "www.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "日本-02",
+      "network": "tcp",
+      "port": 9443,
+      "server": "54.64.86.78",
+      "servername": "www.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "日本-03 IPv6",
+      "network": "tcp",
+      "port": 9444,
+      "server": "2406:da14:674:a500:3e0b:8784:b441:955d",
+      "servername": "www.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "日本-04 IPv6",
+      "network": "tcp",
+      "port": 9444,
+      "server": "2406:da14:674:a500:6c37:dc50:4ef9:851a",
+      "servername": "www.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6"
+    },
+    {
+      "client-fingerprint": "ios",
+      "name": "日本-隧道01",
+      "network": "ws",
+      "port": 443,
+      "server": "opinions-advocate-amenities-breeding.trycloudflare.com",
+      "servername": "opinions-advocate-amenities-breeding.trycloudflare.com",
+      "tls": true,
+      "type": "vless",
       "uuid": "b9edc699-275e-4017-810e-42186abbdbc6",
       "ws-opts": {
         "headers": {
-          "Host": "sg-edge.xn--kivt58h.lol"
+          "Host": "opinions-advocate-amenities-breeding.trycloudflare.com"
         },
-        "path": "/sg-edge-vm-859c3a8d7341c647"
+        "path": "/jp-edge-vless-112328f11b40c983"
+      }
+    },
+    {
+      "client-fingerprint": "ios",
+      "name": "日本-隧道02",
+      "network": "ws",
+      "port": 443,
+      "server": "indoor-following-brokers-poor.trycloudflare.com",
+      "servername": "indoor-following-brokers-poor.trycloudflare.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9edc699-275e-4017-810e-42186abbdbc6",
+      "ws-opts": {
+        "headers": {
+          "Host": "indoor-following-brokers-poor.trycloudflare.com"
+        },
+        "path": "/jp-edge-vless-6d4137c914b139db"
       }
     },
     {
@@ -119,7 +195,7 @@
       }
     },
     {
-      "client-fingerprint": "safari",
+      "client-fingerprint": "firefox",
       "name": "新加坡-隧道03",
       "network": "ws",
       "port": 443,
@@ -220,7 +296,7 @@
       }
     },
     {
-      "client-fingerprint": "firefox",
+      "client-fingerprint": "chrome",
       "name": "香港-隧道03",
       "network": "ws",
       "port": 443,
@@ -321,7 +397,7 @@
       }
     },
     {
-      "client-fingerprint": "firefox",
+      "client-fingerprint": "qq",
       "name": "美国-隧道02",
       "network": "ws",
       "port": 443,
@@ -1721,87 +1797,6 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "立陶宛+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "game.betust.net",
-      "servername": "api14.betust.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #12",
-      "network": "ws",
-      "port": 443,
-      "server": "104.21.85.121",
-      "servername": "5-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr",
-      "tls": true,
-      "type": "vless",
-      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
-      "ws-opts": {
-        "headers": {
-          "Host": "5-m20.c98a10b6-5ab2-4974-8750-c24cffb2c622.kdns.fr"
-        },
-        "path": "/8qMLgNapWf6SBxo8fhQlVPYO"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "捷克+V2CROSS.COM",
-      "network": "tcp",
-      "port": 442,
-      "server": "95.85.245.163",
-      "servername": "p-nt-www-amazon-com-kalias.amazon.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "2c070f10-57e8-442b-b6cb-ff39b35d929d"
-    },
-    {
-      "alterId": 0,
-      "cipher": "none",
-      "name": "美国 V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "165.140.217.14",
-      "tls": false,
-      "type": "vmess",
-      "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "立陶宛+V2CROSS.COM #2",
-      "network": "tcp",
-      "port": 443,
-      "server": "app.betust.net",
-      "servername": "app.betust.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+V2CROSS.COM",
-      "network": "ws",
-      "port": 443,
-      "server": "spider-gzsv-production.up.railway.app",
-      "servername": "spider-gzsv-production.up.railway.app",
-      "tls": true,
-      "type": "vless",
-      "uuid": "823a4043-6734-410f-9bef-d52cf1b6b10b",
-      "ws-opts": {
-        "headers": {
-          "Host": "spider-gzsv-production.up.railway.app"
-        },
-        "path": "/ws/823a4043-6734-410f-9bef-d52cf1b6b10b"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
       "name": "俄罗斯+V2CROSS.COM",
       "network": "tcp",
       "port": 443,
@@ -1810,6 +1805,45 @@
       "tls": true,
       "type": "vless",
       "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f"
+    },
+    {
+      "name": "美国+CloudFlare节点 #12",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "104.20.6.134",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "name": "美国+V2CROSS.COM",
+      "network": "ws",
+      "password": "MITIVPN",
+      "port": 443,
+      "server": "167.82.76.7",
+      "sni": "ssl.fastly.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net"
+        },
+        "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1"
+      }
+    },
+    {
+      "name": "日本+东京M247网络",
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "port": 20562,
+      "server": "mszz.mangshe.xyz",
+      "skip-cert-verify": true,
+      "sni": "www.microsoft.com",
+      "type": "hysteria2"
     },
     {
       "name": "美国+CloudFlare节点 #13",
@@ -1842,7 +1876,7 @@
       "name": "end-gfw.com@kr64",
       "network": "tcp",
       "port": 8686,
-      "server": "54.180.88.24",
+      "server": "43.201.154.24",
       "servername": "www.apple.com",
       "tls": true,
       "type": "vless",
@@ -3277,5 +3311,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 233
+  "total": 236
 }
