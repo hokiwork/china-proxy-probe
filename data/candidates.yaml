@@ -1043,135 +1043,6 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: 巴西圣保罗+CloudFlare节点
-  type: trojan
-  server: 188.114.97.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 172.67.149.60
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 乌克兰+V2CROSS.COM
-  type: vless
-  server: 193.238.154.18
-  port: 443
-  uuid: 2297ea1f-2415-4a2c-be20-4a3a978283a2
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: es1.hat.onl
-  flow: xtls-rprx-vision
-- name: 澳大利亚+V2CROSS.COM
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: 172.67.148.211
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 3-M19.sOutH-AfRiCA-CHANNEL.ccwU.cc
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 3-M19.SOUth-aFriCA-CHaNnel.CCWu.Cc
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 188.220.67.245
-  port: 2087
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  network: ws
-  tls: false
-  ws-opts:
-    path: /8f2690e2d016
-    headers:
-      Host: ''
-- name: 美国+乔治亚洲亚特兰大Fastly节点
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: '美国+CloudFlare节点 #3'
-  type: trojan
-  server: 104.26.14.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #4'
-  type: vless
-  server: 172.67.136.91
-  port: 443
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 9-m19.alBAnIa.ccwU.cC
-  ws-opts:
-    path: /CjBjB9sn5pCvaSwScc
-    headers:
-      Host: 9-m19.ALbaNia.ccwu.cc
-- name: '美国+CloudFlare节点 #5'
-  type: trojan
-  server: 104.26.15.137
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 欧盟+V2CROSS.COM
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  network: ws
-  tls: true
-  client-fingerprint: edge
-  servername: ru05.abvpn.ru
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
 - name: end-gfw.com@sg333
   type: vless
   server: 13.212.69.185
@@ -1190,22 +1061,63 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: www.apple.com
-- name: 加拿大温哥华+CloudFlare节点
-  type: vless
-  server: 103.31.4.10
-  port: 443
-  uuid: 77dc177b-79d9-49ac-92e1-2f1011faa5e3
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: f871a986.69lover.site
-  ws-opts:
-    path: /api/v2/b8ee4ba356df307c/stream
-    headers:
-      Host: f871a986.69lover.site
-- name: '美国+CloudFlare节点 #6'
+- name: 未知 SS-10 | free-nodes
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: wwj19enpp68px8t7
+- name: 未知 SS-11 | free-nodes
+  type: ss
+  server: 194.233.74.160
+  port: 2342
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
+- name: 未知 SS-13 | free-nodes
+  type: ss
+  server: 82.38.31.42
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 未知 SS-14 | free-nodes
+  type: ss
+  server: 82.38.31.46
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 未知 SS-15 | free-nodes
+  type: ss
+  server: 82.38.31.82
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 未知 SS-16 | free-nodes
+  type: ss
+  server: 43.173.90.202
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: sg-proxy-2026
+- name: 未知 SS-17 | free-nodes
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 未知 SS-18 | free-nodes
+  type: ss
+  server: 38.180.214.110
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 未知 SS-20 | free-nodes
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 美国+CloudFlare节点
   type: trojan
-  server: 104.17.111.8
+  server: 104.18.152.175
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1214,9 +1126,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 加拿大+V2CROSS.COM
+- name: 美国+V2CROSS.COM
   type: trojan
-  server: 130.250.137.171
+  server: 165.215.250.14
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1225,9 +1137,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #7'
+- name: '美国+CloudFlare节点 #2'
   type: trojan
-  server: 104.18.152.133
+  server: 104.18.152.204
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1236,9 +1148,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #8'
+- name: '美国+CloudFlare节点 #3'
   type: trojan
-  server: 104.18.152.108
+  server: 104.16.174.12
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1247,98 +1159,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #9'
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #10'
-  type: vless
-  server: 172.64.145.202
-  port: 8443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: '美国+CloudFlare节点 #11'
-  type: trojan
-  server: 104.18.152.161
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #12'
-  type: trojan
-  server: 104.18.152.77
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 保加利亚+V2CROSS.COM
-  type: vless
-  server: 194.93.63.246
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: pl.bubahero.com
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #13'
-  type: trojan
-  server: 104.18.152.244
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #14'
-  type: trojan
-  server: 104.21.8.107
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #15'
-  type: vless
-  server: 172.64.53.215
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: '美国+CloudFlare节点 #16'
+- name: '美国+CloudFlare节点 #4'
   type: trojan
   server: 104.18.152.229
   port: 443
@@ -1349,9 +1170,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #17'
+- name: '美国+CloudFlare节点 #5'
   type: trojan
-  server: 172.67.74.2
+  server: 104.18.152.208
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1360,29 +1181,176 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: '美国+CloudFlare节点 #18'
-  type: vless
-  server: 172.67.217.240
+- name: 日本东京+technological.ro
+  type: hysteria2
+  server: msjp1.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 美国+加州
+  type: trojan
+  server: render.com
   port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
-  tls: true
-  client-fingerprint: unsafe
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   ws-opts:
-    path: /?ed=2560
+    path: /assignment
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: '英国+V2CROSS.COM #2'
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #6'
+  type: trojan
+  server: 104.18.152.244
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #7'
+  type: trojan
+  server: 104.18.152.152
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #8'
+  type: trojan
+  server: 104.18.152.73
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #9'
+  type: trojan
+  server: www.speedtest.org
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #10'
+  type: trojan
+  server: 172.67.221.242
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #11'
+  type: trojan
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 美国+加利福尼亚
+  type: ss
+  server: 64.177.90.30
+  port: 8388
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
+- name: '美国+CloudFlare节点 #12'
+  type: trojan
+  server: 104.18.152.246
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #13'
+  type: trojan
+  server: 104.18.152.97
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #14'
+  type: trojan
+  server: 104.18.152.108
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: '美国+CloudFlare节点 #15'
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: end-gfw.com@sg89
   type: vless
-  server: 31.76.57.191
-  port: 2443
-  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
+  server: 13.214.216.71
+  port: 8686
+  uuid: f0b9ae63-91a7-4673-924e-498e0e0828c0
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: cstudio.semiconductor.samsung.com
-  flow: xtls-rprx-vision
+  servername: www.apple.com
+- name: end-gfw.com@kr64
+  type: vless
+  server: 3.39.23.221
+  port: 8686
+  uuid: f0b9ae63-91a7-4673-924e-498e0e0828c0
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+- name: 'end-gfw.com@sg89 #2'
+  type: vless
+  server: 3.1.26.80
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+- name: 'end-gfw.com@kr64 #2'
+  type: vless
+  server: 3.39.189.207
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
 - name: 芬兰(v2clash.blog 2026-7.30更新
   type: vless
   server: 57.129.47.47
@@ -1440,17 +1408,6 @@ proxies:
     headers:
       Host: vms.lifetime42.workers.dev
 - name: 'US美国(v2clash.blog 2026-7.30更新 #4'
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-7.30更新 #5'
   type: vless
   server: t1.hhaakk9922.com
   port: 36794
@@ -1703,28 +1660,6 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime55.workers.dev
-- name: FR法国(v2clash.blog 2026-8.13更新
-  type: trojan
-  server: 104.18.152.175
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: US美国(v2clash.blog 2026-8.13更新
-  type: trojan
-  server: 104.18.152.97
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: JP日本(v2clash.blog 2026-8.13更新
   type: trojan
   server: 104.16.174.44
@@ -1747,7 +1682,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-8.13更新 #2'
+- name: US美国(v2clash.blog 2026-8.13更新
   type: vless
   server: 91.206.71.8
   port: 80
@@ -1759,7 +1694,7 @@ proxies:
     path: /pyip=Telegram🇨🇳 @WangCai2
     headers:
       Host: round-haze-8783.294.workers.dev
-- name: 'FR法国(v2clash.blog 2026-8.13更新 #2'
+- name: FR法国(v2clash.blog 2026-8.13更新
   type: trojan
   server: 104.18.152.159
   port: 443
@@ -1794,7 +1729,7 @@ proxies:
       Host: www.ignitelimit.com
 - name: US美国(v2clash.blog 2026-8.15更新
   type: trojan
-  server: 104.18.152.246
+  server: 216.24.57.7
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1805,7 +1740,7 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'US美国(v2clash.blog 2026-8.15更新 #2'
   type: trojan
-  server: 216.24.57.7
+  server: www.ignitelimit.com
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1816,17 +1751,6 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'US美国(v2clash.blog 2026-8.15更新 #3'
   type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-8.15更新 #4'
-  type: trojan
   server: 104.18.152.225
   port: 443
   password: humanity
@@ -1836,7 +1760,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-8.15更新 #5'
+- name: 'US美国(v2clash.blog 2026-8.15更新 #4'
   type: trojan
   server: 104.16.174.46
   port: 443
@@ -1871,18 +1795,7 @@ proxies:
       Host: ''
 - name: 'US美国(v2clash.blog 2026-8.25更新 #2'
   type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-8.25更新 #3'
-  type: trojan
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 172.67.149.60
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1915,7 +1828,29 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'US美国(v2clash.blog 2026-8.27更新 #3'
   type: trojan
-  server: render.com
+  server: 104.18.152.77
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'US美国(v2clash.blog 2026-8.27更新 #4'
+  type: trojan
+  server: 130.250.137.171
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: US美国(v2clash.blog 2026-8.28更新
+  type: trojan
+  server: 104.18.152.133
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1935,9 +1870,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: US美国(v2clash.blog 2026-8.28更新
+- name: CA加拿大(v2clash.blog 2026-8.28更新
   type: trojan
-  server: 104.18.152.73
+  server: 104.17.111.8
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -1968,6 +1903,17 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: 'US美国(v2clash.blog 2026-8.31更新 #3'
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: US美国(mibei77.com 米贝节点分享
   type: trojan
   server: 104.17.111.1
@@ -1982,6 +1928,17 @@ proxies:
 - name: FR法国(mibei77.com 米贝节点分享
   type: trojan
   server: 104.16.174.109
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'US美国(mibei77.com 米贝节点分享 #2'
+  type: trojan
+  server: 104.18.152.161
   port: 443
   password: humanity
   sni: www.ignitelimit.com
@@ -2011,28 +1968,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: www.ibm.com
-- name: US美国(v2clash.blog 2026-9.12新
-  type: trojan
-  server: www.speedtest.org
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'US美国(v2clash.blog 2026-9.12新 #2'
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: US美国(v2clash.blog 2026-9.5
   type: vless
   server: 104.21.62.234
@@ -2070,6 +2005,19 @@ proxies:
       Host: www.ignitelimit.com
 - name: US美国(v2clash.blog 2026-9.6
   type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ru05.abvpn.ru
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 'US美国(v2clash.blog 2026-9.6 #2'
+  type: vless
   server: rrr.windconnect.pro
   port: 443
   uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
@@ -2091,7 +2039,7 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-- name: 'US美国(v2clash.blog 2026-9.6 #2'
+- name: 'US美国(v2clash.blog 2026-9.6 #3'
   type: vless
   server: 172.67.143.2
   port: 443
@@ -2113,7 +2061,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: www.yahoo.com
-- name: 'US美国(v2clash.blog 2026-9.6 #3'
+- name: 'US美国(v2clash.blog 2026-9.6 #4'
   type: vless
   server: 172.67.212.14
   port: 443
@@ -2128,6 +2076,18 @@ proxies:
       Host: 8-m19.SoUth-AFriCa-onlInE.cCwU.cC
 - name: DE德国v2clash.blog 2026-9.8
   type: vless
+  server: 188.220.67.245
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /8f2690e2d016
+    headers:
+      Host: ''
+- name: 'DE德国v2clash.blog 2026-9.8 #2'
+  type: vless
   server: 161.35.64.81
   port: 2087
   uuid: b5ea4dcb-cd04-466c-bd43-f9ea10953803
@@ -2139,6 +2099,18 @@ proxies:
     path: /
     headers:
       Host: youxuan.xiaosa.kdns.fr
+- name: 'DE德国v2clash.blog 2026-9.8 #3'
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?–v2rayNplus–v2rayNplus–v2rayNplus–
 - name: US美国v2clash.blog 2026-9.8
   type: vless
   server: 193.36.38.17
@@ -2307,6 +2279,17 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: 'US美国(v2clash.blog 2026-9.17更新 #3'
+  type: trojan
+  server: 104.21.8.107
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'FR法国(v2clash.blog 2026-9.17更新 #2'
   type: trojan
   server: 104.18.152.155
@@ -2463,43 +2446,46 @@ proxy-groups:
   - 🇯🇵_JP_日本->🇸🇩_SD_苏丹
   - '🇭🇰_HK_中国香港->🇺🇸_US_美国 #2'
   - 🇺🇸 美国
-  - 巴西圣保罗+CloudFlare节点
+  - end-gfw.com@sg333
+  - end-gfw.com@sg3
+  - 未知 SS-10 | free-nodes
+  - 未知 SS-11 | free-nodes
+  - 未知 SS-13 | free-nodes
+  - 未知 SS-14 | free-nodes
+  - 未知 SS-15 | free-nodes
+  - 未知 SS-16 | free-nodes
+  - 未知 SS-17 | free-nodes
+  - 未知 SS-18 | free-nodes
+  - 未知 SS-20 | free-nodes
   - 美国+CloudFlare节点
-  - 乌克兰+V2CROSS.COM
-  - 澳大利亚+V2CROSS.COM
+  - 美国+V2CROSS.COM
   - '美国+CloudFlare节点 #2'
-  - 英国+V2CROSS.COM
-  - 美国+乔治亚洲亚特兰大Fastly节点
   - '美国+CloudFlare节点 #3'
   - '美国+CloudFlare节点 #4'
   - '美国+CloudFlare节点 #5'
-  - 欧盟+V2CROSS.COM
-  - end-gfw.com@sg333
-  - end-gfw.com@sg3
-  - 加拿大温哥华+CloudFlare节点
+  - 日本东京+technological.ro
+  - 美国+加州
   - '美国+CloudFlare节点 #6'
-  - 加拿大+V2CROSS.COM
   - '美国+CloudFlare节点 #7'
   - '美国+CloudFlare节点 #8'
   - '美国+CloudFlare节点 #9'
   - '美国+CloudFlare节点 #10'
   - '美国+CloudFlare节点 #11'
+  - 美国+加利福尼亚
   - '美国+CloudFlare节点 #12'
-  - 保加利亚+V2CROSS.COM
   - '美国+CloudFlare节点 #13'
   - '美国+CloudFlare节点 #14'
   - '美国+CloudFlare节点 #15'
-  - '美国+CloudFlare节点 #16'
-  - '美国+CloudFlare节点 #17'
-  - '美国+CloudFlare节点 #18'
-  - '英国+V2CROSS.COM #2'
+  - end-gfw.com@sg89
+  - end-gfw.com@kr64
+  - 'end-gfw.com@sg89 #2'
+  - 'end-gfw.com@kr64 #2'
   - 芬兰(v2clash.blog 2026-7.30更新
   - DE德国(v2clash.blog 2026-7.30更新
   - US美国(v2clash.blog 2026-7.30更新
   - 'US美国(v2clash.blog 2026-7.30更新 #2'
   - 'US美国(v2clash.blog 2026-7.30更新 #3'
   - 'US美国(v2clash.blog 2026-7.30更新 #4'
-  - 'US美国(v2clash.blog 2026-7.30更新 #5'
   - DE德国(v2clash.blog 2026-7.31更新
   - 芬兰(v2clash.blog 2026-7.31更新
   - US美国(v2clash.blog 2026-7.31更新
@@ -2520,45 +2506,46 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-8.10更新 #2'
   - 'FR法国(v2clash.blog 2026-8.10更新 #3'
   - 'FR法国(v2clash.blog 2026-8.10更新 #4'
-  - FR法国(v2clash.blog 2026-8.13更新
-  - US美国(v2clash.blog 2026-8.13更新
   - JP日本(v2clash.blog 2026-8.13更新
   - 土耳其(v2clash.blog 2026-8.13更新
-  - 'US美国(v2clash.blog 2026-8.13更新 #2'
-  - 'FR法国(v2clash.blog 2026-8.13更新 #2'
+  - US美国(v2clash.blog 2026-8.13更新
+  - FR法国(v2clash.blog 2026-8.13更新
   - CA加拿大(v2clash.blog 2026-8.15更新
   - 'CA加拿大(v2clash.blog 2026-8.15更新 #2'
   - US美国(v2clash.blog 2026-8.15更新
   - 'US美国(v2clash.blog 2026-8.15更新 #2'
   - 'US美国(v2clash.blog 2026-8.15更新 #3'
   - 'US美国(v2clash.blog 2026-8.15更新 #4'
-  - 'US美国(v2clash.blog 2026-8.15更新 #5'
   - US美国(v2clash.blog 2026-8.25更新
   - FR法国(v2clash.blog 2026-8.25更新
   - 'US美国(v2clash.blog 2026-8.25更新 #2'
-  - 'US美国(v2clash.blog 2026-8.25更新 #3'
   - US美国(v2clash.blog 2026-8.27更新
   - 'US美国(v2clash.blog 2026-8.27更新 #2'
   - 'US美国(v2clash.blog 2026-8.27更新 #3'
-  - FR法国(v2clash.blog 2026-8.28更新
+  - 'US美国(v2clash.blog 2026-8.27更新 #4'
   - US美国(v2clash.blog 2026-8.28更新
+  - FR法国(v2clash.blog 2026-8.28更新
+  - CA加拿大(v2clash.blog 2026-8.28更新
   - US美国(v2clash.blog 2026-8.31更新
   - 'US美国(v2clash.blog 2026-8.31更新 #2'
+  - 'US美国(v2clash.blog 2026-8.31更新 #3'
   - US美国(mibei77.com 米贝节点分享
   - FR法国(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #2'
   - DE德国(v2clash.blog 2026-9.12新
   - 'DE德国(v2clash.blog 2026-9.12新 #2'
-  - US美国(v2clash.blog 2026-9.12新
-  - 'US美国(v2clash.blog 2026-9.12新 #2'
   - US美国(v2clash.blog 2026-9.5
   - FR法国(v2clash.blog 2026-9.5
   - 'FR法国(v2clash.blog 2026-9.5 #2'
   - US美国(v2clash.blog 2026-9.6
-  - RU俄罗斯(v2clash.blog 2026-9.6
   - 'US美国(v2clash.blog 2026-9.6 #2'
-  - FR法国(v2clash.blog 2026-9.6
+  - RU俄罗斯(v2clash.blog 2026-9.6
   - 'US美国(v2clash.blog 2026-9.6 #3'
+  - FR法国(v2clash.blog 2026-9.6
+  - 'US美国(v2clash.blog 2026-9.6 #4'
   - DE德国v2clash.blog 2026-9.8
+  - 'DE德国v2clash.blog 2026-9.8 #2'
+  - 'DE德国v2clash.blog 2026-9.8 #3'
   - US美国v2clash.blog 2026-9.8
   - 'US美国v2clash.blog 2026-9.8 #2'
   - US美国v2clash.blog 2026-9.9
@@ -2573,6 +2560,7 @@ proxy-groups:
   - FR法国(v2clash.blog 2026-9.17更新
   - US美国(v2clash.blog 2026-9.17更新
   - 'US美国(v2clash.blog 2026-9.17更新 #2'
+  - 'US美国(v2clash.blog 2026-9.17更新 #3'
   - 'FR法国(v2clash.blog 2026-9.17更新 #2'
   - 匈牙利(v2clash.blog 2026-9.22更新
   - TW台湾(v2clash.blog 2026-9.22更新
