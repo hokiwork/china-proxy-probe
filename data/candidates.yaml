@@ -3,6 +3,136 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: AU-1
+  type: vless
+  server: 207.57.133.51
+  port: 29896
+  uuid: 3767d445-9012-4f95-90ee-b5f15301dfe0
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: AU-2
+  type: vless
+  server: 207.57.135.28
+  port: 27659
+  uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: AU-3
+  type: vless
+  server: 45.152.65.68
+  port: 37574
+  uuid: e2353f83-9a40-4b46-82e1-666b1652d479
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: AU-4
+  type: vless
+  server: 45.152.66.160
+  port: 2581
+  uuid: 600d0970-77e5-4b57-8a88-a5b623c5a3d7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: AU-5
+  type: vless
+  server: 68.64.183.49
+  port: 50045
+  uuid: 72f59ca4-df5d-4ab1-af97-3e0a10ba56fd
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: vless
+  type: vless
+  server: www.microsoft.com
+  port: 443
+  uuid: 8f9dc380-fa9e-46e1-93c5-016987cbd17c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: microsoft.com
+  flow: xtls-rprx-vision
+- name: Japan-NG2 FREE
+  type: vless
+  server: xxxnodeakjp1.jumpernode.online
+  port: 19012
+  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.sony.bg
+  flow: xtls-rprx-vision
+- name: Japan-NG1 FREE
+  type: vless
+  server: xxxnodeakjp1.jumpernode.online
+  port: 19011
+  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.sony.co.nz
+  flow: xtls-rprx-vision
+- name: Japan-g01 FREE
+  type: vless
+  server: jpga01.jumperservice.com
+  port: 19001
+  uuid: 0709ba80-f353-4636-85ce-43b82990ac2d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.speedtest.org
+  flow: xtls-rprx-vision
+- name: Japan-g02 FREE
+  type: vless
+  server: jpga01.jumperservice.com
+  port: 19001
+  uuid: 61646a3c-e3e6-494b-8ae0-a98370ccff69
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: www.speedtest.org
+  flow: xtls-rprx-vision
+- name: Japan-JND1 FREE
+  type: vless
+  server: jumpernode.online
+  port: 443
+  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: amazon.com
+  flow: xtls-rprx-vision
+- name: USA-JNG1 VIP
+  type: vless
+  server: jumpernode.online
+  port: 443
+  uuid: ce7beb9a-5dc1-47b3-b3ff-94521430c446
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: yp.amazon.com
+  flow: xtls-rprx-vision
+- name: USA-NBNGD1 VIP
+  type: vless
+  server: usanbnode.jumpernode.online
+  port: 443
+  uuid: ffe0a6ce-07f0-4146-910f-74bdce2f9697
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: konrad-test.amazon.com
+  flow: xtls-rprx-vision
 - name: SG
   type: vmess
   server: 170.187.229.90
@@ -65,6 +195,12 @@ proxies:
       Host: 654168416355441.oylfmxz.cn
     path: /
   servername: 654168416355441.oylfmxz.cn
+- name: 新加坡A2
+  type: ss
+  server: hz-dx.duaaoped.xyz
+  port: 39433
+  cipher: chacha20-ietf-poly1305
+  password: adc570f1-d591-4a5a-93f0-0013bba3f116
 - name: 🇭🇰 V301U-1X-BGP-HK-NF
   type: ssr
   server: qcg8fhp6y6v9wn.cache872671.com
@@ -1131,7 +1267,7 @@ proxies:
   servername: www.apple.com
 - name: 'end-gfw.com@sg89 #2'
   type: vless
-  server: 13.214.145.59
+  server: 13.214.139.209
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1140,7 +1276,7 @@ proxies:
   servername: www.apple.com
 - name: 'end-gfw.com@kr64 #2'
   type: vless
-  server: 54.180.81.75
+  server: 13.209.96.5
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -2140,11 +2276,25 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - AU-1
+  - AU-2
+  - AU-3
+  - AU-4
+  - AU-5
+  - vless
+  - Japan-NG2 FREE
+  - Japan-NG1 FREE
+  - Japan-g01 FREE
+  - Japan-g02 FREE
+  - Japan-JND1 FREE
+  - USA-JNG1 VIP
+  - USA-NBNGD1 VIP
   - SG
   - 美国  port:2087,2083,2053,2096
   - 美国自建
   - 3vip.cc.cd
   - 新西兰(NZ)
+  - 新加坡A2
   - 🇭🇰 V301U-1X-BGP-HK-NF
   - 🇭🇰 V302U-1X-BGP-HK-NF
   - 🇭🇰 V303U-1X-BGP-HK-NF
