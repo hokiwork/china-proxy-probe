@@ -1,38 +1,10 @@
 {
-  "generated_at": "2026-09-24T04:35:38.372441+00:00",
+  "generated_at": "2026-09-24T11:37:18.745669+00:00",
   "proxies": [
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国自建",
-      "network": "tcp",
-      "port": 8444,
-      "server": "us.netease.uz",
-      "servername": "us.netease.uz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "fd3b5215-287b-4f16-84d9-6b5854dea110"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "3vip.cc.cd",
-      "network": "ws",
-      "port": 443,
-      "server": "3vip.cc.cd",
-      "servername": "3vip.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "ef9d2063-0140-472b-8b17-ba02ba4b4435",
-      "ws-opts": {
-        "headers": {
-          "Host": "3vip.cc.cd"
-        },
-        "path": "/"
-      }
-    },
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "新西兰(NZ)",
+      "name": "美国(US)",
       "network": "ws",
       "port": 443,
       "server": "654168416355441.oylfmxz.cn",
@@ -56,16 +28,12 @@
       "type": "ss"
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "剩余流量：0",
-      "network": "tcp",
-      "port": 80,
+      "cipher": "aes-128-gcm",
+      "name": "在线设备数量超过套餐允许值！",
+      "password": "7418b3ff-b200-4ee2-8658-a598b318d28f",
+      "port": 65535,
       "server": "127.0.0.1",
-      "servername": "apple.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "3c32b88d-fa92-4e3f-b0be-77331f66dc39"
+      "type": "ss"
     },
     {
       "alterId": 0,
@@ -857,7 +825,7 @@
       "name": "end-gfw.com@sg89 #2",
       "network": "tcp",
       "port": 8686,
-      "server": "54.169.2.81",
+      "server": "54.255.187.238",
       "servername": "www.apple.com",
       "tls": true,
       "type": "vless",
@@ -868,42 +836,18 @@
       "name": "end-gfw.com@kr64 #2",
       "network": "tcp",
       "port": 8686,
-      "server": "52.78.152.121",
+      "server": "52.78.60.88",
       "servername": "www.apple.com",
       "tls": true,
       "type": "vless",
       "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228"
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "俄罗斯+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "188.225.57.78",
-      "servername": "app4.betust.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "波兰+V2CROSS.COM",
-      "network": "tcp",
-      "port": 9443,
-      "server": "194.150.166.230",
-      "servername": "storage.yandexcloud.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
-    },
-    {
       "name": "美国+CloudFlare节点 #16",
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.6",
+      "server": "104.18.152.152",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -918,7 +862,37 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.17.177.143",
+      "server": "104.17.111.1",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "name": "美国+V2CROSS.COM #3",
+      "network": "ws",
+      "password": "MITIVpN",
+      "port": 443,
+      "server": "167.82.76.7",
+      "sni": "ssl.fastly.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net"
+        },
+        "path": "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSs---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN"
+      }
+    },
+    {
+      "name": "美国+得克萨斯州达拉斯Cloudflare+Warp节点",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "8.6.112.0",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -933,7 +907,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.185",
+      "server": "104.18.12.149",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -944,32 +918,23 @@
       }
     },
     {
-      "name": "日本东京+Oracle+Cloud",
-      "password": "my_super_password_123",
-      "port": 5443,
-      "server": "open.2ml.cc.cd",
-      "skip-cert-verify": true,
-      "sni": "open.2ml.cc.cd",
-      "type": "hysteria2"
-    },
-    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "俄罗斯+V2CROSS.COM #2",
+      "name": "日本+V2CROSS.COM",
       "network": "tcp",
-      "port": 9543,
-      "server": "176.98.176.86",
-      "servername": "storage.yandexcloud.net",
+      "port": 443,
+      "server": "103.245.229.32",
+      "servername": "adminvps.ru",
       "tls": true,
       "type": "vless",
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa"
+      "uuid": "8bbe5178-a991-4a56-871c-553e2f8e9e70"
     },
     {
       "name": "美国+CloudFlare节点 #19",
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.26.14.137",
+      "server": "www.ignitelimit.com",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -984,7 +949,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.18.152.133",
+      "server": "104.18.152.208",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -999,7 +964,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.71",
+      "server": "104.16.174.33",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1014,7 +979,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.46",
+      "server": "104.18.152.144",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1029,7 +994,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.18.152.155",
+      "server": "104.16.174.101",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1038,25 +1003,43 @@
         },
         "path": "/assignment"
       }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "俄罗斯+V2CROSS.COM #3",
-      "network": "tcp",
-      "port": 443,
-      "server": "188.225.24.201",
-      "servername": "app11.betust.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9"
     },
     {
       "name": "美国+CloudFlare节点 #24",
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.12",
+      "server": "104.18.152.103",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "name": "美国+CloudFlare节点 #25",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "104.18.152.77",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "name": "美国+V2CROSS.COM #4",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "45.130.125.158",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1069,21 +1052,57 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "俄罗斯+V2CROSS.COM #4",
+      "name": "俄罗斯+V2CROSS.COM",
       "network": "tcp",
       "port": 443,
-      "server": "188.225.77.241",
-      "servername": "api.betust.net",
+      "server": "188.225.25.195",
+      "servername": "app25.betust.net",
       "tls": true,
       "type": "vless",
       "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9"
     },
     {
-      "name": "美国+CloudFlare节点 #25",
+      "client-fingerprint": "edge",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+佛罗里达州迈阿密市",
+      "network": "tcp",
+      "port": 40443,
+      "server": "lyra.yokkastars.com",
+      "servername": "deepl.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "俄罗斯+V2CROSS.COM #2",
+      "network": "tcp",
+      "port": 443,
+      "server": "91.240.87.166",
+      "servername": "yandex.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "巴西+V2CROSS.COM",
+      "network": "tcp",
+      "port": 443,
+      "server": "177.3.213.112",
+      "servername": "germanz.ruletka.study",
+      "tls": true,
+      "type": "vless",
+      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a"
+    },
+    {
+      "name": "美国+CloudFlare节点 #26",
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.16.174.36",
+      "server": "www.speedtest.org",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1624,7 +1643,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "www.ignitelimit.com",
+      "server": "104.18.152.225",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1639,7 +1658,7 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.18.152.225",
+      "server": "104.16.174.46",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -1712,21 +1731,6 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "104.18.152.144",
-      "sni": "www.ignitelimit.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-8.27更新 #2",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
       "server": "104.18.152.50",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
@@ -1738,22 +1742,7 @@
       }
     },
     {
-      "name": "US美国(v2clash.blog 2026-8.27更新 #3",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "104.18.152.77",
-      "sni": "www.ignitelimit.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-8.27更新 #4",
+      "name": "US美国(v2clash.blog 2026-8.27更新 #2",
       "network": "ws",
       "password": "humanity",
       "port": 443,
@@ -1769,6 +1758,21 @@
     },
     {
       "name": "US美国(v2clash.blog 2026-8.28更新",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "104.18.152.133",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "name": "US美国(v2clash.blog 2026-8.28更新 #2",
       "network": "ws",
       "password": "humanity",
       "port": 443,
@@ -1798,7 +1802,7 @@
       }
     },
     {
-      "name": "US美国(v2clash.blog 2026-8.28更新 #2",
+      "name": "US美国(v2clash.blog 2026-8.28更新 #3",
       "network": "ws",
       "password": "humanity",
       "port": 443,
@@ -1858,21 +1862,6 @@
       }
     },
     {
-      "name": "US美国(mibei77.com 米贝节点分享",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "104.17.111.1",
-      "sni": "www.ignitelimit.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
       "name": "FR法国(mibei77.com 米贝节点分享",
       "network": "ws",
       "password": "humanity",
@@ -1888,7 +1877,7 @@
       }
     },
     {
-      "name": "US美国(mibei77.com 米贝节点分享 #2",
+      "name": "US美国(mibei77.com 米贝节点分享",
       "network": "ws",
       "password": "humanity",
       "port": 443,
@@ -1934,21 +1923,6 @@
       "network": "ws",
       "password": "humanity",
       "port": 443,
-      "server": "www.speedtest.org",
-      "sni": "www.ignitelimit.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-9.12新 #2",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
       "server": "join-telegram-channel.tirexnet.kdns.fr",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
@@ -1982,21 +1956,6 @@
       "password": "humanity",
       "port": 443,
       "server": "104.18.152.207",
-      "sni": "www.ignitelimit.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "name": "FR法国(v2clash.blog 2026-9.5 #2",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "45.130.125.158",
       "sni": "www.ignitelimit.com",
       "type": "trojan",
       "ws-opts": {
@@ -2382,6 +2341,21 @@
       }
     },
     {
+      "name": "FR法国(v2clash.blog 2026-9.17更新 #2",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "104.18.152.155",
+      "sni": "www.ignitelimit.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
       "client-fingerprint": "chrome",
       "name": "匈牙利(v2clash.blog 2026-9.22更新",
       "network": "ws",
@@ -2435,5 +2409,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 169
+  "total": 167
 }
