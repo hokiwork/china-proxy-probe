@@ -3,15 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: sz.770886.xyz-xhttp
-  type: vless
-  server: sz.770886.xyz
-  port: 2053
-  uuid: 63331bb4-5666-413b-eabc-ce5d7d461ede
-  network: xhttp
-  tls: true
-  client-fingerprint: random
-  servername: sz.770886.xyz
 - name: abctest.8rm.net
   type: vless
   server: abctest.8rm.net
@@ -51,13 +42,45 @@ proxies:
     path: /
     headers:
       Host: edg-2oo.pages.dev
-- name: vless
+- name: qqyst.sfht.kdns.fr
   type: vless
-  server: 23.172.40.108
+  server: qqyst.sfht.kdns.fr
   port: 443
-  uuid: b488a893-d63f-46b5-94ce-b0f99b2ab02d
-  network: tcp
-  tls: false
+  uuid: 33e87cba-907f-4990-8dbd-a9d14e5d17e1
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: qqyst.sfht.kdns.fr
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: qqyst.sfht.kdns.fr
+- name: 🇩🇪 德国 10
+  type: vless
+  server: 64.226.88.144
+  port: 2096
+  uuid: 2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snni.868001.xyz
+  ws-opts:
+    path: /proxyip=tw.william.us.ci?uuid=2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
+    headers:
+      Host: snni.868001.xyz
+- name: 🇨🇿 捷克 08
+  type: vless
+  server: 91.199.147.41
+  port: 443
+  uuid: 2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snni.868001.xyz
+  ws-opts:
+    path: /proxyip=tw.william.us.ci?uuid=2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
+    headers:
+      Host: snni.868001.xyz
 - name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
   type: vless
   server: 176.109.104.195
@@ -523,7 +546,7 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: silent-snow-1a0d.241-b0a.workers.dev
-- name: 'vless #2'
+- name: vless
   type: vless
   server: 113.30.154.65
   port: 443
@@ -814,7 +837,7 @@ proxies:
       Host: o.server3peekconfig.workers.dev
 - name: 'end-gfw.com@sg89 #2'
   type: vless
-  server: 56.10.135.135
+  server: 54.169.119.168
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -823,7 +846,7 @@ proxies:
   servername: www.apple.com
 - name: 'end-gfw.com@kr64 #2'
   type: vless
-  server: 13.125.147.214
+  server: 15.164.245.197
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1955,11 +1978,12 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - sz.770886.xyz-xhttp
   - abctest.8rm.net
   - 7qvtl.b2eg.jho.hh.vavava.kdns.fr
   - edg-2oo.pages.dev
-  - vless
+  - qqyst.sfht.kdns.fr
+  - 🇩🇪 德国 10
+  - 🇨🇿 捷克 08
   - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
@@ -2002,7 +2026,7 @@ proxy-groups:
   - '美国+CloudFlare节点 #9'
   - 新加坡+甲骨文机房
   - '美国+CloudFlare节点 #10'
-  - 'vless #2'
+  - vless
   - '美国+CloudFlare节点 #11'
   - 美国弗吉尼亚州阿什本+CloudFlare节点
   - '美国+CloudFlare节点 #12'
