@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: edg-2oo.pages.dev
-  type: vless
-  server: edg-2oo.pages.dev
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edg-2oo.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: edg-2oo.pages.dev
 - name: 优选域名-01
   type: vless
   server: abctest.8rm.net
@@ -68,1102 +55,2357 @@ proxies:
     path: /proxyip=tw.william.us.ci?uuid=2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
     headers:
       Host: snni.868001.xyz
-- name: 📢每日更新
-  type: ss
+- name: 🇸🇬 ⚠️订阅已失效,请重新获取
   server: 0.0.0.0
   port: 1
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 📡电报频道:@clashv8
   type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: 🇸🇬 每日更新
   server: 0.0.0.0
   port: 2
+  type: ss
   cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇦🇪 阿联酋 01
-  type: hysteria2
-  server: db1.mangshe.xyz
-  port: 2056
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  tls: true
-  sni: db1.mangshe.xyz
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 01
-  type: hysteria2
-  server: srvhy1.ezcon24.online
-  port: 8443
-  password: 130e6aab-9eba-441e-9021-22cbccc72832
-  tls: true
-  sni: srvhy1.ezcon24.online
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  udp: true
-- name: 🇩🇪 德国 02
-  type: vless
-  server: 31.77.152.14
-  port: 443
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  network: tcp
-  servername: de1.murhost.network
-  sni: de1.murhost.network
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: jJQ3uy2Se5ObXCsYJnT-2ukvUMRiOBBfOZ38Wnm2Ygs
-    short-id: a75046af5dcaf1d2
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇩🇪 德国 03
-  type: vless
-  server: 164.90.191.172
-  port: 47260
-  uuid: dbe453d8-112d-4bad-b353-3ccf60044a23
-  network: tcp
-  servername: 164.90.191.172
-  sni: 164.90.191.172
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 04
-  type: vless
-  server: 94.156.155.27
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-  network: tcp
-  servername: www.telekom.de
-  sni: www.telekom.de
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
-    short-id: 8f892fa1
-  udp: true
-- name: 🇩🇪 德国 05
-  type: vless
-  server: 52.59.68.6
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  network: tcp
-  servername: 52.59.68.6
-  sni: 52.59.68.6
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇸 西班牙 01
-  type: vless
-  server: pg-sp2-bot.gigatapbot.top
-  port: 47822
-  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
-  network: tcp
-  servername: pg-bot.gigatapbot.top
-  sni: pg-bot.gigatapbot.top
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
-    short-id: c577182abe08e64c
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇬🇧 英国 01
-  type: vless
-  server: 194.146.24.240
-  port: 443
-  uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+  password: 123456
+- name: 🇯🇵 日本 001 | 高级专线
+  type: vmess
+  server: 183.240.223.167
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: vod.ensf.top
-  sni: vod.ensf.top
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
   ws-opts:
-    path: /api/v1/irc
     headers:
-      Host: vod.ensf.top
-  udp: true
-- name: 🇬🇧 英国 02
-  type: vless
-  server: admin01.jikebet.com
-  port: 443
-  uuid: d171c4ec-c1d6-4013-9528-900ab1e825a1
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 002 | 高级专线
+  type: vmess
+  server: 183.240.223.145
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: admin01.jikebet.com
-  sni: admin01.jikebet.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
   ws-opts:
-    path: /vless
     headers:
-      Host: admin01.jikebet.com
-  udp: true
-- name: 🇭🇰 香港 01
-  type: vless
-  server: 104.17.69.244
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 003 | 高级专线
+  type: vmess
+  server: 183.240.223.179
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: 104.17.69.244
-  sni: 104.17.69.244
-  client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: /
     headers:
-      Host: lc-sb-hk-d49207ad97bf638b-b6dc5f9c0ab9.lc-2d7ba52b768a.workers.dev
-  udp: true
-- name: 🇭🇰 香港 02
-  type: vless
-  server: 104.31.16.158
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 004 | 高级专线
+  type: vmess
+  server: 183.240.223.193
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: 104.31.16.158
-  sni: 104.31.16.158
-  client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: /
     headers:
-      Host: lc-sb-hk-149574fd6cca1b40-834f27e4f0ac.lc-57a6078a03ee.workers.dev
-  udp: true
-- name: 🇭🇰 香港 03
-  type: vless
-  server: 104.18.223.253
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 005 | 高级专线
+  type: vmess
+  server: 183.240.223.154
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: 104.18.223.253
-  sni: 104.18.223.253
-  client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: /
     headers:
-      Host: lc-sb-hk-a767ee7dfb3d844e-4891f67cb35f.lc-5e0b718c94ab.workers.dev
-  udp: true
-- name: 🇭🇰 香港 04
-  type: vless
-  server: 104.19.212.207
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 006 | 高级专线
+  type: vmess
+  server: 183.240.223.189
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
   network: ws
-  servername: 104.19.212.207
-  sni: 104.19.212.207
-  client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: /
     headers:
-      Host: lc-sb-hk-7e6536990d53a6cc-773b9f8b7982.lc-5e0b718c94ab.workers.dev
-  udp: true
-- name: 🇭🇰 香港 05
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 007 | 高级专线
+  type: vmess
+  server: 183.240.223.158
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 008 | 高级专线
+  type: vmess
+  server: 183.240.223.187
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 009 | 高级专线
+  type: vmess
+  server: 183.240.223.173
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 010 | 高级专线
+  type: vmess
+  server: 183.240.223.176
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 011 | 高级专线
+  type: vmess
+  server: 183.240.223.192
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 012 | 高级专线
+  type: vmess
+  server: 183.240.223.147
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 013 | 高级专线
+  type: vmess
+  server: 183.240.223.152
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 014 | 高级专线
+  type: vmess
+  server: 183.240.223.160
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 015 | 高级专线
+  type: vmess
+  server: 183.240.223.171
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 016 | 高级专线
+  type: vmess
+  server: 183.240.223.186
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 017 | 高级专线
+  type: vmess
+  server: 183.240.223.174
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 018 | 高级专线
+  type: vmess
+  server: 183.240.223.150
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 019 | 高级专线
+  type: vmess
+  server: 183.240.223.153
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 020 | 高级专线
+  type: vmess
+  server: 183.240.223.156
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 021 | 高级专线
+  type: vmess
+  server: 183.240.223.132
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 022 | 高级专线
+  type: vmess
+  server: 183.240.223.169
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 023 | 高级专线
+  type: vmess
+  server: 183.240.223.163
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 024 | 高级专线
+  type: vmess
+  server: 183.240.223.146
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 025 | 高级专线
+  type: vmess
+  server: 183.240.223.139
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 026 | 高级专线
+  type: vmess
+  server: 183.240.223.181
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 027 | 高级专线
+  type: vmess
+  server: 183.240.223.180
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 028 | 高级专线
+  type: vmess
+  server: 183.240.223.185
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 029 | 高级专线
+  type: vmess
+  server: 183.240.223.135
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 030 | 高级专线
+  type: vmess
+  server: 183.240.223.134
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 031 | 高级专线
+  type: vmess
+  server: 183.240.223.144
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 032 | 高级专线
+  type: vmess
+  server: 183.240.223.159
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 033 | 高级专线
+  type: vmess
+  server: 183.240.223.164
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 034 | 高级专线
+  type: vmess
+  server: 183.240.223.148
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 035 | 高级专线
+  type: vmess
+  server: 183.240.223.137
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 036 | 高级专线
+  type: vmess
+  server: 183.240.223.155
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 037 | 高级专线
+  type: vmess
+  server: 183.240.223.170
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 038 | 高级专线
+  type: vmess
+  server: 183.240.223.166
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 039 | 高级专线
+  type: vmess
+  server: 183.240.223.131
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 040 | 高级专线
+  type: vmess
+  server: 183.240.223.133
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 041 | 高级专线
+  type: vmess
+  server: 183.240.223.177
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 042 | 高级专线
+  type: vmess
+  server: 183.240.223.190
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 043 | 高级专线
+  type: vmess
+  server: 183.240.223.183
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 044 | 高级专线
+  type: vmess
+  server: 183.240.223.175
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 045 | 高级专线
+  type: vmess
+  server: 183.240.223.168
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 046 | 高级专线
+  type: vmess
+  server: 183.240.223.138
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 047 | 高级专线
+  type: vmess
+  server: 183.240.223.157
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 048 | 高级专线
+  type: vmess
+  server: 183.240.223.184
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 049 | 高级专线
+  type: vmess
+  server: 183.240.223.149
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 050 | 高级专线
+  type: vmess
+  server: 183.240.223.188
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 051 | 高级专线
+  type: vmess
+  server: 183.240.223.136
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 052 | 高级专线
+  type: vmess
+  server: 183.240.39.216
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 053 | 高级专线
+  type: vmess
+  server: 183.240.39.219
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 054 | 高级专线
+  type: vmess
+  server: 183.240.39.208
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 055 | 高级专线
+  type: vmess
+  server: 183.240.39.220
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 056 | 高级专线
+  type: vmess
+  server: 183.240.39.212
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 057 | 高级专线
+  type: vmess
+  server: 183.240.39.200
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 058 | 高级专线
+  type: vmess
+  server: 183.240.39.217
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 059 | 高级专线
+  type: vmess
+  server: 183.240.39.223
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 060 | 高级专线
+  type: vmess
+  server: 183.240.39.195
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 061 | 高级专线
+  type: vmess
+  server: 183.240.39.214
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 062 | 高级专线
+  type: vmess
+  server: 183.240.39.210
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 063 | 高级专线
+  type: vmess
+  server: 183.240.39.196
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 064 | 高级专线
+  type: vmess
+  server: 183.240.39.224
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 065 | 高级专线
+  type: vmess
+  server: 183.240.39.222
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 066 | 高级专线
+  type: vmess
+  server: 183.240.39.221
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 067 | 高级专线
+  type: vmess
+  server: 183.240.39.209
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 068 | 高级专线
+  type: vmess
+  server: 183.240.39.215
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 069 | 高级专线
+  type: vmess
+  server: 183.240.39.213
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 070 | 高级专线
+  type: vmess
+  server: 183.240.39.218
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 071 | 高级专线
+  type: vmess
+  server: 183.240.39.211
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 072 | 高级专线
+  type: vmess
+  server: 183.240.39.197
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 073 | 高级专线
+  type: vmess
+  server: 183.240.39.198
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 074 | 高级专线
+  type: vmess
+  server: 183.240.39.199
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 075 | 高级专线
+  type: vmess
+  server: 120.240.128.151
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 076 | 高级专线
+  type: vmess
+  server: 120.240.128.133
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 077 | 高级专线
+  type: vmess
+  server: 120.240.128.131
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 078 | 高级专线
+  type: vmess
+  server: 120.240.128.159
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 079 | 高级专线
+  type: vmess
+  server: 120.240.128.160
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 080 | 高级专线
+  type: vmess
+  server: 120.240.128.158
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 081 | 高级专线
+  type: vmess
+  server: 120.240.128.138
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 082 | 高级专线
+  type: vmess
+  server: 120.240.128.132
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 083 | 高级专线
+  type: vmess
+  server: 120.240.128.154
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 084 | 高级专线
+  type: vmess
+  server: 120.240.128.156
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 085 | 高级专线
+  type: vmess
+  server: 120.240.128.161
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 086 | 高级专线
+  type: vmess
+  server: 120.240.128.139
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 087 | 高级专线
+  type: vmess
+  server: 120.240.128.150
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 088 | 高级专线
+  type: vmess
+  server: 120.240.128.164
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 089 | 高级专线
+  type: vmess
+  server: 120.240.128.142
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 090 | 高级专线
+  type: vmess
+  server: 120.240.128.152
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 091 | 高级专线
+  type: vmess
+  server: 120.240.128.157
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 092 | 高级专线
+  type: vmess
+  server: 120.240.128.163
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 093 | 高级专线
+  type: vmess
+  server: 120.240.128.135
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 094 | 高级专线
+  type: vmess
+  server: 120.240.128.137
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 095 | 高级专线
+  type: vmess
+  server: 120.240.128.148
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 096 | 高级专线
+  type: vmess
+  server: 120.240.128.165
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 097 | 高级专线
+  type: vmess
+  server: 120.240.128.155
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 098 | 高级专线
+  type: vmess
+  server: 120.240.128.147
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 099 | 高级专线
+  type: vmess
+  server: 120.240.128.146
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 100 | 高级专线
+  type: vmess
+  server: 120.240.128.145
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 101 | 高级专线
+  type: vmess
+  server: 120.240.128.144
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 102 | 高级专线
+  type: vmess
+  server: 183.232.115.151
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 103 | 高级专线
+  type: vmess
+  server: 183.232.115.161
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 104 | 高级专线
+  type: vmess
+  server: 183.232.115.134
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 105 | 高级专线
+  type: vmess
+  server: 183.232.115.158
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 106 | 高级专线
+  type: vmess
+  server: 183.232.115.152
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 107 | 高级专线
+  type: vmess
+  server: 183.232.115.178
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 108 | 高级专线
+  type: vmess
+  server: 183.232.115.176
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 109 | 高级专线
+  type: vmess
+  server: 183.232.115.177
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 110 | 高级专线
+  type: vmess
+  server: 183.232.115.140
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 111 | 高级专线
+  type: vmess
+  server: 120.240.128.162
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 112 | 高级专线
+  type: vmess
+  server: 183.232.115.153
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 113 | 高级专线
+  type: vmess
+  server: 183.232.115.142
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 114 | 高级专线
+  type: vmess
+  server: 183.232.115.159
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 115 | 高级专线
+  type: vmess
+  server: 183.232.115.146
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 116 | 高级专线
+  type: vmess
+  server: 183.232.115.180
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 117 | 高级专线
+  type: vmess
+  server: 183.232.115.139
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 118 | 高级专线
+  type: vmess
+  server: 183.232.115.183
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 119 | 高级专线
+  type: vmess
+  server: 183.232.115.163
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 120 | 高级专线
+  type: vmess
+  server: 183.232.115.157
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 121 | 高级专线
+  type: vmess
+  server: 183.232.115.182
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 122 | 高级专线
+  type: vmess
+  server: 183.232.115.141
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 123 | 高级专线
+  type: vmess
+  server: 183.232.115.174
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 124 | 高级专线
+  type: vmess
+  server: 183.232.115.144
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 125 | 高级专线
+  type: vmess
+  server: 183.232.115.133
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 126 | 高级专线
+  type: vmess
+  server: 183.232.115.143
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 127 | 高级专线
+  type: vmess
+  server: 183.232.115.149
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 128 | 高级专线
+  type: vmess
+  server: 183.232.115.162
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 129 | 高级专线
+  type: vmess
+  server: 183.232.115.164
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 130 | 高级专线
+  type: vmess
+  server: 183.232.115.173
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 131 | 高级专线
+  type: vmess
+  server: 183.232.115.145
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 132 | 高级专线
+  type: vmess
+  server: 183.232.115.186
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 133 | 高级专线
+  type: vmess
+  server: 183.232.115.175
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 134 | 高级专线
+  type: vmess
+  server: 183.232.115.172
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 135 | 高级专线
+  type: vmess
+  server: 183.232.115.150
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 136 | 高级专线
+  type: vmess
+  server: 183.232.115.171
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 137 | 高级专线
+  type: vmess
+  server: 183.232.115.137
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 138 | 高级专线
+  type: vmess
+  server: 183.232.115.170
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 139 | 高级专线
+  type: vmess
+  server: 183.232.115.165
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 140 | 高级专线
+  type: vmess
+  server: 183.232.115.135
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 141 | 高级专线
+  type: vmess
+  server: 183.232.115.179
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 142 | 高级专线
+  type: vmess
+  server: 183.232.115.132
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 143 | 高级专线
+  type: vmess
+  server: 120.240.128.143
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 144 | 高级专线
+  type: vmess
+  server: 183.232.115.160
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 145 | 高级专线
+  type: vmess
+  server: 183.232.115.136
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: 🇯🇵 日本 146 | 高级专线
+  type: vmess
+  server: 183.232.115.154
+  port: 80
+  uuid: 0744d6be-279a-4116-bda2-3c3a1f541410
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: hndongmei.xyz
+    path: /a3654a1a-292d-402a-a313-d42a812598db
+- name: HK-1
   type: vless
-  server: 207.174.133.180
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  network: tcp
-  servername: 207.174.133.180
-  sni: 207.174.133.180
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 06
-  type: vless
-  server: 95.40.100.129
+  server: hk1-r.link-t7.com
   port: 10126
-  uuid: B1BF44DF-BADD-44EE-826A-12C27206993D
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   network: grpc
+  tls: true
+  client-fingerprint: chrome
   servername: s0.awsstatic.com
-  sni: s0.awsstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-  udp: true
-- name: 🇭🇰 香港 07
-  type: hysteria2
-  server: 202.146.222.89
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  tls: true
-  sni: https://t.me/clashv8🇨🇳
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 08
+- name: HK-2
   type: vless
-  server: 124.156.182.132
-  port: 443
-  uuid: 1b6de5d8-3285-422c-b6fe-2989918f528b
-  network: tcp
-  servername: www.apple.com
-  sni: www.apple.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
+  server: hk2-r.link-t7.com
+  port: 10127
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  reality-opts:
-    public-key: CdNLdccy_ALnjDvwZa14eP31CoJ_BLqJAS2OLCNwogg
-    short-id: d19dcb524604e214
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇭🇰 香港 09
-  type: trojan
-  server: 91.193.59.194
-  port: 2083
-  password: 54df124b-c11c-41b0-86da-9d642125671f
-  tls: true
-  sni: vpn2.xiweini.dpdns.org
-  servername: vpn2.xiweini.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxyip=156.154.245.83,45.76.244.88,38.65.9.110,131.143.251.20,203.88.112.62
-    headers:
-      Host: vpn2.xiweini.dpdns.org
-  udp: true
-- name: 🇭🇰 香港 10
-  type: anytls
-  server: 45.144.136.244
-  port: 443
-  password: 3QZglKmlgzc9zBCDD5W8tQ==
-  sni: www.bing.com
   client-fingerprint: chrome
-  skip-cert-verify: true
-- name: 🇭🇰 香港 11
+  servername: s0.awsstatic.com
+- name: HK-3
   type: vless
-  server: 156.248.10.58
-  port: 443
-  uuid: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  network: tcp
-  servername: nono.hhhkkhktt.xyz
-  sni: nono.hhhkkhktt.xyz
-  client-fingerprint: safari
-  skip-cert-verify: true
+  server: hk3-r.link-t7.com
+  port: 10128
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  reality-opts:
-    public-key: EXIEsAJq-s30mA0r997iwrR8ijvGLZ7DOTkr_R39QCE
-    short-id: 54fc3827c8
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇭🇰 香港 12
-  type: hysteria2
-  server: 82.47.32.31
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-4
+  type: vless
+  server: hk4-r.link-t7.com
+  port: 10129
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  sni: iosapps.itunes.apple.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 13
-  type: trojan
-  server: cdn2.bpcdn.cc
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-5
+  type: vless
+  server: hk5-r.link-t7.com
+  port: 10130
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  sni: oe4up9z5j9yntita.tkgogocsgo.top
-  servername: oe4up9z5j9yntita.tkgogocsgo.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: oe4up9z5j9yntita.tkgogocsgo.top
-  udp: true
-- name: 🇮🇳 印度 01
-  type: hysteria2
-  server: 141.148.222.181
-  port: 51000
-  password: 5a0f8574-07a5-45d5-84c9-f8b2c2bcd595
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: HK-6
+  type: vless
+  server: hk6-r.link-t7.com
+  port: 10136
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  sni: cn.cremedelamer.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 01
-  type: vless
-  server: 104.18.255.167
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
-  network: ws
-  servername: 104.18.255.167
-  sni: 104.18.255.167
   client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lc-sb-jp-da3470158922fcfd-0b9869bc0fa3.lc-c4113370be2f.workers.dev
-  udp: true
-- name: 🇯🇵 日本 02
+  servername: s0.awsstatic.com
+- name: HK-ISP-1
   type: vless
-  server: 104.17.167.134
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
-  network: ws
-  servername: 104.17.167.134
-  sni: 104.17.167.134
+  server: hk-isp-1.link-t7.com
+  port: 10246
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lc-sb-jp-6b91fdc5800abb55-b5aee9bfbb39.lc-16037a4d6957.workers.dev
-  udp: true
-- name: 🇯🇵 日本 03
+  servername: s0.awsstatic.com
+- name: HK-ISP-2
   type: vless
-  server: 104.18.89.52
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
-  network: ws
-  servername: 104.18.89.52
-  sni: 104.18.89.52
+  server: hk-isp-2.link-t7.com
+  port: 10247
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lc-sb-jp-183ad57e58ff962c-4bcfc6721bff.lc-16037a4d6957.workers.dev
-  udp: true
-- name: 🇯🇵 日本 04
+  servername: s0.awsstatic.com
+- name: HK-ISP-3
   type: vless
-  server: 14.137.238.40
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  network: tcp
-  servername: 14.137.238.40
-  sni: 14.137.238.40
+  server: hk-isp-3.link-t7.com
+  port: 10248
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 05
+  servername: s0.awsstatic.com
+- name: HK-ISP-4
+  type: vless
+  server: hk-isp-4.link-t7.com
+  port: 10249
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-1
+  type: vless
+  server: jp1-r.link-t7.com
+  port: 10031
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-2
+  type: vless
+  server: jp2-r.link-t7.com
+  port: 10032
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-3
+  type: vless
+  server: jp3-r.link-t7.com
+  port: 10033
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP-4
   type: vless
   server: jp4-r.link-t7.com
   port: 10034
-  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   network: grpc
+  tls: true
+  client-fingerprint: chrome
   servername: s0.awsstatic.com
-  sni: s0.awsstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-  udp: true
-- name: 🇯🇵 日本 06
-  type: anytls
-  server: ajp2.jueduibupao.top
-  port: 7000
-  password: ab893863-0bf4-4a5e-b2c7-dd8a046ff533
-  sni: www.microsoft.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- name: 🇯🇵 日本 07
+- name: JP-5
   type: vless
-  server: pq.aws57.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: updates.cdn-apple.com
-  sni: updates.cdn-apple.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: KeIvEyXB-ftboKdIoaSDyUKJPQpmcZiVaqY2JndkX08
-    short-id: 55fbcc37
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇯🇵 日本 08
-  type: vless
-  server: pq.aws52.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: cdn-dynmedia-1.microsoft.com
-  sni: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: safari
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: FrLhPuCVfzdM5rppzxHXQ5BZSGf1YHrXgo-cCtecGSo
-    short-id: f3b38af2
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇯🇵 日本 09
-  type: vless
-  server: pq.aws54.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: updates.cdn-apple.com
-  sni: updates.cdn-apple.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: ePEdL0MQGHT0BGkhSprooNXTYHgp_mdaxEaOkGTKO3k
-    short-id: 195c371d
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇯🇵 日本 10
-  type: vless
-  server: pq.aws56.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: updates.cdn-apple.com
-  sni: updates.cdn-apple.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: scnmyqQqGfHXAG9Ihe-bzs1xvqwQlMhCc87zJdIzPTs
-    short-id: 2edcfbb7
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇯🇵 日本 11
-  type: vless
-  server: pq.aws51.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: cdn-dynmedia-1.microsoft.com
-  sni: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: FrLhPuCVfzdM5rppzxHXQ5BZSGf1YHrXgo-cCtecGSo
-    short-id: f3b38af2
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇯🇵 日本 12
-  type: vless
-  server: jp4.miyazono-kaori.com
-  port: 443
-  uuid: 37434363-cb69-4d07-b636-346fd8a29d15
-  network: tcp
-  servername: www.bandainamcoent.co.jp
-  sni: www.bandainamcoent.co.jp
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
-    short-id: f75fbd5b
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇰🇷 韩国 01
-  type: anytls
-  server: akr1.jueduibupao.top
-  port: 7000
-  password: ab893863-0bf4-4a5e-b2c7-dd8a046ff533
-  sni: www.microsoft.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 02
-  type: vless
-  server: kr2.miyazono-kaori.com
-  port: 443
-  uuid: 37434363-cb69-4d07-b636-346fd8a29d15
-  network: tcp
-  servername: www.coway.com
-  sni: www.coway.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
-    short-id: c8af1462debbc1
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇰🇷 韩国 03
-  type: vless
-  server: kr1.miyazono-kaori.com
-  port: 443
-  uuid: 37434363-cb69-4d07-b636-346fd8a29d15
-  network: tcp
-  servername: www.coway.com
-  sni: www.coway.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
-    short-id: f554f56d31
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇳🇱 荷兰 01
-  type: vless
-  server: pg-nl2-bot.gigatapbot.top
-  port: 47822
-  uuid: 3b9eb177-6f0c-4d49-be4a-7e5168569f45
-  network: tcp
-  servername: pg-bot.gigatapbot.top
-  sni: pg-bot.gigatapbot.top
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk
-    short-id: c577182abe08e64c
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇳🇱 荷兰 02
-  type: vless
-  server: neth.lckdwn.ru
-  port: 8443
-  uuid: 0db4a87c-c280-4a5f-ae97-903768c5ef4c
-  network: tcp
-  servername: neth.lckdwn.ru
-  sni: neth.lckdwn.ru
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇳🇱 荷兰 03
-  type: hysteria2
-  server: gorbachev-new-th.kvnfreetest.uk
-  port: 55443
-  password: 083417772bc618cd61f0cca23dd91680
-  tls: true
-  sni: gorbachev-new-th.kvnfreetest.uk
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  udp: true
-- name: 🇳🇱 荷兰 04
-  type: vless
-  server: 195.63.141.201
-  port: 443
-  uuid: 4e7eb9d5-022a-4b0a-ba37-2d1be458947b
+  server: jp5-r.link-t7.com
+  port: 10035
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   network: grpc
-  servername: hartfordmedia.online
-  sni: hartfordmedia.online
-  client-fingerprint: edge
-  skip-cert-verify: true
   tls: true
-  reality-opts:
-    public-key: xq8_e5PNS7vubb8jzDOtfT2MnppCmzUPqXuDwg1xBm8
-    short-id: 96bb8b53
-  grpc-opts:
-    grpc-service-name: tuning
-  udp: true
-- name: 🇳🇱 荷兰 05
-  type: hysteria2
-  server: nl.prisma-access.club
-  port: 8445
-  password: 085178e12d2211ec
-  tls: true
-  sni: nl.prisma-access.club
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  udp: true
-- name: 🇳🇱 荷兰 06
-  type: hysteria2
-  server: pg-nl2-hy2.gigatapbot.top
-  port: 1443
-  password: CJtE4HLmxz859YMNiZM1NTuDRy7jjs8t
-  tls: true
-  sni: pg-nl2-hy2.gigatapbot.top
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 07
-  type: hysteria2
-  server: 89.124.92.91
-  port: 1443
-  password: CJtE4HLmxz859YMNiZM1NTuDRy7jjs8t
-  tls: true
-  sni: pg-nl-hy2.gigatapbot.top
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱 波兰 01
-  type: vless
-  server: ru104.mechvpn.online
-  port: 443
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  network: tcp
-  servername: ru104.mechvpn.online
-  sni: ru104.mechvpn.online
-  client-fingerprint: qq
-  skip-cert-verify: true
-  tls: true
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇷🇺 俄罗斯 01
-  type: vless
-  server: 45.139.26.104
-  port: 443
-  uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  network: tcp
-  servername: ru104.mechvpn.online
-  sni: ru104.mechvpn.online
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇷🇺 俄罗斯 02
-  type: hysteria2
-  server: 45.144.31.95
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: www.apple.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯 03
-  type: vless
-  server: 2a09:7c47:0:2f::1
-  port: 54822
-  uuid: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  network: ws
-  servername: 2a09:7c47:0:2f::1
-  sni: 2a09:7c47:0:2f::1
   client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /videos
-    headers:
-      Host: 2a09:7c47:0:2f::1
-  udp: true
-- name: 🇸🇬 新加坡 01
+  servername: s0.awsstatic.com
+- name: JP-6
+  type: vless
+  server: jp6-r.link-t7.com
+  port: 10036
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: JP1-HY2
+  type: hysteria2
+  server: jp1.dexlos.com
+  port: 20049
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp1.dexlos.com
+  skip-cert-verify: false
+- name: JP2-HY2
+  type: hysteria2
+  server: jp2.dexlos.com
+  port: 20273
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp2.dexlos.com
+  skip-cert-verify: false
+- name: JP3-HY2
+  type: hysteria2
+  server: jp3.dexlos.com
+  port: 20588
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp3.dexlos.com
+  skip-cert-verify: false
+- name: JP4-HY2
+  type: hysteria2
+  server: jp4.dexlos.com
+  port: 20786
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp4.dexlos.com
+  skip-cert-verify: false
+- name: JP5-HY2
+  type: hysteria2
+  server: jp5.dexlos.com
+  port: 20862
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp5.dexlos.com
+  skip-cert-verify: false
+- name: JP9-HY2
+  type: hysteria2
+  server: jp9.dexlos.com
+  port: 21711
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp9.dexlos.com
+  skip-cert-verify: false
+- name: JP10-HY2
+  type: hysteria2
+  server: jp10.dexlos.com
+  port: 21840
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: jp10.dexlos.com
+  skip-cert-verify: false
+- name: KR-1
+  type: vless
+  server: kr1-r.link-t7.com
+  port: 10046
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-2
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-3
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-4
+  type: vless
+  server: kr4-r.link-t7.com
+  port: 10049
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: KR-5
+  type: vless
+  server: kr5-r.link-t7.com
+  port: 10050
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-1
+  type: vless
+  server: sg1-r.link-t7.com
+  port: 10036
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-2
   type: vless
   server: sg2-r.link-t7.com
   port: 10037
-  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   network: grpc
-  servername: s0.awsstatic.com
-  sni: s0.awsstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
   tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-  udp: true
-- name: 🇸🇬 新加坡 02
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: SG-3
   type: vless
   server: sg3-r.link-t7.com
   port: 10038
-  uuid: 88DA9CA6-5E68-4687-A748-961B612DCED5
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   network: grpc
+  tls: true
+  client-fingerprint: chrome
   servername: d1.awsstatic.com
-  sni: d1.awsstatic.com
+- name: SG-4
+  type: vless
+  server: sg4-r.link-t7.com
+  port: 10039
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-  udp: true
-- name: 🇸🇬 新加坡 03
+  servername: d1.awsstatic.com
+- name: SG-5
   type: vless
-  server: admin.jikecloud.cc
-  port: 443
-  uuid: e55fa822-ad91-4133-8dcf-2587aec10baf
-  network: ws
-  servername: admin.jikecloud.cc
-  sni: admin.jikecloud.cc
+  server: sg5-r.link-t7.com
+  port: 10040
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
   client-fingerprint: chrome
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /vless
-    headers:
-      Host: admin.jikecloud.cc
-  udp: true
-- name: 🇸🇬 新加坡 04
-  type: http
-  server: 146.70.29.45
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  sni: 92461d2d.acsnet.co
-  username: testuser1
-  password: e4b72b531a2d10900519
-- name: 🇸🇬 新加坡 05
-  type: vless
-  server: xxx0804.ly123.edu.kg
-  port: 443
-  uuid: b49acd7b-a9b8-4703-ab99-9778393e894b
-  network: tcp
-  servername: sg-hyp-api.hoyoverse.com
-  sni: sg-hyp-api.hoyoverse.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: vv7fKAg_drFncfJq16XQoXcMxcT8m5VQ4Lw-kQT0Jh4
-    short-id: 00a735b91f0e
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇸🇬 新加坡 06
-  type: vless
-  server: pq.aws64.yydjc.top
-  port: 443
-  uuid: 4b6701d7-154b-453c-b5a6-30dbbeddc769
-  network: tcp
-  servername: iosapps.itunes.apple.com
-  sni: iosapps.itunes.apple.com
-  client-fingerprint: safari
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: xjWkdgeetCnB1-kHqwVnAaSUqg4qK9TFWQlamW8FSRI
-    short-id: e2e15173
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇸🇬 新加坡 07
-  type: trojan
-  server: cdn1.bpcdn.cc
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: light.bpsg2026.top
-  servername: light.bpsg2026.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: light.bpsg2026.top
-  udp: true
-- name: 🇹🇷 土耳其 01
+  servername: d1.awsstatic.com
+- name: SG4-HY2
   type: hysteria2
-  server: 2.27.28.105
-  port: 1935
-  password: hysteria2_fastlane_qgbzskayf
-  tls: true
-  sni: de7.h.fastlanehosting.ru
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  udp: true
-- name: 🇹🇼 台湾 01
-  type: vless
-  server: 104.18.166.129
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
-  network: ws
-  servername: 104.18.166.129
-  sni: 104.18.166.129
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lc-sb-tw-349e2ab804b4e0fd-435c9620bf1a.lc-f6c72e3809ee.workers.dev
-  udp: true
-- name: 🇹🇼 台湾 02
-  type: vless
-  server: 104.18.81.19
-  port: 2086
-  uuid: be88d508-9663-409c-ab34-b6e4304ee2c3
-  network: ws
-  servername: 104.18.81.19
-  sni: 104.18.81.19
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lc-sb-tw-6dc043d557afff61-839a19d894ff.lc-c4113370be2f.workers.dev
-  udp: true
-- name: 🇹🇼 台湾 03
-  type: vless
-  server: 220.130.75.248
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  network: tcp
-  servername: 220.130.75.248
-  sni: 220.130.75.248
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇼 台湾 04
-  type: anytls
-  server: 9g96ulhy68.luoyun2.com
-  port: 11881
-  password: b49acd7b-a9b8-4703-ab99-9778393e894b
-  sni: 9g96ulhy68.luoyun2.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- name: 🇹🇼 台湾 05
-  type: trojan
-  server: ttww11.bpca2026.top
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: ttww11.bpca2026.top
-  servername: ttww11.bpca2026.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: ttww11.bpca2026.top
-  udp: true
-- name: 🇺🇸 美国 01
+  server: sg4.dexlos.com
+  port: 20748
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg4.dexlos.com
+  skip-cert-verify: false
+- name: SG5-HY2
   type: hysteria2
-  server: node1.sferavpn.pro
-  port: 443
-  password: cd74c0a406664a5bc0bac098220a2468
+  server: sg5.dexlos.com
+  port: 20875
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg5.dexlos.com
+  skip-cert-verify: false
+- name: US-1TCP
+  type: vless
+  server: us1-r.link-t7.com
+  port: 10238
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
   tls: true
-  sni: node1.sferavpn.pro
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-2TCP
+  type: vless
+  server: us2-r.link-t7.com
+  port: 10239
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-3TCP
+  type: vless
+  server: us3-r.link-t7.com
+  port: 10240
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-4TCP
+  type: vless
+  server: us4-r.link-t7.com
+  port: 10241
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-5TCP
+  type: vless
+  server: us5-r.link-t7.com
+  port: 10242
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-6TCP
+  type: vless
+  server: us6-r.link-t7.com
+  port: 10243
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-7TCP
+  type: vless
+  server: us7-r.link-t7.com
+  port: 10244
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US-8TCP
+  type: vless
+  server: us8-r.link-t7.com
+  port: 10245
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: s0.awsstatic.com
+- name: US2-HY2
+  type: hysteria2
+  server: us2.dexlos.com
+  port: 20279
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: us2.dexlos.com
+  skip-cert-verify: false
+- name: US3-HY2
+  type: hysteria2
+  server: us3.dexlos.com
+  port: 20509
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: us3.dexlos.com
+  skip-cert-verify: false
+- name: US4-HY2
+  type: hysteria2
+  server: us4.dexlos.com
+  port: 20794
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: us4.dexlos.com
+  skip-cert-verify: false
+- name: US5-HY2
+  type: hysteria2
+  server: us5.dexlos.com
+  port: 20897
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: us5.dexlos.com
+  skip-cert-verify: false
+- name: US6-HY2
+  type: hysteria2
+  server: us6.dexlos.com
+  port: 21059
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: us6.dexlos.com
+  skip-cert-verify: false
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
+  type: hysteria2
+  server: 24.233.8.109
+  port: 443
+  password: 8294f130408299df8cab08c80bf6f819
+  sni: www.bing.com
+  skip-cert-verify: true
   obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  obfs-password: c8827ab99e316c5bd414e21afa915ddf
   udp: true
-- name: 🇺🇸 美国 02
+- name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vless
-  server: pl4.lckdwn.ru
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
-  network: ws
-  servername: pl4.lckdwn.ru
-  sni: pl4.lckdwn.ru
-  client-fingerprint: chrome
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
   skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      Host: pl4.lckdwn.ru
-  udp: true
-- name: 🇺🇸 美国 03
-  type: http
-  server: fan.365747.xyz
-  port: 443
-  tls: true
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-- name: 🇺🇸 美国 04
-  type: vless
-  server: www.wto.org
-  port: 2053
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  network: ws
-  servername: usa.105794.xyz
-  sni: usa.105794.xyz
-  client-fingerprint: edge
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /download/v3/installer-x64.bin
-    headers:
-      Host: usa.105794.xyz
-  udp: true
-- name: 🇺🇸 美国 05
-  type: vless
-  server: 172.96.141.210
-  port: 8443
-  uuid: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  network: tcp
-  servername: room.rootvana.top
-  sni: room.rootvana.top
-  client-fingerprint: safari
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: Y0zCjvOLHuHWgv4HUyqb9O0lSMnTrl26XO8qwnWoQXw
-    short-id: b85875a13da4
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🇺🇸 美国 06
-  type: hysteria2
-  server: 2602:f6f6:2:95ae::1
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: www.bing.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 07
-  type: hysteria2
-  server: 172.96.140.38
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: iosapps.itunes.apple.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 08
-  type: hysteria2
-  server: 172.96.141.4
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: api.push.apple.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 09
-  type: hysteria2
-  server: 108.181.6.51
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: iosapps.itunes.apple.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 10
-  type: hysteria2
-  server: 147.90.235.159
-  port: 443
-  password: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  sni: www.bing.com
-  alpn:
-  - h3
-  up: '100'
-  down: '200'
-  skip-cert-verify: true
-  udp: true
-- name: 🌍 拉脱维亚 01
-  type: vless
-  server: 89.36.161.222
-  port: 2053
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: tcp
-  servername: vk.ru
-  sni: vk.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: cGVu5j95KoeHBkWXveyTKolORbdvZm9g1T6yyo64ZBg
-    short-id: d26f4703cdd30f4e
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🌍 拉脱维亚 02
-  type: vless
-  server: lat.o4ka-internet.com
-  port: 443
-  uuid: 2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a
-  network: tcp
-  servername: lat.o4ka-internet.com
-  sni: lat.o4ka-internet.com
-  client-fingerprint: random
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🌍 捷克 01
-  type: vless
-  server: ch1.murhost.network
-  port: 443
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  network: tcp
-  servername: ch1.murhost.network
-  sni: ch1.murhost.network
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
-    short-id: 91a7a393d805f5c6
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🌍 捷克 02
-  type: vless
-  server: 103.119.18.115
-  port: 443
-  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac
-  network: tcp
-  servername: ch1.murhost.network
-  sni: ch1.murhost.network
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A
-    short-id: 91a7a393d805f5c6
-  flow: xtls-rprx-vision
-  udp: true
-- name: 🌍 立陶宛 01
-  type: vless
-  server: 84.32.209.80
-  port: 443
-  uuid: 463a26c2-eba8-40ea-89c4-ee5c1373ccbe
-  network: tcp
-  servername: dltch.mostserv.xyz
-  sni: dltch.mostserv.xyz
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  tls: true
-  reality-opts:
-    public-key: bIUHw7kqfyS6-6d7yYjzyXSlc4_CrLZqzdf3KBQfly8
-  flow: xtls-rprx-vision
   udp: true
 - name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
   type: vmess
@@ -1175,18 +2417,36 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇫🇮_FI_芬兰
+- name: 🇹🇷_TR_土耳其
   type: vless
-  server: 196.196.206.38
+  server: 144.225.65.177
   port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  servername: finkafsb.finiki.lol
+  uuid: 443b2e33-8e9c-4f7b-a48a-383a93895d1e
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
+  type: vless
+  server: gesmankos.sadiepinki.com
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  servername: gesmankos.sadiepinki.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
   skip-cert-verify: true
   udp: true
 - name: 🇪🇸_ES_西班牙
@@ -1205,44 +2465,6 @@ proxies:
     short-id: 8319913f2e5f5711
   skip-cert-verify: true
   udp: true
-- name: 🇫🇮_FI_芬兰_1
-  type: vless
-  server: finkafsb.finiki.lol
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  servername: finkafsb.finiki.lol
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: gesmankos.sadiepinki.com
-  port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  servername: gesmankos.sadiepinki.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: 4fa44664f6a566d3
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪_DE_德国_1
   type: vless
   server: 2.59.134.226
@@ -1256,42 +2478,24 @@ proxies:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  type: vless
-  server: 176.109.104.195
-  port: 9873
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵_JP_日本
-  type: hysteria2
-  server: msjp1.mangshe.xyz
-  port: 20561
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: lyra.yokkastars.com
-  port: 40443
-  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
-  servername: deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-    short-id: ee33
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇩🇪_DE_德国_2
@@ -1306,32 +2510,141 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: 🇨🇳_CN_中国
+- name: 🇹🇼_TW_中国台湾
   type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇯🇵_JP_日本
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇯🇵_JP_日本_1
+  type: hysteria2
+  server: msjp1.mangshe.xyz
+  port: 20561
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  server: 172.64.229.170
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  type: vless
+  server: 103.143.81.178
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: vless
+  server: lyra.yokkastars.com
+  port: 40443
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: ee33
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇫🇷_FR_法国
+- name: 🇺🇸_US_美国_2
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  udp: true
+- name: 🇯🇵_JP_日本_2
   type: vless
-  server: francecadscr3qcr3v4213xwbterny54vtw4rfsedvr23vfdszc.nevoxa.ir
-  port: 32210
-  uuid: 24051e17-a1c9-4566-a331-789e6b681007
-  tls: false
+  server: 35.72.179.15
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  network: ws
+  servername: shuma.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
   skip-cert-verify: true
   udp: true
+- name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #2'
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  network: tcp
 - name: end-gfw.com@kr3
   type: vless
   server: 13.125.239.146
@@ -1855,7 +3168,7 @@ proxies:
       Host: o.server3peekconfig.workers.dev
 - name: 'end-gfw.com@sg89 #2'
   type: vless
-  server: 52.221.221.219
+  server: 13.229.87.223
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1864,7 +3177,7 @@ proxies:
   servername: www.apple.com
 - name: 'end-gfw.com@kr64 #2'
   type: vless
-  server: 43.203.199.83
+  server: 13.125.90.155
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -2996,104 +4309,230 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - edg-2oo.pages.dev
   - 优选域名-01
   - qqyst.sfht.kdns.fr
   - 🇩🇪 德国 10
   - 🇨🇿 捷克 08
-  - 📢每日更新
-  - 📡电报频道:@clashv8
-  - 🇦🇪 阿联酋 01
-  - 🇩🇪 德国 01
-  - 🇩🇪 德国 02
-  - 🇩🇪 德国 03
-  - 🇩🇪 德国 04
-  - 🇩🇪 德国 05
-  - 🇪🇸 西班牙 01
-  - 🇬🇧 英国 01
-  - 🇬🇧 英国 02
-  - 🇭🇰 香港 01
-  - 🇭🇰 香港 02
-  - 🇭🇰 香港 03
-  - 🇭🇰 香港 04
-  - 🇭🇰 香港 05
-  - 🇭🇰 香港 06
-  - 🇭🇰 香港 07
-  - 🇭🇰 香港 08
-  - 🇭🇰 香港 09
-  - 🇭🇰 香港 10
-  - 🇭🇰 香港 11
-  - 🇭🇰 香港 12
-  - 🇭🇰 香港 13
-  - 🇮🇳 印度 01
-  - 🇯🇵 日本 01
-  - 🇯🇵 日本 02
-  - 🇯🇵 日本 03
-  - 🇯🇵 日本 04
-  - 🇯🇵 日本 05
-  - 🇯🇵 日本 06
-  - 🇯🇵 日本 07
-  - 🇯🇵 日本 08
-  - 🇯🇵 日本 09
-  - 🇯🇵 日本 10
-  - 🇯🇵 日本 11
-  - 🇯🇵 日本 12
-  - 🇰🇷 韩国 01
-  - 🇰🇷 韩国 02
-  - 🇰🇷 韩国 03
-  - 🇳🇱 荷兰 01
-  - 🇳🇱 荷兰 02
-  - 🇳🇱 荷兰 03
-  - 🇳🇱 荷兰 04
-  - 🇳🇱 荷兰 05
-  - 🇳🇱 荷兰 06
-  - 🇳🇱 荷兰 07
-  - 🇵🇱 波兰 01
-  - 🇷🇺 俄罗斯 01
-  - 🇷🇺 俄罗斯 02
-  - 🇷🇺 俄罗斯 03
-  - 🇸🇬 新加坡 01
-  - 🇸🇬 新加坡 02
-  - 🇸🇬 新加坡 03
-  - 🇸🇬 新加坡 04
-  - 🇸🇬 新加坡 05
-  - 🇸🇬 新加坡 06
-  - 🇸🇬 新加坡 07
-  - 🇹🇷 土耳其 01
-  - 🇹🇼 台湾 01
-  - 🇹🇼 台湾 02
-  - 🇹🇼 台湾 03
-  - 🇹🇼 台湾 04
-  - 🇹🇼 台湾 05
-  - 🇺🇸 美国 01
-  - 🇺🇸 美国 02
-  - 🇺🇸 美国 03
-  - 🇺🇸 美国 04
-  - 🇺🇸 美国 05
-  - 🇺🇸 美国 06
-  - 🇺🇸 美国 07
-  - 🇺🇸 美国 08
-  - 🇺🇸 美国 09
-  - 🇺🇸 美国 10
-  - 🌍 拉脱维亚 01
-  - 🌍 拉脱维亚 02
-  - 🌍 捷克 01
-  - 🌍 捷克 02
-  - 🌍 立陶宛 01
-  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
-  - 🇫🇮_FI_芬兰
-  - 🇪🇸_ES_西班牙
-  - 🇫🇮_FI_芬兰_1
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  - 🇯🇵_JP_日本
-  - 🇺🇸_US_美国
-  - 🇩🇪_DE_德国_2
-  - 🇨🇳_CN_中国
+  - 🇸🇬 ⚠️订阅已失效,请重新获取
+  - 🇸🇬 每日更新
+  - 🇯🇵 日本 001 | 高级专线
+  - 🇯🇵 日本 002 | 高级专线
+  - 🇯🇵 日本 003 | 高级专线
+  - 🇯🇵 日本 004 | 高级专线
+  - 🇯🇵 日本 005 | 高级专线
+  - 🇯🇵 日本 006 | 高级专线
+  - 🇯🇵 日本 007 | 高级专线
+  - 🇯🇵 日本 008 | 高级专线
+  - 🇯🇵 日本 009 | 高级专线
+  - 🇯🇵 日本 010 | 高级专线
+  - 🇯🇵 日本 011 | 高级专线
+  - 🇯🇵 日本 012 | 高级专线
+  - 🇯🇵 日本 013 | 高级专线
+  - 🇯🇵 日本 014 | 高级专线
+  - 🇯🇵 日本 015 | 高级专线
+  - 🇯🇵 日本 016 | 高级专线
+  - 🇯🇵 日本 017 | 高级专线
+  - 🇯🇵 日本 018 | 高级专线
+  - 🇯🇵 日本 019 | 高级专线
+  - 🇯🇵 日本 020 | 高级专线
+  - 🇯🇵 日本 021 | 高级专线
+  - 🇯🇵 日本 022 | 高级专线
+  - 🇯🇵 日本 023 | 高级专线
+  - 🇯🇵 日本 024 | 高级专线
+  - 🇯🇵 日本 025 | 高级专线
+  - 🇯🇵 日本 026 | 高级专线
+  - 🇯🇵 日本 027 | 高级专线
+  - 🇯🇵 日本 028 | 高级专线
+  - 🇯🇵 日本 029 | 高级专线
+  - 🇯🇵 日本 030 | 高级专线
+  - 🇯🇵 日本 031 | 高级专线
+  - 🇯🇵 日本 032 | 高级专线
+  - 🇯🇵 日本 033 | 高级专线
+  - 🇯🇵 日本 034 | 高级专线
+  - 🇯🇵 日本 035 | 高级专线
+  - 🇯🇵 日本 036 | 高级专线
+  - 🇯🇵 日本 037 | 高级专线
+  - 🇯🇵 日本 038 | 高级专线
+  - 🇯🇵 日本 039 | 高级专线
+  - 🇯🇵 日本 040 | 高级专线
+  - 🇯🇵 日本 041 | 高级专线
+  - 🇯🇵 日本 042 | 高级专线
+  - 🇯🇵 日本 043 | 高级专线
+  - 🇯🇵 日本 044 | 高级专线
+  - 🇯🇵 日本 045 | 高级专线
+  - 🇯🇵 日本 046 | 高级专线
+  - 🇯🇵 日本 047 | 高级专线
+  - 🇯🇵 日本 048 | 高级专线
+  - 🇯🇵 日本 049 | 高级专线
+  - 🇯🇵 日本 050 | 高级专线
+  - 🇯🇵 日本 051 | 高级专线
+  - 🇯🇵 日本 052 | 高级专线
+  - 🇯🇵 日本 053 | 高级专线
+  - 🇯🇵 日本 054 | 高级专线
+  - 🇯🇵 日本 055 | 高级专线
+  - 🇯🇵 日本 056 | 高级专线
+  - 🇯🇵 日本 057 | 高级专线
+  - 🇯🇵 日本 058 | 高级专线
+  - 🇯🇵 日本 059 | 高级专线
+  - 🇯🇵 日本 060 | 高级专线
+  - 🇯🇵 日本 061 | 高级专线
+  - 🇯🇵 日本 062 | 高级专线
+  - 🇯🇵 日本 063 | 高级专线
+  - 🇯🇵 日本 064 | 高级专线
+  - 🇯🇵 日本 065 | 高级专线
+  - 🇯🇵 日本 066 | 高级专线
+  - 🇯🇵 日本 067 | 高级专线
+  - 🇯🇵 日本 068 | 高级专线
+  - 🇯🇵 日本 069 | 高级专线
+  - 🇯🇵 日本 070 | 高级专线
+  - 🇯🇵 日本 071 | 高级专线
+  - 🇯🇵 日本 072 | 高级专线
+  - 🇯🇵 日本 073 | 高级专线
+  - 🇯🇵 日本 074 | 高级专线
+  - 🇯🇵 日本 075 | 高级专线
+  - 🇯🇵 日本 076 | 高级专线
+  - 🇯🇵 日本 077 | 高级专线
+  - 🇯🇵 日本 078 | 高级专线
+  - 🇯🇵 日本 079 | 高级专线
+  - 🇯🇵 日本 080 | 高级专线
+  - 🇯🇵 日本 081 | 高级专线
+  - 🇯🇵 日本 082 | 高级专线
+  - 🇯🇵 日本 083 | 高级专线
+  - 🇯🇵 日本 084 | 高级专线
+  - 🇯🇵 日本 085 | 高级专线
+  - 🇯🇵 日本 086 | 高级专线
+  - 🇯🇵 日本 087 | 高级专线
+  - 🇯🇵 日本 088 | 高级专线
+  - 🇯🇵 日本 089 | 高级专线
+  - 🇯🇵 日本 090 | 高级专线
+  - 🇯🇵 日本 091 | 高级专线
+  - 🇯🇵 日本 092 | 高级专线
+  - 🇯🇵 日本 093 | 高级专线
+  - 🇯🇵 日本 094 | 高级专线
+  - 🇯🇵 日本 095 | 高级专线
+  - 🇯🇵 日本 096 | 高级专线
+  - 🇯🇵 日本 097 | 高级专线
+  - 🇯🇵 日本 098 | 高级专线
+  - 🇯🇵 日本 099 | 高级专线
+  - 🇯🇵 日本 100 | 高级专线
+  - 🇯🇵 日本 101 | 高级专线
+  - 🇯🇵 日本 102 | 高级专线
+  - 🇯🇵 日本 103 | 高级专线
+  - 🇯🇵 日本 104 | 高级专线
+  - 🇯🇵 日本 105 | 高级专线
+  - 🇯🇵 日本 106 | 高级专线
+  - 🇯🇵 日本 107 | 高级专线
+  - 🇯🇵 日本 108 | 高级专线
+  - 🇯🇵 日本 109 | 高级专线
+  - 🇯🇵 日本 110 | 高级专线
+  - 🇯🇵 日本 111 | 高级专线
+  - 🇯🇵 日本 112 | 高级专线
+  - 🇯🇵 日本 113 | 高级专线
+  - 🇯🇵 日本 114 | 高级专线
+  - 🇯🇵 日本 115 | 高级专线
+  - 🇯🇵 日本 116 | 高级专线
+  - 🇯🇵 日本 117 | 高级专线
+  - 🇯🇵 日本 118 | 高级专线
+  - 🇯🇵 日本 119 | 高级专线
+  - 🇯🇵 日本 120 | 高级专线
+  - 🇯🇵 日本 121 | 高级专线
+  - 🇯🇵 日本 122 | 高级专线
+  - 🇯🇵 日本 123 | 高级专线
+  - 🇯🇵 日本 124 | 高级专线
+  - 🇯🇵 日本 125 | 高级专线
+  - 🇯🇵 日本 126 | 高级专线
+  - 🇯🇵 日本 127 | 高级专线
+  - 🇯🇵 日本 128 | 高级专线
+  - 🇯🇵 日本 129 | 高级专线
+  - 🇯🇵 日本 130 | 高级专线
+  - 🇯🇵 日本 131 | 高级专线
+  - 🇯🇵 日本 132 | 高级专线
+  - 🇯🇵 日本 133 | 高级专线
+  - 🇯🇵 日本 134 | 高级专线
+  - 🇯🇵 日本 135 | 高级专线
+  - 🇯🇵 日本 136 | 高级专线
+  - 🇯🇵 日本 137 | 高级专线
+  - 🇯🇵 日本 138 | 高级专线
+  - 🇯🇵 日本 139 | 高级专线
+  - 🇯🇵 日本 140 | 高级专线
+  - 🇯🇵 日本 141 | 高级专线
+  - 🇯🇵 日本 142 | 高级专线
+  - 🇯🇵 日本 143 | 高级专线
+  - 🇯🇵 日本 144 | 高级专线
+  - 🇯🇵 日本 145 | 高级专线
+  - 🇯🇵 日本 146 | 高级专线
+  - HK-1
+  - HK-2
+  - HK-3
+  - HK-4
+  - HK-5
+  - HK-6
+  - HK-ISP-1
+  - HK-ISP-2
+  - HK-ISP-3
+  - HK-ISP-4
+  - JP-1
+  - JP-2
+  - JP-3
+  - JP-4
+  - JP-5
+  - JP-6
+  - JP1-HY2
+  - JP2-HY2
+  - JP3-HY2
+  - JP4-HY2
+  - JP5-HY2
+  - JP9-HY2
+  - JP10-HY2
+  - KR-1
+  - KR-2
+  - KR-3
+  - KR-4
+  - KR-5
+  - SG-1
+  - SG-2
+  - SG-3
+  - SG-4
+  - SG-5
+  - SG4-HY2
+  - SG5-HY2
+  - US-1TCP
+  - US-2TCP
+  - US-3TCP
+  - US-4TCP
+  - US-5TCP
+  - US-6TCP
+  - US-7TCP
+  - US-8TCP
+  - US2-HY2
+  - US3-HY2
+  - US4-HY2
+  - US5-HY2
+  - US6-HY2
+  - 🇭🇰_HK_中国香港
+  - 🇭🇰_HK_中国香港_1
+  - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇫🇷_FR_法国
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇹🇷_TR_土耳其
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇪🇸_ES_西班牙
+  - 🇩🇪_DE_德国_1
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国
+  - 🇩🇪_DE_德国_2
+  - 🇹🇼_TW_中国台湾
+  - 🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇯🇵_JP_日本_1
+  - 🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇺🇸_US_美国_2
+  - 🇯🇵_JP_日本_2
+  - '🇭🇰_HK_中国香港->🇺🇸_US_美国 #2'
   - end-gfw.com@kr3
   - end-gfw.com@sg3
   - end-gfw.com@sg33
