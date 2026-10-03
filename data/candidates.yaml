@@ -537,7 +537,7 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 14443
-  name: 剩余流量：-677522382KB
+  name: 剩余流量：-677988224KB
   type: hysteria2
   sni: 3536113652f84c28acc1.nnjd10086.top
 - udp: true
@@ -601,11 +601,11 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 61023
-  name: 上次更新：2026-10-03 13:07
+  name: 上次更新：2026-10-03 19:32
   type: hysteria2
   sni: 8880607c01ea43e8a6bf.nnjd10086.top
 - name: 🇯🇵 免费-日本1-Ver.7
-  server: 0qa2mi6-g05.jp01-nn-vm0.entry.fr0528.art
+  server: 0qzyywn-g05.jp01-nn-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -615,7 +615,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本2-Ver.8
-  server: 0qzymwa-g05.jp02-e3-vm0.entry.fr0528.art
+  server: eaa5uw2-g05.jp02-e3-vm0.entry.fr0528.art
   port: 11777
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -625,7 +625,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本3-Ver.7
-  server: 0a4ymia-g05.jp03-j7-vm0.entry.fr0528.art
+  server: 0aa59wa-g05.jp03-j7-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -635,7 +635,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本4-Ver.8
-  server: 4y72yw6-g05.jp04-1d-vm0.entry.fr0528.art
+  server: pq45ui6-g05.jp04-1d-vm0.entry.fr0528.art
   port: 448
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -645,7 +645,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本5-Ver.9
-  server: 4q7y9on-g05.jp05-h6-vm0.entry.fr0528.art
+  server: 4aay9wa-g05.jp05-h6-vm0.entry.fr0528.art
   port: 46486
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -655,7 +655,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本6-Ver.8
-  server: ea45yf2-g05.jp06-jz-vm0.entry.fr0528.art
+  server: pyz5ywn-g05.jp06-jz-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -665,7 +665,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本7-Ver.2
-  server: 0y42uf6-g05.jp07-sh-vm0.entry.fr0528.art
+  server: 0az2yf6-g05.jp07-sh-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -1338,45 +1338,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: www.apple.com
-- name: DE德国(v2clash.blog 2026-7.31更新
-  type: vless
-  server: 51.89.23.94
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: forfreeuse.sub-flow.online
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-- name: 芬兰(v2clash.blog 2026-7.31更新
-  type: vless
-  server: 188.227.86.123
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: forfreeuse.sub-flow.online
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-- name: US美国(v2clash.blog 2026-7.31更新
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 75b38c79-92e3-454b-b98e-52fbd254884d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: towndtime.global.ssl.fastly.neT.
 - name: NL荷兰(v2clash.blog 2026-8.3更新
   type: vless
   server: 45.142.120.40
@@ -2439,6 +2400,74 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: twilight-poetry-2bfe.218-699.workers.dev
+- name: US美国(v2clash.blog 2026-10.3更新
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 俄罗斯(v2clash.blog 2026-10.3更新
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: fbsv6.guardora.pro
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: RU俄罗斯(v2clash.blog 2026-10.3更新
+  type: vless
+  server: 176.109.109.105
+  port: 9830
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: dl.google.com
+- name: 'US美国(v2clash.blog 2026-10.3更新 #2'
+  type: vless
+  server: bg4.univesalsrv.com
+  port: 443
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: bg4.univesalsrv.com
+- name: 'US美国(v2clash.blog 2026-10.3更新 #3'
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+- name: 'US美国(v2clash.blog 2026-10.3更新 #4'
+  type: vless
+  server: 5.45.115.162
+  port: 2087
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve?ed=2560
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
 proxy-groups:
 - name: PROBE
   type: select
@@ -2484,12 +2513,12 @@ proxy-groups:
   - v635
   - 流量已用尽
   - 套餐过期：2026-10-22
-  - 剩余流量：-677522382KB
+  - 剩余流量：-677988224KB
   - 流量重置日：2026-10-22
   - 官网：niuniuvpn.com
   - 用户ID：12769O57027794
   - 联系客服：@ionoionoi
-  - 上次更新：2026-10-03 13:07
+  - 上次更新：2026-10-03 19:32
   - 🇯🇵 免费-日本1-Ver.7
   - 🇯🇵 免费-日本2-Ver.8
   - 🇯🇵 免费-日本3-Ver.7
@@ -2557,9 +2586,6 @@ proxy-groups:
   - 🇫🇷FR_1056|626KB/s 01
   - 'end-gfw.com@sg89 #2'
   - 'end-gfw.com@kr64 #2'
-  - DE德国(v2clash.blog 2026-7.31更新
-  - 芬兰(v2clash.blog 2026-7.31更新
-  - US美国(v2clash.blog 2026-7.31更新
   - NL荷兰(v2clash.blog 2026-8.3更新
   - CA加拿大(v2clash.blog 2026-8.3更新
   - US美国(v2clash.blog 2026-8.3更新
@@ -2653,5 +2679,11 @@ proxy-groups:
   - KR韩国(v2clash.blog 2026-10.2更新
   - 瑞典(v2clash.blog 2026-10.2更新
   - 'US美国(v2clash.blog 2026-10.2更新 #3'
+  - US美国(v2clash.blog 2026-10.3更新
+  - 俄罗斯(v2clash.blog 2026-10.3更新
+  - RU俄罗斯(v2clash.blog 2026-10.3更新
+  - 'US美国(v2clash.blog 2026-10.3更新 #2'
+  - 'US美国(v2clash.blog 2026-10.3更新 #3'
+  - 'US美国(v2clash.blog 2026-10.3更新 #4'
 rules:
 - MATCH,PROBE
