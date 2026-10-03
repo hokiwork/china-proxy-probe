@@ -3,32 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇩🇪 德国 10
-  type: vless
-  server: 64.226.88.144
-  port: 2096
-  uuid: 2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snni.868001.xyz
-  ws-opts:
-    path: /proxyip=tw.william.us.ci?uuid=2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
-    headers:
-      Host: snni.868001.xyz
-- name: 🇨🇿 捷克 08
-  type: vless
-  server: 91.199.147.41
-  port: 443
-  uuid: 2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snni.868001.xyz
-  ws-opts:
-    path: /proxyip=tw.william.us.ci?uuid=2b77e8eb-b03b-4f12-aa6d-23b421e5bed7
-    headers:
-      Host: snni.868001.xyz
 - name: 日本(低延迟)V1-3
   type: vless
   server: 141.11.138.136
@@ -49,461 +23,6 @@ proxies:
   client-fingerprint: chrome
   servername: www.tesla.com
   flow: xtls-rprx-vision
-- name: 剩余流量：0
-  type: vless
-  server: shopify.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v601
-  type: vless
-  server: time.is
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v602
-  type: vless
-  server: icook.hk
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v603
-  type: vless
-  server: icook.tw
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v604
-  type: vless
-  server: ip.sb
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v605
-  type: vless
-  server: japan.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v606
-  type: vless
-  server: malaysia.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v607
-  type: vless
-  server: russia.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v608
-  type: vless
-  server: singapore.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v609
-  type: vless
-  server: skk.moe
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v610
-  type: vless
-  server: www.visa.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v611
-  type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v612
-  type: vless
-  server: www.visa.com.tw
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v613
-  type: vless
-  server: www.visa.co.jp
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v614
-  type: vless
-  server: www.visakorea.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v615
-  type: vless
-  server: www.gco.gov.qa
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v616
-  type: vless
-  server: www.gov.se
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v617
-  type: vless
-  server: www.gov.ua
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v618
-  type: vless
-  server: www.digitalocean.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v619
-  type: vless
-  server: www.csgo.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v620
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v621
-  type: vless
-  server: www.whoer.net
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v622
-  type: vless
-  server: www.whatismyip.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v623
-  type: vless
-  server: www.visa.cn
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v624
-  type: vless
-  server: www.hugedomains.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v625
-  type: vless
-  server: www.udacity.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v626
-  type: vless
-  server: www.4chan.org
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v627
-  type: vless
-  server: www.okcupid.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v628
-  type: vless
-  server: www.glassdoor.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v629
-  type: vless
-  server: www.udemy.com
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v631
-  type: vless
-  server: gur.gov.ua
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v632
-  type: vless
-  server: www.zsu.gov.ua
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v633
-  type: vless
-  server: www.wto.org
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v634
-  type: vless
-  server: xn--b6gac.eu.org
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
-- name: v635
-  type: vless
-  server: www.baipiao.eu.org
-  port: 443
-  uuid: 599798e2-5eed-40f3-a5cf-cbda9a4baad1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v6.bangfw.dpdns.org
-  ws-opts:
-    path: /
-    headers:
-      Host: v6.bangfw.dpdns.org
 - udp: true
   server: 127.0.0.1
   skip-cert-verify: true
@@ -537,7 +56,7 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 14443
-  name: 剩余流量：-677988224KB
+  name: 剩余流量：-678428216KB
   type: hysteria2
   sni: 3536113652f84c28acc1.nnjd10086.top
 - udp: true
@@ -583,7 +102,7 @@ proxies:
   uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
   flow: xtls-rprx-vision
 - udp: true
-  server: 43.207.112.96
+  server: 35.77.94.79
   skip-cert-verify: true
   reality-opts:
     public-key: 7-2E_ptHKKTDNp9qaGEjKozX5guvi0DGSxAMHJFYp2c
@@ -601,11 +120,11 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 61023
-  name: 上次更新：2026-10-03 19:32
+  name: 上次更新：2026-10-04 00:09
   type: hysteria2
   sni: 8880607c01ea43e8a6bf.nnjd10086.top
 - name: 🇯🇵 免费-日本1-Ver.7
-  server: 0qzyywn-g05.jp01-nn-vm0.entry.fr0528.art
+  server: 4q45yfa-g05.jp01-nn-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -615,7 +134,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本2-Ver.8
-  server: eaa5uw2-g05.jp02-e3-vm0.entry.fr0528.art
+  server: 0yz2yf2-g05.jp02-e3-vm0.entry.fr0528.art
   port: 11777
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -625,7 +144,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本3-Ver.7
-  server: 0aa59wa-g05.jp03-j7-vm0.entry.fr0528.art
+  server: pq7y9w2-g05.jp03-j7-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -635,7 +154,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本4-Ver.8
-  server: pq45ui6-g05.jp04-1d-vm0.entry.fr0528.art
+  server: eaa2yfa-g05.jp04-1d-vm0.entry.fr0528.art
   port: 448
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -645,7 +164,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本5-Ver.9
-  server: 4aay9wa-g05.jp05-h6-vm0.entry.fr0528.art
+  server: pqz2yfn-g05.jp05-h6-vm0.entry.fr0528.art
   port: 46486
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -655,7 +174,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本6-Ver.8
-  server: pyz5ywn-g05.jp06-jz-vm0.entry.fr0528.art
+  server: 4y42yfa-g05.jp06-jz-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -665,7 +184,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本7-Ver.2
-  server: 0az2yf6-g05.jp07-sh-vm0.entry.fr0528.art
+  server: pqz59i2-g05.jp07-sh-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -674,37 +193,102 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  udp: true
-- name: 🇯🇵_JP_日本->🇺🇸_US_美国
+- name: 🇬🇪 Грузия Speed-1 (188.114.97.1)
   type: vless
-  server: ghosts-spasm.quick-cdn.net
+  server: 188.114.97.1
   port: 443
-  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   network: ws
-  servername: ghosts-spasm.quick-cdn.net
   tls: true
+  udp: true
+  servername: geo.shkola112.site
   client-fingerprint: chrome
   ws-opts:
-    path: /ws
+    path: /api-vless
     headers:
-      Host: ghosts-spasm.quick-cdn.net
-  skip-cert-verify: true
+      Host: geo.shkola112.site
+- name: 🇬🇪 Грузия Speed-2 (104.16.132.229)
+  type: vless
+  server: 104.16.132.229
+  port: 443
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  network: ws
+  tls: true
   udp: true
+  servername: geo.shkola112.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api-vless
+    headers:
+      Host: geo.shkola112.site
+- name: 🇬🇪 Грузия Speed-3 (162.159.192.1)
+  type: vless
+  server: 162.159.192.1
+  port: 443
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  network: ws
+  tls: true
+  udp: true
+  servername: geo.shkola112.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api-vless
+    headers:
+      Host: geo.shkola112.site
+- name: 🇬🇪 Грузия Cloudflare-Auto
+  type: vless
+  server: geo.shkola112.site
+  port: 443
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  network: ws
+  tls: true
+  udp: true
+  servername: geo.shkola112.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api-vless
+    headers:
+      Host: geo.shkola112.site
+- name: 🇺🇸 США (IPv4) - 45.152.201.50
+  type: socks5
+  server: 45.152.201.50
+  port: 8000
+  username: vXjZsn
+  password: rCbek7
+  udp: true
+  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
+- name: 🇩🇪 Германия (IPv6) - 85.195.81.156
+  type: socks5
+  server: 85.195.81.156
+  port: 10539
+  username: 38KRoY
+  password: udvrsT
+  udp: true
+  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
+- name: 🇫🇷 Франция (IPv6) - 104.238.190.248
+  type: socks5
+  server: 104.238.190.248
+  port: 11024
+  username: baFwqZ
+  password: Sq51aK
+  udp: true
+  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
+- name: 🇳🇱 Нидерланды (IPv6) - 45.91.209.134
+  type: socks5
+  server: 45.91.209.134
+  port: 11522
+  username: gXBPPa
+  password: bR5bpP
+  udp: true
+  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
+- name: 🇺🇸 США (IPv6) - 45.145.57.233
+  type: socks5
+  server: 45.145.57.233
+  port: 11319
+  username: PG7pvX
+  password: 8xqvbu
+  udp: true
+  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vless
   server: us22.sofast.live
@@ -712,18 +296,6 @@ proxies:
   uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '500'
-  down: '1000'
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
   udp: true
 - name: 🇺🇸_US_美国
   type: vmess
@@ -741,10 +313,52 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇭🇰_HK_中国香港_1
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '500'
+  down: '1000'
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  type: vless
+  server: 2.59.134.226
+  port: 443
+  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
+  servername: rich-falcon.cdn.cachefleet.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  network: ws
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
+  server: v33.hdacd.com
+  port: 30833
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
@@ -758,15 +372,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  network: ws
   tls: false
   skip-cert-verify: true
   udp: true
@@ -786,17 +391,14 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇩🇪_DE_德国_1
-  type: vless
-  server: 2.59.134.226
-  port: 443
-  uuid: 88281d02-b387-4fe3-918e-26ed331e6d08
-  servername: rich-falcon.cdn.cachefleet.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: end-gfw.com@kr3
@@ -2472,53 +2074,16 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇩🇪 德国 10
-  - 🇨🇿 捷克 08
   - 日本(低延迟)V1-3
   - 日本(低延迟)V1-4
-  - 剩余流量：0
-  - v601
-  - v602
-  - v603
-  - v604
-  - v605
-  - v606
-  - v607
-  - v608
-  - v609
-  - v610
-  - v611
-  - v612
-  - v613
-  - v614
-  - v615
-  - v616
-  - v617
-  - v618
-  - v619
-  - v620
-  - v621
-  - v622
-  - v623
-  - v624
-  - v625
-  - v626
-  - v627
-  - v628
-  - v629
-  - v631
-  - v632
-  - v633
-  - v634
-  - v635
   - 流量已用尽
   - 套餐过期：2026-10-22
-  - 剩余流量：-677988224KB
+  - 剩余流量：-678428216KB
   - 流量重置日：2026-10-22
   - 官网：niuniuvpn.com
   - 用户ID：12769O57027794
   - 联系客服：@ionoionoi
-  - 上次更新：2026-10-03 19:32
+  - 上次更新：2026-10-04 00:09
   - 🇯🇵 免费-日本1-Ver.7
   - 🇯🇵 免费-日本2-Ver.8
   - 🇯🇵 免费-日本3-Ver.7
@@ -2526,16 +2091,25 @@ proxy-groups:
   - 🇯🇵 免费-日本5-Ver.9
   - 🇯🇵 免费-日本6-Ver.8
   - 🇯🇵 免费-日本7-Ver.2
-  - 🇭🇰_HK_中国香港
-  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇬🇪 Грузия Speed-1 (188.114.97.1)
+  - 🇬🇪 Грузия Speed-2 (104.16.132.229)
+  - 🇬🇪 Грузия Speed-3 (162.159.192.1)
+  - 🇬🇪 Грузия Cloudflare-Auto
+  - 🇺🇸 США (IPv4) - 45.152.201.50
+  - 🇩🇪 Германия (IPv6) - 85.195.81.156
+  - 🇫🇷 Франция (IPv6) - 104.238.190.248
+  - 🇳🇱 Нидерланды (IPv6) - 45.91.209.134
+  - 🇺🇸 США (IPv6) - 45.145.57.233
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港_1
-  - 🇨🇳_CN_中国
-  - 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
-  - 🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国
   - 🇩🇪_DE_德国_1
+  - 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国
+  - 🇺🇸_US_美国_1
+  - 🇭🇰_HK_中国香港
   - end-gfw.com@kr3
   - end-gfw.com@sg3
   - end-gfw.com@sg33
