@@ -537,7 +537,7 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 14443
-  name: 剩余流量：-676954990KB
+  name: 剩余流量：-677522382KB
   type: hysteria2
   sni: 3536113652f84c28acc1.nnjd10086.top
 - udp: true
@@ -601,11 +601,11 @@ proxies:
   password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
   skip-cert-verify: true
   port: 61023
-  name: 上次更新：2026-10-03 06:06
+  name: 上次更新：2026-10-03 13:07
   type: hysteria2
   sni: 8880607c01ea43e8a6bf.nnjd10086.top
 - name: 🇯🇵 免费-日本1-Ver.7
-  server: 4y4yyw6-g05.jp01-nn-vm0.entry.fr0528.art
+  server: 0qa2mi6-g05.jp01-nn-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -615,7 +615,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本2-Ver.8
-  server: 0q4yuw6-g05.jp02-e3-vm0.entry.fr0528.art
+  server: 0qzymwa-g05.jp02-e3-vm0.entry.fr0528.art
   port: 11777
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -625,7 +625,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本3-Ver.7
-  server: ey72ywn-g05.jp03-j7-vm0.entry.fr0528.art
+  server: 0a4ymia-g05.jp03-j7-vm0.entry.fr0528.art
   port: 21585
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -635,7 +635,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本4-Ver.8
-  server: 0azymia-g05.jp04-1d-vm0.entry.fr0528.art
+  server: 4y72yw6-g05.jp04-1d-vm0.entry.fr0528.art
   port: 448
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -645,7 +645,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本5-Ver.9
-  server: eq42yf6-g05.jp05-h6-vm0.entry.fr0528.art
+  server: 4q7y9on-g05.jp05-h6-vm0.entry.fr0528.art
   port: 46486
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -655,7 +655,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本6-Ver.8
-  server: 4qz5mwn-g05.jp06-jz-vm0.entry.fr0528.art
+  server: ea45yf2-g05.jp06-jz-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -665,7 +665,7 @@ proxies:
   skip-cert-verify: false
   udp: true
 - name: 🇯🇵 免费-日本7-Ver.2
-  server: 0aa2mfa-g05.jp07-sh-vm0.entry.fr0528.art
+  server: 0y42uf6-g05.jp07-sh-vm0.entry.fr0528.art
   port: 28787
   type: vmess
   uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
@@ -673,49 +673,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: vless
-  server: tr3.wba-pn.ru
-  port: 443
-  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
-  network: ws
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
   udp: true
 - name: 🇭🇰_HK_中国香港
   type: vmess
@@ -733,70 +690,42 @@ proxies:
     headers:
       Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+- name: 🇯🇵_JP_日本->🇺🇸_US_美国
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港_1
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: vless
-  server: 7-m16.PhUkEt2035.kdNS.fr
+  server: ghosts-spasm.quick-cdn.net
   port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  uuid: 9d50fde6-7e89-4dee-9fee-17a77046604c
   network: ws
-  servername: 7-m16.PhUkEt2035.kdNS.fr
+  servername: ghosts-spasm.quick-cdn.net
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    path: /ws
     headers:
-      Host: 7-m16.PhUkEt2035.kdNS.fr
+      Host: ghosts-spasm.quick-cdn.net
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港_2
-  type: vmess
-  server: hkgb707.ifastcdncache.com
-  port: 60852
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
-  alterId: 2
-  cipher: auto
-  tls: false
+- name: 🇩🇪_DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '500'
+  down: '1000'
+  sni: apple.com
   skip-cert-verify: true
-  network: ws
+  alpn:
+  - h3
   udp: true
-- name: 🇺🇸_US_美国_2
+- name: 🇺🇸_US_美国
   type: vmess
   server: www.shopify.com
   port: 443
@@ -812,17 +741,50 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇩🇪_DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '500'
-  down: '1000'
-  sni: apple.com
+- name: 🇭🇰_HK_中国香港_1
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
-  alpn:
-  - h3
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  network: ws
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
   udp: true
 - name: 🇩🇪_DE_德国_1
   type: vless
@@ -835,21 +797,6 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇮_FI_芬兰
-  type: vless
-  server: hub-fi-03.hanvpn.cc
-  port: 443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  network: ws
-  servername: hub-fi-03.hanvpn.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fi03-ws-8e47a
-    headers:
-      Host: hub-fi-03.hanvpn.cc
   skip-cert-verify: true
   udp: true
 - name: end-gfw.com@kr3
@@ -1375,7 +1322,7 @@ proxies:
       Host: o.server3peekconfig.workers.dev
 - name: 'end-gfw.com@sg89 #2'
   type: vless
-  server: 13.213.19.251
+  server: 18.143.183.26
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -1384,7 +1331,7 @@ proxies:
   servername: www.apple.com
 - name: 'end-gfw.com@kr64 #2'
   type: vless
-  server: 13.124.124.46
+  server: 3.36.120.14
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   network: tcp
@@ -2537,12 +2484,12 @@ proxy-groups:
   - v635
   - 流量已用尽
   - 套餐过期：2026-10-22
-  - 剩余流量：-676954990KB
+  - 剩余流量：-677522382KB
   - 流量重置日：2026-10-22
   - 官网：niuniuvpn.com
   - 用户ID：12769O57027794
   - 联系客服：@ionoionoi
-  - 上次更新：2026-10-03 06:06
+  - 上次更新：2026-10-03 13:07
   - 🇯🇵 免费-日本1-Ver.7
   - 🇯🇵 免费-日本2-Ver.8
   - 🇯🇵 免费-日本3-Ver.7
@@ -2550,21 +2497,16 @@ proxy-groups:
   - 🇯🇵 免费-日本5-Ver.9
   - 🇯🇵 免费-日本6-Ver.8
   - 🇯🇵 免费-日本7-Ver.2
-  - 🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  - 🇺🇸_US_美国
   - 🇭🇰_HK_中国香港
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇭🇰_HK_中国香港_1
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国
-  - 🇭🇰_HK_中国香港_2
-  - 🇺🇸_US_美国_2
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港_1
+  - 🇨🇳_CN_中国
+  - 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
+  - 🇺🇸_US_美国_1
   - 🇩🇪_DE_德国_1
-  - 🇫🇮_FI_芬兰
   - end-gfw.com@kr3
   - end-gfw.com@sg3
   - end-gfw.com@sg33
