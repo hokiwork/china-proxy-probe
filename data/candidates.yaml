@@ -23,283 +23,29 @@ proxies:
   client-fingerprint: chrome
   servername: www.tesla.com
   flow: xtls-rprx-vision
-- udp: true
-  server: 127.0.0.1
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9Wcqab3bzX-c4ecG3uiLlT9S4coNgHE1PmUIiaYnPxk
-    short-id: 4a035a0b
-  port: 20001
-  name: 流量已用尽
-  servername: kr.yahoo.com
-  client-fingerprint: chrome
-  tls: true
+- name: 优选节点,下载速度快但是不稳
   type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 43.203.231.27
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9Wcqab3bzX-c4ecG3uiLlT9S4coNgHE1PmUIiaYnPxk
-    short-id: 4a035a0b
-  port: 20001
-  name: 套餐过期：2026-10-22
-  servername: kr.yahoo.com
-  client-fingerprint: chrome
-  tls: true
-  type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 3536113652f84c28acc1.nnjd10086.top
-  password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
-  skip-cert-verify: true
-  port: 14443
-  name: 剩余流量：-678898543KB
-  type: hysteria2
-  sni: 3536113652f84c28acc1.nnjd10086.top
-- udp: true
-  server: 13.215.191.118
-  skip-cert-verify: true
-  reality-opts:
-    public-key: f5UamDR1jN4qJmUAFxWKP5v62nXguuZExtK9_OWwyWA
-    short-id: bd449c03
-  port: 443
-  name: 流量重置日：2026-10-22
-  servername: sg.yahoo.com
-  client-fingerprint: chrome
-  tls: true
-  type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 18.141.56.62
-  skip-cert-verify: true
-  reality-opts:
-    public-key: f5UamDR1jN4qJmUAFxWKP5v62nXguuZExtK9_OWwyWA
-    short-id: bd449c03
-  port: 443
-  name: 官网：niuniuvpn.com
-  servername: sg.yahoo.com
-  client-fingerprint: chrome
-  tls: true
-  type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 52.221.240.89
-  skip-cert-verify: true
-  reality-opts:
-    public-key: f5UamDR1jN4qJmUAFxWKP5v62nXguuZExtK9_OWwyWA
-    short-id: bd449c03
-  port: 443
-  name: 用户ID：12769O57027794
-  servername: sg.yahoo.com
-  client-fingerprint: chrome
-  tls: true
-  type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 35.77.94.79
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7-2E_ptHKKTDNp9qaGEjKozX5guvi0DGSxAMHJFYp2c
-    short-id: 16d4d5d5
-  port: 20001
-  name: 联系客服：@ionoionoi
-  servername: www.yahoo.co.jp
-  client-fingerprint: chrome
-  tls: true
-  type: vless
-  uuid: 71c8b5f0-3b96-4435-8d24-cb1cdf44989e
-  flow: xtls-rprx-vision
-- udp: true
-  server: 8880607c01ea43e8a6bf.nnjd10086.top
-  password: 7e75d8e6-85d1-4f11-85dd-546c43469f07
-  skip-cert-verify: true
-  port: 61023
-  name: 上次更新：2026-10-04 05:06
-  type: hysteria2
-  sni: 8880607c01ea43e8a6bf.nnjd10086.top
-- name: 🇯🇵 免费-日本1-Ver.7
-  server: eyz5yfa-g05.jp01-nn-vm0.entry.fr0528.art
-  port: 21585
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本2-Ver.8
-  server: eaz5yw6-g05.jp02-e3-vm0.entry.fr0528.art
-  port: 11777
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本3-Ver.7
-  server: 4a75yi6-g05.jp03-j7-vm0.entry.fr0528.art
-  port: 21585
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本4-Ver.8
-  server: 0y459f6-g05.jp04-1d-vm0.entry.fr0528.art
-  port: 448
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本5-Ver.9
-  server: 0az5yi6-g05.jp05-h6-vm0.entry.fr0528.art
-  port: 46486
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本6-Ver.8
-  server: 4yz29on-g05.jp06-jz-vm0.entry.fr0528.art
-  port: 28787
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本7-Ver.2
-  server: eqz5yf2-g05.jp07-sh-vm0.entry.fr0528.art
-  port: 28787
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-  type: vless
-  server: 188.114.97.1
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  server: cf3.466688.xyz
+  port: 8880
+  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
   network: ws
-  tls: true
-  udp: true
-  servername: geo.shkola112.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 Грузия Speed-2 (104.16.132.229)
-  type: vless
-  server: 104.16.132.229
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  network: ws
-  tls: true
-  udp: true
-  servername: geo.shkola112.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 Грузия Speed-3 (162.159.192.1)
-  type: vless
-  server: 162.159.192.1
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  network: ws
-  tls: true
-  udp: true
-  servername: geo.shkola112.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇬🇪 Грузия Cloudflare-Auto
-  type: vless
-  server: geo.shkola112.site
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  network: ws
-  tls: true
-  udp: true
-  servername: geo.shkola112.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
-- name: 🇺🇸 США (IPv4) - 45.152.201.50
-  type: socks5
-  server: 45.152.201.50
-  port: 8000
-  username: vXjZsn
-  password: rCbek7
-  udp: true
-  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-- name: 🇩🇪 Германия (IPv6) - 85.195.81.156
-  type: socks5
-  server: 85.195.81.156
-  port: 10539
-  username: 38KRoY
-  password: udvrsT
-  udp: true
-  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-- name: 🇫🇷 Франция (IPv6) - 104.238.190.248
-  type: socks5
-  server: 104.238.190.248
-  port: 11024
-  username: baFwqZ
-  password: Sq51aK
-  udp: true
-  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-- name: 🇳🇱 Нидерланды (IPv6) - 45.91.209.134
-  type: socks5
-  server: 45.91.209.134
-  port: 11522
-  username: gXBPPa
-  password: bR5bpP
-  udp: true
-  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-- name: 🇺🇸 США (IPv6) - 45.145.57.233
-  type: socks5
-  server: 45.145.57.233
-  port: 11319
-  username: PG7pvX
-  password: 8xqvbu
-  udp: true
-  dialer-proxy: 🇬🇪 Грузия Speed-1 (188.114.97.1)
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
-  skip-cert-verify: true
-  udp: true
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net@xijinpingdashabi
+    headers:
+      Host: shrill-fog-67af.235-e6a.workers.dev
+- name: sh.770886.xyz-xhttp
+  type: vless
+  server: sh.770886.xyz
+  port: 2096
+  uuid: 819c49c1-a44d-4d6e-80c7-363933028771
+  network: xhttp
+  tls: true
+  client-fingerprint: random
+  servername: sh.770886.xyz
 - name: 🇺🇸_US_美国
   type: vmess
-  server: www.shopify.com
+  server: guanwang.awsno.com
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
@@ -338,27 +84,10 @@ proxies:
     public-key: 1sSmdw90uTiGuitDvp_q8zcXTcHXKQS3IVjA7T1UNiY
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  network: ws
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+- name: 🇭🇰_HK_中国香港
   type: vmess
-  server: v33.hdacd.com
-  port: 30833
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
@@ -377,7 +106,7 @@ proxies:
   udp: true
 - name: 🇺🇸_US_美国_1
   type: vmess
-  server: guanwang.awsno.com
+  server: www.shopify.com
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
@@ -390,16 +119,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
   udp: true
 - name: end-gfw.com@kr3
   type: vless
@@ -2076,40 +1795,14 @@ proxy-groups:
   proxies:
   - 日本(低延迟)V1-3
   - 日本(低延迟)V1-4
-  - 流量已用尽
-  - 套餐过期：2026-10-22
-  - 剩余流量：-678898543KB
-  - 流量重置日：2026-10-22
-  - 官网：niuniuvpn.com
-  - 用户ID：12769O57027794
-  - 联系客服：@ionoionoi
-  - 上次更新：2026-10-04 05:06
-  - 🇯🇵 免费-日本1-Ver.7
-  - 🇯🇵 免费-日本2-Ver.8
-  - 🇯🇵 免费-日本3-Ver.7
-  - 🇯🇵 免费-日本4-Ver.8
-  - 🇯🇵 免费-日本5-Ver.9
-  - 🇯🇵 免费-日本6-Ver.8
-  - 🇯🇵 免费-日本7-Ver.2
-  - 🇬🇪 Грузия Speed-1 (188.114.97.1)
-  - 🇬🇪 Грузия Speed-2 (104.16.132.229)
-  - 🇬🇪 Грузия Speed-3 (162.159.192.1)
-  - 🇬🇪 Грузия Cloudflare-Auto
-  - 🇺🇸 США (IPv4) - 45.152.201.50
-  - 🇩🇪 Германия (IPv6) - 85.195.81.156
-  - 🇫🇷 Франция (IPv6) - 104.238.190.248
-  - 🇳🇱 Нидерланды (IPv6) - 45.91.209.134
-  - 🇺🇸 США (IPv6) - 45.145.57.233
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 优选节点,下载速度快但是不稳
+  - sh.770886.xyz-xhttp
   - 🇺🇸_US_美国
   - 🇩🇪_DE_德国
   - 🇩🇪_DE_德国_1
-  - 🇩🇪_DE_德国->🇱🇰_LK_斯里兰卡
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港
   - 🇨🇳_CN_中国
   - 🇺🇸_US_美国_1
-  - 🇭🇰_HK_中国香港
   - end-gfw.com@kr3
   - end-gfw.com@sg3
   - end-gfw.com@sg33
