@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:02:06.489857+00:00",
+  "generated_at": "2026-10-08T05:52:32.574232+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -198,23 +198,6 @@
       "uuid": "70d8ac0f-82a9-4b26-b054-55b3eabc73c4"
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "日本-住宅-01-sstp",
-      "network": "ws",
-      "port": 443,
-      "server": "xxw.zx10.eu.cc",
-      "servername": "xxw.zx10.eu.cc",
-      "tls": true,
-      "type": "vless",
-      "uuid": "b0437161-402e-483d-8462-65215b245b07",
-      "ws-opts": {
-        "headers": {
-          "Host": "xxw.zx10.eu.cc"
-        },
-        "path": "/video/GRJASkdUFAsPR0NGFQ8YGkYXSEpaV19IFA8QR0UMEBgXElFEEUdbQVMTDBNbRF4QSQ9cV0AQQ1lZUxAXFENCXwRTAQwCWwYGUR5bQ1JfUUYDWlVGRwEWSFwWWRoOBwYZDkg="
-      }
-    },
-    {
       "cipher": "aes-128-gcm",
       "name": "在线设备数量超过套餐允许值！",
       "password": "3431c3a2-2b41-49f9-a1f5-1a2ace80148c",
@@ -223,126 +206,23 @@
       "type": "ss"
     },
     {
-      "alterId": 2,
-      "cipher": "auto",
-      "name": "🇭🇰_HK_中国香港->🇺🇸_US_美国",
-      "port": 30804,
-      "server": "v4.hdacd.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "alterId": 2,
-      "cipher": "auto",
-      "name": "🇭🇰_HK_中国香港",
-      "port": 30807,
-      "server": "v10.hdacd.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "name": "🇳🇬_NG_尼日利亚",
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "日本",
+      "network": "tcp",
       "port": 443,
-      "server": "103.97.91.17",
-      "skip-cert-verify": true,
-      "sni": "la.freeguard.org",
-      "type": "trojan",
-      "udp": true
-    },
-    {
-      "alterId": 2,
-      "cipher": "auto",
-      "name": "🇭🇰_HK_中国香港->🇯🇵_JP_日本",
-      "port": 30806,
-      "server": "v6.hdacd.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
-      "port": 58011,
-      "server": "us22.sofast.live",
-      "skip-cert-verify": true,
-      "tls": false,
+      "reality-opts": {
+        "public-key": "fLUMGaP8K-vyj5WCp6mXFTCK4ytwPOhhWSCEXVftBw8",
+        "short-id": "535c90517b34"
+      },
+      "server": "103.213.248.226",
+      "servername": "api.semiconductor.samsung.cn",
+      "skip-cert-verify": false,
+      "tfo": false,
+      "tls": true,
       "type": "vless",
       "udp": true,
-      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
-    },
-    {
-      "alterId": 64,
-      "cipher": "auto",
-      "name": "🇨🇳_CN_中国",
-      "port": 50002,
-      "server": "112.132.215.108",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-    },
-    {
-      "name": "🇳🇱_NL_荷兰",
-      "port": 62145,
-      "server": "134.98.147.203",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-    },
-    {
-      "name": "🇳🇱_NL_荷兰_1",
-      "port": 62145,
-      "server": "51.170.176.145",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-    },
-    {
-      "alterId": 2,
-      "cipher": "auto",
-      "name": "🇭🇰_HK_中国香港->🇬🇧_GB_英国",
-      "port": 30836,
-      "server": "v36.hdacd.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "alterId": 2,
-      "cipher": "auto",
-      "name": "🇭🇰_HK_中国香港->🇫🇷_FR_法国",
-      "port": 30835,
-      "server": "v35.hdacd.com",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    },
-    {
-      "name": "🇲🇽_MX_墨西哥",
-      "port": 10226,
-      "server": "45.164.20.85",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
+      "uuid": "78f6f15d-e4ae-468f-b732-364bbc51f1fa"
     },
     {
       "client-fingerprint": "firefox",
@@ -364,6 +244,40 @@
       }
     },
     {
+      "alterId": 64,
+      "cipher": "auto",
+      "name": "🇨🇳_CN_中国",
+      "port": 50002,
+      "server": "112.132.215.108",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇭🇰_HK_中国香港",
+      "port": 16116,
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1"
+    },
+    {
+      "name": "🇸🇬_SG_新加坡",
+      "port": 443,
+      "server": "onhit.shalana.xyz",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "408fbae6-a40b-4f0b-9723-0b4ce8e3d035"
+    },
+    {
       "alterId": 0,
       "cipher": "auto",
       "name": "🇺🇸_US_美国",
@@ -382,6 +296,55 @@
         },
         "path": "/hls/cctv5phd.m3u8"
       }
+    },
+    {
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
+      "port": 52683,
+      "server": "jp.sofast.live",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "399b6b23-cc40-4831-a494-61948e2df133"
+    },
+    {
+      "client-fingerprint": "firefox",
+      "name": "🇸🇬_SG_新加坡_1",
+      "network": "ws",
+      "port": 2096,
+      "server": "free-server.techsonic.dev",
+      "servername": "free-server.techsonic.dev",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
+      "ws-opts": {
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        },
+        "path": "/free-server.techsonic.dev"
+      }
+    },
+    {
+      "cipher": "aes-256-cfb",
+      "name": "🇺🇸_US_美国_1",
+      "password": "amazonskr05",
+      "port": 443,
+      "server": "54.90.169.61",
+      "skip-cert-verify": true,
+      "type": "ss",
+      "udp": true
+    },
+    {
+      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_1",
+      "port": 58011,
+      "server": "us22.sofast.live",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vless",
+      "udp": true,
+      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
     },
     {
       "client-fingerprint": "chrome",
@@ -1517,7 +1480,7 @@
       "name": "未知 SS-55 | free-nodes",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "3.35.54.161",
+      "server": "13.229.58.5",
       "type": "ss"
     },
     {
@@ -1525,12 +1488,28 @@
       "name": "未知 SS-56 | free-nodes",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "52.78.59.52",
+      "server": "3.35.54.161",
       "type": "ss"
     },
     {
       "cipher": "chacha20-ietf-poly1305",
       "name": "未知 SS-57 | free-nodes",
+      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "port": 8443,
+      "server": "43.201.250.101",
+      "type": "ss"
+    },
+    {
+      "cipher": "chacha20-ietf-poly1305",
+      "name": "未知 SS-58 | free-nodes",
+      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "port": 8443,
+      "server": "52.78.59.52",
+      "type": "ss"
+    },
+    {
+      "cipher": "chacha20-ietf-poly1305",
+      "name": "未知 SS-59 | free-nodes",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
       "port": 50099,
       "server": "36.224.141.124",
@@ -1538,7 +1517,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-58 | free-nodes",
+      "name": "未知 SS-60 | free-nodes",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
       "port": 50099,
       "server": "r3mrcg001286ek2.cybervena.com",
@@ -1546,7 +1525,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-60 | free-nodes",
+      "name": "未知 SS-62 | free-nodes",
       "password": "9epp3o9ng8ej59uv",
       "port": 14249,
       "server": "45.128.12.20",
@@ -1554,7 +1533,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-61 | free-nodes",
+      "name": "未知 SS-63 | free-nodes",
       "password": "2db985f6-21bf-40c2-a4f1-4ce2cf90b1c2",
       "port": 8443,
       "server": "13.229.204.74",
@@ -1562,7 +1541,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-62 | free-nodes",
+      "name": "未知 SS-64 | free-nodes",
       "password": "wwj19enpp68px8t7",
       "port": 1081,
       "server": "sth.free-outline.giize.com",
@@ -1570,7 +1549,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-63 | free-nodes",
+      "name": "未知 SS-65 | free-nodes",
       "password": "xXsl5l3ZfdG9zRWGkkft1j",
       "port": 5223,
       "server": "creativeboxfin.zanity.net",
@@ -1578,7 +1557,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-64 | free-nodes",
+      "name": "未知 SS-66 | free-nodes",
       "password": "IXa3ylzS_jBOAsQy071tIQ",
       "port": 1080,
       "server": "94.249.187.46",
@@ -1586,7 +1565,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-65 | free-nodes",
+      "name": "未知 SS-67 | free-nodes",
       "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242",
       "port": 777,
       "server": "45.149.114.171",
@@ -1594,7 +1573,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-66 | free-nodes",
+      "name": "未知 SS-68 | free-nodes",
       "password": "XV4bvaJIWoxl3IYEC1e6W7",
       "port": 2342,
       "server": "194.233.74.160",
@@ -1602,7 +1581,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-67 | free-nodes",
+      "name": "未知 SS-69 | free-nodes",
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3",
       "port": 8388,
       "server": "132.243.175.144",
@@ -1610,7 +1589,15 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-68 | free-nodes",
+      "name": "未知 SS-70 | free-nodes",
+      "password": "m5nsedvdczx6x06e",
+      "port": 1080,
+      "server": "telegramx.khp25.com",
+      "type": "ss"
+    },
+    {
+      "cipher": "chacha20-ietf-poly1305",
+      "name": "未知 SS-71 | free-nodes",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "port": 443,
       "server": "82.38.31.159",
@@ -1618,7 +1605,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-69 | free-nodes",
+      "name": "未知 SS-72 | free-nodes",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "port": 8080,
       "server": "82.38.31.42",
@@ -1626,7 +1613,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-70 | free-nodes",
+      "name": "未知 SS-73 | free-nodes",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "port": 8080,
       "server": "82.38.31.46",
@@ -1634,7 +1621,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-71 | free-nodes",
+      "name": "未知 SS-74 | free-nodes",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "port": 8080,
       "server": "82.38.31.82",
@@ -1642,7 +1629,7 @@
     },
     {
       "cipher": "chacha20-ietf-poly1305",
-      "name": "未知 SS-72 | free-nodes",
+      "name": "未知 SS-75 | free-nodes",
       "password": "pno0e2keji2gsfea",
       "port": 1080,
       "server": "telegram.khp25.com",
@@ -1650,7 +1637,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-73 | free-nodes",
+      "name": "未知 SS-76 | free-nodes",
       "password": "1377d5cfafc9279a904deb3bfa4f3de2",
       "port": 14680,
       "server": "74.201.177.54",
@@ -1658,7 +1645,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-74 | free-nodes",
+      "name": "未知 SS-77 | free-nodes",
       "password": "4efe1af272e7292139b889f6a63ee071",
       "port": 18766,
       "server": "64.74.163.69",
@@ -1666,7 +1653,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-75 | free-nodes",
+      "name": "未知 SS-78 | free-nodes",
       "password": "50ce2ac177d8d8cdad6b4a68739e2ea0",
       "port": 13627,
       "server": "66.23.202.54",
@@ -1674,7 +1661,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-76 | free-nodes",
+      "name": "未知 SS-79 | free-nodes",
       "password": "62dd75ba944947d4ca983cf1679b3797",
       "port": 15240,
       "server": "173.234.25.90",
@@ -1682,7 +1669,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-77 | free-nodes",
+      "name": "未知 SS-80 | free-nodes",
       "password": "67c57ae584eecd70396fcd7ca7521130",
       "port": 16673,
       "server": "147.78.1.234",
@@ -1690,7 +1677,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-78 | free-nodes",
+      "name": "未知 SS-81 | free-nodes",
       "password": "87e9cb62706b5cd08da95b8b423cb673",
       "port": 16469,
       "server": "103.214.111.162",
@@ -1698,7 +1685,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-79 | free-nodes",
+      "name": "未知 SS-82 | free-nodes",
       "password": "89d3a0375a279f6e743fea76e72952a8",
       "port": 16995,
       "server": "66.23.204.210",
@@ -1706,7 +1693,7 @@
     },
     {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-80 | free-nodes",
+      "name": "未知 SS-83 | free-nodes",
       "password": "bKgENdAl@8Zx3lAc-HK-BD-20260622",
       "port": 24443,
       "server": "154.86.30.45",
@@ -1714,7 +1701,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-81 | free-nodes",
+      "name": "未知 SS-84 | free-nodes",
       "password": "665e00335bb2fb5f7ee8243952205e5e",
       "port": 2087,
       "server": "74.222.12.141",
@@ -1722,7 +1709,15 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-82 | free-nodes",
+      "name": "未知 SS-85 | free-nodes",
+      "password": "6b39ae3234dfd68b",
+      "port": 20880,
+      "server": "46.17.42.141",
+      "type": "ss"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "未知 SS-86 | free-nodes",
       "password": "8c009bb6-08b3-4526-a86b-5af7ddfc567a-4c757b72-6eec-4faf-8c2e-09fd1c7fa936",
       "port": 43579,
       "server": "192.3.247.109",
@@ -1730,7 +1725,23 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-83 | free-nodes",
+      "name": "未知 SS-87 | free-nodes",
+      "password": "ac9c0a7b",
+      "port": 49642,
+      "server": "211.174.113.172",
+      "type": "ss"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "未知 SS-88 | free-nodes",
+      "password": "bdb313adf74c2ede",
+      "port": 20880,
+      "server": "46.17.45.31",
+      "type": "ss"
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "未知 SS-89 | free-nodes",
       "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH",
       "port": 9443,
       "server": "185.156.47.97",
@@ -1738,7 +1749,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-84 | free-nodes",
+      "name": "未知 SS-90 | free-nodes",
       "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH",
       "port": 9443,
       "server": "yyz-ca-01.blncvpn4u.cc",
@@ -1746,7 +1757,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-86 | free-nodes",
+      "name": "未知 SS-92 | free-nodes",
       "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=",
       "port": 52351,
       "server": "pphfree2.mvpnpvpn.de5.net",
@@ -1754,7 +1765,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-87 | free-nodes",
+      "name": "未知 SS-94 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "141.227.134.63",
@@ -1762,7 +1773,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-88 | free-nodes",
+      "name": "未知 SS-95 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "143.110.161.156",
@@ -1770,7 +1781,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-89 | free-nodes",
+      "name": "未知 SS-96 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "146.190.236.129",
@@ -1778,7 +1789,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-90 | free-nodes",
+      "name": "未知 SS-97 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "146.59.116.19",
@@ -1786,7 +1797,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-91 | free-nodes",
+      "name": "未知 SS-98 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "172.238.244.13",
@@ -1794,7 +1805,7 @@
     },
     {
       "cipher": "aes-256-gcm",
-      "name": "未知 SS-92 | free-nodes",
+      "name": "未知 SS-99 | free-nodes",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
       "port": 17000,
       "server": "206.189.52.4",
@@ -1809,7 +1820,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-94 | free-nodes",
+      "name": "未知 TROJAN-102 | free-nodes",
       "network": "tcp",
       "password": "M7v%w11Se*",
       "port": 443,
@@ -1818,16 +1829,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-95 | free-nodes",
-      "network": "grpc",
-      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
-      "port": 443,
-      "server": "31.77.168.21",
-      "sni": "d3-de2.cloud-cdn.xyz",
-      "type": "trojan"
-    },
-    {
-      "name": "未知 TROJAN-96 | free-nodes",
+      "name": "未知 TROJAN-103 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "accurate-frog.rooster465.autos",
@@ -1835,7 +1837,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-97 | free-nodes",
+      "name": "未知 TROJAN-104 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "amazing-peacock.rooster465.autos",
@@ -1843,7 +1845,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-98 | free-nodes",
+      "name": "未知 TROJAN-105 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "assuring-skink.rooster465.autos",
@@ -1851,15 +1853,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-99 | free-nodes",
-      "password": "UX82473651",
-      "port": 443,
-      "server": "brief-glider.rooster465.autos",
-      "sni": "brief-glider.rooster465.autos",
-      "type": "trojan"
-    },
-    {
-      "name": "未知 TROJAN-100 | free-nodes",
+      "name": "未知 TROJAN-106 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "comic-poodle.rooster465.autos",
@@ -1867,7 +1861,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-101 | free-nodes",
+      "name": "未知 TROJAN-107 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "concrete-aardvark.rooster465.autos",
@@ -1875,7 +1869,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-102 | free-nodes",
+      "name": "未知 TROJAN-108 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "delicate-buck.rooster465.autos",
@@ -1883,7 +1877,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-103 | free-nodes",
+      "name": "未知 TROJAN-109 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "dynamic-imp.rooster465.autos",
@@ -1891,7 +1885,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-104 | free-nodes",
+      "name": "未知 TROJAN-110 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "engaging-toucan.rooster465.autos",
@@ -1899,7 +1893,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-105 | free-nodes",
+      "name": "未知 TROJAN-111 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "evolving-platypus.rooster465.autos",
@@ -1907,7 +1901,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-106 | free-nodes",
+      "name": "未知 TROJAN-112 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "fancy-javelin.rooster465.autos",
@@ -1915,7 +1909,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-107 | free-nodes",
+      "name": "未知 TROJAN-113 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "glowing-marmoset.rooster465.autos",
@@ -1923,7 +1917,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-108 | free-nodes",
+      "name": "未知 TROJAN-114 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "guided-ferret.rooster465.autos",
@@ -1931,7 +1925,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-109 | free-nodes",
+      "name": "未知 TROJAN-115 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "holy-lamb.rooster465.autos",
@@ -1939,7 +1933,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-110 | free-nodes",
+      "name": "未知 TROJAN-116 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "integral-rodent.rooster465.autos",
@@ -1947,7 +1941,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-111 | free-nodes",
+      "name": "未知 TROJAN-117 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "intense-sole.rooster465.autos",
@@ -1955,7 +1949,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-112 | free-nodes",
+      "name": "未知 TROJAN-118 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "inviting-ferret.rooster465.autos",
@@ -1963,7 +1957,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-113 | free-nodes",
+      "name": "未知 TROJAN-119 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "kind-stork.rooster465.autos",
@@ -1971,7 +1965,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-114 | free-nodes",
+      "name": "未知 TROJAN-120 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "loved-shark.rooster465.autos",
@@ -1979,7 +1973,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-115 | free-nodes",
+      "name": "未知 TROJAN-121 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "main-fawn.rooster465.autos",
@@ -1987,7 +1981,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-116 | free-nodes",
+      "name": "未知 TROJAN-122 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "meet-goshawk.rooster465.autos",
@@ -1995,7 +1989,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-117 | free-nodes",
+      "name": "未知 TROJAN-123 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "musical-terrier.rooster465.autos",
@@ -2003,7 +1997,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-118 | free-nodes",
+      "name": "未知 TROJAN-124 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "neutral-quail.rooster465.autos",
@@ -2011,7 +2005,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-119 | free-nodes",
+      "name": "未知 TROJAN-125 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "noted-cougar.rooster465.autos",
@@ -2019,7 +2013,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-120 | free-nodes",
+      "name": "未知 TROJAN-126 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "obliging-louse.rooster465.autos",
@@ -2027,15 +2021,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-121 | free-nodes",
-      "password": "UX82473651",
-      "port": 443,
-      "server": "optimum-snapper.rooster465.autos",
-      "sni": "optimum-snapper.rooster465.autos",
-      "type": "trojan"
-    },
-    {
-      "name": "未知 TROJAN-122 | free-nodes",
+      "name": "未知 TROJAN-127 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "organic-caribou.rooster465.autos",
@@ -2043,7 +2029,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-123 | free-nodes",
+      "name": "未知 TROJAN-128 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "pet-antelope.rooster465.autos",
@@ -2051,7 +2037,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-124 | free-nodes",
+      "name": "未知 TROJAN-129 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "pleased-albacore.rooster465.autos",
@@ -2059,7 +2045,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-125 | free-nodes",
+      "name": "未知 TROJAN-130 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "pretty-rat.rooster465.autos",
@@ -2067,7 +2053,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-126 | free-nodes",
+      "name": "未知 TROJAN-131 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "prime-corgi.rooster465.autos",
@@ -2075,7 +2061,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-127 | free-nodes",
+      "name": "未知 TROJAN-132 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "promoted-rattler.rooster465.autos",
@@ -2083,7 +2069,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-128 | free-nodes",
+      "name": "未知 TROJAN-133 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "real-cardinal.rooster465.autos",
@@ -2091,7 +2077,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-129 | free-nodes",
+      "name": "未知 TROJAN-134 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "sacred-anemone.rooster465.autos",
@@ -2099,7 +2085,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-130 | free-nodes",
+      "name": "未知 TROJAN-135 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "ultimate-jaguar.rooster465.autos",
@@ -2107,7 +2093,7 @@
       "type": "trojan"
     },
     {
-      "name": "未知 TROJAN-131 | free-nodes",
+      "name": "未知 TROJAN-136 | free-nodes",
       "password": "UX82473651",
       "port": 443,
       "server": "winning-marten.rooster465.autos",
@@ -2115,25 +2101,15 @@
       "type": "trojan"
     },
     {
-      "name": "RU TROJAN-132 | free-nodes",
-      "network": "tcp",
-      "password": "WFer-5gN21nfHbVB2N8s71Z74EPUfzVj",
-      "port": 443,
-      "server": "fi.zhabulik.ru",
-      "sni": "fi.zhabulik.ru",
+      "name": "未知 TROJAN-137 | free-nodes",
+      "password": "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437",
+      "port": 8886,
+      "server": "139.180.146.200",
+      "sni": "139.180.146.200",
       "type": "trojan"
     },
     {
-      "name": "RU TROJAN-133 | free-nodes",
-      "network": "tcp",
-      "password": "WFer-5gN21nfHbVB2N8s71Z74EPUfzVj",
-      "port": 443,
-      "server": "nl.zhabulik.ru",
-      "sni": "nl.zhabulik.ru",
-      "type": "trojan"
-    },
-    {
-      "name": "未知 TROJAN-134 | free-nodes",
+      "name": "未知 TROJAN-138 | free-nodes",
       "password": "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437",
       "port": 8886,
       "server": "45.32.52.173",
@@ -2141,20 +2117,146 @@
       "type": "trojan"
     },
     {
+      "name": "未知 TROJAN-139 | free-nodes",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "104.18.35.86",
+      "sni": "www.volumerOot.coM.",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.volumerOot.coM."
+        },
+        "path": "/assignment"
+      }
+    },
+    {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-135 | free-nodes",
-      "network": "tcp",
-      "port": 24215,
-      "server": "hinet1.2yly.com",
-      "servername": "addons.mozilla.org",
+      "name": "未知 VLESS-140 | free-nodes",
+      "network": "ws",
+      "port": 443,
+      "server": "131.255.6.88",
+      "servername": "free.cndyw.ggff.net",
       "tls": true,
       "type": "vless",
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a"
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "ws-opts": {
+        "headers": {
+          "Host": "free.cndyw.ggff.net"
+        },
+        "path": "pyip=bpb.yousef.isegaro.com"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-141 | free-nodes",
+      "network": "ws",
+      "port": 2087,
+      "server": "194.55.166.65",
+      "servername": "free.cndyw.ggff.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "ws-opts": {
+        "headers": {
+          "Host": "free.cndyw.ggff.net"
+        },
+        "path": "pyip=bpb.yousef.isegaro.comfp=random"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-142 | free-nodes",
+      "network": "ws",
+      "port": 2053,
+      "server": "64.176.15.110",
+      "servername": "free.cndyw.ggff.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "ws-opts": {
+        "headers": {
+          "Host": "free.cndyw.ggff.net"
+        },
+        "path": "pyip=bpb.yousef.isegaro.comfp=random"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-143 | free-nodes",
+      "network": "tcp",
+      "port": 49289,
+      "server": "129.150.51.127",
+      "servername": "www.microsoft.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "0590ab38-cb22-41d3-8312-6f396a5cec58"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-144 | free-nodes",
+      "network": "tcp",
+      "port": 11907,
+      "server": "195.58.144.56",
+      "tls": true,
+      "type": "vless",
+      "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07"
+    },
+    {
+      "name": "未知 VLESS-145 | free-nodes",
+      "network": "ws",
+      "port": 80,
+      "server": "146.75.119.82",
+      "tls": false,
+      "type": "vless",
+      "uuid": "1af4d6fe-f1fa-4cbb-af8d-d8ab46de13ed",
+      "ws-opts": {
+        "headers": {
+          "Host": "rb24.ir"
+        },
+        "path": "ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048"
+      }
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-136 | free-nodes",
+      "name": "未知 VLESS-146 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "prep.wwwinternetvideo.click",
+      "servername": "yandex.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-147 | free-nodes",
+      "network": "grpc",
+      "port": 443,
+      "server": "163.245.43.50",
+      "servername": "se-twitch.global-cdn.org",
+      "tls": true,
+      "type": "vless",
+      "uuid": "203d434a-2a92-45df-8973-ca80434ecf73"
+    },
+    {
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-148 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "31.207.7.74",
+      "servername": "pkg.go.dev",
+      "tls": true,
+      "type": "vless",
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-149 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "78.135.73.47",
@@ -2164,7 +2266,7 @@
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968"
     },
     {
-      "name": "未知 VLESS-137 | free-nodes",
+      "name": "未知 VLESS-150 | free-nodes",
       "network": "tcp",
       "port": 45299,
       "server": "104.243.33.154",
@@ -2175,7 +2277,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-138 | free-nodes",
+      "name": "未知 VLESS-151 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "13.143.166.245",
@@ -2185,9 +2287,31 @@
       "uuid": "2a0b565e-904e-4d3b-a7eb-0725d6a2c7cd"
     },
     {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-152 | free-nodes",
+      "network": "tcp",
+      "port": 22849,
+      "server": "31.76.11.83",
+      "tls": false,
+      "type": "vless",
+      "uuid": "2e511783-125c-466b-925d-a9cd1c98e30e"
+    },
+    {
+      "client-fingerprint": "safari",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-153 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "62.77.158.1",
+      "servername": "online.1c.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6"
+    },
+    {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-139 | free-nodes",
+      "name": "未知 VLESS-154 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2400:e920:0:a::52",
@@ -2199,7 +2323,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-140 | free-nodes",
+      "name": "未知 VLESS-155 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2406:17c0:0:2::6762:5851",
@@ -2211,7 +2335,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-141 | free-nodes",
+      "name": "未知 VLESS-156 | free-nodes",
       "network": "tcp",
       "port": 57233,
       "server": "2605:6400:10:322:8260:741c:48d7:1454",
@@ -2223,7 +2347,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-142 | free-nodes",
+      "name": "未知 VLESS-157 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2605:6400:20:dfe:9dab:7f3:dabf:de28",
@@ -2235,7 +2359,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-143 | free-nodes",
+      "name": "未知 VLESS-158 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2605:e440:15::6b",
@@ -2247,7 +2371,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-144 | free-nodes",
+      "name": "未知 VLESS-159 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2607:adc0:6:48::5b26",
@@ -2259,7 +2383,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-145 | free-nodes",
+      "name": "未知 VLESS-160 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a00:b700:4::1ad",
@@ -2271,7 +2395,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-146 | free-nodes",
+      "name": "未知 VLESS-161 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a0b:8bc0:2:856::1",
@@ -2283,7 +2407,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-147 | free-nodes",
+      "name": "未知 VLESS-162 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a0c:2500:571:cda:30b2:d938:4e13:4a7e",
@@ -2295,7 +2419,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-148 | free-nodes",
+      "name": "未知 VLESS-163 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a0f:5707:aaf1:1ecd::1",
@@ -2307,7 +2431,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-149 | free-nodes",
+      "name": "未知 VLESS-164 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a12:bec4:1821:7d0::a",
@@ -2319,7 +2443,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-150 | free-nodes",
+      "name": "未知 VLESS-165 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "2a13:29c0:2641:a307:2044:17f:7e80:4b",
@@ -2331,7 +2455,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-151 | free-nodes",
+      "name": "未知 VLESS-166 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "2a13:29c0:fc75:90b0:df84:b8d4:d3aa:1",
@@ -2343,7 +2467,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-152 | free-nodes",
+      "name": "未知 VLESS-167 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2a14:1ec7:1038:76ec::1",
@@ -2355,7 +2479,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-153 | free-nodes",
+      "name": "未知 VLESS-168 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "2a14:7584:4408::2",
@@ -2367,19 +2491,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "RU VLESS-154 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "de2.srv.vbuste.ru",
-      "servername": "de2.srv.vbuste.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-155 | free-nodes",
+      "name": "未知 VLESS-169 | free-nodes",
       "network": "tcp",
       "port": 2053,
       "server": "47.80.19.173",
@@ -2391,7 +2503,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-156 | free-nodes",
+      "name": "未知 VLESS-170 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "xray1-direct-mci1-fs-ce.freesocks.work",
@@ -2403,7 +2515,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-157 | free-nodes",
+      "name": "未知 VLESS-171 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "tk1.high-speed-test-56424.me",
@@ -2414,30 +2526,44 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-161 | free-nodes",
-      "network": "tcp",
-      "port": 8080,
-      "server": "91.107.151.122",
-      "tls": false,
-      "type": "vless",
-      "uuid": "39098241-9c6e-4fe7-abbd-7f6f6ed4512c"
-    },
-    {
-      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-162 | free-nodes",
+      "name": "未知 VLESS-175 | free-nodes",
       "network": "tcp",
-      "port": 443,
-      "server": "95.85.252.72",
-      "servername": "de1.lostpool.org",
+      "port": 29172,
+      "server": "103.172.197.2",
+      "servername": "aws.amazon.com",
       "tls": true,
       "type": "vless",
-      "uuid": "39770645-fcd2-4f35-a670-877672fc2ef7"
+      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367"
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-163 | free-nodes",
+      "name": "未知 VLESS-176 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "146.70.124.85",
+      "servername": "www.datadoghq.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-177 | free-nodes",
+      "network": "tcp",
+      "port": 8443,
+      "server": "150.241.101.80",
+      "servername": "yandex.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-178 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "surstreming.vvzzkontaktezzvv.garden",
@@ -2449,7 +2575,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-167 | free-nodes",
+      "name": "未知 VLESS-182 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
@@ -2461,7 +2587,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-168 | free-nodes",
+      "name": "未知 VLESS-183 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "157.228.155.238",
@@ -2473,7 +2599,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-169 | free-nodes",
+      "name": "未知 VLESS-184 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "177.1.192.72",
@@ -2485,7 +2611,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-170 | free-nodes",
+      "name": "未知 VLESS-185 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "177.1.192.74",
@@ -2497,7 +2623,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-171 | free-nodes",
+      "name": "未知 VLESS-186 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "193.233.232.96",
@@ -2509,19 +2635,35 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-172 | free-nodes",
+      "name": "未知 VLESS-187 | free-nodes",
       "network": "tcp",
       "port": 443,
-      "server": "177.1.186.44",
-      "servername": "mcde.67resserv67.info",
+      "server": "31.76.35.27",
+      "servername": "addons.mozilla.org",
       "tls": true,
       "type": "vless",
-      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00"
+      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d"
+    },
+    {
+      "name": "未知 VLESS-188 | free-nodes",
+      "network": "ws",
+      "port": 80,
+      "server": "104.20.37.53",
+      "servername": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev",
+      "tls": false,
+      "type": "vless",
+      "uuid": "50414e45-4c5f-5a45-5553-b52a90ada6ab",
+      "ws-opts": {
+        "headers": {
+          "Host": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev"
+        },
+        "path": "/stream/TrexBridge/b52a90ada6ab"
+      }
     },
     {
       "client-fingerprint": "qq",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-173 | free-nodes",
+      "name": "未知 VLESS-189 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "83.147.18.75",
@@ -2531,8 +2673,34 @@
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d"
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "未知 VLESS-174 | free-nodes",
+      "name": "未知 VLESS-190 | free-nodes",
+      "network": "ws",
+      "port": 8880,
+      "server": "45.80.111.45",
+      "tls": false,
+      "type": "vless",
+      "uuid": "5ffd914e-9594-4198-8327-145f096f8e4c",
+      "ws-opts": {
+        "headers": {
+          "Host": "cnd.singapure.mygold.stream"
+        },
+        "path": "/cdn/assets/stream"
+      }
+    },
+    {
+      "client-fingerprint": "random",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-191 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "200.169.183.68",
+      "servername": "s3-m.perecmusic.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "619f8d27-b403-4913-b589-55d4dda0d56a"
+    },
+    {
+      "name": "未知 VLESS-192 | free-nodes",
       "network": "tcp",
       "port": 8080,
       "server": "milo.rubinaz.xyz",
@@ -2541,8 +2709,25 @@
       "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
     {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-193 | free-nodes",
+      "network": "ws",
+      "port": 2053,
+      "server": "89.125.96.79",
+      "servername": "wss.zazazuza.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "ws-opts": {
+        "headers": {
+          "Host": "wss.zazazuza.ru"
+        },
+        "path": "/vpn-wss/fluxor/59011/"
+      }
+    },
+    {
       "client-fingerprint": "firefox",
-      "name": "未知 VLESS-175 | free-nodes",
+      "name": "未知 VLESS-194 | free-nodes",
       "network": "ws",
       "port": 8443,
       "server": "194.26.141.148",
@@ -2559,27 +2744,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-176 | free-nodes",
-      "network": "ws",
-      "port": 8443,
-      "server": "77.72.85.246",
-      "servername": "fdghyt.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03",
-      "ws-opts": {
-        "headers": {
-          "Host": "fdghyt.com"
-        },
-        "path": "/vpn-wss/fluxor/59011/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "未知 VLESS-177 | free-nodes",
+      "name": "未知 VLESS-195 | free-nodes",
       "network": "ws",
       "port": 443,
-      "server": "sub.merky.top",
+      "server": "94.143.231.146",
       "servername": "sub.merky.top",
       "tls": true,
       "type": "vless",
@@ -2593,37 +2761,52 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-178 | free-nodes",
+      "name": "未知 VLESS-196 | free-nodes",
       "network": "ws",
-      "port": 443,
-      "server": "199.232.78.159",
-      "servername": "ssl.fastly.com",
+      "port": 8443,
+      "server": "asia.csmaster.site",
       "tls": true,
       "type": "vless",
-      "uuid": "6ead3f4c-023f-4322-b5c4-ac4e327d259d",
+      "uuid": "799b1006-3255-4e36-8ea0-64fe24d2bfa7",
       "ws-opts": {
         "headers": {
-          "Host": "pannn1.global.ssl.fastly.net"
+          "Host": ""
         },
-        "path": "/?TELEGRAM-TOOTFFARANGI"
+        "path": "/"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-179 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "2.24.124.64",
-      "servername": "www.cloudflare.com",
+      "name": "未知 VLESS-197 | free-nodes",
+      "network": "ws",
+      "port": 8443,
+      "server": "www.large-files.info",
+      "servername": "www.large-files.info",
       "tls": true,
       "type": "vless",
-      "uuid": "719b9354-45e2-4718-8709-d965b64554db"
+      "uuid": "7c99dc89-bf49-45c9-acc5-e43f36657518",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.large-files.info"
+        },
+        "path": "/var/www/html/video/preview/download/i8o0la"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-198 | free-nodes",
+      "network": "grpc",
+      "port": 35108,
+      "server": "152.228.139.33",
+      "servername": "www.nvidia.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712"
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-180 | free-nodes",
+      "name": "未知 VLESS-199 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "31.70.111.146",
@@ -2635,88 +2818,47 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-181 | free-nodes",
+      "name": "未知 VLESS-200 | free-nodes",
       "network": "tcp",
       "port": 443,
-      "server": "109.104.106.15",
-      "servername": "d3-ro.cloud-cdn.xyz",
+      "server": "45.152.113.206",
+      "servername": "1.ru.oncloudnineservicestreang.com",
       "tls": true,
       "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+      "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a"
     },
     {
-      "client-fingerprint": "chrome",
+      "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-182 | free-nodes",
+      "name": "未知 VLESS-201 | free-nodes",
       "network": "tcp",
       "port": 443,
-      "server": "132.243.231.12",
-      "servername": "d3-se1.cloud-cdn.xyz",
+      "server": "152.70.58.201",
+      "servername": "www.nvidia.com",
       "tls": true,
       "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+      "uuid": "8892e34a-339b-4526-b88d-cf68c516231c"
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-183 | free-nodes",
-      "network": "tcp",
+      "name": "GB VLESS-202 | free-nodes",
+      "network": "ws",
       "port": 443,
-      "server": "132.243.231.4",
-      "servername": "d3-se1.cloud-cdn.xyz",
+      "server": "ccs2g.pai50288.uk",
+      "servername": "ccs2g.pai50288.uk",
       "tls": true,
       "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "ws-opts": {
+        "headers": {
+          "Host": "ccs2g.pai50288.uk"
+        },
+        "path": "/pai50288"
+      }
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-185 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "31.77.168.192",
-      "servername": "d3-de1.cloud-cdn.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    },
-    {
-      "client-fingerprint": "edge",
-      "name": "未知 VLESS-186 | free-nodes",
-      "network": "grpc",
-      "port": 443,
-      "server": "87.58.201.170",
-      "servername": "d3-nl1.cloud-cdn.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    },
-    {
-      "client-fingerprint": "edge",
-      "name": "未知 VLESS-187 | free-nodes",
-      "network": "grpc",
-      "port": 443,
-      "server": "87.58.201.211",
-      "servername": "d3-nl1.cloud-cdn.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-188 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "89.125.13.202",
-      "servername": "d3-ee1.cloud-cdn.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "未知 VLESS-189 | free-nodes",
+      "name": "未知 VLESS-203 | free-nodes",
       "network": "tcp",
       "port": 2053,
       "server": "51.89.194.151",
@@ -2726,33 +2868,9 @@
       "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca"
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-190 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "91.208.92.210",
-      "servername": "uk1.sky-vault.top",
-      "tls": true,
-      "type": "vless",
-      "uuid": "8fc806fa-350b-4548-937a-2bf35f7fe7eb"
-    },
-    {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-191 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "nl-2.srv.dvzh.net",
-      "servername": "nl-2.srv.dvzh.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-192 | free-nodes",
+      "name": "未知 VLESS-204 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "us-2.srv.dvzh.net",
@@ -2762,9 +2880,21 @@
       "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256"
     },
     {
+      "client-fingerprint": "random",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-205 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "144.31.215.227",
+      "servername": "cdn-de.bulkavpn.top",
+      "tls": true,
+      "type": "vless",
+      "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa"
+    },
+    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-193 | free-nodes",
+      "name": "未知 VLESS-206 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "185.166.154.111",
@@ -2775,7 +2905,7 @@
     },
     {
       "client-fingerprint": "random",
-      "name": "未知 VLESS-194 | free-nodes",
+      "name": "未知 VLESS-207 | free-nodes",
       "network": "ws",
       "port": 2087,
       "server": "amphetamine.adaspoloandco.com",
@@ -2792,7 +2922,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "未知 VLESS-195 | free-nodes",
+      "name": "未知 VLESS-208 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "morteza0966-production.up.railway.app",
@@ -2809,39 +2939,16 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "US VLESS-196 | free-nodes",
-      "network": "ws",
-      "port": 80,
-      "server": "support.zoom.us",
+      "name": "未知 VLESS-209 | free-nodes",
+      "network": "tcp",
+      "port": 2053,
+      "server": "test.keoplentuio.xyz",
       "tls": false,
       "type": "vless",
-      "uuid": "9b0025a3-3a36-4915-b4e1-89c5cd65c9cb",
-      "ws-opts": {
-        "headers": {
-          "Host": "onhit.shalana.shop"
-        },
-        "path": "/shalana"
-      }
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "client-fingerprint": "android",
-      "name": "未知 VLESS-197 | free-nodes",
-      "network": "ws",
-      "port": 443,
-      "server": "170.114.52.22",
-      "servername": "asia.csmaster.site",
-      "tls": true,
-      "type": "vless",
-      "uuid": "a853e120-3570-462b-aec1-e8f3d4f92d24",
-      "ws-opts": {
-        "headers": {
-          "Host": "asia.csmaster.site"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "name": "未知 VLESS-198 | free-nodes",
+      "name": "未知 VLESS-210 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "70.34.255.101",
@@ -2856,9 +2963,21 @@
       }
     },
     {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-211 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "137.74.16.237",
+      "servername": "www.icloud.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "aaec4e42-a095-44b6-a239-f16d234a0798"
+    },
+    {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-199 | free-nodes",
+      "name": "未知 VLESS-212 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "31.77.114.114",
@@ -2868,45 +2987,9 @@
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f"
     },
     {
-      "client-fingerprint": "safari",
+      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-200 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "179.254.163.11",
-      "servername": "decemberfest.elfhost.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "aef06aad-8e97-4452-9257-6142b5b1ceb7"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-201 | free-nodes",
-      "network": "tcp",
-      "port": 2063,
-      "server": "31.77.13.19",
-      "servername": "rusbid.de",
-      "tls": true,
-      "type": "vless",
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-202 | free-nodes",
-      "network": "tcp",
-      "port": 2063,
-      "server": "pl-waw.dontblockmepls.com",
-      "servername": "rusbid.de",
-      "tls": true,
-      "type": "vless",
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a"
-    },
-    {
-      "client-fingerprint": "qq",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-203 | free-nodes",
+      "name": "未知 VLESS-213 | free-nodes",
       "network": "tcp",
       "port": 40443,
       "server": "arcturus.yokkastars.com",
@@ -2917,17 +3000,29 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-204 | free-nodes",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-214 | free-nodes",
       "network": "tcp",
-      "port": 2053,
-      "server": "208.69.78.217",
-      "servername": "www.apple.com",
+      "port": 8443,
+      "server": "79.108.225.112",
+      "servername": "github.com",
       "tls": true,
       "type": "vless",
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d"
+      "uuid": "c3369c07-f0d2-4a2c-97ab-0d3d47803912"
     },
     {
-      "name": "未知 VLESS-205 | free-nodes",
+      "client-fingerprint": "firefox",
+      "name": "未知 VLESS-215 | free-nodes",
+      "network": "tcp",
+      "port": 2053,
+      "server": "198.251.78.29",
+      "servername": "www.cloudflare.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "c423cc1b-f88e-421c-9a16-c480d84da20f"
+    },
+    {
+      "name": "未知 VLESS-216 | free-nodes",
       "network": "tcp",
       "port": 16263,
       "server": "47.237.74.17",
@@ -2936,9 +3031,20 @@
       "uuid": "c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3"
     },
     {
+      "client-fingerprint": "firefox",
+      "name": "未知 VLESS-217 | free-nodes",
+      "network": "tcp",
+      "port": 2053,
+      "server": "217.217.254.126",
+      "servername": "www.cloudflare.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9"
+    },
+    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision-udp443",
-      "name": "未知 VLESS-206 | free-nodes",
+      "name": "未知 VLESS-218 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "nl-new-ded-once.failspace.top",
@@ -2950,19 +3056,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-207 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "169.40.42.182",
-      "servername": "yahoo.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-208 | free-nodes",
+      "name": "未知 VLESS-219 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "95.179.208.12",
@@ -2973,7 +3067,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-209 | free-nodes",
+      "name": "未知 VLESS-220 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "70.34.252.154",
@@ -2989,25 +3083,8 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "RU VLESS-210 | free-nodes",
-      "network": "ws",
-      "port": 443,
-      "server": "fr2.vip-get.ru",
-      "servername": "fr2.vip-get.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a",
-      "ws-opts": {
-        "headers": {
-          "Host": "fr2.vip-get.ru"
-        },
-        "path": "/api/download"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-211 | free-nodes",
+      "name": "未知 VLESS-221 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "157.228.155.185",
@@ -3017,21 +3094,9 @@
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
     },
     {
-      "client-fingerprint": "randomized",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-212 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "157.228.160.166",
-      "servername": "addons.mozilla.org",
-      "tls": true,
-      "type": "vless",
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    },
-    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-213 | free-nodes",
+      "name": "未知 VLESS-222 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2.27.35.55",
@@ -3043,7 +3108,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-214 | free-nodes",
+      "name": "未知 VLESS-223 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2.27.69.117",
@@ -3055,7 +3120,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-215 | free-nodes",
+      "name": "未知 VLESS-224 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "2.27.69.157",
@@ -3065,7 +3130,18 @@
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
     },
     {
-      "name": "未知 VLESS-216 | free-nodes",
+      "client-fingerprint": "chrome",
+      "name": "未知 VLESS-225 | free-nodes",
+      "network": "grpc",
+      "port": 443,
+      "server": "193.238.154.5",
+      "servername": "assets-es.pleiades.codes",
+      "tls": true,
+      "type": "vless",
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b"
+    },
+    {
+      "name": "未知 VLESS-226 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform101.golnamakcert.top",
@@ -3080,7 +3156,7 @@
       }
     },
     {
-      "name": "未知 VLESS-220 | free-nodes",
+      "name": "未知 VLESS-230 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform102.golnamakcert.top",
@@ -3095,7 +3171,7 @@
       }
     },
     {
-      "name": "未知 VLESS-227 | free-nodes",
+      "name": "未知 VLESS-237 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform103.golnamakcert.top",
@@ -3111,7 +3187,7 @@
       }
     },
     {
-      "name": "未知 VLESS-231 | free-nodes",
+      "name": "未知 VLESS-241 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform106.golnamakcert.top",
@@ -3126,7 +3202,7 @@
       }
     },
     {
-      "name": "未知 VLESS-235 | free-nodes",
+      "name": "未知 VLESS-245 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform107.golnamakcert.top",
@@ -3142,7 +3218,7 @@
       }
     },
     {
-      "name": "未知 VLESS-240 | free-nodes",
+      "name": "未知 VLESS-250 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform108.golnamakcert.top",
@@ -3158,7 +3234,7 @@
       }
     },
     {
-      "name": "未知 VLESS-244 | free-nodes",
+      "name": "未知 VLESS-254 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform109.golnamakcert.top",
@@ -3174,7 +3250,7 @@
       }
     },
     {
-      "name": "未知 VLESS-245 | free-nodes",
+      "name": "未知 VLESS-255 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform113.golnamakcert.top",
@@ -3190,7 +3266,7 @@
       }
     },
     {
-      "name": "未知 VLESS-250 | free-nodes",
+      "name": "未知 VLESS-260 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform115.golnamakcert.top",
@@ -3206,7 +3282,7 @@
       }
     },
     {
-      "name": "未知 VLESS-253 | free-nodes",
+      "name": "未知 VLESS-263 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform117.golnamakcert.top",
@@ -3221,7 +3297,7 @@
       }
     },
     {
-      "name": "未知 VLESS-256 | free-nodes",
+      "name": "未知 VLESS-266 | free-nodes",
       "network": "ws",
       "port": 80,
       "server": "platform118.golnamakcert.top",
@@ -3237,7 +3313,7 @@
     },
     {
       "client-fingerprint": "firefox",
-      "name": "未知 VLESS-259 | free-nodes",
+      "name": "未知 VLESS-269 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "162.35.242.252",
@@ -3249,7 +3325,7 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-260 | free-nodes",
+      "name": "未知 VLESS-270 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "e3k67dwms3-51255166202-direct.tavafog.com",
@@ -3259,21 +3335,9 @@
       "uuid": "e3k67dwms3"
     },
     {
-      "client-fingerprint": "safari",
+      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-261 | free-nodes",
-      "network": "tcp",
-      "port": 443,
-      "server": "147.45.61.213",
-      "servername": "nl4.nztvpn.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023"
-    },
-    {
-      "client-fingerprint": "safari",
-      "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-262 | free-nodes",
+      "name": "未知 VLESS-271 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "179.198.49.99",
@@ -3283,26 +3347,21 @@
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023"
     },
     {
-      "client-fingerprint": "firefox",
-      "name": "未知 VLESS-263 | free-nodes",
-      "network": "ws",
+      "client-fingerprint": "safari",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-272 | free-nodes",
+      "network": "tcp",
       "port": 443,
-      "server": "46.101.110.88",
-      "servername": "s4ws.ragingbull.de5.net",
+      "server": "185.112.59.210",
+      "servername": "nl2.nztvpn.com",
       "tls": true,
       "type": "vless",
-      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
-      "ws-opts": {
-        "headers": {
-          "Host": "s4ws.ragingbull.de5.net"
-        },
-        "path": "/wsrb7k2m"
-      }
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023"
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-264 | free-nodes",
+      "name": "未知 VLESS-273 | free-nodes",
       "network": "tcp",
       "port": 16006,
       "server": "103.172.197.3",
@@ -3313,7 +3372,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "未知 VLESS-265 | free-nodes",
+      "name": "未知 VLESS-274 | free-nodes",
       "network": "ws",
       "port": 2083,
       "server": "141.0.187.16",
@@ -3329,9 +3388,21 @@
       }
     },
     {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "未知 VLESS-275 | free-nodes",
+      "network": "tcp",
+      "port": 443,
+      "server": "tyxyrytyro-51255165170-direct.araghchy.com",
+      "servername": "tyxyrytyro-51255165170-direct.araghchy.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "tyxyrytyro"
+    },
+    {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-266 | free-nodes",
+      "name": "未知 VMESS-276 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "103.215.218.158",
@@ -3342,7 +3413,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-267 | free-nodes",
+      "name": "未知 VMESS-277 | free-nodes",
       "network": "tcp",
       "port": 15311,
       "server": "107.173.254.27",
@@ -3353,7 +3424,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-268 | free-nodes",
+      "name": "未知 VMESS-278 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "139.64.166.25",
@@ -3371,7 +3442,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-269 | free-nodes",
+      "name": "未知 VMESS-279 | free-nodes",
       "network": "ws",
       "port": 33736,
       "server": "151.243.173.119",
@@ -3388,7 +3459,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-270 | free-nodes",
+      "name": "未知 VMESS-280 | free-nodes",
       "network": "tcp",
       "port": 11556,
       "server": "158.160.211.200",
@@ -3399,7 +3470,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-271 | free-nodes",
+      "name": "未知 VMESS-281 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "158.51.121.123",
@@ -3417,7 +3488,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-272 | free-nodes",
+      "name": "未知 VMESS-282 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "158.51.123.42",
@@ -3428,7 +3499,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-273 | free-nodes",
+      "name": "未知 VMESS-283 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "167.17.68.89",
@@ -3439,7 +3510,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-274 | free-nodes",
+      "name": "未知 VMESS-284 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "167.17.68.89",
@@ -3456,7 +3527,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-275 | free-nodes",
+      "name": "未知 VMESS-285 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "167.88.62.124",
@@ -3467,7 +3538,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-276 | free-nodes",
+      "name": "未知 VMESS-286 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "169.197.143.116",
@@ -3478,7 +3549,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-277 | free-nodes",
+      "name": "未知 VMESS-287 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "172.111.38.100",
@@ -3489,7 +3560,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-278 | free-nodes",
+      "name": "未知 VMESS-288 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "172.233.14.17",
@@ -3500,7 +3571,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-279 | free-nodes",
+      "name": "未知 VMESS-289 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "172.237.70.226",
@@ -3511,7 +3582,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-280 | free-nodes",
+      "name": "未知 VMESS-290 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "185.177.229.128",
@@ -3522,7 +3593,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-281 | free-nodes",
+      "name": "未知 VMESS-291 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "185.177.229.129",
@@ -3533,7 +3604,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-282 | free-nodes",
+      "name": "未知 VMESS-292 | free-nodes",
       "network": "tcp",
       "port": 2053,
       "server": "185.212.149.7",
@@ -3544,7 +3615,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-283 | free-nodes",
+      "name": "未知 VMESS-293 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "186.190.211.147",
@@ -3555,7 +3626,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-284 | free-nodes",
+      "name": "未知 VMESS-294 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "186.190.211.67",
@@ -3573,7 +3644,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-285 | free-nodes",
+      "name": "未知 VMESS-295 | free-nodes",
       "network": "tcp",
       "port": 27501,
       "server": "191.96.94.50",
@@ -3584,7 +3655,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-286 | free-nodes",
+      "name": "未知 VMESS-296 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "193.108.117.54",
@@ -3601,7 +3672,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-287 | free-nodes",
+      "name": "未知 VMESS-297 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "194.99.79.26",
@@ -3619,7 +3690,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-288 | free-nodes",
+      "name": "未知 VMESS-298 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "198.57.27.190",
@@ -3630,7 +3701,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-289 | free-nodes",
+      "name": "未知 VMESS-299 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "20.235.220.189",
@@ -3648,7 +3719,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-290 | free-nodes",
+      "name": "未知 VMESS-300 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "216.106.187.60",
@@ -3659,7 +3730,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-291 | free-nodes",
+      "name": "未知 VMESS-301 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "216.106.187.60",
@@ -3677,7 +3748,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-292 | free-nodes",
+      "name": "未知 VMESS-302 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "216.152.152.187",
@@ -3688,7 +3759,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-293 | free-nodes",
+      "name": "未知 VMESS-303 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "2b9hwy8ocx7q74nm.v.3dns.vip",
@@ -3705,7 +3776,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-294 | free-nodes",
+      "name": "未知 VMESS-305 | free-nodes",
       "network": "tcp",
       "port": 23226,
       "server": "31.76.11.83",
@@ -3716,7 +3787,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-295 | free-nodes",
+      "name": "未知 VMESS-306 | free-nodes",
       "network": "tcp",
       "port": 23325,
       "server": "31.76.11.83",
@@ -3727,7 +3798,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-296 | free-nodes",
+      "name": "未知 VMESS-307 | free-nodes",
       "network": "tcp",
       "port": 26662,
       "server": "31.76.11.83",
@@ -3738,7 +3809,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-297 | free-nodes",
+      "name": "未知 VMESS-308 | free-nodes",
       "network": "tcp",
       "port": 110,
       "server": "31.77.8.97",
@@ -3749,7 +3820,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-298 | free-nodes",
+      "name": "未知 VMESS-309 | free-nodes",
       "network": "ws",
       "port": 10086,
       "server": "39.108.113.127",
@@ -3760,7 +3831,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-299 | free-nodes",
+      "name": "未知 VMESS-310 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "45.32.120.173",
@@ -3771,7 +3842,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-300 | free-nodes",
+      "name": "未知 VMESS-311 | free-nodes",
       "network": "ws",
       "port": 2095,
       "server": "45.32.128.44",
@@ -3788,7 +3859,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-301 | free-nodes",
+      "name": "未知 VMESS-312 | free-nodes",
       "network": "tcp",
       "port": 4433,
       "server": "45.32.57.118",
@@ -3799,7 +3870,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-302 | free-nodes",
+      "name": "未知 VMESS-313 | free-nodes",
       "network": "tcp",
       "port": 2053,
       "server": "45.39.255.99",
@@ -3810,7 +3881,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-303 | free-nodes",
+      "name": "未知 VMESS-314 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "45.80.215.8",
@@ -3821,7 +3892,25 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-304 | free-nodes",
+      "name": "未知 VMESS-315 | free-nodes",
+      "network": "ws",
+      "port": 443,
+      "server": "47.243.194.125",
+      "servername": "nycqg19zkwacpm1b.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "ws-opts": {
+        "headers": {
+          "Host": "nycqg19zkwacpm1b.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "未知 VMESS-316 | free-nodes",
       "network": "tcp",
       "port": 12004,
       "server": "47.85.188.30",
@@ -3832,7 +3921,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-305 | free-nodes",
+      "name": "未知 VMESS-317 | free-nodes",
       "network": "ws",
       "port": 23462,
       "server": "64.176.51.214",
@@ -3849,7 +3938,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-306 | free-nodes",
+      "name": "未知 VMESS-318 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "66.163.113.176",
@@ -3860,7 +3949,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-307 | free-nodes",
+      "name": "未知 VMESS-319 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "66.163.115.23",
@@ -3878,7 +3967,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-308 | free-nodes",
+      "name": "未知 VMESS-320 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "66.163.118.73",
@@ -3889,7 +3978,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-309 | free-nodes",
+      "name": "未知 VMESS-321 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "66.163.118.73",
@@ -3907,7 +3996,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-310 | free-nodes",
+      "name": "未知 VMESS-322 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "6jdvarazgu3qqr6q.v.3dns.vip",
@@ -3925,7 +4014,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-315 | free-nodes",
+      "name": "未知 VMESS-327 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "6jdvarazgu3qqr6q.v.3dns.vip",
@@ -3943,7 +4032,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-316 | free-nodes",
+      "name": "未知 VMESS-328 | free-nodes",
       "network": "tcp",
       "port": 9999,
       "server": "8.217.230.196",
@@ -3954,7 +4043,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-317 | free-nodes",
+      "name": "未知 VMESS-329 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "8.217.254.88",
@@ -3972,7 +4061,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-318 | free-nodes",
+      "name": "未知 VMESS-330 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "89.223.95.77",
@@ -3983,7 +4072,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-319 | free-nodes",
+      "name": "未知 VMESS-331 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "89.39.161.157",
@@ -4001,7 +4090,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-320 | free-nodes",
+      "name": "未知 VMESS-332 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "89.41.172.85",
@@ -4012,7 +4101,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-321 | free-nodes",
+      "name": "未知 VMESS-333 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "aidrivercat.org",
@@ -4030,7 +4119,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-330 | free-nodes",
+      "name": "未知 VMESS-342 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "aksai.org",
@@ -4048,10 +4137,11 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "GB VMESS-339 | free-nodes",
+      "name": "GB VMESS-350 | free-nodes",
       "network": "ws",
       "port": 2083,
       "server": "cdn.sfacg.uk",
+      "servername": "or3.sfacg.uk",
       "tls": true,
       "type": "vmess",
       "uuid": "ac251237-576f-40c8-a543-554960c958b1",
@@ -4065,7 +4155,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-342 | free-nodes",
+      "name": "未知 VMESS-354 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
@@ -4083,7 +4173,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-343 | free-nodes",
+      "name": "未知 VMESS-355 | free-nodes",
       "network": "tcp",
       "port": 21020,
       "server": "dog-hk.kunlun01dns.com",
@@ -4094,7 +4184,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-344 | free-nodes",
+      "name": "未知 VMESS-356 | free-nodes",
       "network": "tcp",
       "port": 21021,
       "server": "dog-hk.kunlun01dns.com",
@@ -4105,7 +4195,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-347 | free-nodes",
+      "name": "未知 VMESS-359 | free-nodes",
       "network": "tcp",
       "port": 21022,
       "server": "dog-hk.kunlun01dns.com",
@@ -4116,7 +4206,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-348 | free-nodes",
+      "name": "未知 VMESS-360 | free-nodes",
       "network": "tcp",
       "port": 21016,
       "server": "dog-jp.kunlun01dns.com",
@@ -4127,7 +4217,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-349 | free-nodes",
+      "name": "未知 VMESS-361 | free-nodes",
       "network": "tcp",
       "port": 21017,
       "server": "dog-jp.kunlun01dns.com",
@@ -4138,7 +4228,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-350 | free-nodes",
+      "name": "未知 VMESS-362 | free-nodes",
       "network": "tcp",
       "port": 21004,
       "server": "dog-kr.kunlun01dns.com",
@@ -4149,7 +4239,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-351 | free-nodes",
+      "name": "未知 VMESS-363 | free-nodes",
       "network": "tcp",
       "port": 21036,
       "server": "dog-tw.kunlun01dns.com",
@@ -4160,7 +4250,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-356 | free-nodes",
+      "name": "未知 VMESS-367 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "ex1ogt73nzpqkac2.v.3dns.vip",
@@ -4177,7 +4267,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-357 | free-nodes",
+      "name": "未知 VMESS-368 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "ex1ogt73nzpqkac2.v.3dns.vip",
@@ -4195,7 +4285,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-365 | free-nodes",
+      "name": "未知 VMESS-376 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "i2psm3knof5qjjix.v.3dns.vip",
@@ -4213,7 +4303,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-373 | free-nodes",
+      "name": "未知 VMESS-384 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "kentspark.org",
@@ -4231,7 +4321,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-374 | free-nodes",
+      "name": "未知 VMESS-385 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "lcv8v9l7oyamxxfz.v.3dns.vip",
@@ -4249,7 +4339,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-382 | free-nodes",
+      "name": "未知 VMESS-394 | free-nodes",
       "network": "tcp",
       "port": 22324,
       "server": "magicvip.iddns.ir",
@@ -4260,7 +4350,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-383 | free-nodes",
+      "name": "未知 VMESS-395 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "mygptagent.org",
@@ -4278,7 +4368,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-392 | free-nodes",
+      "name": "未知 VMESS-404 | free-nodes",
       "network": "tcp",
       "port": 1070,
       "server": "nlp1.hupcloud.com",
@@ -4289,7 +4379,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-393 | free-nodes",
+      "name": "未知 VMESS-405 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "nycqg19zkwacpm1b.v.3dns.vip",
@@ -4307,7 +4397,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-395 | free-nodes",
+      "name": "未知 VMESS-407 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "nycqg19zkwacpm1b.v.3dns.vip",
@@ -4325,7 +4415,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-400 | free-nodes",
+      "name": "未知 VMESS-411 | free-nodes",
       "network": "tcp",
       "port": 18112,
       "server": "oc.imfun.fun",
@@ -4336,7 +4426,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-402 | free-nodes",
+      "name": "未知 VMESS-413 | free-nodes",
       "network": "ws",
       "port": 2083,
       "server": "or.521166.xyz",
@@ -4354,7 +4444,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-407 | free-nodes",
+      "name": "未知 VMESS-418 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "pahobac.org",
@@ -4372,7 +4462,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-415 | free-nodes",
+      "name": "未知 VMESS-426 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "qtkdr8jxe3wefxjm.v.3dns.vip",
@@ -4390,7 +4480,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-417 | free-nodes",
+      "name": "未知 VMESS-428 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "qtkdr8jxe3wefxjm.v.3dns.vip",
@@ -4408,7 +4498,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-419 | free-nodes",
+      "name": "未知 VMESS-430 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "renderer-stream-1-832.mirra.now",
@@ -4426,7 +4516,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-420 | free-nodes",
+      "name": "未知 VMESS-431 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "uk2-2.998998.best",
@@ -4444,7 +4534,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-422 | free-nodes",
+      "name": "未知 VMESS-432 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "uk3-2.998998.best",
@@ -4462,7 +4552,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-424 | free-nodes",
+      "name": "未知 VMESS-433 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "vspeedfast.org",
@@ -4480,7 +4570,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-425 | free-nodes",
+      "name": "未知 VMESS-435 | free-nodes",
       "network": "ws",
       "port": 443,
       "server": "yg1.ygkkk.dpdns.org",
@@ -4498,7 +4588,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-431 | free-nodes",
+      "name": "未知 VMESS-443 | free-nodes",
       "network": "tcp",
       "port": 16256,
       "server": "zfd-boardv2.kunlun01dns.com",
@@ -4509,7 +4599,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-432 | free-nodes",
+      "name": "未知 VMESS-444 | free-nodes",
       "network": "tcp",
       "port": 16284,
       "server": "zfd-boardv2.kunlun01dns.com",
@@ -4520,7 +4610,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-433 | free-nodes",
+      "name": "未知 VMESS-445 | free-nodes",
       "network": "tcp",
       "port": 16305,
       "server": "zfd-boardv2.kunlun01dns.com",
@@ -4531,7 +4621,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-434 | free-nodes",
+      "name": "未知 VMESS-446 | free-nodes",
       "network": "tcp",
       "port": 16308,
       "server": "zfd-boardv2.kunlun01dns.com",
@@ -4542,7 +4632,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-435 | free-nodes",
+      "name": "未知 VMESS-447 | free-nodes",
       "network": "tcp",
       "port": 16115,
       "server": "zfd-hkv2.kunlun01dns.com",
@@ -4553,7 +4643,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-436 | free-nodes",
+      "name": "未知 VMESS-448 | free-nodes",
       "network": "tcp",
       "port": 16120,
       "server": "zfd-jpv2.kunlun01dns.com",
@@ -4564,7 +4654,7 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "未知 VMESS-437 | free-nodes",
+      "name": "未知 VMESS-449 | free-nodes",
       "network": "tcp",
       "port": 16122,
       "server": "zfd-jpv2.kunlun01dns.com",
@@ -4573,15 +4663,66 @@
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1"
     },
     {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "未知 VMESS-451 | free-nodes",
+      "network": "tcp",
+      "port": 2110,
+      "server": "lucas.ehsanazizi-speed-server.com",
+      "tls": false,
+      "type": "vmess",
+      "uuid": "06d4d001-4168-4876-9416-7caecf578f40"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "未知 VMESS-452 | free-nodes",
+      "network": "tcp",
+      "port": 52080,
+      "server": "185.212.149.7",
+      "tls": false,
+      "type": "vmess",
+      "uuid": "ec3c8b97-f308-4fee-aa16-95e2c7595acd"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "未知 VMESS-454 | free-nodes",
+      "network": "ws",
+      "port": 443,
+      "server": "8.217.13.103",
+      "servername": "qtkdr8jxe3wefxjm.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "ws-opts": {
+        "headers": {
+          "Host": "qtkdr8jxe3wefxjm.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "未知 VMESS-456 | free-nodes",
+      "network": "tcp",
+      "port": 59236,
+      "server": "54.229.151.97",
+      "tls": false,
+      "type": "vmess",
+      "uuid": "2387bfbc-10a6-4bd7-dc55-7cba954ce6e8"
+    },
+    {
       "cipher": "aes-128-gcm",
-      "name": "未知 SS-442 | free-nodes",
+      "name": "未知 SS-458 | free-nodes",
       "password": "6601fb90e9b3",
       "port": 1,
       "server": "192.0.2.1",
       "type": "ss"
     },
     {
-      "name": "未知 VLESS-446 | free-nodes",
+      "name": "未知 VLESS-462 | free-nodes",
       "network": "tcp",
       "port": 1,
       "server": "192.0.2.1",
@@ -4592,7 +4733,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-448 | free-nodes",
+      "name": "未知 VLESS-464 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s785.ccgfw.online",
@@ -4604,7 +4745,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-451 | free-nodes",
+      "name": "US VLESS-467 | free-nodes",
       "network": "tcp",
       "port": 57233,
       "server": "s554.csgfw.top",
@@ -4616,7 +4757,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-454 | free-nodes",
+      "name": "US VLESS-470 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s849.kukuss.top",
@@ -4627,7 +4768,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-455 | free-nodes",
+      "name": "RU VLESS-471 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "5c264184c99.fuhuovps.xyz",
@@ -4638,7 +4779,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-456 | free-nodes",
+      "name": "RU VLESS-472 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "9792205ac100.fuhuovps.xyz",
@@ -4649,7 +4790,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-457 | free-nodes",
+      "name": "RU VLESS-473 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "7427b4edc101.fuhuovps.xyz",
@@ -4660,7 +4801,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-458 | free-nodes",
+      "name": "RU VLESS-474 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "d9def735c462.fuhuovps.xyz",
@@ -4672,7 +4813,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-460 | free-nodes",
+      "name": "US VLESS-476 | free-nodes",
       "network": "tcp",
       "port": 57233,
       "server": "s553.sspcccdn.xyz",
@@ -4684,7 +4825,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "HK VLESS-461 | free-nodes",
+      "name": "HK VLESS-477 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s151.gogocs.xyz",
@@ -4696,7 +4837,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-463 | free-nodes",
+      "name": "US VLESS-479 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s2317.kukuss.top",
@@ -4708,7 +4849,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "DE VLESS-466 | free-nodes",
+      "name": "DE VLESS-482 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s251.wagahaha.xyz",
@@ -4720,7 +4861,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-469 | free-nodes",
+      "name": "US VLESS-485 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s881.wagahaha.xyz",
@@ -4732,7 +4873,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-470 | free-nodes",
+      "name": "GB VLESS-486 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s128.okgg.top",
@@ -4744,7 +4885,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-472 | free-nodes",
+      "name": "US VLESS-488 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s734.csgfw.top",
@@ -4756,7 +4897,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "DE VLESS-473 | free-nodes",
+      "name": "DE VLESS-489 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s249.freessr.bid",
@@ -4768,7 +4909,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-475 | free-nodes",
+      "name": "US VLESS-491 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s2318.okgg.top",
@@ -4780,7 +4921,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-476 | free-nodes",
+      "name": "未知 VLESS-492 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s784.uugfw.top",
@@ -4791,7 +4932,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-479 | free-nodes",
+      "name": "RU VLESS-495 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "69d2cbcdc461.fuhuovps.xyz",
@@ -4803,7 +4944,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-480 | free-nodes",
+      "name": "GB VLESS-496 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s1244.csgfw.top",
@@ -4815,7 +4956,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "DE VLESS-482 | free-nodes",
+      "name": "DE VLESS-498 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "179.61.138.177",
@@ -4827,7 +4968,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "HK VLESS-485 | free-nodes",
+      "name": "HK VLESS-501 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s299.kukuss.top",
@@ -4839,7 +4980,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "RU VLESS-486 | free-nodes",
+      "name": "RU VLESS-502 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s2359.kukuss.top",
@@ -4851,7 +4992,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-487 | free-nodes",
+      "name": "未知 VLESS-503 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s171.wagahaha.xyz",
@@ -4862,7 +5003,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "未知 VLESS-489 | free-nodes",
+      "name": "未知 VLESS-505 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "104.27.0.121",
@@ -4874,7 +5015,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-491 | free-nodes",
+      "name": "US VLESS-507 | free-nodes",
       "network": "tcp",
       "port": 57233,
       "server": "198.98.48.110",
@@ -4886,7 +5027,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "HK VLESS-492 | free-nodes",
+      "name": "HK VLESS-508 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "212.192.15.191",
@@ -4898,7 +5039,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-493 | free-nodes",
+      "name": "未知 VLESS-509 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s8747.okgfwbackxyz.xyz",
@@ -4910,7 +5051,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-494 | free-nodes",
+      "name": "未知 VLESS-510 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s8748.okgg.top",
@@ -4922,7 +5063,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-497 | free-nodes",
+      "name": "GB VLESS-513 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s1243.sspcccdn.xyz",
@@ -4934,7 +5075,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-498 | free-nodes",
+      "name": "未知 VLESS-514 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "62.105.220.106",
@@ -4946,7 +5087,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-499 | free-nodes",
+      "name": "未知 VLESS-515 | free-nodes",
       "network": "tcp",
       "port": 57667,
       "server": "195.170.172.139",
@@ -4958,7 +5099,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "RU VLESS-500 | free-nodes",
+      "name": "RU VLESS-516 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s2360.kukuss.top",
@@ -4970,7 +5111,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-501 | free-nodes",
+      "name": "未知 VLESS-517 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s170.gogocs.xyz",
@@ -4982,7 +5123,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-503 | free-nodes",
+      "name": "US VLESS-519 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s482.wagahaha.xyz",
@@ -4993,7 +5134,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "未知 VLESS-504 | free-nodes",
+      "name": "未知 VLESS-520 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "104.21.207.202",
@@ -5005,7 +5146,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-505 | free-nodes",
+      "name": "US VLESS-521 | free-nodes",
       "network": "tcp",
       "port": 33414,
       "server": "s490.kukuss.top",
@@ -5017,7 +5158,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-506 | free-nodes",
+      "name": "GB VLESS-522 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "193.142.59.97",
@@ -5028,7 +5169,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "未知 VLESS-507 | free-nodes",
+      "name": "未知 VLESS-523 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "104.19.12.0",
@@ -5040,7 +5181,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-508 | free-nodes",
+      "name": "US VLESS-524 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "185.106.96.231",
@@ -5052,7 +5193,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-509 | free-nodes",
+      "name": "US VLESS-525 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "198.12.124.74",
@@ -5064,7 +5205,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-510 | free-nodes",
+      "name": "未知 VLESS-526 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "160.25.74.91",
@@ -5076,7 +5217,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-511 | free-nodes",
+      "name": "未知 VLESS-527 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "103.173.155.212",
@@ -5088,7 +5229,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-512 | free-nodes",
+      "name": "未知 VLESS-528 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "185.119.19.105",
@@ -5100,7 +5241,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-513 | free-nodes",
+      "name": "US VLESS-529 | free-nodes",
       "network": "tcp",
       "port": 33414,
       "server": "192.227.168.162",
@@ -5111,7 +5252,7 @@
     },
     {
       "client-fingerprint": "ios",
-      "name": "RU VLESS-514 | free-nodes",
+      "name": "RU VLESS-530 | free-nodes",
       "network": "xhttp",
       "port": 443,
       "server": "f2d0ba8dc394.fuhuovps.xyz",
@@ -5123,7 +5264,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-515 | free-nodes",
+      "name": "US VLESS-531 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "23.166.40.27",
@@ -5135,7 +5276,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "RU VLESS-516 | free-nodes",
+      "name": "RU VLESS-532 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "193.53.126.91",
@@ -5147,7 +5288,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-517 | free-nodes",
+      "name": "US VLESS-533 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "192.3.118.133",
@@ -5159,7 +5300,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-518 | free-nodes",
+      "name": "GB VLESS-534 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "193.142.59.180",
@@ -5171,7 +5312,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-519 | free-nodes",
+      "name": "US VLESS-535 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "192.227.169.125",
@@ -5183,7 +5324,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-522 | free-nodes",
+      "name": "未知 VLESS-538 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s592.wagahaha.xyz",
@@ -5195,7 +5336,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "未知 VLESS-523 | free-nodes",
+      "name": "未知 VLESS-539 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s593.sspcccdn.xyz",
@@ -5207,7 +5348,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US VLESS-524 | free-nodes",
+      "name": "US VLESS-540 | free-nodes",
       "network": "tcp",
       "port": 443,
       "server": "s880.gogocs.xyz",
@@ -5219,7 +5360,7 @@
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "GB VLESS-525 | free-nodes",
+      "name": "GB VLESS-541 | free-nodes",
       "network": "tcp",
       "port": 10829,
       "server": "s148.okgg.top",
@@ -5229,31 +5370,176 @@
       "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3"
     },
     {
-      "name": "乌克兰+V2CROSS.COM",
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+FDC芝加哥机房",
+      "network": "tcp",
+      "port": 443,
+      "server": "50.7.210.69",
+      "servername": "xn--80ahcoj6a9b5d.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d2519b5e-495e-462e-9703-bbf68011d2f3"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #15",
       "network": "ws",
-      "password": "humanity",
-      "port": 2053,
-      "server": "82.117.245.125",
-      "sni": "www.calmlunch.com",
-      "type": "trojan",
+      "port": 8880,
+      "server": "104.17.180.201",
+      "tls": false,
+      "type": "vless",
+      "uuid": "19f4ec52-5c17-495f-803f-7b2a085b9339",
       "ws-opts": {
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "still-hill-0fb2.160-42e.workers.dev"
         },
-        "path": "/assignment"
+        "path": "/pyip=ProxyIP.JP.CMLiussss.net"
       }
     },
     {
-      "name": "土耳其+V2CROSS.COM",
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "port": 2060,
-      "server": "rb.mangshe.xyz",
+      "name": "北美地区+V2CROSS.COM",
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "port": 9443,
+      "server": "104.165.205.46",
       "skip-cert-verify": true,
-      "sni": "127.0.0.1",
+      "sni": "onecloudstream.com",
       "type": "hysteria2"
     },
     {
       "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #16",
+      "network": "ws",
+      "port": 8080,
+      "server": "104.26.2.223",
+      "tls": false,
+      "type": "vless",
+      "uuid": "9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641",
+      "ws-opts": {
+        "headers": {
+          "Host": "pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #17",
+      "network": "ws",
+      "port": 443,
+      "server": "ld.235231.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "英国+桑德兰大学",
+      "network": "tcp",
+      "port": 443,
+      "server": "157.228.150.34",
+      "servername": "addons.mozilla.org",
+      "tls": true,
+      "type": "vless",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #18",
+      "network": "ws",
+      "port": 2083,
+      "server": "172.66.44.211",
+      "servername": "wk1.f1w.de5.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "ws-opts": {
+        "headers": {
+          "Host": "wk1.f1w.de5.net"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "name": "中国+阿里云",
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "port": 8443,
+      "server": "8.211.175.236",
+      "skip-cert-verify": true,
+      "sni": "bing.com",
+      "type": "hysteria2"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "日本+V2CROSS.COM",
+      "network": "ws",
+      "port": 443,
+      "server": "43.174.195.1",
+      "servername": "kv.074167.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "24916ad0-847d-4522-9e17-f4347dee57fd",
+      "ws-opts": {
+        "headers": {
+          "Host": "kv.074167.xyz"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #19",
+      "network": "ws",
+      "port": 443,
+      "server": "saas.sin.fan",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "edge",
+      "flow": "xtls-rprx-vision",
+      "name": "德国+V2CROSS.COM",
+      "network": "tcp",
+      "port": 8446,
+      "server": "van2.ragnarok-it.xyz",
+      "servername": "amd.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #20",
+      "network": "ws",
+      "port": 8880,
+      "server": "104.17.21.32",
+      "tls": false,
+      "type": "vless",
+      "uuid": "8d032cfc-4a8c-4769-bd29-4fa0ade77b14",
+      "ws-opts": {
+        "headers": {
+          "Host": "icy-frog-a2a2.245.workers.dev"
+        },
+        "path": "/pyip=ProxyIP.US.CMLiussss.net"
+      }
+    },
+    {
+      "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
       "name": "挪威+V2CROSS.COM",
       "network": "tcp",
@@ -5266,27 +5552,53 @@
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "西班牙+V2CROSS.COM",
-      "network": "tcp",
+      "name": "美国+CloudFlare节点 #21",
+      "network": "ws",
       "port": 443,
-      "server": "185.104.63.173",
-      "servername": "zsat.eu-cdn294.com",
+      "server": "www.baipiao.eu.org",
+      "servername": "misaka.cndyw.ggff.net",
       "tls": true,
       "type": "vless",
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66"
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "ws-opts": {
+        "headers": {
+          "Host": "misaka.cndyw.ggff.net"
+        },
+        "path": "/?ed=2560fp=random"
+      }
     },
     {
       "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "阿富汗+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "pa6r26.eu-cdn539.com",
-      "servername": "zsde.eu-cdn294.com",
+      "name": "美国+CloudFlare节点 #22",
+      "network": "ws",
+      "port": 2053,
+      "server": "172.67.77.98",
+      "servername": "shanxp.dpdns.org",
       "tls": true,
       "type": "vless",
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66"
+      "uuid": "73bcd72f-9545-4cb8-8daf-7d004501880d",
+      "ws-opts": {
+        "headers": {
+          "Host": "shanxp.dpdns.org"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #23",
+      "network": "ws",
+      "port": 443,
+      "server": "liang92.dpdns.org",
+      "tls": true,
+      "type": "vless",
+      "uuid": "0aab6adc-104c-4339-8d25-09755ffe2cbd",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/"
+      }
     },
     {
       "client-fingerprint": "chrome",
@@ -5294,7 +5606,7 @@
       "name": "end-gfw-kr64-VLESS",
       "network": "tcp",
       "port": 443,
-      "server": "43.201.250.101",
+      "server": "43.202.53.247",
       "servername": "own-system.com",
       "tls": true,
       "type": "vless",
@@ -5304,7 +5616,7 @@
       "name": "end-gfw-kr64-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "43.201.250.101",
+      "server": "43.202.53.247",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -5314,7 +5626,7 @@
       "name": "end-gfw-kr64-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "43.201.250.101",
+      "server": "43.202.53.247",
       "type": "ss"
     },
     {
@@ -5337,14 +5649,6 @@
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "end-gfw-sg89-SS",
-      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
-      "port": 8443,
-      "server": "13.229.58.5",
-      "type": "ss"
     },
     {
       "name": "CA加拿大(v2clash.blog 2026-8.15更新",
@@ -6592,23 +6896,6 @@
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be"
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "SG新加坡(v2clash.blog 2026-10.5更新",
-      "network": "ws",
-      "port": 443,
-      "server": "43.174.195.1",
-      "servername": "kv.074167.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "24916ad0-847d-4522-9e17-f4347dee57fd",
-      "ws-opts": {
-        "headers": {
-          "Host": "kv.074167.xyz"
-        },
-        "path": "/"
-      }
-    },
-    {
       "name": "US美国(v2clash.blog 2026-10.5更新 #3",
       "network": "ws",
       "password": "mitivpn",
@@ -6732,23 +7019,6 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "CA加拿大(v2clash.blog 2026-10.7更新",
-      "network": "ws",
-      "port": 443,
-      "server": "saas.sin.fan",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
       "name": "US美国(v2clash.blog 2026-10.7更新",
       "network": "ws",
       "port": 8880,
@@ -6765,7 +7035,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "CA加拿大(v2clash.blog 2026-10.7更新 #2",
+      "name": "CA加拿大(v2clash.blog 2026-10.7更新",
       "network": "ws",
       "port": 2083,
       "server": "172.66.0.230",
@@ -6790,9 +7060,21 @@
       "tls": true,
       "type": "vless",
       "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf"
+    },
+    {
+      "client-fingerprint": "randomized",
+      "flow": "xtls-rprx-vision",
+      "name": "伊朗(v2clash.blog 2026-10.7更新",
+      "network": "tcp",
+      "port": 443,
+      "server": "de2.srv.vbuste.ru",
+      "servername": "de2.srv.vbuste.ru",
+      "tls": true,
+      "type": "vless",
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386"
     }
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 561
+  "total": 580
 }
