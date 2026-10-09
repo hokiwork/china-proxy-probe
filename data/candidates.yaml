@@ -3,36 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: US-vip-2591
-  type: vless
-  server: pq.us04.yydjc.top
-  port: 443
-  uuid: 70d8ac0f-82a9-4b26-b054-55b3eabc73c4
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: US-vip-2692
-  type: vless
-  server: pq.us05.yydjc.top
-  port: 443
-  uuid: 70d8ac0f-82a9-4b26-b054-55b3eabc73c4
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: www.mi.com
-  flow: xtls-rprx-vision
-- name: US-vip-2793
-  type: vless
-  server: pq.us06.yydjc.top
-  port: 443
-  uuid: 70d8ac0f-82a9-4b26-b054-55b3eabc73c4
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
 - name: JP-vip-1039
   type: vless
   server: pq.aws48.yydjc.top
@@ -85,6 +55,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: vless
+  type: vless
+  server: 154.40.55.185
+  port: 443
+  uuid: 52919204-4ed9-42c8-97a0-0f01d007f898
+  network: tcp
+  tls: false
 - name: 🇨🇳_CN_中国
   type: vmess
   server: 112.132.215.108
@@ -92,22 +69,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
   skip-cert-verify: true
   udp: true
@@ -119,39 +80,37 @@ proxies:
   password: amazonskr05
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵_JP_日本
+- name: 🇭🇰_HK_中国香港
   type: vmess
-  server: v6.hdacd.com
-  port: 30806
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡
+- name: 🇺🇸_US_美国->🇯🇵_JP_日本
   type: vless
-  server: free-server.techsonic.dev
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  server: api.w2m.ink
+  port: 443
+  uuid: 8344360f-0349-4784-a19f-33fd92e89389
   network: ws
-  servername: free-server.techsonic.dev
+  servername: api.w2m.ink
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /v2
     headers:
-      Host: free-server.techsonic.dev
+      Host: api.w2m.ink
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱_NL_荷兰
@@ -162,7 +121,7 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧_GB_英国
+- name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
   type: vmess
   server: v36.hdacd.com
   port: 30836
@@ -172,74 +131,20 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺_RU_俄罗斯
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  network: ws
-  servername: fbsv6.guardora.pro
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬_SG_新加坡_1
-  type: vless
-  server: onhit.shalana.xyz
-  port: 443
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
+- name: 🇺🇸_US_美国
   type: ss
   server: 54.90.169.61
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其
-  type: vless
-  server: tr3.wba-pn.ru
-  port: 443
-  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
-  network: ws
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: 美国+V2CROSS.COM
@@ -553,24 +458,24 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 3.35.131.135
+  server: 52.78.216.116
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: own-system.com
+  servername: qa.api.sazo.kr
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 3.35.131.135
+  server: 52.78.216.116
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 3.35.131.135
+  server: 52.78.216.116
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -597,53 +502,6 @@ proxies:
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 美国 CloudFlare节点
-  type: vmess
-  server: or3.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: or3.sfacg.uk
-    path: /or3
-  servername: cdn.sfacg.uk
-- name: 英国+桑德兰大学
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-- name: 伊拉克+V2CROSS.COM
-  type: vless
-  server: arcturus.yokkastars.com
-  port: 40443
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: deepl.com
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #3'
-  type: vless
-  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  port: 443
-  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-  network: ws
-  tls: true
-  client-fingerprint: firefox
-  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  ws-opts:
-    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-    headers:
-      Host: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
 - name: 英国+V2CROSS.COM
   type: vless
   server: pl-waw.dontblockmepls.com
@@ -654,19 +512,87 @@ proxies:
   client-fingerprint: chrome
   servername: rusbid.de
   flow: xtls-rprx-vision
-- name: '美国+纽约州纽约BuyVM #2'
+- name: 亚太地区+V2CROSS.COM
   type: vless
-  server: s554.csgfw.top
-  port: 57233
+  server: 103.173.155.212
+  port: 10829
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
   network: tcp
   tls: true
   client-fingerprint: firefox
-  servername: u695098u8fad5a44s552.gogocs.xyz
+  servername: u695098u4d99b056s591.csgfw.top
   flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: vless
+  server: deepl.com
+  port: 8880
+  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: young-wind-3c58.240-2ce.workers.dev
+- name: 伊朗+V2CROSS.COM
+  type: vless
+  server: nl8.limehub.online
+  port: 443
+  uuid: ce73d2b8-13ea-4b8b-b7f7-8ec9cf7efe1d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: nl8.limehub.online
+  flow: xtls-rprx-vision
+- name: '美国+Xerox #2'
+  type: vless
+  server: swidenlanzerotte.live
+  port: 443
+  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: swidenlanzerotte.live
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 172.67.134.7
+  port: 2052
+  uuid: f1e5d738-2e83-4e2f-b6d6-a9013b3e7e48
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /vl/u3oMYZoYUAozPFEA8UhR?ed=2560
+    headers:
+      Host: a6o58qfpwvgrwmz0crtha0r24uyiu2l.x7-f5jb95s0ocjt-0.workers.dev
+- name: 香港+阿里云
+  type: ss
+  server: 47.85.168.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+- name: 美国+Alabanza
+  type: vless
+  server: 65.109.212.195
+  port: 2025
+  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
+  network: tcp
+  tls: false
+  client-fingerprint: chrome
 - name: '俄罗斯+V2CROSS.COM #3'
   type: vless
-  server: s151.gogocs.xyz
+  server: 193.233.216.27
+  port: 443
+  uuid: 95621b8e-5cf7-4123-9df4-38d903054a1b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.lenovo.com
+  flow: xtls-rprx-vision
+- name: '俄罗斯+V2CROSS.COM #4'
+  type: vless
+  server: s299.kukuss.top
   port: 443
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
   network: tcp
@@ -674,24 +600,51 @@ proxies:
   client-fingerprint: firefox
   servername: u695098u54d73951s298.kukuss.top
   flow: xtls-rprx-vision
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.27.21.22
-  port: 443
-  password: humanity
-  sni: www.volumeroot.com
+- name: 芬兰+V2CROSS.COM
+  type: vless
+  server: s1244.csgfw.top
+  port: 10829
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #3'
+  type: vless
+  server: freesocks.work
+  port: 2052
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
+  tls: false
+  client-fingerprint: chrome
+  servername: freesocks.work
   ws-opts:
-    path: /assignment
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: www.volumeroot.com
-- name: 新加坡+腾讯云
-  type: hysteria2
-  server: 43.156.36.253
-  port: 8443
-  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
-  sni: 43.156.36.253
-  skip-cert-verify: true
+      Host: uwu.blueknightnet.qzz.io
+- name: '爱尔兰+V2CROSS.COM #2'
+  type: vless
+  server: 78.17.153.110
+  port: 443
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: github.com
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #4'
+  type: vless
+  server: www.glassdoor.com
+  port: 8880
+  uuid: 19f4ec52-5c17-495f-803f-7b2a085b9339
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: still-hill-0fb2.160-42e.workers.dev
 - name: '英国+V2CROSS.COM #2'
   type: vless
   server: 2.26.231.218
@@ -702,13 +655,36 @@ proxies:
   client-fingerprint: chrome
   servername: rusbid.de
   flow: xtls-rprx-vision
-- name: 中国+阿里云
-  type: hysteria2
-  server: 8.211.175.236
-  port: 8443
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
+- name: 瑞士+V2CROSS.COM
+  type: vless
+  server: milo.rubinaz.xyz
+  port: 8080
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  network: raw
+  tls: false
+- name: 美国+加利福尼亚州洛杉矶
+  type: vless
+  server: 185.106.96.231
+  port: 10829
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: u695098u99a93686s848.gogocs.xyz
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #5'
+  type: vless
+  server: 172.64.146.116
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: support.zoom.us.blackshadow.dpdns.org
+  ws-opts:
+    path: /44.209.52.7-443
+    headers:
+      Host: support.zoom.us.blackshadow.dpdns.org
 - name: US美国(v2clash.blog 2026-8.25更新
   type: vless
   server: 2605:6400:10:322:8260:741c:48d7:1454
@@ -1800,6 +1776,16 @@ proxies:
     path: /
     headers:
       Host: and-75r.pages.dev
+- name: 阿拉伯(v2clash.blog 2026-10.8更新
+  type: vless
+  server: 157.228.160.166
+  port: 443
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  network: tcp
+  tls: true
+  client-fingerprint: randomized
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
 - name: RU俄罗斯(v2clash.blog 2026-10.8更新
   type: vless
   server: 159.194.250.154
@@ -1842,30 +1828,21 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - US-vip-2591
-  - US-vip-2692
-  - US-vip-2793
   - JP-vip-1039
   - JP-vip-1140
   - JP-vip-1241
   - 在线设备数量超过套餐允许值！
   - 日本
+  - vless
   - 🇨🇳_CN_中国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
   - 🇸🇪_SE_瑞典
-  - 🇯🇵_JP_日本
-  - 🇺🇸_US_美国
-  - 🇸🇬_SG_新加坡
-  - 🇳🇱_NL_荷兰
-  - 🇬🇧_GB_英国
-  - 🇷🇺_RU_俄罗斯
-  - 🇫🇷_FR_法国
-  - 🇸🇬_SG_新加坡_1
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯->🇹🇷_TR_土耳其
   - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇺🇸_US_美国
   - 美国+V2CROSS.COM
   - 爱尔兰+V2CROSS.COM
   - 俄罗斯+V2CROSS.COM
@@ -1914,17 +1891,24 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 美国 CloudFlare节点
-  - 英国+桑德兰大学
-  - 伊拉克+V2CROSS.COM
-  - '美国+V2CROSS.COM #3'
   - 英国+V2CROSS.COM
-  - '美国+纽约州纽约BuyVM #2'
-  - '俄罗斯+V2CROSS.COM #3'
+  - 亚太地区+V2CROSS.COM
   - 美国+CloudFlare节点
-  - 新加坡+腾讯云
+  - 伊朗+V2CROSS.COM
+  - '美国+Xerox #2'
+  - '美国+CloudFlare节点 #2'
+  - 香港+阿里云
+  - 美国+Alabanza
+  - '俄罗斯+V2CROSS.COM #3'
+  - '俄罗斯+V2CROSS.COM #4'
+  - 芬兰+V2CROSS.COM
+  - '美国+CloudFlare节点 #3'
+  - '爱尔兰+V2CROSS.COM #2'
+  - '美国+CloudFlare节点 #4'
   - '英国+V2CROSS.COM #2'
-  - 中国+阿里云
+  - 瑞士+V2CROSS.COM
+  - 美国+加利福尼亚州洛杉矶
+  - '美国+CloudFlare节点 #5'
   - US美国(v2clash.blog 2026-8.25更新
   - FR法国(v2clash.blog 2026-8.25更新
   - 'US美国(v2clash.blog 2026-8.25更新 #2'
@@ -2022,6 +2006,7 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
+  - 阿拉伯(v2clash.blog 2026-10.8更新
   - RU俄罗斯(v2clash.blog 2026-10.8更新
   - FR法国(v2clash.blog 2026-10.8更新
   - 'US美国(v2clash.blog 2026-10.8更新 #2'
