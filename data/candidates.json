@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:07:18.153195+00:00",
+  "generated_at": "2026-10-09T22:34:40.923465+00:00",
   "proxies": [
     {
       "client-fingerprint": "safari",
@@ -64,6 +64,15 @@
       "tls": false,
       "type": "vless",
       "uuid": "52919204-4ed9-42c8-97a0-0f01d007f898"
+    },
+    {
+      "name": "vless #2",
+      "network": "tcp",
+      "port": 443,
+      "server": "82.29.36.250",
+      "tls": false,
+      "type": "vless",
+      "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b"
     },
     {
       "client-fingerprint": "chrome",
@@ -607,8 +616,8 @@
       "name": "end-gfw-kr64-VLESS",
       "network": "tcp",
       "port": 443,
-      "server": "52.78.182.202",
-      "servername": "ecoex.co.kr",
+      "server": "52.79.249.116",
+      "servername": "ynhcasefile.kr",
       "tls": true,
       "type": "vless",
       "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043"
@@ -617,7 +626,7 @@
       "name": "end-gfw-kr64-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "52.78.182.202",
+      "server": "52.79.249.116",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -627,7 +636,7 @@
       "name": "end-gfw-kr64-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "52.78.182.202",
+      "server": "52.79.249.116",
       "type": "ss"
     },
     {
@@ -660,69 +669,16 @@
       "type": "ss"
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "北美地区+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "23.134.76.212",
-      "servername": "us.dark-bit.cc",
-      "tls": true,
-      "type": "vless",
-      "uuid": "3cd1770d-f285-4cf4-8979-e9dd8f4be36a"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "Telegram---bored_vpn#美国+CloudFlare节点",
-      "network": "ws",
-      "port": 443,
-      "server": "www.speedtest.net",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560"
-      }
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "亚太地区+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "160.25.74.91",
-      "servername": "u695098ue79dbcd4s783.gogocs.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "美国+加利福尼亚州洛杉矶",
-      "network": "tcp",
-      "port": 10829,
-      "server": "s849.kukuss.top",
-      "servername": "u695098u99a93686s848.gogocs.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3"
-    },
-    {
       "client-fingerprint": "randomized",
       "flow": "xtls-rprx-vision",
-      "name": "巴西+V2CROSS.COM #2",
+      "name": "英国+桑德兰大学",
       "network": "tcp",
       "port": 443,
-      "server": "177.1.187.251",
-      "servername": "de2.srv.vbuste.ru",
+      "server": "157.228.150.34",
+      "servername": "addons.mozilla.org",
       "tls": true,
       "type": "vless",
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386"
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
     },
     {
       "cipher": "2022-blake3-chacha20-poly1305",
@@ -733,40 +689,74 @@
       "type": "ss"
     },
     {
-      "client-fingerprint": "firefox",
+      "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "俄罗斯+V2CROSS.COM #3",
+      "name": "英国+桑德兰大学 #2",
       "network": "tcp",
       "port": 443,
-      "server": "s299.kukuss.top",
-      "servername": "u695098u54d73951s298.kukuss.top",
+      "server": "157.228.128.59",
+      "servername": "addons.mozilla.org",
       "tls": true,
       "type": "vless",
-      "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3"
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点",
+      "network": "ws",
+      "port": 443,
+      "server": "162.159.135.234",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #2",
+      "network": "ws",
+      "port": 2053,
+      "server": "104.21.84.30",
+      "servername": "fr.api-music-fa.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc",
+      "ws-opts": {
+        "headers": {
+          "Host": "fr.api-music-fa.com"
+        },
+        "path": "/api/voip/updates/static/fr2035"
+      }
     },
     {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "美国+Xerox #2",
+      "name": "英国+V2CROSS.COM",
       "network": "tcp",
-      "port": 13443,
-      "server": "gw1.edgemedia.lol",
-      "servername": "ya.ru",
+      "port": 2063,
+      "server": "pl-waw.dontblockmepls.com",
+      "servername": "rusbid.de",
       "tls": true,
       "type": "vless",
-      "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a"
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a"
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "巴西+V2CROSS.COM #3",
+      "name": "美国+V2CROSS.COM #3",
       "network": "tcp",
-      "port": 443,
-      "server": "netherseptem.live",
-      "servername": "netherseptem.live",
+      "port": 10654,
+      "server": "distant.sugarcanecoffee.top",
+      "servername": "www.icloud.com",
       "tls": true,
       "type": "vless",
-      "uuid": "56de13ac-086e-4789-8e1e-1bf2bd90216b"
+      "uuid": "397bdc3b-9204-48d7-9003-5360864eecff"
     },
     {
       "name": "US美国(mibei77.com 米贝节点分享",
@@ -2127,5 +2117,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 166
+  "total": 165
 }

@@ -56,6 +56,13 @@ proxies:
   uuid: 52919204-4ed9-42c8-97a0-0f01d007f898
   network: tcp
   tls: false
+- name: 'vless #2'
+  type: vless
+  server: 82.29.36.250
+  port: 443
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  network: tcp
+  tls: false
 - name: 🇺🇸_US_美国->🇯🇵_JP_日本
   type: vless
   server: api.w2m.ink
@@ -484,24 +491,24 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 52.78.182.202
+  server: 52.79.249.116
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: ecoex.co.kr
+  servername: ynhcasefile.kr
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 52.78.182.202
+  server: 52.79.249.116
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 52.78.182.202
+  server: 52.79.249.116
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -528,58 +535,15 @@ proxies:
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 北美地区+V2CROSS.COM
+- name: 英国+桑德兰大学
   type: vless
-  server: 23.134.76.212
+  server: 157.228.150.34
   port: 443
-  uuid: 3cd1770d-f285-4cf4-8979-e9dd8f4be36a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: us.dark-bit.cc
-  flow: xtls-rprx-vision
-- name: Telegram---bored_vpn#美国+CloudFlare节点
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 亚太地区+V2CROSS.COM
-  type: vless
-  server: 160.25.74.91
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098ue79dbcd4s783.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: 美国+加利福尼亚州洛杉矶
-  type: vless
-  server: s849.kukuss.top
-  port: 10829
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u99a93686s848.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #2'
-  type: vless
-  server: 177.1.187.251
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   network: tcp
   tls: true
   client-fingerprint: randomized
-  servername: de2.srv.vbuste.ru
+  servername: addons.mozilla.org
   flow: xtls-rprx-vision
 - name: 香港+阿里云
   type: ss
@@ -587,35 +551,61 @@ proxies:
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
-- name: '俄罗斯+V2CROSS.COM #3'
+- name: '英国+桑德兰大学 #2'
   type: vless
-  server: s299.kukuss.top
+  server: 157.228.128.59
   port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u54d73951s298.kukuss.top
-  flow: xtls-rprx-vision
-- name: '美国+Xerox #2'
-  type: vless
-  server: gw1.edgemedia.lol
-  port: 13443
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: ya.ru
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #3'
-  type: vless
-  server: netherseptem.live
-  port: 443
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: netherseptem.live
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: fr.api-music-fa.com
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 英国+V2CROSS.COM
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: rusbid.de
+  flow: xtls-rprx-vision
+- name: '美国+V2CROSS.COM #3'
+  type: vless
+  server: distant.sugarcanecoffee.top
+  port: 10654
+  uuid: 397bdc3b-9204-48d7-9003-5360864eecff
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.icloud.com
   flow: xtls-rprx-vision
 - name: US美国(mibei77.com 米贝节点分享
   type: trojan
@@ -1670,6 +1660,7 @@ proxy-groups:
   - JP-vip-1241
   - 日本
   - vless
+  - 'vless #2'
   - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇭🇰_HK_中国香港->🇺🇸_US_美国
   - 🇨🇳_CN_中国
@@ -1729,15 +1720,13 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 北美地区+V2CROSS.COM
-  - Telegram---bored_vpn#美国+CloudFlare节点
-  - 亚太地区+V2CROSS.COM
-  - 美国+加利福尼亚州洛杉矶
-  - '巴西+V2CROSS.COM #2'
+  - 英国+桑德兰大学
   - 香港+阿里云
-  - '俄罗斯+V2CROSS.COM #3'
-  - '美国+Xerox #2'
-  - '巴西+V2CROSS.COM #3'
+  - '英国+桑德兰大学 #2'
+  - 美国+CloudFlare节点
+  - '美国+CloudFlare节点 #2'
+  - 英国+V2CROSS.COM
+  - '美国+V2CROSS.COM #3'
   - US美国(mibei77.com 米贝节点分享
   - 'US美国(mibei77.com 米贝节点分享 #2'
   - FR法国(mibei77.com 米贝节点分享
