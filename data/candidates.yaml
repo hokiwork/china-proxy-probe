@@ -565,121 +565,51 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 13.125.180.150
+  server: 43.203.141.118
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: az2.rtps.cell-1.prod.ap-northeast-2.prod.connect.aws.a2z.com
+  servername: anjen.net
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 13.125.180.150
+  server: 43.203.141.118
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 13.125.180.150
+  server: 43.203.141.118
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.254.240.48
+  server: 13.229.182.121
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: oa.kidsclothe.shop
+  servername: admin.hxfilter.online
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.254.240.48
+  server: 13.229.182.121
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.254.240.48
+  server: 13.229.182.121
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.27.21.22
-  port: 443
-  password: humanity
-  sni: www.volumeroot.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.volumeroot.com
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: '美国+CloudFlare节点 #3'
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司 #2'
-  type: vless
-  server: 192.227.169.125
-  port: 10829
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u764943ccs478.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: 德国+V2CROSS.COM
-  type: vless
-  server: fr.song69.fun
-  port: 28150
-  uuid: 408c51e8-9246-483d-ba73-34ab4e202eb9
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: metrika.yandex.ru
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #4'
+- name: Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#美国+CloudFlare节点
   type: vless
   server: 162.159.130.234
   port: 443
@@ -692,43 +622,31 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+V2CROSS.COM #3'
-  type: hysteria2
-  server: 152.70.237.123
-  port: 2053
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
-- name: '美国+CloudFlare节点 #5'
+- name: 新加坡+Amazon数据中心
   type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 保加利亚+V2CROSS.COM
-  type: vless
-  server: sweedenqfds777.qcloud.surf
-  port: 21221
-  uuid: 8bd04756-3beb-4348-82c9-d35453df50ce
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: metrika.yandex.ru
+  servername: buylite.music.apple.com
   flow: xtls-rprx-vision
-- name: 美国+加利福尼亚
+- name: '巴西+V2CROSS.COM #2'
   type: hysteria2
   server: qcloudge1.exitvpn.shop
   port: 20270
   password: 8bd04756-3beb-4348-82c9-d35453df50ce
   sni: qcloudge1.exitvpn.shop
   skip-cert-verify: false
+- name: vless
+  type: vless
+  server: 31.77.126.2
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
 - name: DE德国v2clash.blog 2026-9.8
   type: vless
   server: 188.220.67.245
@@ -1356,6 +1274,19 @@ proxies:
   client-fingerprint: firefox
   servername: d3-de1.cloud-cdn.xyz
   flow: xtls-rprx-vision
+- name: CA加拿大(v2clash.blog 2026-10.7更新
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -1368,7 +1299,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: CA加拿大(v2clash.blog 2026-10.7更新
+- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -1818,17 +1749,10 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 美国+CloudFlare节点
-  - 伊朗+V2CROSS.COM
-  - '美国+CloudFlare节点 #2'
-  - '美国+CloudFlare节点 #3'
-  - '美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司 #2'
-  - 德国+V2CROSS.COM
-  - '美国+CloudFlare节点 #4'
-  - '美国+V2CROSS.COM #3'
-  - '美国+CloudFlare节点 #5'
-  - 保加利亚+V2CROSS.COM
-  - 美国+加利福尼亚
+  - Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#美国+CloudFlare节点
+  - 新加坡+Amazon数据中心
+  - '巴西+V2CROSS.COM #2'
+  - vless
   - DE德国v2clash.blog 2026-9.8
   - 'DE德国v2clash.blog 2026-9.8 #2'
   - 'DE德国v2clash.blog 2026-9.8 #3'
@@ -1885,8 +1809,9 @@ proxy-groups:
   - HK香港(v2clash.blog 2026-10.6更新
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
-  - US美国(v2clash.blog 2026-10.7更新
   - CA加拿大(v2clash.blog 2026-10.7更新
+  - US美国(v2clash.blog 2026-10.7更新
+  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
