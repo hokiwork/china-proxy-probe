@@ -557,7 +557,7 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 43.201.24.167
+  server: 3.38.168.170
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -567,41 +567,122 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 43.201.24.167
+  server: 3.38.168.170
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 43.201.24.167
+  server: 3.38.168.170
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 47.131.225.255
+  server: 54.151.155.44
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: www.apiawssspot.top
+  servername: archos.com.ph
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 47.131.225.255
+  server: 54.151.155.44
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 47.131.225.255
+  server: 54.151.155.44
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+- name: 中国+阿里云
+  type: hysteria2
+  server: 8.211.175.236
+  port: 8443
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: '土耳其+V2CROSS.COM #2'
+  type: vless
+  server: 78.135.77.55
+  port: 443
+  uuid: 6c6be9c5-e364-4053-a8ef-c9c3ec5edd0b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.akakce.com
+- name: 日本+东京Amazon数据中心
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 34379
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: us1p1.xn--ghq880n3na965a.com
+  flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.27.21.22
+  port: 443
+  password: humanity
+  sni: www.volumeroot.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+- name: '美国+V2CROSS.COM #3'
+  type: hysteria2
+  server: 152.69.231.175
+  port: 50160
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: '美国+CloudFlare节点 #2'
+  type: trojan
+  server: 108.162.194.134
+  port: 443
+  password: humanity
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: '巴西+V2CROSS.COM #2'
+  type: vless
+  server: 152.233.71.81
+  port: 443
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  network: tcp
+  tls: true
+  client-fingerprint: random
+  servername: brointelengence.com
+  flow: xtls-rprx-vision
+- name: 日本 东京Oracle云计算数据中心
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 美国+Amazon+EC2服务器
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: '美国+CloudFlare节点 #3'
   type: vless
   server: 162.159.130.234
   port: 443
@@ -614,79 +695,23 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #2'
+- name: 英国+V2CROSS.COM
   type: vless
-  server: 162.159.135.234
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.ceneo.pl
+- name: vless
+  type: vless
+  server: 31.77.126.2
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+Amazon+EC2服务器
-  type: hysteria2
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: '巴西+V2CROSS.COM #2'
-  type: vless
-  server: 177.1.187.139
-  port: 1984
-  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
-  network: tcp
-  tls: true
-  client-fingerprint: random
-  servername: ruori.ai
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #3'
-  type: vless
-  server: 152.233.71.81
-  port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: brointelengence.com
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #4'
-  type: hysteria2
-  server: qcloudge1.exitvpn.shop
-  port: 20270
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: qcloudge1.exitvpn.shop
-  skip-cert-verify: false
-- name: '美国+CloudFlare节点 #3'
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: '美国+CloudFlare节点 #4'
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: US美国v2clash.blog 2026-9.9
   type: vless
   server: 95.163.232.171
@@ -1463,6 +1488,19 @@ proxies:
   servername: us.australiacaregroup.site
 - name: 'US美国(v2clash.blog 2026-10.10更新 #2'
   type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.10更新 #3'
+  type: vless
   server: 128.241.25.11
   port: 30021
   uuid: c03bbba1-93ab-4781-8e8e-089cd257193f
@@ -1773,14 +1811,18 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
+  - 中国+阿里云
+  - '土耳其+V2CROSS.COM #2'
+  - 日本+东京Amazon数据中心
   - 美国+CloudFlare节点
+  - '美国+V2CROSS.COM #3'
   - '美国+CloudFlare节点 #2'
-  - 美国+Amazon+EC2服务器
   - '巴西+V2CROSS.COM #2'
-  - '巴西+V2CROSS.COM #3'
-  - '巴西+V2CROSS.COM #4'
+  - 日本 东京Oracle云计算数据中心
+  - 美国+Amazon+EC2服务器
   - '美国+CloudFlare节点 #3'
-  - '美国+CloudFlare节点 #4'
+  - 英国+V2CROSS.COM
+  - vless
   - US美国v2clash.blog 2026-9.9
   - 'US美国v2clash.blog 2026-9.9 #2'
   - NL荷兰v2clash.blog 2026-9.9
@@ -1852,6 +1894,7 @@ proxy-groups:
   - '阿拉伯(v2clash.blog 2026-10.9更新 #2'
   - US美国(v2clash.blog 2026-10.10更新
   - 'US美国(v2clash.blog 2026-10.10更新 #2'
+  - 'US美国(v2clash.blog 2026-10.10更新 #3'
   - 芬兰(v2clash.blog 2026-10.11更新
   - US美国(v2clash.blog 2026-10.11更新
   - SG新加坡(v2clash.blog 2026-10.12更新
