@@ -3,26 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 自动选择（Ins,YouTube,ChatGPT等）
-  type: vless
-  server: 38.244.20.214
-  port: 443
-  uuid: 5272cd9f-a028-4452-ad8a-9bc21f87bb19
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 日本东京(YouTube,ChatGPT等
-  type: vless
-  server: 103.76.85.197
-  port: 443
-  uuid: ade5c8c0-c93d-4552-b110-0e210c293265
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: www.apple.com
-  flow: xtls-rprx-vision
 - name: 🇭🇰 Yoo 2T2号
   type: vless
   server: 103.193.173.51
@@ -47,15 +27,4999 @@ proxies:
       Host: fujrdt.d6f54hd1j.cc
     path: /
   servername: fujrdt.d6f54hd1j.cc
-- name: 🏳️‍🌈 AnyTLS-HKakile ↓速度一般 2026.11.7-22:11:42到期无限流量
-  server: any.tianziip.com
+- name: disney_netflix_BG
+  server: 155.103.71.142
+  type: vless
   port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: disney_netflix_US |106.62Mb
+  server: starlink-ft.251313.xyz
+  type: hysteria2
+  port: 443
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+- name: Relay_-🇯🇵JP_03
+  server: 104.21.0.87
+  type: vless
+  port: 443
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  packet-encoding: ''
+- name: Relay_-🇬🇧GB_04
+  server: 185.207.196.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime11.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_SE |520.70Mb
+  server: sweedenqfds777.qcloud.surf
+  type: hysteria2
+  port: 21223
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  auth: 8bd04756-3beb-4348-82c9-d35453df50ce
+  skip-cert-verify: true
+- name: disney_netflix_SE |45.63Mb
+  server: sweedenqfds777.qcloud.surf
+  type: hysteria2
+  port: 21223
+  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  auth: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  sni: sweedenqfds777.qcloud.surf
+  skip-cert-verify: true
+- name: disney_netflix_DE |896.78Mb
+  server: qcloudge1.exitvpn.shop
+  type: hysteria2
+  port: 20270
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  auth: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: qcloudge1.exitvpn.shop
+  skip-cert-verify: true
+- name: Relay_-🇹🇼TW_09
+  server: er8u54dh.df6h451rh.xin
   type: anytls
-  password: bbf4aea670b05b18c7ca0e6301ccc9550be6a546f892f3e5
-  udp: false
-  sni: any.tianziip.com
+  port: 443
+  udp: true
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+  password: 0324fbc29561
+- name: disney_netflix_US |75.70Mb
+  server: svip.skycon808.com
+  type: anytls
+  port: 22315
+  udp: true
+  sni: us53.pulsarcore.site
+  skip-cert-verify: true
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+- name: Relay_-🇹🇼TW_11
+  server: 684616s4.df6h451rh.xin
+  type: anytls
+  port: 443
+  udp: true
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+  password: ec74bb6a86c2
+- name: Relay_-🇹🇼TW_12
+  server: er8u54dh.df6h451rh.xin
+  type: anytls
+  port: 443
+  udp: true
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+  password: ec74bb6a86c2
+- name: disney_netflix_US |114.03Mb
+  server: 98416548.df6h451rh.xin
+  type: anytls
+  port: 443
+  udp: true
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+  password: 0324fbc29561
+- name: disney_netflix_TW
+  server: svip.skycon808.com
+  type: anytls
+  port: 47531
+  udp: true
+  sni: tw15.swiftrelay.cc
+  skip-cert-verify: true
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+- name: netflix_KR
+  server: 152.70.237.123
+  type: hysteria2
+  port: 2053
+  password: maintell
+  auth: maintell
+  sni: bing.com
+  skip-cert-verify: true
+- name: disney_netflix_US
+  server: tw02.ccdn3.work
+  type: anytls
+  port: 20062
+  udp: true
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  password: fc12fb20-4380-11ec-8c97-d707e267af0b
+- name: disney_netflix_GB
+  server: 8.34.70.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime09.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_IN |20.48Mb
+  server: 13.140.56.100
+  type: vless
+  port: 14430
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  servername: 13.140.56.100
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+  packet-encoding: ''
+- name: Relay_-🇸🇬SG_19 |13.50Mb
+  server: 188.114.97.6
+  type: vless
+  port: 443
+  udp: true
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: free.nadun.store
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+  alpn:
+  - http/1.1
+  packet-encoding: ''
+- name: 'disney_netflix_GB #2'
+  server: 154.211.8.227
+  type: vless
+  port: 2087
+  udp: true
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: proxy-34l.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-34l.pages.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #3'
+  server: 188.114.96.3
+  type: vless
+  port: 443
+  udp: true
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nuclear.us.kg
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
+  packet-encoding: ''
+- name: Relay_-🇱🇰LK_22 | 7.80Mb
+  server: centurylink.es
+  type: vless
+  port: 8443
+  udp: true
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: free.sahanwickramasinghe.me
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  alpn:
+  - h2
+  - http/1.1
+  packet-encoding: ''
+- name: 'disney_netflix_GB #4'
+  server: 162.159.152.205
+  type: vless
+  port: 443
+  udp: true
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vless2-8vx.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
+  packet-encoding: ''
+- name: disney_netflix_SG | 3.20Mb
+  server: 138.2.73.238
+  type: hysteria2
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  auth: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: netflix_AE |35.22Mb
+  server: 95.174.68.188
+  type: vless
+  port: 14430
+  udp: true
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  servername: 95.174.68.188
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+  packet-encoding: ''
+- name: 'disney_netflix_GB #5'
+  server: www.iplocation.net
+  type: vless
+  port: 8080
+  udp: true
+  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_FR |748.06Mb
+  server: 62.210.7.139
+  type: hysteria2
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  auth: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
+- name: Relay_-🇱🇰LK_28
+  server: free.sahanwickramasinghe.me
+  type: vless
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  packet-encoding: ''
+- name: disney_netflix_JP |10.95Mb
+  server: vp3.yysyy.online
+  type: hysteria2
+  port: 443
+  password: 96ab5cd282733fd4c312a61f972f330a
+  auth: 96ab5cd282733fd4c312a61f972f330a
+  skip-cert-verify: true
+- name: disney_netflix_HK |29.14Mb
+  server: 56481.df6h451rh.xin
+  type: anytls
+  port: 443
+  udp: true
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+  password: ec74bb6a86c2
+- name: disney_netflix_US |130.52Mb
+  server: 193.233.130.119
+  type: vless
+  port: 14430
+  udp: true
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  network: ws
+  servername: 193.233.130.119
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.233.130.119
+  packet-encoding: ''
+- name: disney_netflix_SG |120.50Mb
+  server: s3.huhiuh.space
+  type: hysteria2
+  port: 18642
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  auth: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: disney_netflix_US |237.28Mb
+  server: anytls2.864106.xyz
+  type: anytls
+  port: 19000
+  udp: true
+  sni: anytls2.864106.xyz
+  skip-cert-verify: true
+  password: github.com/Alvin9999-newpac/fanqiang
+- name: disney_netflix_US |169.44Mb
+  server: 193.233.130.119
+  type: vless
+  port: 10443
+  udp: true
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  network: tcp
+  servername: 193.233.130.119
+  packet-encoding: ''
+- name: 'netflix_KR #2'
+  server: 150-230-252-217.liao.kdns.fr
+  type: hysteria2
+  port: 50160
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  auth: 9cfc9458e48c028ec03ff86ebc71c744
+  skip-cert-verify: true
+- name: disney_netflix_CL
+  server: 64.176.9.246
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_FI |337.04Mb
+  server: z5n1.vpnpolar.online
+  type: vless
+  port: 443
+  udp: true
+  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: z5n1.vpnpolar.online
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: z5n1.vpnpolar.online
+  packet-encoding: ''
+- name: 'netflix_KR #3'
+  server: 119.205.235.58
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_FI |271.67Mb
+  server: fi.quic.best
+  type: vless
+  port: 443
+  udp: true
+  uuid: c2331311-c9fd-4af9-8f34-7a9edcee3b92
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fi.quic.best
+  alpn:
+  - h2
+  - h3
+  packet-encoding: ''
+- name: disney_netflix_PL |95.66Mb
+  server: 45.137.43.168
+  type: vless
+  port: 14430
+  udp: true
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  network: ws
+  servername: 45.137.43.168
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.137.43.168
+  packet-encoding: ''
+- name: disney_netflix_PL |107.38Mb
+  server: 45.137.43.168
+  type: vless
+  port: 10443
+  udp: true
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  network: tcp
+  servername: 45.137.43.168
+  packet-encoding: ''
+- name: 'disney_netflix_GB #6'
+  server: vl.cocopon.top
+  type: vless
+  port: 2053
+  udp: true
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: vl.cocopon.top
+  ws-opts:
+    path: /
+    headers:
+      Host: vl.cocopon.top
+  packet-encoding: ''
+- name: 'disney_netflix_TW #2'
+  server: tw5.dexlos.com
+  type: tuic
+  port: 8080
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  alpn:
+  - h3
+  sni: tw5.dexlos.com
+  skip-cert-verify: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: disney_netflix_FI |136.02Mb
+  server: 45.144.234.157
+  type: vless
+  port: 14430
+  udp: true
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  servername: 45.144.234.157
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+  packet-encoding: ''
+- name: disney_netflix_FR |698.18Mb
+  server: 199.232.78.170
+  type: vless
+  port: 443
+  udp: true
+  uuid: XpnTeam-6
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  packet-encoding: ''
+- name: netflix_AE |461.01Mb
+  server: 185.253.116.33
+  type: vless
+  port: 14430
+  udp: true
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  servername: 185.253.116.33
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+  packet-encoding: ''
+- name: disney_netflix_SE |122.73Mb
+  server: 5.178.109.174
+  type: vless
+  port: 14430
+  udp: true
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  servername: 5.178.109.174
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+  packet-encoding: ''
+- name: disney_netflix_DE |116.21Mb
+  server: server56.smvx.ir
+  type: vless
+  port: 443
+  udp: true
+  uuid: 70008803-ed47-4181-bf10-dc8f5362f42d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: a.benyamin-benshop.ir
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  packet-encoding: ''
+- name: disney_netflix_FR |47.31Mb
+  server: eu5.998998.best
+  type: vless
+  port: 443
+  udp: true
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nat3.outsidemyheart.space
+  ws-opts:
+    path: /ew4p98tu34wtghe39?ed=2560
+    headers:
+      Host: nat3.outsidemyheart.space
+  packet-encoding: ''
+- name: disney_netflix_GB |34.99Mb
+  server: 138.124.90.177
+  type: vless
+  port: 10443
+  udp: true
+  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  network: tcp
+  servername: 138.124.90.177
+  packet-encoding: ''
+- name: Relay_-🇩🇪DE_52
+  server: 45.130.125.50
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime58.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_SE | 9.32Mb
+  server: svip.skycon808.com
+  type: anytls
+  port: 60005
+  udp: true
+  sni: xjp18.2uuzhe.com
+  skip-cert-verify: true
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+- name: 'disney_netflix_GB #7'
+  server: 172.66.0.162
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #8'
+  server: 185.18.250.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime47.workers.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #9'
+  server: epam.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wallweb-av6.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-av6.pages.dev
+  packet-encoding: ''
+- name: disney_netflix_DE |87.80Mb
+  server: vpn-de-002.fastervpn.world
+  type: hysteria2
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #10'
+  server: epam.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wallweb-boi.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-boi.pages.dev
+  packet-encoding: ''
+- name: disney_RU |54.97Mb
+  server: 194.87.118.184
+  type: hysteria2
+  port: 2053
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  auth: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: match-stream.lovkisport.blog
+  skip-cert-verify: true
+- name: disney_US |56.85Mb
+  server: 69.63.221.116
+  type: vless
+  port: 25517
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: disney_netflix_DE |285.69Mb
+  server: finkawwwbroy5.qcloud.surf
+  type: hysteria2
+  port: 20326
+  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
+  auth: f83ce3c4-07d9-4895-bd14-cb74abbcab37
+  sni: finkawwwbroy5.qcloud.surf
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #11'
+  server: 104.18.35.86
+  type: vless
+  port: 2082
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  packet-encoding: ''
+- name: disney_netflix_US |211.59Mb
+  server: 66.94.121.46
+  type: hysteria2
+  port: 443
+  password: gf1:gfhysteria2024
+  auth: gf1:gfhysteria2024
+  sni: www.broadcom.com
+  skip-cert-verify: true
+- name: disney_netflix_DE |123.00Mb
+  server: finkawwwbroy5.qcloud.surf
+  type: hysteria2
+  port: 20326
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  auth: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: finkawwwbroy5.qcloud.surf
+  skip-cert-verify: true
+- name: disney_netflix_FI |369.68Mb
+  server: edge10.cyrionflare.com
+  type: vless
+  port: 2052
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  network: tcp
+  packet-encoding: ''
+- name: 'disney_netflix_GB #12'
+  server: 172.67.74.90
+  type: vless
+  port: 443
+  udp: true
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cvhpyn.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cvhpyn.pages.dev
+  packet-encoding: ''
+- name: disney_US |263.96Mb
+  server: uk1-2.998998.best
+  type: vless
+  port: 443
+  udp: true
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: server13.9966338.xyz
+  ws-opts:
+    path: /resiouhgggggggggg?ed=2560
+    headers:
+      Host: server13.9966338.xyz
+  packet-encoding: ''
+- name: disney_netflix_FR | 7.30Mb
+  server: 173.212.201.85
+  type: hysteria2
+  port: 443
+  password: gf1:gfhysteria2024
+  auth: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: disney_netflix_NL
+  server: 107.189.26.160
+  type: vless
+  port: 443
+  udp: true
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+  alpn:
+  - http/1.1
+  packet-encoding: ''
+- name: disney_netflix_TR | 2.04Mb
+  server: test.keoplentuio.xyz
+  type: vless
+  port: 2053
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  network: tcp
+  packet-encoding: ''
+- name: disney_netflix_FR |46.39Mb
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  type: vless
+  port: 443
+  uuid: rgiw5k0gg5
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  packet-encoding: ''
+- name: 'disney_netflix_GB #13'
+  server: 192.0.54.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #14'
+  server: 172.67.75.133
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #15'
+  server: 104.21.74.214
+  type: vless
+  port: 2096
+  udp: true
+  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: levikoconfig.levikogjgfdd.ir
+  ws-opts:
+    path: /
+    headers:
+      Host: levikoconfig.levikogjgfdd.ir
+  packet-encoding: ''
+- name: 'disney_netflix_GB #16'
+  server: cf.130519.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #17'
+  server: www.gov.se
+  type: vless
+  port: 8080
+  udp: true
+  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
+  network: ws
+  servername: www.gov.se
+  ws-opts:
+    path: /
+    headers:
+      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
+  packet-encoding: ''
+- name: Relay_-🇬🇧GB_79
+  server: 45.142.120.40
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime08.workers.dev
+  packet-encoding: ''
+- name: Relay_-🇰🇷KR_80
+  server: 123.111.169.70
+  type: vless
+  port: 8443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_FI
+  server: 77.110.97.245
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: disney_netflix_DE
+  server: 164.90.224.132
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_ES
+  server: 31.57.190.93
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_JP |42.00Mb
+  server: 8.211.175.236
+  type: hysteria2
+  port: 8443
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  auth: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #18'
+  server: cf.877774.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jjkkll.ccwu.cc
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+  packet-encoding: ''
+- name: 'disney_netflix_GB #19'
+  server: cf.090227.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: 20664.pages.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+  packet-encoding: ''
+- name: disney_netflix_HK |107.83Mb
+  server: 202.146.222.29
+  type: hysteria2
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #20'
+  server: cf.090227.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+  packet-encoding: ''
+- name: 'disney_netflix_GB #21'
+  server: cf.877774.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+  packet-encoding: ''
+- name: 'disney_netflix_GB #22'
+  server: cf.3666888.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: 20664.pages.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+  packet-encoding: ''
+- name: disney_netflix_SE
+  server: 5.189.254.168
+  type: vless
+  port: 2053
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_FR |32.26Mb
+  server: tyxyrytyro-51255165170-direct.araghchy.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: tyxyrytyro
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  alpn:
+  - h2
+  packet-encoding: ''
+- name: Relay_-🇩🇪DE_95
+  server: 141.11.139.215
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #23'
+  server: 104.129.164.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime40.workers.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #24'
+  server: 104.16.215.234
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime39.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #25'
+  server: cf.130519.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+  packet-encoding: ''
+- name: 'disney_netflix_GB #26'
+  server: cf.130519.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  network: ws
+  tls: true
+  client-fingerprint: random
+  servername: 20664.pages.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+  packet-encoding: ''
+- name: 'disney_netflix_GB #27'
+  server: 162.159.198.1
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_MX
+  server: 131.196.253.141
+  type: vless
+  port: 443
+  udp: true
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kclx.eu.org
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
+  packet-encoding: ''
+- name: disney_netflix_SG |72.91Mb
+  server: 185.115.207.141
+  type: vless
+  port: 443
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_GB #28'
+  server: 8.35.211.236
+  type: vless
+  port: 443
+  udp: true
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kkkk-83j.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: kkkk-83j.pages.dev
+  packet-encoding: ''
+- name: disney_netflix_HK
+  server: 43.129.80.179
+  type: vless
+  port: 8443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_DE #2'
+  server: 188.214.35.66
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_JP
+  server: 161.33.29.213
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_JP #2'
+  server: 216.23.87.50
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: _110 |72.95Mb
+  server: 104.243.33.154
+  type: vless
+  port: 45299
+  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+  network: tcp
+  packet-encoding: ''
+- name: 'disney_netflix_GB #29'
+  server: ld.235231.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ld.235231.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.235231.xyz
+  packet-encoding: ''
+- name: disney_netflix_IL
+  server: 185.253.75.119
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: disney_netflix_US |64.03Mb
+  server: starlink-ft.251313.xyz
+  type: hysteria2
+  port: 443
+  udp: true
+  password: https://xship.best
+  auth: https://xship.best
+  sni: xship.top
+  skip-cert-verify: true
+- name: disney_netflix_US |209.42Mb
+  server: 107.149.159.190
+  type: hysteria2
+  port: 8443
+  password: 488b2611852407f03a681927cb91804b
+  auth: 488b2611852407f03a681927cb91804b
+  sni: cf.shiranyu.xyz
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #30'
+  server: 188.114.97.3
+  type: vless
+  port: 2096
+  udp: true
+  uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: levikoconfig.levikogjgfdd.ir
+  ws-opts:
+    path: /
+    headers:
+      Host: levikoconfig.levikogjgfdd.ir
+  packet-encoding: ''
+- name: 'disney_netflix_US #2'
+  server: 205.186.76.237
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #31'
+  server: 185.162.229.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime61.workers.dev
+  packet-encoding: ''
+- name: netflix_CH |737.05Mb
+  server: 140.238.213.114
+  type: hysteria2
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  auth: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: netflix_PE | 3.35Mb
+  server: 172.65.90.41
+  type: vless
+  port: 2053
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlNSSwUEURwBVwcWUQYJGxsPQldGTQ8OBgJWFUU=
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_GB #32'
+  server: 104.18.47.140
+  type: vless
+  port: 2096
+  udp: true
+  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  servername: rainfall0705.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: rainfall0705.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #33'
+  server: 43.174.193.1
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: Relay_-🇲🇾MY_123
+  server: platform117.golnamakcert.top
+  type: vless
+  port: 80
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+  packet-encoding: ''
+- name: disney_netflix_DE |105.51Mb
+  server: 209.38.238.229
+  type: vless
+  port: 20202
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_GB #34'
+  server: 159.65.51.189
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #35'
+  server: 104.26.4.2
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #36'
+  server: 172.67.76.40
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: disney_netflix_RS
+  server: 185.48.250.113
+  type: vless
+  port: 8443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_FR |274.62Mb
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: e3k67dwms3
+  network: tcp
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  alpn:
+  - h2
+  packet-encoding: ''
+- name: 'disney_netflix_GB #37'
+  server: 172.64.156.111
+  type: vless
+  port: 443
+  udp: true
+  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf.zhahui.de5.net
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.zhahui.de5.net
+  packet-encoding: ''
+- name: 'disney_netflix_GB #38'
+  server: 104.18.33.141
+  type: vless
+  port: 443
+  udp: true
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kclx.eu.org
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_GB #39'
+  server: 154.194.12.40
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: 154.194.12.40
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_US |400.61Mb
+  server: 129.213.91.185
+  type: hysteria2
+  port: 35013
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  auth: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #40'
+  server: 130.250.137.30
+  type: vless
+  port: 8880
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+  packet-encoding: ''
+- name: disney_netflix_US | 1.74Mb
+  server: starlink-ft.251313.xyz
+  type: hysteria2
+  port: 443
+  udp: true
+  password: https://xship.2fa.cat
+  auth: https://xship.2fa.cat
+  sni: xship.top
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #41'
+  server: cf.090227.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_DE #3'
+  server: 164.92.239.67
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #42'
+  server: cf.877774.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #43'
+  server: 104.18.35.86
+  type: vless
+  port: 8080
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  packet-encoding: ''
+- name: 'disney_netflix_GB #44'
+  server: 104.18.0.181
+  type: vless
+  port: 2082
+  udp: true
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  packet-encoding: ''
+- name: 'disney_netflix_GB #45'
+  server: cf.090227.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: oooyo.bi8bo.cyou
+  ws-opts:
+    path: /
+    headers:
+      Host: oooyo.bi8bo.cyou
+  packet-encoding: ''
+- name: 'disney_netflix_GB #46'
+  server: cf.877774.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 0740c4b8-2f51-42b9-859a-34d750822dbb
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 255038.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: 255038.xyz
+  packet-encoding: ''
+- name: disney_netflix_TR |65.15Mb
+  server: 155.103.70.53
+  type: vless
+  port: 30303
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_DE #4'
+  server: 149.154.157.213
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #47'
+  server: 104.17.148.226
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_SE #2'
+  server: 94.183.235.247
+  type: vless
+  port: 8443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_US |218.34Mb
+  server: 144.24.46.175
+  type: hysteria2
+  port: 8443
+  password: pbgLTkd5276SN1sZ
+  auth: pbgLTkd5276SN1sZ
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: disney_netflix_FR
+  server: 85.155.225.63
+  type: vless
+  port: 8443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_ES #2'
+  server: 31.57.190.62
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #48'
+  server: kclx.eu.org
+  type: vless
+  port: 443
+  udp: true
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kclx.eu.org
+  ws-opts:
+    path: /154.16.10.34-8080
+    headers:
+      Host: kclx.eu.org
+  packet-encoding: ''
+- name: disney_netflix_NL |200.51Mb
+  server: 5.129.235.85
+  type: hysteria2
+  port: 443
+  password: gf1:gfhysteria2024
+  auth: gf1:gfhysteria2024
+  sni: www.linux.com
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #49'
+  server: www.5199dy.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: oooyo.bi8bo.cyou
+  ws-opts:
+    path: /
+    headers:
+      Host: oooyo.bi8bo.cyou
+  packet-encoding: ''
+- name: 'disney_netflix_GB #50'
+  server: cf.877774.xyz
+  type: vless
+  port: 443
+  udp: true
+  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: oooyo.bi8bo.cyou
+  ws-opts:
+    path: /
+    headers:
+      Host: oooyo.bi8bo.cyou
+  packet-encoding: ''
+- name: 'disney_netflix_GB #51'
+  server: 104.21.67.122
+  type: vless
+  port: 443
+  udp: true
+  uuid: ec5cf915-2203-403c-9710-dbd553857929
+  network: ws
+  tls: true
+  client-fingerprint: randomized
+  servername: novantunnel.tech
+  ws-opts:
+    path: /Novan-AE27
+    headers:
+      Host: novantunnel.tech
+  packet-encoding: ''
+- name: disney_netflix_IN
+  server: 168.144.155.167
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #52'
+  server: www.5199dy.com
+  type: vless
+  port: 443
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  packet-encoding: ''
+- name: 'disney_netflix_GB #53'
+  server: cf-socks.caoyuwu.eu.org
+  type: vless
+  port: 443
+  udp: true
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf-socks.caoyuwu.eu.org
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-socks.caoyuwu.eu.org
+  packet-encoding: ''
+- name: 'disney_netflix_GB #54'
+  server: 27.50.48.8
+  type: vless
+  port: 443
+  udp: true
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vless2-8vx.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
+  packet-encoding: ''
+- name: 'disney_netflix_US #3'
+  server: 188.255.156.202
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_ES |55.65Mb
+  server: 185.174.137.172
+  type: hysteria2
+  port: 8446
+  password: e9dc02d400b67c727aca1620
+  auth: e9dc02d400b67c727aca1620
+  skip-cert-verify: true
+- name: disney_netflix_PT |138.49Mb
+  server: 141.101.90.108
+  type: vless
+  port: 2053
+  udp: true
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wzs.echo.net.eu.org
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+  packet-encoding: ''
+- name: disney_netflix_CA
+  server: 24.84.0.55
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_RU
+  server: 194.58.109.206
+  type: vless
+  port: 8443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: disney_netflix_LT
+  server: 89.125.248.243
+  type: vless
+  port: 443
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf3.schzyc.cc.cd
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: cf3.schzyc.cc.cd
+  packet-encoding: ''
+- name: 'disney_netflix_GB #55'
+  server: 104.20.28.233
+  type: vless
+  port: 80
+  udp: true
+  uuid: e081da45-9fae-4687-9376-f9a6a0dbbe83
+  network: ws
+  ws-opts:
+    path: /id-amz
+    headers:
+      Host: e33xr.qzz.io
+  packet-encoding: ''
+- name: _167 | 2.98Mb
+  server: 89.125.103.208
+  type: ss
+  port: 20111
+  udp: true
+  password: 994ccabf6f0950d6
+  cipher: aes-256-gcm
+- name: Relay_-🇩🇪DE_168 |91.68Mb
+  server: ruot.ayucloudservices.nl
+  type: ss
+  port: 40040
+  udp: true
+  password: edad69d9-ea99-4ce9-bae8-8fedc2afcbf4
+  cipher: aes-128-gcm
+- name: disney_netflix_IN |81.11Mb
+  server: ruot.ayucloudservices.nl
+  type: ss
+  port: 21187
+  password: edad69d9-ea99-4ce9-bae8-8fedc2afcbf4
+  cipher: aes-256-gcm
+- name: disney_netflix_US |54.22Mb
+  server: 3.138.123.136
+  type: ss
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+- name: disney_netflix_US |247.79Mb
+  server: 3.144.84.214
+  type: ss
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+- name: disney_netflix_NL |263.97Mb
+  server: 82.38.31.35
+  type: ss
+  port: 8080
+  udp: true
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: Relay_-🇭🇰HK_174 |58.10Mb
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  type: vmess
+  port: 443
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+- name: disney_netflix_US | 6.69Mb
+  server: cf.0sm.com
+  type: vmess
+  port: 80
+  udp: true
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: _176 |24.39Mb
+  server: 8.217.13.103
+  type: vmess
+  port: 443
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: disney_netflix_HK |31.98Mb
+  server: yg1.ygkkk.dpdns.org
+  type: vmess
+  port: 443
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: jmp1.907737.xyz
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: disney_netflix_HK |59.88Mb
+  server: 47.243.153.153
+  type: vmess
+  port: 443
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: _181 |18.55Mb
+  server: 8.217.254.88
+  type: vmess
+  port: 443
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+- name: disney_netflix_US | 4.99Mb
+  server: 172.66.203.67
+  type: vmess
+  port: 443
+  udp: true
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: vmess.lbw666.dpdns.org
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: Relay_-🇭🇰HK_183 |29.16Mb
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  type: vmess
+  port: 443
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: disney_netflix_HK |61.53Mb
+  server: 47.244.120.197
+  type: vmess
+  port: 23026
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /arki
+  alpn:
+  - ''
+- name: disney_netflix_FI |450.77Mb
+  server: 185.212.149.7
+  type: vmess
+  port: 2053
+  udp: true
+  uuid: aeb3c019-ae83-4677-af97-846baa787ad5
+  alterId: 0
+  cipher: auto
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /3x
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+  h2-opts: {}
+  skip-cert-verify: true
+  alpn:
+  - ''
+- name: disney_netflix_FI |437.96Mb
+  server: 185.212.149.7
+  type: vmess
+  port: 52080
+  udp: true
+  uuid: ec3c8b97-f308-4fee-aa16-95e2c7595acd
+  alterId: 0
+  cipher: auto
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /3x
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+  h2-opts: {}
+  skip-cert-verify: true
+  alpn:
+  - ''
+- name: Relay_-🇯🇵JP_187 |14.80Mb
+  server: cdn.sfacg.uk
+  type: vmess
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: disney_netflix_SG |29.44Mb
+  server: 139.180.146.200
+  type: trojan
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 139.180.146.200
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #56'
+  server: 104.16.148.5
+  type: trojan
+  port: 443
+  udp: true
+  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+  sni: dimskiee.biz.id
+  skip-cert-verify: true
+  ws-opts:
+    path: /WangCai-8
+    headers:
+      Host: dimskiee.biz.id
+  network: ws
+- name: disney_netflix_FR | 4.98Mb
+  server: 162.159.91.211
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_TR |168.55Mb
+  server: nimm.mpd.cc.cd
+  type: trojan
+  port: 2053
+  udp: true
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: true
+  ws-opts:
+    path: /0962
+    headers:
+      Host: nimm.mpd.cc.cd
+  network: ws
+- name: Relay_-🇸🇬SG_192 | 5.01Mb
+  server: musical-mouse.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+- name: Relay_-🇸🇬SG_193 | 7.01Mb
+  server: brave-tomcat.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: brave-tomcat.rooster465.autos
+  skip-cert-verify: true
+- name: Relay_-🇸🇬SG_194 | 7.39Mb
+  server: simple-molly.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: simple-molly.rooster465.autos
+  skip-cert-verify: true
+- name: disney_netflix_FR | 3.87Mb
+  server: 104.21.13.204
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: Relay_-🇺🇸US_196 |72.51Mb
+  server: inviting-ferret.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: true
+- name: disney_KR
+  server: noted-cougar.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: true
+- name: 'disney_KR #2'
+  server: main-fawn.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: true
+- name: disney_netflix_FR |823.27Mb
+  server: 45.80.111.7
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: 'disney_netflix_US #4'
+  server: 23.106.44.14
+  type: trojan
+  port: 443
+  udp: true
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: sj6.freeguard.org
+  skip-cert-verify: true
+- name: Relay_-🇰🇷KR_201
+  server: pure-kodiak.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: pure-kodiak.rooster465.autos
+  skip-cert-verify: true
+- name: 'disney_netflix_GB #57'
+  server: www.wto.org
+  type: trojan
+  port: 8443
+  udp: true
+  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
+  sni: jiangjc.pages.dev
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: jiangjc.pages.dev
+  network: ws
+- name: disney_netflix_PL |91.76Mb
+  server: pl.tronsg.com
+  type: trojan
+  port: 443
+  udp: true
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: true
+- name: disney_netflix_FR |94.58Mb
+  server: 188.114.96.3
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_FR | 3.74Mb
+  server: 82.117.245.125
+  type: trojan
+  port: 2053
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_JP |18.89Mb
+  server: jp3.998998.best
+  type: trojan
+  port: 443
+  udp: true
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  sni: nat11.outsidemyheart.space
+  skip-cert-verify: true
+  ws-opts:
+    path: /w4e5yh0p945y3?ed=2560
+    headers:
+      Host: nat11.outsidemyheart.space
+  network: ws
+- name: _207 |59.99Mb
+  server: 45.32.52.173
+  type: trojan
+  port: 8886
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: disney_netflix_FR | 3.88Mb
+  server: 212.183.88.136
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: Relay_-🇯🇵JP_209 |53.84Mb
+  server: jp.tronsg.com
+  type: trojan
+  port: 443
+  udp: true
+  password: Trojan@82164024
+  sni: jp.tronsg.com
+  skip-cert-verify: true
+- name: Relay_-🇺🇸US_210 |63.38Mb
+  server: us3-2.998998.best
+  type: trojan
+  port: 443
+  udp: true
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  sni: nat3.xxai.dpdns.org
+  skip-cert-verify: true
+  ws-opts:
+    path: /anyway
+    headers:
+      Host: nat3.xxai.dpdns.org
+  network: ws
+- name: Relay_-🇸🇬SG_211 | 5.34Mb
+  server: moral-basilisk.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: Relay_-🇸🇬SG_212 |22.49Mb
+  server: glorious-glider.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: glorious-glider.rooster465.autos
+  skip-cert-verify: true
+- name: 'disney_KR #3'
+  server: central-jawfish.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: true
+- name: disney_netflix_IN |74.97Mb
+  server: in.tronsg.com
+  type: trojan
+  port: 443
+  udp: true
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
+- name: 'disney_netflix_FR | 3.88Mb #2'
+  server: 172.64.152.23
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_FR | 3.79Mb
+  server: 213.1.145.50
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: 'disney_netflix_GB #58'
+  server: 104.18.35.86
+  type: trojan
+  port: 8443
+  udp: true
+  password: trojan
+  sni: longwanghen.pages.dev
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: longwanghen.pages.dev
+  network: ws
+- name: 'disney_KR #4'
+  server: optimum-snapper.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+- name: disney_netflix_FR | 3.85Mb
+  server: 45.130.125.190
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: Relay_-🇰🇷KR_220
+  server: pretty-rat.rooster465.autos
+  type: trojan
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+- name: disney_netflix_NL | 3.84Mb
+  server: 104.19.157.30
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  alpn:
+  - http/1.1
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumeroot.com
+  network: ws
+- name: disney_netflix_NL | 3.83Mb
+  server: 104.18.35.86
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  alpn:
+  - http/1.1
+  sni: www.volumerOot.coM.
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.volumerOot.coM.
+  network: ws
+- name: disney_netflix_US |159.64Mb
+  server: 66.23.203.21
+  type: trojan
+  port: 59689
+  udp: true
+  password: ae7eb4dwyaz25pxwgq59
+  skip-cert-verify: true
+- name: disney_netflix_FR |673.40Mb
+  server: 185.18.250.252
+  type: trojan
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_BG |227.80Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9098
+  password: aLpQtfEZe445QyHk
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |355.68Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9061
+  password: 4R3hUfZ2FHhDmNcP
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |258.04Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9085
+  password: 9ej82EKe2gq7gLAM
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |254.98Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9028
+  password: 9eeJ2fwnZA5Fxgz8
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |14.23Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9049
+  password: PRBf4BS2HvJqtWxY
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |103.08Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9054
+  password: VcFuyXvND2yQWSFY
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |352.95Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9066
+  password: 2KUaE2a8NWTvuCZ3
+  cipher: aes-256-cfb
+- name: disney_netflix_BG |316.52Mb
+  server: 213.183.63.60
+  type: ss
+  country: 🇧🇬BG
+  port: 9064
+  password: cp8pRSUAyLhTfVWH
+  cipher: aes-256-cfb
+- name: disney_netflix_GB |32.21Mb
+  server: 94.156.250.148
+  type: ss
+  country: 🇧🇬BG
+  port: 7001
+  password: RexnBgU7EV5ADxG
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |58.73Mb
+  server: ca.tronsg.com
+  type: trojan
+  country: 🇨🇦 CA
+  port: 443
+  udp: true
+  password: Trojan@82164024
+  skip-cert-verify: true
+- name: disney_netflix_CA | 2.32Mb
+  server: 51.222.12.127
+  type: ss
+  country: 🇨🇦CA
+  port: 445
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |54.05Mb
+  server: 138.197.141.58
+  type: ss
+  country: 🇨🇦CA
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: disney_netflix_CA |58.76Mb
+  server: 137.184.174.93
+  type: ss
+  country: 🇨🇦CA
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: disney_netflix_CA |158.66Mb
+  server: 51.79.64.198
+  type: ss
+  country: 🇨🇦CA
+  port: 8119
+  password: cdBIDV42DCwnfIN
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |36.94Mb
+  server: 51.222.155.32
+  type: ss
+  country: 🇨🇦CA
+  port: 5003
+  password: g5MeD6Ft3CWlJId
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |32.33Mb
+  server: 51.222.200.165
+  type: ss
+  country: 🇨🇦CA
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 🇨🇦CA_241 |126.49Mb
+  server: 51.222.155.113
+  type: ss
+  country: 🇨🇦CA
+  port: 5601
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |32.54Mb
+  server: 51.79.49.116
+  type: ss
+  country: 🇨🇦CA
+  port: 8882
+  password: kDWvXYZoTBcGkC4
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |37.24Mb
+  server: 51.222.136.236
+  type: ss
+  country: 🇨🇦CA
+  port: 8882
+  password: kDWvXYZoTBcGkC4
+  cipher: aes-256-gcm
+- name: disney_netflix_CA | 8.69Mb
+  server: 51.222.141.125
+  type: ss
+  country: 🇨🇦CA
+  port: 445
+  password: zDNVedRFPQexG9v
+  cipher: aes-256-gcm
+- name: disney_netflix_CA |65.29Mb
+  server: 134.195.196.211
+  type: vmess
+  country: 🇨🇦CA
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: disney_netflix_CA |10.65Mb
+  server: 23.162.200.198
+  type: vmess
+  country: 🇨🇦CA
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: disney_netflix_FR | 3.80Mb
+  server: 91.245.225.79
+  type: trojan
+  country: 🇨🇭CH
+  port: 2053
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_DE |324.46Mb
+  server: 213.202.208.199
+  type: ss
+  country: 🇩🇪DE
+  port: 7001
+  password: RexnBgU7EV5ADxG
+  cipher: aes-256-gcm
+- name: disney_netflix_DE |907.06Mb
+  server: 209.46.102.22
+  type: ss
+  country: 🇩🇪DE
+  port: 8388
+  password: 1hhrqrokj3ag
+  cipher: chacha20-ietf-poly1305
+- name: 🇫🇷FR_250 |635.38Mb
+  server: 57.131.48.45
+  type: ss
+  country: 🇫🇷FR
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
+- name: disney_netflix_NL |547.33Mb
+  server: 82.38.31.174
+  type: ss
+  country: 🇬🇧GB
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |491.82Mb
+  server: 82.38.31.18
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |541.40Mb
+  server: 82.38.31.36
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |524.78Mb
+  server: 82.38.31.217
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |417.42Mb
+  server: 82.38.31.48
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |553.58Mb
+  server: 82.38.31.34
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |123.84Mb
+  server: 82.38.31.208
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_AT |562.08Mb
+  server: 82.110.60.9
+  type: ss
+  country: 🇬🇧GB
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+- name: disney_netflix_NL |406.80Mb
+  server: 82.38.31.69
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |355.72Mb
+  server: 82.38.31.10
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |422.57Mb
+  server: 82.38.31.42
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |536.97Mb
+  server: 82.38.31.39
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |284.68Mb
+  server: 82.38.31.214
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: 'disney_netflix_NL #2'
+  server: 82.38.31.180
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |408.07Mb
+  server: 82.38.31.9
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |409.17Mb
+  server: 82.38.31.202
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |477.64Mb
+  server: 82.38.31.149
+  type: ss
+  country: 🇬🇧GB
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |405.43Mb
+  server: 82.38.31.3
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |421.95Mb
+  server: 82.38.31.184
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_GB |761.71Mb
+  server: 146.70.61.18
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: disney_netflix_NL |516.30Mb
+  server: 82.38.31.203
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |464.73Mb
+  server: 82.38.31.219
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_GB | 3.11Mb
+  server: 141.98.101.181
+  type: ss
+  country: 🇬🇧GB
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_GB |613.30Mb
+  server: 146.70.23.32
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: disney_netflix_NL |477.66Mb
+  server: 82.38.31.49
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |446.59Mb
+  server: 82.38.31.218
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |251.08Mb
+  server: 82.38.31.47
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |411.30Mb
+  server: 82.38.31.192
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |407.19Mb
+  server: 82.38.31.205
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |421.22Mb
+  server: 82.38.31.174
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |423.22Mb
+  server: 82.38.31.17
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |397.45Mb
+  server: 82.38.31.182
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |544.03Mb
+  server: 82.38.31.61
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |472.46Mb
+  server: 82.38.31.156
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |530.91Mb
+  server: 82.38.31.46
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_GB |771.34Mb
+  server: 146.70.61.37
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: disney_netflix_NL |451.09Mb
+  server: 82.38.31.175
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: 'disney_netflix_NL #3'
+  server: 82.38.31.198
+  type: ss
+  country: 🇬🇧GB
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: netflix_IT | 9.77Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9070
+  password: bf7v334KKDV3YDhH
+  cipher: aes-256-cfb
+- name: netflix_IT |166.70Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9059
+  password: 9XwYyZsK8SNzQDtY
+  cipher: aes-256-cfb
+- name: netflix_IT |152.32Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9065
+  password: PeHSHm5SqEjBuEXE
+  cipher: aes-256-cfb
+- name: netflix_IT |159.75Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9092
+  password: TyNkGmp9hs6eGpDK
+  cipher: aes-256-cfb
+- name: netflix_IT |214.72Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9002
+  password: b8KkNDjEd5QqFyRm
+  cipher: aes-256-cfb
+- name: netflix_IT |172.57Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9053
+  password: SBM7R883jBmnqe6C
+  cipher: aes-256-cfb
+- name: netflix_IT |258.36Mb
+  server: 91.201.65.122
+  type: ss
+  country: 🇮🇹IT
+  port: 9039
+  password: qYEN5HX4JKeVCdEC
+  cipher: aes-256-cfb
+- name: 🇯🇵JP_298 |80.93Mb
+  server: 84.247.155.196
+  type: ss
+  country: 🇯🇵JP
+  port: 443
+  password: 3eOFeNssde7PYYMv
+  cipher: aes-256-gcm
+- name: 🇯🇵JP_299 |88.28Mb
+  server: 84.247.155.196
+  type: ss
+  country: 🇯🇵JP
+  port: 80
+  password: 3eOFeNssde7PYYMv
+  cipher: aes-256-gcm
+- name: 🇯🇵JP_300 |55.58Mb
+  server: 168.138.43.75
+  type: vmess
+  country: 🇯🇵JP
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: None
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      HOST: None
+- name: 'netflix_KR #4'
+  server: 211.178.105.134
+  type: ss
+  country: 🇰🇷KR
+  port: 6123
+  password: qwerREWQ@@
+  cipher: aes-256-cfb
+- name: 🇰🇷KR_302
+  server: 141.164.45.187
+  type: ss
+  country: 🇰🇷KR
+  port: 9090
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
+- name: 'netflix_KR #5'
+  server: 217.142.138.61
+  type: vmess
+  country: 🇰🇷KR
+  port: 80
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
+  alterId: 0
+  cipher: auto
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 🇰🇷KR_304
+  server: 140.238.2.250
+  type: vmess
+  country: 🇰🇷KR
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  network: tcp
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 'netflix_KR #6'
+  server: 132.145.80.230
+  type: vmess
+  country: 🇰🇷KR
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: kr02.a0a.xyz
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      HOST: kr02.a0a.xyz
+- name: disney_netflix_LT |250.77Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9002
+  password: b8KkNDjEd5QqFyRm
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |236.59Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9086
+  password: 37Z4TFCYhfxcpc9Q
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |154.30Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9008
+  password: y9VURyNzJWNRYEGQ
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |16.06Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9078
+  password: JCJpbRbQZNw9XFZG
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |258.46Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9011
+  password: M3t2ZEQcMGRWBjRa
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |319.21Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9012
+  password: xaupMUvhptwxdDUg
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |213.36Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9068
+  password: mwgRg9hRq3b4Qnwb
+  cipher: aes-256-cfb
+- name: disney_netflix_LT |254.95Mb
+  server: 195.238.126.20
+  type: ss
+  country: 🇱🇹LT
+  port: 9045
+  password: Lp27rqyJq72bZsqX
+  cipher: aes-256-cfb
+- name: netflix_LV |153.49Mb
+  server: 185.135.86.175
+  type: ss
+  country: 🇱🇻LV
+  port: 9033
+  password: UTJA57ypk2XKQpnm
+  cipher: aes-256-cfb
+- name: netflix_LV |155.61Mb
+  server: 185.135.86.175
+  type: ss
+  country: 🇱🇻LV
+  port: 9036
+  password: hbtvgUz5uNYyB3Rf
+  cipher: aes-256-cfb
+- name: netflix_LV |16.41Mb
+  server: 185.135.86.175
+  type: ss
+  country: 🇱🇻LV
+  port: 9082
+  password: 45xgMgm386pjWjTx
+  cipher: aes-256-cfb
+- name: netflix_LV |211.43Mb
+  server: 185.135.86.175
+  type: ss
+  country: 🇱🇻LV
+  port: 9017
+  password: HAVAdE3nXhqA5nHp
+  cipher: aes-256-cfb
+- name: disney_netflix_NL |413.15Mb
+  server: 193.29.139.235
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |480.36Mb
+  server: 193.29.139.179
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: 'disney_netflix_NL #4'
+  server: 193.29.139.147
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |477.98Mb
+  server: 193.29.139.151
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |384.52Mb
+  server: 193.29.139.132
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |530.65Mb
+  server: 193.29.139.202
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |399.75Mb
+  server: 193.29.139.197
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |258.81Mb
+  server: 193.29.139.212
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |455.50Mb
+  server: 193.29.139.235
+  type: ss
+  country: 🇳🇱NL
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |426.45Mb
+  server: 193.29.139.168
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |458.30Mb
+  server: 193.29.139.204
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |169.27Mb
+  server: 193.29.139.198
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |477.09Mb
+  server: 193.29.139.188
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |257.31Mb
+  server: 193.29.139.223
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_NL |424.75Mb
+  server: 193.29.139.225
+  type: ss
+  country: 🇳🇱NL
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+- name: netflix_NO |153.22Mb
+  server: 185.213.23.63
+  type: ss
+  country: 🇳🇴NO
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_PL |299.59Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9042
+  password: S7KwUu7yBy58S3Ga
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |228.52Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9071
+  password: mENfxTFQpRKKh4As
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |335.90Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9095
+  password: N7j3pdTYkKmsy8CR
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |229.68Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9076
+  password: S2zDyyPcmZN2h8EC
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |316.78Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9006
+  password: FAdUvMJUq5vDgKEq
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |324.39Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9052
+  password: jt2ekBNc9HuVtm2a
+  cipher: aes-256-cfb
+- name: disney_netflix_PL |300.64Mb
+  server: 217.30.10.44
+  type: ss
+  country: 🇵🇱PL
+  port: 9099
+  password: 7heRqkPG3hg4UnRm
+  cipher: aes-256-cfb
+- name: disney_netflix_NL | 3.86Mb
+  server: 188.42.145.180
+  type: trojan
+  country: 🇷🇺RU
+  port: 443
+  udp: true
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: www.volumeroot.com
+  network: ws
+- name: disney_netflix_FR | 3.73Mb
+  server: 185.114.72.31
+  type: trojan
+  country: 🇸🇨SC
+  port: 2053
+  udp: true
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  network: ws
+- name: disney_netflix_TH
+  server: 119.46.51.45
+  type: vmess
+  country: 🇹🇭TH
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  network: tcp
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: 🇺🇸US_346 |95.88Mb
+  server: 149.22.87.240
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: netflix_CH |466.74Mb
+  server: 132.243.175.144
+  type: ss
+  country: 🇺🇸US
+  port: 8388
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_RO |10.31Mb
+  server: 154.46.31.106
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  cipher: chacha20-ietf-poly1305
+- name: disney_netflix_US |187.45Mb
+  server: 173.244.56.9
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_CA |145.76Mb
+  server: 149.22.95.183
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_US |187.65Mb
+  server: 107.151.182.197
+  type: ss
+  country: 🇺🇸US
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: 🇺🇸US_352
+  server: 149.22.87.204
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_US |207.95Mb
+  server: 79.110.53.169
+  type: ss
+  country: 🇺🇸US
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: netflix_IT |921.86Mb
+  server: 185.164.175.81
+  type: ss
+  country: 🇺🇸US
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+- name: 🇺🇸US_355 |169.40Mb
+  server: 173.244.56.6
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_RO |10.54Mb
+  server: bogging-eyeteeth-fly.freesocks.work
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  cipher: chacha20-ietf-poly1305
+- name: 🇺🇸US_357 |82.73Mb
+  server: 149.22.87.241
+  type: ss
+  country: 🇺🇸US
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: disney_netflix_US |119.72Mb
+  server: 129.146.77.248
+  type: vmess
+  country: 🇺🇸US
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇺🇸US_359
+  server: www.shopify.com
+  type: vmess
+  country: 🇺🇸US
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: guanwang.awsno.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      HOST: guanwang.awsno.com
+- name: disney_netflix_US |91.29Mb
+  server: 107.149.159.190
+  type: trojan
+  country: 🇺🇸US
+  port: 10443
+  udp: true
+  password: 8bdfa4e8dac99c57decdd8bf55d2da4c
+  sni: cf.shiranyu.xyz
+  skip-cert-verify: true
+- name: netflix_ZA |98.09Mb
+  server: 102.133.165.160
+  type: ss
+  country: 🇿🇦ZA
+  port: 16233
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  cipher: chacha20-ietf-poly1305
+- name: 🇰🇷 韩国 | VMESS | 001
+  type: vmess
+  server: ISroIsuAGFSTPkPJ.v.3dns.vip
+  port: 443
+  uuid: a263bd66-828f-45ee-9197-ffc801ab019c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ISroIsuAGFSTPkPJ.v.3dns.vip
+  tls: true
+  servername: ISroIsuAGFSTPkPJ.v.3dns.vip
+- name: 🇺🇳 未知地区 | VLESS | 002
+  server: 104.207.132.12
+  port: 30004
+  type: vless
+  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  tls: false
+  network: tcp
+- name: 🇺🇳 未知地区 | SS | 001
+  type: ss
+  server: 86.107.50.183
+  port: 50120
+  cipher: aes-256-gcm
+  password: 78235e7dc55e9ad1
+  udp: true
+- name: 🇺🇳 未知地区 | VLESS | 003
+  type: vless
+  server: 212.104.141.173
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: freeus.aiage.work
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0
+    short-id: ccaf7283610c6fa8
+- name: 🇺🇳 未知地区 | VLESS | 004
+  type: vless
+  server: 177.1.187.139
+  port: 1984
+  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ruori.ai
+  client-fingerprint: random
+  reality-opts:
+    public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
+    short-id: 0f00666a
+- name: 🇺🇳 未知地区 | VLESS | 005
+  type: vless
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇺🇳 未知地区 | VLESS | 006
+  server: ragnarok-vpn.ru
+  port: 8443
+  type: vless
+  uuid: b7df9363-087b-48f7-a4ca-6e988ebf7f35
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: aV7fW5RmH-i6HzOiqnFlMwV_ZgfuutMpeWWfEaJBsTM
+    short-id: 5bfa1416
+  servername: amd.com
+  client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | VLESS | 001
+  type: vless
+  server: 217.60.72.238
+  port: 443
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amd.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+- name: 🇬🇧 英国 | VLESS | 001
+  type: vless
+  server: 146.70.104.235
+  port: 443
+  uuid: 698922a2-1ca5-4bfb-92fb-0aa7e779ce21
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FcvI0ncjwII1n6tnWQ6nLWuwRpk8hdYoYzYCi1sbhjY
+    short-id: 1c3ce7aa488b3e50
+- name: 🇳🇱 荷兰 | VLESS | 001
+  type: vless
+  server: 104.245.103.30
+  port: 443
+  uuid: 50410ae1-fd32-4553-8dcf-dc83e0aba20e
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: portal.citygrainla.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+- name: 🇩🇪 德国 | VLESS | 001
+  type: vless
+  server: 50.7.87.122
+  port: 443
+  uuid: 9c104116-b231-4626-94cb-6d8fc4d2b000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: edge-fr.extazy.net
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+    short-id: ba4b2afa9e7193ea
+- name: 🇺🇳 未知地区 | VLESS | 010
+  server: meowgenicslab.net
+  port: 443
+  type: vless
+  uuid: f580778d-8e05-4d88-8724-802eccf4ceff
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: F7enjoJVna8sj4M9KPqNkN1ATXeflVNx9SHnn4lpAkY
+    short-id: 5f37b7c5e2cc31a3
+  servername: meowgenicslab.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | VLESS | 001
+  type: vless
+  server: 185.164.57.152
+  port: 443
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: amd.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+- name: 🇺🇸 美国 | VLESS | 002
+  server: 23.94.251.190
+  port: 443
+  type: vless
+  uuid: 4a54f9e1-1cb0-4873-8f35-38bcf1650966
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: H-jO-7NT8LAkA9o8SOpFC-GeEqk-Jhpesmx5jJ_3n14
+    short-id: 312d6625929ec3df
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇳 未知地区 | VLESS | 012
+  type: vless
+  server: 104.18.0.181
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇺🇳 未知地区 | VLESS | 013
+  type: vless
+  server: 45.88.12.162
+  port: 2083
+  uuid: ccf353ca-fa34-43fc-8ed9-520fb9d74bf6
+  udp: true
+  tls: true
+  servername: connect.dodopanel.biz
+  client-fingerprint: edge
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- name: 🇺🇳 未知地区 | VLESS | 014
+  type: vless
+  server: 47.131.225.255
+  port: 443
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apiawssspot.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: x8aCD8cJtkDvAjcRrcMG05MNiwh11LaKg70KIRvfN0g
+    short-id: 819a87bf1651bf44
+- name: 🇦🇺 澳大利亚 | HYSTERIA2 | 001
+  type: hysteria2
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇺🇳 未知地区 | VMESS | 003
+  type: vmess
+  server: JBQ4dPDPuJFzj4KV.v.3dns.vip
+  port: 443
+  uuid: 1d84e480-8fd2-4fae-96de-e46fe36ffe86
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: JBQ4dPDPuJFzj4KV.v.3dns.vip
+  tls: true
+  servername: JBQ4dPDPuJFzj4KV.v.3dns.vip
+- name: 🇩🇪 德国 | HYSTERIA2 | 001
+  type: hysteria2
+  server: 3.75.178.53
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | VLESS | 004
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇺🇳 未知地区 | VLESS | 016
+  type: vless
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-4
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇺🇳 未知地区 | VLESS | 017
+  type: vless
+  server: 199.232.78.170
+  port: 443
+  uuid: XpnTeam-3
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 | VLESS | 001
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-3
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇺🇳 未知地区 | VLESS | 019
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-4
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇺🇳 未知地区 | VLESS | 020
+  type: vless
+  server: 109.172.54.135
+  port: 8444
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  udp: true
+  tls: true
+  servername: github.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇺🇸 美国 | VLESS | 004
+  type: vless
+  server: s880.gogocs.xyz
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+- name: 🇸🇬 新加坡 | VLESS | 001
+  type: vless
+  server: 43.160.226.41
+  port: 443
+  uuid: c01391fa-7bd3-4b9d-b2db-4829b75e30da
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Uzz3xzDxrpC7NHMkJ3cXMPz88NrgvXbip5dHS-57hko
+    short-id: ae59ee08e3eb8bff
+- name: 🇺🇳 未知地区 | VLESS | 022
+  type: vless
+  server: de-gdd-1.unturned-rust-dead.lol
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  udp: true
+  tls: true
+  servername: de-gdd-1.unturned-rust-dead.lol
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+    short-id: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gdd-grpc
+- name: 🇺🇳 未知地区 | VLESS | 024
+  type: vless
+  server: 31.58.95.11
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  udp: true
+  tls: true
+  servername: de-gdd-1.unturned-rust-dead.lol
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+    short-id: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gdd-grpc
+- name: 🇺🇳 未知地区 | VLESS | 025
+  type: vless
+  server: 152.233.71.81
+  port: 443
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: brointelengence.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+- name: 🇺🇳 未知地区 | TROJAN | 002
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
+  udp: true
+  sni: t.me/FuckTheWall
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | VLESS | 005
+  type: vless
+  server: us3.h1cloud.net
+  port: 25716
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+  udp: true
+  tls: true
+  servername: www.icloud.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: WoTuWxASXYyZSQS6jZiAHsAj6EChWOicCxFfm8F_GXg
+    short-id: 5d3afa5648fadb1e
+- name: 🇳🇱 荷兰 | VLESS | 003
+  type: vless
+  server: nl1.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl1.aiage.work
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk
+    short-id: adcbde41b1cf27ba
+- name: 🇺🇳 未知地区 | VLESS | 030
+  type: vless
+  server: 172.104.49.9
+  port: 443
+  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
+    short-id: 829330332af8c863
+- name: 🇺🇳 未知地区 | TROJAN | 003
+  type: trojan
+  server: kr.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  udp: true
+  sni: kr.tronsg.com
+  skip-cert-verify: true
+- name: 🇺🇳 未知地区 | VLESS | 031
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  servername: jp3.yohototo.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇳🇱 荷兰 | VLESS | 004
+  type: vless
+  server: mog.keyblack.site
+  port: 8444
+  uuid: ef8c7169-87fc-49ad-be91-1f3984ab446d
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig
+    short-id: 6ba85179e30d4fc2
+- name: 🇳🇱 荷兰 | VLESS | 005
+  server: 185.242.245.152
+  port: 443
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国 | VMESS | 002
+  type: vmess
+  server: 43.108.103.167
+  port: 123
+  uuid: 35aa0fda-175a-4aec-c468-0231dee1a121
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: http
+- name: 🇺🇸 美国 | VLESS | 006
+  type: vless
+  server: freeus.aiage.work
+  port: 443
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: freeus.aiage.work
+  client-fingerprint: qq
+  reality-opts:
+    public-key: pxLk0ocXqKYYqUFyALvH2BVXaswI-6NE00posKNayy0
+    short-id: ccaf7283610c6fa8
+- name: 🇺🇳 未知地区 | VMESS | 005
+  type: vmess
+  server: us5-1.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /androirfdsreoightrjh?ed=2560
+    headers:
+      Host: server4.9966338.xyz
+  tls: true
+  servername: server4.9966338.xyz
+- name: 🇸🇬 新加坡 | VLESS | 002
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  servername: zoom.us
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇫🇮 芬兰 | VLESS | 001
+  type: vless
+  server: 36a466g.fi1.h1clayd.click
+  port: 443
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  udp: true
+  tls: true
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
+- name: 免费节点 MENGvpn C01
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn C02
+  type: vless
+  server: cf.130519.xyz
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn C03
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn C05
+  type: vless
+  server: cf.130519.xyz
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn C06
+  type: vless
+  server: cf.130519.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn C07
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  udp: true
+  tls: true
+  servername: jjkkll.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+- name: 免费节点 MENGvpn D01
+  type: vless
+  server: cf.3666888.xyz
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn D02
+  type: vless
+  server: cf.3666888.xyz
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn D03
+  type: vless
+  server: cf.3666888.xyz
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn D04
+  type: vless
+  server: cf.3666888.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 免费节点 MENGvpn D05
+  type: vless
+  server: cf.3666888.xyz
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn D06
+  type: vless
+  server: cf.3666888.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn D07
+  type: vless
+  server: cf.3666888.xyz
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  udp: true
+  tls: true
+  servername: jjkkll.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+- name: 免费节点 MENGvpn E01
+  type: trojan
+  server: 86.38.214.205
+  port: 443
+  password: humanity
+  udp: true
+  tls: true
+  sni: www.ignitelimit.com
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 免费节点 MENGvpn E02
+  type: vless
+  server: 45.202.242.128
+  port: 443
+  uuid: 7cf4abd6-3065-921c-ba86-76156b257f52
+  udp: true
+  tls: true
+  servername: oayrfrhw.eduhk.dpdns.org
+  network: ws
+  ws-opts:
+    path: /pg/asd159753-dfbe5fd5f8a7139a
+    headers:
+      Host: oayrfrhw.eduhk.dpdns.org
+- name: 免费节点 MENGvpn E03
+  type: vless
+  server: 45.202.245.177
+  port: 443
+  uuid: 7cf4abd6-3065-921c-ba86-76156b257f52
+  udp: true
+  tls: true
+  servername: xfworbwu.edutw.cc.cd
+  network: ws
+  ws-opts:
+    path: /pg/asd159753-dfbe5fd5f8a7139a
+    headers:
+      Host: xfworbwu.edutw.cc.cd
+- name: 免费节点 MENGvpn F01
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn F02
+  type: vless
+  server: cf.877774.xyz
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn F03
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn F05
+  type: vless
+  server: cf.877774.xyz
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn F06
+  type: vless
+  server: cf.877774.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn F08
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  udp: true
+  tls: true
+  servername: 20664.pages.dev
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+- name: 免费节点 MENGvpn G01
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn G02
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn G03
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn G04
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 免费节点 MENGvpn G05
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn G06
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn G07
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  udp: true
+  tls: true
+  servername: jjkkll.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+- name: 免费节点 MENGvpn G08
+  type: vless
+  server: cfip.xxxxxxxx.tk
+  port: 443
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  udp: true
+  tls: true
+  servername: 20664.pages.dev
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+- name: 免费节点 MENGvpn H01
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn H02
+  type: vless
+  server: www.5199dy.com
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn H03
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn H04
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 免费节点 MENGvpn H05
+  type: vless
+  server: www.5199dy.com
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn H06
+  type: vless
+  server: www.5199dy.com
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn H07
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  udp: true
+  tls: true
+  servername: jjkkll.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+- name: 免费节点 MENGvpn H08
+  type: vless
+  server: www.5199dy.com
+  port: 443
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  udp: true
+  tls: true
+  servername: 20664.pages.dev
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 20664.pages.dev
+- name: 免费节点 MENGvpn I01
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+- name: 免费节点 MENGvpn I02
+  type: vless
+  server: cf.090227.xyz
+  port: 8443
+  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
+  udp: true
+  tls: true
+  servername: liusuyan.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: liusuyan.cc.cd
+- name: 免费节点 MENGvpn I03
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
+  udp: true
+  tls: true
+  servername: edgetunnel2211.esvip.cloudns.be
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel2211.esvip.cloudns.be
+- name: 免费节点 MENGvpn I05
+  type: vless
+  server: cf.090227.xyz
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn I06
+  type: vless
+  server: cf.090227.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 免费节点 MENGvpn I07
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  udp: true
+  tls: true
+  servername: jjkkll.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+- name: 美国 A组 流媒体 01
+  type: hysteria2
+  server: lxyus1.777078.xyz
+  port: 443
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: false
-- name: 🇭🇰_HK_中国香港
+  fingerprint: 4b10f090c73e5d841d56f81373b56168fd446a96adf85427738c6ef6c414b01b
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 美国 A组 流媒体 02
+  type: hysteria2
+  server: lxyus2.777078.xyz
+  port: 443
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: false
+  fingerprint: 58f2df9e444565f71bcdf624069d51ded4d699b648d59f1bf197e9aac859b9bc
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 美国 A组 流媒体 03
+  type: hysteria2
+  server: lxyus3.777078.xyz
+  port: 443
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: false
+  fingerprint: ee961590f9558c24cef02e44d1f54e9cd21fc929ae627f2e18fe5b3d67ca5561
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 美国 A组 流媒体 04
+  type: hysteria2
+  server: lxyus4.777078.xyz
+  port: 443
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  sni: iosapps.itunes.apple.com
+  skip-cert-verify: false
+  fingerprint: 4df742862fb9f529f841048ff99a914ae2ce83cbfa13ccf15618f72bc32f2650
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 美国 A组 流媒体 05
+  type: hysteria2
+  server: 203.10.97.121
+  port: 60000
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  ports: 60000-65530
+  sni: www.apple.com
+  skip-cert-verify: false
+  fingerprint: 7883472b634b93a7ec09a020fdbd4b1ac7b0accc7569028dfaeb54c6384677c1
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 英国 B组 流媒体 01
+  type: hysteria2
+  server: 62.164.143.251
+  port: 60000
+  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
+  ports: 60000-65530
+  sni: bilibili-gb.biliimg.com
+  skip-cert-verify: false
+  fingerprint: f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1
+  up: 50 Mbps
+  down: 50 Mbps
+  udp: true
+- name: 🇭🇰HK_1|3.2MB/s
+  type: vless
+  server: hk03.ccdn3.work
+  port: 798
+  uuid: fc12fb20-4380-11ec-8c97-d707e267af0b
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: i1.hdslb.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL_1|2.5MB/s
+  type: vless
+  server: nl5.hap-plus.ru
+  port: 8443
+  uuid: 05d7a479-a099-40cf-aecf-41aa934767b0
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: nl5.hap-plus.ru
+  ws-opts:
+    path: /api/v1/events
+    headers:
+      Host: nl5.hap-plus.ru
+- name: 🇵🇱PL_1|1.1MB/s
+  type: vless
+  server: 195.137.226.11
+  port: 443
+  uuid: 54d67aa6-fe54-4b8e-b3b6-62b7e043eb35
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: mobile.zandix.ir
+- name: 🇺🇸US_2|1.2MB/s
+  type: vless
+  server: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+  port: 443
+  uuid: 996d5cc2-defd-b038-4728-6a450d1c373a
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+  ws-opts:
+    path: /ws/996d5cc2-defd-b038-4728-6a450d1c373a
+    headers:
+      Host: 04b51566-9333-492b-b680-8f80752411f9.fly.dev
+- name: 🇹🇷TR_1|1.2MB/s
+  type: vless
+  server: 92.223.84.84
+  port: 443
+  uuid: 03b0a000-a9f1-4ced-8a13-00e807d8b998
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: gcore.com
+- name: 🇩🇪DE_5|2.0MB/s
+  type: vless
+  server: b.a.eternalping4.ir
+  port: 503
+  uuid: 31729c96-4631-4133-a73c-8a472c222dec
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: redirector.gvt1.com
+  flow: xtls-rprx-vision
+- name: 🇳🇱NL_6|2.0MB/s
+  type: vless
+  server: 150.129.10.133
+  port: 443
+  uuid: f310a861-cca2-4f6f-8db2-30102fccd0ae
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: media-origin.lovkisport.blog
+- name: 🇳🇱NL_7|1.8MB/s
+  type: vless
+  server: media-origin.lovkisport.blog
+  port: 443
+  uuid: f310a861-cca2-4f6f-8db2-30102fccd0ae
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: media-origin.lovkisport.blog
+- name: 🇫🇷FR_2|3.2MB/s
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇷🇺RU_1|1.4MB/s
+  type: vless
+  server: 78.159.246.179
+  port: 2053
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: randomquaint.net
+- name: 🇫🇷FR_4|2.7MB/s
+  type: vless
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-6
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰
   type: vmess
   server: v4.hdacd.com
   port: 30804
@@ -65,20 +5029,14 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵_JP_日本
-  type: trojan
-  server: prime-corgi.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: prime-corgi.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬_SG_新加坡
-  type: trojan
-  server: inviting-ferret.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: inviting-ferret.rooster465.autos
+- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇨🇳_CN_中国
@@ -91,28 +5049,49 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇰🇷_KR_韩国
+- name: 🇯🇵_JP_日本
   type: trojan
-  server: ikr100b.zxom.eu.org
-  port: 20007
-  password: 178c178666bb4ae5
-  sni: ikr100b.zxom.eu.org
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇪_IE_爱尔兰
-  type: trojan
-  server: sacred-anemone.rooster465.autos
+  server: prime-corgi.rooster465.autos
   port: 443
   password: UX82473651
-  sni: sacred-anemone.rooster465.autos
+  sni: prime-corgi.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬_SG_新加坡_1
-  type: trojan
-  server: pet-antelope.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: pet-antelope.rooster465.autos
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  type: vless
+  server: iiproxy888.iiproxy.com
+  port: 8443
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
@@ -123,6 +5102,50 @@ proxies:
   alterId: 2
   cipher: auto
   tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇷_KR_韩国
+  type: trojan
+  server: ikr100b.zxom.eu.org
+  port: 20007
+  password: 178c178666bb4ae5
+  sni: ikr100b.zxom.eu.org
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国_1
+  type: vmess
+  server: 39.108.113.127
+  port: 10086
+  uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇷🇺_RU_俄罗斯
+  type: vless
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  network: ws
+  servername: fbsv6.guardora.pro
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国
@@ -141,34 +5164,42 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+- name: 🇺🇸_US_美国->🇵🇱_PL_波兰
+  type: vless
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  network: ws
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   type: vmess
-  server: sbgfgov.vip6.wogacnmnagfwgov.com
-  port: 11206
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇸🇪_SE_瑞典
+- name: 🇮🇪_IE_爱尔兰
+  type: trojan
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: vless
-  server: stsr.hospitaldt.ir
-  port: 8443
-  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
-  network: ws
-  tls: true
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国_1
-  type: trojan
-  server: ultimate-jaguar.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: ultimate-jaguar.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
   type: vless
   server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
   port: 443
@@ -183,67 +5214,19 @@ proxies:
       Host: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇹🇼_TW_中国台湾
-  type: vless
-  server: argo6.5671234.xyz
+  server: ccc.010304.xyz
   port: 443
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  uuid: d342d11e-d224-4463-b982-532309285094
   network: ws
-  servername: argo6.5671234.xyz
-  tls: true
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: ss
-  server: 52.47.133.105
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱_NL_荷兰
-  type: vless
-  server: s11.shahankhan.ir
-  port: 8080
-  uuid: 6fddf57a-313c-4d4a-8ae1-939b207a1588
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  network: ws
-  servername: fbsv6.guardora.pro
+  servername: ccc.010304.xyz
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: fbsv6.guardora.pro
+      Host: ccc.010304.xyz
   skip-cert-verify: true
   udp: true
 - name: 美国+V2CROSS.COM
@@ -327,13 +5310,6 @@ proxies:
   client-fingerprint: safari
   servername: ivory875.filebeam.website
   flow: xtls-rprx-vision
-- name: 新加坡+甲骨文机房
-  type: hysteria2
-  server: 138.2.73.238
-  port: 50160
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
 - name: '俄罗斯+V2CROSS.COM #2'
   type: vless
   server: at-04-10.zetnik.site
@@ -548,13 +5524,6 @@ proxies:
   client-fingerprint: chrome
   servername: zsde.eu-cdn294.com
   flow: xtls-rprx-vision
-- name: 🇯🇵JP_44|370KB/s|C002-260622 01vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&encrypt
-  type: hysteria2
-  server: vp3.yysyy.online
-  port: 443
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
   server: 3.38.168.170
@@ -580,109 +5549,81 @@ proxies:
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.151.155.44
+  server: 54.254.251.49
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: archos.com.ph
+  servername: jobnow-api.scoutoutapi.com
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.151.155.44
+  server: 54.254.251.49
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.151.155.44
+  server: 54.254.251.49
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 中国+阿里云
-  type: hysteria2
-  server: 8.211.175.236
-  port: 8443
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: '土耳其+V2CROSS.COM #2'
-  type: vless
-  server: 78.135.77.55
-  port: 443
-  uuid: 6c6be9c5-e364-4053-a8ef-c9c3ec5edd0b
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.akakce.com
-- name: 日本+东京Amazon数据中心
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 34379
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: us1p1.xn--ghq880n3na965a.com
-  flow: xtls-rprx-vision
 - name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.27.21.22
+  type: vless
+  server: saas.sin.fan
   port: 443
-  password: humanity
-  sni: www.volumeroot.com
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /assignment
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
     headers:
-      Host: www.volumeroot.com
-- name: '美国+V2CROSS.COM #3'
-  type: hysteria2
-  server: 152.69.231.175
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
+      Host: snip.edgeoneai.cc.cd
+- name: 拉脱维亚+V2CROSS.COM
+  type: vless
+  server: 85.9.209.229
+  port: 8880
+  uuid: a441c530-8c8b-4ef9-8d98-0571ad49c433
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.forvo.com
 - name: '美国+CloudFlare节点 #2'
   type: trojan
-  server: 108.162.194.134
+  server: 104.16.72.41
   port: 443
   password: humanity
-  sni: www.pleadcourt.org
+  sni: www.calmlunch.com
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.pleadcourt.org
-- name: '巴西+V2CROSS.COM #2'
+      Host: www.calmlunch.com
+- name: 白俄罗斯+V2CROSS.COM
   type: vless
-  server: 152.233.71.81
+  server: 46.243.183.2
   port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   network: tcp
   tls: true
-  client-fingerprint: random
-  servername: brointelengence.com
+  client-fingerprint: chrome
+  servername: stream.indigo.ru
   flow: xtls-rprx-vision
-- name: 日本 东京Oracle云计算数据中心
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 美国+Amazon+EC2服务器
-  type: hysteria2
-  server: vpn-de-002.fastervpn.world
+- name: 比利时+V2CROSS.COM
+  type: vless
+  server: 150.251.141.90
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: '美国+CloudFlare节点 #3'
+  uuid: 8d790ba0-5407-441b-b545-8ab369c591ce
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: n1.coconutsvpn.com
+  flow: xtls-rprx-vision
+- name: Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#美国+CloudFlare节点
   type: vless
   server: 162.159.130.234
   port: 443
@@ -695,23 +5636,57 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
+- name: 以色列+V2CROSS.COM
+  type: vless
+  server: ch1.hap-plus.ru
+  port: 443
+  uuid: 05d7a479-a099-40cf-aecf-41aa934767b0
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: ch1.hap-plus.ru
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #3'
+  type: trojan
+  server: 108.162.194.134
+  port: 443
+  password: humanity
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: 巴西圣保罗+CloudFlare节点
+  type: trojan
+  server: 188.114.97.3
+  port: 443
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  sni: mfyousheng.nl.eu.org
+  network: ws
+  ws-opts:
+    path: /tjwsLhx0SFASG4l9FERJ1g
+    headers:
+      Host: mfyousheng.nl.eu.org
+- name: '俄罗斯+V2CROSS.COM #3'
+  type: vless
+  server: 95.181.170.27
+  port: 8443
+  uuid: c96f941e-dd8a-00aa-89d5-740b79202ed0
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: x5club.ru
 - name: 英国+V2CROSS.COM
   type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.ceneo.pl
-- name: vless
-  type: vless
-  server: 31.77.126.2
+  server: app-ms-72.next-gen-shopping.com
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 090da6a8-69f7-4b49-8af9-a8f8bfb07f17
   network: tcp
   tls: true
   client-fingerprint: chrome
+  servername: assets-ms-72.next-gen-shopping.com
+  flow: xtls-rprx-vision
 - name: US美国v2clash.blog 2026-9.9
   type: vless
   server: 95.163.232.171
@@ -1187,27 +6162,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: www.cloudflare.com
-- name: 'US美国(v2clash.blog 2026-10.5更新 #6'
-  type: trojan
-  server: www.wto.org
-  port: 8443
-  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
-  sni: jiangjc.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jiangjc.pages.dev
-- name: US美国(v2clash.blog 2026-10.6更新
-  type: vless
-  server: s880.gogocs.xyz
-  port: 443
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u07fcba7ds79.kukuss.top
-  flow: xtls-rprx-vision
 - name: CA加拿大(v2clash.blog 2026-10.6更新
   type: vless
   server: 188.164.248.48
@@ -1264,19 +6218,6 @@ proxies:
   client-fingerprint: firefox
   servername: d3-de1.cloud-cdn.xyz
   flow: xtls-rprx-vision
-- name: CA加拿大(v2clash.blog 2026-10.7更新
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -1289,7 +6230,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+- name: CA加拿大(v2clash.blog 2026-10.7更新
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -1690,19 +6631,6 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: rapid-waterfall-7270.255-22b.workers.dev
-- name: DE德国(v2clash.blog 2026-10.14更新
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: cf-1rm.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
 - name: 阿拉伯(v2clash.blog 2026-10.14更新
   type: vless
   server: 31.58.95.10
@@ -1721,48 +6649,481 @@ proxies:
   tls: true
   client-fingerprint: random
   servername: www.icloud.com
-- name: US美国(v2clash.blog 2026-10.14更新)
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  servername: jmp1.907737.xyz
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 自动选择（Ins,YouTube,ChatGPT等）
-  - 日本东京(YouTube,ChatGPT等
   - 🇭🇰 Yoo 2T2号
   - 黑洞加速器fujrdt.d6f54hd1j.cc
-  - 🏳️‍🌈 AnyTLS-HKakile ↓速度一般 2026.11.7-22:11:42到期无限流量
-  - 🇭🇰_HK_中国香港
-  - 🇯🇵_JP_日本
-  - 🇸🇬_SG_新加坡
-  - 🇨🇳_CN_中国
-  - 🇰🇷_KR_韩国
-  - 🇮🇪_IE_爱尔兰
-  - 🇸🇬_SG_新加坡_1
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇺🇸_US_美国->🇹🇼_TW_中国台湾
-  - 🇫🇷_FR_法国
+  - disney_netflix_BG
+  - disney_netflix_US |106.62Mb
+  - Relay_-🇯🇵JP_03
+  - Relay_-🇬🇧GB_04
+  - disney_netflix_SE |520.70Mb
+  - disney_netflix_SE |45.63Mb
+  - disney_netflix_DE |896.78Mb
+  - Relay_-🇹🇼TW_09
+  - disney_netflix_US |75.70Mb
+  - Relay_-🇹🇼TW_11
+  - Relay_-🇹🇼TW_12
+  - disney_netflix_US |114.03Mb
+  - disney_netflix_TW
+  - netflix_KR
+  - disney_netflix_US
+  - disney_netflix_GB
+  - disney_netflix_IN |20.48Mb
+  - Relay_-🇸🇬SG_19 |13.50Mb
+  - 'disney_netflix_GB #2'
+  - 'disney_netflix_GB #3'
+  - Relay_-🇱🇰LK_22 | 7.80Mb
+  - 'disney_netflix_GB #4'
+  - disney_netflix_SG | 3.20Mb
+  - netflix_AE |35.22Mb
+  - 'disney_netflix_GB #5'
+  - disney_netflix_FR |748.06Mb
+  - Relay_-🇱🇰LK_28
+  - disney_netflix_JP |10.95Mb
+  - disney_netflix_HK |29.14Mb
+  - disney_netflix_US |130.52Mb
+  - disney_netflix_SG |120.50Mb
+  - disney_netflix_US |237.28Mb
+  - disney_netflix_US |169.44Mb
+  - 'netflix_KR #2'
+  - disney_netflix_CL
+  - disney_netflix_FI |337.04Mb
+  - 'netflix_KR #3'
+  - disney_netflix_FI |271.67Mb
+  - disney_netflix_PL |95.66Mb
+  - disney_netflix_PL |107.38Mb
+  - 'disney_netflix_GB #6'
+  - 'disney_netflix_TW #2'
+  - disney_netflix_FI |136.02Mb
+  - disney_netflix_FR |698.18Mb
+  - netflix_AE |461.01Mb
+  - disney_netflix_SE |122.73Mb
+  - disney_netflix_DE |116.21Mb
+  - disney_netflix_FR |47.31Mb
+  - disney_netflix_GB |34.99Mb
+  - Relay_-🇩🇪DE_52
+  - disney_netflix_SE | 9.32Mb
+  - 'disney_netflix_GB #7'
+  - 'disney_netflix_GB #8'
+  - 'disney_netflix_GB #9'
+  - disney_netflix_DE |87.80Mb
+  - 'disney_netflix_GB #10'
+  - disney_RU |54.97Mb
+  - disney_US |56.85Mb
+  - disney_netflix_DE |285.69Mb
+  - 'disney_netflix_GB #11'
+  - disney_netflix_US |211.59Mb
+  - disney_netflix_DE |123.00Mb
+  - disney_netflix_FI |369.68Mb
+  - 'disney_netflix_GB #12'
+  - disney_US |263.96Mb
+  - disney_netflix_FR | 7.30Mb
+  - disney_netflix_NL
+  - disney_netflix_TR | 2.04Mb
+  - disney_netflix_FR |46.39Mb
+  - 'disney_netflix_GB #13'
+  - 'disney_netflix_GB #14'
+  - 'disney_netflix_GB #15'
+  - 'disney_netflix_GB #16'
+  - 'disney_netflix_GB #17'
+  - Relay_-🇬🇧GB_79
+  - Relay_-🇰🇷KR_80
+  - disney_netflix_FI
+  - disney_netflix_DE
+  - disney_netflix_ES
+  - disney_netflix_JP |42.00Mb
+  - 'disney_netflix_GB #18'
+  - 'disney_netflix_GB #19'
+  - disney_netflix_HK |107.83Mb
+  - 'disney_netflix_GB #20'
+  - 'disney_netflix_GB #21'
+  - 'disney_netflix_GB #22'
+  - disney_netflix_SE
+  - disney_netflix_FR |32.26Mb
+  - Relay_-🇩🇪DE_95
+  - 'disney_netflix_GB #23'
+  - 'disney_netflix_GB #24'
+  - 'disney_netflix_GB #25'
+  - 'disney_netflix_GB #26'
+  - 'disney_netflix_GB #27'
+  - disney_netflix_MX
+  - disney_netflix_SG |72.91Mb
+  - 'disney_netflix_GB #28'
+  - disney_netflix_HK
+  - 'disney_netflix_DE #2'
+  - disney_netflix_JP
+  - 'disney_netflix_JP #2'
+  - _110 |72.95Mb
+  - 'disney_netflix_GB #29'
+  - disney_netflix_IL
+  - disney_netflix_US |64.03Mb
+  - disney_netflix_US |209.42Mb
+  - 'disney_netflix_GB #30'
+  - 'disney_netflix_US #2'
+  - 'disney_netflix_GB #31'
+  - netflix_CH |737.05Mb
+  - netflix_PE | 3.35Mb
+  - 'disney_netflix_GB #32'
+  - 'disney_netflix_GB #33'
+  - Relay_-🇲🇾MY_123
+  - disney_netflix_DE |105.51Mb
+  - 'disney_netflix_GB #34'
+  - 'disney_netflix_GB #35'
+  - 'disney_netflix_GB #36'
+  - disney_netflix_RS
+  - disney_netflix_FR |274.62Mb
+  - 'disney_netflix_GB #37'
+  - 'disney_netflix_GB #38'
+  - 'disney_netflix_GB #39'
+  - disney_netflix_US |400.61Mb
+  - 'disney_netflix_GB #40'
+  - disney_netflix_US | 1.74Mb
+  - 'disney_netflix_GB #41'
+  - 'disney_netflix_DE #3'
+  - 'disney_netflix_GB #42'
+  - 'disney_netflix_GB #43'
+  - 'disney_netflix_GB #44'
+  - 'disney_netflix_GB #45'
+  - 'disney_netflix_GB #46'
+  - disney_netflix_TR |65.15Mb
+  - 'disney_netflix_DE #4'
+  - 'disney_netflix_GB #47'
+  - 'disney_netflix_SE #2'
+  - disney_netflix_US |218.34Mb
+  - disney_netflix_FR
+  - 'disney_netflix_ES #2'
+  - 'disney_netflix_GB #48'
+  - disney_netflix_NL |200.51Mb
+  - 'disney_netflix_GB #49'
+  - 'disney_netflix_GB #50'
+  - 'disney_netflix_GB #51'
+  - disney_netflix_IN
+  - 'disney_netflix_GB #52'
+  - 'disney_netflix_GB #53'
+  - 'disney_netflix_GB #54'
+  - 'disney_netflix_US #3'
+  - disney_netflix_ES |55.65Mb
+  - disney_netflix_PT |138.49Mb
+  - disney_netflix_CA
+  - disney_RU
+  - disney_netflix_LT
+  - 'disney_netflix_GB #55'
+  - _167 | 2.98Mb
+  - Relay_-🇩🇪DE_168 |91.68Mb
+  - disney_netflix_IN |81.11Mb
+  - disney_netflix_US |54.22Mb
+  - disney_netflix_US |247.79Mb
+  - disney_netflix_NL |263.97Mb
+  - Relay_-🇭🇰HK_174 |58.10Mb
+  - disney_netflix_US | 6.69Mb
+  - _176 |24.39Mb
+  - disney_netflix_HK |31.98Mb
+  - disney_netflix_HK |59.88Mb
+  - _181 |18.55Mb
+  - disney_netflix_US | 4.99Mb
+  - Relay_-🇭🇰HK_183 |29.16Mb
+  - disney_netflix_HK |61.53Mb
+  - disney_netflix_FI |450.77Mb
+  - disney_netflix_FI |437.96Mb
+  - Relay_-🇯🇵JP_187 |14.80Mb
+  - disney_netflix_SG |29.44Mb
+  - 'disney_netflix_GB #56'
+  - disney_netflix_FR | 4.98Mb
+  - disney_netflix_TR |168.55Mb
+  - Relay_-🇸🇬SG_192 | 5.01Mb
+  - Relay_-🇸🇬SG_193 | 7.01Mb
+  - Relay_-🇸🇬SG_194 | 7.39Mb
+  - disney_netflix_FR | 3.87Mb
+  - Relay_-🇺🇸US_196 |72.51Mb
+  - disney_KR
+  - 'disney_KR #2'
+  - disney_netflix_FR |823.27Mb
+  - 'disney_netflix_US #4'
+  - Relay_-🇰🇷KR_201
+  - 'disney_netflix_GB #57'
+  - disney_netflix_PL |91.76Mb
+  - disney_netflix_FR |94.58Mb
+  - disney_netflix_FR | 3.74Mb
+  - disney_netflix_JP |18.89Mb
+  - _207 |59.99Mb
+  - disney_netflix_FR | 3.88Mb
+  - Relay_-🇯🇵JP_209 |53.84Mb
+  - Relay_-🇺🇸US_210 |63.38Mb
+  - Relay_-🇸🇬SG_211 | 5.34Mb
+  - Relay_-🇸🇬SG_212 |22.49Mb
+  - 'disney_KR #3'
+  - disney_netflix_IN |74.97Mb
+  - 'disney_netflix_FR | 3.88Mb #2'
+  - disney_netflix_FR | 3.79Mb
+  - 'disney_netflix_GB #58'
+  - 'disney_KR #4'
+  - disney_netflix_FR | 3.85Mb
+  - Relay_-🇰🇷KR_220
+  - disney_netflix_NL | 3.84Mb
+  - disney_netflix_NL | 3.83Mb
+  - disney_netflix_US |159.64Mb
+  - disney_netflix_FR |673.40Mb
+  - disney_netflix_BG |227.80Mb
+  - disney_netflix_BG |355.68Mb
+  - disney_netflix_BG |258.04Mb
+  - disney_netflix_BG |254.98Mb
+  - disney_netflix_BG |14.23Mb
+  - disney_netflix_BG |103.08Mb
+  - disney_netflix_BG |352.95Mb
+  - disney_netflix_BG |316.52Mb
+  - disney_netflix_GB |32.21Mb
+  - disney_netflix_CA |58.73Mb
+  - disney_netflix_CA | 2.32Mb
+  - disney_netflix_CA |54.05Mb
+  - disney_netflix_CA |58.76Mb
+  - disney_netflix_CA |158.66Mb
+  - disney_netflix_CA |36.94Mb
+  - disney_netflix_CA |32.33Mb
+  - 🇨🇦CA_241 |126.49Mb
+  - disney_netflix_CA |32.54Mb
+  - disney_netflix_CA |37.24Mb
+  - disney_netflix_CA | 8.69Mb
+  - disney_netflix_CA |65.29Mb
+  - disney_netflix_CA |10.65Mb
+  - disney_netflix_FR | 3.80Mb
+  - disney_netflix_DE |324.46Mb
+  - disney_netflix_DE |907.06Mb
+  - 🇫🇷FR_250 |635.38Mb
+  - disney_netflix_NL |547.33Mb
+  - disney_netflix_NL |491.82Mb
+  - disney_netflix_NL |541.40Mb
+  - disney_netflix_NL |524.78Mb
+  - disney_netflix_NL |417.42Mb
+  - disney_netflix_NL |553.58Mb
+  - disney_netflix_NL |123.84Mb
+  - disney_netflix_AT |562.08Mb
+  - disney_netflix_NL |406.80Mb
+  - disney_netflix_NL |355.72Mb
+  - disney_netflix_NL |422.57Mb
+  - disney_netflix_NL |536.97Mb
+  - disney_netflix_NL |284.68Mb
+  - 'disney_netflix_NL #2'
+  - disney_netflix_NL |408.07Mb
+  - disney_netflix_NL |409.17Mb
+  - disney_netflix_NL |477.64Mb
+  - disney_netflix_NL |405.43Mb
+  - disney_netflix_NL |421.95Mb
+  - disney_netflix_GB |761.71Mb
+  - disney_netflix_NL |516.30Mb
+  - disney_netflix_NL |464.73Mb
+  - disney_netflix_GB | 3.11Mb
+  - disney_netflix_GB |613.30Mb
+  - disney_netflix_NL |477.66Mb
+  - disney_netflix_NL |446.59Mb
+  - disney_netflix_NL |251.08Mb
+  - disney_netflix_NL |411.30Mb
+  - disney_netflix_NL |407.19Mb
+  - disney_netflix_NL |421.22Mb
+  - disney_netflix_NL |423.22Mb
+  - disney_netflix_NL |397.45Mb
+  - disney_netflix_NL |544.03Mb
+  - disney_netflix_NL |472.46Mb
+  - disney_netflix_NL |530.91Mb
+  - disney_netflix_GB |771.34Mb
+  - disney_netflix_NL |451.09Mb
+  - 'disney_netflix_NL #3'
+  - netflix_IT | 9.77Mb
+  - netflix_IT |166.70Mb
+  - netflix_IT |152.32Mb
+  - netflix_IT |159.75Mb
+  - netflix_IT |214.72Mb
+  - netflix_IT |172.57Mb
+  - netflix_IT |258.36Mb
+  - 🇯🇵JP_298 |80.93Mb
+  - 🇯🇵JP_299 |88.28Mb
+  - 🇯🇵JP_300 |55.58Mb
+  - 'netflix_KR #4'
+  - 🇰🇷KR_302
+  - 'netflix_KR #5'
+  - 🇰🇷KR_304
+  - 'netflix_KR #6'
+  - disney_netflix_LT |250.77Mb
+  - disney_netflix_LT |236.59Mb
+  - disney_netflix_LT |154.30Mb
+  - disney_netflix_LT |16.06Mb
+  - disney_netflix_LT |258.46Mb
+  - disney_netflix_LT |319.21Mb
+  - disney_netflix_LT |213.36Mb
+  - disney_netflix_LT |254.95Mb
+  - netflix_LV |153.49Mb
+  - netflix_LV |155.61Mb
+  - netflix_LV |16.41Mb
+  - netflix_LV |211.43Mb
+  - disney_netflix_NL |413.15Mb
+  - disney_netflix_NL |480.36Mb
+  - 'disney_netflix_NL #4'
+  - disney_netflix_NL |477.98Mb
+  - disney_netflix_NL |384.52Mb
+  - disney_netflix_NL |530.65Mb
+  - disney_netflix_NL |399.75Mb
+  - disney_netflix_NL |258.81Mb
+  - disney_netflix_NL |455.50Mb
+  - disney_netflix_NL |426.45Mb
+  - disney_netflix_NL |458.30Mb
+  - disney_netflix_NL |169.27Mb
+  - disney_netflix_NL |477.09Mb
+  - disney_netflix_NL |257.31Mb
+  - disney_netflix_NL |424.75Mb
+  - netflix_NO |153.22Mb
+  - disney_netflix_PL |299.59Mb
+  - disney_netflix_PL |228.52Mb
+  - disney_netflix_PL |335.90Mb
+  - disney_netflix_PL |229.68Mb
+  - disney_netflix_PL |316.78Mb
+  - disney_netflix_PL |324.39Mb
+  - disney_netflix_PL |300.64Mb
+  - disney_netflix_NL | 3.86Mb
+  - disney_netflix_FR | 3.73Mb
+  - disney_netflix_TH
+  - 🇺🇸US_346 |95.88Mb
+  - netflix_CH |466.74Mb
+  - disney_netflix_RO |10.31Mb
+  - disney_netflix_US |187.45Mb
+  - disney_netflix_CA |145.76Mb
+  - disney_netflix_US |187.65Mb
+  - 🇺🇸US_352
+  - disney_netflix_US |207.95Mb
+  - netflix_IT |921.86Mb
+  - 🇺🇸US_355 |169.40Mb
+  - disney_netflix_RO |10.54Mb
+  - 🇺🇸US_357 |82.73Mb
+  - disney_netflix_US |119.72Mb
+  - 🇺🇸US_359
+  - disney_netflix_US |91.29Mb
+  - netflix_ZA |98.09Mb
+  - 🇰🇷 韩国 | VMESS | 001
+  - 🇺🇳 未知地区 | VLESS | 002
+  - 🇺🇳 未知地区 | SS | 001
+  - 🇺🇳 未知地区 | VLESS | 003
+  - 🇺🇳 未知地区 | VLESS | 004
+  - 🇺🇳 未知地区 | VLESS | 005
+  - 🇺🇳 未知地区 | VLESS | 006
+  - 🇵🇱 波兰 | VLESS | 001
+  - 🇬🇧 英国 | VLESS | 001
+  - 🇳🇱 荷兰 | VLESS | 001
+  - 🇩🇪 德国 | VLESS | 001
+  - 🇺🇳 未知地区 | VLESS | 010
+  - 🇺🇸 美国 | VLESS | 001
+  - 🇺🇸 美国 | VLESS | 002
+  - 🇺🇳 未知地区 | VLESS | 012
+  - 🇺🇳 未知地区 | VLESS | 013
+  - 🇺🇳 未知地区 | VLESS | 014
+  - 🇦🇺 澳大利亚 | HYSTERIA2 | 001
+  - 🇺🇳 未知地区 | VMESS | 003
+  - 🇩🇪 德国 | HYSTERIA2 | 001
+  - 🇩🇪 德国 | VLESS | 004
+  - 🇺🇳 未知地区 | VLESS | 016
+  - 🇺🇳 未知地区 | VLESS | 017
+  - 🇫🇷 法国 | VLESS | 001
+  - 🇺🇳 未知地区 | VLESS | 019
+  - 🇺🇳 未知地区 | VLESS | 020
+  - 🇺🇸 美国 | VLESS | 004
+  - 🇸🇬 新加坡 | VLESS | 001
+  - 🇺🇳 未知地区 | VLESS | 022
+  - 🇺🇳 未知地区 | VLESS | 024
+  - 🇺🇳 未知地区 | VLESS | 025
+  - 🇺🇳 未知地区 | TROJAN | 002
+  - 🇺🇸 美国 | VLESS | 005
+  - 🇳🇱 荷兰 | VLESS | 003
+  - 🇺🇳 未知地区 | VLESS | 030
+  - 🇺🇳 未知地区 | TROJAN | 003
+  - 🇺🇳 未知地区 | VLESS | 031
+  - 🇳🇱 荷兰 | VLESS | 004
+  - 🇳🇱 荷兰 | VLESS | 005
+  - 🇰🇷 韩国 | VMESS | 002
+  - 🇺🇸 美国 | VLESS | 006
+  - 🇺🇳 未知地区 | VMESS | 005
+  - 🇸🇬 新加坡 | VLESS | 002
+  - 🇫🇮 芬兰 | VLESS | 001
+  - 免费节点 MENGvpn C01
+  - 免费节点 MENGvpn C02
+  - 免费节点 MENGvpn C03
+  - 免费节点 MENGvpn C05
+  - 免费节点 MENGvpn C06
+  - 免费节点 MENGvpn C07
+  - 免费节点 MENGvpn D01
+  - 免费节点 MENGvpn D02
+  - 免费节点 MENGvpn D03
+  - 免费节点 MENGvpn D04
+  - 免费节点 MENGvpn D05
+  - 免费节点 MENGvpn D06
+  - 免费节点 MENGvpn D07
+  - 免费节点 MENGvpn E01
+  - 免费节点 MENGvpn E02
+  - 免费节点 MENGvpn E03
+  - 免费节点 MENGvpn F01
+  - 免费节点 MENGvpn F02
+  - 免费节点 MENGvpn F03
+  - 免费节点 MENGvpn F05
+  - 免费节点 MENGvpn F06
+  - 免费节点 MENGvpn F08
+  - 免费节点 MENGvpn G01
+  - 免费节点 MENGvpn G02
+  - 免费节点 MENGvpn G03
+  - 免费节点 MENGvpn G04
+  - 免费节点 MENGvpn G05
+  - 免费节点 MENGvpn G06
+  - 免费节点 MENGvpn G07
+  - 免费节点 MENGvpn G08
+  - 免费节点 MENGvpn H01
+  - 免费节点 MENGvpn H02
+  - 免费节点 MENGvpn H03
+  - 免费节点 MENGvpn H04
+  - 免费节点 MENGvpn H05
+  - 免费节点 MENGvpn H06
+  - 免费节点 MENGvpn H07
+  - 免费节点 MENGvpn H08
+  - 免费节点 MENGvpn I01
+  - 免费节点 MENGvpn I02
+  - 免费节点 MENGvpn I03
+  - 免费节点 MENGvpn I05
+  - 免费节点 MENGvpn I06
+  - 免费节点 MENGvpn I07
+  - 美国 A组 流媒体 01
+  - 美国 A组 流媒体 02
+  - 美国 A组 流媒体 03
+  - 美国 A组 流媒体 04
+  - 美国 A组 流媒体 05
+  - 英国 B组 流媒体 01
+  - 🇭🇰HK_1|3.2MB/s
+  - 🇳🇱NL_1|2.5MB/s
+  - 🇵🇱PL_1|1.1MB/s
+  - 🇺🇸US_2|1.2MB/s
+  - 🇹🇷TR_1|1.2MB/s
+  - 🇩🇪DE_5|2.0MB/s
+  - 🇳🇱NL_6|2.0MB/s
+  - 🇳🇱NL_7|1.8MB/s
+  - 🇫🇷FR_2|3.2MB/s
+  - 🇷🇺RU_1|1.4MB/s
+  - 🇫🇷FR_4|2.7MB/s
+  - 🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰
   - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国
+  - 🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
+  - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国_1
   - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇵🇱_PL_波兰
+  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国->🇩🇪_DE_德国_1
   - 美国+V2CROSS.COM
   - 爱尔兰+V2CROSS.COM
   - 俄罗斯+V2CROSS.COM
@@ -1773,7 +7134,6 @@ proxy-groups:
   - 法国+ONLINE+S.A.S.数据中心
   - '香港+电讯盈科有限公司 #2'
   - 美国+Xerox
-  - 新加坡+甲骨文机房
   - '俄罗斯+V2CROSS.COM #2'
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
@@ -1804,25 +7164,23 @@ proxy-groups:
   - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - 巴西+V2CROSS.COM
   - '阿富汗+V2CROSS.COM #2'
-  - 🇯🇵JP_44|370KB/s|C002-260622 01vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&encrypt
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 中国+阿里云
-  - '土耳其+V2CROSS.COM #2'
-  - 日本+东京Amazon数据中心
   - 美国+CloudFlare节点
-  - '美国+V2CROSS.COM #3'
+  - 拉脱维亚+V2CROSS.COM
   - '美国+CloudFlare节点 #2'
-  - '巴西+V2CROSS.COM #2'
-  - 日本 东京Oracle云计算数据中心
-  - 美国+Amazon+EC2服务器
+  - 白俄罗斯+V2CROSS.COM
+  - 比利时+V2CROSS.COM
+  - Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#美国+CloudFlare节点
+  - 以色列+V2CROSS.COM
   - '美国+CloudFlare节点 #3'
+  - 巴西圣保罗+CloudFlare节点
+  - '俄罗斯+V2CROSS.COM #3'
   - 英国+V2CROSS.COM
-  - vless
   - US美国v2clash.blog 2026-9.9
   - 'US美国v2clash.blog 2026-9.9 #2'
   - NL荷兰v2clash.blog 2026-9.9
@@ -1866,16 +7224,13 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-10.5更新 #3'
   - 'US美国(v2clash.blog 2026-10.5更新 #4'
   - 'US美国(v2clash.blog 2026-10.5更新 #5'
-  - 'US美国(v2clash.blog 2026-10.5更新 #6'
-  - US美国(v2clash.blog 2026-10.6更新
   - CA加拿大(v2clash.blog 2026-10.6更新
   - AU澳大利亚(v2clash.blog 2026-10.6更新
   - HK香港(v2clash.blog 2026-10.6更新
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
-  - CA加拿大(v2clash.blog 2026-10.7更新
   - US美国(v2clash.blog 2026-10.7更新
-  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+  - CA加拿大(v2clash.blog 2026-10.7更新
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
@@ -1910,9 +7265,7 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-10.13更新 #2'
   - US美国(v2clash.blog 2026-10.14更新
   - JP日本(v2clash.blog 2026-10.14更新
-  - DE德国(v2clash.blog 2026-10.14更新
   - 阿拉伯(v2clash.blog 2026-10.14更新
   - RU俄罗斯(v2clash.blog 2026-10.14更新
-  - US美国(v2clash.blog 2026-10.14更新)
 rules:
 - MATCH,PROBE
