@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T04:12:56.698309+00:00",
+  "generated_at": "2026-10-17T10:32:53.662926+00:00",
   "proxies": [
     {
       "alterId": 0,
@@ -1857,8 +1857,8 @@
       "name": "end-gfw-sg89-VLESS",
       "network": "tcp",
       "port": 443,
-      "server": "13.212.194.238",
-      "servername": "live.theasianbanker.com",
+      "server": "13.212.75.183",
+      "servername": "fracosapi.getlevrgnow.com",
       "tls": true,
       "type": "vless",
       "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043"
@@ -1867,7 +1867,7 @@
       "name": "end-gfw-sg89-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "13.212.194.238",
+      "server": "13.212.75.183",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -1877,26 +1877,15 @@
       "name": "end-gfw-sg89-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "13.212.194.238",
+      "server": "13.212.75.183",
       "type": "ss"
     },
     {
       "client-fingerprint": "chrome",
-      "name": "欧盟+V2CROSS.COM",
-      "network": "tcp",
-      "port": 8443,
-      "server": "45.8.99.5",
-      "servername": "x5club.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "ef841361-5a82-0096-887c-3be03f6eac99"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "英国+V2CROSS.COM",
+      "name": "尼泊尔+V2CROSS.COM",
       "network": "ws",
-      "port": 8443,
-      "server": "2.28.42.209",
+      "port": 443,
+      "server": "103.38.236.248",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1905,36 +1894,149 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "/fdip=sstp://vpn:vpn@VPNine1-vpn-200.opengw.net:443"
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点",
+      "network": "ws",
+      "port": 443,
+      "server": "104.21.91.244",
+      "servername": "lucasjow.us.ci",
+      "tls": true,
+      "type": "vless",
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "ws-opts": {
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        },
+        "path": "/?TELEGRAM--MTMVPN--MTMVPN--MTMVPN--MTMVPN?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #2",
+      "network": "ws",
+      "port": 443,
+      "server": "172.67.76.40",
+      "servername": "ccc.010304.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "ws-opts": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "name": "美国+CloudFlare节点 #3",
+      "network": "ws",
+      "password": "humanity",
+      "port": 443,
+      "server": "108.162.194.134",
+      "sni": "www.pleadcourt.org",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        },
+        "path": "/assignment"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "巴西圣保罗+CloudFlare节点",
+      "network": "ws",
+      "port": 443,
+      "server": "188.114.97.6",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/?Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "伊拉克+V2CROSS.COM",
+      "network": "ws",
+      "port": 443,
+      "server": "1f0c1c7297521d51.wgse.info",
+      "servername": "1f0c1c7297521d51.wgse.info",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d78d6815-5f00-4fe3-8aae-3344aeb7783f",
+      "ws-opts": {
+        "headers": {
+          "Host": "1f0c1c7297521d51.wgse.info"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "日本+V2CROSS.COM",
+      "network": "ws",
+      "port": 443,
+      "server": "43.174.193.1",
+      "servername": "ccc.010304.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "ws-opts": {
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "name": "乌克兰+V2CROSS.COM",
+      "network": "ws",
+      "password": "humanity",
+      "port": 2053,
+      "server": "82.117.245.125",
+      "sni": "www.calmlunch.com",
+      "type": "trojan",
+      "ws-opts": {
+        "headers": {
+          "Host": "www.calmlunch.com"
+        },
+        "path": "/assignment"
       }
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "美国+V2CROSS.COM #3",
+      "name": "爱尔兰+V2CROSS.COM #2",
       "network": "tcp",
       "port": 443,
-      "server": "swself.yandex-api.com",
-      "servername": "swself.yandex-api.com",
+      "server": "78.17.178.125",
+      "servername": "cdn.tbank.ru",
       "tls": true,
       "type": "vless",
-      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44"
+      "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03"
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "北美地区+V2CROSS.COM",
+      "name": "美国+CloudFlare节点 #4",
       "network": "ws",
+      "password": "humanity",
       "port": 443,
-      "server": "23.246.154.243",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "server": "104.18.35.86",
+      "sni": "www.volumerOot.coM.",
+      "type": "trojan",
       "ws-opts": {
         "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
+          "Host": "www.volumerOot.coM."
         },
-        "path": "/fdip=sstp://vpn:vpn@VPNine1-vpn-200.opengw.net:443"
+        "path": "/assignment"
       }
     },
     {
@@ -1955,136 +2057,13 @@
       }
     },
     {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "美国+V2CROSS.COM #4",
-      "network": "tcp",
-      "port": 443,
-      "server": "45.128.60.127",
-      "servername": "www.nokia.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "1a11d3a8-f327-4f97-81b2-f776c138dec7"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare公司CDN节点(shopify",
-      "network": "ws",
-      "port": 8880,
-      "server": "23.227.39.30",
-      "tls": false,
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "ws-opts": {
-        "headers": {
-          "Host": "vms.lifetime17.workers.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点",
-      "network": "ws",
-      "port": 2052,
-      "server": "172.64.150.43",
-      "tls": false,
-      "type": "vless",
-      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
-      "ws-opts": {
-        "headers": {
-          "Host": "eu02.123450908.xyz"
-        },
-        "path": "/rain1226"
-      }
-    },
-    {
-      "cipher": "chacha20-ietf-poly1305",
-      "name": "荷兰+北荷兰省阿姆斯特丹Microsoft数据中心",
-      "password": "y7KeRTzmH0vXT2kp",
-      "port": 443,
-      "server": "c3.nastuh.link",
-      "type": "ss"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "英国+V2CROSS.COM #2",
-      "network": "ws",
-      "port": 443,
-      "server": "31.77.126.2",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "美国+Xerox #2",
-      "network": "tcp",
-      "port": 34379,
-      "server": "funagfrdfs.alixxplay.com",
-      "servername": "us1p1.xn--ghq880n3na965a.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "英国+V2CROSS.COM #3",
-      "network": "tcp",
-      "port": 8443,
-      "server": "31.77.157.178",
-      "servername": "npdev.uk",
-      "tls": true,
-      "type": "vless",
-      "uuid": "a04c750d-3b71-493b-b2c1-6473ff1209dd"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "巴西圣保罗+CloudFlare节点",
-      "network": "ws",
-      "port": 443,
-      "server": "188.114.98.0",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "瑞典+V2CROSS.COM",
-      "network": "tcp",
-      "port": 25239,
-      "server": "164.37.224.244",
-      "servername": "www.microsoft.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "英国+V2CROSS.COM #4",
-      "network": "tcp",
-      "port": 443,
-      "server": "seal-de1.bypassme.online",
-      "servername": "seal-de1.bypassme.online",
-      "tls": true,
-      "type": "vless",
-      "uuid": "e625f8ef-f935-4c7d-a259-0f154b6842fd"
+      "name": "巴西+V2CROSS.COM #2",
+      "password": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "port": 54183,
+      "server": "outh.yandex-cloud.org",
+      "skip-cert-verify": false,
+      "sni": "outh.yandex-cloud.org",
+      "type": "hysteria2"
     },
     {
       "name": "FR法国(v2clash.blog 2026-9.17更新",
@@ -3310,23 +3289,6 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新",
-      "network": "ws",
-      "port": 443,
-      "server": "104.21.91.244",
-      "servername": "lucasjow.us.ci",
-      "tls": true,
-      "type": "vless",
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
-      "ws-opts": {
-        "headers": {
-          "Host": "lucasjow.us.ci"
-        },
-        "path": "/cart/docs/www/proxyip=108.160.132.132?ed"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
       "name": "RU俄罗斯(v2clash.blog 2026-10.16更新",
       "network": "httpupgrade",
       "port": 443,
@@ -3373,5 +3335,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 244
+  "total": 240
 }
