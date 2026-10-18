@@ -3,36 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: eric-de-2
-  type: vless
-  server: 152.53.186.202
-  port: 443
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: deinfo.chaosnetwork.app
-  flow: xtls-rprx-vision
-- name: eric-de-3
-  type: vless
-  server: 152.53.185.244
-  port: 443
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: demethod.chaosnetwork.app
-  flow: xtls-rprx-vision
-- name: eric-1cd
-  type: vless
-  server: 87.121.47.183
-  port: 443
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 1cdinfo.chaosnetwork.app
-  flow: xtls-rprx-vision
 - name: eric-1cpl
   type: vless
   server: 213.21.232.95
@@ -113,17 +83,67 @@ proxies:
   client-fingerprint: ios
   servername: iosapps.itunes.apple.com
   flow: xtls-rprx-vision
-- name: 剩余流量：0
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vless
-  server: 127.0.0.1
-  port: 80
-  uuid: d5665ea1-719d-4092-b3e9-9faac954c52b
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国
+  type: ss
+  server: 13.36.241.80
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸_US_美国
+  type: ss
+  server: 34.228.79.192
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇸_ES_西班牙
+  type: ss
+  server: 5.188.181.201
+  port: 9019
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷_FR_法国_1
+  type: ss
+  server: 13.36.178.160
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -139,120 +159,30 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇭🇰_HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  type: vmess
-  server: goldcnmltyljgfwgov.vip57.wogcnmnnagfwgov.com
-  port: 11257
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇺🇸_US_美国_2
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  type: vless
-  server: eu02.123450908.xyz
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  server: x.m-90.xyz
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
   network: ws
-  tls: false
+  servername: x.m-90.xyz
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /rain1226
+    path: t.me/TEAMNETGRATISCOL
     headers:
-      Host: eu02.123450908.xyz
+      Host: x.m-90.xyz
   skip-cert-verify: true
   udp: true
-- name: 🇪🇸_ES_西班牙
-  type: ss
-  server: 5.188.181.201
-  port: 9014
-  cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
-  type: vmess
-  server: or3.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪_DE_德国
+  type: vless
+  server: 13.143.172.203
+  port: 443
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
   tls: true
   skip-cert-verify: true
-  servername: cdn.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
   udp: true
-- name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: ss
-  server: 13.36.178.160
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
+- name: 🇨🇳_CN_中国_1
   type: vmess
   server: 39.108.113.127
   port: 10086
@@ -263,46 +193,11 @@ proxies:
   skip-cert-verify: true
   network: ws
   udp: true
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+- name: 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
   type: vmess
-  server: silversbgfgov.vip31.wogbcnmnagfwgov.com
-  port: 11231
+  server: silversbgfgov.vip44.wogbcnmnagfwgov.com
+  port: 11244
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_2
-  type: vless
-  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  port: 443
-  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-  network: ws
-  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-    headers:
-      Host: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
@@ -1440,118 +1335,13 @@ proxies:
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: '巴西+V2CROSS.COM #2'
-  type: vless
-  server: api.videolaguna.cc
+- name: 德国+黑森州法兰克福Amazon数据中心
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
   port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: api.videolaguna.cc
-  flow: xtls-rprx-vision
-- name: 尼泊尔+V2CROSS.COM
-  type: vless
-  server: 103.38.236.248
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 日本+V2CROSS.COM
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-  network: tcp
-  tls: false
-- name: 巴西圣保罗+CloudFlare节点
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /?Telegram---mehrosaboran
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: vless
-  server: 195.133.17.250
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: en.shardtech.pro
-  port: 443
-  uuid: aeffee83-4a56-4e01-ad8b-9bae65cb8d70
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: en.shardtech.pro
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #3'
-  type: vless
-  server: 177.1.186.43
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: de5.srv.vbuste-bot.com
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #4'
-  type: vless
-  server: api.mediapolyana.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: api.mediapolyana.cc
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #3'
-  type: vless
-  server: 45.61.149.205
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 亚太地区+V2CROSS.COM
   type: vless
   server: 103.161.179.171
@@ -1565,22 +1355,74 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #2'
+- name: 巴西圣保罗+CloudFlare节点
   type: vless
-  server: 104.17.154.123
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 188.114.97.6
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: ccc.010304.xyz
+  servername: lucasjow.us.ci
   ws-opts:
-    path: /
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
     headers:
-      Host: ccc.010304.xyz
-- name: '亚太地区+V2CROSS.COM #2'
+      Host: lucasjow.us.ci
+- name: 美国+CloudFlare节点
   type: vless
-  server: 103.161.178.215
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 乌克兰+V2CROSS.COM
+  type: vless
+  server: 195.123.6.19
+  port: 8443
+  uuid: fd1d80da-3b27-457a-810b-2b28a309edc1
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: travel.yandex.ru
+  flow: xtls-rprx-vision
+- name: '美国+V2CROSS.COM #3'
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+- name: '俄罗斯+V2CROSS.COM #3'
+  type: vless
+  server: 78.159.250.214
+  port: 443
+  uuid: 4054fdc2-ee80-4419-8a8e-d937df4719e2
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: qq.utiltools.site
+  flow: xtls-rprx-vision
+- name: Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#美国+CloudFlare节点
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 尼泊尔+V2CROSS.COM
+  type: vless
+  server: 103.38.236.248
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1591,9 +1433,9 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: Telegram---bored_vpn#美国+CloudFlare节点
+- name: '美国+CloudFlare节点 #2'
   type: vless
-  server: www.speedtest.net
+  server: 104.17.147.22
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1601,25 +1443,19 @@ proxies:
   client-fingerprint: chrome
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
+    path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '巴西+V2CROSS.COM #5'
-  type: hysteria2
-  server: outh.yandex-cloud.org
-  port: 54183
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  sni: outh.yandex-cloud.org
-  skip-cert-verify: false
 - name: '爱尔兰+V2CROSS.COM #2'
   type: vless
-  server: 89.124.100.104
-  port: 8080
-  uuid: 22136b20-6365-4ae6-b21a-799a00ab1346
+  server: 78.17.178.125
+  port: 443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: graphs.4cdn.de
+  servername: cdn.tbank.ru
+  flow: xtls-rprx-vision
 - name: 匈牙利(v2clash.blog 2026-9.22更新
   type: vless
   server: 180.149.37.38
@@ -2005,19 +1841,6 @@ proxies:
   client-fingerprint: firefox
   servername: d3-de1.cloud-cdn.xyz
   flow: xtls-rprx-vision
-- name: CA加拿大(v2clash.blog 2026-10.7更新
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -2030,7 +1853,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+- name: CA加拿大(v2clash.blog 2026-10.7更新
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -2506,19 +2329,6 @@ proxies:
   client-fingerprint: chrome
   servername: www.apple.com
   flow: xtls-rprx-vision
-- name: Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
-  type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
-    headers:
-      Host: lucasjow.us.ci
 - name: RU俄罗斯(v2clash.blog 2026-10.16更新
   type: vless
   server: 94.242.55.122
@@ -2603,13 +2413,23 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
+- name: 越南(v2clash.blog 2026-10.18更新
+  type: vless
+  server: 103.161.178.215
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - eric-de-2
-  - eric-de-3
-  - eric-1cd
   - eric-1cpl
   - eric-us-phl
   - eric-us
@@ -2618,24 +2438,18 @@ proxy-groups:
   - 🇺🇸美国-vip-2692
   - 🇯🇵日本-vip-1140
   - 🇯🇵日本-vip-1241
-  - 剩余流量：0
-  - 🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇬🇧_GB_英国
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇪🇸_ES_西班牙
-  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-  - 🇺🇸_US_美国_1
-  - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
   - 🇫🇷_FR_法国
+  - 🇭🇰_HK_中国香港
+  - 🇺🇸_US_美国
   - 🇨🇳_CN_中国
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
+  - 🇪🇸_ES_西班牙
+  - 🇫🇷_FR_法国_1
+  - 🇺🇸_US_美国_1
   - 🇺🇸_US_美国_2
-  - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
-  - 🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰
+  - 🇩🇪_DE_德国
+  - 🇨🇳_CN_中国_1
+  - 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
   - 免费节点 MENGvpn C01
   - 免费节点 MENGvpn C02
   - 免费节点 MENGvpn C03
@@ -2741,21 +2555,16 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - '巴西+V2CROSS.COM #2'
-  - 尼泊尔+V2CROSS.COM
-  - 日本+V2CROSS.COM
-  - 巴西圣保罗+CloudFlare节点
-  - '俄罗斯+V2CROSS.COM #3'
-  - 美国+CloudFlare节点
-  - 伊朗+V2CROSS.COM
-  - '巴西+V2CROSS.COM #3'
-  - '巴西+V2CROSS.COM #4'
-  - '美国+V2CROSS.COM #3'
+  - 德国+黑森州法兰克福Amazon数据中心
   - 亚太地区+V2CROSS.COM
+  - 巴西圣保罗+CloudFlare节点
+  - 美国+CloudFlare节点
+  - 乌克兰+V2CROSS.COM
+  - '美国+V2CROSS.COM #3'
+  - '俄罗斯+V2CROSS.COM #3'
+  - Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#美国+CloudFlare节点
+  - 尼泊尔+V2CROSS.COM
   - '美国+CloudFlare节点 #2'
-  - '亚太地区+V2CROSS.COM #2'
-  - Telegram---bored_vpn#美国+CloudFlare节点
-  - '巴西+V2CROSS.COM #5'
   - '爱尔兰+V2CROSS.COM #2'
   - 匈牙利(v2clash.blog 2026-9.22更新
   - US美国(v2clash.blog 2026-9.22更新
@@ -2793,9 +2602,8 @@ proxy-groups:
   - HK香港(v2clash.blog 2026-10.6更新
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
-  - CA加拿大(v2clash.blog 2026-10.7更新
   - US美国(v2clash.blog 2026-10.7更新
-  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+  - CA加拿大(v2clash.blog 2026-10.7更新
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
@@ -2837,7 +2645,6 @@ proxy-groups:
   - 白俄罗斯(v2clash.blog 2026-10.15更新
   - HK香港(v2clash.blog 2026-10.15更新
   - 'HK香港(v2clash.blog 2026-10.15更新 #2'
-  - Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
   - RU俄罗斯(v2clash.blog 2026-10.16更新
   - 南非(v2clash.blog 2026-10.16更新
   - US美国(v2clash.blog 2026-10.16更新
@@ -2845,5 +2652,6 @@ proxy-groups:
   - 芬兰(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.18更新
   - 'US美国(v2clash.blog 2026-10.18更新 #2'
+  - 越南(v2clash.blog 2026-10.18更新
 rules:
 - MATCH,PROBE
