@@ -1346,38 +1346,96 @@ proxies:
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.151.162.109
+  server: 54.255.168.92
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: adm-ps-uat.ntu.edu.sg
+  servername: cityofdesiregame.com
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.151.162.109
+  server: 54.255.168.92
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.151.162.109
+  server: 54.255.168.92
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 法国+V2CROSS.COM
+- name: 'end-gfw-kr64-VLESS #2'
   type: vless
-  server: 139.100.226.187
+  server: 15.165.236.159
+  port: 443
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: apuva-kr-appsync-realtime.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE
+    short-id: e04a526b0b09c765
+- name: 'end-gfw-kr64-HY2 #2'
+  type: hysteria2
+  server: 15.165.236.159
+  port: 443
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  sni: www.bing.com
+  skip-cert-verify: true
+  fingerprint: 896186feb20cb7403187a45ff3bd5ddc8bfbdd419d779d55d786189d36731a69
+- name: 'end-gfw-kr64-SS #2'
+  type: ss
+  server: 15.165.236.159
   port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 'end-gfw-sg89-VLESS #2'
+  type: vless
+  server: 54.179.203.95
+  port: 443
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: travelrule.triple-a.io
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: x8aCD8cJtkDvAjcRrcMG05MNiwh11LaKg70KIRvfN0g
+    short-id: 819a87bf1651bf44
+- name: 'end-gfw-sg89-HY2 #2'
+  type: hysteria2
+  server: 54.179.203.95
+  port: 443
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  sni: www.bing.com
+  skip-cert-verify: true
+  fingerprint: c1fd40941f919b5c7896244097f22d9d958e625cd958b75f34ccfa42181f50b2
+- name: 'end-gfw-sg89-SS #2'
+  type: ss
+  server: 54.179.203.95
+  port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 英国+V2CROSS.COM
+  type: vless
+  server: 31.77.126.2
+  port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: unsafe
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
 - name: 日本+V2CROSS.COM
@@ -1393,29 +1451,6 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: vless
-  server: 5.188.117.45
-  port: 443
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ya.ru
-  flow: xtls-rprx-vision
-- name: 荷兰+V2CROSS.COM
-  type: vless
-  server: 130.78.190.134
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: 美国+CloudFlare节点
   type: vless
   server: saas.sin.fan
@@ -1429,32 +1464,15 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+FDC芝加哥机房 #3'
+- name: '美国+V2CROSS.COM #3'
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+- name: 亚太地区+V2CROSS.COM
   type: vless
-  server: direct-nl.bachidze.com
-  port: 443
-  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: direct-nl.bachidze.com
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '日本+V2CROSS.COM #2'
-  type: vless
-  server: 101.142.129.72
+  server: 103.161.178.72
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1465,9 +1483,44 @@ proxies:
     path: /fp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 罗马尼亚+V2CROSS.COM
+- name: 德国+V2CROSS.COM
+  type: trojan
+  server: 193.23.202.65
+  port: 443
+  password: humanity
+  sni: wWw.Volumeroot.cOm.
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: wWw.Volumeroot.cOm.
+- name: '美国+CloudFlare节点 #2'
   type: vless
-  server: 85.121.245.104
+  server: 104.17.147.22
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 美国+Muskingum+College
+  type: trojan
+  server: 143.246.136.156
+  port: 443
+  password: humanity
+  sni: wWw.Volumeroot.cOm.
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: wWw.Volumeroot.cOm.
+- name: 乌克兰+V2CROSS.COM
+  type: vless
+  server: 178.93.160.236
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1478,42 +1531,18 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 希腊+V2CROSS.COM
+- name: Telegram---bored_vpn&host=snip.edgeoneai.cc.cd&packetEncoding=xudp&alpn=http/1.1&sni=snip.edgeoneai.cc.cd&fp=chrome#美国+C
   type: vless
-  server: 88.218.92.41
-  port: 24694
-  uuid: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: metrika.yandex.ru
-  flow: xtls-rprx-vision
-- name: 亚太地区+V2CROSS.COM
-  type: vless
-  server: 103.161.178.205
+  server: www.speedtest.net
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
     headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 北美地区+V2CROSS.COM
-  type: vless
-  server: 104.245.245.16
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
+      Host: ''
 - name: US美国(v2clash.blog 2026-10.2更新
   type: vless
   server: 34.156.242.126
@@ -2597,18 +2626,22 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 法国+V2CROSS.COM
+  - 'end-gfw-kr64-VLESS #2'
+  - 'end-gfw-kr64-HY2 #2'
+  - 'end-gfw-kr64-SS #2'
+  - 'end-gfw-sg89-VLESS #2'
+  - 'end-gfw-sg89-HY2 #2'
+  - 'end-gfw-sg89-SS #2'
+  - 英国+V2CROSS.COM
   - 日本+V2CROSS.COM
-  - '俄罗斯+V2CROSS.COM #3'
-  - 荷兰+V2CROSS.COM
   - 美国+CloudFlare节点
-  - '美国+FDC芝加哥机房 #3'
-  - '美国+CloudFlare节点 #2'
-  - '日本+V2CROSS.COM #2'
-  - 罗马尼亚+V2CROSS.COM
-  - 希腊+V2CROSS.COM
+  - '美国+V2CROSS.COM #3'
   - 亚太地区+V2CROSS.COM
-  - 北美地区+V2CROSS.COM
+  - 德国+V2CROSS.COM
+  - '美国+CloudFlare节点 #2'
+  - 美国+Muskingum+College
+  - 乌克兰+V2CROSS.COM
+  - Telegram---bored_vpn&host=snip.edgeoneai.cc.cd&packetEncoding=xudp&alpn=http/1.1&sni=snip.edgeoneai.cc.cd&fp=chrome#美国+C
   - US美国(v2clash.blog 2026-10.2更新
   - 'US美国(v2clash.blog 2026-10.2更新 #2'
   - 西班牙(v2clash.blog 2026-10.2更新
