@@ -69,45 +69,120 @@ proxies:
   port: 1
   cipher: aes-128-gcm
   password: 57a61814-a64b-47dc-853c-6e3d9c017aef
-- name: 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
+- name: '套餐到期：2026-10-18 #2'
+  type: ss
+  server: 127.0.0.1
+  port: 1
+  cipher: aes-128-gcm
+  password: aeeef487-6797-47af-be8a-a9e75c0046c3
+- name: '套餐到期：2026-10-18 #3'
+  type: ss
+  server: 127.0.0.1
+  port: 1
+  cipher: aes-128-gcm
+  password: 34b9fd48-b522-4f53-b411-86b0b0c00c86
+- name: '套餐到期：2026-10-18 #4'
+  type: ss
+  server: 127.0.0.1
+  port: 1
+  cipher: aes-128-gcm
+  password: 3c96c215-1a2b-4be4-a597-3b45a20cb2cf
+- name: 🇭🇰_HK_中国香港
+  type: vless
+  server: s299.kukuss.top
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰_HK_中国香港_1
   type: vmess
-  server: silversbgfgov.vip44.wogbcnmnagfwgov.com
-  port: 11244
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国
+  type: trojan
+  server: pro-mako.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: pro-mako.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: goldcnmltyljgfwgov.vip67.wogcnmnnagfwgov.com
+  port: 11267
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+- name: 🇺🇸_US_美国->🇬🇧_GB_英国
   type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: https.http.www.net.com.ramseyv2.ir.
+  port: 80
+  uuid: 10029c03-5d2f-4185-aab2-cbf91eef7361
+  alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+    headers:
+      Host: https.http.www.net.com.ramseyv2.ir.
   udp: true
-- name: 🇭🇰_HK_中国香港
+- name: 🇨🇳_CN_中国
   type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: 120.48.133.162
+  port: 10086
+  uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
+  alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
+  network: ws
   udp: true
-- name: 🇬🇧_GB_英国
+- name: 🇰🇷_KR_韩国
   type: trojan
-  server: gb.tronsg.com
+  server: pure-kodiak.rooster465.autos
   port: 443
-  password: Trojan@82164024
-  sni: gb.tronsg.com
+  password: UX82473651
+  sni: pure-kodiak.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸_US_美国
+- name: 🇸🇬_SG_新加坡
+  type: trojan
+  server: rested-seahorse.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: rested-seahorse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇬_SG_新加坡_1
+  type: trojan
+  server: musical-mouse.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_1
+  type: trojan
+  server: alert-titmouse.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: alert-titmouse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸_US_美国_2
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -123,66 +198,20 @@ proxies:
     headers:
       Host: guanwang.awsno.com
   udp: true
-- name: 🇺🇸_US_美国_1
-  type: ss
-  server: 18.208.223.39
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: ss
-  server: 13.36.241.80
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国_1
-  type: vmess
-  server: 39.108.113.127
-  port: 10086
-  uuid: fde10e39-48bb-4dcf-b3ba-71d711323a54
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇦🇱_AL_阿尔巴尼亚
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
+  server: alb1.keepverify.net
+  port: 8443
+  uuid: 595a6246-d7b0-48bc-a5f0-17068aec2e88
+  tls: true
+  flow: xtls-rprx-vision
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰_HK_中国香港_1
+- name: 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  server: silversbgfgov.vip44.wogbcnmnagfwgov.com
+  port: 11244
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
   tls: false
@@ -198,12 +227,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
+- name: 🇸🇬_SG_新加坡_2
+  type: trojan
+  server: ace-liger.rooster465.autos
+  port: 443
+  password: UX82473651
+  sni: ace-liger.rooster465.autos
   skip-cert-verify: true
   udp: true
 - name: 免费节点 MENGvpn C01
@@ -1294,7 +1323,7 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 13.209.10.70
+  server: 43.201.61.242
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -1304,14 +1333,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 13.209.10.70
+  server: 43.201.61.242
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 13.209.10.70
+  server: 43.201.61.242
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -1338,83 +1367,6 @@ proxies:
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 德国+V2CROSS.COM
-  type: vless
-  server: 79.132.141.248
-  port: 8443
-  uuid: a04c750d-3b71-493b-b2c1-6473ff1209dd
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: npdev.uk
-- name: 巴西圣保罗+CloudFlare节点
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 英国+伦敦DigitalOcean数据中心
-  type: trojan
-  server: 138.68.131.253
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 162.159.152.31
-  port: 443
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: now-pages-sub-em4.pages.dev
-- name: 美国+加利福尼亚
-  type: vless
-  server: 64.188.66.181
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ge-s-1.pythonmakemigreat.wiki
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #3'
-  type: vless
-  server: 198.177.56.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime09.workers.dev
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: ccs2g.pai50288.uk
-  port: 443
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccs2g.pai50288.uk
-  ws-opts:
-    path: /pai50288
-    headers:
-      Host: ccs2g.pai50288.uk
 - name: 法国+V2CROSS.COM
   type: vless
   server: 139.100.226.187
@@ -1428,22 +1380,10 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #3'
+- name: 日本+V2CROSS.COM
   type: vless
-  server: 104.26.2.223
-  port: 8080
-  uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 2.28.42.209
-  port: 8443
+  server: 43.174.195.1
+  port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
   tls: true
@@ -1453,7 +1393,53 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #4'
+- name: '俄罗斯+V2CROSS.COM #3'
+  type: vless
+  server: 5.188.117.45
+  port: 443
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: ya.ru
+  flow: xtls-rprx-vision
+- name: 荷兰+V2CROSS.COM
+  type: vless
+  server: 130.78.190.134
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 美国+CloudFlare节点
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '美国+FDC芝加哥机房 #3'
+  type: vless
+  server: direct-nl.bachidze.com
+  port: 443
+  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: direct-nl.bachidze.com
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #2'
   type: vless
   server: 104.17.148.22
   port: 443
@@ -1466,21 +1452,22 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #5'
+- name: '日本+V2CROSS.COM #2'
   type: vless
-  server: 104.18.109.147
-  port: 80
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
+  server: 101.142.129.72
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
-  tls: false
+  tls: true
   client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /Telegram-XV2ry2?ed=2048
+    path: /fp=chrome
     headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-- name: 越南+V2CROSS.COM
+      Host: snip.edgeoneai.cc.cd
+- name: 罗马尼亚+V2CROSS.COM
   type: vless
-  server: 103.199.18.84
+  server: 85.121.245.104
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1491,9 +1478,19 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 日本+软银网络
+- name: 希腊+V2CROSS.COM
   type: vless
-  server: 60.130.209.253
+  server: 88.218.92.41
+  port: 24694
+  uuid: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: metrika.yandex.ru
+  flow: xtls-rprx-vision
+- name: 亚太地区+V2CROSS.COM
+  type: vless
+  server: 103.161.178.205
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1501,21 +1498,9 @@ proxies:
   client-fingerprint: chrome
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #6'
-  type: vless
-  server: 172.66.158.115
-  port: 8080
-  uuid: f8f5d3a5-54bd-4f52-9759-137bdbf950db
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
 - name: 北美地区+V2CROSS.COM
   type: vless
   server: 104.245.245.16
@@ -1526,116 +1511,9 @@ proxies:
   client-fingerprint: chrome
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: vless
-  server: 85.193.85.231
-  port: 443
-  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yoy-api.bachidze.com
-  flow: xtls-rprx-vision
-- name: Telegram---bored_vpn&host=snip.edgeoneai.cc.cd&packetEncoding=xudp&alpn=http/1.1&sni=snip.edgeoneai.cc.cd&fp=chrome#美国+C
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
-    headers:
-      Host: ''
-- name: 摩尔多瓦+V2CROSS.COM
-  type: vless
-  server: 185.153.198.86
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vlso5.1d.mom
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: '美国+CloudFlare节点 #7'
-  type: vless
-  server: 172.67.222.62
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: cf-vless-4cf55824.aimall.fr
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 匈牙利(v2clash.blog 2026-9.22更新
-  type: vless
-  server: 180.149.37.38
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: shuma.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: US美国(v2clash.blog 2026-9.22更新
-  type: trojan
-  server: 172.67.221.242
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: TW台湾(v2clash.blog 2026-9.22更新
-  type: vless
-  server: 89.46.42.92
-  port: 2053
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: shuma.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 丹麦(v2clash.blog 2026-9.22更新
-  type: vless
-  server: 193.180.208.169
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: shuma.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: FR法国(v2clash.blog 2026-9.22更新
-  type: vless
-  server: 2001:bc8:32d7:302::10
-  port: 65513
-  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.yahoo.com
 - name: US美国(v2clash.blog 2026-10.2更新
   type: vless
   server: 34.156.242.126
@@ -1962,19 +1840,6 @@ proxies:
   client-fingerprint: firefox
   servername: d3-de1.cloud-cdn.xyz
   flow: xtls-rprx-vision
-- name: CA加拿大(v2clash.blog 2026-10.7更新
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -1987,7 +1852,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+- name: CA加拿大(v2clash.blog 2026-10.7更新
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -2586,6 +2451,18 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
+- name: US美国(v2clash.blog 2026-10.19更新
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /fdipfp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
 proxy-groups:
 - name: PROBE
   type: select
@@ -2597,20 +2474,24 @@ proxy-groups:
   - 🇺🇸美国-vip-2288
   - 🇺🇸美国-vip-2389
   - 套餐到期：2026-10-18
-  - 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
-  - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+  - '套餐到期：2026-10-18 #2'
+  - '套餐到期：2026-10-18 #3'
+  - '套餐到期：2026-10-18 #4'
   - 🇭🇰_HK_中国香港
-  - 🇬🇧_GB_英国
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇫🇷_FR_法国
-  - 🇨🇳_CN_中国
-  - 🇨🇳_CN_中国_1
-  - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇭🇰_HK_中国香港_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇬🇧_GB_英国
+  - 🇨🇳_CN_中国
+  - 🇰🇷_KR_韩国
+  - 🇸🇬_SG_新加坡
+  - 🇸🇬_SG_新加坡_1
+  - 🇺🇸_US_美国_1
+  - 🇺🇸_US_美国_2
+  - 🇦🇱_AL_阿尔巴尼亚
+  - 🇨🇳_CN_中国->🇵🇭_PH_菲律宾
   - 🇭🇰_HK_中国香港->🇮🇪_IE_爱尔兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇸🇬_SG_新加坡_2
   - 免费节点 MENGvpn C01
   - 免费节点 MENGvpn C02
   - 免费节点 MENGvpn C03
@@ -2716,31 +2597,18 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 德国+V2CROSS.COM
-  - 巴西圣保罗+CloudFlare节点
-  - 英国+伦敦DigitalOcean数据中心
-  - 美国+CloudFlare节点
-  - 美国+加利福尼亚
-  - '美国+V2CROSS.COM #3'
-  - '美国+CloudFlare节点 #2'
   - 法国+V2CROSS.COM
-  - '美国+CloudFlare节点 #3'
-  - 英国+V2CROSS.COM
-  - '美国+CloudFlare节点 #4'
-  - '美国+CloudFlare节点 #5'
-  - 越南+V2CROSS.COM
-  - 日本+软银网络
-  - '美国+CloudFlare节点 #6'
-  - 北美地区+V2CROSS.COM
+  - 日本+V2CROSS.COM
   - '俄罗斯+V2CROSS.COM #3'
-  - Telegram---bored_vpn&host=snip.edgeoneai.cc.cd&packetEncoding=xudp&alpn=http/1.1&sni=snip.edgeoneai.cc.cd&fp=chrome#美国+C
-  - 摩尔多瓦+V2CROSS.COM
-  - '美国+CloudFlare节点 #7'
-  - 匈牙利(v2clash.blog 2026-9.22更新
-  - US美国(v2clash.blog 2026-9.22更新
-  - TW台湾(v2clash.blog 2026-9.22更新
-  - 丹麦(v2clash.blog 2026-9.22更新
-  - FR法国(v2clash.blog 2026-9.22更新
+  - 荷兰+V2CROSS.COM
+  - 美国+CloudFlare节点
+  - '美国+FDC芝加哥机房 #3'
+  - '美国+CloudFlare节点 #2'
+  - '日本+V2CROSS.COM #2'
+  - 罗马尼亚+V2CROSS.COM
+  - 希腊+V2CROSS.COM
+  - 亚太地区+V2CROSS.COM
+  - 北美地区+V2CROSS.COM
   - US美国(v2clash.blog 2026-10.2更新
   - 'US美国(v2clash.blog 2026-10.2更新 #2'
   - 西班牙(v2clash.blog 2026-10.2更新
@@ -2772,9 +2640,8 @@ proxy-groups:
   - HK香港(v2clash.blog 2026-10.6更新
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
-  - CA加拿大(v2clash.blog 2026-10.7更新
   - US美国(v2clash.blog 2026-10.7更新
-  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+  - CA加拿大(v2clash.blog 2026-10.7更新
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
@@ -2826,5 +2693,6 @@ proxy-groups:
   - US美国(v2clash.blog 2026-10.18更新
   - 'US美国(v2clash.blog 2026-10.18更新 #2'
   - '越南(v2clash.blog 2026-10.18更新 #2'
+  - US美国(v2clash.blog 2026-10.19更新
 rules:
 - MATCH,PROBE
