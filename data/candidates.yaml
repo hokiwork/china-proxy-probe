@@ -3,26 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇯🇵日本-vip-1342
-  type: vless
-  server: pq.aws51.yydjc.top
-  port: 443
-  uuid: 0cf7bb7c-cf49-4e1c-aa98-f33cbe3cb156
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: cdn-dynmedia-1.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵日本-vip-1443
-  type: vless
-  server: pq.aws52.yydjc.top
-  port: 443
-  uuid: 0cf7bb7c-cf49-4e1c-aa98-f33cbe3cb156
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-dynmedia-1.microsoft.com
-  flow: xtls-rprx-vision
 - name: 🇺🇸美国-vip-2692
   type: vless
   server: pq.us05.yydjc.top
@@ -63,1359 +43,20 @@ proxies:
   client-fingerprint: ios
   servername: updates.cdn-apple.com
   flow: xtls-rprx-vision
-- name: ⚡ 优选 · 01 · 联通
-  type: vless
-  server: cf01.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge.nianyi.de5.net
-- name: ⚡ 优选 · 02 · 联通
-  type: vless
-  server: cf02.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge.nianyi.de5.net
-- name: ⚡ 优选 · 03 · 联通
-  type: vless
-  server: cf03.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge.nianyi.de5.net
-- name: ⚡ 优选 · 04 · 联通
-  type: vless
-  server: cf04.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge.nianyi.de5.net
-- name: ⚡ 优选 · 05 · 移动
-  type: vless
-  server: cf05.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge.nianyi.de5.net
-- name: ⚡ 优选 · 06 · 移动
-  type: vless
-  server: cf06.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge2.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge2.nianyi.de5.net
-- name: ⚡ 优选 · 07 · 移动
-  type: vless
-  server: cf07.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge2.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge2.nianyi.de5.net
-- name: ⚡ 优选 · 08 · 电信
-  type: vless
-  server: cf08.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge2.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge2.nianyi.de5.net
-- name: ⚡ 优选 · 09 · 电信
-  type: vless
-  server: cf09.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge2.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge2.nianyi.de5.net
-- name: ⚡ 优选 · 10 · 电信
-  type: vless
-  server: cf10.nianyi.de5.net
-  port: 443
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: edge2.nianyi.de5.net
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: edge2.nianyi.de5.net
-- name: udptoos.com 🇺🇸 美国 03
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇺🇸 美国 04
-  type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇬🇧 英国 04
-  type: vmess
-  server: 172.67.137.209
-  port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ukl.lovehk.xyz
-    path: /London31
-- name: udptoos.com 🇬🇧 英国 07
-  type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: 871fb24c-c101-4ed3-8a5c-4658554acd54
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: do-lon1.862400.xyz
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: do-lon1.862400.xyz
-- name: udptoos.com 🇺🇸 美国 44
-  type: vless
-  server: 69.42.222.160
-  port: 50443
-  uuid: 20cdcc5b-d7d7-429e-afe3-e6aaf3664993
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇮🇳 印度 97
-  type: vless
-  server: 189.74.116.17
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.mediapolyana.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇩🇪 德国 02
-  type: vless
-  server: 152.233.71.81
-  port: 443
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  network: tcp
-  tls: true
-  client-fingerprint: random
-  servername: brointelengence.com
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇺🇸 美国 38
-  type: vless
-  server: api.videolaguna.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.videolaguna.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇮🇳 印度 74
-  type: vless
-  server: 189.74.115.16
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.mediakaskad.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇺🇸 美国 39
-  type: vless
-  server: 189.74.117.26
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.videolaguna.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇺🇸 美国 41
-  type: vless
-  server: 189.74.117.22
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.videolaguna.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇩🇪 德国 07
+- name: 剩余流量：0
   type: hysteria2
-  server: 189.74.106.162
-  port: 54183
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  sni: outh.yandex-cloud.org
+  server: akjp.fe-9.top
+  port: 47199
+  password: 21b60363-271b-49f0-975b-dbe315215164
+  sni: akjp.fe-9.top
   skip-cert-verify: true
-- name: udptoos.com 🇮🇳 印度 72
-  type: vless
-  server: api.mediakaskad.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.mediakaskad.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇮🇳 印度 73
-  type: vless
-  server: api.mediapolyana.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: api.mediapolyana.cc
-  flow: xtls-rprx-vision
-- name: 剩余流量：238.65 GB
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65221
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港 | HK02
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65222
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港 | HK03
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65223
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港 | HK04
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65224
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港 | HK05
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65225
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 台湾 | TW01
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65226
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 台湾 | TW02
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65227
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 台湾 | TW03
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65228
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 台湾 | TW04
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65229
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 台湾 | TW05
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 34567
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 新加坡 | SG01
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65230
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 新加坡 | SG02
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65231
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 新加坡 | SG03
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65232
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 新加坡 | SG04
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65233
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 新加坡 | SG05
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65234
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 | JP01
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65236
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 | JP02
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65237
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 | JP03
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65238
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 | JP04
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65239
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本 | JP05
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65240
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国 | US01
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65241
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国 | US02
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65242
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国 | US03
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65243
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国 | US04
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65244
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国 | US05
-  type: vless
-  server: a2l3x5.underbizco.com
-  port: 65245
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇰🇷 韩国 | KR
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65247
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇻🇳 越南 | VN01
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65248
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇻🇳 越南 | VN02
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65249
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇲🇾 马来西亚 | MY
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65250
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇹🇭 泰国 | TH01
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65252
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇹🇭 泰国 | TH02
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65253
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: dash.cloudflare.com
-  flow: xtls-rprx-vision
-- name: 🇮🇩 印度尼西亚 | ID
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65254
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇮🇱 以色列 | IL
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65255
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇦 加拿大 | CA
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65256
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇿🇦 南非 | ZA
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65257
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇮🇳 印度 | IN
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65258
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇴 哥伦比亚 | CO
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65259
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇩🇪 德国 | DE
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65262
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇲🇦 摩洛哥 | MA01
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65264
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇦 沙特阿拉伯 | SA
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65265
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇫🇷 法国 | FR01
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65266
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇸🇪 瑞典 | SE
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65267
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇬🇧 英国 | GB01
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65269
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇬🇧 英国 | GB02
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65270
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇦🇺 澳大利亚 | AU
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65272
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇨🇱 智利 | CL
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65295
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇲🇦 摩洛哥 | MA
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65296
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇦🇪 阿联酋 | AE
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65297
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇺🇦 乌克兰 | UA
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 65299
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: 🇷🇺 俄罗斯 | RU
-  type: vless
-  server: l5z0d1.underbizco.com
-  port: 28101
-  uuid: 2e1c2217-f392-4a4b-be89-f752b7f795d7
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: bilibili-hk.biliimg.com
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇨🇦 加拿大 05
-  type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: 871fb24c-c101-4ed3-8a5c-4658554acd54
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: do-lon1.862400.xyz
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: do-lon1.862400.xyz
-- name: udptoos.com 🇭🇰 香港 59
-  type: vless
-  server: 149.104.5.126
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇭🇰 香港 16
-  type: vless
-  server: 85.121.245.104
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 143
-  type: vless
-  server: 157.245.50.181
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇭🇰 香港 104
-  type: vless
-  server: 103.199.18.84
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 40
-  type: vless
-  server: 129.212.232.171
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 32
-  type: vless
-  server: 103.27.187.45
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 49
-  type: vless
-  server: 103.195.191.121
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 151
-  type: vless
-  server: 45.192.243.25
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 123
-  type: vless
-  server: 101.142.129.72
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 19
-  type: vless
-  server: 76.13.188.13
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 74
-  type: vless
-  server: 45.192.206.187
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇳🇱 荷兰 436
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 127
-  type: vless
-  server: 187.52.127.204
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 84
-  type: vless
-  server: 60.130.209.253
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇩🇪 德国 133
-  type: trojan
-  server: de4.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de4.dedushka.top
-  network: tcp
-- name: udptoos.com 🇹🇭 泰国 27
-  type: vless
-  server: 43.229.148.249
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇺🇸 美国 380
-  type: vless
-  server: 179.255.123.130
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 113
-  type: vless
-  server: 103.161.178.215
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇺🇸 美国 365
-  type: vless
-  server: 152.232.57.10
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: api.videobereg.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🌐 未知 111
-  type: vless
-  server: 104.245.245.16
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇺🇸 美国 13
-  type: vless
-  server: api.videobereg.cc
-  port: 443
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api.videobereg.cc
-  flow: xtls-rprx-vision
-- name: udptoos.com 🌐 未知 18
-  type: vless
-  server: 130.78.190.134
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇺🇸 美国 105
-  type: vless
-  server: 45.41.55.72
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'udptoos.com 🇺🇸 美国 44 #2'
-  type: vless
-  server: 45.61.149.205
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#udptoos.com 🇫🇷 法国
-    586
-  type: vless
-  server: 162.159.130.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇫🇷 法国 96
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇫🇷 法国 173
-  type: vless
-  server: 45.131.209.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: 45.131.209.30
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: udptoos.com 🌐 未知 27
-  type: vless
-  server: 121.127.37.211
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇳🇱 荷兰 435
-  type: trojan
-  server: www.pleadcourt.org
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: udptoos.com 🇺🇸 美国 381
-  type: vless
-  server: 181.214.152.137
-  port: 51104
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-- name: udptoos.com 🌐 Slovakia 02
-  type: vless
-  server: 185.112.249.201
-  port: 2053
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇷🇺 俄罗斯 23
-  type: vless
-  server: 139.100.226.187
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🌐 Slovakia 01
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 84
-  type: vless
-  server: 103.161.178.205
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🌐 未知 89
-  type: vless
-  server: 31.57.190.50
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: udptoos.com 🇩🇪 德国 78
-  type: vless
-  server: 152.89.254.48
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 123
-  type: vless
-  server: 178.93.160.236
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇯🇵 日本 107
-  type: vless
-  server: 45.76.208.253
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇭🇰 香港 58
-  type: vless
-  server: 103.38.236.248
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇳🇱 荷兰 519
-  type: vless
-  server: 195.133.17.250
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇸🇬 新加坡 83
-  type: vless
-  server: 103.161.179.171
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: udptoos.com 🇦🇺 澳大利亚 13
-  type: vless
-  server: 212.81.47.99
-  port: 51106
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-- name: udptoos.com 🇫🇷 法国 14
-  type: vless
-  server: farancenew.mamadhpbot.ir
-  port: 8080
-  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: farancenew.mamadhpbot.ir
-  ws-opts:
-    path: /real
-    headers:
-      Host: farancenew.mamadhpbot.ir
-- name: udptoos.com 🇷🇺 俄罗斯 09
-  type: vless
-  server: 31.76.227.60
-  port: 443
-  uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
-  network: tcp
-  tls: true
-  client-fingerprint: randomized
-  servername: assets-mi-29.spbstudentlife.com
-  flow: xtls-rprx-vision
-- name: udptoos.com 🇫🇷 法国 751
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-17
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ssl.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
+- name: 🇭🇰 香港hy2
+  type: hysteria2
+  server: hkt65u.9dai.xyz
+  port: 38754
+  password: 21b60363-271b-49f0-975b-dbe315215164
+  sni: hkt65u.9dai.xyz
+  skip-cert-verify: true
 - name: 🇺🇸_US_美国
   type: vmess
   server: guanwang.awsno.com
@@ -2593,7 +1234,7 @@ proxies:
   skip-cert-verify: false
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 15.165.236.159
+  server: 43.203.215.61
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -2603,20 +1244,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 15.165.236.159
+  server: 43.203.215.61
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 15.165.236.159
+  server: 43.203.215.61
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.179.203.95
+  server: 13.250.24.170
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -2626,20 +1267,20 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.179.203.95
+  server: 13.250.24.170
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.179.203.95
+  server: 13.250.24.170
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: 美国+科罗拉多州NTT(美国)通信公司
+- name: 日本+V2CROSS.COM
   type: vless
-  server: 207.57.122.65
+  server: 43.174.195.1
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -2647,20 +1288,97 @@ proxies:
   client-fingerprint: chrome
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fp=chrome
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 英国+伦敦DigitalOcean数据中心
-  type: trojan
-  server: 138.68.131.253
+- name: 韩国+Hanaro+Telecom
+  type: vless
+  server: 123.111.169.70
   port: 443
-  password: humanity
-  sni: www.pleadcourt.org
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.pleadcourt.org
+      Host: snip.edgeoneai.cc.cd
+- name: 乌克兰+V2CROSS.COM
+  type: vless
+  server: 178.93.160.236
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: Telegram---bored_vpn#美国+CloudFlare节点
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 亚太地区+V2CROSS.COM
+  type: vless
+  server: 103.161.179.171
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '亚太地区+V2CROSS.COM #2'
+  type: vless
+  server: 103.161.178.205
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '美国+FDC芝加哥机房 #3'
+  type: vless
+  server: direct-nl.bachidze.com
+  port: 443
+  uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: direct-nl.bachidze.com
+  flow: xtls-rprx-vision
+- name: '美国+V2CROSS.COM #3'
+  type: vless
+  server: 149.104.5.126
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
 - name: 美国+CloudFlare节点
   type: vless
   server: 104.17.148.22
@@ -2674,105 +1392,9 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '美国+Xerox #2'
+- name: '日本+V2CROSS.COM #2'
   type: vless
-  server: app-sh-185.spbstudentlife.com
-  port: 443
-  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: assets-sh-185.spbstudentlife.com
-  flow: xtls-rprx-vision
-- name: '美国+CloudFlare节点 #2'
-  type: vless
-  server: www.whoer.net
-  port: 8080
-  uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
-- name: 巴西圣保罗+CloudFlare节点
-  type: trojan
-  server: 188.114.97.1
-  port: 443
-  password: humanity
-  sni: wWw.Volumeroot.cOm.
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: wWw.Volumeroot.cOm.
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: vless
-  server: ss3.soreanapanel.com
-  port: 8080
-  uuid: 22136b20-6365-4ae6-b21a-799a00ab1346
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: graphs.4cdn.de
-- name: '美国+CloudFlare节点 #3'
-  type: trojan
-  server: 104.21.33.59
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: '俄罗斯+V2CROSS.COM #4'
-  type: vless
-  server: app-ss-64.ecom-ai-search.com
-  port: 443
-  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: assets-ss-64.ecom-ai-search.com
-  flow: xtls-rprx-vision
-- name: '美国+V2CROSS.COM #3'
-  type: vless
-  server: b58e68t.lt1.h1clayd.click
-  port: 443
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  network: tcp
-  tls: true
-  client-fingerprint: random
-  servername: b58e68t.lt1.h1clayd.click
-- name: '美国+CloudFlare节点 #4'
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: wallweb-4r0.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-4r0.pages.dev
-- name: '美国+CloudFlare节点 #5'
-  type: trojan
-  server: 108.162.194.134
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 立陶宛+V2CROSS.COM
-  type: vless
-  server: 84.32.22.205
+  server: 101.142.129.72
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -2780,7 +1402,20 @@ proxies:
   client-fingerprint: chrome
   servername: snip.edgeoneai.cc.cd
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 104.19.45.195
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
     headers:
       Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.2更新
@@ -3109,6 +1744,19 @@ proxies:
   client-fingerprint: firefox
   servername: d3-de1.cloud-cdn.xyz
   flow: xtls-rprx-vision
+- name: CA加拿大(v2clash.blog 2026-10.7更新
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -3121,7 +1769,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: CA加拿大(v2clash.blog 2026-10.7更新
+- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -3320,6 +1968,19 @@ proxies:
   servername: us.australiacaregroup.site
 - name: 'US美国(v2clash.blog 2026-10.10更新 #2'
   type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.10更新 #3'
+  type: vless
   server: 128.241.25.11
   port: 30021
   uuid: c03bbba1-93ab-4781-8e8e-089cd257193f
@@ -3342,6 +2003,19 @@ proxies:
   servername: addons.mozilla.org
   flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.11更新
+  type: vless
+  server: 162.159.130.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.11更新 #2'
   type: vless
   server: 185.119.19.105
   port: 10829
@@ -3619,6 +2293,29 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime51.workers.dev
+- name: 阿拉伯(v2clash.blog 2026-10.18更新
+  type: vless
+  server: 185.112.249.201
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 芬兰(v2clash.blog 2026-10.18更新
+  type: vless
+  server: 152.233.71.81
+  port: 443
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: brointelengence.com
+  flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.18更新
   type: vless
   server: 172.64.150.43
@@ -3645,6 +2342,19 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
+- name: 越南(v2clash.blog 2026-10.18更新
+  type: vless
+  server: 103.161.178.215
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.19更新
   type: vless
   server: 188.114.98.0
@@ -3661,132 +2371,12 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇯🇵日本-vip-1342
-  - 🇯🇵日本-vip-1443
   - 🇺🇸美国-vip-2692
   - 🇺🇸美国-vip-2793
   - 🇺🇸美国-vip-2288
   - 🇺🇸美国-vip-2389
-  - ⚡ 优选 · 01 · 联通
-  - ⚡ 优选 · 02 · 联通
-  - ⚡ 优选 · 03 · 联通
-  - ⚡ 优选 · 04 · 联通
-  - ⚡ 优选 · 05 · 移动
-  - ⚡ 优选 · 06 · 移动
-  - ⚡ 优选 · 07 · 移动
-  - ⚡ 优选 · 08 · 电信
-  - ⚡ 优选 · 09 · 电信
-  - ⚡ 优选 · 10 · 电信
-  - udptoos.com 🇺🇸 美国 03
-  - udptoos.com 🇺🇸 美国 04
-  - udptoos.com 🇬🇧 英国 04
-  - udptoos.com 🇬🇧 英国 07
-  - udptoos.com 🇺🇸 美国 44
-  - udptoos.com 🇮🇳 印度 97
-  - udptoos.com 🇩🇪 德国 02
-  - udptoos.com 🇺🇸 美国 38
-  - udptoos.com 🇮🇳 印度 74
-  - udptoos.com 🇺🇸 美国 39
-  - udptoos.com 🇺🇸 美国 41
-  - udptoos.com 🇩🇪 德国 07
-  - udptoos.com 🇮🇳 印度 72
-  - udptoos.com 🇮🇳 印度 73
-  - 剩余流量：238.65 GB
-  - 🇭🇰 香港 | HK02
-  - 🇭🇰 香港 | HK03
-  - 🇭🇰 香港 | HK04
-  - 🇭🇰 香港 | HK05
-  - 🇨🇱 台湾 | TW01
-  - 🇨🇱 台湾 | TW02
-  - 🇨🇱 台湾 | TW03
-  - 🇨🇱 台湾 | TW04
-  - 🇨🇱 台湾 | TW05
-  - 🇸🇬 新加坡 | SG01
-  - 🇸🇬 新加坡 | SG02
-  - 🇸🇬 新加坡 | SG03
-  - 🇸🇬 新加坡 | SG04
-  - 🇸🇬 新加坡 | SG05
-  - 🇯🇵 日本 | JP01
-  - 🇯🇵 日本 | JP02
-  - 🇯🇵 日本 | JP03
-  - 🇯🇵 日本 | JP04
-  - 🇯🇵 日本 | JP05
-  - 🇺🇸 美国 | US01
-  - 🇺🇸 美国 | US02
-  - 🇺🇸 美国 | US03
-  - 🇺🇸 美国 | US04
-  - 🇺🇸 美国 | US05
-  - 🇰🇷 韩国 | KR
-  - 🇻🇳 越南 | VN01
-  - 🇻🇳 越南 | VN02
-  - 🇲🇾 马来西亚 | MY
-  - 🇹🇭 泰国 | TH01
-  - 🇹🇭 泰国 | TH02
-  - 🇮🇩 印度尼西亚 | ID
-  - 🇮🇱 以色列 | IL
-  - 🇨🇦 加拿大 | CA
-  - 🇿🇦 南非 | ZA
-  - 🇮🇳 印度 | IN
-  - 🇨🇴 哥伦比亚 | CO
-  - 🇩🇪 德国 | DE
-  - 🇲🇦 摩洛哥 | MA01
-  - 🇸🇦 沙特阿拉伯 | SA
-  - 🇫🇷 法国 | FR01
-  - 🇸🇪 瑞典 | SE
-  - 🇬🇧 英国 | GB01
-  - 🇬🇧 英国 | GB02
-  - 🇦🇺 澳大利亚 | AU
-  - 🇨🇱 智利 | CL
-  - 🇲🇦 摩洛哥 | MA
-  - 🇦🇪 阿联酋 | AE
-  - 🇺🇦 乌克兰 | UA
-  - 🇷🇺 俄罗斯 | RU
-  - udptoos.com 🇨🇦 加拿大 05
-  - udptoos.com 🇭🇰 香港 59
-  - udptoos.com 🇭🇰 香港 16
-  - udptoos.com 🇸🇬 新加坡 143
-  - udptoos.com 🇭🇰 香港 104
-  - udptoos.com 🇸🇬 新加坡 40
-  - udptoos.com 🇯🇵 日本 32
-  - udptoos.com 🇸🇬 新加坡 49
-  - udptoos.com 🇯🇵 日本 151
-  - udptoos.com 🇯🇵 日本 123
-  - udptoos.com 🇸🇬 新加坡 19
-  - udptoos.com 🇯🇵 日本 74
-  - udptoos.com 🇳🇱 荷兰 436
-  - udptoos.com 🇸🇬 新加坡 127
-  - udptoos.com 🇯🇵 日本 84
-  - udptoos.com 🇩🇪 德国 133
-  - udptoos.com 🇹🇭 泰国 27
-  - udptoos.com 🇺🇸 美国 380
-  - udptoos.com 🇸🇬 新加坡 113
-  - udptoos.com 🇺🇸 美国 365
-  - udptoos.com 🌐 未知 111
-  - udptoos.com 🇺🇸 美国 13
-  - udptoos.com 🌐 未知 18
-  - udptoos.com 🇺🇸 美国 105
-  - 'udptoos.com 🇺🇸 美国 44 #2'
-  - Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#udptoos.com 🇫🇷 法国 586
-  - udptoos.com 🇫🇷 法国 96
-  - udptoos.com 🇫🇷 法国 173
-  - udptoos.com 🌐 未知 27
-  - udptoos.com 🇳🇱 荷兰 435
-  - udptoos.com 🇺🇸 美国 381
-  - udptoos.com 🌐 Slovakia 02
-  - udptoos.com 🇷🇺 俄罗斯 23
-  - udptoos.com 🌐 Slovakia 01
-  - udptoos.com 🇸🇬 新加坡 84
-  - udptoos.com 🌐 未知 89
-  - udptoos.com 🇩🇪 德国 78
-  - udptoos.com 🇸🇬 新加坡 123
-  - udptoos.com 🇯🇵 日本 107
-  - udptoos.com 🇭🇰 香港 58
-  - udptoos.com 🇳🇱 荷兰 519
-  - udptoos.com 🇸🇬 新加坡 83
-  - udptoos.com 🇦🇺 澳大利亚 13
-  - udptoos.com 🇫🇷 法国 14
-  - udptoos.com 🇷🇺 俄罗斯 09
-  - udptoos.com 🇫🇷 法国 751
+  - 剩余流量：0
+  - 🇭🇰 香港hy2
   - 🇺🇸_US_美国
   - 🇸🇬_SG_新加坡
   - 🇨🇳_CN_中国
@@ -3901,19 +2491,17 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - 美国+科罗拉多州NTT(美国)通信公司
-  - 英国+伦敦DigitalOcean数据中心
-  - 美国+CloudFlare节点
-  - '美国+Xerox #2'
-  - '美国+CloudFlare节点 #2'
-  - 巴西圣保罗+CloudFlare节点
-  - '俄罗斯+V2CROSS.COM #3'
-  - '美国+CloudFlare节点 #3'
-  - '俄罗斯+V2CROSS.COM #4'
+  - 日本+V2CROSS.COM
+  - 韩国+Hanaro+Telecom
+  - 乌克兰+V2CROSS.COM
+  - Telegram---bored_vpn#美国+CloudFlare节点
+  - 亚太地区+V2CROSS.COM
+  - '亚太地区+V2CROSS.COM #2'
+  - '美国+FDC芝加哥机房 #3'
   - '美国+V2CROSS.COM #3'
-  - '美国+CloudFlare节点 #4'
-  - '美国+CloudFlare节点 #5'
-  - 立陶宛+V2CROSS.COM
+  - 美国+CloudFlare节点
+  - '日本+V2CROSS.COM #2'
+  - '美国+CloudFlare节点 #2'
   - US美国(v2clash.blog 2026-10.2更新
   - 'US美国(v2clash.blog 2026-10.2更新 #2'
   - 西班牙(v2clash.blog 2026-10.2更新
@@ -3945,8 +2533,9 @@ proxy-groups:
   - HK香港(v2clash.blog 2026-10.6更新
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
-  - US美国(v2clash.blog 2026-10.7更新
   - CA加拿大(v2clash.blog 2026-10.7更新
+  - US美国(v2clash.blog 2026-10.7更新
+  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
   - 'US美国(v2clash.blog 2026-10.7更新 #2'
   - US美国(v2clash.blog 2026-10.8更新
   - CA加拿大(v2clash.blog 2026-10.8更新
@@ -3965,8 +2554,10 @@ proxy-groups:
   - '阿拉伯(v2clash.blog 2026-10.9更新 #2'
   - US美国(v2clash.blog 2026-10.10更新
   - 'US美国(v2clash.blog 2026-10.10更新 #2'
+  - 'US美国(v2clash.blog 2026-10.10更新 #3'
   - 芬兰(v2clash.blog 2026-10.11更新
   - US美国(v2clash.blog 2026-10.11更新
+  - 'US美国(v2clash.blog 2026-10.11更新 #2'
   - SG新加坡(v2clash.blog 2026-10.12更新
   - US美国(v2clash.blog 2026-10.12更新
   - NL荷兰(v2clash.blog 2026-10.12更新
@@ -3990,8 +2581,11 @@ proxy-groups:
   - RU俄罗斯(v2clash.blog 2026-10.16更新
   - 南非(v2clash.blog 2026-10.16更新
   - US美国(v2clash.blog 2026-10.16更新
+  - 阿拉伯(v2clash.blog 2026-10.18更新
+  - 芬兰(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.18更新
   - 'US美国(v2clash.blog 2026-10.18更新 #2'
+  - 越南(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.19更新
 rules:
 - MATCH,PROBE
