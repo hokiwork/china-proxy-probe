@@ -3,6 +3,20 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: 黑洞加速器9641684.sdf65h4.top
+  type: vmess
+  server: 9641684.sdf65h4.top
+  port: 443
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 9641684.sdf65h4.top
+    path: /
+  servername: 9641684.sdf65h4.top
 - name: VIP永久有效
   type: vless
   server: 154.12.53.174
@@ -24,11 +38,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: wvgn.m36.hhll.vavava.kdns.fr
+  servername: i5us.obf.hhll.vavava.kdns.fr
   ws-opts:
     path: /?auto=1
     headers:
-      Host: wvgn.m36.hhll.vavava.kdns.fr
+      Host: i5us.obf.hhll.vavava.kdns.fr
 - name: 哄公益-默认使用VLESS协议
   type: vless
   server: youxuan.cf.090227.xyz
@@ -37,11 +51,11 @@ proxies:
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: wvgn.m36.hhll.vavava.kdns.fr
+  servername: i5us.obf.hhll.vavava.kdns.fr
   ws-opts:
     path: /?auto=1
     headers:
-      Host: wvgn.m36.hhll.vavava.kdns.fr
+      Host: i5us.obf.hhll.vavava.kdns.fr
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vless
   server: us22.sofast.live
@@ -1123,91 +1137,154 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 43.203.215.61
+  server: 43.200.1.27
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: apuva-kr-appsync-realtime.com
+  servername: ai.hamini.store
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 43.203.215.61
+  server: 43.200.1.27
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 43.203.215.61
+  server: 43.200.1.27
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 47.129.143.128
+  server: 56.10.64.57
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: sentimentapp.milyeat.shop
+  servername: erp.unitekpharma.com
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 47.129.143.128
+  server: 56.10.64.57
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 47.129.143.128
+  server: 56.10.64.57
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: HK - zhuhai.uk
+- name: US - zhuhai.uk 02
   type: vless
-  server: 172.67.76.230
-  port: 2083
-  uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
-  network: ws
+  server: wafjapga1.xyy123.win
+  port: 443
+  uuid: 2796f9eb-fe22-43a1-9158-13bc34972e73
+  network: tcp
   tls: true
-  client-fingerprint: firefox
-  servername: edge-fef90023.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: edge-fef90023.pages.dev
-- name: US - zhuhai.uk 11
+  client-fingerprint: edge
+  servername: intel.com
+  flow: xtls-rprx-vision
+- name: NL - zhuhai.uk
   type: vless
-  server: 199.181.197.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
+  server: app-sh-185.spbstudentlife.com
+  port: 443
+  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
+  network: tcp
+  tls: true
   client-fingerprint: chrome
-  servername: vms.lifetime19.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime19.workers.dev
-- name: US - zhuhai.uk 16
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22039
-  cipher: aes-256-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-- name: AU - zhuhai.uk
+  servername: assets-sh-185.spbstudentlife.com
+  flow: xtls-rprx-vision
+- name: US - zhuhai.uk 03
   type: vless
   server: funagfrdfs.alixxplay.com
-  port: 54528
+  port: 47672
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   network: tcp
   tls: true
   client-fingerprint: ios
-  servername: www.apple.com
+  servername: us1p1.xn--ghq880n3na965a.com
+  flow: xtls-rprx-vision
+- name: TW - zhuhai.uk
+  type: vless
+  server: 59.125.69.22
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: tse1.mm.bing.net
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: tse1.mm.bing.net
+- name: FR - zhuhai.uk
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::3
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: vmess
+  server: 101.32.8.251
+  port: 50001
+  uuid: 5706beb5-479b-475d-b557-00309327e9cc
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: US - zhuhai.uk 06
+  type: vless
+  server: saas.sin.fan
+  port: 2087
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vp4.1145678.xyz
+  ws-opts:
+    path: /blogs/go/posts
+    headers:
+      Host: vp4.1145678.xyz
+- name: US - zhuhai.uk 09
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 30892
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: safari
+  servername: us1p1.xn--ghq880n3na965a.com
+  flow: xtls-rprx-vision
+- name: TW - zhuhai.uk 02
+  type: vless
+  server: 59.125.69.23
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ty986gfazs.cainiaohub.xyz
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: US - zhuhai.uk 10
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 34379
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: random
+  servername: us1p1.xn--ghq880n3na965a.com
   flow: xtls-rprx-vision
 - name: DE - zhuhai.uk 01
   type: trojan
@@ -1216,180 +1293,164 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de7.dedushka.top
   network: tcp
-- name: US - zhuhai.uk
-  type: http
-  server: 138.199.35.209
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: AL - zhuhai.uk
-  type: http
-  server: 31.171.154.66
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: http
-  server: 138.199.35.219
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 138.199.35.219
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: http
-  server: fan.973511.xyz
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  tls: true
-  sni: 138.199.35.198
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 184.188.139.2
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
-  type: http
-  server: 138.199.35.208
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.201
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  sni: 138.199.35.201
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: http
-  server: berniesbodybla.fun
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 38.28.185.130
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 09
-  type: http
-  server: 138.199.35.216
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 138.199.35.216
-  skip-cert-verify: true
-- name: US - zhuhai.uk 10
-  type: http
-  server: 54.190.176.228
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 12
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 13
-  type: http
-  server: 38.28.193.1
-  port: 443
-  tls: true
-  sni: 38.28.193.1
-  skip-cert-verify: true
-- name: US - zhuhai.uk 14
-  type: http
-  server: 138.199.35.203
-  port: 9002
-  tls: true
-  sni: 138.199.35.203
-  skip-cert-verify: true
-- name: US - zhuhai.uk 15
-  type: http
-  server: 38.28.185.224
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: HR - zhuhai.uk
-  type: http
-  server: 154.47.29.161
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: VN - zhuhai.uk
-  type: socks5
-  server: 113.22.224.63
-  port: 1083
 - name: IE - zhuhai.uk
   type: http
   server: 18.200.158.139
   port: 443
   tls: true
   skip-cert-verify: true
+- name: US - zhuhai.uk
+  type: http
+  server: 138.199.35.201
+  port: 9002
+  tls: true
+  sni: 138.199.35.201
+  skip-cert-verify: true
+- name: AT - zhuhai.uk
+  type: http
+  server: 146.70.244.2
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: socks5
+  server: 202.4.119.226
+  port: 9090
+- name: SG - zhuhai.uk
+  type: http
+  server: 149.88.99.209
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 138.199.35.219
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: IT - zhuhai.uk
+  type: http
+  server: 94.177.163.156
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: berniesbodybla.fun
+  port: 443
+  tls: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.40
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: SE - zhuhai.uk
+  type: http
+  server: 217.210.129.243
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 08
+  type: http
+  server: 137.175.22.29
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 02
+  type: anytls
+  server: 654968169.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  udp: true
+  skip-cert-verify: true
 - name: JP - zhuhai.uk
   type: socks5
-  server: 101.36.104.239
+  server: 101.36.104.46
   port: 10808
 - name: JP - zhuhai.uk 02
   type: socks5
-  server: 217.142.236.180
-  port: 1080
+  server: 101.36.104.239
+  port: 10808
 - name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-- name: KR - zhuhai.uk 02
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22078
-  cipher: aes-256-gcm
-  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
-- name: SG - zhuhai.uk
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  tls: true
+  servername: vp6.1145678.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /courses/drama/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFtUBFMGAlJbBkpYElFeVhQDWV0SQwEWQlpGWRoNC1wYSw==
+    headers:
+      Host: vp6.1145678.xyz
+- name: VN - zhuhai.uk
   type: vless
   server: funagfrdfs.alixxplay.com
-  port: 46105
+  port: 55688
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
-  servername: www.lamer.com.sg
+  servername: bilibili-vn.biliimg.com
+  skip-cert-verify: true
   client-fingerprint: chrome
   reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-- name: SG - zhuhai.uk 02
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+- name: TH - zhuhai.uk
   type: vless
-  server: searchjappro2.xyy123.date
-  port: 443
-  uuid: 21973715-af4f-416a-9809-4a6d33b48cab
+  server: funagfrdfs.alixxplay.com
+  port: 56415
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
-  servername: blog.api.www.cloudflare.com
-  client-fingerprint: chrome
+  servername: www.kaidee.com
+  client-fingerprint: ios
   reality-opts:
-    public-key: I4sC7wO_OjKQcby3249aC1qGAmoMgHEFtRUvoLUy2yc
-    short-id: f49827
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
 - name: 美国+CloudFlare节点
+  type: vless
+  server: 104.19.45.195
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGIfp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'vless #5'
+  type: vless
+  server: 172.64.150.43
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: unsafe
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: u.srilankangrill.online
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: '美国+CloudFlare节点 #3'
   type: vless
   server: saas.sin.fan
   port: 443
@@ -1402,40 +1463,9 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 新西兰+V2CROSS.COM
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 巴西圣保罗+CloudFlare节点
+- name: 越南+V2CROSS.COM
   type: vless
-  server: 188.114.98.112
-  port: 80
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  tls: false
-  servername: elenaaaaaaaaaa.cloudns.pro.
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro.
-- name: 比利时+V2CROSS.COM
-  type: vless
-  server: 155.117.234.52
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 保加利亚+V2CROSS.COM
-  type: vless
-  server: 178.239.117.133
+  server: 103.199.19.132
   port: 8443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1446,9 +1476,28 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 波兰+V2CROSS.COM
+- name: 新西兰+V2CROSS.COM
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国加利福尼亚州洛杉矶+V2CROSS.COM
   type: vless
-  server: 141.98.41.80
+  server: 45.157.233.109
+  port: 2087
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 北美地区+V2CROSS.COM
+  type: vless
+  server: 104.152.48.248
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1459,35 +1508,31 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 英国+V2CROSS.COM
+- name: '新西兰+V2CROSS.COM #2'
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '新西兰+V2CROSS.COM #3'
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 韩国+Mogu网络科技公司
   type: vless
-  server: 31.70.89.136
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 美国+Xerox
-  type: vless
-  server: 13.140.29.45
+  server: time.salphetka.ru
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
+  uuid: 92295a0d-b610-4075-85e9-bfab09ec6f3a
+  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 日本+V2CROSS.COM
+  servername: www.unb.ca
+  flow: xtls-rprx-vision
+- name: 日本+软银网络
   type: vless
-  server: 43.174.195.1
+  server: 60.130.209.253
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -1500,6 +1545,46 @@ proxies:
       Host: snip.edgeoneai.cc.cd
 - name: 俄罗斯+V2CROSS.COM
   type: vless
+  server: ss3.soreanapanel.com
+  port: 8080
+  uuid: 22136b20-6365-4ae6-b21a-799a00ab1346
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: graphs.4cdn.de
+- name: '美国+V2CROSS.COM #2'
+  type: vless
+  server: pl1.h1cloud.net
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.samsung.com
+- name: '美国+CloudFlare节点 #4'
+  type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 加拿大+V2CROSS.COM
+  type: vless
+  server: 45.74.158.57
+  port: 2218
+  uuid: 4476ca08-bdb4-41c1-bae4-a960bdb28c19
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+- name: '俄罗斯+V2CROSS.COM #2'
+  type: vless
   server: 82.202.179.111
   port: 15443
   uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
@@ -1508,110 +1593,40 @@ proxies:
   client-fingerprint: chrome
   servername: smartcaptcha.yandexcloud.net
   flow: xtls-rprx-vision
-- name: '新西兰+V2CROSS.COM #2'
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '新西兰+V2CROSS.COM #3'
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '俄罗斯+V2CROSS.COM #2'
+- name: '美国+V2CROSS.COM #3'
   type: vless
-  server: 195.133.92.228
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  server: 144.31.34.146
+  port: 2096
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
+  client-fingerprint: firefox
+  servername: fi1.merky.one
   ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    path: /mky-ws-4f19c8a7
     headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #2'
+      Host: fi1.merky.one
+- name: 荷兰+V2CROSS.COM
+  type: vless
+  server: snow.betust.net
+  port: 443
+  uuid: 3b1fa839-2cb9-4511-9711-08800450aea3
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: api37.betust.net
+  flow: xtls-rprx-vision
+- name: '美国+CloudFlare节点 #5'
   type: trojan
-  server: 108.162.194.134
+  server: 104.18.9.83
   port: 443
   password: humanity
-  sni: www.pleadcourt.org
+  sni: www.calmlunch.com
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.pleadcourt.org
-- name: '俄罗斯+V2CROSS.COM #3'
-  type: vless
-  server: 82.202.182.42
-  port: 3443
-  uuid: 1ba0439d-384c-4a6e-9560-0439698beb2a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: smartcaptcha.yandexcloud.net
-  flow: xtls-rprx-vision
-- name: 孟加拉+V2CROSS.COM
-  type: vless
-  server: 114.129.9.132
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '美国+CloudFlare节点 #3'
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 韩国+Hanaro+Telecom
-  type: vless
-  server: 123.111.169.70
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '俄罗斯+V2CROSS.COM #4'
-  type: vless
-  server: 185.239.48.154
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: '新西兰+V2CROSS.COM #4'
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+      Host: www.calmlunch.com
 - name: US美国(v2clash.blog 2026-10.3更新
   type: vless
   server: 104.21.70.21
@@ -2128,19 +2143,6 @@ proxies:
   servername: us.australiacaregroup.site
 - name: 'US美国(v2clash.blog 2026-10.10更新 #2'
   type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.10更新 #3'
-  type: vless
   server: 128.241.25.11
   port: 30021
   uuid: c03bbba1-93ab-4781-8e8e-089cd257193f
@@ -2498,19 +2500,6 @@ proxies:
       Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.18更新
   type: vless
-  server: 172.64.150.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.18更新 #2'
-  type: vless
   server: 179.253.251.112
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
@@ -2603,6 +2592,7 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - 黑洞加速器9641684.sdf65h4.top
   - VIP永久有效
   - 哄公益-♥哄哄公益请勿滥用♥
   - 哄公益-默认使用VLESS协议
@@ -2702,56 +2692,54 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - HK - zhuhai.uk
-  - US - zhuhai.uk 11
-  - US - zhuhai.uk 16
-  - AU - zhuhai.uk
-  - DE - zhuhai.uk 01
-  - US - zhuhai.uk
-  - AL - zhuhai.uk
   - US - zhuhai.uk 02
-  - DE - zhuhai.uk
+  - NL - zhuhai.uk
   - US - zhuhai.uk 03
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
+  - TW - zhuhai.uk
+  - FR - zhuhai.uk
+  - HK - zhuhai.uk
   - US - zhuhai.uk 06
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 08
   - US - zhuhai.uk 09
+  - TW - zhuhai.uk 02
   - US - zhuhai.uk 10
-  - US - zhuhai.uk 12
-  - US - zhuhai.uk 13
-  - US - zhuhai.uk 14
-  - US - zhuhai.uk 15
-  - HR - zhuhai.uk
-  - VN - zhuhai.uk
+  - DE - zhuhai.uk 01
   - IE - zhuhai.uk
+  - US - zhuhai.uk
+  - AT - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - SG - zhuhai.uk
+  - US - zhuhai.uk 04
+  - IT - zhuhai.uk
+  - US - zhuhai.uk 05
+  - RO - zhuhai.uk
+  - SE - zhuhai.uk
+  - US - zhuhai.uk 08
+  - HK - zhuhai.uk 02
   - JP - zhuhai.uk
   - JP - zhuhai.uk 02
   - KR - zhuhai.uk
-  - KR - zhuhai.uk 02
-  - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
+  - VN - zhuhai.uk
+  - TH - zhuhai.uk
   - 美国+CloudFlare节点
+  - 'vless #5'
+  - '美国+CloudFlare节点 #2'
+  - '美国+CloudFlare节点 #3'
+  - 越南+V2CROSS.COM
   - 新西兰+V2CROSS.COM
-  - 巴西圣保罗+CloudFlare节点
-  - 比利时+V2CROSS.COM
-  - 保加利亚+V2CROSS.COM
-  - 波兰+V2CROSS.COM
-  - 英国+V2CROSS.COM
-  - 美国+Xerox
-  - 日本+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM
+  - 美国加利福尼亚州洛杉矶+V2CROSS.COM
+  - 北美地区+V2CROSS.COM
   - '新西兰+V2CROSS.COM #2'
   - '新西兰+V2CROSS.COM #3'
+  - 韩国+Mogu网络科技公司
+  - 日本+软银网络
+  - 俄罗斯+V2CROSS.COM
+  - '美国+V2CROSS.COM #2'
+  - '美国+CloudFlare节点 #4'
+  - 加拿大+V2CROSS.COM
   - '俄罗斯+V2CROSS.COM #2'
-  - '美国+CloudFlare节点 #2'
-  - '俄罗斯+V2CROSS.COM #3'
-  - 孟加拉+V2CROSS.COM
-  - '美国+CloudFlare节点 #3'
-  - 韩国+Hanaro+Telecom
-  - '俄罗斯+V2CROSS.COM #4'
-  - '新西兰+V2CROSS.COM #4'
+  - '美国+V2CROSS.COM #3'
+  - 荷兰+V2CROSS.COM
+  - '美国+CloudFlare节点 #5'
   - US美国(v2clash.blog 2026-10.3更新
   - 荷兰(v2clash.blog 2026-10.3更新
   - 俄罗斯(v2clash.blog 2026-10.3更新
@@ -2801,7 +2789,6 @@ proxy-groups:
   - '阿拉伯(v2clash.blog 2026-10.9更新 #2'
   - US美国(v2clash.blog 2026-10.10更新
   - 'US美国(v2clash.blog 2026-10.10更新 #2'
-  - 'US美国(v2clash.blog 2026-10.10更新 #3'
   - 芬兰(v2clash.blog 2026-10.11更新
   - US美国(v2clash.blog 2026-10.11更新
   - 'US美国(v2clash.blog 2026-10.11更新 #2'
@@ -2833,7 +2820,6 @@ proxy-groups:
   - 芬兰(v2clash.blog 2026-10.18更新
   - 越南(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.18更新
-  - 'US美国(v2clash.blog 2026-10.18更新 #2'
   - '越南(v2clash.blog 2026-10.18更新 #2'
   - US美国(v2clash.blog 2026-10.19更新
   - KR韩国(v2clash.blog 2026-10.20更新
