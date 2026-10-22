@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:04:30.635570+00:00",
+  "generated_at": "2026-10-22T21:28:47.839161+00:00",
   "proxies": [
     {
       "alterId": 0,
@@ -64,18 +64,6 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "MY-KualaLumpur1",
-      "network": "tcp",
-      "port": 443,
-      "server": "my2.frnhk.xyz",
-      "servername": "www.waseda.jp",
-      "tls": true,
-      "type": "vless",
-      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
       "name": "HK-HongKong",
       "network": "tcp",
       "port": 443,
@@ -84,6 +72,66 @@
       "tls": true,
       "type": "vless",
       "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa"
+    },
+    {
+      "name": "UK-London-1",
+      "network": "ws",
+      "port": 46001,
+      "server": "forwarded.frnhk.xyz",
+      "tls": false,
+      "type": "vless",
+      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/uk1023"
+      }
+    },
+    {
+      "name": "USA-Dallas-1",
+      "network": "ws",
+      "port": 46002,
+      "server": "forwarded.frnhk.xyz",
+      "tls": false,
+      "type": "vless",
+      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/usa1023"
+      }
+    },
+    {
+      "name": "MY-KualaLumpur1",
+      "network": "ws",
+      "port": 46003,
+      "server": "forwarded.frnhk.xyz",
+      "tls": false,
+      "type": "vless",
+      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/my1023"
+      }
+    },
+    {
+      "name": "AUS-Australia-1",
+      "network": "ws",
+      "port": 46004,
+      "server": "forwarded.frnhk.xyz",
+      "tls": false,
+      "type": "vless",
+      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/aus1023"
+      }
     },
     {
       "name": "🇹🇷_TR_土耳其",
@@ -1493,14 +1541,81 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "VN - zhuhai.uk",
+      "name": "SG - zhuhai.uk",
       "network": "tcp",
-      "port": 55688,
+      "port": 46105,
       "server": "funagfrdfs.alixxplay.com",
-      "servername": "bilibili-vn.biliimg.com",
+      "servername": "www.lamer.com.sg",
       "tls": true,
       "type": "vless",
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "US - zhuhai.uk 03",
+      "network": "ws",
+      "port": 443,
+      "server": "saas.sin.fan",
+      "servername": "vp7.1145678.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "5d7b401c-78fa-4254-872e-6d42bf7e75ec",
+      "ws-opts": {
+        "headers": {
+          "Host": "vp7.1145678.xyz"
+        },
+        "path": "/images"
+      }
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "IT - zhuhai.uk",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "port": 19999,
+      "server": "202.50.253.45",
+      "type": "ss"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "TW - zhuhai.uk 02",
+      "network": "ws",
+      "port": 443,
+      "server": "59.125.69.23",
+      "servername": "ty986gfazs.cainiaohub.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "ws-opts": {
+        "headers": {
+          "Host": "ty986gfazs.cainiaohub.xyz"
+        },
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      }
+    },
+    {
+      "client-fingerprint": "firefox",
+      "name": "FI - zhuhai.uk",
+      "network": "ws",
+      "port": 2096,
+      "server": "144.31.34.146",
+      "servername": "fi1.merky.one",
+      "tls": true,
+      "type": "vless",
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "ws-opts": {
+        "headers": {
+          "Host": "fi1.merky.one"
+        },
+        "path": "/mky-ws-4f19c8a7"
+      }
+    },
+    {
+      "cipher": "aes-256-gcm",
+      "name": "IT - zhuhai.uk 02",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "port": 19999,
+      "server": "202.50.253.99",
+      "type": "ss"
     },
     {
       "client-fingerprint": "qq",
@@ -1515,15 +1630,79 @@
       "uuid": "b8f083b6-ae01-431f-9b41-9e2eb96f352b"
     },
     {
-      "name": "US - zhuhai.uk",
+      "name": "DE - zhuhai.uk",
+      "password": "e4b72b531a2d10900519",
       "port": 443,
-      "server": "137.175.22.120",
+      "server": "167.172.172.190",
       "skip-cert-verify": true,
+      "sni": "a7acacbe.acsnet.co",
+      "tls": true,
+      "type": "http",
+      "username": "testuser1"
+    },
+    {
+      "name": "US - zhuhai.uk",
+      "port": 9002,
+      "server": "138.199.35.196",
+      "skip-cert-verify": true,
+      "sni": "138.199.35.196",
       "tls": true,
       "type": "http"
     },
     {
       "name": "US - zhuhai.uk 02",
+      "port": 9002,
+      "server": "138.199.35.214",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "US - zhuhai.uk 03 #2",
+      "port": 9002,
+      "server": "138.199.35.209",
+      "skip-cert-verify": true,
+      "sni": "138.199.35.209",
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "RO - zhuhai.uk",
+      "password": "null",
+      "port": 9002,
+      "server": "193.176.84.23",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http",
+      "username": "null"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "NL - zhuhai.uk",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "rM3p4mL72kcpvnxVRYxl5J0zPbxE2U3iZua0F29SHTQ",
+        "short-id": "8d942904d3e87323"
+      },
+      "server": "app-sh-185.spbstudentlife.com",
+      "servername": "assets-sh-185.spbstudentlife.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "074690f9-cb30-44f5-84e5-f3ce8fc6cf29"
+    },
+    {
+      "name": "US - zhuhai.uk 04",
+      "password": "null",
+      "port": 9002,
+      "server": "138.199.35.196",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http",
+      "username": "null"
+    },
+    {
+      "name": "US - zhuhai.uk 05",
       "port": 9002,
       "server": "138.199.35.198",
       "skip-cert-verify": true,
@@ -1531,49 +1710,33 @@
       "type": "http"
     },
     {
-      "name": "NL - zhuhai.uk",
-      "port": 19362,
-      "server": "51.159.225.197",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "SG - zhuhai.uk",
-      "password": "8888",
-      "port": 1080,
-      "server": "47.236.168.243",
-      "type": "socks5",
-      "username": "8888"
-    },
-    {
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
       "name": "JP - zhuhai.uk",
+      "port": 52804,
+      "reality-opts": {
+        "public-key": "cCwvNI8D-LX-kLH1IDuBZwnKkkyMPJm_0sJXsxz-_mA",
+        "short-id": "68c4f6b0"
+      },
+      "server": "pyygg0769.sys-metric-report.com",
+      "servername": "japp.cfastcdn.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "uuid": "2c8c4c3b-4616-400c-a2d4-f3669ea18fe9"
+    },
+    {
+      "name": "US - zhuhai.uk 06",
       "port": 443,
-      "server": "fan.587475.xyz",
+      "server": "jgwynphotoarts.pro",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "RO - zhuhai.uk",
+      "name": "US - zhuhai.uk 07",
       "port": 9002,
-      "server": "193.176.84.26",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "US - zhuhai.uk 03",
-      "port": 443,
-      "server": "fan.596189.xyz",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "HK - zhuhai.uk",
-      "port": 10007,
-      "server": "118.25.131.160",
+      "server": "138.199.35.201",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
@@ -1581,58 +1744,23 @@
     {
       "name": "RO - zhuhai.uk 02",
       "port": 9002,
-      "server": "193.176.84.17",
+      "server": "193.176.84.29",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "US - zhuhai.uk 04",
-      "port": 9002,
-      "server": "138.199.35.213",
+      "name": "US - zhuhai.uk 08",
+      "port": 8443,
+      "server": "44.217.145.28",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "JP - zhuhai.uk 02",
-      "password": "null",
+      "name": "IE - zhuhai.uk",
       "port": 443,
-      "server": "fan.571589.xyz",
-      "skip-cert-verify": true,
-      "sni": "fan.571589.xyz",
-      "tls": true,
-      "type": "http",
-      "username": "null"
-    },
-    {
-      "name": "RO - zhuhai.uk 03",
-      "port": 9002,
-      "server": "193.176.84.23",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "US - zhuhai.uk 05",
-      "port": 443,
-      "server": "23.133.176.14",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "PT - zhuhai.uk",
-      "port": 443,
-      "server": "149.22.86.1",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "NL - zhuhai.uk 02",
-      "port": 9002,
-      "server": "84.17.47.148",
+      "server": "34.249.214.108",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
@@ -1640,13 +1768,77 @@
     {
       "name": "GB - zhuhai.uk",
       "port": 443,
-      "server": "84.17.50.193",
+      "server": "37.120.233.34",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "RO - zhuhai.uk 04",
+      "name": "US - zhuhai.uk 09",
+      "port": 443,
+      "server": "voteshirleysew.club",
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "US - zhuhai.uk 10",
+      "port": 9002,
+      "server": "138.199.35.200",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "JP - zhuhai.uk 02",
+      "port": 443,
+      "server": "fan.571589.xyz",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http",
+      "username": "bnVsbDpudWxs"
+    },
+    {
+      "name": "US - zhuhai.uk 11",
+      "password": "null",
+      "port": 443,
+      "server": "jgwynphotoarts.pro",
+      "tls": true,
+      "type": "http",
+      "username": "null"
+    },
+    {
+      "name": "US - zhuhai.uk 12",
+      "port": 8443,
+      "server": "54.190.176.228",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "US - zhuhai.uk 13",
+      "port": 443,
+      "server": "mmgr.club",
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "DE - zhuhai.uk 02",
+      "port": 443,
+      "server": "217.92.132.233",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "NL - zhuhai.uk 02",
+      "port": 443,
+      "server": "185.93.106.214",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "RO - zhuhai.uk 03",
       "port": 9002,
       "server": "193.176.84.34",
       "skip-cert-verify": true,
@@ -1655,42 +1847,70 @@
       "type": "http"
     },
     {
-      "name": "RO - zhuhai.uk 05",
-      "port": 9002,
-      "server": "193.176.84.37",
-      "skip-cert-verify": true,
-      "sni": "www.bing.com",
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "US - zhuhai.uk 06",
-      "port": 8443,
-      "server": "44.229.69.166",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "http"
-    },
-    {
-      "name": "IT - zhuhai.uk",
-      "port": 1088,
-      "server": "212.77.75.25",
+      "name": "HK - zhuhai.uk",
+      "port": 10808,
+      "server": "123.58.219.171",
       "type": "socks5"
     },
     {
-      "name": "NL - zhuhai.uk 03",
-      "port": 9002,
-      "server": "84.17.47.146",
-      "skip-cert-verify": true,
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "HK - zhuhai.uk 02",
+      "port": 9443,
+      "reality-opts": {
+        "public-key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
+        "short-id": "b390142456517acc"
+      },
+      "server": "45.207.157.8",
+      "servername": "www.amazon.com",
       "tls": true,
-      "type": "http"
+      "type": "vless",
+      "uuid": "82eb8419-59f4-4d3e-9106-d05d22af615c"
     },
     {
       "name": "KR - zhuhai.uk",
       "port": 1090,
       "server": "121.169.46.116",
+      "type": "socks5"
+    },
+    {
+      "name": "SG - zhuhai.uk #2",
+      "password": "8888",
+      "port": 1080,
+      "server": "47.236.168.243",
       "type": "socks5",
-      "username": "T2clM0QlM0Q6"
+      "username": "8888"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "VN - zhuhai.uk",
+      "port": 55688,
+      "reality-opts": {
+        "public-key": "KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw",
+        "short-id": "a46bb5972cf50671"
+      },
+      "server": "funagfrdfs.alixxplay.com",
+      "servername": "bilibili-vn.biliimg.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
+    },
+    {
+      "client-fingerprint": "ios",
+      "flow": "xtls-rprx-vision",
+      "name": "TH - zhuhai.uk",
+      "port": 56415,
+      "reality-opts": {
+        "public-key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
+        "short-id": "cbd39bea0805e2"
+      },
+      "server": "funagfrdfs.alixxplay.com",
+      "servername": "www.kaidee.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
     },
     {
       "name": "TW - zhuhai.uk",
@@ -1703,7 +1923,7 @@
       "udp": true
     },
     {
-      "name": "US - zhuhai.uk 07",
+      "name": "US - zhuhai.uk 14",
       "password": "0324fbc29561",
       "port": 443,
       "server": "98416548.df6h451rh.xin",
@@ -1713,27 +1933,22 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "亚太地区+V2CROSS.COM",
-      "network": "ws",
+      "flow": "xtls-rprx-vision",
+      "name": "爱尔兰+V2CROSS.COM",
+      "network": "tcp",
       "port": 443,
-      "server": "103.161.178.205",
-      "servername": "snip.edgeoneai.cc.cd",
+      "server": "78.17.178.125",
+      "servername": "cdn.tbank.ru",
       "tls": true,
       "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
-      }
+      "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03"
     },
     {
       "client-fingerprint": "chrome",
-      "name": "澳大利亚+V2CROSS.COM",
+      "name": "美国+Xerox",
       "network": "ws",
       "port": 443,
-      "server": "203.88.117.227",
+      "server": "13.140.29.45",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1747,10 +1962,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "波兰+V2CROSS.COM",
+      "name": "美国+CloudFlare节点",
       "network": "ws",
       "port": 443,
-      "server": "141.98.41.20",
+      "server": "104.18.33.121",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1759,7 +1974,58 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "fp=unsafe"
+        "path": "/fp=chrome"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+CloudFlare节点 #2",
+      "network": "ws",
+      "port": 443,
+      "server": "162.159.130.234",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "日本+V2CROSS.COM",
+      "network": "ws",
+      "port": 443,
+      "server": "43.174.195.1",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "美国+V2CROSS.COM #2",
+      "network": "ws",
+      "port": 8443,
+      "server": "144.31.181.177",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/"
       }
     },
     {
@@ -1781,10 +2047,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点",
+      "name": "俄罗斯+V2CROSS.COM",
       "network": "ws",
       "port": 443,
-      "server": "saas.sin.fan",
+      "server": "194.55.166.65",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1793,15 +2059,32 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome"
+        "path": "/"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "name": "美国加利福尼亚州洛杉矶+Zenlayer",
+      "name": "英国+V2CROSS.COM",
+      "network": "ws",
+      "port": 8443,
+      "server": "2.28.42.209",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "澳大利亚+V2CROSS.COM",
       "network": "ws",
       "port": 443,
-      "server": "128.1.186.61",
+      "server": "117.55.232.3",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1811,6 +2094,23 @@
           "Host": "snip.edgeoneai.cc.cd"
         },
         "path": "/fp=chrome"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "亚太地区+V2CROSS.COM",
+      "network": "ws",
+      "port": 443,
+      "server": "103.161.179.171",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/"
       }
     },
     {
@@ -1818,7 +2118,7 @@
       "name": "乌克兰+V2CROSS.COM",
       "network": "ws",
       "port": 443,
-      "server": "213.111.177.107",
+      "server": "185.230.44.140",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1827,44 +2127,72 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "/fp=chrome"
+        "path": "/"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "name": "法国+V2CROSS.COM",
+      "name": "美国+V2CROSS.COM #3",
+      "network": "ws",
+      "port": 443,
+      "server": "162.35.127.65",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+北卡罗来纳(美国邮政局",
+      "network": "tcp",
+      "port": 34379,
+      "server": "funagfrdfs.alixxplay.com",
+      "servername": "us1p1.xn--ghq880n3na965a.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "Telegram---bored_vpn&host=snip.edgeoneai.cc.cd&packetEncoding=xudp&alpn=http/1.1&sni=snip.edgeoneai.cc.cd&fp=chrome#美国+C",
+      "network": "ws",
+      "port": 443,
+      "server": "www.speedtest.net",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": ""
+        },
+        "path": "/fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "美国+北卡罗来纳(美国邮政局 #2",
+      "network": "tcp",
+      "port": 30892,
+      "server": "funagfrdfs.alixxplay.com",
+      "servername": "us1p1.xn--ghq880n3na965a.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "北美地区+V2CROSS.COM",
       "network": "ws",
       "port": 8443,
-      "server": "139.100.226.187",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "巴西+V2CROSS.COM #2",
-      "network": "tcp",
-      "port": 443,
-      "server": "se1.hys.braidx.tech",
-      "servername": "cdn.jsdelivr.net",
-      "tls": true,
-      "type": "vless",
-      "uuid": "e7a4decb-631e-422b-9749-7e8f54618308"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "亚太地区+V2CROSS.COM #2",
-      "network": "ws",
-      "port": 443,
-      "server": "103.161.179.36",
+      "server": "104.245.245.16",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1878,27 +2206,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "尼泊尔+V2CROSS.COM",
+      "name": "澳大利亚+V2CROSS.COM #2",
       "network": "ws",
       "port": 443,
-      "server": "103.38.236.248",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "美国+CloudFlare节点 #2",
-      "network": "ws",
-      "port": 443,
-      "server": "172.64.150.43",
+      "server": "203.88.117.190",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -1909,60 +2220,6 @@
         },
         "path": "/"
       }
-    },
-    {
-      "cipher": "aes-256-gcm",
-      "name": "新西兰+V2CROSS.COM #2",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.90",
-      "type": "ss"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "波兰+V2CROSS.COM #2",
-      "network": "ws",
-      "port": 443,
-      "server": "141.98.41.80",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fp=chrome"
-      }
-    },
-    {
-      "client-fingerprint": "firefox",
-      "name": "美国+V2CROSS.COM #2",
-      "network": "ws",
-      "port": 2096,
-      "server": "144.31.34.146",
-      "servername": "fi1.merky.one",
-      "tls": true,
-      "type": "vless",
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "ws-opts": {
-        "headers": {
-          "Host": "fi1.merky.one"
-        },
-        "path": "/mky-ws-4f19c8a7"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "英国+V2CROSS.COM",
-      "network": "tcp",
-      "port": 443,
-      "server": "2.26.254.102",
-      "servername": "rr.remnahoysry.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "07104d25-afc5-4b3b-a871-c729c57de047"
     },
     {
       "client-fingerprint": "chrome",
@@ -1983,27 +2240,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "美国+V2CROSS.COM #3",
-      "network": "ws",
-      "port": 443,
-      "server": "104.194.140.26",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fp=chrome"
-      }
-    },
-    {
-      "client-fingerprint": "unsafe",
       "name": "英国+V2CROSS.COM #2",
       "network": "ws",
       "port": 443,
-      "server": "31.77.126.2",
+      "server": "193.36.95.34",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -2012,16 +2252,8 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "/fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560"
+        "path": "/"
       }
-    },
-    {
-      "cipher": "aes-256-gcm",
-      "name": "新西兰+V2CROSS.COM #3",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.63",
-      "type": "ss"
     },
     {
       "client-fingerprint": "chrome",
@@ -2318,6 +2550,23 @@
     },
     {
       "client-fingerprint": "chrome",
+      "name": "CA加拿大(v2clash.blog 2026-10.7更新",
+      "network": "ws",
+      "port": 443,
+      "server": "saas.sin.fan",
+      "servername": "snip.edgeoneai.cc.cd",
+      "tls": true,
+      "type": "vless",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "ws-opts": {
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        },
+        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
       "name": "US美国(v2clash.blog 2026-10.7更新",
       "network": "ws",
       "port": 8880,
@@ -2334,7 +2583,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "CA加拿大(v2clash.blog 2026-10.7更新",
+      "name": "CA加拿大(v2clash.blog 2026-10.7更新 #2",
       "network": "ws",
       "port": 2083,
       "server": "172.66.0.230",
@@ -2630,26 +2879,9 @@
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "US美国(v2clash.blog 2026-10.11更新",
-      "network": "ws",
-      "port": 443,
-      "server": "162.159.130.234",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560"
-      }
-    },
-    {
       "client-fingerprint": "firefox",
       "flow": "xtls-rprx-vision",
-      "name": "US美国(v2clash.blog 2026-10.11更新 #2",
+      "name": "US美国(v2clash.blog 2026-10.11更新",
       "network": "tcp",
       "port": 10829,
       "server": "185.119.19.105",
@@ -3053,10 +3285,10 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "越南(v2clash.blog 2026-10.18更新",
+      "name": "US美国(v2clash.blog 2026-10.18更新",
       "network": "ws",
       "port": 443,
-      "server": "103.161.179.171",
+      "server": "172.64.150.43",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -3065,12 +3297,12 @@
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
         },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443"
+        "path": "/fp=unsafe"
       }
     },
     {
       "client-fingerprint": "chrome",
-      "name": "US美国(v2clash.blog 2026-10.18更新",
+      "name": "US美国(v2clash.blog 2026-10.18更新 #2",
       "network": "ws",
       "port": 443,
       "server": "179.253.251.112",
@@ -3087,7 +3319,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "越南(v2clash.blog 2026-10.18更新 #2",
+      "name": "越南(v2clash.blog 2026-10.18更新",
       "network": "ws",
       "port": 443,
       "server": "103.161.178.215",
@@ -3156,42 +3388,8 @@
       "client-fingerprint": "chrome",
       "name": "DE德国(v2clash.blog 2026-10.20更新",
       "network": "ws",
-      "port": 8443,
-      "server": "2.28.42.209",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "DE德国(v2clash.blog 2026-10.20更新 #2",
-      "network": "ws",
       "port": 443,
       "server": "152.53.197.166",
-      "servername": "snip.edgeoneai.cc.cd",
-      "tls": true,
-      "type": "vless",
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "ws-opts": {
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "DE德国(v2clash.blog 2026-10.22更新",
-      "network": "ws",
-      "port": 8443,
-      "server": "144.31.181.177",
       "servername": "snip.edgeoneai.cc.cd",
       "tls": true,
       "type": "vless",
@@ -3255,18 +3453,6 @@
       }
     },
     {
-      "client-fingerprint": "safari",
-      "flow": "xtls-rprx-vision",
-      "name": "JP日本(v2clash.blog 2026-10.22更新",
-      "network": "tcp",
-      "port": 46105,
-      "server": "funagfrdfs.alixxplay.com",
-      "servername": "www.lamer.com.sg",
-      "tls": true,
-      "type": "vless",
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    },
-    {
       "client-fingerprint": "chrome",
       "name": "US美国(v2clash.blog 2026-10.22更新 #3",
       "network": "ws",
@@ -3303,5 +3489,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 234
+  "total": 247
 }
