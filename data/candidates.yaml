@@ -20,6 +20,30 @@ proxies:
   client-fingerprint: chrome
   servername: updates.cdn-apple.com
   flow: xtls-rprx-vision
+- name: 🇸🇬 ⚠️订阅已失效,请重新获取
+  server: 0.0.0.0
+  port: 1
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: 🇸🇬 每日更新
+  server: 0.0.0.0
+  port: 2
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: 电报频道:@clashv8
+  server: 0.0.0.0
+  port: 3
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: 聊天群:@zmxoox
+  server: 0.0.0.0
+  port: 4
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
 - name: 🇯🇵_JP_日本
   type: vmess
   server: oc.imfun.fun
@@ -909,97 +933,6 @@ proxies:
   up: 50 Mbps
   down: 50 Mbps
   udp: true
-- name: 阿富汗+V2CROSS.COM
-  type: vless
-  server: pa6r26.eu-cdn539.com
-  port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: zsde.eu-cdn294.com
-  flow: xtls-rprx-vision
-- name: 土耳其+V2CROSS.COM
-  type: hysteria2
-  server: rb.mangshe.xyz
-  port: 2060
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 美国+纽约州纽约BuyVM
-  type: vless
-  server: 198.98.48.110
-  port: 57233
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u8fad5a44s552.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: 美国+V2CROSS.COM
-  type: hysteria2
-  server: 129.159.156.109
-  port: 50160
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 美国+FDC芝加哥机房
-  type: vless
-  server: 50.7.211.242
-  port: 443
-  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: xn--80afqehspga.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
-  flow: xtls-rprx-vision
-- name: '美国+FDC芝加哥机房 #2'
-  type: vless
-  server: 50.7.191.27
-  port: 443
-  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: xn--80aqafkhej.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
-  flow: xtls-rprx-vision
-- name: 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  type: vless
-  server: s490.kukuss.top
-  port: 33414
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u5cabc3b2s489.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: 巴西+V2CROSS.COM
-  type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  network: tcp
-  tls: true
-  client-fingerprint: randomized
-  servername: de2.srv.vbuste.ru
-  flow: xtls-rprx-vision
-- name: '阿富汗+V2CROSS.COM #2'
-  type: vless
-  server: 103.244.145.138
-  port: 443
-  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: zsde.eu-cdn294.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵JP_44|370KB/s|C002-260622 01vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&encrypt
-  type: hysteria2
-  server: vp3.yysyy.online
-  port: 443
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
 - name: 未知 SS-01 | free-nodes
   type: ss
   server: 192.0.2.1
@@ -1127,6 +1060,2457 @@ proxies:
   client-fingerprint: firefox
   servername: u695098u54d73951s298.kukuss.top
   flow: xtls-rprx-vision
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: '美国+CloudFlare节点 #2'
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 185.179.190.170
+  port: 59222
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  network: grpc
+  tls: true
+  client-fingerprint: chrome
+  servername: tbank.ru
+- name: 乌克兰+V2CROSS.COM
+  type: trojan
+  server: 82.117.245.125
+  port: 2053
+  password: humanity
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 巴西+V2CROSS.COM
+  type: vless
+  server: 201.51.8.163
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: atk.vkusnews.com
+  flow: xtls-rprx-vision
+- name: '乌克兰+V2CROSS.COM #2'
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  network: ws
+  tls: true
+  client-fingerprint: firefox
+  servername: santehdv.site
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
+- name: end-gfw-sg33-VLESS
+  type: vless
+  server: 13.212.58.201
+  port: 2087
+  uuid: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: blocknexus.io
+  flow: xtls-rprx-vision
+- name: end-gfw-kr3-VLESS
+  type: vless
+  server: 43.201.148.241
+  port: 2087
+  uuid: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: test.futurechosun.com
+  flow: xtls-rprx-vision
+- name: US美国(mibei77.com 米贝节点分享
+  type: vless
+  server: 68.64.178.52
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 207.57.133.165
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: JP日本(mibei77.com 米贝节点分享
+  type: vless
+  server: 45.8.173.115
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: HK香港(mibei77.com 米贝节点分享
+  type: vless
+  server: 45.136.14.153
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 69.8.128.249
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 207.57.132.76
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 172.104.77.231
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 56656
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: cdn-dynmedia-1.microsoft.com
+  flow: xtls-rprx-vision
+- name: 'JP日本(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 161.33.192.73
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 178.239.117.133
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 54.64.190.109
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: 35.74.79.196
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: 60.130.209.253
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 'US美国(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: SG新加坡(mibei77.com 米贝节点分享
+  type: vless
+  server: 216.195.195.205
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #10'
+  type: vless
+  server: 212.135.212.211
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #11'
+  type: vless
+  server: 38.47.52.252
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #12'
+  type: vless
+  server: 101.142.129.72
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kv.074167.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 103.149.46.74
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 'HK香港(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 103.101.0.73
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 56.10.33.77
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 103.97.200.42
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: KR韩国(mibei77.com 米贝节点分享
+  type: vless
+  server: 52.79.188.223
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #13'
+  type: vless
+  server: 131.143.215.37
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 43.202.32.50
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 168.107.36.135
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: DE德国(mibei77.com 米贝节点分享
+  type: vless
+  server: jrnkkm.de5.net
+  port: 8443
+  uuid: 19b0841d-9166-43bf-87d9-3e501a3ee707
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jrnkkm.de5.net
+  ws-opts:
+    path: /ws
+    headers:
+      Host: jrnkkm.de5.net
+- name: 'KR韩国(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 123.111.169.70
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #14'
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: safari
+  servername: www.lamer.com.sg
+  flow: xtls-rprx-vision
+- name: FR法国(mibei77.com 米贝节点分享
+  type: vless
+  server: 57.131.153.153
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 141.164.34.193
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 2.28.42.209
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 178.105.113.205
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 178.105.215.151
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'FR法国(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 104.252.30.35
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 141.164.35.4
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 188.245.191.19
+  port: 2040
+  uuid: bdd897a6-57f2-4311-835f-0b6c5ac5a1a2
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+- name: 'DE德国(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 5.75.195.83
+  port: 56879
+  uuid: 7b0f8733-03cc-472b-9c50-ed159b48ef59
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 保加利亚(mibei77.com 米贝节点分享
+  type: vless
+  server: 13.140.29.253
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 103.13.211.236
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: 155.254.35.156
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 85.121.245.104
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+- name: 'US美国(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: 179.255.107.60
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: 208.68.180.204
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #10'
+  type: vless
+  server: 162.159.130.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #11'
+  type: vless
+  server: 131.143.180.190
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: 152.53.197.166
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 168.107.16.68
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #12'
+  type: vless
+  server: 179.253.250.237
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #13'
+  type: vless
+  server: 154.17.6.42
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '保加利亚(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 104.152.48.248
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #14'
+  type: vless
+  server: 216.24.57.1
+  port: 443
+  uuid: 974c2588-c1cd-43ac-8823-ce3d879b09fd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: somersby.pt.ex33r.eu.cc
+  ws-opts:
+    path: /id-amz
+    headers:
+      Host: somersby.pt.ex33r.eu.cc
+- name: GB英国(mibei77.com 米贝节点分享
+  type: vless
+  server: 104.194.140.26
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #10'
+  type: vless
+  server: 155.117.234.52
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #15'
+  type: vless
+  server: 179.255.107.28
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #16'
+  type: vless
+  server: 23.227.39.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime17.workers.dev
+- name: 'US美国(mibei77.com 米贝节点分享 #17'
+  type: vless
+  server: 179.253.247.47
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #18'
+  type: vless
+  server: 179.255.99.95
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #19'
+  type: vless
+  server: 179.255.106.248
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: RU俄罗斯(mibei77.com 米贝节点分享
+  type: vless
+  server: randomquaint.net
+  port: 2053
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: randomquaint.net
+- name: 'US美国(mibei77.com 米贝节点分享 #20'
+  type: vless
+  server: 78.159.246.179
+  port: 2053
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: randomquaint.net
+- name: 'DE德国(mibei77.com 米贝节点分享 #11'
+  type: vless
+  server: 89.127.210.245
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #12'
+  type: vless
+  server: 45.95.0.43
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #13'
+  type: vless
+  server: 77.91.66.41
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 瑞士(mibei77.com 米贝节点分享
+  type: vless
+  server: 138.124.36.67
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #14'
+  type: vless
+  server: 31.70.89.136
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #15'
+  type: vless
+  server: 93.127.223.238
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: 146.56.151.92
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #21'
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #22'
+  type: vless
+  server: 179.255.99.57
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #23'
+  type: vless
+  server: 154.12.52.153
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: 193.122.115.184
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'KR韩国(mibei77.com 米贝节点分享 #10'
+  type: vless
+  server: 146.56.188.74
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 马来西亚(mibei77.com 米贝节点分享
+  type: vless
+  server: 143.246.223.110
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #24'
+  type: vless
+  server: 179.255.107.216
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '保加利亚(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 13.140.29.45
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'RU俄罗斯(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 139.100.226.187
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #25'
+  type: vless
+  server: 172.64.150.43
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #16'
+  type: vless
+  server: 144.31.181.177
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #26'
+  type: vless
+  server: 207.246.105.197
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #27'
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /fdipfp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #28'
+  type: vless
+  server: 141.98.41.80
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: FI芬兰(mibei77.com 米贝节点分享
+  type: vless
+  server: 109.122.194.61
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '马来西亚(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 154.46.31.118
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #29'
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
+    headers:
+      Host: lucasjow.us.ci
+- name: 'US美国(mibei77.com 米贝节点分享 #30'
+  type: vless
+  server: 173.249.207.192
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '马来西亚(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 216.173.67.144
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #31'
+  type: vless
+  server: swself2.yandex-api.com
+  port: 443
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  network: tcp
+  tls: true
+  client-fingerprint: random
+  servername: swself2.yandex-api.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #32'
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: 越南(mibei77.com 米贝节点分享
+  type: vless
+  server: 103.161.179.171
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #33'
+  type: vless
+  server: 104.19.45.195
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGIfp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #34'
+  type: vless
+  server: 104.248.68.179
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 103.39.78.118
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 104.17.148.22
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #35'
+  type: vless
+  server: 203.88.117.190
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #36'
+  type: vless
+  server: 154.21.197.32
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 216.23.93.27
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: VN越南(mibei77.com 米贝节点分享
+  type: vless
+  server: 103.161.178.205
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '马来西亚(mibei77.com 米贝节点分享 #4'
+  type: vless
+  server: 136.0.254.132
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'JP日本(mibei77.com 米贝节点分享 #15'
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 47672
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: ios
+  servername: us1p1.xn--ghq880n3na965a.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #37'
+  type: vless
+  server: 159.54.172.104
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #38'
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 'JP日本(mibei77.com 米贝节点分享 #16'
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 34379
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: us1p1.xn--ghq880n3na965a.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #39'
+  type: vless
+  server: 66.42.97.131
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #40'
+  type: vless
+  server: 203.88.117.227
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #17'
+  type: vless
+  server: 178.105.133.160
+  port: 4443
+  uuid: fb0818b3-4031-4843-b5f7-1d75177a1758
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 'GB英国(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 109.120.186.137
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #41'
+  type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime19.workers.dev
+- name: 葡萄牙(mibei77.com 米贝节点分享
+  type: vless
+  server: 195.133.92.228
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '葡萄牙(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 195.133.92.20
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 爱沙尼亚(mibei77.com 米贝节点分享
+  type: vless
+  server: 114.129.9.132
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'HK香港(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: epam.com
+  port: 443
+  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: wallweb-4r0.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4r0.pages.dev
+- name: 'US美国(mibei77.com 米贝节点分享 #42'
+  type: vless
+  server: 45.61.149.205
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #43'
+  type: vless
+  server: 141.148.186.22
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #7'
+  type: vless
+  server: 185.115.207.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #8'
+  type: vless
+  server: 168.107.90.137
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #44'
+  type: vless
+  server: 193.108.112.65
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: 138.2.66.236
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 意大利(mibei77.com 米贝节点分享
+  type: vless
+  server: 149.154.157.213
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: IN印度(mibei77.com 米贝节点分享
+  type: vless
+  server: 13.233.229.128
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #10'
+  type: vless
+  server: 94.237.65.232
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #11'
+  type: vless
+  server: 207.148.123.149
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 土耳其(mibei77.com 米贝节点分享
+  type: vless
+  server: 45.74.158.57
+  port: 2218
+  uuid: 4476ca08-bdb4-41c1-bae4-a960bdb28c19
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+- name: 'US美国(mibei77.com 米贝节点分享 #45'
+  type: vless
+  server: 141.98.41.20
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 约旦(mibei77.com 米贝节点分享
+  type: vless
+  server: 62.72.163.108
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'FR法国(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: dey.lnmarketplace.net
+- name: 'HK香港(mibei77.com 米贝节点分享 #9'
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: dey.lnmarketplace.net
+- name: '马来西亚(mibei77.com 米贝节点分享 #5'
+  type: vless
+  server: 72.60.235.49
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #46'
+  type: vless
+  server: 212.134.252.249
+  port: 15407
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #47'
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  servername: 185.148.104.30
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: 'US美国(mibei77.com 米贝节点分享 #48'
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #18'
+  type: vless
+  server: 94.159.100.154
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #19'
+  type: vless
+  server: 62.133.60.134
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #49'
+  type: vless
+  server: 94.183.184.239
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 埃及(mibei77.com 米贝节点分享
+  type: vless
+  server: 38.54.59.70
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #20'
+  type: vless
+  server: 165.227.161.20
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: fp=unsafe
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #21'
+  type: vless
+  server: 165.245.214.107
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #22'
+  type: vless
+  server: 206.189.56.164
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 塞浦路斯(mibei77.com 米贝节点分享
+  type: vless
+  server: 194.55.166.65
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: NL荷兰(mibei77.com 米贝节点分享
+  type: vless
+  server: 194.93.61.143
+  port: 443
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  network: tcp
+  tls: true
+  client-fingerprint: edge
+  servername: nl10.lazeroe.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #50'
+  type: vless
+  server: 78.159.246.179
+  port: 8443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: randomquaint.net
+- name: 'GB英国(mibei77.com 米贝节点分享 #3'
+  type: vless
+  server: 195.133.17.250
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #23'
+  type: vless
+  server: 45.134.38.133
+  port: 2053
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #24'
+  type: vless
+  server: ge-s-1.pythonmakemigreat.wiki
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: ge-s-1.pythonmakemigreat.wiki
+  flow: xtls-rprx-vision
+- name: 'DE德国(mibei77.com 米贝节点分享 #25'
+  type: vless
+  server: 185.230.44.140
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: '马来西亚(mibei77.com 米贝节点分享 #6'
+  type: vless
+  server: 187.52.127.204
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 爱尔兰(mibei77.com 米贝节点分享
+  type: vless
+  server: 166.1.221.39
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #26'
+  type: vless
+  server: 78.17.178.125
+  port: 443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: cdn.tbank.ru
+  flow: xtls-rprx-vision
+- name: TW台湾(mibei77.com 米贝节点分享
+  type: vless
+  server: 152.32.167.33
+  port: 443
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: 'US美国(mibei77.com 米贝节点分享 #51'
+  type: vless
+  server: 185.92.182.106
+  port: 2083
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 丹麦(mibei77.com 米贝节点分享
+  type: vless
+  server: 193.180.208.167
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #27'
+  type: vless
+  server: 159.195.45.210
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'DE德国(mibei77.com 米贝节点分享 #28'
+  type: vless
+  server: 152.53.127.16
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: PL波兰(mibei77.com 米贝节点分享
+  type: vless
+  server: 104.245.245.16
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'VN越南(mibei77.com 米贝节点分享 #2'
+  type: vless
+  server: 103.199.19.132
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(mibei77.com 米贝节点分享 #52'
+  type: vless
+  server: vless-colo.whuiy.xyz
+  port: 443
+  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: vless-colo.whuiy.xyz
+- name: 'US美国(mibei77.com 米贝节点分享 #53'
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #12'
+  type: vless
+  server: 103.170.217.60
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 以色列(mibei77.com 米贝节点分享
+  type: vless
+  server: 185.239.48.154
+  port: 8443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'SG新加坡(mibei77.com 米贝节点分享 #13'
+  type: vless
+  server: jklo.personalitytoday.com
+  port: 55069
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: TW台湾(mibei77.com 米贝节点分享)
+  type: anytls
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+- name: HK香港(mibei77.com 米贝节点分享)_1
+  type: anytls
+  server: 56481.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+- name: HK香港(mibei77.com 米贝节点分享)_2
+  type: anytls
+  server: 654968169.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_18
+  type: anytls
+  server: 56481.df6h451rh.xin
+  port: 443
+  password: ec74bb6a86c2
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: AU澳大利亚(mibei77.com 米贝节点分享)
+  type: anytls
+  server: svip.skycon808.com
+  port: 60005
+  password: 13f0acfa-38c1-4e82-a758-583aa31740df
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+- name: KR韩国(mibei77.com 米贝节点分享)_7
+  type: anytls
+  server: svip.skycon808.com
+  port: 47531
+  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
+  sni: tw15.swiftrelay.cc
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+- name: DE - zhuhai.uk
+  type: vless
+  server: 89.127.210.40
+  port: 443
+  uuid: 4HqptXtMlj8IT2
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: onlycats.photos
+  flow: xtls-rprx-vision
+- name: IT - zhuhai.uk
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: US - zhuhai.uk 02
+  type: vless
+  server: saas.sin.fan
+  port: 2083
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vp7.1145678.xyz
+  ws-opts:
+    path: /events/class
+    headers:
+      Host: vp7.1145678.xyz
+- name: IT - zhuhai.uk 02
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: TW - zhuhai.uk 03
+  type: vless
+  server: 60.248.219.54
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ty986gfazs.cainiaohub.xyz
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 193.223.107.107
+  port: 1932
+  uuid: b8f083b6-ae01-431f-9b41-9e2eb96f352b
+  network: tcp
+  tls: true
+  client-fingerprint: qq
+  servername: www.vk.com
+  flow: xtls-rprx-vision
+- name: US - zhuhai.uk
+  type: http
+  server: mmgr.club
+  port: 443
+  tls: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 149.36.51.161
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.37
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: socks5
+  server: 202.4.119.226
+  port: 9090
+- name: TW - zhuhai.uk
+  type: http
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  port: 1443
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  password: exaxgqkKkd0TAMrCxeonWg==
+  tls: true
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+- name: RO - zhuhai.uk 02
+  type: http
+  server: 193.176.84.23
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 138.199.35.210
+  port: 9002
+  tls: true
+  sni: 138.199.35.210
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 137.175.22.29
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.214
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.216
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+  skip-cert-verify: true
+- name: GB - zhuhai.uk
+  type: http
+  server: 84.17.50.193
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
+  type: http
+  server: 147.182.216.4
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: 93b6d804.acsnet.co
+- name: US - zhuhai.uk 08
+  type: http
+  server: efr-marktplatz.club
+  port: 443
+  username: 'null'
+  password: None
+  tls: true
+- name: US - zhuhai.uk 09
+  type: socks5
+  server: 45.61.188.134
+  port: 44499
+- name: NL - zhuhai.uk 03
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+- name: KR - zhuhai.uk 02
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  tls: true
+  servername: vp6.1145678.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /photos/url/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFVeAVUCDVxbAEpYElFeVhQDWV0SQwEWQlpGWRoNA1YdDhk=
+    headers:
+      Host: vp6.1145678.xyz
+- name: SG - zhuhai.uk
+  type: socks5
+  server: 47.236.168.243
+  port: 1080
+  username: '8888'
+  password: '8888'
+- name: VN - zhuhai.uk
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  servername: bilibili-vn.biliimg.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+- name: TH - zhuhai.uk
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 56415
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.kaidee.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
 - name: end-gfw-kr64-VLESS
   type: vless
   server: 13.125.13.26
@@ -1152,403 +3536,27 @@ proxies:
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 13.250.7.176
+  server: 13.212.199.171
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: pulse.apulsar.com
+  servername: 18.143.132.15.sslip.io
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 13.250.7.176
+  server: 13.212.199.171
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 13.250.7.176
+  server: 13.212.199.171
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: IT - zhuhai.uk
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: HK - zhuhai.uk
-  type: vmess
-  server: 101.32.8.251
-  port: 50001
-  uuid: 5706beb5-479b-475d-b557-00309327e9cc
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: US - zhuhai.uk 05
-  type: vless
-  server: saas.sin.fan
-  port: 2053
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vp7.1145678.xyz
-  ws-opts:
-    path: /question/watch
-    headers:
-      Host: vp7.1145678.xyz
-- name: KR - zhuhai.uk 02
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vp6.1145678.xyz
-  ws-opts:
-    path: /courses/drama/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFtUBFMGAlJbBkpYElFeVhQDWV0SQwEWQlpGWRoNC1wYSw==
-    headers:
-      Host: vp6.1145678.xyz
-- name: US - zhuhai.uk 11
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 34379
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: us1p1.xn--ghq880n3na965a.com
-  flow: xtls-rprx-vision
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 193.223.107.107
-  port: 1932
-  uuid: b8f083b6-ae01-431f-9b41-9e2eb96f352b
-  network: tcp
-  tls: true
-  client-fingerprint: qq
-  servername: www.vk.com
-  flow: xtls-rprx-vision
-- name: US - zhuhai.uk
-  type: http
-  server: fan.226278.xyz
-  port: 443
-  tls: true
-  sni: fan.226278.xyz
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: http
-  server: 173.42.49.102
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 138.199.35.216
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: IT - zhuhai.uk 02
-  type: http
-  server: 95.229.15.89
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 193.176.84.40
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 147.182.216.4
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  sni: 93b6d804.acsnet.co
-- name: JP - zhuhai.uk
-  type: http
-  server: fan.587475.xyz
-  port: 443
-  tls: true
-  sni: fan.587475.xyz
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
-  type: http
-  server: 193.176.84.37
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.147
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 84.17.47.147
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 162.217.114.50
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: T2clM0QlM0Q6
-- name: ID - zhuhai.uk
-  type: http
-  server: 178.248.73.58
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: http
-  server: 66.153.187.90
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 44.217.145.28
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 09
-  type: http
-  server: 38.28.185.152
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 10
-  type: http
-  server: 137.175.22.45
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: HK - zhuhai.uk 02
-  type: socks5
-  server: 123.58.219.171
-  port: 10808
-- name: HK - zhuhai.uk 03
-  type: vless
-  server: 45.207.157.8
-  port: 9443
-  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-- name: SG - zhuhai.uk
-  type: socks5
-  server: 47.236.168.243
-  port: 1080
-  username: '8888'
-  password: '8888'
-- name: SG - zhuhai.uk 02
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-- name: '巴西+V2CROSS.COM #2'
-  type: vless
-  server: swedenafteraventura.space
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: swedenafteraventura.space
-  flow: xtls-rprx-vision
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 31.77.10.167
-  port: 24503
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: nl3-gkv6mb.vpvr4ib84nuv6hdkt.ru
-  flow: xtls-rprx-vision
-- name: 美国+纽约美联社
-  type: trojan
-  server: jus134.pacemakere.com
-  port: 20017
-  password: ee844c5ef7504bcf
-  sni: jus134.pacemakere.com
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 172.67.160.192
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: nuclear.us.kg
-  ws-opts:
-    path: /free/103.101.153.32:443
-    headers:
-      Host: nuclear.us.kg
-- name: 荷兰+V2CROSS.COM
-  type: vless
-  server: 213.152.165.203
-  port: 2091
-  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 伊朗+V2CROSS.COM
-  type: vless
-  server: pl1.himoy.space
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: pl1.himoy.space
-  flow: xtls-rprx-vision
-- name: '巴西+V2CROSS.COM #3'
-  type: vless
-  server: gcach6lm.himoy.space
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: gcach6lm.himoy.space
-  flow: xtls-rprx-vision
-- name: '伊朗+V2CROSS.COM #2'
-  type: vless
-  server: 31.59.216.141
-  port: 443
-  uuid: c6cfcc53-9271-4ef7-88c5-5141621c8db1
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: 193.23.216.239.cdn-one.org
-  flow: xtls-rprx-vision
-- name: 西班牙+V2CROSS.COM
-  type: vless
-  server: pl4-node.rumedia-cdn.com
-  port: 2096
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: stb6390.rumedia-cdn.com
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stb6390.rumedia-cdn.com
-- name: 美国 CloudFlare节点
-  type: vmess
-  server: jp4.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: nat12.9966338.xyz
-    path: /vvvvvvvvv
-  servername: nat12.9966338.xyz
-- name: 日本+东京都Amazon数据中心
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 54528
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: '荷兰+V2CROSS.COM #2'
-  type: vless
-  server: 213.152.165.203
-  port: 2093
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 俄罗斯+鞑靼斯坦喀山justhost
-  type: ss
-  server: 46.17.43.227
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: '伊朗+V2CROSS.COM #3'
-  type: vless
-  server: 188.245.184.137
-  port: 9090
-  uuid: fc1cab97-5935-42fa-8c76-f95b747c34c0
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
-- name: '巴西+V2CROSS.COM #4'
-  type: vless
-  server: 177.3.220.124
-  port: 443
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: gcach6lm.himoy.space
-  flow: xtls-rprx-vision
-- name: '英国+V2CROSS.COM #2'
-  type: vless
-  server: pl.peregrine-sub.net
-  port: 1443
-  uuid: 42a64b9a-ab79-4094-8656-30366a7c2ea3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: pl.peregrine-sub.net
-  flow: xtls-rprx-vision
-- name: 乌克兰+V2CROSS.COM
-  type: vless
-  server: 91.242.228.29
-  port: 443
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: se1.mycloud1.org
-  flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.6更新
   type: vless
   server: s880.gogocs.xyz
@@ -1625,19 +3633,6 @@ proxies:
   client-fingerprint: safari
   servername: d3-ee1.cloud-cdn.xyz
   flow: xtls-rprx-vision
-- name: CA加拿大(v2clash.blog 2026-10.7更新
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.7更新
   type: vless
   server: 155.46.167.30
@@ -1650,7 +3645,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime50.workers.dev
-- name: 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
+- name: CA加拿大(v2clash.blog 2026-10.7更新
   type: vless
   server: 172.66.0.230
   port: 2083
@@ -1663,28 +3658,16 @@ proxies:
     path: /
     headers:
       Host: helloapps.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.7更新 #2'
+- name: 伊朗(v2clash.blog 2026-10.7更新
   type: vless
-  server: dey.lnmarketplace.net
+  server: de2.srv.vbuste.ru
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  network: tcp
   tls: true
-  client-fingerprint: chrome
-  servername: dey.lnmarketplace.net
-- name: US美国(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 216.24.57.1
-  port: 443
-  uuid: 974c2588-c1cd-43ac-8823-ce3d879b09fd
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: somersby.pt.ex33r.eu.cc
-  ws-opts:
-    path: /id-amz
-    headers:
-      Host: somersby.pt.ex33r.eu.cc
+  client-fingerprint: randomized
+  servername: de2.srv.vbuste.ru
+  flow: xtls-rprx-vision
 - name: CA加拿大(v2clash.blog 2026-10.8更新
   type: vless
   server: 49.238.238.154
@@ -1727,7 +3710,7 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: yahoo.com
-- name: 'US美国(v2clash.blog 2026-10.8更新 #2'
+- name: US美国(v2clash.blog 2026-10.8更新
   type: vless
   server: 155.46.213.30
   port: 8880
@@ -1739,7 +3722,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime51.workers.dev
-- name: 'US美国(v2clash.blog 2026-10.8更新 #3'
+- name: 'US美国(v2clash.blog 2026-10.8更新 #2'
   type: hysteria2
   server: me17.msjia8844.site
   port: 7443
@@ -1791,18 +3774,6 @@ proxies:
   tls: true
   client-fingerprint: edge
   servername: www.yandex.ru
-- name: 'US美国(v2clash.blog 2026-10.9更新 #3'
-  type: vless
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
 - name: 'US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新 #2'
   type: vless
   server: 162.159.249.175
@@ -1816,7 +3787,7 @@ proxies:
     path: /
     headers:
       Host: c379b284.vs-494.pages.dev
-- name: 'US美国(v2clash.blog 2026-10.9更新 #4'
+- name: 'US美国(v2clash.blog 2026-10.9更新 #3'
   type: vless
   server: 128.241.25.11
   port: 30021
@@ -1849,19 +3820,6 @@ proxies:
   servername: us.australiacaregroup.site
 - name: 'US美国(v2clash.blog 2026-10.10更新 #2'
   type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.10更新 #3'
-  type: vless
   server: 128.241.25.11
   port: 30021
   uuid: c03bbba1-93ab-4781-8e8e-089cd257193f
@@ -1885,17 +3843,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.11更新
   type: vless
-  server: 162.159.130.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
+  server: s490.kukuss.top
+  port: 33414
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  network: tcp
   tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
+  client-fingerprint: firefox
+  servername: u695098u5cabc3b2s489.gogocs.xyz
+  flow: xtls-rprx-vision
 - name: 'US美国(v2clash.blog 2026-10.11更新 #2'
   type: vless
   server: 185.119.19.105
@@ -1906,15 +3861,6 @@ proxies:
   client-fingerprint: firefox
   servername: u695098u2c5f47d6s8746.gogocs.xyz
   flow: xtls-rprx-vision
-- name: NL荷兰(v2clash.blog 2026-10.11更新
-  type: vless
-  server: 2a14:3f87:f001:46::a
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: dey.lnmarketplace.net
 - name: SG新加坡(v2clash.blog 2026-10.12更新
   type: vless
   server: 142.91.101.39
@@ -1950,19 +3896,6 @@ proxies:
   tls: true
   client-fingerprint: firefox
   servername: n2.vimeostream.online
-- name: 'SG新加坡(v2clash.blog 2026-10.12更新 #2'
-  type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: 'NL荷兰(v2clash.blog 2026-10.12更新 #2'
   type: vless
   server: 79.137.197.212
@@ -2048,18 +3981,6 @@ proxies:
   client-fingerprint: random
   servername: assets-mi-27.spbstudentlife.com
   flow: xtls-rprx-vision
-- name: US美国(v2clash.blog 2026-10.14更新
-  type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime19.workers.dev
 - name: JP日本(v2clash.blog 2026-10.14更新
   type: vless
   server: 172.67.209.127
@@ -2142,19 +4063,6 @@ proxies:
   client-fingerprint: chrome
   servername: www.apple.com
   flow: xtls-rprx-vision
-- name: Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
-  type: vless
-  server: 104.21.91.244
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
-    headers:
-      Host: lucasjow.us.ci
 - name: RU俄罗斯(v2clash.blog 2026-10.16更新
   type: vless
   server: 94.242.55.122
@@ -2177,19 +4085,6 @@ proxies:
     path: /
     headers:
       Host: vlso5.1d.mom
-- name: US美国(v2clash.blog 2026-10.16更新
-  type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: 185.148.104.30
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
 - name: 阿拉伯(v2clash.blog 2026-10.18更新
   type: vless
   server: 185.112.249.201
@@ -2213,33 +4108,7 @@ proxies:
   client-fingerprint: chrome
   servername: brointelengence.com
   flow: xtls-rprx-vision
-- name: 越南(v2clash.blog 2026-10.18更新
-  type: vless
-  server: 103.161.179.171
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.18更新
-  type: vless
-  server: 172.64.150.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.18更新 #2'
   type: vless
   server: 179.253.251.112
   port: 443
@@ -2252,7 +4121,7 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: '越南(v2clash.blog 2026-10.18更新 #2'
+- name: 越南(v2clash.blog 2026-10.18更新
   type: vless
   server: 103.161.178.215
   port: 443
@@ -2265,99 +4134,9 @@ proxies:
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: US美国(v2clash.blog 2026-10.19更新
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fdipfp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: KR韩国(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 168.107.36.135
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: SG新加坡(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 216.195.195.205
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: DE德国(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 2.28.42.209
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'DE德国(v2clash.blog 2026-10.20更新 #2'
-  type: vless
-  server: 152.53.197.166
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: DE德国(v2clash.blog 2026-10.22更新
-  type: vless
-  server: 144.31.181.177
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: US美国(v2clash.blog 2026-10.22更新
   type: vless
   server: 104.17.139.37
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: NL荷兰(v2clash.blog 2026-10.22更新
-  type: vless
-  server: 195.133.17.250
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -2381,7 +4160,7 @@ proxies:
     path: /fdipfp=unsafe
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 'NL荷兰(v2clash.blog 2026-10.22更新 #2'
+- name: NL荷兰(v2clash.blog 2026-10.22更新
   type: vless
   server: 144.31.34.146
   port: 2096
@@ -2447,19 +4226,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
 - name: JP日本(v2clash.blog 2026-10.23更新
-  type: vless
-  server: 60.130.209.253
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'JP日本(v2clash.blog 2026-10.23更新 #2'
   type: vless
   server: 172.104.80.248
   port: 443
@@ -2560,25 +4326,16 @@ proxies:
     path: /
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.24更新 #2'
-  type: vless
-  server: 203.88.117.190
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
   - 印尼
   - 🇺🇸DMIT.LAX.AS3.Pro.TINY
+  - 🇸🇬 ⚠️订阅已失效,请重新获取
+  - 🇸🇬 每日更新
+  - 电报频道:@clashv8
+  - 聊天群:@zmxoox
   - 🇯🇵_JP_日本
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国
@@ -2647,16 +4404,6 @@ proxy-groups:
   - 美国 A组 流媒体 04
   - 美国 A组 流媒体 05
   - 英国 B组 流媒体 01
-  - 阿富汗+V2CROSS.COM
-  - 土耳其+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 美国+V2CROSS.COM
-  - 美国+FDC芝加哥机房
-  - '美国+FDC芝加哥机房 #2'
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  - 巴西+V2CROSS.COM
-  - '阿富汗+V2CROSS.COM #2'
-  - 🇯🇵JP_44|370KB/s|C002-260622 01vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&encrypt
   - 未知 SS-01 | free-nodes
   - 未知 VLESS-05 | free-nodes
   - 未知 VLESS-07 | free-nodes
@@ -2672,56 +4419,219 @@ proxy-groups:
   - 'vless #4'
   - US VLESS-19 | free-nodes
   - HK VLESS-20 | free-nodes
+  - 美国+CloudFlare节点
+  - '美国+CloudFlare节点 #2'
+  - 俄罗斯+V2CROSS.COM
+  - 乌克兰+V2CROSS.COM
+  - 巴西+V2CROSS.COM
+  - '乌克兰+V2CROSS.COM #2'
+  - end-gfw-sg33-VLESS
+  - end-gfw-kr3-VLESS
+  - US美国(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #2'
+  - JP日本(mibei77.com 米贝节点分享
+  - HK香港(mibei77.com 米贝节点分享
+  - 'JP日本(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #3'
+  - 'JP日本(mibei77.com 米贝节点分享 #3'
+  - 'JP日本(mibei77.com 米贝节点分享 #4'
+  - 'JP日本(mibei77.com 米贝节点分享 #5'
+  - 'JP日本(mibei77.com 米贝节点分享 #6'
+  - 'JP日本(mibei77.com 米贝节点分享 #7'
+  - 'JP日本(mibei77.com 米贝节点分享 #8'
+  - 'JP日本(mibei77.com 米贝节点分享 #9'
+  - 'US美国(mibei77.com 米贝节点分享 #4'
+  - 'US美国(mibei77.com 米贝节点分享 #5'
+  - SG新加坡(mibei77.com 米贝节点分享
+  - 'JP日本(mibei77.com 米贝节点分享 #10'
+  - 'JP日本(mibei77.com 米贝节点分享 #11'
+  - 'JP日本(mibei77.com 米贝节点分享 #12'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #2'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #3'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #4'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #5'
+  - 'HK香港(mibei77.com 米贝节点分享 #2'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #6'
+  - 'HK香港(mibei77.com 米贝节点分享 #3'
+  - KR韩国(mibei77.com 米贝节点分享
+  - 'JP日本(mibei77.com 米贝节点分享 #13'
+  - 'KR韩国(mibei77.com 米贝节点分享 #2'
+  - 'KR韩国(mibei77.com 米贝节点分享 #3'
+  - DE德国(mibei77.com 米贝节点分享
+  - 'KR韩国(mibei77.com 米贝节点分享 #4'
+  - 'JP日本(mibei77.com 米贝节点分享 #14'
+  - FR法国(mibei77.com 米贝节点分享
+  - 'KR韩国(mibei77.com 米贝节点分享 #5'
+  - 'DE德国(mibei77.com 米贝节点分享 #2'
+  - 'DE德国(mibei77.com 米贝节点分享 #3'
+  - 'DE德国(mibei77.com 米贝节点分享 #4'
+  - 'FR法国(mibei77.com 米贝节点分享 #2'
+  - 'KR韩国(mibei77.com 米贝节点分享 #6'
+  - 'DE德国(mibei77.com 米贝节点分享 #5'
+  - 'DE德国(mibei77.com 米贝节点分享 #6'
+  - 保加利亚(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #7'
+  - 'DE德国(mibei77.com 米贝节点分享 #8'
+  - 'HK香港(mibei77.com 米贝节点分享 #4'
+  - 'US美国(mibei77.com 米贝节点分享 #6'
+  - 'US美国(mibei77.com 米贝节点分享 #7'
+  - 'US美国(mibei77.com 米贝节点分享 #8'
+  - 'US美国(mibei77.com 米贝节点分享 #9'
+  - 'US美国(mibei77.com 米贝节点分享 #10'
+  - 'US美国(mibei77.com 米贝节点分享 #11'
+  - 'DE德国(mibei77.com 米贝节点分享 #9'
+  - 'KR韩国(mibei77.com 米贝节点分享 #7'
+  - 'US美国(mibei77.com 米贝节点分享 #12'
+  - 'US美国(mibei77.com 米贝节点分享 #13'
+  - '保加利亚(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #14'
+  - GB英国(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #10'
+  - 'US美国(mibei77.com 米贝节点分享 #15'
+  - 'US美国(mibei77.com 米贝节点分享 #16'
+  - 'US美国(mibei77.com 米贝节点分享 #17'
+  - 'US美国(mibei77.com 米贝节点分享 #18'
+  - 'US美国(mibei77.com 米贝节点分享 #19'
+  - RU俄罗斯(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #20'
+  - 'DE德国(mibei77.com 米贝节点分享 #11'
+  - 'DE德国(mibei77.com 米贝节点分享 #12'
+  - 'DE德国(mibei77.com 米贝节点分享 #13'
+  - 瑞士(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #14'
+  - 'DE德国(mibei77.com 米贝节点分享 #15'
+  - 'KR韩国(mibei77.com 米贝节点分享 #8'
+  - 'US美国(mibei77.com 米贝节点分享 #21'
+  - 'US美国(mibei77.com 米贝节点分享 #22'
+  - 'US美国(mibei77.com 米贝节点分享 #23'
+  - 'KR韩国(mibei77.com 米贝节点分享 #9'
+  - 'KR韩国(mibei77.com 米贝节点分享 #10'
+  - 马来西亚(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #24'
+  - '保加利亚(mibei77.com 米贝节点分享 #3'
+  - 'RU俄罗斯(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #25'
+  - 'DE德国(mibei77.com 米贝节点分享 #16'
+  - 'US美国(mibei77.com 米贝节点分享 #26'
+  - 'US美国(mibei77.com 米贝节点分享 #27'
+  - 'US美国(mibei77.com 米贝节点分享 #28'
+  - FI芬兰(mibei77.com 米贝节点分享
+  - '马来西亚(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #29'
+  - 'US美国(mibei77.com 米贝节点分享 #30'
+  - '马来西亚(mibei77.com 米贝节点分享 #3'
+  - 'US美国(mibei77.com 米贝节点分享 #31'
+  - 'US美国(mibei77.com 米贝节点分享 #32'
+  - 越南(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #33'
+  - 'US美国(mibei77.com 米贝节点分享 #34'
+  - 'HK香港(mibei77.com 米贝节点分享 #5'
+  - 'HK香港(mibei77.com 米贝节点分享 #6'
+  - 'US美国(mibei77.com 米贝节点分享 #35'
+  - 'US美国(mibei77.com 米贝节点分享 #36'
+  - 'HK香港(mibei77.com 米贝节点分享 #7'
+  - VN越南(mibei77.com 米贝节点分享
+  - '马来西亚(mibei77.com 米贝节点分享 #4'
+  - 'JP日本(mibei77.com 米贝节点分享 #15'
+  - 'US美国(mibei77.com 米贝节点分享 #37'
+  - 'US美国(mibei77.com 米贝节点分享 #38'
+  - 'JP日本(mibei77.com 米贝节点分享 #16'
+  - 'US美国(mibei77.com 米贝节点分享 #39'
+  - 'US美国(mibei77.com 米贝节点分享 #40'
+  - 'DE德国(mibei77.com 米贝节点分享 #17'
+  - 'GB英国(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #41'
+  - 葡萄牙(mibei77.com 米贝节点分享
+  - '葡萄牙(mibei77.com 米贝节点分享 #2'
+  - 爱沙尼亚(mibei77.com 米贝节点分享
+  - 'HK香港(mibei77.com 米贝节点分享 #8'
+  - 'US美国(mibei77.com 米贝节点分享 #42'
+  - 'US美国(mibei77.com 米贝节点分享 #43'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #7'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #8'
+  - 'US美国(mibei77.com 米贝节点分享 #44'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #9'
+  - 意大利(mibei77.com 米贝节点分享
+  - IN印度(mibei77.com 米贝节点分享
+  - 'SG新加坡(mibei77.com 米贝节点分享 #10'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #11'
+  - 土耳其(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #45'
+  - 约旦(mibei77.com 米贝节点分享
+  - 'FR法国(mibei77.com 米贝节点分享 #3'
+  - 'HK香港(mibei77.com 米贝节点分享 #9'
+  - '马来西亚(mibei77.com 米贝节点分享 #5'
+  - 'US美国(mibei77.com 米贝节点分享 #46'
+  - 'US美国(mibei77.com 米贝节点分享 #47'
+  - 'US美国(mibei77.com 米贝节点分享 #48'
+  - 'DE德国(mibei77.com 米贝节点分享 #18'
+  - 'DE德国(mibei77.com 米贝节点分享 #19'
+  - 'US美国(mibei77.com 米贝节点分享 #49'
+  - 埃及(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #20'
+  - 'DE德国(mibei77.com 米贝节点分享 #21'
+  - 'DE德国(mibei77.com 米贝节点分享 #22'
+  - 塞浦路斯(mibei77.com 米贝节点分享
+  - NL荷兰(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #50'
+  - 'GB英国(mibei77.com 米贝节点分享 #3'
+  - 'DE德国(mibei77.com 米贝节点分享 #23'
+  - 'DE德国(mibei77.com 米贝节点分享 #24'
+  - 'DE德国(mibei77.com 米贝节点分享 #25'
+  - '马来西亚(mibei77.com 米贝节点分享 #6'
+  - 爱尔兰(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #26'
+  - TW台湾(mibei77.com 米贝节点分享
+  - 'US美国(mibei77.com 米贝节点分享 #51'
+  - 丹麦(mibei77.com 米贝节点分享
+  - 'DE德国(mibei77.com 米贝节点分享 #27'
+  - 'DE德国(mibei77.com 米贝节点分享 #28'
+  - PL波兰(mibei77.com 米贝节点分享
+  - 'VN越南(mibei77.com 米贝节点分享 #2'
+  - 'US美国(mibei77.com 米贝节点分享 #52'
+  - 'US美国(mibei77.com 米贝节点分享 #53'
+  - 'SG新加坡(mibei77.com 米贝节点分享 #12'
+  - 以色列(mibei77.com 米贝节点分享
+  - 'SG新加坡(mibei77.com 米贝节点分享 #13'
+  - TW台湾(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)_1
+  - HK香港(mibei77.com 米贝节点分享)_2
+  - US美国(mibei77.com 米贝节点分享)_18
+  - AU澳大利亚(mibei77.com 米贝节点分享)
+  - KR韩国(mibei77.com 米贝节点分享)_7
+  - DE - zhuhai.uk
+  - IT - zhuhai.uk
+  - US - zhuhai.uk 02
+  - IT - zhuhai.uk 02
+  - TW - zhuhai.uk 03
+  - DE - zhuhai.uk 01
+  - US - zhuhai.uk
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - TW - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 04
+  - US - zhuhai.uk 05
+  - US - zhuhai.uk 06
+  - JP - zhuhai.uk
+  - GB - zhuhai.uk
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 09
+  - NL - zhuhai.uk 03
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - SG - zhuhai.uk
+  - VN - zhuhai.uk
+  - TH - zhuhai.uk
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - IT - zhuhai.uk
-  - HK - zhuhai.uk
-  - US - zhuhai.uk 05
-  - KR - zhuhai.uk 02
-  - US - zhuhai.uk 11
-  - DE - zhuhai.uk 01
-  - US - zhuhai.uk
-  - RO - zhuhai.uk
-  - US - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - IT - zhuhai.uk 02
-  - RO - zhuhai.uk 02
-  - US - zhuhai.uk 04
-  - JP - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - NL - zhuhai.uk
-  - US - zhuhai.uk 06
-  - KR - zhuhai.uk
-  - ID - zhuhai.uk
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 08
-  - US - zhuhai.uk 09
-  - US - zhuhai.uk 10
-  - HK - zhuhai.uk 02
-  - HK - zhuhai.uk 03
-  - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
-  - '巴西+V2CROSS.COM #2'
-  - 英国+V2CROSS.COM
-  - 美国+纽约美联社
-  - 美国+CloudFlare节点
-  - 荷兰+V2CROSS.COM
-  - 伊朗+V2CROSS.COM
-  - '巴西+V2CROSS.COM #3'
-  - '伊朗+V2CROSS.COM #2'
-  - 西班牙+V2CROSS.COM
-  - 美国 CloudFlare节点
-  - 日本+东京都Amazon数据中心
-  - '荷兰+V2CROSS.COM #2'
-  - 俄罗斯+鞑靼斯坦喀山justhost
-  - '伊朗+V2CROSS.COM #3'
-  - '巴西+V2CROSS.COM #4'
-  - '英国+V2CROSS.COM #2'
-  - 乌克兰+V2CROSS.COM
   - US美国(v2clash.blog 2026-10.6更新
   - CA加拿大(v2clash.blog 2026-10.6更新
   - AU澳大利亚(v2clash.blog 2026-10.6更新
@@ -2729,36 +4639,30 @@ proxy-groups:
   - 'HK香港(v2clash.blog 2026-10.6更新 #2'
   - DE德国(v2clash.blog 2026-10.6更新
   - 'DE德国(v2clash.blog 2026-10.6更新 #2'
-  - CA加拿大(v2clash.blog 2026-10.7更新
   - US美国(v2clash.blog 2026-10.7更新
-  - 'CA加拿大(v2clash.blog 2026-10.7更新 #2'
-  - 'US美国(v2clash.blog 2026-10.7更新 #2'
-  - US美国(v2clash.blog 2026-10.8更新
+  - CA加拿大(v2clash.blog 2026-10.7更新
+  - 伊朗(v2clash.blog 2026-10.7更新
   - CA加拿大(v2clash.blog 2026-10.8更新
   - 阿拉伯(v2clash.blog 2026-10.8更新
   - RU俄罗斯(v2clash.blog 2026-10.8更新
   - FR法国(v2clash.blog 2026-10.8更新
+  - US美国(v2clash.blog 2026-10.8更新
   - 'US美国(v2clash.blog 2026-10.8更新 #2'
-  - 'US美国(v2clash.blog 2026-10.8更新 #3'
   - US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新
   - US美国(v2clash.blog 2026-10.9更新
   - 'US美国(v2clash.blog 2026-10.9更新 #2'
   - 阿拉伯(v2clash.blog 2026-10.9更新
-  - 'US美国(v2clash.blog 2026-10.9更新 #3'
   - 'US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新 #2'
-  - 'US美国(v2clash.blog 2026-10.9更新 #4'
+  - 'US美国(v2clash.blog 2026-10.9更新 #3'
   - '阿拉伯(v2clash.blog 2026-10.9更新 #2'
   - US美国(v2clash.blog 2026-10.10更新
   - 'US美国(v2clash.blog 2026-10.10更新 #2'
-  - 'US美国(v2clash.blog 2026-10.10更新 #3'
   - 芬兰(v2clash.blog 2026-10.11更新
   - US美国(v2clash.blog 2026-10.11更新
   - 'US美国(v2clash.blog 2026-10.11更新 #2'
-  - NL荷兰(v2clash.blog 2026-10.11更新
   - SG新加坡(v2clash.blog 2026-10.12更新
   - US美国(v2clash.blog 2026-10.12更新
   - NL荷兰(v2clash.blog 2026-10.12更新
-  - 'SG新加坡(v2clash.blog 2026-10.12更新 #2'
   - 'NL荷兰(v2clash.blog 2026-10.12更新 #2'
   - GB英国(v2clash.blog 2026-10.12更新
   - 'US美国(v2clash.blog 2026-10.12更新 #2'
@@ -2766,7 +4670,6 @@ proxy-groups:
   - SG新加坡(v2clash.blog 2026-10.13更新
   - GB英国(v2clash.blog 2026-10.13更新
   - 'US美国(v2clash.blog 2026-10.13更新 #2'
-  - US美国(v2clash.blog 2026-10.14更新
   - JP日本(v2clash.blog 2026-10.14更新
   - 阿拉伯(v2clash.blog 2026-10.14更新
   - RU俄罗斯(v2clash.blog 2026-10.14更新
@@ -2775,32 +4678,20 @@ proxy-groups:
   - 白俄罗斯(v2clash.blog 2026-10.15更新
   - HK香港(v2clash.blog 2026-10.15更新
   - 'HK香港(v2clash.blog 2026-10.15更新 #2'
-  - Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
   - RU俄罗斯(v2clash.blog 2026-10.16更新
   - 南非(v2clash.blog 2026-10.16更新
-  - US美国(v2clash.blog 2026-10.16更新
   - 阿拉伯(v2clash.blog 2026-10.18更新
   - 芬兰(v2clash.blog 2026-10.18更新
-  - 越南(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.18更新
-  - 'US美国(v2clash.blog 2026-10.18更新 #2'
-  - '越南(v2clash.blog 2026-10.18更新 #2'
-  - US美国(v2clash.blog 2026-10.19更新
-  - KR韩国(v2clash.blog 2026-10.20更新
-  - SG新加坡(v2clash.blog 2026-10.20更新
-  - DE德国(v2clash.blog 2026-10.20更新
-  - 'DE德国(v2clash.blog 2026-10.20更新 #2'
-  - DE德国(v2clash.blog 2026-10.22更新
+  - 越南(v2clash.blog 2026-10.18更新
   - US美国(v2clash.blog 2026-10.22更新
-  - NL荷兰(v2clash.blog 2026-10.22更新
   - 'US美国(v2clash.blog 2026-10.22更新 #2'
-  - 'NL荷兰(v2clash.blog 2026-10.22更新 #2'
+  - NL荷兰(v2clash.blog 2026-10.22更新
   - 'US美国(v2clash.blog 2026-10.22更新 #3'
   - 'US美国(v2clash.blog 2026-10.22更新 #4'
   - US美国(v2clash.blog 2026-10.23更新
   - 'US美国(v2clash.blog 2026-10.23更新 #2'
   - JP日本(v2clash.blog 2026-10.23更新
-  - 'JP日本(v2clash.blog 2026-10.23更新 #2'
   - 芬兰(v2clash.blog 2026-10.23更新
   - 'US美国(v2clash.blog 2026-10.23更新 #3'
   - 匈牙利(v2clash.blog 2026-10.23更新
@@ -2808,6 +4699,5 @@ proxy-groups:
   - US美国(v2clash.blog 2026-10.24更新
   - GB英国(v2clash.blog 2026-10.24更新
   - 越南(v2clash.blog 2026-10.24更新
-  - 'US美国(v2clash.blog 2026-10.24更新 #2'
 rules:
 - MATCH,PROBE
