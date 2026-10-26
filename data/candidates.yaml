@@ -3,16 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇺🇸DMIT.LAX.AS3.Pro.TINY
-  type: vless
-  server: 154.17.5.16
-  port: 8443
-  uuid: 3d116251-c919-4cf7-bc61-3a90d91aa80b
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: updates.cdn-apple.com
-  flow: xtls-rprx-vision
 - name: 🇭🇰香港落地
   type: trojan
   server: tjxg.m2k699.com
@@ -188,783 +178,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-  udp: true
-- name: 免费节点 MENGvpn C01
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn C02
-  type: vless
-  server: cf.130519.xyz
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn C03
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn C04
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn C05
-  type: vless
-  server: cf.130519.xyz
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn C06
-  type: vless
-  server: cf.130519.xyz
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn C07
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn C08
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 免费节点 MENGvpn D01
-  type: vless
-  server: cf.3666888.xyz
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn D02
-  type: vless
-  server: cf.3666888.xyz
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn D03
-  type: vless
-  server: cf.3666888.xyz
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn D04
-  type: vless
-  server: cf.3666888.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn D05
-  type: vless
-  server: cf.3666888.xyz
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn D06
-  type: vless
-  server: cf.3666888.xyz
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn D07
-  type: vless
-  server: cf.3666888.xyz
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn D08
-  type: vless
-  server: cf.3666888.xyz
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 免费节点 MENGvpn E01
-  type: trojan
-  server: 86.38.214.205
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 免费节点 MENGvpn E02
-  type: vless
-  server: 45.202.242.128
-  port: 443
-  uuid: 7cf4abd6-3065-921c-ba86-76156b257f52
-  udp: true
-  tls: true
-  servername: oayrfrhw.eduhk.dpdns.org
-  network: ws
-  ws-opts:
-    path: /pg/asd159753-dfbe5fd5f8a7139a
-    headers:
-      Host: oayrfrhw.eduhk.dpdns.org
-- name: 免费节点 MENGvpn E03
-  type: vless
-  server: 45.202.245.177
-  port: 443
-  uuid: 7cf4abd6-3065-921c-ba86-76156b257f52
-  udp: true
-  tls: true
-  servername: xfworbwu.edutw.cc.cd
-  network: ws
-  ws-opts:
-    path: /pg/asd159753-dfbe5fd5f8a7139a
-    headers:
-      Host: xfworbwu.edutw.cc.cd
-- name: 免费节点 MENGvpn F01
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn F02
-  type: vless
-  server: cf.877774.xyz
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn F03
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn F04
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn F05
-  type: vless
-  server: cf.877774.xyz
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn F06
-  type: vless
-  server: cf.877774.xyz
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn F07
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn F08
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 免费节点 MENGvpn G01
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn G02
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn G03
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn G04
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn G05
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn G06
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn G07
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn G08
-  type: vless
-  server: cfip.xxxxxxxx.tk
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 免费节点 MENGvpn H01
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn H02
-  type: vless
-  server: www.5199dy.com
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn H03
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn H04
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn H05
-  type: vless
-  server: www.5199dy.com
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn H06
-  type: vless
-  server: www.5199dy.com
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn H07
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn H08
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 免费节点 MENGvpn I01
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  udp: true
-  tls: true
-  servername: cf-1rm.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cf-1rm.pages.dev
-- name: 免费节点 MENGvpn I02
-  type: vless
-  server: cf.090227.xyz
-  port: 8443
-  uuid: 889fa37f-6bce-4674-8a49-1cc435e11de7
-  udp: true
-  tls: true
-  servername: liusuyan.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: liusuyan.cc.cd
-- name: 免费节点 MENGvpn I03
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: 7ba503c8-a627-4b10-87f8-aac0d1a574fa
-  udp: true
-  tls: true
-  servername: edgetunnel2211.esvip.cloudns.be
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel2211.esvip.cloudns.be
-- name: 免费节点 MENGvpn I04
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  servername: lucasjow.us.ci
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 免费节点 MENGvpn I05
-  type: vless
-  server: cf.090227.xyz
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn I06
-  type: vless
-  server: cf.090227.xyz
-  port: 2053
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 免费节点 MENGvpn I07
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
-  udp: true
-  tls: true
-  servername: jjkkll.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
-    headers:
-      Host: jjkkll.ccwu.cc
-- name: 免费节点 MENGvpn I08
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  udp: true
-  tls: true
-  servername: 20664.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 20664.pages.dev
-- name: 美国 A组 流媒体 01
-  type: hysteria2
-  server: lxyus1.777078.xyz
-  port: 443
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  sni: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  fingerprint: 4b10f090c73e5d841d56f81373b56168fd446a96adf85427738c6ef6c414b01b
-  up: 50 Mbps
-  down: 50 Mbps
-  udp: true
-- name: 美国 A组 流媒体 02
-  type: hysteria2
-  server: lxyus2.777078.xyz
-  port: 443
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  sni: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  fingerprint: 58f2df9e444565f71bcdf624069d51ded4d699b648d59f1bf197e9aac859b9bc
-  up: 50 Mbps
-  down: 50 Mbps
-  udp: true
-- name: 美国 A组 流媒体 03
-  type: hysteria2
-  server: lxyus3.777078.xyz
-  port: 443
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  sni: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  fingerprint: ee961590f9558c24cef02e44d1f54e9cd21fc929ae627f2e18fe5b3d67ca5561
-  up: 50 Mbps
-  down: 50 Mbps
-  udp: true
-- name: 美国 A组 流媒体 04
-  type: hysteria2
-  server: lxyus4.777078.xyz
-  port: 443
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  sni: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  fingerprint: 4df742862fb9f529f841048ff99a914ae2ce83cbfa13ccf15618f72bc32f2650
-  up: 50 Mbps
-  down: 50 Mbps
-  udp: true
-- name: 美国 A组 流媒体 05
-  type: hysteria2
-  server: 203.10.97.121
-  port: 60000
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  ports: 60000-65530
-  sni: www.apple.com
-  skip-cert-verify: false
-  fingerprint: 7883472b634b93a7ec09a020fdbd4b1ac7b0accc7569028dfaeb54c6384677c1
-  up: 50 Mbps
-  down: 50 Mbps
-  udp: true
-- name: 英国 B组 流媒体 01
-  type: hysteria2
-  server: 62.164.143.251
-  port: 60000
-  password: 6941a94c-acc1-4011-82f3-60f4eb3a4455
-  ports: 60000-65530
-  sni: bilibili-gb.biliimg.com
-  skip-cert-verify: false
-  fingerprint: f7d837d9a8fd47ae4f18de5a72430fb02f7e4c6e37a8823db929a1e1b8792aa1
-  up: 50 Mbps
-  down: 50 Mbps
   udp: true
 - name: 未知 SS-01 | free-nodes
   type: ss
@@ -3341,31 +2554,35 @@ proxies:
   tls: true
   udp: true
   client-fingerprint: chrome
-- name: LK - zhuhai.uk
+- name: IT - zhuhai.uk
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: AU - zhuhai.uk
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  network: ws
-  tls: false
+  server: funagfrdfs.alixxplay.com
+  port: 54528
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  network: tcp
+  tls: true
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
+  servername: www.apple.com
+  flow: xtls-rprx-vision
 - name: US - zhuhai.uk 08
   type: vless
   server: saas.sin.fan
-  port: 2083
+  port: 2096
   uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: vp7.1145678.xyz
+  servername: vp6.1145678.xyz
   ws-opts:
-    path: /events/class
+    path: /test
     headers:
-      Host: vp7.1145678.xyz
+      Host: vp6.1145678.xyz
 - name: RU - zhuhai.uk 01
   type: vless
   server: 45.128.78.176
@@ -3376,138 +2593,129 @@ proxies:
   client-fingerprint: chrome
   servername: ozon.ru
   flow: xtls-rprx-vision
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.19
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: US - zhuhai.uk
   type: http
-  server: 54.190.176.228
-  port: 8443
+  server: 184.188.139.2
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: ID - zhuhai.uk
+  type: http
+  server: 178.248.73.58
+  port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: 38.95.111.226
-  port: 9443
+  server: 138.199.35.218
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
-- name: RO - zhuhai.uk
+- name: DE - zhuhai.uk
   type: http
-  server: 193.176.84.30
+  server: 158.173.154.2
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 138.199.35.199
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: AL - zhuhai.uk
+  type: http
+  server: 87.120.103.242
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 02
+  type: http
+  server: 193.176.84.38
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 138.199.35.211
   port: 9002
   username: 'null'
   password: None
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 03
+- name: RO - zhuhai.uk 03
   type: http
-  server: 138.199.35.215
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 193.176.84.32
+  server: 193.176.84.40
   port: 9002
   tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: http
-  server: fan.132031.xyz
-  port: 443
-  tls: true
-- name: CA - zhuhai.uk
-  type: http
-  server: 206.223.161.47
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 167.88.60.242
-  port: 443
-  tls: true
+  sni: www.bing.com
   skip-cert-verify: true
 - name: US - zhuhai.uk 05
   type: http
-  server: 138.199.35.212
-  port: 9002
-  username: 'null'
-  password: 'null'
+  server: 137.175.22.85
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: socks5
+  server: 202.4.119.226
+  port: 9090
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 51.158.243.91
+  port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 06
   type: http
-  server: 45.150.164.18
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
-  type: http
-  server: 193.176.84.34
+  server: 138.199.35.204
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: IT - zhuhai.uk
+- name: US - zhuhai.uk 07
   type: http
-  server: 91.243.118.217
+  server: 137.175.22.29
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: ID - zhuhai.uk 02
+  type: http
+  server: kimberlymilano.icu
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+- name: LV - zhuhai.uk
+  type: http
+  server: 185.219.159.15
   port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 09
   type: http
-  server: zebpay.site
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 167.172.172.190
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 10
-  type: http
-  server: 138.199.35.209
-  port: 9002
-  tls: true
-  sni: 138.199.35.209
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 04
-  type: http
-  server: 193.176.84.17
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 05
-  type: http
-  server: 193.176.84.25
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: US - zhuhai.uk 11
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 12
-  type: http
-  server: 66.153.187.90
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 13
-  type: http
   server: 38.28.185.152
   port: 443
   tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 04
+  type: http
+  server: 193.176.84.27
+  port: 9002
+  tls: true
+  sni: www.bing.com
   skip-cert-verify: true
 - name: HK - zhuhai.uk
   type: socks5
@@ -3556,34 +2764,9 @@ proxies:
   port: 1080
   username: '8888'
   password: '8888'
-- name: VN - zhuhai.uk
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 55688
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bilibili-vn.biliimg.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
-    short-id: a46bb5972cf50671
-- name: TH - zhuhai.uk
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.kaidee.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 43.201.103.215
+  server: 3.35.54.93
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -3593,14 +2776,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 43.201.103.215
+  server: 3.35.54.93
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 43.201.103.215
+  server: 3.35.54.93
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -3963,6 +3146,19 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: rapid-waterfall-7270.255-22b.workers.dev
+- name: DE德国(v2clash.blog 2026-10.14更新
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: cf-1rm.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
 - name: 阿拉伯(v2clash.blog 2026-10.14更新
   type: vless
   server: 31.58.95.10
@@ -4398,7 +3594,6 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - 🇺🇸DMIT.LAX.AS3.Pro.TINY
   - 🇭🇰香港落地
   - 🇯🇵日本落地
   - 🇨🇳台湾落地
@@ -4422,63 +3617,6 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国_1
   - 🇺🇸_US_美国
-  - 免费节点 MENGvpn C01
-  - 免费节点 MENGvpn C02
-  - 免费节点 MENGvpn C03
-  - 免费节点 MENGvpn C04
-  - 免费节点 MENGvpn C05
-  - 免费节点 MENGvpn C06
-  - 免费节点 MENGvpn C07
-  - 免费节点 MENGvpn C08
-  - 免费节点 MENGvpn D01
-  - 免费节点 MENGvpn D02
-  - 免费节点 MENGvpn D03
-  - 免费节点 MENGvpn D04
-  - 免费节点 MENGvpn D05
-  - 免费节点 MENGvpn D06
-  - 免费节点 MENGvpn D07
-  - 免费节点 MENGvpn D08
-  - 免费节点 MENGvpn E01
-  - 免费节点 MENGvpn E02
-  - 免费节点 MENGvpn E03
-  - 免费节点 MENGvpn F01
-  - 免费节点 MENGvpn F02
-  - 免费节点 MENGvpn F03
-  - 免费节点 MENGvpn F04
-  - 免费节点 MENGvpn F05
-  - 免费节点 MENGvpn F06
-  - 免费节点 MENGvpn F07
-  - 免费节点 MENGvpn F08
-  - 免费节点 MENGvpn G01
-  - 免费节点 MENGvpn G02
-  - 免费节点 MENGvpn G03
-  - 免费节点 MENGvpn G04
-  - 免费节点 MENGvpn G05
-  - 免费节点 MENGvpn G06
-  - 免费节点 MENGvpn G07
-  - 免费节点 MENGvpn G08
-  - 免费节点 MENGvpn H01
-  - 免费节点 MENGvpn H02
-  - 免费节点 MENGvpn H03
-  - 免费节点 MENGvpn H04
-  - 免费节点 MENGvpn H05
-  - 免费节点 MENGvpn H06
-  - 免费节点 MENGvpn H07
-  - 免费节点 MENGvpn H08
-  - 免费节点 MENGvpn I01
-  - 免费节点 MENGvpn I02
-  - 免费节点 MENGvpn I03
-  - 免费节点 MENGvpn I04
-  - 免费节点 MENGvpn I05
-  - 免费节点 MENGvpn I06
-  - 免费节点 MENGvpn I07
-  - 免费节点 MENGvpn I08
-  - 美国 A组 流媒体 01
-  - 美国 A组 流媒体 02
-  - 美国 A组 流媒体 03
-  - 美国 A组 流媒体 04
-  - 美国 A组 流媒体 05
-  - 英国 B组 流媒体 01
   - 未知 SS-01 | free-nodes
   - 未知 VLESS-05 | free-nodes
   - 未知 VLESS-07 | free-nodes
@@ -4675,29 +3813,29 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_18
   - AU澳大利亚(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)_7
-  - LK - zhuhai.uk
+  - IT - zhuhai.uk
+  - AU - zhuhai.uk
   - US - zhuhai.uk 08
   - RU - zhuhai.uk 01
-  - US - zhuhai.uk
-  - US - zhuhai.uk 02
   - RO - zhuhai.uk
-  - US - zhuhai.uk 03
-  - RO - zhuhai.uk 02
-  - FR - zhuhai.uk
-  - CA - zhuhai.uk
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
-  - RO - zhuhai.uk 03
-  - IT - zhuhai.uk
-  - US - zhuhai.uk 09
+  - US - zhuhai.uk
+  - ID - zhuhai.uk
+  - US - zhuhai.uk 02
   - DE - zhuhai.uk
-  - US - zhuhai.uk 10
+  - US - zhuhai.uk 03
+  - AL - zhuhai.uk
+  - RO - zhuhai.uk 02
+  - US - zhuhai.uk 04
+  - RO - zhuhai.uk 03
+  - US - zhuhai.uk 05
+  - NL - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 07
+  - ID - zhuhai.uk 02
+  - LV - zhuhai.uk
+  - US - zhuhai.uk 09
   - RO - zhuhai.uk 04
-  - RO - zhuhai.uk 05
-  - US - zhuhai.uk 11
-  - US - zhuhai.uk 12
-  - US - zhuhai.uk 13
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
   - JP - zhuhai.uk
@@ -4705,8 +3843,6 @@ proxy-groups:
   - KR - zhuhai.uk
   - KR - zhuhai.uk 02
   - SG - zhuhai.uk
-  - VN - zhuhai.uk
-  - TH - zhuhai.uk
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
@@ -4743,6 +3879,7 @@ proxy-groups:
   - GB英国(v2clash.blog 2026-10.13更新
   - 'US美国(v2clash.blog 2026-10.13更新 #2'
   - JP日本(v2clash.blog 2026-10.14更新
+  - DE德国(v2clash.blog 2026-10.14更新
   - 阿拉伯(v2clash.blog 2026-10.14更新
   - RU俄罗斯(v2clash.blog 2026-10.14更新
   - US美国(v2clash.blog 2026-10.14更新)
