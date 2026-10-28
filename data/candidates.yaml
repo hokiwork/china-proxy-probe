@@ -111,7 +111,42 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: e.k1-0.KDnS.fR
+- name: 🇺🇸_US_美国->🇯🇵_JP_日本
+  type: vless
+  server: jjkkll.ccwu.cc
+  port: 443
+  uuid: 49ef59c5-3491-4cba-824d-0fc76133f67c
+  network: ws
+  servername: jjkkll.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560
+    headers:
+      Host: jjkkll.ccwu.cc
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国_1
   type: vmess
   server: 39.108.113.127
   port: 10086
@@ -122,28 +157,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷_FR_法国
-  type: vless
-  server: farancenew.mamadhpbot.ir
-  port: 8080
-  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
-  network: ws
-  tls: false
-  ws-opts:
-    path: /real
-    headers:
-      Host: farancenew.mamadhpbot.ir
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国_1
+- name: 🇨🇳_CN_中国_2
   type: vmess
   server: 120.48.133.162
   port: 10086
@@ -154,54 +168,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   udp: true
-- name: 🇩🇪_DE_德国
-  type: trojan
-  server: de7.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷_KR_韩国
-  type: vmess
-  server: chuncheon02.zgjok.com
-  port: 443
-  uuid: d1a1cb91-0f1f-41eb-a307-631bba00f1bb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: chuncheon02.zgjok.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chuncheon02.zgjok.com
-  udp: true
 - name: 🇺🇸_US_美国
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  network: ws
-  servername: z1q3pv4g78.rucdncomp.pro
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国_1
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -216,24 +183,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-  udp: true
-- name: 🇨🇳_CN_中国_2
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
   udp: true
 - name: 未知 SS-01 | free-nodes
   type: ss
@@ -397,6 +346,13 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: tbank.ru
+- name: 广东省广州市+电信
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  network: tcp
+  tls: false
 - name: 乌克兰+V2CROSS.COM
   type: trojan
   server: 82.117.245.125
@@ -2603,140 +2559,32 @@ proxies:
   tls: true
   udp: true
   client-fingerprint: chrome
-- name: US - zhuhai.uk
+- name: US - zhuhai.uk 02
   type: vless
   server: saas.sin.fan
-  port: 2083
+  port: 443
   uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: vp25.1145678.xyz
+  servername: vp3.1145678.xyz
   ws-opts:
-    path: /comics/ads/thread
+    path: /links/go.php/act
     headers:
-      Host: vp25.1145678.xyz
-- name: SG - zhuhai.uk
-  type: vmess
-  server: 47.251.101.248
-  port: 443
-  uuid: 284c8008-5a85-4451-a8d1-b79c62f74d32
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: penny-quantitative-invitations-routers.trycloudflare.com
-    path: /vmess-argo
-  servername: penny-quantitative-invitations-routers.trycloudflare.com
-- name: KR - zhuhai.uk
-  type: vmess
-  server: UNhdjTDyIk9ro8lw.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: UNhdjTDyIk9ro8lw.v.3dns.vip
-    path: /ws-vmess
-  servername: UNhdjTDyIk9ro8lw.v.3dns.vip
-- name: HK - zhuhai.uk 02
-  type: vmess
-  server: QlxYtBpuqj3qqJsJ.v.3dns.vip
-  port: 443
-  uuid: b664cc36-4896-454b-bb9c-1377c76176de
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: QlxYtBpuqj3qqJsJ.v.3dns.vip
-    path: /ws-vmess
-  servername: QlxYtBpuqj3qqJsJ.v.3dns.vip
-- name: ES - zhuhai.uk
+      Host: vp3.1145678.xyz
+- name: IN - zhuhai.uk
   type: vless
-  server: 46.28.71.247
-  port: 443
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: SG - zhuhai.uk 02
-  type: vmess
-  server: W27rDXRPNwLD5jCX.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: W27rDXRPNwLD5jCX.v.3dns.vip
-    path: /ws-vmess
-  servername: W27rDXRPNwLD5jCX.v.3dns.vip
-- name: HK - zhuhai.uk 04
-  type: vmess
-  server: LZS3fc6DC8S12WNf.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: LZS3fc6DC8S12WNf.v.3dns.vip
-    path: /ws-vmess
-  servername: LZS3fc6DC8S12WNf.v.3dns.vip
-- name: ID - zhuhai.uk 02
-  type: vmess
-  server: TnmXPIFVwfvyFZvf.v.3dns.vip
-  port: 443
-  uuid: b664cc36-4896-454b-bb9c-1377c76176de
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: TnmXPIFVwfvyFZvf.v.3dns.vip
-    path: /ws-vmess
-  servername: TnmXPIFVwfvyFZvf.v.3dns.vip
-- name: KR - zhuhai.uk 02
-  type: vmess
-  server: OicDYwxD66LU02hc.v.3dns.vip
-  port: 443
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: OicDYwxD66LU02hc.v.3dns.vip
-    path: /ws-vmess
-  servername: OicDYwxD66LU02hc.v.3dns.vip
-- name: SG - zhuhai.uk 03
-  type: vless
-  server: '2407:cdc0:d010:27bd::'
-  port: 30454
-  uuid: 14cfea1a-e7b2-4f27-b46e-34c9efabf198
-  network: tcp
+  server: hydra.yokkastars.com
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  network: raw
   tls: true
   client-fingerprint: chrome
-  servername: www.samsung.com
+  servername: deepl.com
   flow: xtls-rprx-vision
-- name: ID - zhuhai.uk 03
+- name: DE - zhuhai.uk
   type: vmess
-  server: tu9HmdLGizJL08ZP.v.3dns.vip
+  server: oDDJKX2OdVb0VnKF.v.3dns.vip
   port: 443
   uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   alterId: 0
@@ -2745,40 +2593,12 @@ proxies:
   network: ws
   ws-opts:
     headers:
-      Host: tu9HmdLGizJL08ZP.v.3dns.vip
+      Host: oDDJKX2OdVb0VnKF.v.3dns.vip
     path: /ws-vmess
-  servername: tu9HmdLGizJL08ZP.v.3dns.vip
-- name: JP - zhuhai.uk
+  servername: oDDJKX2OdVb0VnKF.v.3dns.vip
+- name: SG - zhuhai.uk
   type: vmess
-  server: 47.237.85.7
-  port: 443
-  uuid: 284c8008-5a85-4451-a8d1-b79c62f74d32
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: gathered-fat-gsm-weekend.trycloudflare.com
-    path: /vmess-argo
-  servername: gathered-fat-gsm-weekend.trycloudflare.com
-- name: SG - zhuhai.uk 04
-  type: vmess
-  server: F5rot0Sdq2OdLpAs.v.3dns.vip
-  port: 443
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: F5rot0Sdq2OdLpAs.v.3dns.vip
-    path: /ws-vmess
-  servername: F5rot0Sdq2OdLpAs.v.3dns.vip
-- name: KR - zhuhai.uk 03
-  type: vmess
-  server: StMONzfjYcGgEOmG.v.3dns.vip
+  server: 2LKXD6XpT4NrCRfs.v.3dns.vip
   port: 443
   uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
   alterId: 0
@@ -2787,12 +2607,12 @@ proxies:
   network: ws
   ws-opts:
     headers:
-      Host: StMONzfjYcGgEOmG.v.3dns.vip
+      Host: 2LKXD6XpT4NrCRfs.v.3dns.vip
     path: /ws-vmess
-  servername: StMONzfjYcGgEOmG.v.3dns.vip
-- name: DE - zhuhai.uk 02
+  servername: 2LKXD6XpT4NrCRfs.v.3dns.vip
+- name: KR - zhuhai.uk
   type: vmess
-  server: HXMarEzmv8TUfjNG.v.3dns.vip
+  server: VDHxrIDpvxmNnWiZ.v.3dns.vip
   port: 443
   uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   alterId: 0
@@ -2801,74 +2621,208 @@ proxies:
   network: ws
   ws-opts:
     headers:
-      Host: HXMarEzmv8TUfjNG.v.3dns.vip
+      Host: VDHxrIDpvxmNnWiZ.v.3dns.vip
     path: /ws-vmess
-  servername: HXMarEzmv8TUfjNG.v.3dns.vip
-- name: IN - zhuhai.uk
-  type: vless
-  server: 5.253.28.240
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: deepl.com
-  flow: xtls-rprx-vision
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 47.251.108.158
+  servername: VDHxrIDpvxmNnWiZ.v.3dns.vip
+- name: HK - zhuhai.uk
+  type: vmess
+  server: TbkAjUee5UNb6JDx.v.3dns.vip
   port: 443
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: TbkAjUee5UNb6JDx.v.3dns.vip
+    path: /ws-vmess
+  servername: TbkAjUee5UNb6JDx.v.3dns.vip
+- name: KR - zhuhai.uk 02
+  type: vmess
+  server: cSfehDrYPYKh3Hsz.v.3dns.vip
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: cSfehDrYPYKh3Hsz.v.3dns.vip
+    path: /ws-vmess
+  servername: cSfehDrYPYKh3Hsz.v.3dns.vip
+- name: ID - zhuhai.uk 02
+  type: vmess
+  server: 9vN9QX6uwiugIqAU.v.3dns.vip
+  port: 443
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 9vN9QX6uwiugIqAU.v.3dns.vip
+    path: /ws-vmess
+  servername: 9vN9QX6uwiugIqAU.v.3dns.vip
+- name: DE - zhuhai.uk 02
+  type: vmess
+  server: BxMzry7bu86yuvNb.v.3dns.vip
+  port: 443
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: BxMzry7bu86yuvNb.v.3dns.vip
+    path: /ws-vmess
+  servername: BxMzry7bu86yuvNb.v.3dns.vip
+- name: ID - zhuhai.uk 03
+  type: vmess
+  server: EDzxRVTar32m9aRi.v.3dns.vip
+  port: 443
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: EDzxRVTar32m9aRi.v.3dns.vip
+    path: /ws-vmess
+  servername: EDzxRVTar32m9aRi.v.3dns.vip
+- name: JP - zhuhai.uk
+  type: vmess
+  server: 5eCGYgGBia1r0RCQ.v.3dns.vip
+  port: 443
+  uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: 5eCGYgGBia1r0RCQ.v.3dns.vip
+    path: /ws-vmess
+  servername: 5eCGYgGBia1r0RCQ.v.3dns.vip
+- name: DE - zhuhai.uk 03
+  type: vmess
+  server: O3ZBhK3HTyKNltsS.v.3dns.vip
+  port: 443
+  uuid: 0b80814e-7b96-4ec2-bbe2-fd17435e33b4
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: O3ZBhK3HTyKNltsS.v.3dns.vip
+    path: /ws-vmess
+  servername: O3ZBhK3HTyKNltsS.v.3dns.vip
+- name: US - zhuhai.uk 06
+  type: vmess
+  server: jijWLfZr2d5Hn3ut.v.3dns.vip
+  port: 443
+  uuid: b664cc36-4896-454b-bb9c-1377c76176de
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: jijWLfZr2d5Hn3ut.v.3dns.vip
+    path: /ws-vmess
+  servername: jijWLfZr2d5Hn3ut.v.3dns.vip
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 155.117.232.61
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: www.cloudflare.com
+  servername: node-usa.blok-signalon.top
   flow: xtls-rprx-vision
-- name: ID - zhuhai.uk
+- name: 'US - zhuhai.uk 02 #2'
+  type: vless
+  server: node-usa.blok-signalon.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: node-usa.blok-signalon.top
+  flow: xtls-rprx-vision
+- name: EE - zhuhai.uk 01
+  type: vless
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.samsung.com
+- name: US - zhuhai.uk
   type: http
-  server: 103.86.116.118
-  port: 443
+  server: 198.44.135.19
+  port: 9443
   tls: true
   skip-cert-verify: true
-- name: DE - zhuhai.uk
+- name: ID - zhuhai.uk
   type: http
-  server: 159.69.94.125
+  server: 178.248.73.58
   port: 443
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: HK - zhuhai.uk 03
-  type: socks5
-  server: 47.242.19.215
-  port: 8899
-  username: admin
-  password: admin
 - name: FR - zhuhai.uk
   type: http
-  server: 83.206.1.225
+  server: 217.181.201.254
   port: 8090
   tls: true
   skip-cert-verify: true
-- name: AT - zhuhai.uk
+- name: US - zhuhai.uk 03
   type: http
-  server: 146.70.244.2
+  server: 137.175.22.29
   port: 443
   tls: true
   skip-cert-verify: true
-- name: JP - zhuhai.uk 02
+- name: NL - zhuhai.uk
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: RU - zhuhai.uk
+  type: http
+  server: chalo-ru.nexorcdn.com
+  port: 41560
+  username: ef37886e2aacd6fa622e3de3810299c2
+  password: 9jkvAVV-9ufV6IGd
+  tls: true
+- name: HK - zhuhai.uk 02
+  type: http
+  server: 119.28.24.235
+  port: 3128
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 03
   type: socks5
-  server: 101.36.104.46
+  server: 123.58.219.171
   port: 10808
-- name: JP - zhuhai.uk 03
-  type: socks5
-  server: 101.36.104.239
-  port: 10808
-- name: KR - zhuhai.uk 04
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-- name: KR - zhuhai.uk 05
+- name: KR - zhuhai.uk 03
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -2876,32 +2830,50 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: SG - zhuhai.uk 02
+  type: vless
+  server: '2407:cdc0:d010:27bd::'
+  port: 30454
+  uuid: 14cfea1a-e7b2-4f27-b46e-34c9efabf198
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: I4WlCiks92rMzYTBZ3T_iDHU-kQX1bUW7jVIsjiklUE
+    short-id: 4e4d7529
+- name: SG - zhuhai.uk 03
+  type: socks5
+  server: 47.236.168.243
+  port: 1080
+  username: '8888'
+  password: '8888'
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 54.180.126.22
+  server: 43.203.241.69
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: meplz.co.kr
+  servername: api.project-fc.com
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 54.180.126.22
+  server: 43.203.241.69
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 54.180.126.22
+  server: 43.203.241.69
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.254.248.151
+  server: 52.77.235.236
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -2911,88 +2883,17 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.254.248.151
+  server: 52.77.235.236
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.254.248.151
+  server: 52.77.235.236
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: CA加拿大(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 49.238.238.154
-  port: 2053
-  uuid: 573c6482-37db-454a-8c31-5b45a338a580
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: and-75r.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: and-75r.pages.dev
-- name: 阿拉伯(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 157.228.160.166
-  port: 443
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  network: tcp
-  tls: true
-  client-fingerprint: randomized
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-- name: RU俄罗斯(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 159.194.250.154
-  port: 443
-  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: api-maps.yandex.ru
-  flow: xtls-rprx-vision
-- name: FR法国(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 45.39.255.74
-  port: 443
-  uuid: 67bb6612-261d-47b5-811e-aa2aeb2100c7
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-- name: 'RU俄罗斯(v2clash.blog 2026-10.8更新 #2'
-  type: vless
-  server: de2.srv.vbuste.ru
-  port: 443
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: de2.srv.vbuste.ru
-  flow: xtls-rprx-vision
-- name: US美国(v2clash.blog 2026-10.8更新
-  type: vless
-  server: 155.46.213.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 'US美国(v2clash.blog 2026-10.8更新 #2'
-  type: hysteria2
-  server: me17.msjia8844.site
-  port: 7443
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: true
 - name: US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新
   type: vless
   server: myanmar.visa.com
@@ -3718,17 +3619,12 @@ proxy-groups:
   - eee.k1-0.kdns.fr tls_h2 grpc CDN vless
   - ee.k1-0.kdns.fr tls_h2 grpc CDN vless
   - e.k1-0.kdns.fr tls_h2 grpc CDN vless
+  - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国_1
-  - 🇩🇪_DE_德国
-  - 🇰🇷_KR_韩国
-  - 🇺🇸_US_美国
-  - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-  - 🇺🇸_US_美国_1
   - 🇨🇳_CN_中国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇺🇸_US_美国
   - 未知 SS-01 | free-nodes
   - 未知 VLESS-05 | free-nodes
   - 未知 VLESS-07 | free-nodes
@@ -3747,6 +3643,7 @@ proxy-groups:
   - 美国+CloudFlare节点
   - '美国+CloudFlare节点 #2'
   - 俄罗斯+V2CROSS.COM
+  - 广东省广州市+电信
   - 乌克兰+V2CROSS.COM
   - 巴西+V2CROSS.COM
   - '乌克兰+V2CROSS.COM #2'
@@ -3924,45 +3821,40 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_18
   - AU澳大利亚(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)_7
-  - US - zhuhai.uk
+  - US - zhuhai.uk 02
+  - IN - zhuhai.uk
+  - DE - zhuhai.uk
   - SG - zhuhai.uk
   - KR - zhuhai.uk
-  - HK - zhuhai.uk 02
-  - ES - zhuhai.uk
-  - SG - zhuhai.uk 02
-  - HK - zhuhai.uk 04
-  - ID - zhuhai.uk 02
+  - HK - zhuhai.uk
   - KR - zhuhai.uk 02
-  - SG - zhuhai.uk 03
+  - ID - zhuhai.uk 02
+  - DE - zhuhai.uk 02
   - ID - zhuhai.uk 03
   - JP - zhuhai.uk
-  - SG - zhuhai.uk 04
-  - KR - zhuhai.uk 03
-  - DE - zhuhai.uk 02
-  - IN - zhuhai.uk
-  - US - zhuhai.uk 02
+  - DE - zhuhai.uk 03
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 01
+  - 'US - zhuhai.uk 02 #2'
+  - EE - zhuhai.uk 01
+  - US - zhuhai.uk
   - ID - zhuhai.uk
-  - DE - zhuhai.uk
-  - HK - zhuhai.uk 03
   - FR - zhuhai.uk
-  - AT - zhuhai.uk
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 03
-  - KR - zhuhai.uk 04
-  - KR - zhuhai.uk 05
+  - US - zhuhai.uk 03
+  - NL - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - RU - zhuhai.uk
+  - HK - zhuhai.uk 02
+  - HK - zhuhai.uk 03
+  - KR - zhuhai.uk 03
+  - SG - zhuhai.uk 02
+  - SG - zhuhai.uk 03
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - CA加拿大(v2clash.blog 2026-10.8更新
-  - 阿拉伯(v2clash.blog 2026-10.8更新
-  - RU俄罗斯(v2clash.blog 2026-10.8更新
-  - FR法国(v2clash.blog 2026-10.8更新
-  - 'RU俄罗斯(v2clash.blog 2026-10.8更新 #2'
-  - US美国(v2clash.blog 2026-10.8更新
-  - 'US美国(v2clash.blog 2026-10.8更新 #2'
   - US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新
   - US美国(v2clash.blog 2026-10.9更新
   - 'US美国(v2clash.blog 2026-10.9更新 #2'

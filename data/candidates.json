@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T05:26:30.296204+00:00",
+  "generated_at": "2026-10-28T12:41:11.589270+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -134,9 +134,52 @@
       "uuid": "22882d2f-b308-43b4-ba72-fdb4d5aa9fb6"
     },
     {
-      "alterId": 0,
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国->🇯🇵_JP_日本",
+      "network": "ws",
+      "port": 443,
+      "server": "jjkkll.ccwu.cc",
+      "servername": "jjkkll.ccwu.cc",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "49ef59c5-3491-4cba-824d-0fc76133f67c",
+      "ws-opts": {
+        "headers": {
+          "Host": "jjkkll.ccwu.cc"
+        },
+        "path": "/anime/travel/settings/proxyip=103.170.233.213,151.241.5.88,45.95.212.117,154.31.113.22,103.53.80.24,45.63.124.130,150.230.212.247?ed=2560"
+      }
+    },
+    {
+      "alterId": 64,
       "cipher": "auto",
       "name": "🇨🇳_CN_中国",
+      "port": 50002,
+      "server": "112.132.215.108",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "alterId": 2,
+      "cipher": "auto",
+      "name": "🇨🇳_CN_中国->🇯🇵_JP_日本",
+      "port": 30806,
+      "server": "v6.hdacd.com",
+      "skip-cert-verify": true,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "🇨🇳_CN_中国_1",
       "network": "ws",
       "port": 10086,
       "server": "39.108.113.127",
@@ -147,36 +190,9 @@
       "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397"
     },
     {
-      "name": "🇨🇳_CN_中国->🇺🇸_US_美国",
-      "port": 58011,
-      "server": "us22.sofast.live",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
-    },
-    {
-      "name": "🇫🇷_FR_法国",
-      "network": "ws",
-      "port": 8080,
-      "server": "farancenew.mamadhpbot.ir",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "732ec777-bf4a-4fee-835a-25d6a8b58563",
-      "ws-opts": {
-        "headers": {
-          "Host": "farancenew.mamadhpbot.ir"
-        },
-        "path": "/real"
-      }
-    },
-    {
       "alterId": 0,
       "cipher": "auto",
-      "name": "🇨🇳_CN_中国_1",
+      "name": "🇨🇳_CN_中国_2",
       "network": "ws",
       "port": 10086,
       "server": "120.48.133.162",
@@ -187,68 +203,9 @@
       "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397"
     },
     {
-      "name": "🇩🇪_DE_德国",
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "port": 443,
-      "server": "de7.dedushka.top",
-      "skip-cert-verify": true,
-      "sni": "de7.dedushka.top",
-      "type": "trojan",
-      "udp": true
-    },
-    {
       "alterId": 0,
       "cipher": "auto",
-      "name": "🇰🇷_KR_韩国",
-      "network": "ws",
-      "port": 443,
-      "server": "chuncheon02.zgjok.com",
-      "servername": "chuncheon02.zgjok.com",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "d1a1cb91-0f1f-41eb-a307-631bba00f1bb",
-      "ws-opts": {
-        "headers": {
-          "Host": "chuncheon02.zgjok.com"
-        },
-        "path": "/"
-      }
-    },
-    {
       "name": "🇺🇸_US_美国",
-      "password": "f0eb8c92ce8946aaba856569cff1a16b",
-      "port": 443,
-      "server": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
-      "skip-cert-verify": true,
-      "sni": "resources.findlocaljobnetworkandbuildcommunityconnections.com",
-      "type": "trojan",
-      "udp": true
-    },
-    {
-      "client-fingerprint": "firefox",
-      "name": "🇷🇺_RU_俄罗斯->🇩🇪_DE_德国",
-      "network": "ws",
-      "port": 443,
-      "server": "z1q3pv4g78.rucdncomp.pro",
-      "servername": "z1q3pv4g78.rucdncomp.pro",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "vless",
-      "udp": true,
-      "uuid": "c720cb74-4c84-4fce-b8ae-637dbaa16199",
-      "ws-opts": {
-        "headers": {
-          "Host": "z1q3pv4g78.rucdncomp.pro"
-        },
-        "path": "/useraction/events/b892639b7195/"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "🇺🇸_US_美国_1",
       "network": "ws",
       "port": 443,
       "server": "guanwang.awsno.com",
@@ -264,28 +221,6 @@
         },
         "path": "/hls/cctv5phd.m3u8"
       }
-    },
-    {
-      "alterId": 64,
-      "cipher": "auto",
-      "name": "🇨🇳_CN_中国_2",
-      "port": 50002,
-      "server": "112.132.215.108",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vmess",
-      "udp": true,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-    },
-    {
-      "name": "🇨🇳_CN_中国->🇺🇸_US_美国_1",
-      "port": 52683,
-      "server": "jp.sofast.live",
-      "skip-cert-verify": true,
-      "tls": false,
-      "type": "vless",
-      "udp": true,
-      "uuid": "399b6b23-cc40-4831-a494-61948e2df133"
     },
     {
       "cipher": "aes-128-gcm",
@@ -488,6 +423,15 @@
       "tls": true,
       "type": "vless",
       "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6"
+    },
+    {
+      "name": "广东省广州市+电信",
+      "network": "tcp",
+      "port": 58011,
+      "server": "us22.sofast.live",
+      "tls": false,
+      "type": "vless",
+      "uuid": "0afc6426-606c-48e7-bd70-3c424a416842"
     },
     {
       "name": "乌克兰+V2CROSS.COM",
@@ -3353,19 +3297,49 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "US - zhuhai.uk",
+      "name": "US - zhuhai.uk 02",
       "network": "ws",
-      "port": 2083,
+      "port": 443,
       "server": "saas.sin.fan",
-      "servername": "vp25.1145678.xyz",
+      "servername": "vp3.1145678.xyz",
       "tls": true,
       "type": "vless",
       "uuid": "5d7b401c-78fa-4254-872e-6d42bf7e75ec",
       "ws-opts": {
         "headers": {
-          "Host": "vp25.1145678.xyz"
+          "Host": "vp3.1145678.xyz"
         },
-        "path": "/comics/ads/thread"
+        "path": "/links/go.php/act"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "IN - zhuhai.uk",
+      "network": "raw",
+      "port": 40443,
+      "server": "hydra.yokkastars.com",
+      "servername": "deepl.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c"
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "DE - zhuhai.uk",
+      "network": "ws",
+      "port": 443,
+      "server": "oDDJKX2OdVb0VnKF.v.3dns.vip",
+      "servername": "oDDJKX2OdVb0VnKF.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
+      "ws-opts": {
+        "headers": {
+          "Host": "oDDJKX2OdVb0VnKF.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
       }
     },
     {
@@ -3374,16 +3348,16 @@
       "name": "SG - zhuhai.uk",
       "network": "ws",
       "port": 443,
-      "server": "47.251.101.248",
-      "servername": "penny-quantitative-invitations-routers.trycloudflare.com",
+      "server": "2LKXD6XpT4NrCRfs.v.3dns.vip",
+      "servername": "2LKXD6XpT4NrCRfs.v.3dns.vip",
       "tls": true,
       "type": "vmess",
-      "uuid": "284c8008-5a85-4451-a8d1-b79c62f74d32",
+      "uuid": "0b80814e-7b96-4ec2-bbe2-fd17435e33b4",
       "ws-opts": {
         "headers": {
-          "Host": "penny-quantitative-invitations-routers.trycloudflare.com"
+          "Host": "2LKXD6XpT4NrCRfs.v.3dns.vip"
         },
-        "path": "/vmess-argo"
+        "path": "/ws-vmess"
       }
     },
     {
@@ -3392,14 +3366,14 @@
       "name": "KR - zhuhai.uk",
       "network": "ws",
       "port": 443,
-      "server": "UNhdjTDyIk9ro8lw.v.3dns.vip",
-      "servername": "UNhdjTDyIk9ro8lw.v.3dns.vip",
+      "server": "VDHxrIDpvxmNnWiZ.v.3dns.vip",
+      "servername": "VDHxrIDpvxmNnWiZ.v.3dns.vip",
       "tls": true,
       "type": "vmess",
       "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
       "ws-opts": {
         "headers": {
-          "Host": "UNhdjTDyIk9ro8lw.v.3dns.vip"
+          "Host": "VDHxrIDpvxmNnWiZ.v.3dns.vip"
         },
         "path": "/ws-vmess"
       }
@@ -3407,83 +3381,17 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "HK - zhuhai.uk 02",
+      "name": "HK - zhuhai.uk",
       "network": "ws",
       "port": 443,
-      "server": "QlxYtBpuqj3qqJsJ.v.3dns.vip",
-      "servername": "QlxYtBpuqj3qqJsJ.v.3dns.vip",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "b664cc36-4896-454b-bb9c-1377c76176de",
-      "ws-opts": {
-        "headers": {
-          "Host": "QlxYtBpuqj3qqJsJ.v.3dns.vip"
-        },
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "ES - zhuhai.uk",
-      "network": "tcp",
-      "port": 443,
-      "server": "46.28.71.247",
-      "servername": "www.cloudflare.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767"
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "SG - zhuhai.uk 02",
-      "network": "ws",
-      "port": 443,
-      "server": "W27rDXRPNwLD5jCX.v.3dns.vip",
-      "servername": "W27rDXRPNwLD5jCX.v.3dns.vip",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
-      "ws-opts": {
-        "headers": {
-          "Host": "W27rDXRPNwLD5jCX.v.3dns.vip"
-        },
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "HK - zhuhai.uk 04",
-      "network": "ws",
-      "port": 443,
-      "server": "LZS3fc6DC8S12WNf.v.3dns.vip",
-      "servername": "LZS3fc6DC8S12WNf.v.3dns.vip",
+      "server": "TbkAjUee5UNb6JDx.v.3dns.vip",
+      "servername": "TbkAjUee5UNb6JDx.v.3dns.vip",
       "tls": true,
       "type": "vmess",
       "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
       "ws-opts": {
         "headers": {
-          "Host": "LZS3fc6DC8S12WNf.v.3dns.vip"
-        },
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "ID - zhuhai.uk 02",
-      "network": "ws",
-      "port": 443,
-      "server": "TnmXPIFVwfvyFZvf.v.3dns.vip",
-      "servername": "TnmXPIFVwfvyFZvf.v.3dns.vip",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "b664cc36-4896-454b-bb9c-1377c76176de",
-      "ws-opts": {
-        "headers": {
-          "Host": "TnmXPIFVwfvyFZvf.v.3dns.vip"
+          "Host": "TbkAjUee5UNb6JDx.v.3dns.vip"
         },
         "path": "/ws-vmess"
       }
@@ -3494,44 +3402,14 @@
       "name": "KR - zhuhai.uk 02",
       "network": "ws",
       "port": 443,
-      "server": "OicDYwxD66LU02hc.v.3dns.vip",
-      "servername": "OicDYwxD66LU02hc.v.3dns.vip",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
-      "ws-opts": {
-        "headers": {
-          "Host": "OicDYwxD66LU02hc.v.3dns.vip"
-        },
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "SG - zhuhai.uk 03",
-      "network": "tcp",
-      "port": 30454,
-      "server": "2407:cdc0:d010:27bd::",
-      "servername": "www.samsung.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "14cfea1a-e7b2-4f27-b46e-34c9efabf198"
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "ID - zhuhai.uk 03",
-      "network": "ws",
-      "port": 443,
-      "server": "tu9HmdLGizJL08ZP.v.3dns.vip",
-      "servername": "tu9HmdLGizJL08ZP.v.3dns.vip",
+      "server": "cSfehDrYPYKh3Hsz.v.3dns.vip",
+      "servername": "cSfehDrYPYKh3Hsz.v.3dns.vip",
       "tls": true,
       "type": "vmess",
       "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
       "ws-opts": {
         "headers": {
-          "Host": "tu9HmdLGizJL08ZP.v.3dns.vip"
+          "Host": "cSfehDrYPYKh3Hsz.v.3dns.vip"
         },
         "path": "/ws-vmess"
       }
@@ -3539,53 +3417,17 @@
     {
       "alterId": 0,
       "cipher": "auto",
-      "name": "JP - zhuhai.uk",
+      "name": "ID - zhuhai.uk 02",
       "network": "ws",
       "port": 443,
-      "server": "47.237.85.7",
-      "servername": "gathered-fat-gsm-weekend.trycloudflare.com",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "284c8008-5a85-4451-a8d1-b79c62f74d32",
-      "ws-opts": {
-        "headers": {
-          "Host": "gathered-fat-gsm-weekend.trycloudflare.com"
-        },
-        "path": "/vmess-argo"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "SG - zhuhai.uk 04",
-      "network": "ws",
-      "port": 443,
-      "server": "F5rot0Sdq2OdLpAs.v.3dns.vip",
-      "servername": "F5rot0Sdq2OdLpAs.v.3dns.vip",
+      "server": "9vN9QX6uwiugIqAU.v.3dns.vip",
+      "servername": "9vN9QX6uwiugIqAU.v.3dns.vip",
       "tls": true,
       "type": "vmess",
       "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
       "ws-opts": {
         "headers": {
-          "Host": "F5rot0Sdq2OdLpAs.v.3dns.vip"
-        },
-        "path": "/ws-vmess"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "KR - zhuhai.uk 03",
-      "network": "ws",
-      "port": 443,
-      "server": "StMONzfjYcGgEOmG.v.3dns.vip",
-      "servername": "StMONzfjYcGgEOmG.v.3dns.vip",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "0b80814e-7b96-4ec2-bbe2-fd17435e33b4",
-      "ws-opts": {
-        "headers": {
-          "Host": "StMONzfjYcGgEOmG.v.3dns.vip"
+          "Host": "9vN9QX6uwiugIqAU.v.3dns.vip"
         },
         "path": "/ws-vmess"
       }
@@ -3596,14 +3438,86 @@
       "name": "DE - zhuhai.uk 02",
       "network": "ws",
       "port": 443,
-      "server": "HXMarEzmv8TUfjNG.v.3dns.vip",
-      "servername": "HXMarEzmv8TUfjNG.v.3dns.vip",
+      "server": "BxMzry7bu86yuvNb.v.3dns.vip",
+      "servername": "BxMzry7bu86yuvNb.v.3dns.vip",
       "tls": true,
       "type": "vmess",
-      "uuid": "78b3f149-f037-465d-b2fb-11adb6f73ff8",
+      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
       "ws-opts": {
         "headers": {
-          "Host": "HXMarEzmv8TUfjNG.v.3dns.vip"
+          "Host": "BxMzry7bu86yuvNb.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "ID - zhuhai.uk 03",
+      "network": "ws",
+      "port": 443,
+      "server": "EDzxRVTar32m9aRi.v.3dns.vip",
+      "servername": "EDzxRVTar32m9aRi.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
+      "ws-opts": {
+        "headers": {
+          "Host": "EDzxRVTar32m9aRi.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "JP - zhuhai.uk",
+      "network": "ws",
+      "port": 443,
+      "server": "5eCGYgGBia1r0RCQ.v.3dns.vip",
+      "servername": "5eCGYgGBia1r0RCQ.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "0b80814e-7b96-4ec2-bbe2-fd17435e33b4",
+      "ws-opts": {
+        "headers": {
+          "Host": "5eCGYgGBia1r0RCQ.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "DE - zhuhai.uk 03",
+      "network": "ws",
+      "port": 443,
+      "server": "O3ZBhK3HTyKNltsS.v.3dns.vip",
+      "servername": "O3ZBhK3HTyKNltsS.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "0b80814e-7b96-4ec2-bbe2-fd17435e33b4",
+      "ws-opts": {
+        "headers": {
+          "Host": "O3ZBhK3HTyKNltsS.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "US - zhuhai.uk 06",
+      "network": "ws",
+      "port": 443,
+      "server": "jijWLfZr2d5Hn3ut.v.3dns.vip",
+      "servername": "jijWLfZr2d5Hn3ut.v.3dns.vip",
+      "tls": true,
+      "type": "vmess",
+      "uuid": "b664cc36-4896-454b-bb9c-1377c76176de",
+      "ws-opts": {
+        "headers": {
+          "Host": "jijWLfZr2d5Hn3ut.v.3dns.vip"
         },
         "path": "/ws-vmess"
       }
@@ -3611,89 +3525,115 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "IN - zhuhai.uk",
+      "name": "US - zhuhai.uk 01",
       "network": "tcp",
-      "port": 40443,
-      "server": "5.253.28.240",
-      "servername": "deepl.com",
+      "port": 443,
+      "server": "155.117.232.61",
+      "servername": "node-usa.blok-signalon.top",
       "tls": true,
       "type": "vless",
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c"
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70"
     },
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
-      "name": "US - zhuhai.uk 02",
+      "name": "US - zhuhai.uk 02 #2",
       "network": "tcp",
       "port": 443,
-      "server": "47.251.108.158",
-      "servername": "www.cloudflare.com",
+      "server": "node-usa.blok-signalon.top",
+      "servername": "node-usa.blok-signalon.top",
       "tls": true,
       "type": "vless",
-      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9"
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70"
     },
     {
-      "name": "ID - zhuhai.uk",
-      "port": 443,
-      "server": "103.86.116.118",
+      "client-fingerprint": "chrome",
+      "name": "EE - zhuhai.uk 01",
+      "network": "tcp",
+      "port": 25895,
+      "server": "79.182.39.232",
+      "servername": "www.samsung.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2"
+    },
+    {
+      "name": "US - zhuhai.uk",
+      "port": 9443,
+      "server": "198.44.135.19",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "DE - zhuhai.uk",
+      "name": "ID - zhuhai.uk",
       "password": "null",
       "port": 443,
-      "server": "159.69.94.125",
+      "server": "178.248.73.58",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http",
       "username": "null"
     },
     {
-      "name": "HK - zhuhai.uk 03",
-      "password": "admin",
-      "port": 8899,
-      "server": "47.242.19.215",
-      "type": "socks5",
-      "username": "admin"
-    },
-    {
       "name": "FR - zhuhai.uk",
       "port": 8090,
-      "server": "83.206.1.225",
+      "server": "217.181.201.254",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "AT - zhuhai.uk",
+      "name": "US - zhuhai.uk 03",
       "port": 443,
-      "server": "146.70.244.2",
+      "server": "137.175.22.29",
       "skip-cert-verify": true,
       "tls": true,
       "type": "http"
     },
     {
-      "name": "JP - zhuhai.uk 02",
+      "name": "NL - zhuhai.uk",
+      "port": 9002,
+      "server": "84.17.47.148",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "NL - zhuhai.uk 02",
+      "password": "null",
+      "port": 9002,
+      "server": "84.17.47.149",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http",
+      "username": "null"
+    },
+    {
+      "name": "RU - zhuhai.uk",
+      "password": "9jkvAVV-9ufV6IGd",
+      "port": 41560,
+      "server": "chalo-ru.nexorcdn.com",
+      "tls": true,
+      "type": "http",
+      "username": "ef37886e2aacd6fa622e3de3810299c2"
+    },
+    {
+      "name": "HK - zhuhai.uk 02",
+      "port": 3128,
+      "server": "119.28.24.235",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "http"
+    },
+    {
+      "name": "HK - zhuhai.uk 03",
       "port": 10808,
-      "server": "101.36.104.46",
+      "server": "123.58.219.171",
       "type": "socks5"
     },
     {
-      "name": "JP - zhuhai.uk 03",
-      "port": 10808,
-      "server": "101.36.104.239",
-      "type": "socks5"
-    },
-    {
-      "name": "KR - zhuhai.uk 04",
-      "port": 1090,
-      "server": "121.169.46.116",
-      "type": "socks5"
-    },
-    {
-      "name": "KR - zhuhai.uk 05",
+      "name": "KR - zhuhai.uk 03",
       "network": "ws",
       "port": 25555,
       "server": "152.69.226.63",
@@ -3706,11 +3646,34 @@
     {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
+      "name": "SG - zhuhai.uk 02",
+      "port": 30454,
+      "reality-opts": {
+        "public-key": "I4WlCiks92rMzYTBZ3T_iDHU-kQX1bUW7jVIsjiklUE",
+        "short-id": "4e4d7529"
+      },
+      "server": "2407:cdc0:d010:27bd::",
+      "servername": "www.samsung.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "14cfea1a-e7b2-4f27-b46e-34c9efabf198"
+    },
+    {
+      "name": "SG - zhuhai.uk 03",
+      "password": "8888",
+      "port": 1080,
+      "server": "47.236.168.243",
+      "type": "socks5",
+      "username": "8888"
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
       "name": "end-gfw-kr64-VLESS",
       "network": "tcp",
       "port": 443,
-      "server": "54.180.126.22",
-      "servername": "meplz.co.kr",
+      "server": "43.203.241.69",
+      "servername": "api.project-fc.com",
       "tls": true,
       "type": "vless",
       "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043"
@@ -3719,7 +3682,7 @@
       "name": "end-gfw-kr64-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "54.180.126.22",
+      "server": "43.203.241.69",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -3729,7 +3692,7 @@
       "name": "end-gfw-kr64-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "54.180.126.22",
+      "server": "43.203.241.69",
       "type": "ss"
     },
     {
@@ -3738,7 +3701,7 @@
       "name": "end-gfw-sg89-VLESS",
       "network": "tcp",
       "port": 443,
-      "server": "54.254.248.151",
+      "server": "52.77.235.236",
       "servername": "bhpetrolxfleet.my",
       "tls": true,
       "type": "vless",
@@ -3748,7 +3711,7 @@
       "name": "end-gfw-sg89-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "54.254.248.151",
+      "server": "52.77.235.236",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -3758,97 +3721,8 @@
       "name": "end-gfw-sg89-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "54.254.248.151",
+      "server": "52.77.235.236",
       "type": "ss"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "CA加拿大(v2clash.blog 2026-10.8更新",
-      "network": "ws",
-      "port": 2053,
-      "server": "49.238.238.154",
-      "servername": "and-75r.pages.dev",
-      "tls": true,
-      "type": "vless",
-      "uuid": "573c6482-37db-454a-8c31-5b45a338a580",
-      "ws-opts": {
-        "headers": {
-          "Host": "and-75r.pages.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "randomized",
-      "flow": "xtls-rprx-vision",
-      "name": "阿拉伯(v2clash.blog 2026-10.8更新",
-      "network": "tcp",
-      "port": 443,
-      "server": "157.228.160.166",
-      "servername": "addons.mozilla.org",
-      "tls": true,
-      "type": "vless",
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "RU俄罗斯(v2clash.blog 2026-10.8更新",
-      "network": "tcp",
-      "port": 443,
-      "server": "159.194.250.154",
-      "servername": "api-maps.yandex.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "f0482c9d-ff67-4a43-af8e-76fc5d55c250"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "FR法国(v2clash.blog 2026-10.8更新",
-      "network": "xhttp",
-      "port": 443,
-      "server": "45.39.255.74",
-      "servername": "yahoo.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "67bb6612-261d-47b5-811e-aa2aeb2100c7"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "RU俄罗斯(v2clash.blog 2026-10.8更新 #2",
-      "network": "tcp",
-      "port": 443,
-      "server": "de2.srv.vbuste.ru",
-      "servername": "de2.srv.vbuste.ru",
-      "tls": true,
-      "type": "vless",
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "US美国(v2clash.blog 2026-10.8更新",
-      "network": "ws",
-      "port": 8880,
-      "server": "155.46.213.30",
-      "tls": false,
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "ws-opts": {
-        "headers": {
-          "Host": "vms.lifetime51.workers.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-10.8更新 #2",
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "port": 7443,
-      "server": "me17.msjia8844.site",
-      "skip-cert-verify": true,
-      "sni": "me17.msjia8844.site",
-      "type": "hysteria2"
     },
     {
       "client-fingerprint": "chrome",
@@ -4762,5 +4636,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 318
+  "total": 309
 }
