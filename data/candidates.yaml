@@ -110,20 +110,20 @@ proxies:
   client-fingerprint: chrome
   servername: www.lamer.com.sg
   flow: xtls-rprx-vision
-- name: '🇸🇬[www.v2nodes.com #9'
+- name: 🏳[www.v2nodes.com
   type: trojan
   server: 139.180.146.200
   port: 8886
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   sni: 139.180.146.200
-- name: '🇸🇬[www.v2nodes.com #10'
+- name: '🇸🇬[www.v2nodes.com #9'
   type: vless
   server: 47.237.74.17
   port: 16263
   uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
   network: tcp
   tls: false
-- name: '🇸🇬[www.v2nodes.com #11'
+- name: '🇸🇬[www.v2nodes.com #10'
   type: vless
   server: 139.162.27.96
   port: 2096
@@ -136,7 +136,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: '🇸🇬[www.v2nodes.com #12'
+- name: '🇸🇬[www.v2nodes.com #11'
   type: vless
   server: 206.206.76.75
   port: 443
@@ -155,13 +155,13 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 🏳[www.v2nodes.com
+- name: '🏳[www.v2nodes.com #2'
   type: ss
   server: 139.180.220.175
   port: 8388
   cipher: aes-256-gcm
   password: qpSevKaUXYQKvSjp
-- name: '🇸🇬[www.v2nodes.com #13'
+- name: '🇸🇬[www.v2nodes.com #12'
   type: vless
   server: 54.251.9.130
   port: 24146
@@ -171,7 +171,7 @@ proxies:
   client-fingerprint: chrome
   servername: www.intel.com
   flow: xtls-rprx-vision
-- name: '🏳[www.v2nodes.com #2'
+- name: '🏳[www.v2nodes.com #3'
   type: vless
   server: 54.169.200.246
   port: 41688
@@ -181,14 +181,14 @@ proxies:
   client-fingerprint: chrome
   servername: www.intel.com
   flow: xtls-rprx-vision
-- name: '🏳[www.v2nodes.com #3'
+- name: '🇸🇬[www.v2nodes.com #13'
   type: vless
   server: 46.137.202.178
   port: 12512
   uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
   network: tcp
   tls: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   servername: www.intel.com
   flow: xtls-rprx-vision
 - name: '🏳[www.v2nodes.com #4'
@@ -201,30 +201,30 @@ proxies:
   client-fingerprint: chrome
   servername: sg2-8sb.6121999.dpdns.org
   flow: xtls-rprx-vision
-- name: 🇮🇳[www.v2nodes.com
+- name: '🏳[www.v2nodes.com #5'
   type: vless
   server: hydra.yokkastars.com
   port: 40443
   uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
   network: tcp
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: qq
   servername: deepl.com
   flow: xtls-rprx-vision
-- name: '🇸🇬[www.v2nodes.com #14'
+- name: '🏳[www.v2nodes.com #6'
   type: vless
-  server: 104.18.40.100
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 190.93.244.166
+  port: 2096
+  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
   network: ws
   tls: true
   client-fingerprint: chrome
-  servername: ccc.010304.xyz
+  servername: wQa3mioJJR8fYoZhIui--su3-UCG1GDx.pages.DEv
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
     headers:
-      Host: ccc.010304.xyz
-- name: '🇸🇬[www.v2nodes.com #15'
+      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
+- name: '🇸🇬[www.v2nodes.com #14'
   type: vless
   server: 3.0.111.82
   port: 12972
@@ -244,7 +244,7 @@ proxies:
   tls: false
   network: tcp
   servername: ww11.levikogjgfdd.ir
-- name: 🏳[www.v2nodes.com] vmess-
+- name: 🇸🇬[www.v2nodes.com] vmess-SG-7297225
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -253,7 +253,8 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: '🇸🇬[www.v2nodes.com #16'
+  servername: 149.88.23.202
+- name: '🇸🇬[www.v2nodes.com #15'
   type: vless
   server: 43.174.193.1
   port: 443
@@ -265,17 +266,16 @@ proxies:
     path: /fp=chromesecurity=tls
     headers:
       Host: ccc.010304.xyz
-- name: '🇸🇬[www.v2nodes.com #17'
+- name: '🇸🇬[www.v2nodes.com #16'
   type: vless
-  server: 172.64.150.43
-  port: 8080
+  server: 172.64.150.28
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   network: ws
   tls: false
-  client-fingerprint: chrome
   servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /sg-melbi
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: vless
@@ -4195,56 +4195,33 @@ proxies:
   tls: true
   udp: true
   client-fingerprint: chrome
-- name: US - zhuhai.uk 02
+- name: NO - zhuhai.uk
   type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vp.1145678.xyz
-  ws-opts:
-    path: /p/doujin
-    headers:
-      Host: vp.1145678.xyz
-- name: IN - zhuhai.uk
-  type: vless
-  server: 5.253.28.240
-  port: 40443
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  server: 79.182.39.35
+  port: 25548
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
   network: tcp
   tls: true
   client-fingerprint: firefox
-  servername: deepl.com
+  servername: www.cloudflare.com
+- name: TR - zhuhai.uk
+  type: vless
+  server: tr2.h1cloud.net
+  port: 25021
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.samsung.com
   flow: xtls-rprx-vision
-- name: US - zhuhai.uk 06
-  type: vless
-  server: saas.sin.fan
-  port: 2096
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vp8.1145678.xyz
-  ws-opts:
-    path: /p
-    headers:
-      Host: vp8.1145678.xyz
-- name: US - zhuhai.uk 10
-  type: vless
-  server: saas.sin.fan
-  port: 2053
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vp11.1145678.xyz
-  ws-opts:
-    path: /videos/forum
-    headers:
-      Host: vp11.1145678.xyz
-- name: JP - zhuhai.uk
+- name: DE - zhuhai.uk 03
+  type: trojan
+  server: de-bots4.h1cloud.net
+  port: 25267
+  password: happybirthdaydaniel
+  sni: t.meFuckTheWall
+  network: tcp
+- name: JP - zhuhai.uk 01
   type: vless
   server: 45.202.255.92
   port: 9443
@@ -4254,92 +4231,9 @@ proxies:
   client-fingerprint: chrome
   servername: www.amazon.com
   flow: xtls-rprx-vision
-- name: DK - zhuhai.uk
-  type: vless
-  server: 193.181.212.80
-  port: 443
-  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: kv.074167.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: kv.074167.xyz
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 155.117.232.61
-  port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: node-usa.blok-signalon.top
-  flow: xtls-rprx-vision
-- name: 'US - zhuhai.uk 02 #2'
-  type: vless
-  server: node-usa.blok-signalon.top
-  port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: node-usa.blok-signalon.top
-  flow: xtls-rprx-vision
-- name: EE - zhuhai.uk 01
-  type: vless
-  server: 79.182.39.232
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.samsung.com
-- name: US - zhuhai.uk
+- name: SG - zhuhai.uk
   type: http
-  server: zebpay.site
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: jewelscollecti.icu
-  port: 443
-  tls: true
-- name: BG - zhuhai.uk
-  type: http
-  server: 169.150.237.1
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 185.93.106.214
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 45.150.164.18
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 11
-  type: http
-  server: 137.175.22.45
+  server: 156.146.56.97
   port: 443
   tls: true
   skip-cert-verify: true
@@ -4347,61 +4241,171 @@ proxies:
   type: http
   server: 87.98.174.157
   port: 6103
+  tls: true
+  sni: 87.98.174.157
+  skip-cert-verify: true
+- name: US - zhuhai.uk
+  type: http
+  server: 137.175.22.116
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: LV - zhuhai.uk
+  type: http
+  server: 185.219.159.15
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 185.93.106.214
+  port: 443
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: CZ - zhuhai.uk
+- name: IT - zhuhai.uk
+  type: socks5
+  server: 212.77.75.25
+  port: 1088
+- name: NL - zhuhai.uk 02
   type: http
-  server: 185.216.35.66
-  port: 443
+  server: 84.17.47.125
+  port: 9002
   tls: true
+  sni: 84.17.47.125
   skip-cert-verify: true
 - name: FR - zhuhai.uk 02
   type: http
-  server: 83.172.143.53
-  port: 4443
-  tls: true
-  skip-cert-verify: true
-- name: IN - zhuhai.uk 02
-  type: http
-  server: 110.173.188.221
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 14
-  type: http
-  server: tzoa.fun
+  server: 82.65.162.76
   port: 443
   username: 'null'
-  password: None
-  tls: true
-- name: HK - zhuhai.uk
-  type: vless
-  server: 45.39.198.144
-  port: 9443
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-- name: HK - zhuhai.uk 02
-  type: http
-  server: 119.28.24.235
-  port: 3128
+  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: DE - zhuhai.uk
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
+  type: http
+  server: 116.202.172.99
+  port: 443
   tls: true
-  sni: t.meFuckTheWall
   skip-cert-verify: true
+- name: BG - zhuhai.uk
+  type: http
+  server: 169.150.237.1
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: HR - zhuhai.uk
+  type: http
+  server: 154.47.29.174
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: IL - zhuhai.uk
+  type: http
+  server: 62.90.77.30
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: http
+  server: 45.150.164.18
+  port: 8443
+  tls: true
+  sni: 45.150.164.18
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 148.135.10.80
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 45.63.38.134
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 02
+  type: http
+  server: 79.127.156.177
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: voteshirleysew.club
+  port: 443
+  tls: true
+- name: DE - zhuhai.uk 04
+  type: http
+  server: 87.249.132.97
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: FR - zhuhai.uk 03
+  type: http
+  server: fan.132031.xyz
+  port: 443
+  tls: true
+  sni: fan.132031.xyz
+- name: HK - zhuhai.uk
+  type: socks5
+  server: 47.238.126.208
+  port: 1080
+  username: 'null'
+  password: 'null'
+- name: HK - zhuhai.uk 02
+  type: socks5
+  server: 61.142.113.42
+  port: 6666
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: fan.571589.xyz
+- name: JP - zhuhai.uk 02
+  type: http
+  server: 120.232.204.58
+  port: 40583
+  tls: true
+  skip-cert-verify: true
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: VDJjbE0wUWxNMFE2Og==
+- name: KR - zhuhai.uk 02
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: Og%3D%3D
+  password: Og%3D%3D
+- name: ID - zhuhai.uk
+  type: http
+  server: 103.86.117.202
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: IN - zhuhai.uk
+  type: vless
+  server: 5.253.28.240
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
 - name: end-gfw-kr64-VLESS
   type: vless
   server: 54.180.160.195
@@ -4427,24 +4431,24 @@ proxies:
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 47.129.253.206
+  server: 47.128.242.197
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: bhpetrolxfleet.my
+  servername: one-admin.staging.primelectric.ph
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 47.129.253.206
+  server: 47.128.242.197
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 47.129.253.206
+  server: 47.128.242.197
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -5144,6 +5148,59 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
+- name: US美国(v2clash.blog 2026-10.29更新
+  type: hysteria2
+  server: bl2.nexfile.net
+  port: 4444
+  password: 10be1dad-9952-4c5e-aa30-db435f69b727
+  sni: bl2.nexfile.net
+  skip-cert-verify: false
+- name: 'US美国(v2clash.blog 2026-10.29更新 #2'
+  type: vless
+  server: 195.123.213.28
+  port: 443
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-10.29更新)
+  type: vmess
+  server: '[2606:4700:9a98::890:1d33]'
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: vmess.lbw666.dpdns.org
+    path: /ws?ed=2048
+- name: FR法国(v2clash.blog 2026-10.29更新
+  type: vless
+  server: 172.66.158.115
+  port: 8080
+  uuid: f8f5d3a5-54bd-4f52-9759-137bdbf950db
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
+- name: CA加拿大(v2clash.blog 2026-10.29更新
+  type: trojan
+  server: www.visa.com.sg
+  port: 2096
+  password: 3aa78b49-5530-45a2-93cb-b093745824f1
+  sni: au4.yang-1989.xyz
+  network: ws
+  ws-opts:
+    path: /ya87
+    headers:
+      Host: au4.yang-1989.xyz
 proxy-groups:
 - name: PROBE
   type: select
@@ -5159,23 +5216,23 @@ proxy-groups:
   - '🇸🇬[www.v2nodes.com #6'
   - '🇸🇬[www.v2nodes.com #7'
   - '🇸🇬[www.v2nodes.com #8'
+  - 🏳[www.v2nodes.com
   - '🇸🇬[www.v2nodes.com #9'
   - '🇸🇬[www.v2nodes.com #10'
   - '🇸🇬[www.v2nodes.com #11'
-  - '🇸🇬[www.v2nodes.com #12'
   - 🇸🇬[www.v2nodes.com] vmess-SG-15612648
-  - 🏳[www.v2nodes.com
-  - '🇸🇬[www.v2nodes.com #13'
   - '🏳[www.v2nodes.com #2'
+  - '🇸🇬[www.v2nodes.com #12'
   - '🏳[www.v2nodes.com #3'
+  - '🇸🇬[www.v2nodes.com #13'
   - '🏳[www.v2nodes.com #4'
-  - 🇮🇳[www.v2nodes.com
+  - '🏳[www.v2nodes.com #5'
+  - '🏳[www.v2nodes.com #6'
   - '🇸🇬[www.v2nodes.com #14'
-  - '🇸🇬[www.v2nodes.com #15'
   - 🇸🇬[www.v2nodes.com] vmess-SG-7314090
-  - 🏳[www.v2nodes.com] vmess-
+  - 🇸🇬[www.v2nodes.com] vmess-SG-7297225
+  - '🇸🇬[www.v2nodes.com #15'
   - '🇸🇬[www.v2nodes.com #16'
-  - '🇸🇬[www.v2nodes.com #17'
   - vless
   - '[学术节点（高速）]美国01'
   - 德国-20T-限制10ip同时在线
@@ -5532,30 +5589,37 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_18
   - AU澳大利亚(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)_7
-  - US - zhuhai.uk 02
-  - IN - zhuhai.uk
-  - US - zhuhai.uk 06
-  - US - zhuhai.uk 10
-  - JP - zhuhai.uk
-  - DK - zhuhai.uk
-  - US - zhuhai.uk 01
-  - 'US - zhuhai.uk 02 #2'
-  - EE - zhuhai.uk 01
-  - US - zhuhai.uk
-  - US - zhuhai.uk 03
-  - BG - zhuhai.uk
-  - NL - zhuhai.uk
-  - NL - zhuhai.uk 02
-  - US - zhuhai.uk 08
-  - US - zhuhai.uk 11
+  - NO - zhuhai.uk
+  - TR - zhuhai.uk
+  - DE - zhuhai.uk 03
+  - JP - zhuhai.uk 01
+  - SG - zhuhai.uk
   - FR - zhuhai.uk
-  - CZ - zhuhai.uk
+  - US - zhuhai.uk
+  - LV - zhuhai.uk
+  - NL - zhuhai.uk
+  - IT - zhuhai.uk
+  - NL - zhuhai.uk 02
   - FR - zhuhai.uk 02
-  - IN - zhuhai.uk 02
-  - US - zhuhai.uk 14
+  - DE - zhuhai.uk
+  - BG - zhuhai.uk
+  - HR - zhuhai.uk
+  - IL - zhuhai.uk
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 04
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - DE - zhuhai.uk 04
+  - FR - zhuhai.uk 03
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - DE - zhuhai.uk
+  - JP - zhuhai.uk
+  - JP - zhuhai.uk 02
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - ID - zhuhai.uk
+  - IN - zhuhai.uk
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
@@ -5622,5 +5686,10 @@ proxy-groups:
   - US美国(v2clash.blog 2026-10.26更新
   - NL荷兰(v2clash.blog 2026-10.26更新
   - 'US美国(v2clash.blog 2026-10.26更新 #2'
+  - US美国(v2clash.blog 2026-10.29更新
+  - 'US美国(v2clash.blog 2026-10.29更新 #2'
+  - US美国(v2clash.blog 2026-10.29更新)
+  - FR法国(v2clash.blog 2026-10.29更新
+  - CA加拿大(v2clash.blog 2026-10.29更新
 rules:
 - MATCH,PROBE
