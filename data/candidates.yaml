@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: SG
-  type: vmess
-  server: 170.187.229.90
-  port: 80
-  uuid: 9bda13eb-66bb-4ff5-b01c-aa7c2d291412
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: shoutingtoutiao3.10010.com
-    path: /images
 - name: sz.770886.xyz-xhtt
   type: vless
   server: sz.770886.xyz
@@ -34,1401 +21,118 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: d.ChIcAgO-0000.Kdns.fr
-- name: '[学术节点（高速）]美国01'
-  type: vmess
-  server: US032010.westmgreen.com
+- name: ricardolu955.ccwu.cc
+  type: vless
+  server: ricardolu955.ccwu.cc
   port: 443
-  uuid: f65224a6-19ba-4987-9e13-55bd38fb34fa
-  alterId: 0
-  cipher: auto
-  tls: true
+  uuid: 9ea8c73c-01a3-420f-851b-aa5741b69355
   network: ws
-  ws-opts:
-    headers:
-      Host: US032010.westmgreen.com
-    path: /wes
-  servername: US032010.westmgreen.com
-- name: 德国-20T-限制10ip同时在线
-  type: vless
-  server: 185.44.64.166
-  port: 59397
-  uuid: ac36b6f8-d03d-46cb-808f-e655183fb76d
-  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: la.blogs.nvidia.com
-  flow: xtls-rprx-vision
-- name: 韩国01
-  type: vless
-  server: 199.181.197.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: vms.lifetime19.workers.dev
+  servername: ricardolu955.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime19.workers.dev
-- name: 日本01
+      Host: ricardolu955.ccwu.cc
+- name: vvvvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 31.76.89.226
+  server: vvvvvv.99999-1.kdns.fr
   port: 443
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  network: tcp
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: ai.eosshop.net
-  flow: xtls-rprx-vision
-- name: 泰国01
+  servername: vVvvVv.99999-1.kdns.Fr
+- name: vvvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 188.120.234.199
+  server: vvvvv.99999-1.kdns.fr
   port: 443
-  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: payeeclickerhalogen.berylcord.net
-  flow: xtls-rprx-vision
-- name: baidu365.org 机场推荐 🇫🇷法国 06
-  type: vless
-  server: justfr.b-cdn.net
-  port: 443
-  uuid: 1ccb5c3d-d5f7-4515-9666-dfc7489e78f7
-  network: xhttp
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-- name: baidu365.org 机场推荐 🇰🇷韩国 01
-  type: hysteria2
-  server: 3.35.177.133
-  port: 16001
-  password: i4XPm2Ip7f9IAqbB
-  sni: kor-ls-8.nebulacloud.win
-  skip-cert-verify: true
-- name: baidu365.org 机场推荐 🇷🇺俄罗斯 06
+  servername: Vvvvv.99999-1.KDns.fr
+- name: vvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 193.233.221.86
+  server: vvvv.99999-1.kdns.fr
   port: 443
-  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: capableconjuretarnish.clarionconsult.info
-  flow: xtls-rprx-vision
-- name: baidu365.org 机场推荐 🇸🇬新加坡 06
-  type: vmess
-  server: planb.mojcn.com
-  port: 16618
-  uuid: 58e6d85e-d762-43d3-a0b7-a98096d6f3ac
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: a31e0690cf16385904bbd1c6ad52a468.mobgslb.tbcache.com
-    path: /
-- name: baidu365.org 机场推荐 🇺🇸美国 33
-  type: vless
-  server: 31.76.2.57
-  port: 443
-  uuid: abca037b-bee5-41cc-a888-0668e4c66176
-  network: xhttp
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: 823bcb90.con.fernarchive.online
-- name: baidu365.org 机场推荐 🇺🇸美国 35
-  type: hysteria2
-  server: promo3.betust.net
-  port: 443
-  password: 94c2b91777f8de3a5bc12d2a91b732c2
-  sni: promo3.betust.net
-  skip-cert-verify: true
-- name: qilan.de | SG • 1383.7ms • mrdevmohamed | 3.3MB/S HOST
+  servername: Vvvv.99999-1.kdnS.FR
+- name: vvv.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
-  network: ws
+  server: vvv.99999-1.kdns.fr
+  port: 443
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: qilan.de | IE VMESS 3996790 | 2.6MB/S HOST
-  type: vmess
-  server: 54.229.151.97
-  port: 59236
-  uuid: 2387bfbc-10a6-4bd7-dc55-7cba954ce6e8
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: http
-- name: qilan.de | US | NF GPT D+ YT GM TK 34.8MB/S X HOST
+  servername: vVV.99999-1.KdnS.FR
+- name: vv.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 156.229.161.107
-  port: 10001
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-  network: raw
+  server: vv.99999-1.kdns.fr
+  port: 443
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: www.icloud.com
-  flow: xtls-rprx-vision
-- name: qilan.de | GB OpenRay 40 | 5.1MB/S HOST
+  servername: vV.99999-1.KDnS.fR
+- name: v.99999-1.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 51.38.71.147
-  port: 8443
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: node-uk.connectsuite.org
-- name: qilan.de | IN OpenRay 32 | 40.1MB/S CORP
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-- name: qilan.de | CY VLESS 1344127 | 40.1MB/S HOST
-  type: vless
-  server: dorado.yokkastars.com
-  port: 40443
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  network: tcp
+  server: v.99999-1.kdns.fr
+  port: 443
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: deepl.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US 156 | NF GPT D+ YT TK 31.0MB/S X HOST
+  servername: v.99999-1.kDNs.fR
+- name: dddddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 172.64.145.82
+  server: dddddd.chicago-0000.kdns.fr
   port: 443
-  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-  network: ws
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: cf.zhahui.de5.net
-  ws-opts:
-    path: /
-    headers:
-      Host: cf.zhahui.de5.net
-- name: qilan.de | NL 275 | NF GPT D+ YT GM TK 30.6MB/S X HOST
+  servername: DDdDDD.chicaGo-0000.KdNs.fR
+- name: ddddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: free-amsterdam-node-1.cloudwidecdn.com
+  server: ddddd.chicago-0000.kdns.fr
   port: 443
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-  network: tcp
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: qilan.de | LT | GPT D+ YT GM TK 32.0MB/S X HOST
-  type: ss
-  server: 195.238.126.20
-  port: 9086
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: vless
+  servername: DDDDD.chIcAgo-0000.KDnS.fR
+- name: dddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 172.64.147.154
+  server: dddd.chicago-0000.kdns.fr
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  network: ws
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: qilan.de | LT 6 | NF GPT D+ YT GM TK 40.0MB/S X HOST
-  type: ss
-  server: 195.238.126.20
-  port: 9012
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: qilan.de | IL OpenRay 7 | 4.1MB/S HOST
+  servername: DDDD.chIcAgO-0000.KDNS.Fr
+- name: ddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: 185.95.231.156
+  server: ddd.chicago-0000.kdns.fr
   port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: qilan.de | BG OpenRay 11 | 40.2MB/S HOST
-  type: ss
-  server: 213.183.63.60
-  port: 9028
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 'vless #2'
-  type: vless
-  server: 104.17.73.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  network: ws
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: free.sahanwickramasinghe.me
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: qilan.de | US America • 410.6ms • mrdevmohamed | 4.1MB/S HOST
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | US gco.gov.qa | NF GPT D+ YT GM TK 22.8MB/S X
+  servername: dDd.cHICAGO-0000.KDNs.fr
+- name: dd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   type: vless
-  server: www.gco.gov.qa
-  port: 8443
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: c7dabe95.proxy-978.pages.dev
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: trojan
-  type: trojan
-  server: tyy129.magiclampcloud.com
-  port: 59443
-  password: d306137cdbd55eac0d79ca7d1e3904a4
-  sni: tyy129.magiclampcloud.com
-  network: tcp
-- name: qilan.de | US OpenRay 150 | 40.0MB/S HOST
-  type: vless
-  server: 104.18.42.98
+  server: dd.chicago-0000.kdns.fr
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  network: ws
+  uuid: 2fd055ec-61ca-44b2-8418-a2c9a52702d4
+  network: grpc
   tls: true
   client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: qilan.de | US OpenRay 275 | 32.3MB/S HOST
-  type: vless
-  server: 208.84.100.209
-  port: 2112
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: play.google.com
-- name: qilan.de | US Louis Downtown | 40.1MB/S HOST
-  type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /lMnsZUN4/
-  servername: v2ray1.dozapp.xyz
-- name: qilan.de | HK OpenRay 2 | 40.0MB/S HOST
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki
-- name: qilan.de | CY • 3754.8ms • mrdevmohamed | 4.6MB/S HOST
-  type: vless
-  server: 5.253.30.99
-  port: 40443
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: deepl.com
-  flow: xtls-rprx-vision
-- name: 'vless #3'
-  type: vless
-  server: ccc.010304.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | US America • 213.7ms • mrdevmohamed | 16.2MB/S HOST
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | HK • 4908.6ms • mrdevmohamed | 40.1MB/S HOST
-  type: vmess
-  server: 8.218.195.61
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: EX1oGt73NzPQKAc2.v.3dns.vip
-    path: /ws-vmess
-  servername: EX1oGt73NzPQKAc2.v.3dns.vip
-- name: qilan.de | US America • 5612.6ms • mrdevmohamed | 22.3MB/S HOST
-  type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-  servername: v2ray1.dozapp.xyz
-- name: hysteria2
-  type: hysteria2
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: false
-- name: qilan.de | US VLESS 3277472 | 18.2MB/S HOST
-  type: vless
-  server: ww13.levikogjgfdd.ir
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: fuck.rkn
-  flow: xtls-rprx-vision
-- name: qilan.de | US America • 179.2ms • mrdevmohamed | 4.0MB/S HOST
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | US America • 214.2ms • mrdevmohamed | 2.7MB/S HOST
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: qilan.de | US VLESS 5307897 | 2.6MB/S HOST
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: qilan.de | JP OpenRay 41 | 2.7MB/S HOST
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: qilan.de | HK • 1608.9ms • mrdevmohamed | 29.6MB/S HOST
-  type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    path: /ws-vmess
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: qilan.de | LT | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  type: ss
-  server: 195.238.126.20
-  port: 9068
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: qilan.de | US | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  type: vless
-  server: 104.18.26.94
-  port: 8080
-  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
-  network: ws
-  tls: false
-  servername: www.gov.se
-  ws-opts:
-    path: /
-    headers:
-      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
-- name: qilan.de | FR OpenRay 10 | 2.7MB/S HOST
-  type: vless
-  server: 145.223.68.58
-  port: 443
-  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: qilan.de | CA • 150.1ms • mrdevmohamed | 4.0MB/S HOST
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  network: raw
-  tls: true
-  client-fingerprint: firefox
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US • 494.1ms • mrdevmohamed | 3.7MB/S HOST
-  type: vless
-  server: 167.17.69.171
-  port: 443
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  network: raw
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US America • 5706.6ms • mrdevmohamed | 2.8MB/S HOST
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-  servername: v2ray1.dozapp.xyz
-- name: qilan.de | KZ VMESS 3530368 | 4.0MB/S HOST
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-  servername: 3h-kazakhstan1.09vpn.com
-- name: qilan.de | US | NF GPT D+ YT GM TK 25.2MB/S X HOST
-  type: vless
-  server: 104.26.1.163
-  port: 443
-  uuid: e2abac76-77d9-470d-8bb3-cf336b977d91
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ggg.weidy.de5.net
-  ws-opts:
-    path: /e2abac76-77d9-470d-8bb3-cf336b977d91?ed=2560
-    headers:
-      Host: ggg.weidy.de5.net
-- name: qilan.de | US • 310.6ms • mrdevmohamed | 14.6MB/S HOST
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 'vless #4'
-  type: vless
-  server: 50.7.120.163
-  port: 443
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: nl-dedic-new-mori.failspace.top
-  flow: xtls-rprx-vision
-- name: 'trojan #2'
-  type: trojan
-  server: pl.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-- name: qilan.de | KR 55 | NF GPT D+ YT GM TK 2.7MB/S X CORP
-  type: hysteria2
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 127.0.0.1
-  skip-cert-verify: false
-- name: qilan.de | CA • 7206.4ms • mrdevmohamed | 3.5MB/S HOST
-  type: trojan
-  server: ca.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  sni: ca.tronsg.com
-- name: 'vless #5'
-  type: vless
-  server: 143.198.76.78
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | US America • 3803.2ms • mrdevmohamed | 4.2MB/S HOST
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | MH VLESS 4850910 | 3.8MB/S HOST
-  type: vless
-  server: 185.207.196.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime11.workers.dev
-- name: qilan.de | CA • 2099.6ms • mrdevmohamed | 2.7MB/S HOST
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: qilan.de | LT 7 | NF GPT D+ YT GM TK 2.5MB/S X HOST
-  type: ss
-  server: 195.238.126.20
-  port: 9011
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: qilan.de | US America • 174.8ms • mrdevmohamed | 5.3MB/S HOST
-  type: ss
-  server: 37.19.198.244
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: qilan.de | US VLESS 4831993 | 35.1MB/S
-  type: vless
-  server: 104.16.215.234
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  servername: vms.lifetime39.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: qilan.de | TW HYSTERIA2 3736950 | 3.6MB/S HOST
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
-  skip-cert-verify: false
-- name: qilan.de | JP 48 | NF GPT D+ YT GM TK 3.7MB/S X HOST
-  type: hysteria2
-  server: 8.209.247.109
-  port: 443
-  password: usqmqUKJFIlCmvkCNSY64L3k
-  sni: 8.209.247.109
-  skip-cert-verify: false
-- name: qilan.de | CA VLESS 3625221 | 2.7MB/S HOST
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  network: raw
-  tls: true
-  client-fingerprint: firefox
-  servername: www.cloudflare.com
-- name: qilan.de | US America • 277.3ms • mrdevmohamed | 8.2MB/S HOST
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: qilan.de | US America • 723ms • mrdevmohamed | 4.3MB/S HOST
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: qilan.de | US VLESS 3738355 | 2.6MB/S HOST
-  type: vless
-  server: 172.64.145.94
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-- name: qilan.de | BY OpenRay 4 | 2.6MB/S HOST
-  type: vless
-  server: 95.128.71.79
-  port: 10444
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
-- name: qilan.de | US 3177169 | 2.6MB/S HOST
-  type: ss
-  server: 107.151.182.253
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: qilan.de | DE • 4069.9ms • mrdevmohamed | 5.1MB/S HOST
-  type: vless
-  server: 169.40.42.89
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | JP TROJAN 3696234 | 16.6MB/S HOST
-  type: trojan
-  server: 45.32.52.173
-  port: 8886
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  network: tcp
-- name: ss
-  type: ss
-  server: 15.204.247.244
-  port: 443
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: qilan.de | US America • 2429.2ms • mrdevmohamed | 4.7MB/S HOST
-  type: vless
-  server: 2.24.124.64
-  port: 443
-  uuid: 719b9354-45e2-4718-8709-d965b64554db
-  network: raw
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: qilan.de | KR Republic of • 840.6ms • mrdevmohamed | 40.1MB/S HOST
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: qilan.de | US VLESS 3738278 | 4.1MB/S HOST
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: raw
-  tls: true
-  client-fingerprint: chrome
-  servername: fuck.rkn
-  flow: xtls-rprx-vision
-- name: 'trojan #3'
-  type: trojan
-  server: ja304.magiclampcloud.cn
-  port: 59443
-  password: 06cf12a7fab279375e55e2f0cfdef381
-  sni: ja304.magiclampcloud.cn
-  network: tcp
-- name: qilan.de | KZ | NF GPT D+ YT GM TK 3.5MB/S X HOST
-  type: vless
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ''
-- name: qilan.de | RO VLESS 3739201 | 40.1MB/S HOST
-  type: vless
-  server: 46.28.67.55
-  port: 443
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  network: raw
-  tls: true
-  client-fingerprint: chrome
-  servername: www.cloudflare.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US VLESS 4605287 | 4.6MB/S HOST
-  type: vless
-  server: 789156.xyz
-  port: 443
-  uuid: 5f11c240-89df-494c-9c81-8b619023bb58
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 789156.xyz
-  ws-opts:
-    path: /?ed=2048fp=randomized
-    headers:
-      Host: 789156.xyz
-- name: 'ss #2'
-  type: ss
-  server: 216.105.168.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: bQZl7HDxSabr1FurTYQHFU
-- name: qilan.de | GB VLESS 4848567 | 40.1MB/S HOST
-  type: vless
-  server: webdisk.jaggyslawa.org
-  port: 443
-  uuid: 75113671-63e3-452d-87d3-261a37e8b472
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.mozilla.org
-  flow: xtls-rprx-vision
-- name: qilan.de | US OpenRay 121 | 40.1MB/S HOST
-  type: vmess
-  server: chatgpt.com
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /lMnsZUN4/
-  servername: v2ray1.dozapp.xyz
-- name: qilan.de | DE • 92.2ms • mrdevmohamed | 4.6MB/S HOST
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | DE OpenRay 373 | 4.6MB/S HOST
-  type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: random
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | ES OpenRay 7 | 8.4MB/S HOST
-  type: vless
-  server: 83.147.18.75
-  port: 443
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US OpenRay 156 | 5.2MB/S HOST
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: qilan.de | US America • 679.7ms • mrdevmohamed | 7.9MB/S CORP
-  type: hysteria2
-  server: 163.192.14.135
-  port: 50160
-  password: 099830134df5ac3a04a4b21d39b8c395
-  sni: vk.com
-  skip-cert-verify: false
-- name: qilan.de | DE VLESS 3771277 | 4.6MB/S HOST
-  type: vless
-  server: 169.40.42.168
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: raw
-  tls: true
-  client-fingerprint: ios
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | AE HYSTERIA2 3770480 | 2.9MB/S HOST
-  type: hysteria2
-  server: hy2.aspidnet.xyz
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-- name: qilan.de | CY 50 | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  type: vless
-  server: 5.253.42.164
-  port: 40443
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  network: raw
-  tls: true
-  client-fingerprint: firefox
-  servername: deepl.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US America • 82.9ms • mrdevmohamed | 4.6MB/S HOST
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 'vless #6'
-  type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | CA VMESS 5587994 | 5.6MB/S MOB
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-  servername: v2raynplus-v2raynplus-v2raynplus
-- name: qilan.de | US America • 421.6ms • mrdevmohamed | 2.8MB/S HOST
-  type: ss
-  server: 15.204.246.132
-  port: 7307
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: qilan.de | DE • 219.2ms • mrdevmohamed | 4.3MB/S HOST
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: 'vless #7'
-  type: vless
-  server: 8.35.211.188
-  port: 8443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vpn-1fj.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: qilan.de | US OpenRay 856 | 6.0MB/S HOST
-  type: ss
-  server: 138.199.42.68
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: qilan.de | US America • 548.6ms • mrdevmohamed | 3.2MB/S HOST
-  type: ss
-  server: 15.204.233.41
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: qilan.de | US HYSTERIA2 2967957 | 11.9MB/S CORP
-  type: hysteria2
-  server: 129.213.91.185
-  port: 35013
-  password: 4291c983-c520-46ac-82cc-48f14bef573f
-  sni: www.bing.com
-  skip-cert-verify: false
-- name: qilan.de | RU 503 | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  type: vless
-  server: 144.48.11.97
-  port: 43000
-  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: 144.48.11.97
-  flow: xtls-rprx-vision
-- name: qilan.de | FR • 410.6ms • mrdevmohamed | 6.4MB/S HOST
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: false
-- name: qilan.de | DE OpenRay 500 | 4.8MB/S HOST
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US VLESS 3954034 | 11.4MB/S HOST
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: fuck.rkn
-  flow: xtls-rprx-vision
-- name: qilan.de | CH HYSTERIA2 1317532 | 8.6MB/S CORP
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: false
-- name: qilan.de | DE VLESS 3738641 | 4.3MB/S HOST
-  type: vless
-  server: 169.40.42.225
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: raw
-  tls: true
-  client-fingerprint: ios
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US 933012 | 11.4MB/S HOST
-  type: ss
-  server: 138.199.43.159
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: qilan.de | GB Great Britain and Northern Ireland • 548.3ms • mrdevmohamed
-    | 3.0MB/S HOST
-  type: vless
-  server: 159.65.51.189
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | SG VLESS 4869779 | 40.1MB/S CORP
-  type: vless
-  server: 146.235.16.130
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: sg2-8sb.6121999.dpdns.org
-  flow: xtls-rprx-vision
-- name: qilan.de | DE OpenRay 7 | 40.1MB/S HOST
-  type: vless
-  server: 46.28.69.123
-  port: 443
-  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: gateway.icloud.com
-  flow: xtls-rprx-vision
-- name: qilan.de | NL HYSTERIA2 3738987 | 33.5MB/S HOST
-  type: hysteria2
-  server: 51.15.19.206
-  port: 8443
-  password: HowdyHysteria2023w0W
-  sni: sni-here.com
-  skip-cert-verify: false
-- name: qilan.de | BR 118 | NF GPT D+ YT GM TK 33.6MB/S X CORP
-  type: hysteria2
-  server: 147.15.108.14
-  port: 20000
-  password: CyG0RFxMjzs41uQD4OLuHQ==
-  sni: rmgyvpn.rest
-  skip-cert-verify: false
-- name: qilan.de | CN 118 · trojan · 1539ms | NF GPT D+ YT GM TK 28.5MB/S X HOST
-  type: trojan
-  server: 42.51.25.69
-  port: 59443
-  password: 002023c45d18bca3eba2757bb683309a
-  sni: ja262.magiclampcloud.cn
-  network: tcp
-- name: qilan.de | NL | NF GPT D+ YT GM TK 28.7MB/S X HOST
-  type: vless
-  server: 198.211.123.90
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | US VLESS 3266693 | 3.8MB/S HOST
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  network: ws
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: qilan.de | US VMESS 469076 | 4.2MB/S HOST
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: raw
-- name: 'vless #8'
-  type: vless
-  server: 104.17.74.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: free.sahanwickramasinghe.me
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 'ss #3'
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: qilan.de | CA 3624479 | 3.6MB/S HOST
-  type: ss
-  server: 138.197.141.58
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: qilan.de | GB VLESS 3625402 | 2.9MB/S HOST
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  network: raw
-  tls: true
-  client-fingerprint: firefox
-  servername: www.apple.com
-- name: qilan.de | FR HYSTERIA2 3293721 | 5.9MB/S HOST
-  type: hysteria2
-  server: github.com
-  port: 443
-  password: ''
-  sni: github.com
-  skip-cert-verify: false
-- name: qilan.de | AE • 903ms • mrdevmohamed | 3.5MB/S HOST
-  type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-- name: qilan.de | US VLESS 4620666 | 15.4MB/S HOST
-  type: vless
-  server: 195.123.235.177
-  port: 443
-  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
-  network: tcp
-  tls: true
-  client-fingerprint: random
-  servername: gateway.icloud.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US VLESS 3738132 | 3.6MB/S HOST
-  type: vless
-  server: 147.182.212.232
-  port: 56565
-  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
-  network: raw
-  tls: true
-  client-fingerprint: chrome
-  servername: www.paypal.com
-  flow: xtls-rprx-vision
-- name: qilan.de | SG 195 · · 552ms | NF GPT D+ YT GM TK 29.0MB/S X HOST
-  type: vless
-  server: sg.fasti.win
-  port: 443
-  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: sg.fasti.win
-  flow: xtls-rprx-vision
-- name: qilan.de | DE • 158.1ms • mrdevmohamed | 3.0MB/S HOST
-  type: vless
-  server: 169.40.42.235
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | HK America • 1592.4ms • mrdevmohamed | 2.6MB/S HOST
-  type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ws-vmess
-  servername: i2psm3knof5qjjix.v.3dns.vip
-- name: qilan.de | US VLESS 3737609 | 3.1MB/S HOST
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: v2ray.simspeedup.com
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 'vless #9'
-  type: vless
-  server: www.5199dy.com
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: qilan.de | CA VMESS 3155844 | 5.7MB/S MOB
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | US OpenRay 572 | 4.0MB/S HOST
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: fuck.rkn
-  flow: xtls-rprx-vision
-- name: qilan.de | DE OpenRay 534 | 3.8MB/S HOST
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: 'trojan #4'
-  type: trojan
-  server: 139.180.146.200
-  port: 8886
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 139.180.146.200
-- name: qilan.de | BG 3697155 | 40.0MB/S HOST
-  type: ss
-  server: 213.183.63.60
-  port: 9098
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: qilan.de | US 1008000 | 22.9MB/S HOST
-  type: ss
-  server: 107.155.57.51
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 'vless #10'
-  type: vless
-  server: 172.64.147.34
-  port: 2096
-  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: go.iranfree.de5.net
-  ws-opts:
-    path: /
-    headers:
-      Host: go.iranfree.de5.net
-- name: qilan.de | KR VMESS 4075821 | 40.0MB/S CORP
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: qilan.de | GB 603 | NF GPT D+ YT GM TK 33.4MB/S X HOST
-  type: vless
-  server: server.slavkiti.monster
-  port: 443
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.foxsports.com
-  flow: xtls-rprx-vision
-- name: qilan.de | BG | NF GPT D+ YT GM TK 40.0MB/S X HOST
-  type: ss
-  server: 213.183.63.60
-  port: 9066
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: qilan.de | DE | NF GPT D+ YT GM TK 29.3MB/S X HOST
-  type: vless
-  server: 37.120.222.70
-  port: 8082
-  uuid: 726263e7-3176-4efb-a519-fe9f4ea87f7d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: qilan.de | US VMESS 2317576 | 28.6MB/S HOST
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ''
-    path: /hls/cctv5phd.m3u8
-- name: qilan.de | DE • 165.5ms • mrdevmohamed | 5.0MB/S HOST
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
-- name: qilan.de | US • 428.4ms • mrdevmohamed | 11.0MB/S HOST
-  type: hysteria2
-  server: 64.188.98.171
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: false
-- name: qilan.de | HK 48 | NF GPT D+ YT GM TK 30.2MB/S X HOST
-  type: hysteria2
-  server: 152.32.254.68
-  port: 5010
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-- name: qilan.de | DE OpenRay 1069 | 4.6MB/S HOST
-  type: vless
-  server: 169.40.42.90
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: yahoo.com
-  flow: xtls-rprx-vision
+  servername: DD.ChicaGO-0000.kdNs.Fr
 - name: 🇺🇸_US_美国->🇰🇷_KR_韩国
   type: vless
   server: nvl-edge-dr-141026.pages.dev
@@ -1565,6 +269,22 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸_US_美国
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  udp: true
 - name: 🇨🇳_CN_中国_1
   type: vmess
   server: 112.132.215.108
@@ -1628,7 +348,7 @@ proxies:
   client-fingerprint: firefox
   servername: u695098ue79dbcd4s783.gogocs.xyz
   flow: xtls-rprx-vision
-- name: 'vless #11'
+- name: vless
   type: vless
   server: 2400:e920:0:a::52
   port: 443
@@ -1645,14 +365,14 @@ proxies:
   client-fingerprint: firefox
   servername: u695098u8fad5a44s552.gogocs.xyz
   flow: xtls-rprx-vision
-- name: 'vless #12'
+- name: 'vless #2'
   type: vless
   server: 2a14:7584:4408::2
   port: 10829
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
   network: tcp
   tls: false
-- name: 'vless #13'
+- name: 'vless #3'
   type: vless
   server: 2605:e440:15::6b
   port: 443
@@ -1705,7 +425,7 @@ proxies:
   tls: true
   client-fingerprint: ios
   servername: f0c5bfd6s394.fuhuovps.xyz
-- name: 'vless #14'
+- name: 'vless #4'
   type: vless
   server: 2a0f:5707:aaf1:1ecd::1
   port: 443
@@ -3983,140 +2703,156 @@ proxies:
   client-fingerprint: chrome
   servername: www.amazon.com
   flow: xtls-rprx-vision
-- name: NO - zhuhai.uk
-  type: http
-  server: 146.70.170.210
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: CZ - zhuhai.uk
-  type: http
-  server: 5.35.100.14
-  port: 8443
-  tls: true
-  skip-cert-verify: true
 - name: US - zhuhai.uk
   type: http
-  server: berniesbodybla.fun
+  server: 38.28.193.188
   port: 443
+  username: 'null'
+  password: 'null'
   tls: true
+  sni: 38.28.193.188
   skip-cert-verify: true
-- name: NL - zhuhai.uk
+- name: US - zhuhai.uk 02
   type: http
-  server: 149.36.51.157
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: http
-  server: 37.120.233.34
-  port: 443
+  server: 54.190.176.228
+  port: 8443
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: HK - zhuhai.uk
   type: socks5
-  server: 218.77.50.79
-  port: 6666
-- name: US - zhuhai.uk 02
+  server: 47.243.173.50
+  port: 11211
+  username: '111'
+  password: '111'
+- name: FR - zhuhai.uk
   type: http
-  server: zebpay.site
-  port: 443
-  tls: true
-- name: PT - zhuhai.uk
-  type: http
-  server: 149.22.86.1
+  server: 82.65.162.76
   port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 03
   type: http
-  server: 162.244.227.36
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 185.140.209.235
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 137.175.22.16
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
-  type: http
-  server: fullmanfirm.icu
-  port: 443
-  username: Ok5vbmU=
-  tls: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 137.175.22.29
-  port: 443
-  tls: true
-  sni: 137.175.22.29
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: http
-  server: 45.150.164.18
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 38.28.185.222
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: EE - zhuhai.uk
-  type: http
-  server: 95.153.31.66
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: http
-  server: 83.206.1.225
-  port: 8090
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 193.233.75.115
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: RU - zhuhai.uk
-  type: http
-  server: 178.219.43.226
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: SG - zhuhai.uk
-  type: http
-  server: 154.26.139.24
+  server: 129.153.93.183
   port: 443
   tls: true
   skip-cert-verify: true
 - name: JP - zhuhai.uk
-  type: socks5
-  server: 101.36.104.46
-  port: 10808
-- name: JP - zhuhai.uk 02
   type: http
   server: fan.571589.xyz
+  port: 443
+  tls: true
+  sni: fan.571589.xyz
+- name: NL - zhuhai.uk
+  type: http
+  server: 51.159.225.197
+  port: 19362
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: socks5
+  server: 45.61.188.134
+  port: 44499
+- name: US - zhuhai.uk 05
+  type: http
+  server: jgwynphotoarts.pro
+  port: 443
+  username: 'null'
+  password: None
+  tls: true
+- name: SE - zhuhai.uk
+  type: http
+  server: 146.70.242.146
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: webdrone.club
+  port: 443
+  tls: true
+  sni: webdrone.club
+- name: US - zhuhai.uk 07
+  type: http
+  server: fan.365747.xyz
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+  sni: fan.365747.xyz
+- name: US - zhuhai.uk 08
+  type: http
+  server: 45.150.164.18
+  port: 8443
+  tls: true
+  sni: 45.150.164.18
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 84.17.47.147
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: http
+  server: 213.109.163.119
   port: 443
   username: 'null'
   password: 'null'
   tls: true
-  sni: fan.571589.xyz
+  skip-cert-verify: true
+- name: ID - zhuhai.uk
+  type: http
+  server: 103.86.117.202
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk 02
+  type: http
+  server: fan.240104.xyz
+  port: 443
+  tls: true
+  sni: fan.240104.xyz
+  skip-cert-verify: true
+- name: IE - zhuhai.uk
+  type: http
+  server: 34.249.214.108
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 03
+  type: http
+  server: 82.196.9.7
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: 52c40907.acsnet.co
+- name: HK - zhuhai.uk 03
+  type: socks5
+  server: 123.58.219.171
+  port: 10808
+- name: ES - zhuhai.uk
+  type: http
+  server: 130.195.250.18
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: ID - zhuhai.uk 02
+  type: http
+  server: 178.248.73.58
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: GB - zhuhai.uk
+  type: http
+  server: 84.233.178.33
+  port: 9443
+  tls: true
+  skip-cert-verify: true
 - name: KR - zhuhai.uk
   type: socks5
   server: 121.169.46.116
@@ -4128,59 +2864,56 @@ proxies:
   port: 1090
   username: Og%3D%3D
   password: Og%3D%3D
-- name: ID - zhuhai.uk
-  type: http
-  server: purposebydesig.club
-  port: 443
-  tls: true
-- name: IN - zhuhai.uk
-  type: http
-  server: 110.173.188.221
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: CZ - zhuhai.uk 02
+- name: SG - zhuhai.uk
   type: vless
-  server: cz-prg.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  server: '2407:cdc0:d010:27bd::'
+  port: 30454
+  uuid: 14cfea1a-e7b2-4f27-b46e-34c9efabf198
   flow: xtls-rprx-vision
   tls: true
-  servername: rusbid.de
-  client-fingerprint: firefox
+  servername: www.samsung.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-- name: US - zhuhai.uk 09
+    public-key: I4WlCiks92rMzYTBZ3T_iDHU-kQX1bUW7jVIsjiklUE
+    short-id: 4e4d7529
+- name: SG - zhuhai.uk 02
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: random
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 3.35.214.122
+  server: 13.209.20.53
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: webframe.io
+  servername: 276holdings.com
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 3.35.214.122
+  server: 13.209.20.53
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 3.35.214.122
+  server: 13.209.20.53
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 54.179.133.94
+  server: 54.169.179.101
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -4190,14 +2923,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 54.179.133.94
+  server: 54.169.179.101
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 54.179.133.94
+  server: 54.169.179.101
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -4333,6 +3066,19 @@ proxies:
   client-fingerprint: firefox
   servername: u695098u2c5f47d6s8746.gogocs.xyz
   flow: xtls-rprx-vision
+- name: SG新加坡(v2clash.blog 2026-10.12更新
+  type: vless
+  server: 142.91.101.39
+  port: 627
+  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
 - name: US美国(v2clash.blog 2026-10.12更新
   type: vless
   server: 213.111.177.107
@@ -4924,6 +3670,15 @@ proxies:
   client-fingerprint: chrome
   servername: deepl.com
   flow: xtls-rprx-vision
+- name: DE德国(v2clash.blog 2026-10.29更新
+  type: vless
+  server: 31.76.2.57
+  port: 443
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: 823bcb90.con.fernarchive.online
 - name: US美国(v2clash.blog 2026-10.29更新)
   type: vmess
   server: '[2606:4700:9a98::890:1d33]'
@@ -4964,157 +3719,20 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - SG
   - sz.770886.xyz-xhtt
   - d.ChiCAgO-0000.kdnS.fR
-  - '[学术节点（高速）]美国01'
-  - 德国-20T-限制10ip同时在线
-  - 韩国01
-  - 日本01
-  - 泰国01
-  - baidu365.org 机场推荐 🇫🇷法国 06
-  - baidu365.org 机场推荐 🇰🇷韩国 01
-  - baidu365.org 机场推荐 🇷🇺俄罗斯 06
-  - baidu365.org 机场推荐 🇸🇬新加坡 06
-  - baidu365.org 机场推荐 🇺🇸美国 33
-  - baidu365.org 机场推荐 🇺🇸美国 35
-  - qilan.de | SG • 1383.7ms • mrdevmohamed | 3.3MB/S HOST
-  - qilan.de | IE VMESS 3996790 | 2.6MB/S HOST
-  - qilan.de | US | NF GPT D+ YT GM TK 34.8MB/S X HOST
-  - qilan.de | GB OpenRay 40 | 5.1MB/S HOST
-  - qilan.de | IN OpenRay 32 | 40.1MB/S CORP
-  - qilan.de | CY VLESS 1344127 | 40.1MB/S HOST
-  - qilan.de | US 156 | NF GPT D+ YT TK 31.0MB/S X HOST
-  - qilan.de | NL 275 | NF GPT D+ YT GM TK 30.6MB/S X HOST
-  - qilan.de | LT | GPT D+ YT GM TK 32.0MB/S X HOST
-  - vless
-  - qilan.de | LT 6 | NF GPT D+ YT GM TK 40.0MB/S X HOST
-  - qilan.de | IL OpenRay 7 | 4.1MB/S HOST
-  - qilan.de | BG OpenRay 11 | 40.2MB/S HOST
-  - 'vless #2'
-  - qilan.de | US America • 410.6ms • mrdevmohamed | 4.1MB/S HOST
-  - qilan.de | US gco.gov.qa | NF GPT D+ YT GM TK 22.8MB/S X
-  - trojan
-  - qilan.de | US OpenRay 150 | 40.0MB/S HOST
-  - qilan.de | US OpenRay 275 | 32.3MB/S HOST
-  - qilan.de | US Louis Downtown | 40.1MB/S HOST
-  - qilan.de | HK OpenRay 2 | 40.0MB/S HOST
-  - qilan.de | CY • 3754.8ms • mrdevmohamed | 4.6MB/S HOST
-  - 'vless #3'
-  - qilan.de | US America • 213.7ms • mrdevmohamed | 16.2MB/S HOST
-  - qilan.de | HK • 4908.6ms • mrdevmohamed | 40.1MB/S HOST
-  - qilan.de | US America • 5612.6ms • mrdevmohamed | 22.3MB/S HOST
-  - hysteria2
-  - qilan.de | US VLESS 3277472 | 18.2MB/S HOST
-  - qilan.de | US America • 179.2ms • mrdevmohamed | 4.0MB/S HOST
-  - qilan.de | US America • 214.2ms • mrdevmohamed | 2.7MB/S HOST
-  - qilan.de | US VLESS 5307897 | 2.6MB/S HOST
-  - qilan.de | JP OpenRay 41 | 2.7MB/S HOST
-  - qilan.de | HK • 1608.9ms • mrdevmohamed | 29.6MB/S HOST
-  - qilan.de | LT | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  - qilan.de | US | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  - qilan.de | FR OpenRay 10 | 2.7MB/S HOST
-  - qilan.de | CA • 150.1ms • mrdevmohamed | 4.0MB/S HOST
-  - qilan.de | US • 494.1ms • mrdevmohamed | 3.7MB/S HOST
-  - qilan.de | US America • 5706.6ms • mrdevmohamed | 2.8MB/S HOST
-  - qilan.de | KZ VMESS 3530368 | 4.0MB/S HOST
-  - qilan.de | US | NF GPT D+ YT GM TK 25.2MB/S X HOST
-  - qilan.de | US • 310.6ms • mrdevmohamed | 14.6MB/S HOST
-  - 'vless #4'
-  - 'trojan #2'
-  - qilan.de | KR 55 | NF GPT D+ YT GM TK 2.7MB/S X CORP
-  - qilan.de | CA • 7206.4ms • mrdevmohamed | 3.5MB/S HOST
-  - 'vless #5'
-  - qilan.de | US America • 3803.2ms • mrdevmohamed | 4.2MB/S HOST
-  - qilan.de | MH VLESS 4850910 | 3.8MB/S HOST
-  - qilan.de | CA • 2099.6ms • mrdevmohamed | 2.7MB/S HOST
-  - qilan.de | LT 7 | NF GPT D+ YT GM TK 2.5MB/S X HOST
-  - qilan.de | US America • 174.8ms • mrdevmohamed | 5.3MB/S HOST
-  - qilan.de | US VLESS 4831993 | 35.1MB/S
-  - qilan.de | TW HYSTERIA2 3736950 | 3.6MB/S HOST
-  - qilan.de | JP 48 | NF GPT D+ YT GM TK 3.7MB/S X HOST
-  - qilan.de | CA VLESS 3625221 | 2.7MB/S HOST
-  - qilan.de | US America • 277.3ms • mrdevmohamed | 8.2MB/S HOST
-  - qilan.de | US America • 723ms • mrdevmohamed | 4.3MB/S HOST
-  - qilan.de | US VLESS 3738355 | 2.6MB/S HOST
-  - qilan.de | BY OpenRay 4 | 2.6MB/S HOST
-  - qilan.de | US 3177169 | 2.6MB/S HOST
-  - qilan.de | DE • 4069.9ms • mrdevmohamed | 5.1MB/S HOST
-  - qilan.de | JP TROJAN 3696234 | 16.6MB/S HOST
-  - ss
-  - qilan.de | US America • 2429.2ms • mrdevmohamed | 4.7MB/S HOST
-  - qilan.de | KR Republic of • 840.6ms • mrdevmohamed | 40.1MB/S HOST
-  - qilan.de | US VLESS 3738278 | 4.1MB/S HOST
-  - 'trojan #3'
-  - qilan.de | KZ | NF GPT D+ YT GM TK 3.5MB/S X HOST
-  - qilan.de | RO VLESS 3739201 | 40.1MB/S HOST
-  - qilan.de | US VLESS 4605287 | 4.6MB/S HOST
-  - 'ss #2'
-  - qilan.de | GB VLESS 4848567 | 40.1MB/S HOST
-  - qilan.de | US OpenRay 121 | 40.1MB/S HOST
-  - qilan.de | DE • 92.2ms • mrdevmohamed | 4.6MB/S HOST
-  - qilan.de | DE OpenRay 373 | 4.6MB/S HOST
-  - qilan.de | ES OpenRay 7 | 8.4MB/S HOST
-  - qilan.de | US OpenRay 156 | 5.2MB/S HOST
-  - qilan.de | US America • 679.7ms • mrdevmohamed | 7.9MB/S CORP
-  - qilan.de | DE VLESS 3771277 | 4.6MB/S HOST
-  - qilan.de | AE HYSTERIA2 3770480 | 2.9MB/S HOST
-  - qilan.de | CY 50 | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  - qilan.de | US America • 82.9ms • mrdevmohamed | 4.6MB/S HOST
-  - 'vless #6'
-  - qilan.de | CA VMESS 5587994 | 5.6MB/S MOB
-  - qilan.de | US America • 421.6ms • mrdevmohamed | 2.8MB/S HOST
-  - qilan.de | DE • 219.2ms • mrdevmohamed | 4.3MB/S HOST
-  - 'vless #7'
-  - qilan.de | US OpenRay 856 | 6.0MB/S HOST
-  - qilan.de | US America • 548.6ms • mrdevmohamed | 3.2MB/S HOST
-  - qilan.de | US HYSTERIA2 2967957 | 11.9MB/S CORP
-  - qilan.de | RU 503 | NF GPT D+ YT GM TK 2.6MB/S X HOST
-  - qilan.de | FR • 410.6ms • mrdevmohamed | 6.4MB/S HOST
-  - qilan.de | DE OpenRay 500 | 4.8MB/S HOST
-  - qilan.de | US VLESS 3954034 | 11.4MB/S HOST
-  - qilan.de | CH HYSTERIA2 1317532 | 8.6MB/S CORP
-  - qilan.de | DE VLESS 3738641 | 4.3MB/S HOST
-  - qilan.de | US 933012 | 11.4MB/S HOST
-  - qilan.de | GB Great Britain and Northern Ireland • 548.3ms • mrdevmohamed | 3.0MB/S
-    HOST
-  - qilan.de | SG VLESS 4869779 | 40.1MB/S CORP
-  - qilan.de | DE OpenRay 7 | 40.1MB/S HOST
-  - qilan.de | NL HYSTERIA2 3738987 | 33.5MB/S HOST
-  - qilan.de | BR 118 | NF GPT D+ YT GM TK 33.6MB/S X CORP
-  - qilan.de | CN 118 · trojan · 1539ms | NF GPT D+ YT GM TK 28.5MB/S X HOST
-  - qilan.de | NL | NF GPT D+ YT GM TK 28.7MB/S X HOST
-  - qilan.de | US VLESS 3266693 | 3.8MB/S HOST
-  - qilan.de | US VMESS 469076 | 4.2MB/S HOST
-  - 'vless #8'
-  - 'ss #3'
-  - qilan.de | CA 3624479 | 3.6MB/S HOST
-  - qilan.de | GB VLESS 3625402 | 2.9MB/S HOST
-  - qilan.de | FR HYSTERIA2 3293721 | 5.9MB/S HOST
-  - qilan.de | AE • 903ms • mrdevmohamed | 3.5MB/S HOST
-  - qilan.de | US VLESS 4620666 | 15.4MB/S HOST
-  - qilan.de | US VLESS 3738132 | 3.6MB/S HOST
-  - qilan.de | SG 195 · · 552ms | NF GPT D+ YT GM TK 29.0MB/S X HOST
-  - qilan.de | DE • 158.1ms • mrdevmohamed | 3.0MB/S HOST
-  - qilan.de | HK America • 1592.4ms • mrdevmohamed | 2.6MB/S HOST
-  - qilan.de | US VLESS 3737609 | 3.1MB/S HOST
-  - 'vless #9'
-  - qilan.de | CA VMESS 3155844 | 5.7MB/S MOB
-  - qilan.de | US OpenRay 572 | 4.0MB/S HOST
-  - qilan.de | DE OpenRay 534 | 3.8MB/S HOST
-  - 'trojan #4'
-  - qilan.de | BG 3697155 | 40.0MB/S HOST
-  - qilan.de | US 1008000 | 22.9MB/S HOST
-  - 'vless #10'
-  - qilan.de | KR VMESS 4075821 | 40.0MB/S CORP
-  - qilan.de | GB 603 | NF GPT D+ YT GM TK 33.4MB/S X HOST
-  - qilan.de | BG | NF GPT D+ YT GM TK 40.0MB/S X HOST
-  - qilan.de | DE | NF GPT D+ YT GM TK 29.3MB/S X HOST
-  - qilan.de | US VMESS 2317576 | 28.6MB/S HOST
-  - qilan.de | DE • 165.5ms • mrdevmohamed | 5.0MB/S HOST
-  - qilan.de | US • 428.4ms • mrdevmohamed | 11.0MB/S HOST
-  - qilan.de | HK 48 | NF GPT D+ YT GM TK 30.2MB/S X HOST
-  - qilan.de | DE OpenRay 1069 | 4.6MB/S HOST
+  - ricardolu955.ccwu.cc
+  - vvvvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - vvvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - vvvv.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - vvv.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - vv.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - v.99999-1.kdns.fr tls_h2 grpc CDN vless
+  - dddddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
+  - ddddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
+  - dddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
+  - ddd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
+  - dd.chicago-0000.kdns.fr tls_h2 grpc CDN vless
   - 🇺🇸_US_美国->🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇫🇷_FR_法国
   - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
@@ -5127,22 +3745,23 @@ proxy-groups:
   - 🇺🇸_US_美国->🇭🇰_HK_中国香港_1
   - 🇳🇱_NL_荷兰
   - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  - 🇺🇸_US_美国
   - 🇨🇳_CN_中国_1
   - 🇺🇸_US_美国->🇬🇧_GB_英国
   - 🇺🇸_US_美国->🇬🇧_GB_英国_1
   - 未知 SS-01 | free-nodes
   - 未知 VLESS-05 | free-nodes
   - 未知 VLESS-07 | free-nodes
-  - 'vless #11'
+  - vless
   - US VLESS-10 | free-nodes
-  - 'vless #12'
-  - 'vless #13'
+  - 'vless #2'
+  - 'vless #3'
   - US VLESS-13 | free-nodes
   - RU VLESS-14 | free-nodes
   - RU VLESS-15 | free-nodes
   - RU VLESS-16 | free-nodes
   - RU VLESS-17 | free-nodes
-  - 'vless #14'
+  - 'vless #4'
   - US VLESS-19 | free-nodes
   - HK VLESS-20 | free-nodes
   - 美国+CloudFlare节点
@@ -5326,34 +3945,33 @@ proxy-groups:
   - AU澳大利亚(mibei77.com 米贝节点分享)
   - KR韩国(mibei77.com 米贝节点分享)_7
   - JP - zhuhai.uk 01
-  - NO - zhuhai.uk
-  - CZ - zhuhai.uk
   - US - zhuhai.uk
-  - NL - zhuhai.uk
-  - GB - zhuhai.uk
-  - HK - zhuhai.uk
   - US - zhuhai.uk 02
-  - PT - zhuhai.uk
+  - HK - zhuhai.uk
+  - FR - zhuhai.uk
   - US - zhuhai.uk 03
-  - NL - zhuhai.uk 02
+  - JP - zhuhai.uk
+  - NL - zhuhai.uk
   - US - zhuhai.uk 04
   - US - zhuhai.uk 05
+  - SE - zhuhai.uk
   - US - zhuhai.uk 06
   - US - zhuhai.uk 07
   - US - zhuhai.uk 08
-  - EE - zhuhai.uk
-  - FR - zhuhai.uk
+  - NL - zhuhai.uk 02
   - DE - zhuhai.uk
-  - RU - zhuhai.uk
-  - SG - zhuhai.uk
-  - JP - zhuhai.uk
-  - JP - zhuhai.uk 02
+  - ID - zhuhai.uk
+  - HK - zhuhai.uk 02
+  - IE - zhuhai.uk
+  - NL - zhuhai.uk 03
+  - HK - zhuhai.uk 03
+  - ES - zhuhai.uk
+  - ID - zhuhai.uk 02
+  - GB - zhuhai.uk
   - KR - zhuhai.uk
   - KR - zhuhai.uk 02
-  - ID - zhuhai.uk
-  - IN - zhuhai.uk
-  - CZ - zhuhai.uk 02
-  - US - zhuhai.uk 09
+  - SG - zhuhai.uk
+  - SG - zhuhai.uk 02
   - end-gfw-kr64-VLESS
   - end-gfw-kr64-HY2
   - end-gfw-kr64-SS
@@ -5372,6 +3990,7 @@ proxy-groups:
   - 芬兰(v2clash.blog 2026-10.11更新
   - US美国(v2clash.blog 2026-10.11更新
   - 'US美国(v2clash.blog 2026-10.11更新 #2'
+  - SG新加坡(v2clash.blog 2026-10.12更新
   - US美国(v2clash.blog 2026-10.12更新
   - NL荷兰(v2clash.blog 2026-10.12更新
   - 'NL荷兰(v2clash.blog 2026-10.12更新 #2'
@@ -5423,6 +4042,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-10.29更新
   - 'US美国(v2clash.blog 2026-10.29更新 #2'
   - 'US美国(v2clash.blog 2026-10.29更新 #3'
+  - DE德国(v2clash.blog 2026-10.29更新
   - US美国(v2clash.blog 2026-10.29更新)
   - FR法国(v2clash.blog 2026-10.29更新
   - CA加拿大(v2clash.blog 2026-10.29更新
