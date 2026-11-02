@@ -12,6 +12,19 @@ proxies:
   tls: true
   client-fingerprint: random
   servername: sz.770886.xyz
+- name: 🇲🇴澳门04｜CF隧道
+  type: vless
+  server: pmid-cloudy-friendly-twelve.trycloudflare.com
+  port: 443
+  uuid: ece1b2df-a71d-47a4-962a-9084226263d3
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: pmid-cloudy-friendly-twelve.trycloudflare.com
+  ws-opts:
+    path: /nvenix-test-5e987b72c4d25cca37185b84
+    headers:
+      Host: pmid-cloudy-friendly-twelve.trycloudflare.com
 - name: 🇺🇸_US_美国->🇰🇷_KR_韩国
   type: vless
   server: nvl-edge-dr-141026.pages.dev
@@ -383,7 +396,7 @@ proxies:
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 18.143.185.164
+  server: 13.214.209.37
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -393,14 +406,14 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 18.143.185.164
+  server: 13.214.209.37
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 18.143.185.164
+  server: 13.214.209.37
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -1623,6 +1636,7 @@ proxy-groups:
   type: select
   proxies:
   - sz.770886.xyz-xhttp
+  - 🇲🇴澳门04｜CF隧道
   - 🇺🇸_US_美国->🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇫🇷_FR_法国
   - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
