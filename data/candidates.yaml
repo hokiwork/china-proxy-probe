@@ -3,15 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: sz.770886.xyz-xhttp
-  type: vless
-  server: sz.770886.xyz
-  port: 2053
-  uuid: 63331bb4-5666-413b-eabc-ce5d7d461ede
-  network: xhttp
-  tls: true
-  client-fingerprint: random
-  servername: sz.770886.xyz
 - name: 🇲🇴澳门04｜CF隧道
   type: vless
   server: pmid-cloudy-friendly-twelve.trycloudflare.com
@@ -25,6 +16,18 @@ proxies:
     path: /nvenix-test-5e987b72c4d25cca37185b84
     headers:
       Host: pmid-cloudy-friendly-twelve.trycloudflare.com
+- name: 美国-加利福尼亚  新人套餐节点 1  app内有隐藏节点
+  type: ss
+  server: 103.182.97.245
+  port: 4425
+  cipher: aes-256-gcm
+  password: dd2bed76-c08c-4a2a-b6da-4aa83f996072
+- name: 美国-洛杉矶-E-03
+  type: ss
+  server: 96.45.190.194
+  port: 31357
+  cipher: aes-256-gcm
+  password: ppS2eH3MfTVF9A7X
 - name: 🇺🇸_US_美国->🇰🇷_KR_韩国
   type: vless
   server: nvl-edge-dr-141026.pages.dev
@@ -373,30 +376,30 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 15.165.236.77
+  server: 43.202.1.87
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: www.3dlabs-querygis.co.kr
+  servername: pens.goodcat.top
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 15.165.236.77
+  server: 43.202.1.87
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 15.165.236.77
+  server: 43.202.1.87
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 13.214.209.37
+  server: 56.10.10.106
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
@@ -406,54 +409,18 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 13.214.209.37
+  server: 56.10.10.106
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 13.214.209.37
+  server: 56.10.10.106
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-- name: US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新
-  type: vless
-  server: myanmar.visa.com
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: c379b284.vs-494.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: c379b284.vs-494.pages.dev
-- name: US美国(v2clash.blog 2026-10.9更新
-  type: vless
-  server: 185.106.96.231
-  port: 10829
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: u695098u99a93686s848.gogocs.xyz
-  flow: xtls-rprx-vision
-- name: 'US美国(v2clash.blog 2026-10.9更新 #2'
-  type: vless
-  server: 45.131.208.4
-  port: 80
-  uuid: 424fa201-3f94-479e-b533-d5257cf9a207
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  servername: 45.131.208.4
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: floral-thunder-10d3.82-67d.workers.dev
-- name: 阿拉伯(v2clash.blog 2026-10.9更新
+- name: 阿拉伯(v2clash.blog 2026-10.10更新
   type: vless
   server: 31.59.210.37
   port: 443
@@ -461,53 +428,6 @@ proxies:
   network: grpc
   tls: true
   client-fingerprint: edge
-  servername: www.yandex.ru
-- name: 'US美国(v2clash.blog 2026-10.9更新 #3'
-  type: vless
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
-- name: 'US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新 #2'
-  type: vless
-  server: 162.159.249.175
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: c379b284.vs-494.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: c379b284.vs-494.pages.dev
-- name: 'US美国(v2clash.blog 2026-10.9更新 #4'
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 339cda3d-79a5-4d37-8ad8-eddc130c992a
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: '阿拉伯(v2clash.blog 2026-10.9更新 #2'
-  type: vless
-  server: 31.59.210.24
-  port: 2087
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  network: grpc
-  tls: true
-  client-fingerprint: safari
   servername: www.yandex.ru
 - name: US美国(v2clash.blog 2026-10.10更新
   type: vless
@@ -1631,12 +1551,58 @@ proxies:
   client-fingerprint: chrome
   servername: www.apple.com
   flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-11.2更新
+  type: vless
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  uuid: 916e4382-273b-4935-b0bc-ca7cc8eabea7
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: adheres-scruple.quick-cdn.net
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+- name: 'US美国(v2clash.blog 2026-11.2更新 #2'
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: RU俄罗斯(v2clash.blog 2026-11.2更新
+  type: vless
+  server: 213.159.209.66
+  port: 443
+  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: ru11.oshost.network
+  flow: xtls-rprx-vision
+- name: NL荷兰(v2clash.blog 2026-11.2更新
+  type: vless
+  server: 31.77.13.22
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: rusbid.de
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - sz.770886.xyz-xhttp
   - 🇲🇴澳门04｜CF隧道
+  - 美国-加利福尼亚  新人套餐节点 1  app内有隐藏节点
+  - 美国-洛杉矶-E-03
   - 🇺🇸_US_美国->🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇫🇷_FR_法国
   - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
@@ -1674,14 +1640,7 @@ proxy-groups:
   - end-gfw-sg89-VLESS
   - end-gfw-sg89-HY2
   - end-gfw-sg89-SS
-  - US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新
-  - US美国(v2clash.blog 2026-10.9更新
-  - 'US美国(v2clash.blog 2026-10.9更新 #2'
-  - 阿拉伯(v2clash.blog 2026-10.9更新
-  - 'US美国(v2clash.blog 2026-10.9更新 #3'
-  - 'US美国mibei77.com 米贝节点分享)(v2clash.blog 2026-10.9更新 #2'
-  - 'US美国(v2clash.blog 2026-10.9更新 #4'
-  - '阿拉伯(v2clash.blog 2026-10.9更新 #2'
+  - 阿拉伯(v2clash.blog 2026-10.10更新
   - US美国(v2clash.blog 2026-10.10更新
   - 'US美国(v2clash.blog 2026-10.10更新 #2'
   - 'US美国(v2clash.blog 2026-10.10更新 #3'
@@ -1778,5 +1737,9 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-11.1更新 #2'
   - CA加拿大(v2clash.blog 2026-11.1更新
   - JP日本(v2clash.blog 2026-11.1更新
+  - US美国(v2clash.blog 2026-11.2更新
+  - 'US美国(v2clash.blog 2026-11.2更新 #2'
+  - RU俄罗斯(v2clash.blog 2026-11.2更新
+  - NL荷兰(v2clash.blog 2026-11.2更新
 rules:
 - MATCH,PROBE
