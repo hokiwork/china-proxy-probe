@@ -3,6 +3,19 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: mao.kipfelmao.de5.net
+  type: vless
+  server: mao.kipfelmao.de5.net
+  port: 443
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: mao.kipfelmao.de5.net
+  ws-opts:
+    path: /api/v1/guests/profiles/5de14443985f/
+    headers:
+      Host: mao.kipfelmao.de5.net
 - name: ⚠️订阅已重置，请重新复制订阅链接
   type: ss
   server: 127.0.0.1
@@ -369,47 +382,47 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 13.124.239.162
+  server: 43.201.86.77
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: neuroxt.com
+  servername: visapie.com
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 13.124.239.162
+  server: 43.201.86.77
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 13.124.239.162
+  server: 43.201.86.77
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 13.212.25.48
+  server: 47.128.227.243
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: sg.xiapihot.com
+  servername: einvoice.tunai.io
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 13.212.25.48
+  server: 47.128.227.243
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 13.212.25.48
+  server: 47.128.227.243
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -1600,6 +1613,7 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - mao.kipfelmao.de5.net
   - ⚠️订阅已重置，请重新复制订阅链接
   - 🇺🇸_US_美国->🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇫🇷_FR_法国
