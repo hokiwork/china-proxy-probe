@@ -101,991 +101,19 @@ proxies:
   uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   network: tcp
   tls: false
-- name: 日常连接-free
-  type: vless
-  server: 192.238.242.209
-  port: 443
-  uuid: 1062962a-7495-4b71-818b-f5e1f48596cf
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: account.booking.com
-  flow: xtls-rprx-vision
-- name: 🇮🇹IT_1|1.3MB/s
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_2|639KB/s
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_3|819KB/s
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_4|490KB/s
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_5|584KB/s
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_6|878KB/s
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_7|433KB/s
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_8|297KB/s
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹IT_9|473KB/s
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇹🇼TW_3|563KB/s
+- name: SG
   type: vmess
-  server: terutrrj.d6f54hd1j.cc
-  port: 443
-  uuid: a904e307-771f-498b-87ad-8e6e0d0ade4a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: terutrrj.d6f54hd1j.cc
-    path: /
-  servername: terutrrj.d6f54hd1j.cc
-- name: 🇲🇾MY_1|222KB/s
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 🇵🇱PL_1|2.8MB/s
-  type: hysteria2
-  server: 13.143.189.147
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  skip-cert-verify: false
-- name: 🇩🇪DE_1|1.2MB/s
-  type: vless
-  server: 31.76.7.233
-  port: 443
-  uuid: f8bdf363-ff05-4fe6-a013-a5605266657e
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: e2865c20.con.rasterparcel.tech
-- name: 🇵🇱PL_2|2.1MB/s
-  type: hysteria2
-  server: 13.143.189.144
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: pl2.nexfile.net
-  skip-cert-verify: true
-- name: 🇺🇸US_4|369KB/s
-  type: vless
-  server: finlandlanzarotte.live
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: finlandlanzarotte.live
-  flow: xtls-rprx-vision
-- name: 🇪🇪EE_1|563KB/s
-  type: vless
-  server: 147.45.245.17
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: defs-64.topp-con.xyz
-  flow: xtls-rprx-vision
-- name: 🇪🇪EE_2|553KB/s
-  type: vless
-  server: 5.129.202.80
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: mirror-50.topp-con.xyz
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_9|394KB/s
-  type: vless
-  server: 147.45.108.45
-  port: 443
-  uuid: Fluffy_VPN-zKZUa4Ie
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: absolute-disaster.org
-  flow: xtls-rprx-vision
-- name: 🇪🇸ES_1|1.2MB/s
-  type: vless
-  server: 156.252.229.11
-  port: 8443
-  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: play.googleapis.com
-- name: 🇪🇸ES_2|768KB/s
-  type: vless
-  server: s--p.tufmuk.ir
-  port: 3389
-  uuid: e7a05cf9-293c-42e6-9bb6-d165df68b165
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
-- name: 🇺🇸US_5|1.3MB/s
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: afed9510-8648-49c6-9fbd-c2d4d8bdd417
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: community.fastly.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
-- name: 🇺🇸US_6|2.2MB/s
-  type: vless
-  server: swidenafterlanzerotte.space
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: swidenafterlanzerotte.space
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_7|1.2MB/s
-  type: vless
-  server: 199.232.78.120
-  port: 443
-  uuid: a967d91b-27bc-4b05-9e22-27dd1336ca90
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: ussman.global.ssl.fastly.net.
-- name: 🇪🇸ES_3|958KB/s
-  type: vless
-  server: 194.62.97.228
-  port: 3389
-  uuid: e7a05cf9-293c-42e6-9bb6-d165df68b165
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
-- name: 🇬🇧GB_1|1.4MB/s
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: a967d91b-27bc-4b05-9e22-27dd1336ca90
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: community.fastly.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: ukji.global.ssl.fastly.net
-- name: 🇺🇸US_8|966KB/s
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn.akamai.steamstatic.com
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
-- name: 🇸🇬SG_1|2.6MB/s
-  type: vless
-  server: hw6.divarkhaghazi.com
-  port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: hw6.divarkhaghazi.com.
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇭🇰HK_2|147KB/s
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 85550ebf-fd43-42dd-9801-bda528fea2fc
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: wallweb5.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb5.pages.dev
-- name: 🇹🇷TR_1|282KB/s
-  type: vless
-  server: rm4.rmastore.ir
-  port: 2083
-  uuid: 116e7d57-afcf-4558-be0a-01e80fe6cd31
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trrma
-    headers:
-      Host: rm4.rmastore.ir
-- name: 🇳🇱NL_10|2.6MB/s
-  type: vless
-  server: 79.141.164.83
-  port: 443
-  uuid: 0760406c-3f19-47b1-b332-f59270adf431
-  network: grpc
-  tls: true
-  client-fingerprint: chrome
-  servername: nlb.kosmosapp.net
-- name: 🇳🇱NL_11|1.4MB/s
-  type: vless
-  server: papad1.vethilis.ru
-  port: 443
-  uuid: 5fb552a8-9c41-4031-86f5-ca10fc802da5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: papad1.vethilis.ru
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_12|546KB/s
-  type: vless
-  server: ba32107fe677d5f4.tunvi.w-ert.org
-  port: 40287
-  uuid: 38e6c206-fe40-49bd-ab35-be943d9cdac5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ask.w-ert.org
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_4|2.0MB/s
-  type: vless
-  server: swo2.nexfile.net
-  port: 4443
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  servername: swo2.nexfile.net
-- name: 🇫🇮FI_1|2.1MB/s
-  type: vless
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  uuid: 67a4b4b1-6eed-4dbb-9984-3f86e7efa831
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: hostgator.com
-  flow: xtls-rprx-vision
-- name: 🇪🇪EE_3|2.2MB/s
-  type: vless
-  server: 31.77.236.114
-  port: 443
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: files.porsche.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_9|643KB/s
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  network: tcp
-  tls: false
-  client-fingerprint: chrome
-- name: 🇩🇪DE_7|205KB/s|C002-260622
-  type: trojan
-  server: de-bots4.h1cloud.net
-  port: 25267
-  password: happybirthdaydaniel
-  sni: de-bots4.h1cloud.net
-  network: tcp
-- name: 🇺🇸US_102|224KB/s
-  type: vless
-  server: 201.51.4.89
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cache-89.topp-con.xyz
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_38|219KB/s
-  type: vless
-  server: 186.246.9.29
-  port: 443
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: wordpress.com
-- name: 🇭🇰HK_7|3.7MB/s
-  type: trojan
-  server: 36d.catcat321.com
-  port: 12763
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: d.hkj1.cat.bilibili.com
-  network: tcp
-- name: 🇮🇪IE_4|2.1MB/s
-  type: vless
-  server: 195.123.189.221
-  port: 443
-  uuid: 63959ed7-d26f-48dd-8c7b-ebdb6ea68535
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: max.ru
-- name: ❓Other_2|211KB/s
-  type: vless
-  server: 185.193.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime09.workers.dev
-- name: 🇺🇸US_104|445KB/s
-  type: vless
-  server: 154.83.2.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇺🇸US_105|293KB/s
-  type: vless
-  server: 45.135.235.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇺🇸US_106|328KB/s
-  type: vless
-  server: 154.83.2.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇬🇧GB_8|2.1MB/s
-  type: vless
-  server: 216.24.57.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇺🇸US_107|348KB/s
-  type: vless
-  server: 199.181.197.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime19.workers.dev
-- name: 🇺🇸US_108|360KB/s
-  type: vless
-  server: 45.12.30.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇺🇸US_109|419KB/s
-  type: vless
-  server: 45.12.30.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇬🇧GB_9|2.2MB/s
-  type: vless
-  server: 216.24.57.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇺🇸US_110|2.0MB/s
-  type: vless
-  server: 188.164.248.110
-  port: 443
-  uuid: 13134515-adc7-404b-8d2a-f9ad99e8dcbd
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: imanvipreserved.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: imanvipreserved.pages.dev
-- name: 🇦🇿AZ_1|933KB/s
-  type: vless
-  server: 198.16.113.219
-  port: 8443
-  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸US_111|2.7MB/s
-  type: vless
-  server: 104.24.58.225
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  tls: true
-  client-fingerprint: unsafe
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪DE_25|2.7MB/s
-  type: vless
-  server: 5.83.129.236
-  port: 443
-  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
-  network: grpc
-  tls: true
-  client-fingerprint: chrome
-  servername: host-de-upscale.cdn.cachefleet.com
-- name: 🇵🇱PL_4|810KB/s
-  type: vless
-  server: 195.123.211.204
-  port: 81
-  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: coding.grok2.indevs.in
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: coding.grok2.indevs.in
-- name: 🇫🇮FI_2|870KB/s
-  type: vless
-  server: 204.168.248.5
-  port: 443
-  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: coding.grok2.indevs.in
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: coding.grok2.indevs.in
-- name: 🇩🇪DE_27|715KB/s
-  type: vless
-  server: 185.125.103.113
-  port: 443
-  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: coding.grok2.indevs.in
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: coding.grok2.indevs.in
-- name: 🇫🇮FI_3|1.6MB/s
-  type: vless
-  server: 89.125.37.1
-  port: 443
-  uuid: 518079db-d88d-4035-bbf4-ddd1f9cf1e5f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: se.frgcdn.xyz
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_28|1.6MB/s
-  type: hysteria2
-  server: 2.27.210.6
-  port: 4444
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: lv2.nexfile.net
-  skip-cert-verify: false
-- name: 🇸🇪SE_2|843KB/s
-  type: trojan
-  server: 121.127.33.130
-  port: 443
-  password: f426d3c9-fb43-43c0-868b-898dfa451a74
-  sni: likejennie.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: likejennie.pages.dev
-- name: 🇩🇪DE_29|2.5MB/s
-  type: vless
-  server: 89.169.47.96
-  port: 443
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: renderer-bridge-2-129.mirra.now
-- name: 🇪🇪EE_5|2.3MB/s
-  type: vless
-  server: ee.frgcdn.xyz
-  port: 443
-  uuid: 43a26f1a-99b7-4b17-98c7-b836fb466999
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: ee.frgcdn.xyz
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_39|1.7MB/s
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: 52a7c001-4c6f-4ae5-8098-01991dfb7ff6
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nla.kosmosapp.net
-- name: 🇳🇱NL_40|2.8MB/s
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: 5d129837-43b0-42be-b80f-d50e8578aedd
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nla.kosmosapp.net
-- name: 🇺🇸US_112|2.6MB/s
-  type: vless
-  server: 162.120.94.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇺🇸US_113|2.5MB/s
-  type: vless
-  server: 198.177.56.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime09.workers.dev
-- name: 🇮🇪IE_5|670KB/s
-  type: vless
-  server: 195.123.189.214
-  port: 443
-  uuid: 63959ed7-d26f-48dd-8c7b-ebdb6ea68535
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: max.ru
-- name: 🇮🇪IE_6|836KB/s
-  type: vless
-  server: 195.123.189.217
-  port: 443
-  uuid: 63959ed7-d26f-48dd-8c7b-ebdb6ea68535
-  network: grpc
-  tls: true
-  client-fingerprint: safari
-  servername: max.ru
-- name: 🇳🇱NL_41|1.6MB/s
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: 747e42df-2590-4894-8653-c99e358c7852
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nla.kosmosapp.net
-- name: 🇪🇪EE_6|1.2MB/s
-  type: vless
-  server: 109.71.247.200
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: static-47.topp-con.xyz
-  flow: xtls-rprx-vision
-- name: 🇩🇪DE_30|280KB/s
-  type: vless
-  server: 13.143.165.126
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: update-26.topp-con.xyz
-  flow: xtls-rprx-vision
-- name: 🇳🇱NL_42|2.7MB/s
-  type: vless
-  server: 79.141.164.83
-  port: 443
-  uuid: 906b3770-3d8b-45c7-a46d-df6b49a6d6aa
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nlb.kosmosapp.net
-- name: 🇳🇱NL_43|3.0MB/s
-  type: vless
-  server: 79.141.164.83
-  port: 443
-  uuid: 96c12f5b-a591-4e67-8ab7-7928ab826f88
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nlb.kosmosapp.net
-- name: 🇳🇱NL_44|2.1MB/s
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: 99900f66-f01e-4f3a-a4c6-265a19a8af76
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nla.kosmosapp.net
-- name: 🇺🇸US_114|453KB/s
-  type: vless
-  server: 104.21.0.1
-  port: 8443
-  uuid: a6ba51de-d50a-407f-a8bb-5dc8b3073ec1
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: frosty-clover-b8ea-df1f0206.pages.dev
-  ws-opts:
-    path: /7f0776a02fac
-    headers:
-      Host: frosty-clover-b8ea-df1f0206.pages.dev
-- name: 🇫🇮FI_5|528KB/s
-  type: vless
-  server: 78.17.39.129
-  port: 443
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  network: xhttp
-  tls: true
-  client-fingerprint: chrome
-  servername: 78.17.39.129
-- name: 🇳🇱NL_45|1.2MB/s
-  type: vless
-  server: 79.141.164.125
-  port: 443
-  uuid: e3950baa-54a6-4c49-8332-9174325f47a9
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: nla.kosmosapp.net
-- name: 🇩🇪DE_31|993KB/s
-  type: vless
-  server: 5.104.107.80
-  port: 2053
-  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: coding.grok2.indevs.in
-  ws-opts:
-    path: //proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: coding.grok2.indevs.in
-- name: 🇺🇸US_115|345KB/s
-  type: trojan
-  server: 172.66.47.18
-  port: 443
-  password: e7TTceggMwUMg+aFN
-  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
-  network: ws
-  ws-opts:
-    path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
-    headers:
-      Host: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
-- name: 🇩🇪DE_35|724KB/s
-  type: hysteria2
-  server: 45.88.12.119
-  port: 443
-  password: 80cbaaec-caff-4181-8539-ea6e51731007
-  sni: crt.onecloudstream.com
-  skip-cert-verify: false
-- name: 🇵🇱PL_5|1.9MB/s
-  type: vless
-  server: cdn-ya.shamanapp.online
-  port: 443
-  uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
-  network: xhttp
-  tls: true
-  client-fingerprint: firefox
-  servername: cdn-ya.shamanapp.online
-- name: 剩余流量：0
-  type: vless
-  server: 13.230.108.109
-  port: 25680
-  uuid: 47be937a-2cb4-4c0b-98fb-221814b85044
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: IPv6 · 日本 TG ：@befriendsvpn
-  type: vless
-  server: 2406:da14:f54:7400:c73c:ffd5:2743:8b2f
-  port: 25680
-  uuid: 47be937a-2cb4-4c0b-98fb-221814b85044
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: 新加坡 TG ：@befriendsvpn
-  type: vless
-  server: 13.215.189.193
-  port: 23478
-  uuid: 47be937a-2cb4-4c0b-98fb-221814b85044
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: IPv6 · 新加坡 TG ：@befriendsvpn
-  type: vless
-  server: 2406:da18:526:e700:946e:ffd1:6029:548a
-  port: 23478
-  uuid: 47be937a-2cb4-4c0b-98fb-221814b85044
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
-  type: vmess
-  server: sg-transit-3.nebulacloud.win
-  port: 30330
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sg-transit-3.nebulacloud.win
-  network: ws
-  ws-opts:
-    path: /ca/getData
-    headers:
-      Host: sg-transit-3.nebulacloud.win
-  udp: true
-- name: 🇸🇬_SG_新加坡->🇺🇸_US_美国
-  type: vmess
-  server: sg-transit-3.nebulacloud.win
-  port: 31414
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /getData/us
-  udp: true
-- name: 🇸🇬_SG_新加坡
-  type: vless
-  server: 178.94.25.73
-  port: 14430
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
-  network: ws
-  servername: 178.94.25.73
-  tls: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.94.25.73
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪_DE_德国
-  type: vmess
-  server: turknew.net-flowa.com
+  server: 170.187.229.90
   port: 80
-  uuid: cd96479e-9c39-4a7f-ba0c-806a83af19ca
+  uuid: 6683996b-d84a-4a40-a0d3-b42a92bb3313
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  network: http
-  udp: true
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国
-  type: vless
-  server: redrocketnode-bidarbash.sbs
-  port: 443
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
   network: ws
-  servername: redrocketnode-bidarbash.sbs
-  tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /zoodi
     headers:
-      Host: redrocketnode-bidarbash.sbs
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇳🇱_NL_荷兰
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  type: vless
-  server: vpn.cintaku.qzz.io
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  network: ws
-  servername: vpn.cintaku.qzz.io
-  tls: true
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  type: vless
-  server: alman.5f2vvtqh5syot.info
-  port: 443
-  uuid: ed6c724c-435f-4f83-a781-f57579af320b
-  network: ws
-  servername: alman.5f2vvtqh5syot.info
-  tls: true
-  client-fingerprint: unsafe
-  ws-opts:
-    path: /9d9fdbc18c834cffab4276811501fbae
-    headers:
-      Host: alman.5f2vvtqh5syot.info
-  skip-cert-verify: true
-  udp: true
+      Host: shoutingtoutiao3.10010.com
+    path: /images
 - name: 🇺🇸_US_美国
   type: vmess
   server: guanwang.awsno.com
@@ -1101,6 +129,32 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇱_PL_波兰
+  type: trojan
+  server: 78.17.171.106
+  port: 443
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  sni: 2.HI-L.IM
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪_DE_德国
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: RU VLESS-03 | free-nodes
   type: vless
@@ -1228,6 +282,19 @@ proxies:
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
     headers:
       Host: ccc.010304.xyz
+- name: 新西兰+
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 美国+Xerox
+  type: hysteria2
+  server: 13.143.189.147
+  port: 4444
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl2.nexfile.net
+  skip-cert-verify: false
 - name: '美国+CloudFlare节点 #2'
   type: vless
   server: 172.67.112.188
@@ -1253,105 +320,13 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: SG新加坡(v2clash.blog 2026-10.12更新
+- name: 北京市+惟译天创信息技术有限公司
   type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: US美国(v2clash.blog 2026-10.12更新
-  type: vless
-  server: 213.111.177.107
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: vlso5.1d.mom
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: NL荷兰(v2clash.blog 2026-10.12更新
-  type: vless
-  server: 178.214.113.10
-  port: 8443
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: n2.vimeostream.online
-- name: 'SG新加坡(v2clash.blog 2026-10.12更新 #2'
-  type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 'US美国(v2clash.blog 2026-10.12更新 #2'
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'NL荷兰(v2clash.blog 2026-10.12更新 #2'
-  type: vless
-  server: 79.137.197.212
-  port: 2105
-  uuid: 663c0d65-f2bc-43f3-b329-1a4e2b781d44
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: GB英国(v2clash.blog 2026-10.12更新
-  type: vless
-  server: 57.129.130.34
-  port: 52014
-  uuid: 53367702-4b8d-431a-a193-34d7d057a065
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 'US美国(v2clash.blog 2026-10.12更新 #3'
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  network: tcp
   tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
 - name: US美国(v2clash.blog 2026-10.13更新
   type: vless
   server: 209.206.51.240
@@ -1407,6 +382,19 @@ proxies:
   tls: true
   client-fingerprint: firefox
   servername: dey.lnmarketplace.net
+- name: 'SG新加坡(v2clash.blog 2026-10.13更新 #2'
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: 'US美国(v2clash.blog 2026-10.13更新 #3'
   type: vless
   server: 31.76.227.58
@@ -1417,6 +405,19 @@ proxies:
   client-fingerprint: random
   servername: assets-mi-27.spbstudentlife.com
   flow: xtls-rprx-vision
+- name: GB英国(v2clash.blog 2026-10.14更新
+  type: vless
+  server: 57.129.130.34
+  port: 52014
+  uuid: 53367702-4b8d-431a-a193-34d7d057a065
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 - name: US美国(v2clash.blog 2026-10.14更新
   type: vless
   server: 92.53.189.40
@@ -1517,6 +518,19 @@ proxies:
 - name: US美国(v2clash.blog 2026-10.15更新
   type: vless
   server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.15更新 #2'
+  type: vless
+  server: saas.sin.fan
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   network: ws
@@ -2370,6 +1384,19 @@ proxies:
   flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-11.3更新
   type: vless
+  server: 188.164.248.110
+  port: 443
+  uuid: 13134515-adc7-404b-8d2a-f9ad99e8dcbd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: imanvipreserved.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: imanvipreserved.pages.dev
+- name: 'US美国(v2clash.blog 2026-11.3更新 #2'
+  type: vless
   server: 5.101.180.125
   port: 8443
   uuid: 3305c285-8d55-4f52-a3b0-2a582f5ffd59
@@ -2381,7 +1408,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: sdwf-amq.pages.dev
-- name: 'US美国(v2clash.blog 2026-11.3更新 #2'
+- name: 'US美国(v2clash.blog 2026-11.3更新 #3'
   type: vless
   server: 62.182.196.194
   port: 8443
@@ -2416,6 +1443,83 @@ proxies:
     headers:
       Host: v2ray1.dozapp.xyz
     path: /lMnsZUN4/
+- name: PL波兰(v2clash.blog 2026-11.4更新
+  type: vless
+  server: 195.123.211.204
+  port: 81
+  uuid: f0c9ebf7-76cc-44b7-8b30-b33ee0ffc898
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: coding.grok2.indevs.in
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: coding.grok2.indevs.in
+- name: US美国(v2clash.blog 2026-11.5更新
+  type: vless
+  server: tunell2027.crackerbinam.org
+  port: 48312
+  uuid: f47057d5-120d-4b42-b6d6-30469aef6813
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+- name: SG新加坡(v2clash.blog 2026-11.5更新
+  type: vless
+  server: 43.163.112.174
+  port: 443
+  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: 'SG新加坡(v2clash.blog 2026-11.5更新 #2'
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kv.074167.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: kv.074167.xyz
+- name: 'US美国(v2clash.blog 2026-11.5更新 #2'
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: 618f4a11s220.fuhuovps.xyz
+- name: 'SG新加坡(v2clash.blog 2026-11.5更新 #3'
+  type: vless
+  server: 134.255.211.36
+  port: 443
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: sg-sin.probe.geomyip.com
+  flow: xtls-rprx-vision
+- name: 'US美国(v2clash.blog 2026-11.5更新 #3'
+  type: vless
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: notls.lukongtou.eu.org
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROBE
   type: select
@@ -2428,104 +1532,11 @@ proxy-groups:
   - it-mil.862400.xyz
   - eu-central.862400.xyz
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 日常连接-free
-  - 🇮🇹IT_1|1.3MB/s
-  - 🇮🇹IT_2|639KB/s
-  - 🇮🇹IT_3|819KB/s
-  - 🇮🇹IT_4|490KB/s
-  - 🇮🇹IT_5|584KB/s
-  - 🇮🇹IT_6|878KB/s
-  - 🇮🇹IT_7|433KB/s
-  - 🇮🇹IT_8|297KB/s
-  - 🇮🇹IT_9|473KB/s
-  - 🇹🇼TW_3|563KB/s
-  - 🇲🇾MY_1|222KB/s
-  - 🇵🇱PL_1|2.8MB/s
-  - 🇩🇪DE_1|1.2MB/s
-  - 🇵🇱PL_2|2.1MB/s
-  - 🇺🇸US_4|369KB/s
-  - 🇪🇪EE_1|563KB/s
-  - 🇪🇪EE_2|553KB/s
-  - 🇳🇱NL_9|394KB/s
-  - 🇪🇸ES_1|1.2MB/s
-  - 🇪🇸ES_2|768KB/s
-  - 🇺🇸US_5|1.3MB/s
-  - 🇺🇸US_6|2.2MB/s
-  - 🇺🇸US_7|1.2MB/s
-  - 🇪🇸ES_3|958KB/s
-  - 🇬🇧GB_1|1.4MB/s
-  - 🇺🇸US_8|966KB/s
-  - 🇸🇬SG_1|2.6MB/s
-  - 🇭🇰HK_2|147KB/s
-  - 🇹🇷TR_1|282KB/s
-  - 🇳🇱NL_10|2.6MB/s
-  - 🇳🇱NL_11|1.4MB/s
-  - 🇳🇱NL_12|546KB/s
-  - 🇩🇪DE_4|2.0MB/s
-  - 🇫🇮FI_1|2.1MB/s
-  - 🇪🇪EE_3|2.2MB/s
-  - 🇺🇸US_9|643KB/s
-  - 🇩🇪DE_7|205KB/s|C002-260622
-  - 🇺🇸US_102|224KB/s
-  - 🇳🇱NL_38|219KB/s
-  - 🇭🇰HK_7|3.7MB/s
-  - 🇮🇪IE_4|2.1MB/s
-  - ❓Other_2|211KB/s
-  - 🇺🇸US_104|445KB/s
-  - 🇺🇸US_105|293KB/s
-  - 🇺🇸US_106|328KB/s
-  - 🇬🇧GB_8|2.1MB/s
-  - 🇺🇸US_107|348KB/s
-  - 🇺🇸US_108|360KB/s
-  - 🇺🇸US_109|419KB/s
-  - 🇬🇧GB_9|2.2MB/s
-  - 🇺🇸US_110|2.0MB/s
-  - 🇦🇿AZ_1|933KB/s
-  - 🇺🇸US_111|2.7MB/s
-  - 🇩🇪DE_25|2.7MB/s
-  - 🇵🇱PL_4|810KB/s
-  - 🇫🇮FI_2|870KB/s
-  - 🇩🇪DE_27|715KB/s
-  - 🇫🇮FI_3|1.6MB/s
-  - 🇩🇪DE_28|1.6MB/s
-  - 🇸🇪SE_2|843KB/s
-  - 🇩🇪DE_29|2.5MB/s
-  - 🇪🇪EE_5|2.3MB/s
-  - 🇳🇱NL_39|1.7MB/s
-  - 🇳🇱NL_40|2.8MB/s
-  - 🇺🇸US_112|2.6MB/s
-  - 🇺🇸US_113|2.5MB/s
-  - 🇮🇪IE_5|670KB/s
-  - 🇮🇪IE_6|836KB/s
-  - 🇳🇱NL_41|1.6MB/s
-  - 🇪🇪EE_6|1.2MB/s
-  - 🇩🇪DE_30|280KB/s
-  - 🇳🇱NL_42|2.7MB/s
-  - 🇳🇱NL_43|3.0MB/s
-  - 🇳🇱NL_44|2.1MB/s
-  - 🇺🇸US_114|453KB/s
-  - 🇫🇮FI_5|528KB/s
-  - 🇳🇱NL_45|1.2MB/s
-  - 🇩🇪DE_31|993KB/s
-  - 🇺🇸US_115|345KB/s
-  - 🇩🇪DE_35|724KB/s
-  - 🇵🇱PL_5|1.9MB/s
-  - 剩余流量：0
-  - IPv6 · 日本 TG ：@befriendsvpn
-  - 新加坡 TG ：@befriendsvpn
-  - IPv6 · 新加坡 TG ：@befriendsvpn
-  - 🇸🇬_SG_新加坡->🇨🇦_CA_加拿大
-  - 🇸🇬_SG_新加坡->🇺🇸_US_美国
-  - 🇸🇬_SG_新加坡
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
-  - 🇩🇪_DE_德国
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
-  - 🇨🇳_CN_中国->🇳🇱_NL_荷兰
-  - 🇨🇳_CN_中国
-  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
+  - SG
   - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国
+  - 🇵🇱_PL_波兰
+  - 🇩🇪_DE_德国
   - RU VLESS-03 | free-nodes
   - RU SS-14 | free-nodes
   - 未知 VLESS-15 | free-nodes
@@ -2539,22 +1550,19 @@ proxy-groups:
   - 美国+亚利桑那州凤凰城Oracle云计算数据中心
   - 美国+V2CROSS.COM
   - 美国+CloudFlare节点
+  - 新西兰+
+  - 美国+Xerox
   - '美国+CloudFlare节点 #2'
   - '美国+CloudFlare节点 #3'
-  - SG新加坡(v2clash.blog 2026-10.12更新
-  - US美国(v2clash.blog 2026-10.12更新
-  - NL荷兰(v2clash.blog 2026-10.12更新
-  - 'SG新加坡(v2clash.blog 2026-10.12更新 #2'
-  - 'US美国(v2clash.blog 2026-10.12更新 #2'
-  - 'NL荷兰(v2clash.blog 2026-10.12更新 #2'
-  - GB英国(v2clash.blog 2026-10.12更新
-  - 'US美国(v2clash.blog 2026-10.12更新 #3'
+  - 北京市+惟译天创信息技术有限公司
   - US美国(v2clash.blog 2026-10.13更新
   - SG新加坡(v2clash.blog 2026-10.13更新
   - 'US美国(v2clash.blog 2026-10.13更新 #2'
   - GB英国(v2clash.blog 2026-10.13更新
   - NL荷兰(v2clash.blog 2026-10.13更新
+  - 'SG新加坡(v2clash.blog 2026-10.13更新 #2'
   - 'US美国(v2clash.blog 2026-10.13更新 #3'
+  - GB英国(v2clash.blog 2026-10.14更新
   - US美国(v2clash.blog 2026-10.14更新
   - JP日本(v2clash.blog 2026-10.14更新
   - DE德国(v2clash.blog 2026-10.14更新
@@ -2565,6 +1573,7 @@ proxy-groups:
   - 白俄罗斯(v2clash.blog 2026-10.15更新
   - HK香港(v2clash.blog 2026-10.15更新
   - US美国(v2clash.blog 2026-10.15更新
+  - 'US美国(v2clash.blog 2026-10.15更新 #2'
   - 'HK香港(v2clash.blog 2026-10.15更新 #2'
   - Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
   - RU俄罗斯(v2clash.blog 2026-10.16更新
@@ -2638,7 +1647,15 @@ proxy-groups:
   - NL荷兰(v2clash.blog 2026-11.2更新
   - US美国(v2clash.blog 2026-11.3更新
   - 'US美国(v2clash.blog 2026-11.3更新 #2'
+  - 'US美国(v2clash.blog 2026-11.3更新 #3'
   - NL荷兰(v2clash.blog 2026-11.3更新
   - US美国(v2clash.blog 2026-11.4更新)
+  - PL波兰(v2clash.blog 2026-11.4更新
+  - US美国(v2clash.blog 2026-11.5更新
+  - SG新加坡(v2clash.blog 2026-11.5更新
+  - 'SG新加坡(v2clash.blog 2026-11.5更新 #2'
+  - 'US美国(v2clash.blog 2026-11.5更新 #2'
+  - 'SG新加坡(v2clash.blog 2026-11.5更新 #3'
+  - 'US美国(v2clash.blog 2026-11.5更新 #3'
 rules:
 - MATCH,PROBE
