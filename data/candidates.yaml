@@ -68,7 +68,7 @@ proxies:
     path: /0776d002-00a9-4368-adf8-077c2f432fea-vless?ed=2560
     headers:
       Host: ascs4673.tinc.us.ci
-- name: 剩余流量：0
+- name: 剩余流量：435.95 GB
   type: vless
   server: 77.67.18.248
   port: 25680
@@ -114,6 +114,50 @@ proxies:
   port: 13133
   cipher: aes-128-gcm
   password: e7f735d0-23a7-4b86-8e31-97b07b275197
+- name: 🇮🇹_IT_意大利
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_1
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_2
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸_US_美国->🇩🇪_DE_德国
   type: vless
   server: uiuxtestsdcv-development-r6dg9.lucity.app
@@ -129,7 +173,7 @@ proxies:
       Host: uiuxtestsdcv-development-r6dg9.lucity.app
   skip-cert-verify: true
   udp: true
-- name: 🇮🇹_IT_意大利
+- name: 🇮🇹_IT_意大利_3
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -137,83 +181,9 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   skip-cert-verify: true
   udp: true
-- name: 🇮🇹_IT_意大利_1
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_2
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵_JP_日本
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_3
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
 - name: 🇮🇹_IT_意大利_4
   type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_5
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_6
-  type: ss
   server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_7
-  type: ss
-  server: 202.50.253.99
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -234,6 +204,93 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+  udp: true
+- name: 🇮🇹_IT_意大利_5
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇳🇱_NL_荷兰
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国_1
+  type: vmess
+  server: 120.48.133.162
+  port: 10086
+  uuid: a01e5d56-464f-45b9-b600-164db4700162
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧_GB_英国
+  type: vless
+  server: 51.24.209.55
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_6
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧_GB_英国_1
+  type: vless
+  server: 51.24.209.55
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧_GB_英国_2
+  type: vless
+  server: 51.24.209.55
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: RU VLESS-03 | free-nodes
   type: vless
@@ -393,76 +450,6 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 北京市+惟译天创信息技术有限公司
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  network: tcp
-  tls: false
-- name: KR韩国(v2clash.blog 2026-10.15更新
-  type: hysteria2
-  server: C0DD7bgChaltqnh
-  port: 443
-  password: ''
-  sni: rmgyvpn.rest
-  skip-cert-verify: false
-- name: 白俄罗斯(v2clash.blog 2026-10.15更新
-  type: vless
-  server: 178.172.227.228
-  port: 10444
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
-- name: HK香港(v2clash.blog 2026-10.15更新
-  type: vless
-  server: 103.41.7.43
-  port: 2062
-  uuid: d83592a3-a94f-4f7e-b105-b3deedde2a7a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: US美国(v2clash.blog 2026-10.15更新
-  type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.15更新 #2'
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'HK香港(v2clash.blog 2026-10.15更新 #2'
-  type: vless
-  server: 103.41.7.43
-  port: 2061
-  uuid: 9c2888cf-99f8-4c04-ac07-c033359ff975
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
 - name: Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
   type: vless
   server: 104.21.91.244
@@ -511,6 +498,19 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime51.workers.dev
+- name: 'US美国(v2clash.blog 2026-10.16更新 #2'
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
 - name: 阿拉伯(v2clash.blog 2026-10.18更新
   type: vless
   server: 185.112.249.201
@@ -622,6 +622,19 @@ proxies:
       Host: snip.edgeoneai.cc.cd
 - name: 'US美国(v2clash.blog 2026-10.19更新 #3'
   type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.19更新 #4'
+  type: vless
   server: 188.114.98.0
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
@@ -632,7 +645,7 @@ proxies:
     path: /fdipfp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.19更新 #4'
+- name: 'US美国(v2clash.blog 2026-10.19更新 #5'
   type: vless
   server: 216.24.57.1
   port: 443
@@ -1594,6 +1607,76 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: US美国(v2clash.blog 2026-11.8更新
+  type: trojan
+  server: sclass-c1.catcat321.com
+  port: 20086
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
+  network: tcp
+- name: 爱沙尼亚(v2clash.blog 2026-11.8更新
+  type: vless
+  server: ee.song69.fun
+  port: 2087
+  uuid: 92b79c22-f68b-4713-8b21-52f264cb92f5
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: ee.song69.fun
+  flow: xtls-rprx-vision
+- name: RU俄罗斯(v2clash.blog 2026-11.8更新
+  type: vless
+  server: xsru1.ddnsfree.com
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  network: grpc
+  tls: true
+  client-fingerprint: random
+  servername: xsru1.ddnsfree.com
+- name: 土耳其(v2clash.blog 2026-11.8更新
+  type: vless
+  server: 5.104.74.27
+  port: 8443
+  uuid: 857e5668-88b9-45cd-a600-79e55c04d8a8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: uk-room07.filesnap.tech
+  flow: xtls-rprx-vision
+- name: KR韩国(v2clash.blog 2026-11.8更新
+  type: vless
+  server: 168.107.36.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  network: ws
+  tls: true
+  client-fingerprint: unsafe
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: DE德国(v2clash.blog 2026-11.8更新
+  type: vless
+  server: swo2.nexfile.net
+  port: 4443
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: swo2.nexfile.net
+- name: NL荷兰(v2clash.blog 2026-11.8更新
+  type: vless
+  server: fu.baiproxy.us.ci
+  port: 2087
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  network: ws
+  tls: true
+  client-fingerprint: qq
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fu.baiproxy.us.ci
 proxy-groups:
 - name: PROBE
   type: select
@@ -1603,24 +1686,30 @@ proxy-groups:
   - hc35-ag-hinet hinet快到期了 还有很多流量
   - edgetunnel
   - 🇺🇸 micro-ord-1793349344673 vless-ws-tls
-  - 剩余流量：0
+  - 剩余流量：435.95 GB
   - IPv6 · 日本 TG ：@befriendsvpn
   - 新加坡 TG ：@befriendsvpn
   - IPv6 · 新加坡 TG ：@befriendsvpn
   - 使用的设备过多，怀疑恶意分享使用！
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 🇮🇹_IT_意大利
   - 🇮🇹_IT_意大利_1
+  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
   - 🇨🇳_CN_中国
   - 🇮🇹_IT_意大利_2
-  - 🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 🇮🇹_IT_意大利_3
   - 🇮🇹_IT_意大利_4
-  - 🇮🇹_IT_意大利_5
-  - 🇮🇹_IT_意大利_6
-  - 🇮🇹_IT_意大利_7
   - 🇺🇸_US_美国
+  - 🇮🇹_IT_意大利_5
+  - 🇨🇳_CN_中国->🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国
+  - 🇮🇹_IT_意大利_6
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
   - RU VLESS-03 | free-nodes
   - RU SS-14 | free-nodes
   - 未知 VLESS-15 | free-nodes
@@ -1637,17 +1726,11 @@ proxy-groups:
   - 美国+Xerox
   - '美国+CloudFlare节点 #2'
   - '美国+CloudFlare节点 #3'
-  - 北京市+惟译天创信息技术有限公司
-  - KR韩国(v2clash.blog 2026-10.15更新
-  - 白俄罗斯(v2clash.blog 2026-10.15更新
-  - HK香港(v2clash.blog 2026-10.15更新
-  - US美国(v2clash.blog 2026-10.15更新
-  - 'US美国(v2clash.blog 2026-10.15更新 #2'
-  - 'HK香港(v2clash.blog 2026-10.15更新 #2'
   - Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN#US美国(v2clash.blog 2026-10.16更新
   - RU俄罗斯(v2clash.blog 2026-10.16更新
   - 南非(v2clash.blog 2026-10.16更新
   - US美国(v2clash.blog 2026-10.16更新
+  - 'US美国(v2clash.blog 2026-10.16更新 #2'
   - 阿拉伯(v2clash.blog 2026-10.18更新
   - 芬兰(v2clash.blog 2026-10.18更新
   - 越南(v2clash.blog 2026-10.18更新
@@ -1659,6 +1742,7 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-10.19更新 #2'
   - 'US美国(v2clash.blog 2026-10.19更新 #3'
   - 'US美国(v2clash.blog 2026-10.19更新 #4'
+  - 'US美国(v2clash.blog 2026-10.19更新 #5'
   - KR韩国(v2clash.blog 2026-10.20更新
   - SG新加坡(v2clash.blog 2026-10.20更新
   - DE德国(v2clash.blog 2026-10.20更新
@@ -1740,5 +1824,12 @@ proxy-groups:
   - 'US美国(v2clash.blog 2026-11.7更新 #2'
   - 'US美国(v2clash.blog 2026-11.7更新 #3'
   - 'US美国(v2clash.blog 2026-11.7更新 #4'
+  - US美国(v2clash.blog 2026-11.8更新
+  - 爱沙尼亚(v2clash.blog 2026-11.8更新
+  - RU俄罗斯(v2clash.blog 2026-11.8更新
+  - 土耳其(v2clash.blog 2026-11.8更新
+  - KR韩国(v2clash.blog 2026-11.8更新
+  - DE德国(v2clash.blog 2026-11.8更新
+  - NL荷兰(v2clash.blog 2026-11.8更新
 rules:
 - MATCH,PROBE
