@@ -29,11 +29,50 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: nl-ams.862400.xyz
+- name: hc35-ag-hinet hinet快到期了 还有很多流量
+  type: vless
+  server: 140.235.98.137
+  port: 443
+  uuid: 369f76a6-77d1-4998-80bc-be485ce363bd
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: hc35000.leyali.kdns.fr
+  ws-opts:
+    path: /hc35000
+    headers:
+      Host: hc35000.leyali.kdns.fr
+- name: edgetunnel
+  type: vless
+  server: kingcheng.cc.cd
+  port: 443
+  uuid: 5ff6362e-5235-49c5-879d-5dba57dc7910
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: kingcheng.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: kingcheng.cc.cd
+- name: 🇺🇸 micro-ord-1793349344673 vless-ws-tls
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 0776d002-00a9-4368-adf8-077c2f432fea
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: ascs4673.tinc.us.ci
+  ws-opts:
+    path: /0776d002-00a9-4368-adf8-077c2f432fea-vless?ed=2560
+    headers:
+      Host: ascs4673.tinc.us.ci
 - name: 剩余流量：0
   type: vless
-  server: 77.67.18.247
+  server: 77.67.18.248
   port: 25680
-  uuid: 96f012e2-bac3-41c5-9d19-e2ac618a9345
+  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
   network: tcp
   tls: true
   client-fingerprint: chrome
@@ -43,7 +82,7 @@ proxies:
   type: vless
   server: 2a14:7586:6109:1::a125
   port: 25680
-  uuid: 96f012e2-bac3-41c5-9d19-e2ac618a9345
+  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
   network: tcp
   tls: true
   client-fingerprint: chrome
@@ -53,7 +92,7 @@ proxies:
   type: vless
   server: 52.221.255.81
   port: 23478
-  uuid: 96f012e2-bac3-41c5-9d19-e2ac618a9345
+  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
   network: tcp
   tls: true
   client-fingerprint: chrome
@@ -63,50 +102,18 @@ proxies:
   type: vless
   server: 2406:da18:1ec6:2e00:7626:1f1e:79d8:cd16
   port: 23478
-  uuid: 96f012e2-bac3-41c5-9d19-e2ac618a9345
+  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
   network: tcp
   tls: true
   client-fingerprint: chrome
   servername: apple.com
   flow: xtls-rprx-vision
-- name: 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇳🇱_NL_荷兰
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
+- name: 使用的设备过多，怀疑恶意分享使用！
+  type: ss
+  server: 127.0.0.1
+  port: 13133
+  cipher: aes-128-gcm
+  password: e7f735d0-23a7-4b86-8e31-97b07b275197
 - name: 🇺🇸_US_美国->🇩🇪_DE_德国
   type: vless
   server: uiuxtestsdcv-development-r6dg9.lucity.app
@@ -124,7 +131,7 @@ proxies:
   udp: true
 - name: 🇮🇹_IT_意大利
   type: ss
-  server: 202.50.253.54
+  server: 202.50.253.81
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -132,7 +139,25 @@ proxies:
   udp: true
 - name: 🇮🇹_IT_意大利_1
   type: ss
-  server: 202.50.253.90
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_2
+  type: ss
+  server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -146,14 +171,52 @@ proxies:
   password: BeaUf9c0AEWH40Pu
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_3
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_4
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_5
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_6
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹_IT_意大利_7
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸_US_美国
@@ -171,38 +234,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-  udp: true
-- name: 🇮🇹_IT_意大利_2
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_3
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹_IT_意大利_4
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vless
-  server: us22.sofast.live
-  port: 58011
-  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-  tls: false
-  skip-cert-verify: true
   udp: true
 - name: RU VLESS-03 | free-nodes
   type: vless
@@ -362,6 +393,13 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 北京市+惟译天创信息技术有限公司
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  network: tcp
+  tls: false
 - name: KR韩国(v2clash.blog 2026-10.15更新
   type: hysteria2
   server: C0DD7bgChaltqnh
@@ -1562,24 +1600,27 @@ proxy-groups:
   proxies:
   - us-lax.862400.xyz
   - nl-ams.862400.xyz
+  - hc35-ag-hinet hinet快到期了 还有很多流量
+  - edgetunnel
+  - 🇺🇸 micro-ord-1793349344673 vless-ws-tls
   - 剩余流量：0
   - IPv6 · 日本 TG ：@befriendsvpn
   - 新加坡 TG ：@befriendsvpn
   - IPv6 · 新加坡 TG ：@befriendsvpn
-  - 🇨🇳_CN_中国->🇮🇪_IE_爱尔兰
-  - 🇨🇳_CN_中国->🇳🇱_NL_荷兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国
+  - 使用的设备过多，怀疑恶意分享使用！
   - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 🇮🇹_IT_意大利
   - 🇮🇹_IT_意大利_1
-  - 🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇫🇷_FR_法国
-  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国
   - 🇮🇹_IT_意大利_2
+  - 🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇮🇹_IT_意大利_3
   - 🇮🇹_IT_意大利_4
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利_5
+  - 🇮🇹_IT_意大利_6
+  - 🇮🇹_IT_意大利_7
+  - 🇺🇸_US_美国
   - RU VLESS-03 | free-nodes
   - RU SS-14 | free-nodes
   - 未知 VLESS-15 | free-nodes
@@ -1596,6 +1637,7 @@ proxy-groups:
   - 美国+Xerox
   - '美国+CloudFlare节点 #2'
   - '美国+CloudFlare节点 #3'
+  - 北京市+惟译天创信息技术有限公司
   - KR韩国(v2clash.blog 2026-10.15更新
   - 白俄罗斯(v2clash.blog 2026-10.15更新
   - HK香港(v2clash.blog 2026-10.15更新
