@@ -3,19 +3,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: us-lax.862400.xyz
-  type: vless
-  server: us-lax.862400.xyz
-  port: 443
-  uuid: fc486b2b-8a22-4c93-8a8b-f40e1522ba78
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: us-lax.862400.xyz
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
 - name: nl-ams.862400.xyz
   type: vless
   server: nl-ams.862400.xyz
@@ -68,46 +55,19 @@ proxies:
     path: /0776d002-00a9-4368-adf8-077c2f432fea-vless?ed=2560
     headers:
       Host: ascs4673.tinc.us.ci
-- name: 剩余流量：435.95 GB
+- name: hc35000.leyali.kdns.fr
   type: vless
-  server: 77.67.18.248
-  port: 25680
-  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
-  network: tcp
+  server: hc35000.leyali.kdns.fr
+  port: 443
+  uuid: 369f76a6-77d1-4998-80bc-be485ce363bd
+  network: ws
   tls: true
   client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: IPv6 · 日本 TG ：@befriendsvpn
-  type: vless
-  server: 2a14:7586:6109:1::a125
-  port: 25680
-  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: 新加坡 TG ：@befriendsvpn
-  type: vless
-  server: 52.221.255.81
-  port: 23478
-  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
-- name: IPv6 · 新加坡 TG ：@befriendsvpn
-  type: vless
-  server: 2406:da18:1ec6:2e00:7626:1f1e:79d8:cd16
-  port: 23478
-  uuid: 47d4244e-fa70-40c1-87c1-8847be1d911d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: apple.com
-  flow: xtls-rprx-vision
+  servername: hc35000.leyali.kdns.fr
+  ws-opts:
+    path: /hc35000
+    headers:
+      Host: hc35000.leyali.kdns.fr
 - name: 使用的设备过多，怀疑恶意分享使用！
   type: ss
   server: 127.0.0.1
@@ -1681,15 +1641,11 @@ proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - us-lax.862400.xyz
   - nl-ams.862400.xyz
   - hc35-ag-hinet hinet快到期了 还有很多流量
   - edgetunnel
   - 🇺🇸 micro-ord-1793349344673 vless-ws-tls
-  - 剩余流量：435.95 GB
-  - IPv6 · 日本 TG ：@befriendsvpn
-  - 新加坡 TG ：@befriendsvpn
-  - IPv6 · 新加坡 TG ：@befriendsvpn
+  - hc35000.leyali.kdns.fr
   - 使用的设备过多，怀疑恶意分享使用！
   - 🇮🇹_IT_意大利
   - 🇮🇹_IT_意大利_1
