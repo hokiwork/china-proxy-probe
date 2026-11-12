@@ -3,6 +3,19 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- name: fs.qicai99.com
+  type: vless
+  server: fs.qicai99.com
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: fs.qicai99.com
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
 - name: vl-reality-u9371-9gme3bud
   type: vless
   server: 154.201.73.153
@@ -33,6 +46,705 @@ proxies:
   password: cd1106bc-1b71-4f11-8d29-d8870099adc6
   sni: www.bing.com
   skip-cert-verify: false
+- name: node.plutocore.vip
+  type: vless
+  server: node.plutocore.vip
+  port: 443
+  uuid: a9797ef9-48bb-4542-9831-787a496146b8
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: node.plutocore.vip
+  ws-opts:
+    path: /f/65/221a51e544a1ad082cf60167
+    headers:
+      Host: node.plutocore.vip
+- name: '[Vless] 超级快 0'
+  server: 212.113.116.181
+  port: 443
+  type: vless
+  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
+  tls: true
+  alpn:
+  - h2
+  tfo: false
+  skip-cert-verify: false
+  servername: de.oncloudvpn.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+- name: '[Vless] 超级快 0 2'
+  server: 104.20.22.159
+  port: 443
+  type: vless
+  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: cf.zhahui.de5.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.zhahui.de5.net
+- name: '[SS] 超级快 0'
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 0 3'
+  server: 5.129.202.80
+  port: 443
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
+  client-fingerprint: chrome
+  network: tcp
+- name: '[Vless] 超级快 0 4'
+  server: 200.102.183.50
+  port: 443
+  type: vless
+  uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
+  tls: true
+  alpn:
+  - h2
+  tfo: false
+  skip-cert-verify: false
+  servername: f2hbck5x3c0g8pl7.cdn.cachefleet.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: qi8ws15c7jv5q2fa
+- name: '[SS] 超级快 1'
+  server: 0.0.0.0
+  port: 1
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: '[Vless] 超级快 1'
+  server: 188.225.73.41
+  port: 443
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: cadrin.wtf
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: cache.sync.v1
+- name: '[Vless] 超级快 1 2'
+  server: cryptoventura.online
+  port: 443
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cryptoventura.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de3/live
+    headers:
+      Host: cryptoventura.online
+- name: '[SS] 超级快 1 2'
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[VMess] 超级快 1'
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: '[Vless] 超级快 1 3'
+  server: 3.169.9.125
+  port: 443
+  type: vless
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+- name: '[SS] 超级快 2'
+  server: 0.0.0.0
+  port: 2
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: '[Vless] 超级快 2'
+  server: 188.225.37.175
+  port: 443
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cryptoventura.online
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de3/live
+    headers:
+      Host: cryptoventura.online
+- name: '[SS] 超级快 2 2'
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Hysteria2] 超级快 2'
+  server: singapore.062888.xyz
+  port: 443
+  type: hysteria2
+  password: 8VPFWgN7mbwHWxTC
+  auth: 8VPFWgN7mbwHWxTC
+  sni: www.microsoft.com
+  skip-cert-verify: false
+- name: '[Vless] 超级快 2 2'
+  server: 45.63.53.81
+  port: 443
+  type: vless
+  uuid: c512dcbd-1847-40a2-9c99-989c8bfe4717
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 6nTROV2ELz-3vNUl0A00hp378QngpYABrPgjCpUknD0
+    short-id: f436f707
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[SS] 超级快 3'
+  server: 0.0.0.0
+  port: 3
+  type: ss
+  cipher: aes-256-gcm
+  password: 123456
+- name: '[Vless] 超级快 3'
+  server: 188.225.37.43
+  port: 443
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: torvani.cyou
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: '[SS] 超级快 3 2'
+  server: 146.70.46.199
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: '[SS] 超级快 3 3'
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[SS] 超级快 3 4'
+  server: 149.88.107.47
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 3 2'
+  server: 172.235.51.71
+  port: 443
+  type: vless
+  uuid: 3c17ead6-201a-4fba-8246-6327b911a1be
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: rzeXNEmuocvPVMnmettRsJbHQGjQGaZoH7jNw_3GUD8
+    short-id: 4bf84b30
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[Vless] 超级快 4'
+  server: 94.183.164.176
+  port: 7443
+  type: vless
+  uuid: 4eebdec5-08eb-4772-a0e6-35fec4c91cb0
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+  servername: optim.tildacdn.pub
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ebl
+- name: '[Vless] 超级快 4 2'
+  server: xray-bprkdwje-clever-comet-4.cloady.io
+  port: 443
+  type: vless
+  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: xray-bprkdwje-clever-comet-4.cloady.io
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /27dbf143acdd7bca
+    headers:
+      Host: xray-bprkdwje-clever-comet-4.cloady.io
+- name: '[SS] 超级快 4'
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 4 3'
+  server: 83.147.13.74
+  port: 8443
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
+  network: tcp
+- name: '[Vless] 超级快 4 4'
+  server: 172.233.129.172
+  port: 443
+  type: vless
+  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
+    short-id: 5818adc3
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[VMess] 超级快 5'
+  server: 172.67.190.164
+  port: 443
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: '[Vless] 超级快 5'
+  server: 196.196.149.80
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+- name: '[SS] 超级快 5'
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 5 2'
+  server: msk10.gacvpn.site
+  port: 443
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Caj4X3VjnHfdRQzWLmjFCiG_CGw0scYYni6UxVfBs38
+    short-id: db6a4219fb
+  servername: nl3-edge.gacvpn.site
+  client-fingerprint: edge
+  network: tcp
+- name: '[Vless] 超级快 5 3'
+  server: 60.248.219.53
+  port: 443
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: ty986gfazs.cainiaohub.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: '[Vless] 超级快 5 4'
+  server: 172.235.36.156
+  port: 443
+  type: vless
+  uuid: 5b01153c-1cde-4efb-ae09-d97dbc4da44b
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: 0RcPjVCZ7X7qXylKu6eGttBaRCh1YmAqpXL6IRXu6Cc
+    short-id: 7e759265
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[VMess] 超级快 6'
+  server: guanwang.awsno.com
+  port: 443
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: '[Vless] 超级快 6'
+  server: 196.199.122.2
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+- name: '[SS] 超级快 6'
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 6 2'
+  server: 89.125.48.218
+  port: 443
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Caj4X3VjnHfdRQzWLmjFCiG_CGw0scYYni6UxVfBs38
+    short-id: db6a4219fb
+  servername: nl3-edge.gacvpn.site
+  client-fingerprint: chrome
+  network: tcp
+- name: '[SS] 超级快 6 2'
+  server: dns24.m3hrzd.ir
+  port: 1349
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+- name: '[Hysteria2] 超级快 6'
+  server: 177.202.66.212
+  port: 443
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  auth: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: de1.obxodvpn.us
+  skip-cert-verify: false
+- name: '[Vless] 超级快 7'
+  server: jp.sofast.live
+  port: 52683
+  type: vless
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: tcp
+- name: '[Vless] 超级快 7 2'
+  server: 138.124.70.41
+  port: 14430
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: '[SS] 超级快 7'
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 7 3'
+  server: 9.247.54.228
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 204adda7e3da
+- name: '[Vless] 超级快 7 4'
+  server: 45.76.172.197
+  port: 443
+  type: vless
+  uuid: b256c867-a020-48e0-be80-1b079f2613a2
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: Ag8SQ5QdqfHO9pKWA93kqGmH5EQo7Xm5Z4RbPnwPBBE
+    short-id: ff3597db
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[Vless] 超级快 7 5'
+  server: 172.236.241.130
+  port: 443
+  type: vless
+  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
+    short-id: 51ecfe9e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: '[Vless] 超级快 8'
+  server: 163.245.42.202
+  port: 443
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+  network: tcp
+- name: '[Vless] 超级快 8 2'
+  server: saas.sin.fan
+  port: 443
+  type: vless
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: vp22.1145678.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /m/club/seasons
+    headers:
+      Host: vp22.1145678.xyz
+- name: '[SS] 超级快 8'
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 8 3'
+  server: 79.182.39.131
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 204adda7e3da
+- name: '[Hysteria2] 超级快 8'
+  server: 13.143.189.143
+  port: 4444
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  auth: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: pl3.nexfile.net
+  skip-cert-verify: false
+- name: '[AnyTLS] 超级快 8'
+  server: forwarded.frnhk.xyz
+  port: 2053
+  type: anytls
+  password: 9fbb8314-c7f1-4d5a-9af3-0bf70a1776d0
+  udp: false
+  sni: my.gosthk.site
+  skip-cert-verify: false
+- name: '[Vless] 超级快 9'
+  server: 188.114.99.137
+  port: 8443
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  servername: fs.qicai99.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /%2F
+    headers:
+      Host: fs.qicai99.com
+- name: '[SS] 超级快 9'
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '[Vless] 超级快 9 2'
+  server: chat.gpt.prem-ai.shop
+  port: 443
+  type: vless
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: chat.gpt.prem-ai.shop
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/791f9a4d19f715c2ffaedfbaf99d88bd
+    headers:
+      Host: chat.gpt.prem-ai.shop
+- name: '[Vless] 超级快 9 3'
+  server: 3.168.217.188
+  port: 443
+  type: vless
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+- name: '[Vless] 超级快 9 4'
+  server: 178.214.125.1
+  port: 443
+  type: vless
+  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  tls: true
+  tfo: false
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  reality-opts:
+    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
+    short-id: 6172ba9cffe9c22f
+  servername: conf.emaar.ru
+  client-fingerprint: edge
+  network: tcp
 - type: trojan
   name: 保加利亚(v2clash.blog 2026-10.31更新)
   server: 82.118.18.179
@@ -46,15 +758,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- type: ss
-  name: 芬兰(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.27
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: trojan
   name: 捷克(v2clash.blog 2026-10.31更新)
   server: 87.236.146.111
@@ -350,15 +1053,6 @@ proxies:
   reality-opts:
     public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
     short-id: 6c5c7900406a1ae7
-- type: ss
-  name: 意大利(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.81
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: trojan
   name: 意大利(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
   server: 213.109.192.6
@@ -1113,15 +1807,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.63
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: vless
   name: US美国(mibei77.com 米贝节点分享) (4)(v2clash.blog 2026-10.31更新)
   server: 8.35.211.73
@@ -1138,69 +1823,6 @@ proxies:
     path: /resource
     headers:
       Host: d39333476.pages.dev
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (5)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (6)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.90
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (7)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.54
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (8)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (9)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (10)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: US美国(mibei77.com 米贝节点分享) (11)(v2clash.blog 2026-10.31更新)
-  server: 202.50.253.72
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: trojan
   name: US美国(mibei77.com 米贝节点分享) (17)(v2clash.blog 2026-10.31更新)
   server: 104.17.17.238
@@ -2218,75 +2840,259 @@ proxies:
   port: 65535
   cipher: aes-128-gcm
   password: 4eefbed2-1233-4b72-89f9-e20f96c60a36
-- name: 未知20
-  type: vmess
-  server: dashboard.afrashop.top
-  port: 5381
-  uuid: 130b0fbf-4f19-44d0-911f-95355e9632e4
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🏁ZZ_116
+- name: 剩余流量：0
   type: trojan
-  server: nl-4.tr202507.com
-  port: 443
-  password: uThbm8eGmXZ7GKqnWy
-  skip-cert-verify: true
-  udp: true
-- name: 未知106
+  server: hwzl.fastfly.qzz.io
+  port: 30278
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: hk1.fastfly.uk
+- name: 🇨🇳台湾02家宽|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 26390
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: tw2.fastfly.uk
+- name: 🇯🇵日本01|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 47040
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: jp1.fastfly.uk
+- name: 🇺🇸美国01|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 35959
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: us1.fastfly.uk
+- name: 🇵🇭菲律宾01|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 17430
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: flb1.fastfly.uk
+- name: 🇻🇳越南01|家宽|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 29470
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: yn1.fastfly.uk
+- name: 🇲🇾马来西亚01|家宽|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 30323
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: my1.fastfly.uk
+- name: 🏴󠁧󠁢󠁥󠁮󠁧󠁿英国01|家宽|直优1ˣ¹
+  type: trojan
+  server: hwzl.fastfly.qzz.io
+  port: 761
+  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
+  sni: uk1.fastfly.qzz.io
+- name: 未知97
   type: vmess
-  server: dashboard.ojestore.top
-  port: 5381
-  uuid: 0a406682-8c49-4c4a-b332-ed76322c16e2
+  server: 162.4.136.79
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 英国+
-  type: vless
-  server: ge-s-1.pythonmakemigreat.wiki
-  port: 443
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  network: raw
-  servername: ge-s-1.pythonmakemigreat.wiki
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  skip-cert-verify: true
-  udp: true
-- name: v2go 🇳🇱 NL SS 431
-  type: ss
-  server: 193.29.139.188
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  skip-cert-verify: true
-  udp: true
-- name: 未知91
-  type: vmess
-  server: 108.162.192.188
-  port: 80
-  uuid: 2ac4e269-1576-4f41-8c0d-6242e3c5fd8c
-  alterId: 0
-  cipher: none
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess
+    path: /api/v1/gpu-stream/socket
   udp: true
-- name: v2go 🇳🇱 NL SS 171
+- name: v2go 🇬🇧 GB SS 163
   type: ss
-  server: 82.38.31.169
-  port: 443
+  server: 82.38.31.211
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  skip-cert-verify: true
+  udp: true
+- name: 未知141
+  type: vmess
+  server: ninja.jahanatlas.top
+  port: 80
+  uuid: 952a2fc1-1b1e-4779-b8e4-09eb98a55167
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: 未知27
+  type: vmess
+  server: 104.19.138.197
+  port: 443
+  uuid: 09bbac20-2c64-4af5-b116-6c8867f10227
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: xhttp
+  udp: true
+- name: v2go 🇳🇱 NL SS 423
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  skip-cert-verify: true
+  udp: true
+- name: v2go 🇳🇱 NL SS 146
+  type: ss
+  server: 82.38.31.178
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  skip-cert-verify: true
+  udp: true
+- name: 未知64
+  type: vmess
+  server: c63.halrex.ir
+  port: 827
+  uuid: 0dea087c-b1ce-4d23-b773-b6dc09d639f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: httpupgrade
+  udp: true
+- name: 未知153
+  type: vmess
+  server: 51.75.74.253
+  port: 10000
+  uuid: 678a8a2c-aca8-11f1-b342-afa6288e22f8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+  udp: true
+- name: v2go 🇳🇱 NL SS 385
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 DEU
+  type: vless
+  server: de7.pad-sservice.lat
+  port: 443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  servername: de7.pad-service.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: VQ_YLtFuq-mKdLTWXl1FHJoiIVVRHBRs8koxxKFEtzM
+    short-id: 9af4ce6e28a5fa00
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 RUS (2)
+  type: vless
+  server: 193.160.141.27
+  port: 443
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  servername: abuse.ozon.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  skip-cert-verify: true
+  udp: true
+- name: US
+  type: vmess
+  server: jahfkjha.cfd
+  port: 443
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+  udp: true
+- name: 未知21
+  type: vmess
+  server: 20.235.220.189
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇮🇷IR_52
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 DEU (8)
+  type: vless
+  server: 94.156.181.168
+  port: 443
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  servername: math.videoticher.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  skip-cert-verify: true
+  udp: true
+- name: 未知55
+  type: vmess
+  server: poeiLD4YbYshwTWI.v.3dns.vip
+  port: 443
+  uuid: c136b8f3095941b499dbb7078290a142
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: 🇩🇪 德国 DEU (3)
+  type: vless
+  server: 94.228.167.12
+  port: 443
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  servername: washingphonicseatable.solsticedigest.me
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇹 奥地利 AUT
+  type: vless
+  server: softice.net
+  port: 443
+  uuid: ef328563-cda1-4530-9b0a-988cc5a74d78
+  servername: softice.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   skip-cert-verify: true
   udp: true
 - name: 未知114
@@ -2299,179 +3105,93 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵JP-172.111.146.64-5708 6.647MB
+- name: 🇺🇸US_110
+  type: trojan
+  server: 64.176.36.61
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  skip-cert-verify: true
+  udp: true
+- name: DE>美国 聖地牙哥 (2)
   type: vmess
-  server: 172.111.146.64
-  port: 80
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  server: 165.22.73.136
+  port: 2087
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
+  skip-cert-verify: true
+  servername: afrhms16v.bestxray.buzz
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: afrhms16v.bestxray.buzz
+  udp: true
+- name: 未知118
+  type: vmess
+  server: varzesh3.com
+  port: 8080
+  uuid: 5c7ba12d-dff4-4309-ba83-ec0597ea4d96
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: xhttp
+  udp: true
+- name: 🇺🇸US_107
+  type: trojan
+  server: bbbnhj.131.pp.ua
+  port: 443
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  skip-cert-verify: true
+  udp: true
+- name: 美国+北卡罗来纳(美国邮政局) (2)
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 54528
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  skip-cert-verify: true
+  udp: true
+- name: US19
+  type: vmess
+  server: XSmlqR4AuuOPMsMN.v.3dns.vip
+  port: 443
+  uuid: edd281f6-71e4-4c1e-ac6b-a1c52e2e1270
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
   udp: true
-- name: v2go 🇬🇧 GB SS 187
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  skip-cert-verify: true
-  udp: true
-- name: 🇦🇺AU_03
-  type: trojan
-  server: 43.160.197.160
-  port: 443
-  password: 38f169d6-d202-4b1b-8db8-e6eb1648f5cf
-  skip-cert-verify: true
-  udp: true
-- name: 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  type: vless
-  server: au2.pad-service.com
+- name: 未知16
+  type: vmess
+  server: 104.17.77.77
   port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  network: ws
-  servername: au2.pad-sservice.lat
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /A11U
-    headers:
-      Host: au2.pad-service.com
-  skip-cert-verify: true
-  udp: true
-- name: v2go 🇳🇱 NL SS 167
-  type: ss
-  server: 193.29.139.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 TWN
-  type: vless
-  server: 59.125.69.24
-  port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
-  network: ws
-  servername: ty986gfazs.cainiaohub.xyz
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US_33
-  type: vmess
-  server: www.ubuntuupdates.com
-  port: 443
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: www.ubuntuupdates.com
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.ubuntuupdates.com
-  udp: true
-- name: DE>美国 聖地牙哥 (5)
-  type: vmess
-  server: 164.92.200.68
-  port: 443
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: afrhms16v.bestxray.buzz
-  network: ws
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: afrhms16v.bestxray.buzz
-  udp: true
-- name: v2go 🇩🇪 DE SS 424
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  skip-cert-verify: true
-  udp: true
-- name: CT>美国 聖地牙哥 (2)
-  type: vmess
-  server: 162.159.152.31
-  port: 443
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: afrhms16v.bestxray.buzz
-  network: ws
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: afrhms16v.bestxray.buzz
-  udp: true
-- name: 未知154
-  type: vmess
-  server: 91.217.76.237
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /lMnsZUN4/
   udp: true
-- name: 未知23
-  type: vmess
-  server: 3.72.52.119
-  port: 1003
-  uuid: 3d94220c-a974-49ca-a1a3-d7e3c7359ccd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US_104
+- name: '🇺🇸US_110 #2'
   type: trojan
-  server: 209.248.32.116
-  port: 28101
-  password: i99Cef
-  skip-cert-verify: true
-  udp: true
-- name: 未知111
-  type: vmess
-  server: 104.25.228.174
-  port: 80
-  uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94
-  alterId: 0
-  cipher: none
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
-- name: 🇰🇷KR-141.164.45.187-5711 2.347MB
-  type: ss
-  server: 141.164.45.187
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  skip-cert-verify: true
-  udp: true
+  server: 64.176.36.61
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: 64.176.36.61
 - name: RU VLESS-03 | free-nodes
   type: vless
   server: 87.242.119.253
@@ -2481,19 +3201,6 @@ proxies:
   tls: true
   client-fingerprint: qq
   servername: hvtlr-ru-47sb.fade.mom
-- name: CA VMESS-05 | free-nodes
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
 - name: RU SS-14 | free-nodes
   type: ss
   server: 46.17.46.27
@@ -2645,96 +3352,11 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: 北京市+惟译天创信息技术有限公司
   type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
-  network: tcp
-  tls: false
-- name: '北京市+惟译天创信息技术有限公司 #2'
-  type: vless
   server: us22.sofast.live
   port: 58011
   uuid: 0afc6426-606c-48e7-bd70-3c424a416842
   network: tcp
   tls: false
-- name: KR韩国(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 168.107.36.135
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: SG新加坡(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 216.195.195.205
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: DE德国(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 2.28.42.209
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: US美国(v2clash.blog 2026-10.20更新
-  type: vless
-  server: 162.159.130.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.20更新 #2'
-  type: vless
-  server: 172.64.150.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
-- name: 'DE德国(v2clash.blog 2026-10.20更新 #2'
-  type: vless
-  server: 152.53.197.166
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: snip.edgeoneai.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: snip.edgeoneai.cc.cd
 - name: DE德国(v2clash.blog 2026-10.22更新
   type: vless
   server: 144.31.181.177
@@ -2978,6 +3600,19 @@ proxies:
       Host: snip.edgeoneai.cc.cd
 - name: 'US美国(v2clash.blog 2026-10.24更新 #2'
   type: vless
+  server: 162.159.130.234
+  port: 443
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: snip.edgeoneai.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 'US美国(v2clash.blog 2026-10.24更新 #3'
+  type: vless
   server: 203.88.117.190
   port: 443
   uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
@@ -2989,7 +3624,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: snip.edgeoneai.cc.cd
-- name: 'US美国(v2clash.blog 2026-10.24更新 #3'
+- name: 'US美国(v2clash.blog 2026-10.24更新 #4'
   type: vless
   server: 162.159.135.234
   port: 443
@@ -3796,28 +4431,100 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: US美国(v2clash.blog 2026-11.11更新
+- name: DE德国(v2clash.blog 2026-11.12更新
   type: vless
-  server: 3.169.9.125
+  server: gemsubbgem.world
   port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  network: ws
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: d4afoyczh5tek.cloudfront.net
-  ws-opts:
-    path: /
-    headers:
-      Host: d4afoyczh5tek.cloudfront.net
+  servername: gemsubbgem.world
+  flow: xtls-rprx-vision
+- name: US美国(v2clash.blog 2026-11.12更新
+  type: vless
+  server: 151.101.36.201
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  network: xhttp
+  tls: true
+  client-fingerprint: ios
+  servername: accounts.fastly.com
+- name: 'US美国(v2clash.blog 2026-11.12更新 #2'
+  type: vless
+  server: 151.101.36.128
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  network: xhttp
+  tls: true
+  client-fingerprint: chrome
+  servername: accounts.fastly.com
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
+  - fs.qicai99.com
   - vl-reality-u9371-9gme3bud
   - vm-ws-u9371-9gme3bud
   - hy2-u9371-9gme3bud
+  - node.plutocore.vip
+  - '[Vless] 超级快 0'
+  - '[Vless] 超级快 0 2'
+  - '[SS] 超级快 0'
+  - '[Vless] 超级快 0 3'
+  - '[Vless] 超级快 0 4'
+  - '[SS] 超级快 1'
+  - '[Vless] 超级快 1'
+  - '[Vless] 超级快 1 2'
+  - '[SS] 超级快 1 2'
+  - '[VMess] 超级快 1'
+  - '[Vless] 超级快 1 3'
+  - '[SS] 超级快 2'
+  - '[Vless] 超级快 2'
+  - '[SS] 超级快 2 2'
+  - '[Hysteria2] 超级快 2'
+  - '[Vless] 超级快 2 2'
+  - '[SS] 超级快 3'
+  - '[Vless] 超级快 3'
+  - '[SS] 超级快 3 2'
+  - '[SS] 超级快 3 3'
+  - '[SS] 超级快 3 4'
+  - '[Vless] 超级快 3 2'
+  - '[Vless] 超级快 4'
+  - '[Vless] 超级快 4 2'
+  - '[SS] 超级快 4'
+  - '[Vless] 超级快 4 3'
+  - '[Vless] 超级快 4 4'
+  - '[VMess] 超级快 5'
+  - '[Vless] 超级快 5'
+  - '[SS] 超级快 5'
+  - '[Vless] 超级快 5 2'
+  - '[Vless] 超级快 5 3'
+  - '[Vless] 超级快 5 4'
+  - '[VMess] 超级快 6'
+  - '[Vless] 超级快 6'
+  - '[SS] 超级快 6'
+  - '[Vless] 超级快 6 2'
+  - '[SS] 超级快 6 2'
+  - '[Hysteria2] 超级快 6'
+  - '[Vless] 超级快 7'
+  - '[Vless] 超级快 7 2'
+  - '[SS] 超级快 7'
+  - '[Vless] 超级快 7 3'
+  - '[Vless] 超级快 7 4'
+  - '[Vless] 超级快 7 5'
+  - '[Vless] 超级快 8'
+  - '[Vless] 超级快 8 2'
+  - '[SS] 超级快 8'
+  - '[Vless] 超级快 8 3'
+  - '[Hysteria2] 超级快 8'
+  - '[AnyTLS] 超级快 8'
+  - '[Vless] 超级快 9'
+  - '[SS] 超级快 9'
+  - '[Vless] 超级快 9 2'
+  - '[Vless] 超级快 9 3'
+  - '[Vless] 超级快 9 4'
   - 保加利亚(v2clash.blog 2026-10.31更新)
-  - 芬兰(v2clash.blog 2026-10.31更新)
   - 捷克(v2clash.blog 2026-10.31更新)
   - 捷克(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
   - 捷克(mibei77.com 米贝节点分享) (3)(v2clash.blog 2026-10.31更新)
@@ -3840,7 +4547,6 @@ proxy-groups:
   - 西班牙(v2clash.blog 2026-10.31更新)
   - 匈牙利(v2clash.blog 2026-10.31更新)
   - 以色列(v2clash.blog 2026-10.31更新)
-  - 意大利(v2clash.blog 2026-10.31更新)
   - 意大利(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
   - 越南(v2clash.blog 2026-10.31更新)
   - 越南(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
@@ -3897,15 +4603,7 @@ proxy-groups:
   - SG新加坡(mibei77.com 米贝节点分享) (6)(v2clash.blog 2026-10.31更新)
   - TW台湾(v2clash.blog 2026-10.31更新)
   - US美国(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (2)(v2clash.blog 2026-10.31更新)
   - US美国(mibei77.com 米贝节点分享) (4)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (5)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (6)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (7)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (8)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (9)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (10)(v2clash.blog 2026-10.31更新)
-  - US美国(mibei77.com 米贝节点分享) (11)(v2clash.blog 2026-10.31更新)
   - US美国(mibei77.com 米贝节点分享) (17)(v2clash.blog 2026-10.31更新)
   - US美国(mibei77.com 米贝节点分享) (18)(v2clash.blog 2026-10.31更新)
   - US美国(mibei77.com 米贝节点分享) (20)(v2clash.blog 2026-10.31更新)
@@ -3984,31 +4682,42 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享) (100)(v2clash.blog 2026-10.31更新)
   - US美国(mibei77.com 米贝节点分享) (101)(v2clash.blog 2026-10.31更新)
   - 账号已被封禁
-  - 未知20
-  - 🏁ZZ_116
-  - 未知106
-  - 英国+
-  - v2go 🇳🇱 NL SS 431
-  - 未知91
-  - v2go 🇳🇱 NL SS 171
+  - 剩余流量：0
+  - 🇨🇳台湾02家宽|直优1ˣ¹
+  - 🇯🇵日本01|直优1ˣ¹
+  - 🇺🇸美国01|直优1ˣ¹
+  - 🇵🇭菲律宾01|直优1ˣ¹
+  - 🇻🇳越南01|家宽|直优1ˣ¹
+  - 🇲🇾马来西亚01|家宽|直优1ˣ¹
+  - 🏴󠁧󠁢󠁥󠁮󠁧󠁿英国01|家宽|直优1ˣ¹
+  - 未知97
+  - v2go 🇬🇧 GB SS 163
+  - 未知141
+  - 未知27
+  - v2go 🇳🇱 NL SS 423
+  - v2go 🇳🇱 NL SS 146
+  - 未知64
+  - 未知153
+  - v2go 🇳🇱 NL SS 385
+  - 🇩🇪 德国 DEU
+  - 🇷🇺 俄罗斯 RUS (2)
+  - US
+  - 未知21
+  - 🇮🇷IR_52
+  - 🇩🇪 德国 DEU (8)
+  - 未知55
+  - 🇩🇪 德国 DEU (3)
+  - 🇦🇹 奥地利 AUT
   - 未知114
-  - 🇯🇵JP-172.111.146.64-5708 6.647MB
-  - v2go 🇬🇧 GB SS 187
-  - 🇦🇺AU_03
-  - 🇦🇹_AT_奥地利->🇺🇸_US_美国
-  - v2go 🇳🇱 NL SS 167
-  - 🇹🇼 🇨🇳 台湾 TWN
-  - 🇺🇸US_33
-  - DE>美国 聖地牙哥 (5)
-  - v2go 🇩🇪 DE SS 424
-  - CT>美国 聖地牙哥 (2)
-  - 未知154
-  - 未知23
-  - 🇺🇸US_104
-  - 未知111
-  - 🇰🇷KR-141.164.45.187-5711 2.347MB
+  - 🇺🇸US_110
+  - DE>美国 聖地牙哥 (2)
+  - 未知118
+  - 🇺🇸US_107
+  - 美国+北卡罗来纳(美国邮政局) (2)
+  - US19
+  - 未知16
+  - '🇺🇸US_110 #2'
   - RU VLESS-03 | free-nodes
-  - CA VMESS-05 | free-nodes
   - RU SS-14 | free-nodes
   - 未知 VLESS-15 | free-nodes
   - CA VLESS-16 | free-nodes
@@ -4025,13 +4734,6 @@ proxy-groups:
   - '美国+CloudFlare节点 #2'
   - '美国+CloudFlare节点 #3'
   - 北京市+惟译天创信息技术有限公司
-  - '北京市+惟译天创信息技术有限公司 #2'
-  - KR韩国(v2clash.blog 2026-10.20更新
-  - SG新加坡(v2clash.blog 2026-10.20更新
-  - DE德国(v2clash.blog 2026-10.20更新
-  - US美国(v2clash.blog 2026-10.20更新
-  - 'US美国(v2clash.blog 2026-10.20更新 #2'
-  - 'DE德国(v2clash.blog 2026-10.20更新 #2'
   - DE德国(v2clash.blog 2026-10.22更新
   - US美国(v2clash.blog 2026-10.22更新
   - NL荷兰(v2clash.blog 2026-10.22更新
@@ -4053,6 +4755,7 @@ proxy-groups:
   - 越南(v2clash.blog 2026-10.24更新
   - 'US美国(v2clash.blog 2026-10.24更新 #2'
   - 'US美国(v2clash.blog 2026-10.24更新 #3'
+  - 'US美国(v2clash.blog 2026-10.24更新 #4'
   - NL荷兰(v2clash.blog 2026-10.25更新
   - US美国(v2clash.blog 2026-10.25更新
   - 'NL荷兰(v2clash.blog 2026-10.25更新 #2'
@@ -4125,6 +4828,8 @@ proxy-groups:
   - DE德国(v2clash.blog 2026-11.11更新
   - FR法国(v2clash.blog 2026-11.11更新
   - KR韩国(v2clash.blog 2026-11.11更新
-  - US美国(v2clash.blog 2026-11.11更新
+  - DE德国(v2clash.blog 2026-11.12更新
+  - US美国(v2clash.blog 2026-11.12更新
+  - 'US美国(v2clash.blog 2026-11.12更新 #2'
 rules:
 - MATCH,PROBE
