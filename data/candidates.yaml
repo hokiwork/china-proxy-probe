@@ -7,19 +7,6 @@ proxies:
   type: vless
   server: node.plutocore.vip
   port: 443
-  uuid: a9797ef9-48bb-4542-9831-787a496146b8
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: node.plutocore.vip
-  ws-opts:
-    path: /f/65/221a51e544a1ad082cf60167
-    headers:
-      Host: node.plutocore.vip
-- name: 'node.plutocore.vip #2'
-  type: vless
-  server: node.plutocore.vip
-  port: 443
   uuid: 8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2
   network: ws
   tls: true
@@ -29,86 +16,38 @@ proxies:
     path: /f/210/97ee7c9e25d450dda9af5ff8
     headers:
       Host: node.plutocore.vip
-- name: de
-  type: vless
-  server: sijiache.hief.store
-  port: 33068
-  uuid: 3012a26e-0f9e-41d9-a64d-5a5b736f8d99
-  network: tcp
+- type: vless
+  name: 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  server: 196.196.148.63
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: toby usa
-  type: vless
-  server: sijiache.hief.store
-  port: 60450
-  uuid: 3012a26e-0f9e-41d9-a64d-5a5b736f8d99
-  network: tcp
+  servername: 717252g.nl8.h1clayd.click
+  sni: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
   tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: 原生1 gb
-  type: vless
-  server: sijiache.hief.store
-  port: 28860
-  uuid: 3012a26e-0f9e-41d9-a64d-5a5b736f8d99
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: mo
-  type: vless
-  server: sijiache.hief.store
-  port: 45859
-  uuid: 3012a26e-0f9e-41d9-a64d-5a5b736f8d99
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: 'de #2'
-  type: vless
-  server: sijiache.hief.store
-  port: 33068
-  uuid: 77720551-467e-4faa-825f-0241acee371e
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: 'toby usa #2'
-  type: vless
-  server: sijiache.hief.store
-  port: 60450
-  uuid: 77720551-467e-4faa-825f-0241acee371e
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: '原生1 gb #2'
-  type: vless
-  server: sijiache.hief.store
-  port: 28860
-  uuid: 77720551-467e-4faa-825f-0241acee371e
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-- name: 'mo #2'
-  type: vless
-  server: sijiache.hief.store
-  port: 45859
-  uuid: 77720551-467e-4faa-825f-0241acee371e
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
 - type: vmess
   name: 🇺🇸_US_美国_IPV4
   server: 104.18.42.163
@@ -125,36 +64,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- type: vmess
-  name: '@meliproxy (3)_IPV4'
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  cipher: auto
-  alterId: 0
-  tls: false
-  servername: vmess.lbw666.dpdns.org
-  sni: vmess.lbw666.dpdns.org
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (2)
-  server: 3.169.9.125
-  port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  tls: true
-  servername: d14jyezfrcyf60.cloudfront.net
-  sni: d14jyezfrcyf60.cloudfront.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d14jyezfrcyf60.cloudfront.net
 - type: vmess
   name: '@DeltaKroneckerGithub_3021_IPV4'
   server: 172.64.145.93
@@ -187,7 +96,7 @@ proxies:
     headers:
       Host: guanwang.awsno.com
 - type: hysteria
-  name: 🇺🇸_US_美国_IPV4 (3)
+  name: 🇺🇸_US_美国_IPV4 (2)
   server: 137.175.82.43
   port: 20022
   password: dongtaiwang.com
@@ -201,7 +110,7 @@ proxies:
   down: '20'
   auth-str: dongtaiwang.com
 - type: hysteria
-  name: 🇺🇸_US_美国_IPV4 (4)
+  name: 🇺🇸_US_美国_IPV4 (3)
   server: 137.175.82.44
   port: 20022
   password: dongtaiwang.com
@@ -252,7 +161,7 @@ proxies:
   down: '55'
   auth-str: dongtaiwang.com
 - type: hysteria
-  name: 🇺🇸_US_美国_IPV4 (5)
+  name: 🇺🇸_US_美国_IPV4 (4)
   server: 198.200.57.142
   port: 22335
   password: github.com/Alvin9999-newpac/fanqiang
@@ -313,7 +222,7 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇮🇹_IT_意大利_IPV4 (5)
-  server: 202.50.253.54
+  server: 202.50.253.18
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -321,7 +230,7 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇮🇹_IT_意大利_IPV4 (6)
-  server: 202.50.253.45
+  server: 202.50.253.54
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -329,7 +238,7 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇮🇹_IT_意大利_IPV4 (7)
-  server: 202.50.253.99
+  server: 202.50.253.45
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -337,7 +246,7 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇮🇹_IT_意大利_IPV4 (8)
-  server: 202.50.253.81
+  server: 202.50.253.99
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -345,6 +254,14 @@ proxies:
   skip-cert-verify: false
 - type: ss
   name: 🇮🇹_IT_意大利_IPV4 (9)
+  server: 202.50.253.81
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (10)
   server: 202.50.253.72
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -379,6 +296,19 @@ proxies:
   client-fingerprint: ios
   servername: psstatic.cdn.bcebos.com
   flow: xtls-rprx-vision
+- name: 未知 VLESS-08 | free-nodes
+  type: vless
+  server: 3.169.9.125
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: djb2br1cgydas.cloudfront.net
+  ws-opts:
+    path: /
+    headers:
+      Host: djb2br1cgydas.cloudfront.net
 - name: SG VLESS-10 | free-nodes
   type: vless
   server: zfapi.zalolink.com
@@ -457,71 +387,46 @@ proxies:
   client-fingerprint: chrome
   servername: test-sto.dev.helpnow.ai
   flow: xtls-rprx-vision
-- name: 美国+V2CROSS.COM
-  type: ss
-  server: 154.36.158.197
-  port: 8388
-  cipher: aes-256-gcm
-  password: BeaUf9c0AEWH40Pu
-- name: 英国+V2CROSS.COM
-  type: vless
-  server: 2.26.251.236
-  port: 443
-  uuid: c16e8cdb-65dd-4049-bc65-14c051b8a6c6
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: mental-deprivation.ru
-  flow: xtls-rprx-vision
-- name: 巴西圣保罗+CloudFlare节点
-  type: trojan
-  server: 188.114.96.0
-  port: 2096
-  password: vP!XvZBNdw.e*ddSgmH!
-  sni: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
-  network: ws
-  ws-opts:
-    path: /tr/lqCTAonDgcErIZylZuNyy?ed=2560
-    headers:
-      Host: N0Q4xprJ2d4X4pRCQ29l8JkcZd0.paGES.DeV
-- name: 波兰+V2CROSS.COM
+- name: 香港+葵兴数据中心
   type: trojan
   server: sclass-01.catcat321.com
   port: 20103
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
   network: tcp
-- name: 美国+Amazon+EC2服务器
+- name: 美国 CloudFlare节点
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    headers:
+      Host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
+  servername: v2ray1.dozapp.xyz
+- name: 日本东京+xTom/AS23959
   type: vless
-  server: 3.168.218.8
-  port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  server: 103.201.131.202
+  port: 2053
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   network: ws
   tls: true
-  client-fingerprint: chrome
-  servername: d1aedflfr97jes.cloudfront.net
+  client-fingerprint: unsafe
+  servername: jp3.yohototo.top
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: d1aedflfr97jes.cloudfront.net
-- name: 巴西+圣保罗
-  type: vless
-  server: f0d7aft.nl13.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: f0d7aft.nl13.h1clayd.click
-- name: '巴西+圣保罗 #2'
-  type: vless
-  server: 5d0319t.nl7.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 5d0319t.nl7.h1clayd.click
+      Host: jp3.yohototo.top
+- name: 日本+东京Amazon数据中心
+  type: trojan
+  server: sclass-c2.catcat321.com
+  port: 20051
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
 - name: DE德国(v2clash.blog 2026-10.22更新
   type: vless
   server: 144.31.181.177
@@ -1666,6 +1571,16 @@ proxies:
     path: /
     headers:
       Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: DE德国(v2clash.blog 2026-11.11更新
+  type: vless
+  server: 2.26.251.236
+  port: 443
+  uuid: c16e8cdb-65dd-4049-bc65-14c051b8a6c6
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: mental-deprivation.ru
+  flow: xtls-rprx-vision
 - name: FR法国(v2clash.blog 2026-11.11更新
   type: vless
   server: 103.116.7.67
@@ -1738,26 +1653,17 @@ proxy-groups:
   type: select
   proxies:
   - node.plutocore.vip
-  - 'node.plutocore.vip #2'
-  - de
-  - toby usa
-  - 原生1 gb
-  - mo
-  - 'de #2'
-  - 'toby usa #2'
-  - '原生1 gb #2'
-  - 'mo #2'
+  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
   - 🇺🇸_US_美国_IPV4
-  - '@meliproxy (3)_IPV4'
-  - 🇺🇸_US_美国_IPV4 (2)
   - '@DeltaKroneckerGithub_3021_IPV4'
   - 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
+  - 🇺🇸_US_美国_IPV4 (2)
   - 🇺🇸_US_美国_IPV4 (3)
-  - 🇺🇸_US_美国_IPV4 (4)
   - 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
   - 🇫🇷_FR_法国_IPV4
   - 🇩🇪_DE_德国_IPV4
-  - 🇺🇸_US_美国_IPV4 (5)
+  - 🇺🇸_US_美国_IPV4 (4)
   - 🇫🇷_FR_法国_IPV4 (2)
   - 🇮🇹_IT_意大利_IPV4
   - 🇮🇹_IT_意大利_IPV4 (2)
@@ -1768,9 +1674,11 @@ proxy-groups:
   - 🇮🇹_IT_意大利_IPV4 (7)
   - 🇮🇹_IT_意大利_IPV4 (8)
   - 🇮🇹_IT_意大利_IPV4 (9)
+  - 🇮🇹_IT_意大利_IPV4 (10)
   - 未知 VLESS-01 | free-nodes
   - 未知 VLESS-02 | free-nodes
   - SG VLESS-06 | free-nodes
+  - 未知 VLESS-08 | free-nodes
   - SG VLESS-10 | free-nodes
   - SG VLESS-12 | free-nodes
   - 未知 TROJAN-13 | free-nodes
@@ -1780,13 +1688,10 @@ proxy-groups:
   - 未知 HY2-19 | free-nodes
   - end-gfw-sg33-VLESS
   - end-gfw-kr3-VLESS
-  - 美国+V2CROSS.COM
-  - 英国+V2CROSS.COM
-  - 巴西圣保罗+CloudFlare节点
-  - 波兰+V2CROSS.COM
-  - 美国+Amazon+EC2服务器
-  - 巴西+圣保罗
-  - '巴西+圣保罗 #2'
+  - 香港+葵兴数据中心
+  - 美国 CloudFlare节点
+  - 日本东京+xTom/AS23959
+  - 日本+东京Amazon数据中心
   - DE德国(v2clash.blog 2026-10.22更新
   - US美国(v2clash.blog 2026-10.22更新
   - NL荷兰(v2clash.blog 2026-10.22更新
@@ -1888,6 +1793,7 @@ proxy-groups:
   - US美国(v2clash.blog 2026-11.10更新
   - FR法国(v2clash.blog 2026-11.10更新
   - 'US美国(v2clash.blog 2026-11.10更新 #2'
+  - DE德国(v2clash.blog 2026-11.11更新
   - FR法国(v2clash.blog 2026-11.11更新
   - KR韩国(v2clash.blog 2026-11.11更新
   - US美国(v2clash.blog 2026-11.11更新
