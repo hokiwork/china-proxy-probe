@@ -16,11 +16,23 @@ proxies:
     path: /f/210/97ee7c9e25d450dda9af5ff8
     headers:
       Host: node.plutocore.vip
+- name: '[学术节点]美国01'
+  type: vmess
+  server: US122201.ssgreen.org
+  port: 443
+  uuid: c7644716-c437-43b8-930d-96deb7630a6c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
 - name: '[学术节点]美国05'
   type: vmess
   server: US122205.ssgreen.org
   port: 443
-  uuid: 58d19b95-5be2-4d58-944a-6c23cc635cd2
+  uuid: 8fad5b16-6d2a-4dd2-92b2-1f77bfafefad
   alterId: 0
   cipher: auto
   udp: true
@@ -28,71 +40,11 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: '[学术节点]美国07'
+- name: '[学术节点]美国06'
   type: vmess
-  server: US122207.ssgreen.org
+  server: US122206.ssgreen.org
   port: 443
-  uuid: 279dba42-2117-4f7d-9034-89c48a2164bc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点]美国08'
-  type: vmess
-  server: US122208.ssgreen.org
-  port: 443
-  uuid: 6d7e747f-5383-429f-a762-3ddc39505d6a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点]美国09'
-  type: vmess
-  server: US122209.ssgreen.org
-  port: 443
-  uuid: b2590d8e-5f86-4b10-a5c0-d0e3c2ae67a1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点]日本04'
-  type: vmess
-  server: JP032005.ssgreen.org
-  port: 443
-  uuid: 53e75ac7-37e3-4f83-ac1d-0118160edbd5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点]日本05'
-  type: vmess
-  server: JP032006.ssgreen.org
-  port: 443
-  uuid: 2923af42-6187-4e5f-9a5e-7f3cc68f4cf0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点]日本06'
-  type: vmess
-  server: JP032007.ssgreen.org
-  port: 443
-  uuid: e104e24c-45ff-468a-8ba0-8f2ab507b417
+  uuid: 2e5594b8-6713-42e2-8bde-ed08668a0de5
   alterId: 0
   cipher: auto
   udp: true
@@ -104,43 +56,7 @@ proxies:
   type: vmess
   server: US032010.westmgreen.com
   port: 443
-  uuid: e83ef62e-6189-4975-98e0-2c9bda5741e9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点（高速）]美国02'
-  type: vmess
-  server: US032011.westmgreen.com
-  port: 443
-  uuid: ac0f4071-b6a5-4d0d-b124-af8862af1db1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点（高速）]美国04'
-  type: vmess
-  server: US032013.ssgreen.org
-  port: 443
-  uuid: 96b84971-ec3c-49f8-bd58-c5f03078c46f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[学术节点（高速）]日本01'
-  type: vmess
-  server: JP032002.ssgreen.org
-  port: 443
-  uuid: 6561a555-d136-4e07-9b32-e90bda66dfa4
+  uuid: 328efbd9-c698-44ce-8436-a3ffd3b21531
   alterId: 0
   cipher: auto
   udp: true
@@ -152,7 +68,7 @@ proxies:
   type: vmess
   server: JP032011.ssgreen.org
   port: 443
-  uuid: 6ef8bac2-70b2-4b58-8822-37fc0e2c8a8b
+  uuid: 5358b9ef-437a-4b78-8b9e-8dda5702ee49
   alterId: 0
   cipher: auto
   udp: true
@@ -164,31 +80,7 @@ proxies:
   type: vmess
   server: JP032001.ssgreen.org
   port: 443
-  uuid: f868e347-db1f-4e19-aa25-efc257e70944
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[美国]美国03'
-  type: vmess
-  server: US032017.ssgreen.org
-  port: 443
-  uuid: 7f567d6c-ce12-4b79-bf43-9877b9173aa8
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[美国]美国04'
-  type: vmess
-  server: US032018.ssgreen.org
-  port: 443
-  uuid: cbd2dcdd-c730-46dc-89e4-983c51cc15bb
+  uuid: 89282f8c-ff4e-4fbc-992a-827b7c8bea5c
   alterId: 0
   cipher: auto
   udp: true
@@ -200,7 +92,7 @@ proxies:
   type: vmess
   server: US032019.ssgreen.org
   port: 443
-  uuid: e0c97b56-354b-4981-a992-665770b11637
+  uuid: bb6e13ff-f0b3-4c15-a8ac-d6b251a11d7a
   alterId: 0
   cipher: auto
   udp: true
@@ -212,7 +104,7 @@ proxies:
   type: vmess
   server: US032020.ssgreen.org
   port: 443
-  uuid: 88cb83aa-405d-4138-bb5f-4cf052b9e955
+  uuid: eead0a98-e91e-4458-825a-cda70b48b63e
   alterId: 0
   cipher: auto
   udp: true
@@ -224,19 +116,7 @@ proxies:
   type: vmess
   server: US032021.ssgreen.org
   port: 443
-  uuid: ffe91d73-ff2b-4fb1-93eb-df650f0f3df7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: '[美国]美国08'
-  type: vmess
-  server: US032022.ssgreen.org
-  port: 443
-  uuid: 9cda34e4-8b63-4f26-9a0d-f499b948ad2c
+  uuid: 67184953-4218-4176-b154-70e93694c14a
   alterId: 0
   cipher: auto
   udp: true
@@ -248,7 +128,7 @@ proxies:
   type: vmess
   server: US032023.ssgreen.org
   port: 443
-  uuid: dcf58754-8f3b-4249-847c-aede792f6110
+  uuid: 6c54cee0-4052-4c0d-948c-bf25b107647a
   alterId: 0
   cipher: auto
   udp: true
@@ -260,7 +140,7 @@ proxies:
   type: vmess
   server: US032024.ssgreen.org
   port: 443
-  uuid: cefb5a8f-0003-4c08-b82d-66c61df54bd9
+  uuid: 78b5ddc9-4ef8-4c59-b1d3-174decb5be4e
   alterId: 0
   cipher: auto
   udp: true
@@ -272,7 +152,19 @@ proxies:
   type: vmess
   server: JP032009.ssgreen.org
   port: 443
-  uuid: 12c9887c-ca27-4ff2-abd4-ea72a85dd421
+  uuid: c69a8a14-7e39-4dd9-8204-985db74de1ed
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[日本]日本02'
+  type: vmess
+  server: JP032010.ssgreen.org
+  port: 443
+  uuid: 7b879c71-8937-424f-b1c8-e8ea0d1c626a
   alterId: 0
   cipher: auto
   udp: true
@@ -284,7 +176,7 @@ proxies:
   type: vmess
   server: JP032008.ssgreen.org
   port: 443
-  uuid: be02a231-d59d-437a-847c-4342f2b34ef0
+  uuid: edcab184-2b80-4dff-92cd-7353b0795d9b
   alterId: 0
   cipher: auto
   udp: true
@@ -532,66 +424,7 @@ proxies:
   client-fingerprint: chrome
   servername: test-sto.dev.helpnow.ai
   flow: xtls-rprx-vision
-- name: 日本+东京Amazon数据中心
-  type: vless
-  server: zfapi.zalolink.com
-  port: 54528
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: raw
-  tls: true
-  client-fingerprint: ios
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 新西兰+V2CROSS.COM
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '新西兰+V2CROSS.COM #2'
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '新西兰+V2CROSS.COM #3'
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 美国 Alabanza
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '新西兰+V2CROSS.COM #4'
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '日本+东京Amazon数据中心 #2'
-  type: vless
-  server: zfapi.zalolink.com
-  port: 47691
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-- name: '新西兰+V2CROSS.COM #5'
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '日本+东京Amazon数据中心 #3'
+- name: 日本+东京都亚马逊(Amazon)公司数据中心
   type: vless
   server: zfapi.zalolink.com
   port: 11802
@@ -600,6 +433,83 @@ proxies:
   tls: true
   client-fingerprint: ios
   servername: psstatic.cdn.bcebos.com
+  flow: xtls-rprx-vision
+- name: 伊朗+V2CROSS.COM
+  type: vless
+  server: base.hosamobenl.co.uk
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: base.hosamobenl.co.uk
+- name: 香港+葵兴数据中心
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20028
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  network: tcp
+- name: 美国+FDCServers数据中心
+  type: vless
+  server: 198.16.113.218
+  port: 8443
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.apple.com
+  flow: xtls-rprx-vision
+- name: 美国+V2CROSS.COM
+  type: vless
+  server: 8a2e72t.nl11.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: 8a2e72t.nl11.h1clayd.click
+  flow: xtls-rprx-vision
+- name: 塞舌尔+V2CROSS.COM
+  type: vless
+  server: 196.199.122.2
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: 7aa271t.es1.h1clayd.click
+  flow: xtls-rprx-vision
+- name: 新西兰+V2CROSS.COM
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '香港+葵兴数据中心 #2'
+  type: trojan
+  server: sclass-01.catcat321.com
+  port: 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+- name: 西班牙+V2CROSS.COM
+  type: vless
+  server: 196.245.52.187
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: 04535dt.us8.h1clayd.click
+- name: '西班牙+V2CROSS.COM #2'
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: 7aa271t.es1.h1clayd.click
   flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.23更新
   type: vless
@@ -1761,43 +1671,24 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: 7d1a74fd.ferrin.uk
-- name: JP日本(v2clash.blog 2026-11.14更新
-  type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: 7aa271t.es1.h1clayd.click
-  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
   - node.plutocore.vip
+  - '[学术节点]美国01'
   - '[学术节点]美国05'
-  - '[学术节点]美国07'
-  - '[学术节点]美国08'
-  - '[学术节点]美国09'
-  - '[学术节点]日本04'
-  - '[学术节点]日本05'
-  - '[学术节点]日本06'
+  - '[学术节点]美国06'
   - '[学术节点（高速）]美国01'
-  - '[学术节点（高速）]美国02'
-  - '[学术节点（高速）]美国04'
-  - '[学术节点（高速）]日本01'
   - '[学术节点（高速）]日本02'
   - '[学术节点（高速）]日本04'
-  - '[美国]美国03'
-  - '[美国]美国04'
   - '[美国]美国05'
   - '[美国]美国06'
   - '[美国]美国07'
-  - '[美国]美国08'
   - '[美国]美国09'
   - '[美国]美国10'
   - '[日本]日本01'
+  - '[日本]日本02'
   - '[日本]日本03'
   - '@DeltaKroneckerGithub_781_IPV4'
   - '@DeltaKroneckerGithub_672_IPV4'
@@ -1820,15 +1711,16 @@ proxy-groups:
   - 未知 HY2-19 | free-nodes
   - end-gfw-sg33-VLESS
   - end-gfw-kr3-VLESS
-  - 日本+东京Amazon数据中心
+  - 日本+东京都亚马逊(Amazon)公司数据中心
+  - 伊朗+V2CROSS.COM
+  - 香港+葵兴数据中心
+  - 美国+FDCServers数据中心
+  - 美国+V2CROSS.COM
+  - 塞舌尔+V2CROSS.COM
   - 新西兰+V2CROSS.COM
-  - '新西兰+V2CROSS.COM #2'
-  - '新西兰+V2CROSS.COM #3'
-  - 美国 Alabanza
-  - '新西兰+V2CROSS.COM #4'
-  - '日本+东京Amazon数据中心 #2'
-  - '新西兰+V2CROSS.COM #5'
-  - '日本+东京Amazon数据中心 #3'
+  - '香港+葵兴数据中心 #2'
+  - 西班牙+V2CROSS.COM
+  - '西班牙+V2CROSS.COM #2'
   - US美国(v2clash.blog 2026-10.23更新
   - 'US美国(v2clash.blog 2026-10.23更新 #2'
   - DE德国(v2clash.blog 2026-10.23更新
@@ -1933,6 +1825,5 @@ proxy-groups:
   - US美国(v2clash.blog 2026-11.14更新
   - CA加拿大(v2clash.blog 2026-11.14更新
   - NL荷兰(v2clash.blog 2026-11.14更新
-  - JP日本(v2clash.blog 2026-11.14更新
 rules:
 - MATCH,PROBE
