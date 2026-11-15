@@ -3,24 +3,23 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: node.plutocore.vip
-  type: vless
-  server: node.plutocore.vip
-  port: 443
-  uuid: 8fa3f00f-f499-4705-9aa7-2ec6f91c6fa2
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: node.plutocore.vip
-  ws-opts:
-    path: /f/210/97ee7c9e25d450dda9af5ff8
-    headers:
-      Host: node.plutocore.vip
 - name: '[学术节点]美国01'
   type: vmess
   server: US122201.ssgreen.org
   port: 443
-  uuid: c7644716-c437-43b8-930d-96deb7630a6c
+  uuid: 611b8321-6b7a-497d-a6c4-a11a9d6a7ddc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]美国02'
+  type: vmess
+  server: US122202.ssgreen.org
+  port: 443
+  uuid: 13d0b666-c5e0-4b46-b51d-fa97f4202e10
   alterId: 0
   cipher: auto
   udp: true
@@ -32,7 +31,7 @@ proxies:
   type: vmess
   server: US122205.ssgreen.org
   port: 443
-  uuid: 8fad5b16-6d2a-4dd2-92b2-1f77bfafefad
+  uuid: 0814e65c-a862-4db4-a820-73527861c44a
   alterId: 0
   cipher: auto
   udp: true
@@ -44,7 +43,67 @@ proxies:
   type: vmess
   server: US122206.ssgreen.org
   port: 443
-  uuid: 2e5594b8-6713-42e2-8bde-ed08668a0de5
+  uuid: ff66c6d6-5e54-43ba-8310-8bc5bf27dab9
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]美国07'
+  type: vmess
+  server: US122207.ssgreen.org
+  port: 443
+  uuid: ef533cd0-4f4c-457a-9711-6149be31e79b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]美国08'
+  type: vmess
+  server: US122208.ssgreen.org
+  port: 443
+  uuid: 6fc420db-56b0-400c-a754-e02e0694b779
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]美国09'
+  type: vmess
+  server: US122209.ssgreen.org
+  port: 443
+  uuid: a713f4b7-22f1-42df-961c-f8b4f5fd382a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]日本05'
+  type: vmess
+  server: JP032006.ssgreen.org
+  port: 443
+  uuid: 62523ee3-f3a4-4cf3-8e86-31ba2f114fc5
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点]日本06'
+  type: vmess
+  server: JP032007.ssgreen.org
+  port: 443
+  uuid: 834ef882-f1b3-4cab-ae11-797d53e2646c
   alterId: 0
   cipher: auto
   udp: true
@@ -56,7 +115,43 @@ proxies:
   type: vmess
   server: US032010.westmgreen.com
   port: 443
-  uuid: 328efbd9-c698-44ce-8436-a3ffd3b21531
+  uuid: b7ee7d6b-863d-46a5-8ee7-c85e3cf14154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点（高速）]美国02'
+  type: vmess
+  server: US032011.westmgreen.com
+  port: 443
+  uuid: 026693b2-97c7-4a1f-bf42-e1fab0e2a92d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点（高速）]美国03'
+  type: vmess
+  server: US032012.westmgreen.com
+  port: 443
+  uuid: db195e5b-f16c-45d5-b92e-0db26ef5f994
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[学术节点（高速）]美国04'
+  type: vmess
+  server: US032013.ssgreen.org
+  port: 443
+  uuid: 4b6411e3-914d-4d6c-b486-58b1b88f5c5f
   alterId: 0
   cipher: auto
   udp: true
@@ -68,7 +163,7 @@ proxies:
   type: vmess
   server: JP032011.ssgreen.org
   port: 443
-  uuid: 5358b9ef-437a-4b78-8b9e-8dda5702ee49
+  uuid: c6489f2c-a0cc-40d7-9328-469c943ba360
   alterId: 0
   cipher: auto
   udp: true
@@ -80,7 +175,7 @@ proxies:
   type: vmess
   server: JP032001.ssgreen.org
   port: 443
-  uuid: 89282f8c-ff4e-4fbc-992a-827b7c8bea5c
+  uuid: 7958276f-61e3-48b2-94e3-e4a8f9737385
   alterId: 0
   cipher: auto
   udp: true
@@ -88,11 +183,11 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: '[美国]美国05'
+- name: '[美国]美国03'
   type: vmess
-  server: US032019.ssgreen.org
+  server: US032017.ssgreen.org
   port: 443
-  uuid: bb6e13ff-f0b3-4c15-a8ac-d6b251a11d7a
+  uuid: 06fa3d73-7fa7-4eba-b8f2-bdac44ed793b
   alterId: 0
   cipher: auto
   udp: true
@@ -104,7 +199,7 @@ proxies:
   type: vmess
   server: US032020.ssgreen.org
   port: 443
-  uuid: eead0a98-e91e-4458-825a-cda70b48b63e
+  uuid: 6b1f3c43-01fd-4d93-a18f-b52d5a4b0419
   alterId: 0
   cipher: auto
   udp: true
@@ -116,7 +211,19 @@ proxies:
   type: vmess
   server: US032021.ssgreen.org
   port: 443
-  uuid: 67184953-4218-4176-b154-70e93694c14a
+  uuid: 442ed137-6ecf-4201-806b-148b43eb0301
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: '[美国]美国08'
+  type: vmess
+  server: US032022.ssgreen.org
+  port: 443
+  uuid: e3d68945-04f4-4065-a604-0d4da036aed4
   alterId: 0
   cipher: auto
   udp: true
@@ -128,7 +235,7 @@ proxies:
   type: vmess
   server: US032023.ssgreen.org
   port: 443
-  uuid: 6c54cee0-4052-4c0d-948c-bf25b107647a
+  uuid: 941eb624-9b06-4cd1-b71d-8e01c5e3d46a
   alterId: 0
   cipher: auto
   udp: true
@@ -140,7 +247,7 @@ proxies:
   type: vmess
   server: US032024.ssgreen.org
   port: 443
-  uuid: 78b5ddc9-4ef8-4c59-b1d3-174decb5be4e
+  uuid: 2f48b03e-1328-4cbb-91a5-aefa6f693303
   alterId: 0
   cipher: auto
   udp: true
@@ -152,7 +259,7 @@ proxies:
   type: vmess
   server: JP032009.ssgreen.org
   port: 443
-  uuid: c69a8a14-7e39-4dd9-8204-985db74de1ed
+  uuid: 7fa05c2c-15d2-4029-8599-5e503157c350
   alterId: 0
   cipher: auto
   udp: true
@@ -176,7 +283,7 @@ proxies:
   type: vmess
   server: JP032008.ssgreen.org
   port: 443
-  uuid: edcab184-2b80-4dff-92cd-7353b0795d9b
+  uuid: ca5c4bbb-cb4a-4308-a82b-5d55ce7d460d
   alterId: 0
   cipher: auto
   udp: true
@@ -184,79 +291,766 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- type: vless
-  name: '@DeltaKroneckerGithub_781_IPV4'
-  server: 104.16.10.2
+- name: '[日本]日本05'
+  type: vmess
+  server: JP032004.ssgreen.org
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  sni: jp3.yohototo.top
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- type: vless
-  name: '@DeltaKroneckerGithub_672_IPV4'
-  server: fs.qicai99.com
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  tls: true
-  servername: fs.qicai99.com
-  sni: fs.qicai99.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- type: vmess
-  name: 🇨🇳_CN_中国_IPV4
-  server: 39.108.113.127
-  port: 10086
-  uuid: 74e07df3-f82a-4791-987f-247c3c395866
-  cipher: auto
+  uuid: 749dd1f7-2a27-480e-b107-a1b44bf19220
   alterId: 0
-  tls: false
+  cipher: auto
+  udp: true
+  tls: true
   network: ws
   ws-opts:
-    path: /
-- type: vless
-  name: '🇺🇸 美国 | USA #21_IPV4'
-  server: 104.17.147.208
-  port: 443
-  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+    path: /wes
+- name: 剩余流量：0
+  type: vless
+  server: 77.67.18.242
+  port: 25680
+  uuid: 318b045c-8340-4bb4-ac53-f9b27909b9a4
+  network: tcp
   tls: true
-  servername: b.rack.sxsc.dpdns.org
-  sni: b.rack.sxsc.dpdns.org
-  skip-cert-verify: false
-  alpn:
-  - h3
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=chrome
-    headers:
-      Host: b.rack.sxsc.dpdns.org
-- type: vless
-  name: 🇳🇱_NL_荷兰_IPV4
-  server: 79.182.39.131
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 717252g.nl8.h1clayd.click
-  sni: 717252g.nl8.h1clayd.click
-  skip-cert-verify: false
   client-fingerprint: chrome
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 韩国 @befriendsvpn
+  type: vless
+  server: 54.117.161.9
+  port: 23478
+  uuid: 318b045c-8340-4bb4-ac53-f9b27909b9a4
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 日本 IPv6 @befriendsvpn
+  type: vless
+  server: 2a14:7586:6109:1::a125
+  port: 25680
+  uuid: 318b045c-8340-4bb4-ac53-f9b27909b9a4
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 香港 IPv6 @befriendsvpn
+  type: vless
+  server: 2a0e:97c0:3f0:1::5f7
+  port: 24685
+  uuid: 318b045c-8340-4bb4-ac53-f9b27909b9a4
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: C联通-美国03-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 14525
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us03.200913.xyz
+- name: B电信-美国03-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 14525
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us03.200913.xyz
+- name: A移动-美国03-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 14525
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us03.200913.xyz
+- name: D云线1-美国03-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11066
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国03-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11066
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-美国04-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 59087
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us04.jiasu.one
+- name: B电信-美国04-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 59087
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us04.jiasu.one
+- name: C联通-美国04-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 59087
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us04.jiasu.one
+- name: D云线2-美国04-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11056
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国04-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11056
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-美国05-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 49939
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us05.200913.xyz
+- name: B电信-美国05-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 49939
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us05.200913.xyz
+- name: C联通-美国05-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 49939
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us05.200913.xyz
+- name: D云线2-美国05-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11053
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国05-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11053
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-台湾01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 26919
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: twby.jiasu.one
+- name: B电信-台湾01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 26919
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: twby.jiasu.one
+- name: C联通-台湾01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 26919
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: twby.jiasu.one
+- name: D云线1-台湾01-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11054
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-台湾01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11054
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 12888
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir1.jiasu.one
+- name: B电信-日本01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 12888
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir1.jiasu.one
+- name: C联通-日本01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 12888
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir1.jiasu.one
+- name: D云线2-日本01-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11067
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11067
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本02-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 47478
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir2.jiasu.one
+- name: B电信-日本02-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 47478
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir2.jiasu.one
+- name: C联通-日本02-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 47478
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-vir2.jiasu.one
+- name: D云线1-日本02-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11058
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本02-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11058
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本03-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 17926
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-by750.jiasu.one
+- name: B电信-日本03-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 17926
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-by750.jiasu.one
+- name: C联通-日本03-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 17926
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jpdj-by750.jiasu.one
+- name: D云线2-日本03-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11078
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本03-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11078
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本04-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 47072
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp04.jiasu.one
+- name: B电信-日本04-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 47072
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp04.jiasu.one
+- name: C联通-日本04-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 47072
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp04.jiasu.one
+- name: D云线1-日本04-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11064
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本04-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11064
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本05-东京-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 37414
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp05.jiasu.one
+- name: B电信-日本05-东京-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 37414
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp05.jiasu.one
+- name: C联通-日本05-东京-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 37414
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp05.jiasu.one
+- name: D云线2-日本05-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11059
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本05-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11059
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-日本06-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 54892
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp06.jiasu.one
+- name: B电信-日本06-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 54892
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp06.jiasu.one
+- name: C联通-日本06-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 54892
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: jp06.jiasu.one
+- name: D云线2-日本06-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11071
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-日本06-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11071
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 16985
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk01.jiasu.one
+- name: B电信-香港01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 16985
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk01.jiasu.one
+- name: C联通-香港01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 16985
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk01.jiasu.one
+- name: D云线2-香港01-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11061
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11061
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港02-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 32770
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hkhy.jiasu.one
+- name: B电信-香港02-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 32770
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hkhy.jiasu.one
+- name: C联通-香港02-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 32770
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hkhy.jiasu.one
+- name: D云线1-香港02-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11057
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港02-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11057
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港04-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 54735
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk04.jiasu.one
+- name: B电信-香港04-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 54735
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk04.jiasu.one
+- name: C联通-香港04-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 54735
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk04.jiasu.one
+- name: D云线2-香港04-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11052
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港04-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11052
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港05-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 52023
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk05.jiasu.one
+- name: B电信-香港05-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 52023
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk05.jiasu.one
+- name: C联通-香港05-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 52023
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk05.jiasu.one
+- name: D云线1-香港05-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11072
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港05-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11072
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-美国01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 18534
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us3tcone.jiasu.one
+- name: B电信-美国01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 18534
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us3tcone.jiasu.one
+- name: C联通-美国01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 18534
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us3tcone.jiasu.one
+- name: D云线2-美国01-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11065
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11065
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-美国02-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 19972
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: 6track.jiasu.one
+- name: B电信-美国02-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 19972
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: 6track.jiasu.one
+- name: C联通-美国02-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 19972
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: 6track.jiasu.one
+- name: D云线1-美国02-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11055
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国02-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11055
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-美国06-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 16978
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us06.200913.xyz
+- name: B电信-美国06-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 16978
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us06.200913.xyz
+- name: C联通-美国06-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 16978
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: us06.200913.xyz
+- name: D云线1-美国06-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11077
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-美国06-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11077
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-澳门02油管无广告-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 35073
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: mo02.200913.xyz
+- name: B电信-澳门02油管无广告-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 35073
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: mo02.200913.xyz
+- name: C联通-澳门02油管无广告-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 35073
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: mo02.200913.xyz
+- name: D云线1-澳门02油管无广告-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11060
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-澳门02油管无广告-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11060
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港03-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 48684
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk03.jiasu.one
+- name: B电信-香港03-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 48684
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk03.jiasu.one
+- name: C联通-香港03-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 48684
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk03.jiasu.one
+- name: D云线1-香港03-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11068
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港03-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11068
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-香港06-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 56262
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk06.jiasu.one
+- name: B电信-香港06-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 56262
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk06.jiasu.one
+- name: C联通-香港06-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 56262
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: hk06.jiasu.one
+- name: D云线2-香港06-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11075
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-香港06-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11075
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-德国01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 51479
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: de01.200913.xyz
+- name: B电信-德国01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 51479
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: de01.200913.xyz
+- name: C联通-德国01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 51479
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: de01.200913.xyz
+- name: D云线1-德国01-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11073
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-德国01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11073
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-保加利亚01-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 16979
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: bg01.200913.xyz
+- name: B电信-保加利亚01-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 16979
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: bg01.200913.xyz
+- name: C联通-保加利亚01-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 16979
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: bg01.200913.xyz
+- name: D云线1-保加利亚01-S
+  type: ss
+  server: d-ix.jiasu.one
+  port: 11074
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-保加利亚01-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11074
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: A移动-土耳其02-T
+  type: trojan
+  server: a-cm.jiasu.one
+  port: 20305
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: tr02.jiasu.one
+- name: B电信-土耳其02-T
+  type: trojan
+  server: b-cm.jiasu.one
+  port: 20305
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: tr02.jiasu.one
+- name: C联通-土耳其02-T
+  type: trojan
+  server: c-cm.jiasu.one
+  port: 20305
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+  sni: tr02.jiasu.one
+- name: D云线2-土耳其02-S
+  type: ss
+  server: d-ix2.jiasu.one
+  port: 11070
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- name: 备用-土耳其02-S
+  type: ss
+  server: d-bei.200913.xyz
+  port: 11070
+  cipher: aes-256-gcm
+  password: f5b7d963-ec43-4515-8bd5-33cbcc5582ec
+- type: hysteria2
+  name: 🇺🇸_US_美国_IPV4
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.2fa.cat
+  tls: true
+  servername: xship.top
+  sni: xship.top
+  skip-cert-verify: true
+- type: trojan
+  name: 🇸🇬_SG_新加坡_IPV4
+  server: matrix.phonicsindia.mobi
+  port: 48994
+  password: Z5lvhmLqSc
+  tls: true
+  servername: m.microsoft.com
+  sni: m.microsoft.com
+  skip-cert-verify: true
 - type: hysteria
   name: 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
   server: 5.83.129.143
@@ -269,37 +1063,15 @@ proxies:
   up: '11'
   down: '55'
   auth-str: dongtaiwang.com
-- type: vless
-  name: '@DeltaKroneckerGithub_368_IPV4'
-  server: 172.64.158.33
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+- type: anytls
+  name: 🇹🇼_TW_台湾->🇩🇪_DE_德国_IPV4
+  server: forwarded.frnhk.xyz
+  port: 2086
+  password: 9b24e5d0-62be-41df-b967-9b670cf90ff8
   tls: true
-  servername: fs.qicai99.com
-  sni: fs.qicai99.com
+  servername: de.gosthk.site
+  sni: de.gosthk.site
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- type: vmess
-  name: 🇩🇪_DE_德国_IPV4
-  server: 23.165.200.150
-  port: 52080
-  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
-  cipher: auto
-  alterId: 0
-  tls: false
-  servername: down-cdn.dingtalk.com
-  sni: down-cdn.dingtalk.com
-  network: http
-  http-opts:
-    path:
-    - /QQqun-737805443
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
 - type: vless
   name: 🇯🇵_JP_日本_IPV4
   server: zfapi.zalolink.com
@@ -314,6 +1086,283 @@ proxies:
   reality-opts:
     public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
     short-id: 15aa0ad4
+- type: vless
+  name: 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  server: 196.196.148.63
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 717252g.nl8.h1clayd.click
+  sni: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: trojan
+  name: 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4
+  server: sclass-b1.catcat321.com
+  port: 20028
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  tls: true
+  servername: hk.catxstar.com
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- type: trojan
+  name: 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4 (2)
+  server: sclass-b1.catcat321.com
+  port: 20027
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  tls: true
+  servername: hk.catxstar.com
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- type: vmess
+  name: 🇺🇸_US_美国_IPV4 (2)
+  server: 104.18.42.163
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: vmess
+  name: '@DeltaKroneckerGithub_3021_IPV4'
+  server: 172.64.145.93
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (3)
+  server: 137.175.82.43
+  port: 20022
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '20'
+  down: '20'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (4)
+  server: 137.175.82.44
+  port: 20022
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: anytls
+  name: 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
+  server: sdf65h46wr.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  tls: true
+  servername: images.ctfassets.net
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- type: hysteria
+  name: 🇫🇷_FR_法国_IPV4
+  server: 62.210.28.175
+  port: 24667
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇩🇪_DE_德国_IPV4
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  tls: true
+  servername: apple.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (5)
+  server: 198.200.57.142
+  port: 22335
+  password: github.com/Alvin9999-newpac/fanqiang
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+- type: hysteria
+  name: 🇫🇷_FR_法国_IPV4 (2)
+  server: 163.172.117.163
+  port: 36699
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4
+  server: 202.50.253.27
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (2)
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (3)
+  server: 202.50.253.90
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (4)
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (5)
+  server: 202.50.253.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (6)
+  server: 202.50.253.54
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (7)
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (8)
+  server: 202.50.253.99
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (9)
+  server: 202.50.253.81
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (10)
+  server: 202.50.253.72
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- name: '🇺🇸_US_美国_IPV4 #2'
+  type: hysteria2
+  server: https
+  port: 443
+  password: ''
+  sni: xship.top
+  skip-cert-verify: true
 - name: 未知 VLESS-01 | free-nodes
   type: vless
   server: 37.18.15.112
@@ -323,6 +1372,15 @@ proxies:
   tls: true
   client-fingerprint: firefox
   servername: earlytrain.net
+- name: 未知 VLESS-02 | free-nodes
+  type: vless
+  server: 79.182.39.131
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: 717252g.nl8.h1clayd.click
 - name: SG VLESS-06 | free-nodes
   type: vless
   server: zfapi.zalolink.com
@@ -383,13 +1441,6 @@ proxies:
   client-fingerprint: chrome
   servername: www.asus.com
   flow: xtls-rprx-vision
-- name: TR TROJAN-16 | free-nodes
-  type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20027
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  network: tcp
 - name: HK HY2-18 | free-nodes
   type: hysteria2
   server: 209.9.200.122
@@ -424,17 +1475,22 @@ proxies:
   client-fingerprint: chrome
   servername: test-sto.dev.helpnow.ai
   flow: xtls-rprx-vision
-- name: 日本+东京都亚马逊(Amazon)公司数据中心
+- name: 美国+V2CROSS.COM
+  type: ss
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+- name: 伊朗+V2CROSS.COM
   type: vless
-  server: zfapi.zalolink.com
-  port: 11802
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   network: tcp
   tls: true
-  client-fingerprint: ios
-  servername: psstatic.cdn.bcebos.com
-  flow: xtls-rprx-vision
-- name: 伊朗+V2CROSS.COM
+  client-fingerprint: chrome
+  servername: base.hosamobenl.co.uk
+- name: '伊朗+V2CROSS.COM #2'
   type: vless
   server: base.hosamobenl.co.uk
   port: 443
@@ -442,34 +1498,6 @@ proxies:
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: base.hosamobenl.co.uk
-- name: 香港+葵兴数据中心
-  type: trojan
-  server: sclass-b1.catcat321.com
-  port: 20028
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  network: tcp
-- name: 美国+FDCServers数据中心
-  type: vless
-  server: 198.16.113.218
-  port: 8443
-  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 美国+V2CROSS.COM
-  type: vless
-  server: 8a2e72t.nl11.h1clayd.click
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 8a2e72t.nl11.h1clayd.click
-  flow: xtls-rprx-vision
 - name: 塞舌尔+V2CROSS.COM
   type: vless
   server: 196.199.122.2
@@ -480,37 +1508,33 @@ proxies:
   client-fingerprint: firefox
   servername: 7aa271t.es1.h1clayd.click
   flow: xtls-rprx-vision
-- name: 新西兰+V2CROSS.COM
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: '香港+葵兴数据中心 #2'
-  type: trojan
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-- name: 西班牙+V2CROSS.COM
+- name: 美国+Xerox
   type: vless
-  server: 196.245.52.187
+  server: 13.143.176.250
+  port: 443
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: images.porsche.com
+  flow: xtls-rprx-vision
+- name: 爱沙尼亚+V2CROSS.COM
+  type: vless
+  server: 196.196.148.85
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   network: tcp
   tls: true
   client-fingerprint: firefox
-  servername: 04535dt.us8.h1clayd.click
-- name: '西班牙+V2CROSS.COM #2'
+  servername: 5d0319t.nl7.h1clayd.click
+- name: 美国+Alabanza
   type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  server: static.72.244.109.65.clients.your-server.de
+  port: 45697
+  uuid: d4733b8c-4555-4332-a742-01d34f148dd6
   network: tcp
-  tls: true
+  tls: false
   client-fingerprint: chrome
-  servername: 7aa271t.es1.h1clayd.click
-  flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-10.23更新
   type: vless
   server: 104.18.41.191
@@ -1644,15 +2668,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: accounts.fastly.com
-- name: US美国(v2clash.blog 2026-11.14更新
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 5d0319t.nl7.h1clayd.click
 - name: CA加拿大(v2clash.blog 2026-11.14更新
   type: vless
   server: 104.18.162.1
@@ -1671,56 +2686,213 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: 7d1a74fd.ferrin.uk
+- name: JP日本(v2clash.blog 2026-11.14更新
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: 7aa271t.es1.h1clayd.click
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - node.plutocore.vip
   - '[学术节点]美国01'
+  - '[学术节点]美国02'
   - '[学术节点]美国05'
   - '[学术节点]美国06'
+  - '[学术节点]美国07'
+  - '[学术节点]美国08'
+  - '[学术节点]美国09'
+  - '[学术节点]日本05'
+  - '[学术节点]日本06'
   - '[学术节点（高速）]美国01'
+  - '[学术节点（高速）]美国02'
+  - '[学术节点（高速）]美国03'
+  - '[学术节点（高速）]美国04'
   - '[学术节点（高速）]日本02'
   - '[学术节点（高速）]日本04'
-  - '[美国]美国05'
+  - '[美国]美国03'
   - '[美国]美国06'
   - '[美国]美国07'
+  - '[美国]美国08'
   - '[美国]美国09'
   - '[美国]美国10'
   - '[日本]日本01'
   - '[日本]日本02'
   - '[日本]日本03'
-  - '@DeltaKroneckerGithub_781_IPV4'
-  - '@DeltaKroneckerGithub_672_IPV4'
-  - 🇨🇳_CN_中国_IPV4
-  - '🇺🇸 美国 | USA #21_IPV4'
-  - 🇳🇱_NL_荷兰_IPV4
+  - '[日本]日本05'
+  - 剩余流量：0
+  - 韩国 @befriendsvpn
+  - 日本 IPv6 @befriendsvpn
+  - 香港 IPv6 @befriendsvpn
+  - C联通-美国03-T
+  - B电信-美国03-T
+  - A移动-美国03-T
+  - D云线1-美国03-S
+  - 备用-美国03-S
+  - A移动-美国04-T
+  - B电信-美国04-T
+  - C联通-美国04-T
+  - D云线2-美国04-S
+  - 备用-美国04-S
+  - A移动-美国05-T
+  - B电信-美国05-T
+  - C联通-美国05-T
+  - D云线2-美国05-S
+  - 备用-美国05-S
+  - A移动-台湾01-T
+  - B电信-台湾01-T
+  - C联通-台湾01-T
+  - D云线1-台湾01-S
+  - 备用-台湾01-S
+  - A移动-日本01-T
+  - B电信-日本01-T
+  - C联通-日本01-T
+  - D云线2-日本01-S
+  - 备用-日本01-S
+  - A移动-日本02-T
+  - B电信-日本02-T
+  - C联通-日本02-T
+  - D云线1-日本02-S
+  - 备用-日本02-S
+  - A移动-日本03-T
+  - B电信-日本03-T
+  - C联通-日本03-T
+  - D云线2-日本03-S
+  - 备用-日本03-S
+  - A移动-日本04-T
+  - B电信-日本04-T
+  - C联通-日本04-T
+  - D云线1-日本04-S
+  - 备用-日本04-S
+  - A移动-日本05-东京-T
+  - B电信-日本05-东京-T
+  - C联通-日本05-东京-T
+  - D云线2-日本05-S
+  - 备用-日本05-S
+  - A移动-日本06-T
+  - B电信-日本06-T
+  - C联通-日本06-T
+  - D云线2-日本06-S
+  - 备用-日本06-S
+  - A移动-香港01-T
+  - B电信-香港01-T
+  - C联通-香港01-T
+  - D云线2-香港01-S
+  - 备用-香港01-S
+  - A移动-香港02-T
+  - B电信-香港02-T
+  - C联通-香港02-T
+  - D云线1-香港02-S
+  - 备用-香港02-S
+  - A移动-香港04-T
+  - B电信-香港04-T
+  - C联通-香港04-T
+  - D云线2-香港04-S
+  - 备用-香港04-S
+  - A移动-香港05-T
+  - B电信-香港05-T
+  - C联通-香港05-T
+  - D云线1-香港05-S
+  - 备用-香港05-S
+  - A移动-美国01-T
+  - B电信-美国01-T
+  - C联通-美国01-T
+  - D云线2-美国01-S
+  - 备用-美国01-S
+  - A移动-美国02-T
+  - B电信-美国02-T
+  - C联通-美国02-T
+  - D云线1-美国02-S
+  - 备用-美国02-S
+  - A移动-美国06-T
+  - B电信-美国06-T
+  - C联通-美国06-T
+  - D云线1-美国06-S
+  - 备用-美国06-S
+  - A移动-澳门02油管无广告-T
+  - B电信-澳门02油管无广告-T
+  - C联通-澳门02油管无广告-T
+  - D云线1-澳门02油管无广告-S
+  - 备用-澳门02油管无广告-S
+  - A移动-香港03-T
+  - B电信-香港03-T
+  - C联通-香港03-T
+  - D云线1-香港03-S
+  - 备用-香港03-S
+  - A移动-香港06-T
+  - B电信-香港06-T
+  - C联通-香港06-T
+  - D云线2-香港06-S
+  - 备用-香港06-S
+  - A移动-德国01-T
+  - B电信-德国01-T
+  - C联通-德国01-T
+  - D云线1-德国01-S
+  - 备用-德国01-S
+  - A移动-保加利亚01-T
+  - B电信-保加利亚01-T
+  - C联通-保加利亚01-T
+  - D云线1-保加利亚01-S
+  - 备用-保加利亚01-S
+  - A移动-土耳其02-T
+  - B电信-土耳其02-T
+  - C联通-土耳其02-T
+  - D云线2-土耳其02-S
+  - 备用-土耳其02-S
+  - 🇺🇸_US_美国_IPV4
+  - 🇸🇬_SG_新加坡_IPV4
   - 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
-  - '@DeltaKroneckerGithub_368_IPV4'
-  - 🇩🇪_DE_德国_IPV4
+  - 🇹🇼_TW_台湾->🇩🇪_DE_德国_IPV4
   - 🇯🇵_JP_日本_IPV4
+  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4
+  - 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4 (2)
+  - 🇺🇸_US_美国_IPV4 (2)
+  - '@DeltaKroneckerGithub_3021_IPV4'
+  - 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (4)
+  - 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
+  - 🇫🇷_FR_法国_IPV4
+  - 🇩🇪_DE_德国_IPV4
+  - 🇺🇸_US_美国_IPV4 (5)
+  - 🇫🇷_FR_法国_IPV4 (2)
+  - 🇮🇹_IT_意大利_IPV4
+  - 🇮🇹_IT_意大利_IPV4 (2)
+  - 🇮🇹_IT_意大利_IPV4 (3)
+  - 🇮🇹_IT_意大利_IPV4 (4)
+  - 🇮🇹_IT_意大利_IPV4 (5)
+  - 🇮🇹_IT_意大利_IPV4 (6)
+  - 🇮🇹_IT_意大利_IPV4 (7)
+  - 🇮🇹_IT_意大利_IPV4 (8)
+  - 🇮🇹_IT_意大利_IPV4 (9)
+  - 🇮🇹_IT_意大利_IPV4 (10)
+  - '🇺🇸_US_美国_IPV4 #2'
   - 未知 VLESS-01 | free-nodes
+  - 未知 VLESS-02 | free-nodes
   - SG VLESS-06 | free-nodes
   - 未知 VLESS-08 | free-nodes
   - SG VLESS-10 | free-nodes
   - SG VLESS-12 | free-nodes
   - 未知 TROJAN-13 | free-nodes
   - HK VLESS-15 | free-nodes
-  - TR TROJAN-16 | free-nodes
   - HK HY2-18 | free-nodes
   - 未知 HY2-19 | free-nodes
   - end-gfw-sg33-VLESS
   - end-gfw-kr3-VLESS
-  - 日本+东京都亚马逊(Amazon)公司数据中心
-  - 伊朗+V2CROSS.COM
-  - 香港+葵兴数据中心
-  - 美国+FDCServers数据中心
   - 美国+V2CROSS.COM
+  - 伊朗+V2CROSS.COM
+  - '伊朗+V2CROSS.COM #2'
   - 塞舌尔+V2CROSS.COM
-  - 新西兰+V2CROSS.COM
-  - '香港+葵兴数据中心 #2'
-  - 西班牙+V2CROSS.COM
-  - '西班牙+V2CROSS.COM #2'
+  - 美国+Xerox
+  - 爱沙尼亚+V2CROSS.COM
+  - 美国+Alabanza
   - US美国(v2clash.blog 2026-10.23更新
   - 'US美国(v2clash.blog 2026-10.23更新 #2'
   - DE德国(v2clash.blog 2026-10.23更新
@@ -1822,8 +2994,8 @@ proxy-groups:
   - DE德国(v2clash.blog 2026-11.12更新
   - US美国(v2clash.blog 2026-11.12更新
   - 'US美国(v2clash.blog 2026-11.12更新 #2'
-  - US美国(v2clash.blog 2026-11.14更新
   - CA加拿大(v2clash.blog 2026-11.14更新
   - NL荷兰(v2clash.blog 2026-11.14更新
+  - JP日本(v2clash.blog 2026-11.14更新
 rules:
 - MATCH,PROBE
