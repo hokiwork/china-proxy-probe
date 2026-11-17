@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:57:06.775707+00:00",
+  "generated_at": "2026-11-17T07:45:42.375301+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -76,344 +76,694 @@
       "type": "hysteria2"
     },
     {
-      "cipher": "2022-blake3-chacha20-poly1305",
-      "name": "🇩🇪_DE_德国_IPV4",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=",
-      "port": 443,
-      "server": "47.254.175.2",
-      "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "grpc-opts": {
-        "grpc-service-name": "204adda7e3da"
-      },
-      "name": "🇳🇱_NL_荷兰_IPV4",
-      "network": "grpc",
-      "port": 443,
-      "reality-opts": {
-        "public-key": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
-        "short-id": "d3bd772514c87d28"
-      },
-      "server": "79.182.39.131",
-      "servername": "717252g.nl8.h1clayd.click",
-      "skip-cert-verify": false,
-      "sni": "717252g.nl8.h1clayd.click",
-      "tls": true,
-      "type": "vless",
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
-    },
-    {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "dongtaiwang.com",
-      "down": "55",
-      "name": "🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4",
-      "password": "dongtaiwang.com",
-      "port": 26691,
-      "server": "5.83.129.143",
-      "skip-cert-verify": true,
-      "tls": true,
-      "type": "hysteria",
-      "up": "11"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "🇯🇵_JP_日本_IPV4",
-      "port": 43149,
-      "reality-opts": {
-        "public-key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
-        "short-id": "15aa0ad4"
-      },
-      "server": "zfapi.zalolink.com",
-      "servername": "psstatic.cdn.bcebos.com",
-      "skip-cert-verify": false,
-      "sni": "psstatic.cdn.bcebos.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134"
-    },
-    {
-      "client-fingerprint": "firefox",
-      "grpc-opts": {
-        "grpc-service-name": "204adda7e3da"
-      },
-      "name": "🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4",
-      "network": "grpc",
-      "port": 443,
-      "reality-opts": {
-        "public-key": "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU",
-        "short-id": "d3bd772514c87d28"
-      },
-      "server": "196.196.148.63",
-      "servername": "717252g.nl8.h1clayd.click",
-      "skip-cert-verify": false,
-      "sni": "717252g.nl8.h1clayd.click",
-      "tls": true,
-      "type": "vless",
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "client-fingerprint": "chrome",
-      "name": "🇺🇸 机场推荐:dafei.de 美国 89_IPV4",
-      "network": "ws",
-      "port": 443,
-      "server": "188.114.99.137",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "ws-opts": {
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        },
-        "path": "/hls/cctv5phd.m3u8"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
       "client-fingerprint": "chrome",
       "name": "🇺🇸_US_美国_IPV4",
       "network": "ws",
       "port": 443,
-      "server": "104.18.42.163",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
+      "reality-opts": {
+        "public-key": "5UVOUoMBYxyWuF-FCbXoEt8LHFkj7iZqZOABlvyvXV8",
+        "short-id": "955c702b"
+      },
+      "server": "172.233.129.179",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "type": "vless",
+      "uuid": "8d602a84-d258-4953-8ef7-d64afff2e879",
       "ws-opts": {
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "itunes.apple.com"
         },
-        "path": "/hls/cctv5phd.m3u8"
+        "path": "/ws"
       }
     },
     {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "@DeltaKroneckerGithub_3021_IPV4",
-      "network": "ws",
-      "port": 443,
-      "server": "172.64.145.93",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "ws-opts": {
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        },
-        "path": "/hls/cctv5phd.m3u8"
-      }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
       "client-fingerprint": "chrome",
-      "name": "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
+      "name": "🇺🇸_US_美国_IPV4 (2)",
       "network": "ws",
       "port": 443,
-      "server": "172.67.190.164",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
+      "reality-opts": {
+        "public-key": "ZtWVf2gAix3etGziWVZ9apsWfWb5UOepCWQqVyIGxHI",
+        "short-id": "4d3f31a1"
+      },
+      "server": "172.233.139.98",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "type": "vless",
+      "uuid": "62b5a30a-89de-4da7-b1c0-08abfad0cd1d",
       "ws-opts": {
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "itunes.apple.com"
         },
-        "path": "/hls/cctv5phd.m3u8"
+        "path": "/ws"
       }
     },
     {
-      "name": "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-      "password": "0324fbc29561",
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (3)",
+      "network": "ws",
       "port": 443,
-      "server": "sdf65h46wr.df6h451rh.xin",
-      "servername": "images.ctfassets.net",
-      "skip-cert-verify": true,
-      "sni": "images.ctfassets.net",
+      "reality-opts": {
+        "public-key": "4DL3ZveBq9TIQbtIp2ZtIPI6zRFHGdcVAW-poC0UqDA",
+        "short-id": "30aa62c5"
+      },
+      "server": "172.233.157.18",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "anytls"
+      "type": "vless",
+      "uuid": "9a10a216-c8db-48d5-bb91-cf1ef245bd1d",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "dongtaiwang.com",
-      "down": "55",
-      "name": "🇫🇷_FR_法国_IPV4",
-      "password": "dongtaiwang.com",
-      "port": 24667,
-      "server": "62.210.28.175",
-      "servername": "bing.com",
-      "skip-cert-verify": true,
-      "sni": "bing.com",
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (4)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg",
+        "short-id": "dd78b5c3"
+      },
+      "server": "172.235.63.167",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "hysteria",
-      "up": "11"
+      "type": "vless",
+      "uuid": "d95f222c-3a63-47f8-8e61-af83e1f143f5",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "dongtaiwang.com",
-      "down": "55",
-      "name": "🇩🇪_DE_德国_IPV4 (2)",
-      "password": "dongtaiwang.com",
-      "port": 54177,
-      "server": "5.83.129.90",
-      "servername": "apple.com",
-      "skip-cert-verify": true,
-      "sni": "apple.com",
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (5)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "cQZ-dTY4QSQteDYpngP2PavOsn9yY9lIP-OscwzwAio",
+        "short-id": "4dda4608"
+      },
+      "server": "45.32.70.42",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "hysteria",
-      "up": "11"
+      "type": "vless",
+      "uuid": "8c392beb-524d-4d0a-a3a6-4d542d54a1ff",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "github.com/Alvin9999-newpac/fanqiang",
-      "down": "55",
-      "name": "🇺🇸_US_美国_IPV4 (2)",
-      "password": "github.com/Alvin9999-newpac/fanqiang",
-      "port": 22335,
-      "server": "198.200.57.142",
-      "servername": "bing.com",
-      "skip-cert-verify": true,
-      "sni": "bing.com",
+      "client-fingerprint": "chrome",
+      "name": "🇸🇬_SG_新加坡_IPV4",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "u_4r8NRmRsN5Ndbt0koyC73DLC7mCcK4wAA0YiIR4ko",
+        "short-id": "b0af872e"
+      },
+      "server": "172.104.48.194",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "hysteria",
-      "up": "11"
+      "type": "vless",
+      "uuid": "a28d0884-193d-4591-aa64-8638ba1481ce",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "dongtaiwang.com",
-      "down": "55",
-      "name": "🇫🇷_FR_法国_IPV4 (2)",
-      "password": "dongtaiwang.com",
-      "port": 36699,
-      "server": "163.172.117.163",
-      "servername": "bing.com",
-      "skip-cert-verify": true,
-      "sni": "bing.com",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk",
+        "short-id": "e5b03494"
+      },
+      "server": "139.162.91.224",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
       "tls": true,
-      "type": "hysteria",
-      "up": "11"
+      "type": "vless",
+      "uuid": "ff3038b1-a2f5-428f-89cd-5d5e4efba8e7",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.27",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (2)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk",
+        "short-id": "c8559ca1"
+      },
+      "server": "172.104.86.181",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "010431f3-04f6-4404-a801-b93bf2e3c2b2",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (2)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.36",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (3)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms",
+        "short-id": "772bef67"
+      },
+      "server": "172.105.197.24",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "81f4e114-5a60-41b5-9038-8d742380c84f",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (3)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.90",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (4)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw",
+        "short-id": "0c0c806b"
+      },
+      "server": "139.162.91.137",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "5e6575a1-459c-4077-ac3d-92dea966ad7c",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (4)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.63",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (5)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI",
+        "short-id": "7e1e09f4"
+      },
+      "server": "139.162.101.74",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "1e709d98-d4c3-45c1-bdcc-4268cf83eff8",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (5)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.18",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (6)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
+        "short-id": "0784b134"
+      },
+      "server": "172.105.203.15",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (6)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.54",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (7)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8",
+        "short-id": "17676229"
+      },
+      "server": "172.105.212.91",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "1f08d52f-126e-46e3-929a-4b6a58e21168",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (7)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.45",
+      "client-fingerprint": "chrome",
+      "name": "🇸🇬_SG_新加坡_IPV4 (2)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "dT50iKOzQz2utAi1tcwsU86hbaS78JeDY_xST0nP5D4",
+        "short-id": "aea01663"
+      },
+      "server": "172.104.186.205",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "eafa7d0d-db1c-4c91-8fd8-587cd218008e",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (8)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.99",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (8)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "-g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ",
+        "short-id": "7bae4b22"
+      },
+      "server": "139.162.91.200",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "847bdd83-9e2f-4708-81ed-729a2ca6eeec",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (9)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.81",
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (9)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "Q_HUTa9IpIBeTmm71KVwJrzdgBag_PpMtTKoH2fY3Qo",
+        "short-id": "07febec7"
+      },
+      "server": "139.162.89.151",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "dbca719d-2cfb-48a2-8bc6-8c658a24b142",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (10)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.72",
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (6)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "Z0yUixOaVZhwnYyI9XtSSqgxBCerCWqticoYPmwPzzA",
+        "short-id": "dd282cb2"
+      },
+      "server": "172.233.129.46",
+      "servername": "itunes.apple.com",
       "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "325a2d32-286c-44d8-8bf7-d6dc85ecfd53",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (7)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo",
+        "short-id": "664c1530"
+      },
+      "server": "172.236.227.60",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "3c8a110d-f04d-4f0e-9579-fd00631b8830",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (8)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY",
+        "short-id": "4206512a"
+      },
+      "server": "172.233.142.149",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "61e3954d-0d66-4b69-b6cd-9b4fc2352303",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (9)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "jTnoGvXzAIa2lsfioHHRJ1lAj1xqjowhcCwGcfme8QY",
+        "short-id": "826efd30"
+      },
+      "server": "172.233.156.229",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9bc6f6c-09b7-43ce-b9c7-312d37f1a312",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (10)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "bRB-Z_UOQ_sk8UFczAjrpkgKIg6cVdTNGnsyC7vAoyg",
+        "short-id": "7a87386b"
+      },
+      "server": "172.233.139.212",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b21a60ef-9042-42c8-bb13-160528ea19c6",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇸🇬_SG_新加坡_IPV4 (3)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "sli7AT0WEhYMVMARhHh-ZQMK7zHHn0cGsxw2gPhoBis",
+        "short-id": "107ff148"
+      },
+      "server": "149.28.152.20",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "e17ca473-bd02-4fe6-873f-5866d729b0a3",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇸🇬_SG_新加坡_IPV4 (4)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "ybu5pFdSV23WsnMNhbpa8TwV6TJd6NLZ6HX-ggww61A",
+        "short-id": "83f673ba"
+      },
+      "server": "139.180.215.25",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "bbc20d3e-0391-48f1-ad72-90a6802f728e",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇸🇬_SG_新加坡_IPV4 (5)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "-KlJUCwLvYy2pz5jR2RgmYMEhacPNPhwvlbdiKkAh1Y",
+        "short-id": "6cc51755"
+      },
+      "server": "45.76.191.30",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "d8aaaf9a-cea4-4c5a-975b-68ddc26f9891",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (11)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "rzeXNEmuocvPVMnmettRsJbHQGjQGaZoH7jNw_3GUD8",
+        "short-id": "4bf84b30"
+      },
+      "server": "172.235.51.71",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "3c17ead6-201a-4fba-8246-6327b911a1be",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (12)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs",
+        "short-id": "51ecfe9e"
+      },
+      "server": "172.236.241.130",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "21117a67-21c2-4e2a-ba8f-bc49e23b0ae8",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇯🇵_JP_日本_IPV4 (10)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ",
+        "short-id": "da26e5a2"
+      },
+      "server": "172.237.14.205",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "4796e022-f377-4a97-bc03-fbf525d7913c",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (13)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "1iwAzh_XzSCYWZEVZ0lfczKFd--jXx3coCt5le58gEM",
+        "short-id": "c52e85fe"
+      },
+      "server": "172.235.37.168",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "dbac71f3-ab05-4194-985b-f07088bf1a4a",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (14)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "l1Tts2VQAnD1We9lPKqw9GqnMAHiIlYhsaw5ASVrTGM",
+        "short-id": "5c298270"
+      },
+      "server": "172.233.140.139",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "82b258c9-f4ae-46f6-8c1a-322b316a2e0d",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (15)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "ZZwZGoX0Us8t6nLvckDWskC1c25F9rL0_nUXmd8BFxQ",
+        "short-id": "8dd324c1"
+      },
+      "server": "107.191.58.86",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "4444e77e-3d2a-4dc9-bf31-936f038f5570",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
     },
     {
       "client-fingerprint": "chrome",
@@ -541,8 +891,8 @@
         "public-key": "DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE",
         "short-id": "e04a526b0b09c765"
       },
-      "server": "52.79.230.147",
-      "servername": "dev-api.medi-x.co.kr",
+      "server": "43.201.148.176",
+      "servername": "test.futurechosun.com",
       "tls": true,
       "type": "vless",
       "udp": true,
@@ -553,7 +903,7 @@
       "name": "end-gfw-kr64-HY2",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 443,
-      "server": "52.79.230.147",
+      "server": "43.201.148.176",
       "skip-cert-verify": true,
       "sni": "www.bing.com",
       "type": "hysteria2"
@@ -563,7 +913,43 @@
       "name": "end-gfw-kr64-SS",
       "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "port": 8443,
-      "server": "52.79.230.147",
+      "server": "43.201.148.176",
+      "type": "ss",
+      "udp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "end-gfw-sg89-VLESS",
+      "network": "tcp",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "x8aCD8cJtkDvAjcRrcMG05MNiwh11LaKg70KIRvfN0g",
+        "short-id": "819a87bf1651bf44"
+      },
+      "server": "13.228.25.61",
+      "servername": "dikmn.23789809.xyz",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043"
+    },
+    {
+      "fingerprint": "c1fd40941f919b5c7896244097f22d9d958e625cd958b75f34ccfa42181f50b2",
+      "name": "end-gfw-sg89-HY2",
+      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "port": 443,
+      "server": "13.228.25.61",
+      "skip-cert-verify": true,
+      "sni": "www.bing.com",
+      "type": "hysteria2"
+    },
+    {
+      "cipher": "chacha20-ietf-poly1305",
+      "name": "end-gfw-sg89-SS",
+      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "port": 8443,
+      "server": "13.228.25.61",
       "type": "ss",
       "udp": true
     },
@@ -1968,5 +2354,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 141
+  "total": 150
 }
