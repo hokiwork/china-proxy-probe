@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T07:11:46.861091+00:00",
+  "generated_at": "2026-11-19T20:27:55.731908+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -47,21 +47,15 @@
       }
     },
     {
-      "client-fingerprint": "chrome",
-      "name": "MO-优选01🇲🇴",
-      "network": "ws",
-      "port": 2096,
-      "server": "cf.kz.ci",
-      "servername": "mo01.618885.xyz",
-      "tls": true,
-      "type": "vless",
-      "uuid": "3de197ca-c3d8-4685-b22d-c5237d3943a2",
-      "ws-opts": {
-        "headers": {
-          "Host": "mo01.618885.xyz"
-        },
-        "path": "/"
-      }
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "上海市 阿里云数据中心节点",
+      "network": "tcp",
+      "port": 54321,
+      "server": "106.15.107.224",
+      "tls": false,
+      "type": "vmess",
+      "uuid": "f4587104-415d-468a-b50f-3b9d22d3386d"
     },
     {
       "client-fingerprint": "chrome",
@@ -79,6 +73,22 @@
       "tls": true,
       "type": "vless",
       "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7"
+    },
+    {
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
+      "name": "🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+      },
+      "server": "163.245.42.87",
+      "servername": "mother-earth.fyi",
+      "skip-cert-verify": false,
+      "sni": "mother-earth.fyi",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f"
     },
     {
       "alpn": [
@@ -671,25 +681,6 @@
       }
     },
     {
-      "alterId": 0,
-      "cipher": "auto",
-      "name": "@DeltaKroneckerGithub_3021_IPV4",
-      "network": "ws",
-      "port": 443,
-      "server": "172.64.145.93",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "ws-opts": {
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        },
-        "path": "/hls/cctv5phd.m3u8"
-      }
-    },
-    {
       "client-fingerprint": "chrome",
       "flow": "xtls-rprx-vision",
       "name": "end-gfw-sg3-VLESS",
@@ -795,120 +786,6 @@
       "tls": true,
       "type": "vless",
       "uuid": "bf5129f1-31f5-4edf-a07a-27ec31b26c1d"
-    },
-    {
-      "client-fingerprint": "random",
-      "name": "RU俄罗斯(v2clash.blog 2026-10.26更新",
-      "network": "ws",
-      "port": 443,
-      "server": "z1q3pv4g78.rucdncomp.pro",
-      "servername": "z1q3pv4g78.rucdncomp.pro",
-      "tls": true,
-      "type": "vless",
-      "uuid": "a443d7bf-f506-46ce-b64d-cf8891c0a9f7",
-      "ws-opts": {
-        "headers": {
-          "Host": "z1q3pv4g78.rucdncomp.pro"
-        },
-        "path": "/useraction/events/b892639b7195/"
-      }
-    },
-    {
-      "client-fingerprint": "firefox",
-      "flow": "xtls-rprx-vision",
-      "name": "US美国(v2clash.blog 2026-10.26更新",
-      "network": "tcp",
-      "port": 443,
-      "server": "150.241.107.95",
-      "servername": "gr1.originmesh.online",
-      "tls": true,
-      "type": "vless",
-      "uuid": "35da102e-536b-4103-9632-58c7c4c6303b"
-    },
-    {
-      "client-fingerprint": "chrome",
-      "name": "US美国(v2clash.blog 2026-10.26更新 #2",
-      "network": "ws",
-      "port": 8880,
-      "server": "63.141.128.30",
-      "tls": false,
-      "type": "vless",
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "ws-opts": {
-        "headers": {
-          "Host": "vms.lifetime42.workers.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "NL荷兰(v2clash.blog 2026-10.26更新",
-      "network": "tcp",
-      "port": 2093,
-      "server": "213.152.165.205",
-      "servername": "www.apple.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "7965351e-758d-4b0c-a805-657ea60be54e"
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-10.26更新 #3",
-      "network": "ws",
-      "password": "123456",
-      "port": 443,
-      "server": "162.159.152.81",
-      "sni": "now-pages-sub-em4.pages.dev",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "now-pages-sub-em4.pages.dev"
-        },
-        "path": "/?ed=2560"
-      }
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-10.26更新 #4",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "104.18.32.47",
-      "sni": "www.calmlunch.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment"
-      }
-    },
-    {
-      "client-fingerprint": "chrome",
-      "flow": "xtls-rprx-vision",
-      "name": "NL荷兰(v2clash.blog 2026-10.26更新 #2",
-      "network": "tcp",
-      "port": 2093,
-      "server": "213.152.165.203",
-      "servername": "www.apple.com",
-      "tls": true,
-      "type": "vless",
-      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d"
-    },
-    {
-      "name": "US美国(v2clash.blog 2026-10.26更新 #5",
-      "network": "ws",
-      "password": "humanity",
-      "port": 443,
-      "server": "45.130.125.69",
-      "sni": "www.calmlunch.com",
-      "type": "trojan",
-      "ws-opts": {
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
-        "path": "/assignment"
-      }
     },
     {
       "client-fingerprint": "firefox",
@@ -2140,9 +2017,66 @@
       "tls": false,
       "type": "vless",
       "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
+    },
+    {
+      "client-fingerprint": "firefox",
+      "name": "西班牙(v2clash.blog 2026-11.19更新",
+      "network": "tcp",
+      "port": 443,
+      "server": "196.245.52.187",
+      "servername": "04535dt.us8.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    },
+    {
+      "client-fingerprint": "unsafe",
+      "name": "SG新加坡(v2clash.blog 2026-11.19更新",
+      "network": "ws",
+      "port": 443,
+      "server": "43.170.8.95",
+      "servername": "jp3.yohototo.top",
+      "tls": true,
+      "type": "vless",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "ws-opts": {
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        },
+        "path": "/tyxyws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "US美国(v2clash.blog 2026-11.19更新",
+      "network": "ws",
+      "port": 443,
+      "server": "104.17.99.49",
+      "servername": "cdn.lahjy.xyz",
+      "tls": true,
+      "type": "vless",
+      "uuid": "5821f560-4156-4faf-80ec-9d798b128090",
+      "ws-opts": {
+        "headers": {
+          "Host": "cdn.lahjy.xyz"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "NL荷兰(v2clash.blog 2026-11.19更新",
+      "network": "tcp",
+      "port": 443,
+      "server": "8a2e72t.nl20.h1clayd.shop",
+      "servername": "8a2e72t.nl20.h1clayd.shop",
+      "tls": true,
+      "type": "vless",
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81"
     }
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 141
+  "total": 137
 }
