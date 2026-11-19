@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T20:24:32.720919+00:00",
+  "generated_at": "2026-11-19T07:11:46.861091+00:00",
   "proxies": [
     {
       "client-fingerprint": "chrome",
@@ -64,6 +64,57 @@
       }
     },
     {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "🇹🇼_TW_台湾_IPV4",
+      "port": 47396,
+      "reality-opts": {
+        "public-key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+        "short-id": "fa514b83"
+      },
+      "server": "free.fugui.lol",
+      "servername": "swdist.apple.com",
+      "skip-cert-verify": false,
+      "sni": "swdist.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7"
+    },
+    {
+      "alpn": [
+        "h3"
+      ],
+      "auth-str": "dongtaiwang.com",
+      "down": "55",
+      "name": "🇺🇸_US_美国_IPV4",
+      "password": "dongtaiwang.com",
+      "port": 11008,
+      "server": "38.6.222.130",
+      "servername": "bing.com",
+      "skip-cert-verify": true,
+      "sni": "bing.com",
+      "tls": true,
+      "type": "hysteria",
+      "up": "11"
+    },
+    {
+      "alpn": [
+        "h3"
+      ],
+      "auth-str": "dongtaiwang.com",
+      "down": "55",
+      "name": "🇫🇷_FR_法国_IPV4",
+      "password": "dongtaiwang.com",
+      "port": 24667,
+      "server": "62.210.124.132",
+      "servername": "bing.com",
+      "skip-cert-verify": true,
+      "sni": "bing.com",
+      "tls": true,
+      "type": "hysteria",
+      "up": "11"
+    },
+    {
       "client-fingerprint": "firefox",
       "name": "🇺🇸_US_美国->🇩🇪_DE_德国_IPV4",
       "network": "ws",
@@ -102,6 +153,16 @@
       }
     },
     {
+      "cipher": "aes-256-gcm",
+      "name": "🇷🇺_RU_俄罗斯->🇺🇸_US_美国_IPV4",
+      "password": "Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE",
+      "port": 18443,
+      "server": "48.103.218.241",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "ss"
+    },
+    {
       "client-fingerprint": "chrome",
       "name": "🇸🇬_SG_新加坡_IPV4 (2)",
       "network": "ws",
@@ -126,7 +187,30 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4",
+      "name": "🇯🇵_JP_日本_IPV4",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "7PBmAR6CGAh2naIi09rlP_PtmLmqhlXF_toZEdAHmRo",
+        "short-id": "7c6d6833"
+      },
+      "server": "139.162.91.239",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "b0dc852a-97ec-4d4e-9179-f0e5c2ef1489",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (2)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -149,7 +233,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (2)",
+      "name": "🇺🇸_US_美国_IPV4 (3)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -195,7 +279,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇯🇵_JP_日本_IPV4",
+      "name": "🇯🇵_JP_日本_IPV4 (2)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -218,7 +302,30 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (3)",
+      "name": "🇯🇵_JP_日本_IPV4 (3)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
+        "short-id": "0784b134"
+      },
+      "server": "172.105.203.15",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (4)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -241,7 +348,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (4)",
+      "name": "🇺🇸_US_美国_IPV4 (5)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -287,7 +394,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇯🇵_JP_日本_IPV4 (2)",
+      "name": "🇯🇵_JP_日本_IPV4 (4)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -310,7 +417,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (5)",
+      "name": "🇺🇸_US_美国_IPV4 (6)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -333,7 +440,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (6)",
+      "name": "🇺🇸_US_美国_IPV4 (7)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -356,7 +463,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (7)",
+      "name": "🇺🇸_US_美国_IPV4 (8)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -379,7 +486,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (8)",
+      "name": "🇺🇸_US_美国_IPV4 (9)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -402,7 +509,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (9)",
+      "name": "🇺🇸_US_美国_IPV4 (10)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -425,7 +532,30 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (10)",
+      "name": "🇯🇵_JP_日本_IPV4 (5)",
+      "network": "ws",
+      "port": 443,
+      "reality-opts": {
+        "public-key": "mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg",
+        "short-id": "bd6e3e70"
+      },
+      "server": "139.162.125.126",
+      "servername": "itunes.apple.com",
+      "skip-cert-verify": false,
+      "sni": "itunes.apple.com",
+      "tls": true,
+      "type": "vless",
+      "uuid": "eb6cf336-03bd-4dac-9f2a-3e456389279e",
+      "ws-opts": {
+        "headers": {
+          "Host": "itunes.apple.com"
+        },
+        "path": "/ws"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "🇺🇸_US_美国_IPV4 (11)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -448,7 +578,7 @@
     },
     {
       "client-fingerprint": "chrome",
-      "name": "🇺🇸_US_美国_IPV4 (11)",
+      "name": "🇺🇸_US_美国_IPV4 (12)",
       "network": "ws",
       "port": 443,
       "reality-opts": {
@@ -470,37 +600,15 @@
       }
     },
     {
-      "name": "🇯🇵_JP_日本_IPV4 (3)",
+      "name": "🇨🇳_CN_中国_IPV4",
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
-      "port": 20051,
-      "server": "sclass-b1.catcat321.com",
+      "port": 20103,
+      "server": "sclass-01.catcat321.com",
       "servername": "hk.catxstar.com",
       "skip-cert-verify": false,
       "sni": "hk.catxstar.com",
       "tls": true,
       "type": "trojan"
-    },
-    {
-      "name": "🇫🇷_FR_法国_IPV6",
-      "password": "dongtaiwang.com",
-      "port": 22000,
-      "server": "2001:bc8:32d7:17b::3",
-      "servername": "www.microsoft.com",
-      "skip-cert-verify": true,
-      "sni": "www.microsoft.com",
-      "tls": true,
-      "type": "hysteria2"
-    },
-    {
-      "name": "🇺🇸_US_美国_IPV4 (12)",
-      "password": "https://xship.2fa.cat",
-      "port": 443,
-      "server": "starlink-ft.251313.xyz",
-      "servername": "xship.top",
-      "skip-cert-verify": true,
-      "sni": "xship.top",
-      "tls": true,
-      "type": "hysteria2"
     },
     {
       "client-fingerprint": "firefox",
@@ -580,83 +688,6 @@
         },
         "path": "/hls/cctv5phd.m3u8"
       }
-    },
-    {
-      "alterId": 0,
-      "cipher": "auto",
-      "client-fingerprint": "chrome",
-      "name": "🇺🇸 机场推荐:dafei.de 美国 15_IPV4",
-      "network": "ws",
-      "port": 443,
-      "server": "172.67.190.164",
-      "servername": "guanwang.awsno.com",
-      "sni": "guanwang.awsno.com",
-      "tls": true,
-      "type": "vmess",
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "ws-opts": {
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        },
-        "path": "/hls/cctv5phd.m3u8"
-      }
-    },
-    {
-      "name": "🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4",
-      "password": "0324fbc29561",
-      "port": 443,
-      "server": "sdf65h46wr.df6h451rh.xin",
-      "servername": "images.ctfassets.net",
-      "skip-cert-verify": true,
-      "sni": "images.ctfassets.net",
-      "tls": true,
-      "type": "anytls"
-    },
-    {
-      "alpn": [
-        "h3"
-      ],
-      "auth-str": "dongtaiwang.com",
-      "down": "55",
-      "name": "🇩🇪_DE_德国_IPV4",
-      "password": "dongtaiwang.com",
-      "port": 54177,
-      "server": "5.83.129.90",
-      "servername": "apple.com",
-      "skip-cert-verify": true,
-      "sni": "apple.com",
-      "tls": true,
-      "type": "hysteria",
-      "up": "11"
-    },
-    {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.27",
-      "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
-    },
-    {
-      "cipher": "aes-256-gcm",
-      "name": "🇮🇹_IT_意大利_IPV4 (2)",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "port": 19999,
-      "server": "202.50.253.36",
-      "skip-cert-verify": false,
-      "tls": false,
-      "type": "ss"
-    },
-    {
-      "name": "🇺🇸_US_美国_IPV4 (12",
-      "password": "",
-      "port": 443,
-      "server": "https",
-      "skip-cert-verify": true,
-      "sni": "xship.top",
-      "type": "hysteria2"
     },
     {
       "client-fingerprint": "chrome",
@@ -2113,5 +2144,5 @@
   ],
   "schema": 1,
   "source": "collect_sources",
-  "total": 142
+  "total": 141
 }
