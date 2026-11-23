@@ -3,916 +3,457 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: jszzlanand.pages.dev xhttp
+- name: SG
+  type: vmess
+  server: 170.187.229.90
+  port: 80
+  uuid: 9bda13eb-66bb-4ff5-b01c-aa7c2d291412
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: shoutingtoutiao3.10010.com
+    path: /images
+- name: 美国  port:2087,2083,2053,2096
   type: vless
-  server: jszzlanand.pages.dev
+  server: vlso4.1d.mom
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vlso4.1d.mom
+  ws-opts:
+    path: /
+    headers:
+      Host: vlso4.1d.mom
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4
+  server: 137.175.82.41
+  port: 20022
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (2)
+  server: 38.6.222.132
+  port: 11008
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: hysteria
+  name: 🇺🇸_US_美国_IPV4 (3)
+  server: 38.6.222.131
+  port: 11008
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: vless
+  name: 🇷🇺_RU_俄罗斯_IPV4
+  server: 136.148.83.69
   port: 443
-  uuid: b95ed9ae-517c-4905-b051-b8873c99a1b6
-  network: xhttp
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: true
   client-fingerprint: chrome
-  servername: jszzlanand.pages.dev
-- name: jszzlanand.pages.dev ws
-  type: trojan
-  server: 82.27.116.181
+- type: ss
+  name: 🇩🇪_DE_德国_IPV4
+  server: 47.254.128.109
   port: 443
-  password: b95ed9ae-517c-4905-b051-b8873c99a1b6
-  sni: jszzlanand.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: jszzlanand.pages.dev
-- name: HK三网精品线路 100MB/S
-  type: trojan
-  server: ja304.magiclampcloud.cn
-  port: 59443
-  password: 06cf12a7fab279375e55e2f0cfdef381
-  sni: ja304.magiclampcloud.cn
-- name: MO-优选01🇲🇴
-  type: vless
-  server: 104.18.35.183
-  port: 2096
-  uuid: f2f20749-f037-4b7a-a5c0-dbd4e3ef8535
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mo01.618885.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: mo01.618885.xyz
-- name: 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-1
-  type: vmess
-  server: v57.emfast.top
-  port: 7783
-  uuid: 06e20e17-3298-4f06-a8cf-219aead5d5c1
-  alterId: 0
-  cipher: auto
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: v57.emfast.top
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-2
-  type: vmess
-  server: v59.emfast.top
-  port: 6796
-  uuid: 06e20e17-3298-4f06-a8cf-219aead5d5c1
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: v59.emfast.top
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-3
-  type: vmess
-  server: v56.emfast.top
-  port: 8853
-  uuid: 06e20e17-3298-4f06-a8cf-219aead5d5c1
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: v56.emfast.top
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-8
-  type: vmess
-  server: pdmv4.xiaoyan.io
-  port: 16622
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-11
-  type: vless
-  server: dt.toe.qd.je
-  port: 2106
-  uuid: 46c66350-50b1-41e7-a6ff-39b519b38520
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-29
-  type: vless
-  server: dt.toe.qd.je
-  port: 2009
-  uuid: 5c8eb414-e705-4001-9fec-57701b8040ba
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-32
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 2305
-  uuid: 275ef07e-9224-49eb-a16a-387e474ffa78
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-33
-  type: vless
-  server: dt.toe.qd.je
-  port: 1501
-  uuid: 306fdab7-f400-41f3-999c-c499772a58ac
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-34
-  type: vless
-  server: dt.toe.qd.je
-  port: 2007
-  uuid: 33b74cef-bda1-4829-a098-5f234a845206
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-35
-  type: vless
-  server: dt.toe.qd.je
-  port: 2103
-  uuid: 4107b52a-9ee4-4aac-99e1-f1ea02cf05ca
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-36
-  type: vless
-  server: dt.toe.qd.je
-  port: 1101
-  uuid: 54a3f5df-ab8d-49c8-924e-37645218af65
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-37
-  type: vless
-  server: dt.toe.qd.je
-  port: 1200
-  uuid: 77edc221-4fa8-4a2f-a546-6c06459d677f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-39
-  type: vmess
-  server: v39.emfast.top
-  port: 8896
-  uuid: 06e20e17-3298-4f06-a8cf-219aead5d5c1
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: v39.emfast.top
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-40
-  type: vmess
-  server: byr3a.xiaoyan.io
-  port: 16618
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-44
-  type: vmess
-  server: pdmv4.xiaoyan.io
-  port: 16618
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-50
-  type: vless
-  server: dt.toe.qd.je
-  port: 1100
-  uuid: 5630f548-4ee2-4b64-aaa8-2ea7fe643391
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-51
-  type: vless
-  server: dt.toe.qd.je
-  port: 2309
-  uuid: fc62d045-a0d5-477a-95b3-233beea663c8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-55
-  type: vless
-  server: 138.2.86.205
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪_DE_德国_IPV4 (2)
+  server: 47.254.167.157
   port: 443
-  uuid: b2d4f6a8-1c3e-4a5b-9d7f-2e4a6c8b0d1f
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  ws-opts:
-    path: /7b9977b2af9da85fa86adc065c362efe
-    headers:
-      Host: www.microsoft.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-56
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 2304
-  uuid: 826737f8-d10e-41ae-8623-b09247c567ad
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-57
-  type: vless
-  server: dt.toe.qd.je
-  port: 2006
-  uuid: 5c8c4909-8636-4392-ae1d-d9a88f79cf4e
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-58
-  type: vless
-  server: dt.toe.qd.je
-  port: 2102
-  uuid: 2a121a98-4c1b-4842-ad60-bb17f3f458c5
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-59
-  type: vless
-  server: dt.toe.qd.je
-  port: 2107
-  uuid: 874992e8-b175-4281-a36a-ae534a61bee0
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-60
-  type: vless
-  server: dt.toe.qd.je
-  port: 1102
-  uuid: ab7ae4f7-3778-4c14-9ed2-1f169484d207
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-61
-  type: vless
-  server: dt.toe.qd.je
-  port: 1201
-  uuid: c1f4b101-6388-4143-82e6-1d68e1291eed
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-62
-  type: vmess
-  server: 104.18.42.163
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-  servername: guanwang.awsno.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-63
-  type: vmess
-  server: 188.114.99.137
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-  servername: guanwang.awsno.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-64
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-  servername: guanwang.awsno.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-67
-  type: vmess
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  tls: false
+  skip-cert-verify: false
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 26_IPV4
   server: www.shopify.com
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
   cipher: auto
+  alterId: 0
   tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
   network: ws
   ws-opts:
+    path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
+- type: vless
+  name: 🇯🇵_JP_日本_IPV4
+  server: 149.28.29.156
+  port: 443
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇯🇵_JP_日本_IPV4 (2)
+  server: 198.13.53.39
+  port: 443
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇹🇼_TW_台湾_IPV4
+  server: free.fugui.lol
+  port: 47396
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  flow: xtls-rprx-vision
+  tls: true
+  servername: swdist.apple.com
+  sni: swdist.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+- type: vless
+  name: 🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4
+  server: 163.245.42.87
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mother-earth.fyi
+  sni: mother-earth.fyi
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- type: hysteria
+  name: 🇫🇷_FR_法国_IPV4
+  server: 62.210.124.132
+  port: 24667
+  password: dongtaiwang.com
+  tls: true
+  servername: bing.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  up: '11'
+  down: '55'
+  auth-str: dongtaiwang.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (4)
+  server: 45.32.70.42
+  port: 443
+  uuid: 8c392beb-524d-4d0a-a3a6-4d542d54a1ff
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cQZ-dTY4QSQteDYpngP2PavOsn9yY9lIP-OscwzwAio
+    short-id: 4dda4608
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (5)
+  server: 172.236.227.60
+  port: 443
+  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
+    short-id: 664c1530
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (6)
+  server: 172.233.142.149
+  port: 443
+  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
+    short-id: 4206512a
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇸🇬_SG_新加坡_IPV4
+  server: 139.180.221.53
+  port: 443
+  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
+    short-id: 2f6f6f87
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇯🇵_JP_日本_IPV4 (3)
+  server: 45.76.222.108
+  port: 443
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (7)
+  server: 172.236.241.130
+  port: 443
+  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
+    short-id: 51ecfe9e
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (8)
+  server: 107.191.58.86
+  port: 443
+  uuid: 4444e77e-3d2a-4dc9-bf31-936f038f5570
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZZwZGoX0Us8t6nLvckDWskC1c25F9rL0_nUXmd8BFxQ
+    short-id: 8dd324c1
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: vless
+  name: 🇺🇸_US_美国_IPV4 (9)
+  server: 172.233.129.172
+  port: 443
+  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
+  tls: true
+  servername: itunes.apple.com
+  sni: itunes.apple.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
+    short-id: 5818adc3
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- type: trojan
+  name: 🇨🇳_CN_中国_IPV4
+  server: sclass-01.catcat321.com
+  port: 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  tls: true
+  servername: hk.catxstar.com
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- type: hysteria2
+  name: 🇺🇸_US_美国_IPV4 (10)
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.2fa.cat
+  tls: true
+  servername: xship.top
+  sni: xship.top
+  skip-cert-verify: true
+- type: vless
+  name: 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  server: 196.196.148.63
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 717252g.nl8.h1clayd.click
+  sni: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
   servername: guanwang.awsno.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-68
-  type: ss
-  server: 103.232.93.17
-  port: 8443
-  cipher: 2022-blake3-aes-128-gcm
-  password: qT1+kd0KB5v6sUmEyHdVJQ==
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-71
-  type: vmess
-  server: pdmv4.xiaoyan.io
-  port: 16648
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: vmess
+  name: '@DeltaKroneckerGithub_3021_IPV4'
+  server: 172.64.145.93
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-73
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 1003
-  uuid: 17d68601-96e8-4cc2-9740-5fef3492492f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-74
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 2317
-  uuid: c4840ca5-3b32-4e51-bcba-cd7b1d486806
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-75
-  type: vless
-  server: dt.toe.qd.je
-  port: 1500
-  uuid: 2dab8ba1-d318-426e-82f2-77ff288db3ff
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-76
-  type: vless
-  server: dt.toe.qd.je
-  port: 2300
-  uuid: 40183e77-40a7-40c3-935b-161f6f9f42bc
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-77
-  type: vless
-  server: dt.toe.qd.je
-  port: 2302
-  uuid: 68396385-3176-4a33-a8b3-bba958384938
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-78
-  type: vless
-  server: dt.toe.qd.je
-  port: 1000
-  uuid: 0ba6d489-20b6-4297-8f30-74bcb65032bc
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-79
-  type: vless
-  server: dt.toe.qd.je
-  port: 1400
-  uuid: b7a1eafd-ed5f-43ca-a96b-ca2c1d15ed29
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-80
-  type: vless
-  server: 48.102.205.89
-  port: 22444
-  uuid: a9ff24d3-f308-4e72-acb9-a76062583837
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: fontanka.ru
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-81
-  type: vless
-  server: 104.18.15.19
-  port: 8443
-  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
-  network: ws
-  tls: true
-  client-fingerprint: random
-  servername: hk.zhaoqing.city
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: hk.zhaoqing.city
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-82
-  type: vless
-  server: 104.20.63.254
-  port: 443
-  uuid: cd3d8e5c-794f-4c34-8222-59d3e99e35fe
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: joeypg.ezbiz.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: joeypg.ezbiz.dynv6.net
-- name: 𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-86
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 2109
-  uuid: 06dd972d-3916-4ac3-a1de-6def65c751e8
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-87
-  type: vless
-  server: dt.toe.qd.je
-  port: 1300
-  uuid: 54921a59-90d2-471a-a4f4-3478b9dfcc64
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-88
-  type: vmess
-  server: v61.emfast.top
-  port: 8745
-  uuid: 06e20e17-3298-4f06-a8cf-219aead5d5c1
   alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: vmess
+  name: 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- type: anytls
+  name: 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
+  server: sdf65h46wr.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  tls: true
+  servername: images.ctfassets.net
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4
+  server: 202.50.253.27
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
   tls: false
-  network: ws
-  ws-opts:
-    headers:
-      Host: v61.emfast.top
-    path: /
-- name: 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-92
-  type: vless
-  server: dt.toe.qd.je
-  port: 1002
-  uuid: 7a3f1084-b223-4f39-baba-22a3223900dd
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-93
-  type: vless
-  server: dt.toe.qd.je
-  port: 1600
-  uuid: 1d9a2ecd-22a6-4fbe-990c-342526cff163
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-94
-  type: vless
-  server: 191.217.215.186
-  port: 2053
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: 191.217.215.186
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-96
-  type: vless
-  server: 146.103.42.165
-  port: 9543
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: storage.yandexcloud.net
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-98
-  type: vless
-  server: 8a2e72t.nl20.h1clayd.shop
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (2)
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹_IT_意大利_IPV4 (3)
+  server: 202.50.253.90
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸_US_美国_IPV4 (10
+  type: hysteria2
+  server: https
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: 8a2e72t.nl20.h1clayd.shop
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇫🇷法国-101
-  type: vless
-  server: dt.toe.qd.je
-  port: 2003
-  uuid: e170bfd0-fa5b-4901-a0dc-2a0d67bbe51a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-102
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
-  tls: true
-  client-fingerprint: firefox
-  servername: 5d0319t.nl7.h1clayd.click
-- name: 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-103
-  type: vless
-  server: dt.toe.qd.je
-  port: 2005
-  uuid: 8b30ac57-2106-4281-a701-c8ee70f9fd85
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-104
-  type: vless
-  server: 48.102.173.125
-  port: 444
-  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: neplay603.gangtype.com
-  ws-opts:
-    path: /stream/updates/a66d7902
-    headers:
-      Host: neplay603.gangtype.com
-- name: 𝑮𝒓𝒆𝒆𝒏-🇦🇺澳大利亚-106
-  type: vless
-  server: dt.toe.qd.je
-  port: 2000
-  uuid: 5b3e65b8-f6ce-48ca-a97a-9d08aed5a661
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇲🇾马来西亚-107
-  type: vless
-  server: dt.toe.qd.je
-  port: 2004
-  uuid: 11c196ec-06da-436c-80c3-3e89125c8345
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-108
-  type: vless
-  server: dtt4.toe.qd.je
-  port: 2104
-  uuid: 31df66b3-7f8b-4915-a7be-34d37b5b8712
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-109
-  type: vless
-  server: dt.toe.qd.je
-  port: 1301
-  uuid: 43caafac-fa22-463b-ae3a-ddd50e6dfc1d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-110
-  type: vless
-  server: hsaia.connainho.lol
-  port: 46074
-  uuid: c74a51bc-0e10-43e5-b6a8-9395c40f3f54
-  network: tcp
-  tls: true
-  client-fingerprint: edge
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-111
-  type: vless
-  server: dt.toe.qd.je
-  port: 2105
-  uuid: 712fe6c3-5657-457a-b03b-1120f7e7ffaf
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇮🇳印度-112
-  type: vless
-  server: dt.toe.qd.je
-  port: 2008
-  uuid: e9b9cfbe-c1ac-4239-b4d3-661bb248180d
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇹🇷土耳其-113
-  type: vless
-  server: dt.toe.qd.je
-  port: 2306
-  uuid: 5f7c0f46-20f2-48ce-8db1-179caf5d43be
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇷🇺俄罗斯-115
-  type: vless
-  server: dt.toe.qd.je
-  port: 1401
-  uuid: a2d4b269-49c8-48ac-92db-ffcfa7179105
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇦🇪阿联酋-116
-  type: vless
-  server: dt.toe.qd.je
-  port: 2315
-  uuid: 5a84222c-05b8-422f-a7e0-ab77f7cdc7ab
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇦🇷阿根廷-117
-  type: vless
-  server: dt.toe.qd.je
-  port: 2312
-  uuid: 434b933f-7068-4225-b7b9-05212ba9b427
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇧🇷巴西-118
-  type: vless
-  server: dt.toe.qd.je
-  port: 2001
-  uuid: 6b684c85-cdcc-478f-b9dd-6600412f9a23
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇨🇱智利-119
-  type: vless
-  server: dt.toe.qd.je
-  port: 2303
-  uuid: 907604cf-19bc-46f6-90f7-f8a8da04ec93
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇩🇰丹麦-120
-  type: vless
-  server: dt.toe.qd.je
-  port: 2311
-  uuid: 195b9dad-4c6d-4e80-8715-a395435c7e3f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇪🇬埃及-121
-  type: vless
-  server: dt.toe.qd.je
-  port: 2101
-  uuid: 9858437c-40da-48e9-b9d3-678659f5f746
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇮🇶伊拉克-123
-  type: vless
-  server: 15b171g.nl7.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 15b171g.nl7.h1clayd.click
-- name: 𝑮𝒓𝒆𝒆𝒏-🇮🇶伊拉克-126
-  type: vless
-  server: 196.245.52.183
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 15b171g.nl7.h1clayd.click
-- name: 𝑮𝒓𝒆𝒆𝒏-🇮🇩印度尼西亚-128
-  type: vless
-  server: dt.toe.qd.je
-  port: 2108
-  uuid: e9c16e62-d28b-4b07-82ee-786a5d3e1ce4
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-129
-  type: vless
-  server: dt.toe.qd.je
-  port: 1103
-  uuid: 907cc764-e547-4117-9a6b-0711285ac430
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-130
-  type: vless
-  server: dt.toe.qd.je
-  port: 2100
-  uuid: 00d75756-3770-494a-8c97-2c4565ba63ee
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇲🇽墨西哥-131
-  type: vless
-  server: dt.toe.qd.je
-  port: 2313
-  uuid: d066e19f-6d93-4abd-91d0-6843a7fba6d9
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇳🇴挪威-132
-  type: vless
-  server: dt.toe.qd.je
-  port: 2314
-  uuid: 2ba72510-d270-4605-a9b9-d77a827cd769
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇵🇭菲律宾-133
-  type: vless
-  server: dt.toe.qd.je
-  port: 2310
-  uuid: ffeb2af7-2ac2-4ef2-b5c0-5f285f0874b1
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇵🇱波兰-134
-  type: vless
-  server: dt.toe.qd.je
-  port: 1601
-  uuid: 5703e170-c53a-42f8-bbfc-b947f14126ba
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇦沙特阿拉伯-136
-  type: vless
-  server: dt.toe.qd.je
-  port: 2307
-  uuid: 1c005593-89a5-4350-99ac-3f77b21c447f
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇪瑞典-137
-  type: vless
-  server: dt.toe.qd.je
-  port: 2316
-  uuid: 84354970-573d-4c9c-a0b8-536468fe9719
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇸🇳塞内加尔-138
-  type: vless
-  server: dt.toe.qd.je
-  port: 2301
-  uuid: 0f652f39-b422-48c1-b630-a17bb33475f9
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇦乌克兰-139
-  type: vless
-  server: dt.toe.qd.je
-  port: 2308
-  uuid: dfcfade4-089b-456a-b6bc-deb9e5777fc1
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 𝑮𝒓𝒆𝒆𝒏-🇺🇬乌干达-140
-  type: vless
-  server: dt.toe.qd.je
-  port: 2002
-  uuid: e426c4cf-cf48-49a2-a8e1-e10c0dc12402
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  flow: xtls-rprx-vision
-- name: 剩余流量：99953.73 GB
-  type: vless
-  server: cdn.8211992.xyz
-  port: 443
-  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: mao.kipfelmao.de5.net
-  ws-opts:
-    path: /api/v1/guests/profiles/5de14443985f/
-    headers:
-      Host: mao.kipfelmao.de5.net
+  password: ''
+  sni: xship.top
+  skip-cert-verify: true
 - name: end-gfw-sg3-VLESS
   type: vless
   server: 54.169.105.85
@@ -1001,49 +542,6 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: mail-verify.io3.sg
-  flow: xtls-rprx-vision
-- name: US美国(v2clash.blog 2026-11.1更新
-  type: trojan
-  server: 104.27.203.207
-  port: 443
-  password: humanity
-  sni: www.pleadcourt.org
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: 'US美国(v2clash.blog 2026-11.1更新 #2'
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: CA加拿大(v2clash.blog 2026-11.1更新
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  network: ws
-  ws-opts:
-    path: /assignment?TELEGRAM--CONFIG7X--CONFIG7X
-    headers:
-      Host: www.calmlunch.com
-- name: JP日本(v2clash.blog 2026-11.1更新
-  type: vless
-  server: jp.huahua.wiki
-  port: 443
-  uuid: ef857676-6b00-4c1b-8d98-712dd355230a
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.apple.com
   flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-11.2更新
   type: vless
@@ -1683,6 +1181,15 @@ proxies:
   tls: true
   client-fingerprint: chrome
   servername: accounts.fastly.com
+- name: US美国(v2clash.blog 2026-11.14更新
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: 5d0319t.nl7.h1clayd.click
 - name: CA加拿大(v2clash.blog 2026-11.14更新
   type: vless
   server: 104.18.162.1
@@ -1763,15 +1270,6 @@ proxies:
   client-fingerprint: ios
   servername: www.apple.com
   flow: xtls-rprx-vision
-- name: 'US美国(v2clash.blog 2026-11.17更新 #2'
-  type: vless
-  server: 196.196.148.63
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: grpc
-  tls: true
-  client-fingerprint: firefox
-  servername: 717252g.nl8.h1clayd.click
 - name: 立陶宛(v2clash.blog 2026-11.18更新
   type: vless
   server: 84.32.54.237
@@ -1863,6 +1361,16 @@ proxies:
     path: /
     headers:
       Host: cdn.lahjy.xyz
+- name: NL荷兰(v2clash.blog 2026-11.19更新
+  type: vless
+  server: 8a2e72t.nl20.h1clayd.shop
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: 8a2e72t.nl20.h1clayd.shop
+  flow: xtls-rprx-vision
 - name: US美国(v2clash.blog 2026-11.20更新)
   type: vmess
   server: 179.43.140.24
@@ -1925,6 +1433,15 @@ proxies:
   client-fingerprint: firefox
   servername: 8a2e72t.nl20.h1clayd.shop
   flow: xtls-rprx-vision
+- name: 塞舌尔(v2clash.blog 2026-11.21更新
+  type: vless
+  server: 196.245.52.183
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: xhttp
+  tls: true
+  client-fingerprint: firefox
+  servername: e60833x.nl7.h1clayd.click
 - name: US美国(v2clash.blog 2026-11.22更新
   type: vless
   server: 178.17.53.154
@@ -1944,106 +1461,79 @@ proxies:
   client-fingerprint: chrome
   servername: swdist.apple.com
   flow: xtls-rprx-vision
-- name: 'TW台湾(v2clash.blog 2026-11.22更新 #2'
+- name: NL荷兰(v2clash.blog 2026-11.23更新
   type: vless
-  server: free.fugui.lol
-  port: 47396
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  network: tcp
+  server: 48.102.173.125
+  port: 444
+  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
+  network: ws
   tls: true
   client-fingerprint: chrome
-  servername: swdist.apple.com
+  servername: neplay603.gangtype.com
+  ws-opts:
+    path: /stream/updates/a66d7902
+    headers:
+      Host: neplay603.gangtype.com
+- name: US美国(v2clash.blog 2026-11.23更新
+  type: vless
+  server: 13.143.187.220
+  port: 443
+  uuid: 66c78912-4e2d-41dc-8742-aaae2590804e
+  network: tcp
+  tls: true
+  client-fingerprint: firefox
+  servername: fi-s1.kadrhub.tech
   flow: xtls-rprx-vision
+- name: 'US美国(v2clash.blog 2026-11.23更新 #2'
+  type: vless
+  server: 104.17.136.102
+  port: 2087
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: rezanoori4295.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: rezanoori4295.pages.dev
 proxy-groups:
 - name: PROBE
   type: select
   proxies:
-  - jszzlanand.pages.dev xhttp
-  - jszzlanand.pages.dev ws
-  - HK三网精品线路 100MB/S
-  - MO-优选01🇲🇴
-  - 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-1
-  - 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-2
-  - 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-3
-  - 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-8
-  - 𝑮𝒓𝒆𝒆𝒏-🇭🇰香港-11
-  - 𝑮𝒓𝒆𝒆𝒏-🇨🇳台湾-29
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-32
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-33
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-34
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-35
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-36
-  - 𝑮𝒓𝒆𝒆𝒏-🇯🇵日本-37
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-39
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-40
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-44
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-50
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-51
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇬新加坡-55
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-56
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-57
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-58
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-59
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-60
-  - 𝑮𝒓𝒆𝒆𝒏-🇰🇷韩国-61
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-62
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-63
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-64
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-67
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-68
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-71
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-73
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-74
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-75
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-76
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-77
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-78
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-79
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-80
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-81
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇸美国-82
-  - 𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-86
-  - 𝑮𝒓𝒆𝒆𝒏-🇨🇦加拿大-87
-  - 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-88
-  - 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-92
-  - 𝑮𝒓𝒆𝒆𝒏-🇬🇧英国-93
-  - 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-94
-  - 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-96
-  - 𝑮𝒓𝒆𝒆𝒏-🇩🇪德国-98
-  - 𝑮𝒓𝒆𝒆𝒏-🇫🇷法国-101
-  - 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-102
-  - 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-103
-  - 𝑮𝒓𝒆𝒆𝒏-🇳🇱荷兰-104
-  - 𝑮𝒓𝒆𝒆𝒏-🇦🇺澳大利亚-106
-  - 𝑮𝒓𝒆𝒆𝒏-🇲🇾马来西亚-107
-  - 𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-108
-  - 𝑮𝒓𝒆𝒆𝒏-🇹🇭泰国-109
-  - 𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-110
-  - 𝑮𝒓𝒆𝒆𝒏-🇻🇳越南-111
-  - 𝑮𝒓𝒆𝒆𝒏-🇮🇳印度-112
-  - 𝑮𝒓𝒆𝒆𝒏-🇹🇷土耳其-113
-  - 𝑮𝒓𝒆𝒆𝒏-🇷🇺俄罗斯-115
-  - 𝑮𝒓𝒆𝒆𝒏-🇦🇪阿联酋-116
-  - 𝑮𝒓𝒆𝒆𝒏-🇦🇷阿根廷-117
-  - 𝑮𝒓𝒆𝒆𝒏-🇧🇷巴西-118
-  - 𝑮𝒓𝒆𝒆𝒏-🇨🇱智利-119
-  - 𝑮𝒓𝒆𝒆𝒏-🇩🇰丹麦-120
-  - 𝑮𝒓𝒆𝒆𝒏-🇪🇬埃及-121
-  - 𝑮𝒓𝒆𝒆𝒏-🇮🇶伊拉克-123
-  - 𝑮𝒓𝒆𝒆𝒏-🇮🇶伊拉克-126
-  - 𝑮𝒓𝒆𝒆𝒏-🇮🇩印度尼西亚-128
-  - 𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-129
-  - 𝑮𝒓𝒆𝒆𝒏-🇲🇦摩洛哥-130
-  - 𝑮𝒓𝒆𝒆𝒏-🇲🇽墨西哥-131
-  - 𝑮𝒓𝒆𝒆𝒏-🇳🇴挪威-132
-  - 𝑮𝒓𝒆𝒆𝒏-🇵🇭菲律宾-133
-  - 𝑮𝒓𝒆𝒆𝒏-🇵🇱波兰-134
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇦沙特阿拉伯-136
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇪瑞典-137
-  - 𝑮𝒓𝒆𝒆𝒏-🇸🇳塞内加尔-138
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇦乌克兰-139
-  - 𝑮𝒓𝒆𝒆𝒏-🇺🇬乌干达-140
-  - 剩余流量：99953.73 GB
+  - SG
+  - 美国  port:2087,2083,2053,2096
+  - 🇺🇸_US_美国_IPV4
+  - 🇺🇸_US_美国_IPV4 (2)
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇷🇺_RU_俄罗斯_IPV4
+  - 🇩🇪_DE_德国_IPV4
+  - 🇩🇪_DE_德国_IPV4 (2)
+  - 🇺🇸 机场推荐:dafei.de 美国 26_IPV4
+  - 🇯🇵_JP_日本_IPV4
+  - 🇯🇵_JP_日本_IPV4 (2)
+  - 🇹🇼_TW_台湾_IPV4
+  - 🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4
+  - 🇫🇷_FR_法国_IPV4
+  - 🇺🇸_US_美国_IPV4 (4)
+  - 🇺🇸_US_美国_IPV4 (5)
+  - 🇺🇸_US_美国_IPV4 (6)
+  - 🇸🇬_SG_新加坡_IPV4
+  - 🇯🇵_JP_日本_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (7)
+  - 🇺🇸_US_美国_IPV4 (8)
+  - 🇺🇸_US_美国_IPV4 (9)
+  - 🇨🇳_CN_中国_IPV4
+  - 🇺🇸_US_美国_IPV4 (10)
+  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - '@DeltaKroneckerGithub_3021_IPV4'
+  - 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
+  - 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
+  - 🇮🇹_IT_意大利_IPV4
+  - 🇮🇹_IT_意大利_IPV4 (2)
+  - 🇮🇹_IT_意大利_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (10
   - end-gfw-sg3-VLESS
   - end-gfw-sg33-VLESS
   - US VLESS-11 | free-nodes
@@ -2053,10 +1543,6 @@ proxy-groups:
   - SG VLESS-15 | free-nodes
   - end-gfw-kr3-VLESS
   - 'end-gfw-sg3-VLESS #2'
-  - US美国(v2clash.blog 2026-11.1更新
-  - 'US美国(v2clash.blog 2026-11.1更新 #2'
-  - CA加拿大(v2clash.blog 2026-11.1更新
-  - JP日本(v2clash.blog 2026-11.1更新
   - US美国(v2clash.blog 2026-11.2更新
   - 'US美国(v2clash.blog 2026-11.2更新 #2'
   - NL荷兰(v2clash.blog 2026-11.2更新
@@ -2115,6 +1601,7 @@ proxy-groups:
   - DE德国(v2clash.blog 2026-11.12更新
   - US美国(v2clash.blog 2026-11.12更新
   - 'US美国(v2clash.blog 2026-11.12更新 #2'
+  - US美国(v2clash.blog 2026-11.14更新
   - CA加拿大(v2clash.blog 2026-11.14更新
   - NL荷兰(v2clash.blog 2026-11.14更新
   - JP日本(v2clash.blog 2026-11.14更新
@@ -2123,7 +1610,6 @@ proxy-groups:
   - JP日本(v2clash.blog 2026-11.17更新
   - US美国(v2clash.blog 2026-11.17更新
   - 'JP日本(v2clash.blog 2026-11.17更新 #2'
-  - 'US美国(v2clash.blog 2026-11.17更新 #2'
   - 立陶宛(v2clash.blog 2026-11.18更新
   - GB英国mibei77.com 米贝节点分享)(v2clash.blog 2026-11.18更新
   - DE德国(v2clash.blog 2026-11.18更新
@@ -2133,14 +1619,18 @@ proxy-groups:
   - 西班牙(v2clash.blog 2026-11.19更新
   - SG新加坡(v2clash.blog 2026-11.19更新
   - US美国(v2clash.blog 2026-11.19更新
+  - NL荷兰(v2clash.blog 2026-11.19更新
   - US美国(v2clash.blog 2026-11.20更新)
   - TW台湾(v2clash.blog 2026-11.20更新
   - 瑞典(v2clash.blog 2026-11.20更新
   - RU俄罗斯(v2clash.blog 2026-11.21更新
   - 'RU俄罗斯(v2clash.blog 2026-11.21更新 #2'
   - 西班牙(v2clash.blog 2026-11.21更新
+  - 塞舌尔(v2clash.blog 2026-11.21更新
   - US美国(v2clash.blog 2026-11.22更新
   - TW台湾(v2clash.blog 2026-11.22更新
-  - 'TW台湾(v2clash.blog 2026-11.22更新 #2'
+  - NL荷兰(v2clash.blog 2026-11.23更新
+  - US美国(v2clash.blog 2026-11.23更新
+  - 'US美国(v2clash.blog 2026-11.23更新 #2'
 rules:
 - MATCH,PROBE
