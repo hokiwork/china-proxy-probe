@@ -29,431 +29,383 @@ proxies:
     path: /
     headers:
       Host: vlso4.1d.mom
-- type: hysteria
-  name: 🇺🇸_US_美国_IPV4
-  server: 137.175.82.41
-  port: 20022
-  password: dongtaiwang.com
+- name: Hong Kong 02 ss汐云
+  type: ss
+  server: 121.54.188.7
+  port: 26934
+  cipher: aes-256-gcm
+  password: vyrzxzt9yix5jocj
+- name: udptoos.com 🇺🇸美国 10
+  type: vless
+  server: 38.207.178.137
+  port: 20086
+  uuid: e4e11486-cef7-488a-8b4c-ac51f106383f
+  network: tcp
   tls: true
-  servername: bing.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: '11'
-  down: '55'
-  auth-str: dongtaiwang.com
-- type: hysteria
-  name: 🇺🇸_US_美国_IPV4 (2)
-  server: 38.6.222.132
-  port: 11008
-  password: dongtaiwang.com
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇺🇸美国 09
+  type: vless
+  server: 85.189.89.169
+  port: 20086
+  uuid: 6618c37f-edd7-4ff0-b9d6-26f1cc4945ab
+  network: tcp
   tls: true
-  servername: bing.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: '11'
-  down: '55'
-  auth-str: dongtaiwang.com
-- type: hysteria
-  name: 🇺🇸_US_美国_IPV4 (3)
-  server: 38.6.222.131
-  port: 11008
-  password: dongtaiwang.com
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇺🇸美国 08
+  type: vless
+  server: 38.244.198.105
+  port: 20086
+  uuid: f261bc8c-d2f2-43da-83e7-06ef41ef8aa5
+  network: tcp
   tls: true
-  servername: bing.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: '11'
-  down: '55'
-  auth-str: dongtaiwang.com
-- type: vless
-  name: 🇷🇺_RU_俄罗斯_IPV4
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇺🇸美国 07
+  type: vless
+  server: 38.207.178.113
+  port: 20086
+  uuid: 82db522b-8f2b-45e1-a984-e199a3d3a6db
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇸🇬新加坡 06
+  type: vless
+  server: 38.207.178.28
+  port: 20086
+  uuid: 11a2709f-a1aa-4b97-9212-4d5cb0c83e53
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇸🇬新加坡 05
+  type: vless
+  server: 85.189.89.190
+  port: 20086
+  uuid: f72b7be4-9030-4b35-bc6c-2a202200fcab
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇸🇬新加坡 04
+  type: vless
+  server: 85.189.89.170
+  port: 20086
+  uuid: b5e8a15a-e134-4493-9073-be79eab9cda8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇰🇷韩国 02
+  type: vless
+  server: 38.180.149.224
+  port: 20086
+  uuid: c3f8154e-e6d3-40ce-b53e-7215fd96de5d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇰🇷韩国 01
+  type: vless
+  server: 85.189.89.183
+  port: 20086
+  uuid: 35b08a76-2a3e-4371-8748-2ef9ce27103f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇯🇵日本 08
+  type: vless
+  server: 45.136.14.140
+  port: 20086
+  uuid: 367e69b0-5781-45ad-83bc-94013729532d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇯🇵日本 07
+  type: vless
+  server: 38.180.95.96
+  port: 20086
+  uuid: af18b465-6f56-4a35-8932-fe9ce8c079b7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇯🇵日本 06
+  type: vless
+  server: 85.189.89.182
+  port: 20086
+  uuid: 24bc6f99-bb3c-405b-9f99-e27c5012cf45
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇭🇰香港 06
+  type: vless
+  server: 85.189.67.107
+  port: 20086
+  uuid: 01b87800-396e-4d79-8eaf-c023deeccf7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇭🇰香港 04
+  type: vless
+  server: 38.180.95.2
+  port: 20086
+  uuid: ffc912cc-45da-4ece-86d2-fe340c9ed1fc
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇭🇰香港 03
+  type: vless
+  server: 45.136.15.212
+  port: 20086
+  uuid: 5a66e6cf-ba9f-41c5-8590-036890654e58
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇭🇰香港 01
+  type: vless
+  server: 38.180.149.71
+  port: 20086
+  uuid: 31020df0-6aed-40a6-a84f-25296c07f80a
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇫🇷法国 02
+  type: vless
+  server: 38.180.150.151
+  port: 20086
+  uuid: 71d89729-0d1f-4133-80f8-ff7c5a6ca6d1
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.paypal.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇩🇪德国 04
+  type: vless
+  server: 85.189.89.165
+  port: 20086
+  uuid: e3808bf4-a0db-4828-93d5-ad534d302f1d
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇩🇪德国 03
+  type: vless
+  server: 68.64.181.197
+  port: 20086
+  uuid: cfa9310e-0083-4e06-a664-0381098c148f
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇩🇪德国 02
+  type: vless
+  server: 38.180.95.176
+  port: 20086
+  uuid: 8d5b4bc5-2355-4a43-a386-ea8d20f6c3b8
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.ebay.com
+  flow: xtls-rprx-vision
+- name: udptoos.com 🇦🇺澳大利亚 01
+  type: vless
+  server: 85.189.89.172
+  port: 20086
+  uuid: 469e41b2-ffb2-4ab3-ad4d-fd00ac69af75
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: www.amazon.com
+  flow: xtls-rprx-vision
+- name: 🇭🇰 香港 01
+  type: vless
   server: 136.148.83.69
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  network: tcp
   tls: true
+  client-fingerprint: qq
   servername: szqbx-ru-77dc.my-fade.cloud
-  sni: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- type: ss
-  name: 🇩🇪_DE_德国_IPV4
-  server: 47.254.128.109
+- name: 🇫🇮 芬兰 01
+  type: vless
+  server: a80b5386.fi2.h1clayd.click
   port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇩🇪_DE_德国_IPV4 (2)
-  server: 47.254.167.157
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  tls: false
-  skip-cert-verify: false
-- type: vmess
-  name: 🇺🇸 机场推荐:dafei.de 美国 26_IPV4
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
+  uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
+  network: tcp
   tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4
-  server: 149.28.29.156
-  port: 443
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (2)
-  server: 198.13.53.39
-  port: 443
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇹🇼_TW_台湾_IPV4
-  server: free.fugui.lol
-  port: 47396
-  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-  flow: xtls-rprx-vision
-  tls: true
-  servername: swdist.apple.com
-  sni: swdist.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-    short-id: fa514b83
-- type: vless
-  name: 🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4
-  server: 163.245.42.87
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mother-earth.fyi
-  sni: mother-earth.fyi
-  skip-cert-verify: false
   client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- type: hysteria
-  name: 🇫🇷_FR_法国_IPV4
-  server: 62.210.124.132
-  port: 24667
-  password: dongtaiwang.com
+  servername: a80b5386.fi2.h1clayd.click
+- name: 🇩🇪 德国 1
+  type: vless
+  server: 146.103.40.91
+  port: 9543
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  network: tcp
   tls: true
-  servername: bing.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  up: '11'
-  down: '55'
-  auth-str: dongtaiwang.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (4)
-  server: 45.32.70.42
-  port: 443
-  uuid: 8c392beb-524d-4d0a-a3a6-4d542d54a1ff
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cQZ-dTY4QSQteDYpngP2PavOsn9yY9lIP-OscwzwAio
-    short-id: 4dda4608
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (5)
-  server: 172.236.227.60
-  port: 443
-  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
-    short-id: 664c1530
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (6)
-  server: 172.233.142.149
-  port: 443
-  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
-    short-id: 4206512a
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇸🇬_SG_新加坡_IPV4
-  server: 139.180.221.53
-  port: 443
-  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
-    short-id: 2f6f6f87
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (3)
-  server: 45.76.222.108
-  port: 443
-  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
-    short-id: b5c85d2d
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (7)
-  server: 172.236.241.130
-  port: 443
-  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
-    short-id: 51ecfe9e
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (8)
-  server: 107.191.58.86
-  port: 443
-  uuid: 4444e77e-3d2a-4dc9-bf31-936f038f5570
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZZwZGoX0Us8t6nLvckDWskC1c25F9rL0_nUXmd8BFxQ
-    short-id: 8dd324c1
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (9)
-  server: 172.233.129.172
-  port: 443
-  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
-    short-id: 5818adc3
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- type: trojan
-  name: 🇨🇳_CN_中国_IPV4
-  server: sclass-01.catcat321.com
-  port: 20103
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  tls: true
-  servername: hk.catxstar.com
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- type: hysteria2
-  name: 🇺🇸_US_美国_IPV4 (10)
-  server: starlink-ft.251313.xyz
-  port: 443
-  password: https://xship.2fa.cat
-  tls: true
-  servername: xship.top
-  sni: xship.top
-  skip-cert-verify: true
-- type: vless
-  name: 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
-  server: 196.196.148.63
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 717252g.nl8.h1clayd.click
-  sni: 717252g.nl8.h1clayd.click
-  skip-cert-verify: false
   client-fingerprint: firefox
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- type: vmess
-  name: 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
-  server: 188.114.99.137
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
+  servername: storage.yandexcloud.net
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 01
+  type: vmess
+  server: byr3a.xiaoyan.io
+  port: 16622
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
   alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+- name: 剩余流量：0
+  type: vless
+  server: xjc01.clkhd.quest
+  port: 54949
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
   tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- type: vmess
-  name: '@DeltaKroneckerGithub_3021_IPV4'
-  server: 172.64.145.93
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 香港02
+  type: vless
+  server: xjc02.clkhd.quest
+  port: 10540
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
   tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- type: vmess
-  name: 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
-  server: 172.67.190.164
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- type: anytls
-  name: 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  server: sdf65h46wr.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 日本01
+  type: vless
+  server: xjc01.clkhd.quest
+  port: 28951
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
   tls: true
-  servername: images.ctfassets.net
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- type: ss
-  name: 🇮🇹_IT_意大利_IPV4
-  server: 202.50.253.27
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇮🇹_IT_意大利_IPV4 (2)
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇮🇹_IT_意大利_IPV4 (3)
-  server: 202.50.253.90
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇸_US_美国_IPV4 (10
-  type: hysteria2
-  server: https
-  port: 443
-  password: ''
-  sni: xship.top
-  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 日本02
+  type: vless
+  server: xjc02.clkhd.quest
+  port: 51201
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 美国01
+  type: vless
+  server: xjc01.clkhd.quest
+  port: 13247
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 美国02
+  type: vless
+  server: fdy.chonglangyun1366590.com
+  port: 35237
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 台湾01
+  type: vless
+  server: xjc01.clkhd.quest
+  port: 55539
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 台湾02
+  type: vless
+  server: fdy.chonglangyun1366590.com
+  port: 39959
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 香港03
+  type: vless
+  server: xjc03.clkhd.quest
+  port: 10540
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 台湾03
+  type: vless
+  server: xjc03.clkhd.quest
+  port: 39959
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 美国03
+  type: vless
+  server: xjc03.clkhd.quest
+  port: 35237
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
+- name: 日本03
+  type: vless
+  server: xjc03.clkhd.quest
+  port: 51201
+  uuid: 75a41668-04e7-475a-8133-8ca9d6173f7c
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: itunes.apple.com
+  flow: xtls-rprx-vision
 - name: end-gfw-sg3-VLESS
   type: vless
   server: 54.169.105.85
@@ -1270,6 +1222,15 @@ proxies:
   client-fingerprint: ios
   servername: www.apple.com
   flow: xtls-rprx-vision
+- name: 'US美国(v2clash.blog 2026-11.17更新 #2'
+  type: vless
+  server: 196.196.148.63
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: grpc
+  tls: true
+  client-fingerprint: firefox
+  servername: 717252g.nl8.h1clayd.click
 - name: 立陶宛(v2clash.blog 2026-11.18更新
   type: vless
   server: 84.32.54.237
@@ -1461,6 +1422,16 @@ proxies:
   client-fingerprint: chrome
   servername: swdist.apple.com
   flow: xtls-rprx-vision
+- name: 'TW台湾(v2clash.blog 2026-11.22更新 #2'
+  type: vless
+  server: free.fugui.lol
+  port: 47396
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  network: tcp
+  tls: true
+  client-fingerprint: chrome
+  servername: swdist.apple.com
+  flow: xtls-rprx-vision
 - name: NL荷兰(v2clash.blog 2026-11.23更新
   type: vless
   server: 48.102.173.125
@@ -1503,37 +1474,44 @@ proxy-groups:
   proxies:
   - SG
   - 美国  port:2087,2083,2053,2096
-  - 🇺🇸_US_美国_IPV4
-  - 🇺🇸_US_美国_IPV4 (2)
-  - 🇺🇸_US_美国_IPV4 (3)
-  - 🇷🇺_RU_俄罗斯_IPV4
-  - 🇩🇪_DE_德国_IPV4
-  - 🇩🇪_DE_德国_IPV4 (2)
-  - 🇺🇸 机场推荐:dafei.de 美国 26_IPV4
-  - 🇯🇵_JP_日本_IPV4
-  - 🇯🇵_JP_日本_IPV4 (2)
-  - 🇹🇼_TW_台湾_IPV4
-  - 🇩🇪_DE_德国->🇫🇷_FR_法国_IPV4
-  - 🇫🇷_FR_法国_IPV4
-  - 🇺🇸_US_美国_IPV4 (4)
-  - 🇺🇸_US_美国_IPV4 (5)
-  - 🇺🇸_US_美国_IPV4 (6)
-  - 🇸🇬_SG_新加坡_IPV4
-  - 🇯🇵_JP_日本_IPV4 (3)
-  - 🇺🇸_US_美国_IPV4 (7)
-  - 🇺🇸_US_美国_IPV4 (8)
-  - 🇺🇸_US_美国_IPV4 (9)
-  - 🇨🇳_CN_中国_IPV4
-  - 🇺🇸_US_美国_IPV4 (10)
-  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
-  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
-  - '@DeltaKroneckerGithub_3021_IPV4'
-  - 🇺🇸 机场推荐:dafei.de 美国 15_IPV4
-  - 🇹🇼_TW_台湾->🇺🇸_US_美国_IPV4
-  - 🇮🇹_IT_意大利_IPV4
-  - 🇮🇹_IT_意大利_IPV4 (2)
-  - 🇮🇹_IT_意大利_IPV4 (3)
-  - 🇺🇸_US_美国_IPV4 (10
+  - Hong Kong 02 ss汐云
+  - udptoos.com 🇺🇸美国 10
+  - udptoos.com 🇺🇸美国 09
+  - udptoos.com 🇺🇸美国 08
+  - udptoos.com 🇺🇸美国 07
+  - udptoos.com 🇸🇬新加坡 06
+  - udptoos.com 🇸🇬新加坡 05
+  - udptoos.com 🇸🇬新加坡 04
+  - udptoos.com 🇰🇷韩国 02
+  - udptoos.com 🇰🇷韩国 01
+  - udptoos.com 🇯🇵日本 08
+  - udptoos.com 🇯🇵日本 07
+  - udptoos.com 🇯🇵日本 06
+  - udptoos.com 🇭🇰香港 06
+  - udptoos.com 🇭🇰香港 04
+  - udptoos.com 🇭🇰香港 03
+  - udptoos.com 🇭🇰香港 01
+  - udptoos.com 🇫🇷法国 02
+  - udptoos.com 🇩🇪德国 04
+  - udptoos.com 🇩🇪德国 03
+  - udptoos.com 🇩🇪德国 02
+  - udptoos.com 🇦🇺澳大利亚 01
+  - 🇭🇰 香港 01
+  - 🇫🇮 芬兰 01
+  - 🇩🇪 德国 1
+  - 🇩🇪 德国 01
+  - 剩余流量：0
+  - 香港02
+  - 日本01
+  - 日本02
+  - 美国01
+  - 美国02
+  - 台湾01
+  - 台湾02
+  - 香港03
+  - 台湾03
+  - 美国03
+  - 日本03
   - end-gfw-sg3-VLESS
   - end-gfw-sg33-VLESS
   - US VLESS-11 | free-nodes
@@ -1610,6 +1588,7 @@ proxy-groups:
   - JP日本(v2clash.blog 2026-11.17更新
   - US美国(v2clash.blog 2026-11.17更新
   - 'JP日本(v2clash.blog 2026-11.17更新 #2'
+  - 'US美国(v2clash.blog 2026-11.17更新 #2'
   - 立陶宛(v2clash.blog 2026-11.18更新
   - GB英国mibei77.com 米贝节点分享)(v2clash.blog 2026-11.18更新
   - DE德国(v2clash.blog 2026-11.18更新
@@ -1629,6 +1608,7 @@ proxy-groups:
   - 塞舌尔(v2clash.blog 2026-11.21更新
   - US美国(v2clash.blog 2026-11.22更新
   - TW台湾(v2clash.blog 2026-11.22更新
+  - 'TW台湾(v2clash.blog 2026-11.22更新 #2'
   - NL荷兰(v2clash.blog 2026-11.23更新
   - US美国(v2clash.blog 2026-11.23更新
   - 'US美国(v2clash.blog 2026-11.23更新 #2'
