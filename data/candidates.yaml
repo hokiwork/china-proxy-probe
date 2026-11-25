@@ -168,113 +168,58 @@ proxies:
   client-fingerprint: chrome
   servername: itunes.apple.com
   flow: xtls-rprx-vision
-- type: anytls
-  name: 🇹🇼_TW_台湾_IPV4
-  server: a54ge.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
+- name: 已超过套餐标注的设备数量限额
+  type: ss
+  server: 127.0.0.1
+  port: 7800
+  cipher: aes-128-gcm
+  password: b601f80a-8bff-4676-8827-ba12942fcbe6
+- name: 请前往官网重新获取订阅
+  type: ss
+  server: 127.0.0.1
+  port: 1
+  cipher: aes-128-gcm
+  password: subscription-unavailable
+- name: 剩余流量：47.64 GB
+  type: vless
+  server: 47.117.25.211
+  port: 25680
+  uuid: dee5babb-860f-4442-9747-7c3ec7e2c0b6
+  network: tcp
   tls: true
-  servername: docs.microsoft.com
-  sni: docs.microsoft.com
-  skip-cert-verify: true
   client-fingerprint: chrome
-- type: anytls
-  name: 🇭🇰_HK_香港_IPV4
-  server: 5641sdds.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 日本 IPv6 @befriendsvpn
+  type: vless
+  server: 2a14:7586:6109:1::a125
+  port: 25680
+  uuid: dee5babb-860f-4442-9747-7c3ec7e2c0b6
+  network: tcp
   tls: true
-  servername: images.ctfassets.net
-  sni: images.ctfassets.net
-  skip-cert-verify: true
   client-fingerprint: chrome
-- type: trojan
-  name: 🇸🇬_SG_新加坡_IPV4
-  server: 77.93.89.2
-  port: 443
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 香港 @befriendsvpn
+  type: vless
+  server: 47.117.25.211
+  port: 24685
+  uuid: dee5babb-860f-4442-9747-7c3ec7e2c0b6
+  network: tcp
   tls: true
-  servername: bgsg1.hikigo.com
-  sni: bgsg1.hikigo.com
-  skip-cert-verify: true
-- type: vless
-  name: 🇬🇧_GB_英国_IPV4
-  server: 167.99.203.0
-  port: 443
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  tls: false
-  skip-cert-verify: false
-  network: http
-  http-opts:
-    headers:
-      Host:
-      - fast.com
-- type: trojan
-  name: 🇸🇬_SG_新加坡_IPV4 (2)
-  server: bgsg1.hikigo.com
-  port: 443
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
+- name: 香港 IPv6 @befriendsvpn
+  type: vless
+  server: 2a0e:97c0:3f0:1::598
+  port: 24685
+  uuid: dee5babb-860f-4442-9747-7c3ec7e2c0b6
+  network: tcp
   tls: true
-  servername: bgsg1.hikigo.com
-  sni: bgsg1.hikigo.com
-  skip-cert-verify: true
-- type: vmess
-  name: '@DeltaKroneckerGithub_3774_IPV4'
-  server: 172.67.187.145
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  cipher: auto
-  alterId: 0
-  tls: false
-  servername: vmess.lbw666.dpdns.org
-  sni: vmess.lbw666.dpdns.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- type: vmess
-  name: '@DeltaKroneckerGithub_3499_IPV4'
-  server: 104.18.0.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  sni: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- type: anytls
-  name: 🇹🇼_TW_台湾_IPV4 (2)
-  server: rtifgjdr.df6h451rh.xin
-  port: 443
-  password: 2902c46c8493
-  tls: true
-  servername: docs.microsoft.com
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- type: anytls
-  name: 🇭🇰_HK_香港_IPV4 (2)
-  server: ibsdsf.df6h451rh.xin
-  port: 443
-  password: 2902c46c8493
-  tls: true
-  servername: docs.microsoft.com
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- type: anytls
-  name: 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
-  server: im.frnhk.xyz
-  port: 443
-  password: e2413369-16de-4c90-97c5-b39b8d6b71cd
-  tls: true
-  servername: im.frnhk.xyz
-  sni: im.frnhk.xyz
-  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
 - name: end-gfw-sg3-VLESS
   type: vless
   server: 54.169.105.85
@@ -1344,16 +1289,12 @@ proxy-groups:
   - 台湾03
   - 美国03
   - 日本03
-  - 🇹🇼_TW_台湾_IPV4
-  - 🇭🇰_HK_香港_IPV4
-  - 🇸🇬_SG_新加坡_IPV4
-  - 🇬🇧_GB_英国_IPV4
-  - 🇸🇬_SG_新加坡_IPV4 (2)
-  - '@DeltaKroneckerGithub_3774_IPV4'
-  - '@DeltaKroneckerGithub_3499_IPV4'
-  - 🇹🇼_TW_台湾_IPV4 (2)
-  - 🇭🇰_HK_香港_IPV4 (2)
-  - 🇹🇼_TW_台湾->🇯🇵_JP_日本_IPV4
+  - 已超过套餐标注的设备数量限额
+  - 请前往官网重新获取订阅
+  - 剩余流量：47.64 GB
+  - 日本 IPv6 @befriendsvpn
+  - 香港 @befriendsvpn
+  - 香港 IPv6 @befriendsvpn
   - end-gfw-sg3-VLESS
   - end-gfw-sg33-VLESS
   - US VLESS-11 | free-nodes
