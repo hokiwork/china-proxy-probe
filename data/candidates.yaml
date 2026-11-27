@@ -9,799 +9,186 @@ proxies:
   port: 65031
   cipher: 2022-blake3-aes-256-gcm
   password: YmQ5Y2E3MGRlNmU1NDVkZTNhZGIyMmIyZDJjZjM3NGI=:ZmM3NjkxZGUtMGM2MS00Y2Q5LTgxZWYtOTQ5MTUxMTM=
-- name: 中国-01【家宽】
-  type: ss
-  server: 103.238.140.162
-  port: 10002
-  cipher: 2022-blake3-aes-128-gcm
-  password: qryl6xVLkWXZlqD7CccpQw==
-  udp: true
-- name: 中国-广州-03【家宽】
-  type: http
-  server: 120.232.204.58
-  port: 40583
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 120.232.204.58
-  skip-cert-verify: true
-- name: 墨西哥-墨西哥城-11【家宽】
-  type: socks5
-  server: 94.194.164.147
-  port: 62000
-  username: rVkkraqT
-  password: 2j7CCZQb
-- name: 墨西哥-墨西哥城-09【家宽】
-  password: lcFa8dTH
-  port: 62000
-  server: 94.194.165.96
-  sub_tag: R002-260618
-  type: socks5
-  username: QyVdo5ks
-  udp: true
-- name: 意大利-01【家宽】
+- name: xhttp vless TLS H1 🔀 ssssss IP4/6
+  type: vless
+  server: ssssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  server: 109.116.41.154
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  type: http
-  udp: true
-- name: 意大利-米兰-21【家宽】
+  client-fingerprint: android
+  servername: ssssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 sssss IP4/6
+  type: vless
+  server: sssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  server: 93.42.177.250
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  type: http
-  udp: true
-- name: 法国-29【家宽】
-  password: 'null'
+  client-fingerprint: android
+  servername: sssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 ssss IP4/6
+  type: vless
+  server: ssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  server: 82.66.235.221
-  skip-cert-verify: true
-  sub_tag: P002-260618
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 法国-里昂-43【家宽】
-  port: 8090
-  server: 83.206.1.225
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 泰国-曼谷-12【家宽】
-  type: socks5
-  server: 87.81.70.159
-  port: 42000
-  username: user2523
-  password: Ksnervw2
-- name: 泰国-曼谷-13【家宽】
-  type: socks5
-  server: 87.81.70.250
-  port: 42000
-  username: user2523
-  password: Ksnervw2
-- name: 泰国-曼谷-14【家宽】
-  type: socks5
-  server: 87.81.70.254
-  port: 42000
-  username: user2523
-  password: Ksnervw2
-- name: 泰国-曼谷-15【家宽】
-  type: socks5
-  server: 87.83.236.228
-  port: 62000
-  username: ks8783236c597
-  password: -D3s0GRfhYcd9Z4vaBy04ina
-- name: 爱沙尼亚-04【家宽】
+  client-fingerprint: android
+  servername: ssss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 sss IP4/6
+  type: vless
+  server: sss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  server: 95.153.32.2
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  type: http
-  udp: true
-- cipher: aes-256-cfb
-  name: 韩国-06【家宽】
-  password: qwerREWQ@@
-  port: 6123
-  server: 211.178.105.134
-  type: ss
-  udp: true
-- name: 印度尼西亚-雅加达-04【家宽】
-  type: socks5
-  server: 198.87.102.119
-  port: 62000
-  username: u_fe50a6a
-  password: 4xcdrwgki6
-- name: 印度尼西亚-雅加达-05【家宽】
-  type: socks5
-  server: 202.155.99.119
-  port: 62000
-  username: gebHTLF6
-  password: APJ7RmY9
-- name: 喀麦隆-02【家宽】
-  password: ''
-  port: 8086
-  server: 102.244.78.61
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  type: http
-  username: ''
-  udp: true
-- name: 墨西哥-墨西哥城-08【家宽】
-  type: socks5
-  server: 94.194.165.32
-  port: 62000
-  username: QyVdo5ks
-  password: lcFa8dTH
-- name: 泰国-曼谷-07【家宽】
-  type: socks5
-  server: 109.66.135.179
-  port: 62000
-  username: BKE6uict
-  password: iPCfwOuw
-- name: 泰国-曼谷-19【家宽】
-  type: socks5
-  server: 87.81.71.89
-  port: 42000
-  username: user9353
-  password: KsIJdV2U
-- name: 泰国-曼谷-20【家宽】
-  type: socks5
-  server: 87.83.236.186
-  port: 62000
-  username: ks8783236c597
-  password: -D3s0GRfhYcd9Z4vaBy04ina
-- name: 泰国-曼谷-21【家宽】
-  type: socks5
-  server: 87.84.49.206
-  port: 62000
-  username: ks878449260d
-  password: YlRoWvE0dL_cUqS94wPeKnA4
-- name: 印度尼西亚-雅加达-06【家宽】
-  type: socks5
-  server: 198.87.102.86
-  port: 62000
-  username: Q7rN4d2S
-  password: KzL82W3E
-- name: 墨西哥-墨西哥城-12【家宽】
-  type: socks5
-  server: 94.194.165.131
-  port: 62000
-  username: QyVdo5ks
-  password: lcFa8dTH
-- name: 韩国-07【家宽】
-  type: socks5
-  server: 183.106.215.208
-  port: 1080
-- name: 印度尼西亚-雅加达-07【家宽】
-  type: socks5
-  server: 202.155.99.222
-  port: 62000
-  username: gebHTLF6
-  password: APJ7RmY9
-- name: 墨西哥-墨西哥城-13【家宽】
-  type: socks5
-  server: 94.194.166.52
-  port: 42000
-  username: userLRgK
-  password: KsPAxZGn
-- name: 泰国-曼谷-22【家宽】
-  type: socks5
-  server: 87.81.70.239
-  port: 42000
-  username: user2523
-  password: Ksnervw2
-- name: 泰国-曼谷-16【家宽】
-  type: socks5
-  server: 87.84.49.140
-  port: 62000
-  username: ks878449260d
-  password: YlRoWvE0dL_cUqS94wPeKnA4
-- name: 泰国-曼谷-29【家宽】
-  type: socks5
-  server: 87.84.49.245
-  port: 62000
-  username: ks878449260d
-  password: YlRoWvE0dL_cUqS94wPeKnA4
-- name: 请自行注册rustyun-b.top免费使用-日本01
-  type: vmess
-  server: mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art
-  port: 21581
-  uuid: 91710d35-76ad-3513-bb14-4caddae68539
-  alterId: 1
-  cipher: auto
-  tls: true
-  network: tcp
-  servername: mk33hz8-g01.jp03-j7-vm0.entry.fr0528.art
-- name: 请自行注册rustyun-b.top免费使用土耳其01
-  type: ss
-  server: 38.180.104.37
-  port: 19084
-  cipher: aes-128-gcm
-  password: ff4d354078394558933d699be149ad69
-- name: 请自行注册rustyun-b.top免费使用-意大利01
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利02
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利03
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利04
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利05
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利06
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利07
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-意大利08
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 请自行注册rustyun-b.top免费使用-中国回国节点01
-  type: trojan
-  server: ja304.magiclampcloud.cn
-  port: 59443
-  password: 06cf12a7fab279375e55e2f0cfdef381
-  sni: ja304.magiclampcloud.cn
-- name: 剩余流量：810.77 GB
+  client-fingerprint: android
+  servername: sss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 ss IP4/6
   type: vless
-  server: sg03.ea9c2ab8-b920-4e14-a158-f1c21c866378.genshinimpact.cyou
+  server: ss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: ios
-  servername: fastcdn.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城沙嗲串 | DDNSv6
+  client-fingerprint: android
+  servername: ss.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 s IP4/6
   type: vless
-  server: sg03-v6.ea9c2ab8-b920-4e14-a158-f1c21c866378.genshinimpact.cyou
+  server: s.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: ios
-  servername: fastcdn.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城沙嗲串 | IPv4
+  client-fingerprint: android
+  servername: s.0ab62183-3cf1-45db-9b75-fc16b366e4af.ccwu.cc
+- name: xhttp vless TLS H1 🔀 ssssssss IP4/6
   type: vless
-  server: 13.251.126.240
+  server: ssssssss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: ios
-  servername: fastcdn.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城沙嗲串 | IPv6
+  client-fingerprint: android
+  servername: ssssssss.444411111.xyz
+- name: xhttp vless TLS H1 🔀 sssssss IP4/6
   type: vless
-  server: 2406:da18:1a2:9900:45ee:6faa:d995:3319
+  server: sssssss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: ios
-  servername: fastcdn.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城沙嗲串 | SGGCPv4
+  client-fingerprint: android
+  servername: sssssss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 ssssss IP4/6 #2'
   type: vless
-  server: 136.85.90.54
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: ios
-  servername: fastcdn.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城肉骨茶 | DDNSv4
-  type: vless
-  server: sg01.ebf263c3-0b7e-4e71-87b9-26978dc121c4.genshinimpact.cyou
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-sg01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城肉骨茶 | DDNSv6
-  type: vless
-  server: sg01-v6.ebf263c3-0b7e-4e71-87b9-26978dc121c4.genshinimpact.cyou
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-sg01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城肉骨茶 | IPv4
-  type: vless
-  server: 13.250.112.15
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-sg01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城肉骨茶 | IPv6
-  type: vless
-  server: 2406:da18:8ab:cb00:2611:1eed:5f6:63b4
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-sg01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇸🇬 狮城肉骨茶 | SGGCPv4
-  type: vless
-  server: 136.85.90.54
-  port: 18443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-sg01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本天妇罗 | DDNSv4
-  type: vless
-  server: jp03.73c01f37-d10a-4317-a43a-380fc51d0bc4.genshinimpact.cyou
+  server: ssssss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本天妇罗 | DDNSv6
+  client-fingerprint: android
+  servername: ssssss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 sssss IP4/6 #2'
   type: vless
-  server: jp03-v6.73c01f37-d10a-4317-a43a-380fc51d0bc4.genshinimpact.cyou
+  server: sssss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本天妇罗 | IPv4
+  client-fingerprint: android
+  servername: sssss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 ssss IP4/6 #2'
   type: vless
-  server: 35.74.234.44
+  server: ssss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本天妇罗 | IPv6
+  client-fingerprint: android
+  servername: ssss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 sss IP4/6 #2'
   type: vless
-  server: 2406:da14:127c:6600:388:d8bc:6027:7f27
+  server: sss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本天妇罗 | JPGCPv4
+  client-fingerprint: android
+  servername: sss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 ss IP4/6 #2'
   type: vless
-  server: 35.221.95.252
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: download-porter.hoyoverse.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本关东煮 | DDNSv4
-  type: vless
-  server: jp01.5392a812-9a56-456f-b89a-9e5b4208168a.genshinimpact.cyou
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-jp01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本关东煮 | DDNSv6
-  type: vless
-  server: jp01-v6.5392a812-9a56-456f-b89a-9e5b4208168a.genshinimpact.cyou
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-jp01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本关东煮 | IPv4
-  type: vless
-  server: 18.181.226.22
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-jp01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本关东煮 | IPv6
-  type: vless
-  server: 2406:da14:a37:3600:6867:39dd:e0a4:79a7
-  port: 8443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-jp01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇯🇵 日本关东煮 | JPGCPv4
-  type: vless
-  server: 35.221.95.252
-  port: 18443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: safari
-  servername: cdn-jp01.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港碗仔翅
-  type: vless
-  server: 8f075ed5.alidns-3.com
+  server: ss.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: ws
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: ak4.chinapolice.lol
-  ws-opts:
-    path: /e8686e70-8e5d-4005-b6f5-a75ea324e276
-    headers:
-      Host: ak4.chinapolice.lol
-- name: 🇭🇰 香港碗仔翅 | IP
+  client-fingerprint: android
+  servername: ss.444411111.xyz
+- name: 'xhttp vless TLS H1 🔀 s IP4/6 #2'
   type: vless
-  server: 172.64.145.105
+  server: s.444411111.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: ws
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: safari
-  servername: ak4.chinapolice.lol
-  ws-opts:
-    path: /e8686e70-8e5d-4005-b6f5-a75ea324e276
-    headers:
-      Host: ak4.chinapolice.lol
-- name: 🇭🇰 香港碗仔翅 | SGGCPv4
+  client-fingerprint: android
+  servername: s.444411111.xyz
+- name: xhttp vless TLS H1 🔀 qqqqqqqq IP4/6
   type: vless
-  server: 136.85.90.54
-  port: 4430
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-hk02.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇭🇰 香港碗仔翅 | JPGCPv4
-  type: vless
-  server: 35.221.95.252
-  port: 4430
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: cdn-hk02.download.pikoport.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | DDNSv4
-  type: vless
-  server: us01.d168f27a-5efc-4699-891d-eda6ea40be1d.genshinimpact.cyou
+  server: qqqqqqqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | DDNSv6
+  client-fingerprint: android
+  servername: qqqqqqqq.99944444.xyz
+- name: xhttp vless TLS H1 🔀 qqqqqqq IP4/6
   type: vless
-  server: us01-v6.d168f27a-5efc-4699-891d-eda6ea40be1d.genshinimpact.cyou
+  server: qqqqqqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | IPv4
+  client-fingerprint: android
+  servername: qqqqqqq.99944444.xyz
+- name: xhttp vless TLS H1 🔀 qqqqqq IP4/6
   type: vless
-  server: 148.135.105.206
+  server: qqqqqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | IPv6
+  client-fingerprint: android
+  servername: qqqqqq.99944444.xyz
+- name: xhttp vless TLS H1 🔀 qqqqq IP4/6
   type: vless
-  server: 2607:f130:0:113::8e
+  server: qqqqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | JPGCPv4
+  client-fingerprint: android
+  servername: qqqqq.99944444.xyz
+- name: xhttp vless TLS H1 🔀 qqqq IP4/6
   type: vless
-  server: 35.221.95.252
-  port: 4431
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国龙虾卷 | SGGCPv4
-  type: vless
-  server: 136.85.90.54
-  port: 4431
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: download.windowsupdate.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | DDNSv4
-  type: vless
-  server: us02.4b214271-fd51-4e6b-9303-fe6e915f406d.genshinimpact.cyou
+  server: qqqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | DDNSv6
+  client-fingerprint: android
+  servername: qqqq.99944444.xyz
+- name: xhttp vless TLS H1 🔀 qqq IP4/6
   type: vless
-  server: us02-v6.4b214271-fd51-4e6b-9303-fe6e915f406d.genshinimpact.cyou
+  server: qqq.99944444.xyz
   port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
+  uuid: d2f2639b-ff62-4553-abce-d75e231b300c
+  network: xhttp
   tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | IPv4
-  type: vless
-  server: 148.135.105.211
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | IPv6
-  type: vless
-  server: 2607:f130:0:113::91
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | JPGCPv4
-  type: vless
-  server: 35.221.95.252
-  port: 4432
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国奶油派 | SGGCPv4
-  type: vless
-  server: 136.85.90.54
-  port: 4432
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: www.bing.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | DDNSv4
-  type: vless
-  server: us03.e8cdce9e-40a0-4487-8a8d-de8de7d8f3c8.genshinimpact.cyou
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | DDNS
-  type: vless
-  server: us03-v6.e8cdce9e-40a0-4487-8a8d-de8de7d8f3c8.genshinimpact.cyou
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | IPv4
-  type: vless
-  server: 148.135.105.212
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | IPv6
-  type: vless
-  server: 2607:f130:0:113::94
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | JPGCPv4
-  type: vless
-  server: 35.221.95.252
-  port: 4433
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国冰激凌 | SGGCPv4
-  type: vless
-  server: 136.85.90.54
-  port: 4433
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: tcp
-  tls: true
-  client-fingerprint: chrome
-  servername: software.download.prss.microsoft.com
-  flow: xtls-rprx-vision
-- name: 🇺🇸 美国汉堡包 | CT CU
-  type: vless
-  server: ctcu.alidns-1.com
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: ws
-  tls: true
-  client-fingerprint: safari
-  servername: us3.chinapolice.lol
-  ws-opts:
-    path: /dd73283c-c37a-43b1-b514-65a9861bdd6d
-    headers:
-      Host: us3.chinapolice.lol
-- name: 🇺🇸 美国汉堡包 | CT IP
-  type: vless
-  server: 172.64.229.88
-  port: 443
-  uuid: ad318b59-08a6-463b-a423-d3bc5dc77ec3
-  network: ws
-  tls: true
-  client-fingerprint: safari
-  servername: us3.chinapolice.lol
-  ws-opts:
-    path: /dd73283c-c37a-43b1-b514-65a9861bdd6d
-    headers:
-      Host: us3.chinapolice.lol
-- type: hysteria2
-  name: 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_IPV4
-  server: uk-tube-01.stre4m.net
-  port: 13337
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  tls: true
-  servername: mother-earth.fyi
-  sni: mother-earth.fyi
-  skip-cert-verify: true
-- type: vmess
-  name: '@DeltaKroneckerGithub_2974_IPV4'
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  sni: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- type: hysteria2
-  name: 🇫🇷_FR_法国_IPV6
-  server: 2001:bc8:32d7:17b::14
-  port: 22000
-  password: dongtaiwang.com
-  tls: true
-  servername: www.microsoft.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- type: hysteria2
-  name: 🇫🇷_FR_法国_IPV6 (2)
-  server: 2001:bc8:32d7:17b::12
-  port: 22000
-  password: dongtaiwang.com
-  tls: true
-  servername: www.microsoft.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- type: hysteria2
-  name: 🇫🇷_FR_法国_IPV6 (3)
-  server: 2001:bc8:32d7:17b::10
-  port: 22000
-  password: dongtaiwang.com
-  tls: true
-  servername: www.microsoft.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- type: vless
-  name: '@DeltaKroneckerGithub_741_IPV4'
-  server: 172.67.139.189
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  tls: true
-  servername: fr-free.fastestrelay.com
-  sni: fr-free.fastestrelay.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
+  client-fingerprint: android
+  servername: qqq.99944444.xyz
 - name: end-gfw-kr3-VLESS
   type: vless
   server: 43.202.55.113
@@ -968,47 +355,47 @@ proxies:
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-VLESS
   type: vless
-  server: 13.125.239.202
+  server: 3.35.175.163
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: www.atims.co.kr
+  servername: 3-35-175-152.nip.io
   flow: xtls-rprx-vision
 - name: end-gfw-kr64-HY2
   type: hysteria2
-  server: 13.125.239.202
+  server: 3.35.175.163
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-kr64-SS
   type: ss
-  server: 13.125.239.202
+  server: 3.35.175.163
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: end-gfw-sg89-VLESS
   type: vless
-  server: 13.229.53.78
+  server: 13.229.56.229
   port: 443
   uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
   network: tcp
   tls: true
   client-fingerprint: chrome
-  servername: awssp.funwithgeodes.site
+  servername: fleetguard-filtrum.com
   flow: xtls-rprx-vision
 - name: end-gfw-sg89-HY2
   type: hysteria2
-  server: 13.229.53.78
+  server: 13.229.56.229
   port: 443
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
 - name: end-gfw-sg89-SS
   type: ss
-  server: 13.229.53.78
+  server: 13.229.56.229
   port: 8443
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
@@ -1976,97 +1363,26 @@ proxy-groups:
   type: select
   proxies:
   - 日本1|SS[1x
-  - 中国-01【家宽】
-  - 中国-广州-03【家宽】
-  - 墨西哥-墨西哥城-11【家宽】
-  - 墨西哥-墨西哥城-09【家宽】
-  - 意大利-01【家宽】
-  - 意大利-米兰-21【家宽】
-  - 法国-29【家宽】
-  - 法国-里昂-43【家宽】
-  - 泰国-曼谷-12【家宽】
-  - 泰国-曼谷-13【家宽】
-  - 泰国-曼谷-14【家宽】
-  - 泰国-曼谷-15【家宽】
-  - 爱沙尼亚-04【家宽】
-  - 韩国-06【家宽】
-  - 印度尼西亚-雅加达-04【家宽】
-  - 印度尼西亚-雅加达-05【家宽】
-  - 喀麦隆-02【家宽】
-  - 墨西哥-墨西哥城-08【家宽】
-  - 泰国-曼谷-07【家宽】
-  - 泰国-曼谷-19【家宽】
-  - 泰国-曼谷-20【家宽】
-  - 泰国-曼谷-21【家宽】
-  - 印度尼西亚-雅加达-06【家宽】
-  - 墨西哥-墨西哥城-12【家宽】
-  - 韩国-07【家宽】
-  - 印度尼西亚-雅加达-07【家宽】
-  - 墨西哥-墨西哥城-13【家宽】
-  - 泰国-曼谷-22【家宽】
-  - 泰国-曼谷-16【家宽】
-  - 泰国-曼谷-29【家宽】
-  - 请自行注册rustyun-b.top免费使用-日本01
-  - 请自行注册rustyun-b.top免费使用土耳其01
-  - 请自行注册rustyun-b.top免费使用-意大利01
-  - 请自行注册rustyun-b.top免费使用-意大利02
-  - 请自行注册rustyun-b.top免费使用-意大利03
-  - 请自行注册rustyun-b.top免费使用-意大利04
-  - 请自行注册rustyun-b.top免费使用-意大利05
-  - 请自行注册rustyun-b.top免费使用-意大利06
-  - 请自行注册rustyun-b.top免费使用-意大利07
-  - 请自行注册rustyun-b.top免费使用-意大利08
-  - 请自行注册rustyun-b.top免费使用-中国回国节点01
-  - 剩余流量：810.77 GB
-  - 🇸🇬 狮城沙嗲串 | DDNSv6
-  - 🇸🇬 狮城沙嗲串 | IPv4
-  - 🇸🇬 狮城沙嗲串 | IPv6
-  - 🇸🇬 狮城沙嗲串 | SGGCPv4
-  - 🇸🇬 狮城肉骨茶 | DDNSv4
-  - 🇸🇬 狮城肉骨茶 | DDNSv6
-  - 🇸🇬 狮城肉骨茶 | IPv4
-  - 🇸🇬 狮城肉骨茶 | IPv6
-  - 🇸🇬 狮城肉骨茶 | SGGCPv4
-  - 🇯🇵 日本天妇罗 | DDNSv4
-  - 🇯🇵 日本天妇罗 | DDNSv6
-  - 🇯🇵 日本天妇罗 | IPv4
-  - 🇯🇵 日本天妇罗 | IPv6
-  - 🇯🇵 日本天妇罗 | JPGCPv4
-  - 🇯🇵 日本关东煮 | DDNSv4
-  - 🇯🇵 日本关东煮 | DDNSv6
-  - 🇯🇵 日本关东煮 | IPv4
-  - 🇯🇵 日本关东煮 | IPv6
-  - 🇯🇵 日本关东煮 | JPGCPv4
-  - 🇭🇰 香港碗仔翅
-  - 🇭🇰 香港碗仔翅 | IP
-  - 🇭🇰 香港碗仔翅 | SGGCPv4
-  - 🇭🇰 香港碗仔翅 | JPGCPv4
-  - 🇺🇸 美国龙虾卷 | DDNSv4
-  - 🇺🇸 美国龙虾卷 | DDNSv6
-  - 🇺🇸 美国龙虾卷 | IPv4
-  - 🇺🇸 美国龙虾卷 | IPv6
-  - 🇺🇸 美国龙虾卷 | JPGCPv4
-  - 🇺🇸 美国龙虾卷 | SGGCPv4
-  - 🇺🇸 美国奶油派 | DDNSv4
-  - 🇺🇸 美国奶油派 | DDNSv6
-  - 🇺🇸 美国奶油派 | IPv4
-  - 🇺🇸 美国奶油派 | IPv6
-  - 🇺🇸 美国奶油派 | JPGCPv4
-  - 🇺🇸 美国奶油派 | SGGCPv4
-  - 🇺🇸 美国冰激凌 | DDNSv4
-  - 🇺🇸 美国冰激凌 | DDNS
-  - 🇺🇸 美国冰激凌 | IPv4
-  - 🇺🇸 美国冰激凌 | IPv6
-  - 🇺🇸 美国冰激凌 | JPGCPv4
-  - 🇺🇸 美国冰激凌 | SGGCPv4
-  - 🇺🇸 美国汉堡包 | CT CU
-  - 🇺🇸 美国汉堡包 | CT IP
-  - 🇦🇪_AE_阿拉伯联合酋长国->🇩🇪_DE_德国_IPV4
-  - '@DeltaKroneckerGithub_2974_IPV4'
-  - 🇫🇷_FR_法国_IPV6
-  - 🇫🇷_FR_法国_IPV6 (2)
-  - 🇫🇷_FR_法国_IPV6 (3)
-  - '@DeltaKroneckerGithub_741_IPV4'
+  - xhttp vless TLS H1 🔀 ssssss IP4/6
+  - xhttp vless TLS H1 🔀 sssss IP4/6
+  - xhttp vless TLS H1 🔀 ssss IP4/6
+  - xhttp vless TLS H1 🔀 sss IP4/6
+  - xhttp vless TLS H1 🔀 ss IP4/6
+  - xhttp vless TLS H1 🔀 s IP4/6
+  - xhttp vless TLS H1 🔀 ssssssss IP4/6
+  - xhttp vless TLS H1 🔀 sssssss IP4/6
+  - 'xhttp vless TLS H1 🔀 ssssss IP4/6 #2'
+  - 'xhttp vless TLS H1 🔀 sssss IP4/6 #2'
+  - 'xhttp vless TLS H1 🔀 ssss IP4/6 #2'
+  - 'xhttp vless TLS H1 🔀 sss IP4/6 #2'
+  - 'xhttp vless TLS H1 🔀 ss IP4/6 #2'
+  - 'xhttp vless TLS H1 🔀 s IP4/6 #2'
+  - xhttp vless TLS H1 🔀 qqqqqqqq IP4/6
+  - xhttp vless TLS H1 🔀 qqqqqqq IP4/6
+  - xhttp vless TLS H1 🔀 qqqqqq IP4/6
+  - xhttp vless TLS H1 🔀 qqqqq IP4/6
+  - xhttp vless TLS H1 🔀 qqqq IP4/6
+  - xhttp vless TLS H1 🔀 qqq IP4/6
   - end-gfw-kr3-VLESS
   - end-gfw-sg3-VLESS
   - HK VMESS-02 | free-nodes
